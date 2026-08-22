@@ -14,6 +14,11 @@ plmn_overrides:
             entitlement_url: https://aes.orange.be:443/ium-OEMInterface/servlet/IUMServlet
         ims:
             apn: ims
+            epdg:
+                configuration_attributes:
+                    - identifier: 20
+                      name: AssignedPCSCFIPv4
+                      type: v4
             ike:
                 nat_keepalive_enabled: true
                 nat_keepalive_seconds: 20

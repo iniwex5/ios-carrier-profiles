@@ -10,6 +10,13 @@ plmn_overrides:
         ims:
             epdg:
                 address: epdg.epc.mnc001.mcc214.pub.3gppnetwork.org
+                configuration_attributes:
+                    - identifier: 20
+                      name: AssignedPCSCFIPv4
+                      type: v4
+                    - identifier: 16386
+                      name: AssignedPCSCFIPv6
+                      type: v6
             ike:
                 nat_keepalive_enabled: true
                 dpd:

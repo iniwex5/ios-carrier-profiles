@@ -15,6 +15,10 @@ common:
         apn: vsblims
         epdg:
             address: wo.vzwwo.com
+            configuration_attributes:
+                - identifier: 16390
+                  name: AssignedPCSCFIPv6
+                  type: v6
         ike:
             dpd:
                 enabled: false

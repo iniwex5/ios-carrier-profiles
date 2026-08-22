@@ -13,6 +13,11 @@ common:
         entitlement_url: https://esim-es-open-prod-pelephone.esimcloud.net/pelephone/prod/executeAppleActions
     ims:
         apn: ims
+        epdg:
+            configuration_attributes:
+                - identifier: 16386
+                  name: AssignedPCSCFIPv6
+                  type: v6
         ike:
             child_sa:
                 lifetime_seconds: 86400

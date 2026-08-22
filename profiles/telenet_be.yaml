@@ -15,13 +15,40 @@ common:
         apn: ims
         epdg:
             address: epdg.telco.telenet-ops.be
+            configuration_attributes:
+                - identifier: 16384
+                  name: AssignedPCSCFIPv4
+                  type: v4
+                - identifier: 16390
+                  name: AssignedPCSCFIPv6
+                  type: v6
         ike:
+            child_sa:
+                lifetime_seconds: 80000
+                proposals:
+                    - encryption:
+                        - aes256
+                      integrity:
+                        - sha512
+                      lifetime_seconds: 80000
             dpd:
                 enabled: false
                 interval_seconds: 600
             local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
             nat_keepalive_enabled: true
             nat_keepalive_seconds: 20
+            proposals:
+                - encryption:
+                    - aes256
+                  integrity:
+                    - sha512
+                  prf:
+                    - sha512
+                  dh_groups:
+                    - modp2048
+                  lifetime_seconds: 80000
+                  authentication_method: None
+                  eap_method: EAP-AKA
             sa_lifetime_seconds: 80000
         ip_stack: ipv6
         media:

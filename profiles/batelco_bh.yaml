@@ -15,6 +15,14 @@ plmn_overrides:
         ims:
             apn: ims
             ip_stack: ipv4v6
+            epdg:
+                configuration_attributes:
+                    - identifier: 16384
+                      name: AssignedPCSCFIPv4
+                      type: v4
+                    - identifier: 16386
+                      name: AssignedPCSCFIPv6
+                      type: v6
             ike:
                 proposals:
                     - encryption:

@@ -17,6 +17,13 @@ common:
         apn: ims
         epdg:
             address: epdg.epc.mnc000.mcc454.pub.3gppnetwork.org
+            configuration_attributes:
+                - identifier: 20
+                  name: AssignedPCSCFIPv4
+                  type: v4
+                - identifier: 21
+                  name: AssignedPCSCFIPv6
+                  type: v6
         ike:
             child_sa:
                 lifetime_seconds: 80000
@@ -66,4 +73,5 @@ common:
 plmn_overrides:
     "45400":
         ims:
-            epdg: null
+            epdg:
+                address: null

@@ -28,6 +28,16 @@ common:
         apn: ims
         epdg:
             address: ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
+            configuration_attributes:
+                - identifier: 16384
+                  name: AssignedPCSCFIPv4
+                  type: v4
+                - identifier: 16386
+                  name: AssignedPCSCFIPv6
+                  type: v6
+                - identifier: 16386
+                  name: AssignedPCSCFIPv6
+                  type: v6
         ike:
             child_sa:
                 lifetime_seconds: 80000

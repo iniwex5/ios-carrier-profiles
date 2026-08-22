@@ -17,6 +17,10 @@ common:
         apn: ims
         epdg:
             address: wo.vzwwo.com
+            configuration_attributes:
+                - identifier: 16390
+                  name: AssignedPCSCFIPv6
+                  type: v6
         ike:
             child_sa:
                 lifetime_seconds: 86400

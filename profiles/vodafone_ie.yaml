@@ -14,6 +14,11 @@ plmn_overrides:
             entitlement_url: https://es-ie.vodafone.com:4449/ium-OEMInterface/servlet/IUMServlet
         ims:
             apn: ims
+            epdg:
+                configuration_attributes:
+                    - identifier: 16384
+                      name: AssignedPCSCFIPv4
+                      type: v4
             ike:
                 proposals:
                     - encryption:

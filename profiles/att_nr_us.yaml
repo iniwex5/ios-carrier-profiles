@@ -19,6 +19,13 @@ common:
         apn: ims
         epdg:
             address: epdg.epc.att.net
+            configuration_attributes:
+                - identifier: 16384
+                  name: AssignedPCSCFIPv4
+                  type: v4
+                - identifier: 16386
+                  name: AssignedPCSCFIPv6
+                  type: v6
         ike:
             child_sa:
                 lifetime_seconds: 80000

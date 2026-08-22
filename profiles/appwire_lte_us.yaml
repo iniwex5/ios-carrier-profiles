@@ -20,6 +20,10 @@ plmn_overrides:
             impu_format: imsi@carrierDomain
             epdg:
                 address: epdg.myawi.com
+                configuration_attributes:
+                    - identifier: 16384
+                      name: AssignedPCSCFIPv4
+                      type: v4
             ike:
                 proposals:
                     - encryption:

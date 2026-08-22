@@ -13,6 +13,14 @@ common:
         entitlement_url: https://ses.videotron.com
     ims:
         apn: ims
+        epdg:
+            configuration_attributes:
+                - identifier: 20
+                  name: AssignedPCSCFIPv4
+                  type: v4
+                - identifier: 21
+                  name: AssignedPCSCFIPv6
+                  type: v6
         ike:
             dpd:
                 enabled: false

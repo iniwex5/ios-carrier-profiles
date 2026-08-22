@@ -34,6 +34,14 @@ common:
         entitlement_url: https://wes.vodafoneidea.com/Apple/
     ims:
         apn: ims
+        epdg:
+            configuration_attributes:
+                - identifier: 16384
+                  name: AssignedPCSCFIPv4
+                  type: v4
+                - identifier: 16389
+                  name: AssignedPCSCFIPv6
+                  type: v6
         ike:
             dpd:
                 enabled: true

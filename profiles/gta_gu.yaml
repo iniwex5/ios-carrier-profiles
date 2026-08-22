@@ -15,9 +15,26 @@ plmn_overrides:
         ims:
             apn: ims
             ip_stack: ipv4v6
+            epdg:
+                configuration_attributes:
+                    - identifier: 20
+                      name: AssignedPCSCFIPv4
+                      type: v4
+                    - identifier: 21
+                      name: AssignedPCSCFIPv6
+                      type: v6
             ike:
                 dpd:
                     enabled: true
+                child_sa:
+                    proposals:
+                        - encryption:
+                            - aes128
+                          integrity:
+                            - sha512
+                          pfs_group: modp2048
+                          lifetime_seconds: 86400
+                    lifetime_seconds: 86400
                 sa_lifetime_seconds: 80000
             register:
                 use_ipsec: true

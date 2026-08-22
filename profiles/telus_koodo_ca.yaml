@@ -16,6 +16,10 @@ common:
         apn: ims
         epdg:
             address: epdg.epc.mnc220.mcc302.pub.3gppnetwork.org
+            configuration_attributes:
+                - identifier: 16390
+                  name: AssignedPCSCFIPv6
+                  type: v6
         ike:
             dpd:
                 enabled: false
@@ -58,4 +62,5 @@ common:
 plmn_overrides:
     "302220":
         ims:
-            epdg: null
+            epdg:
+                address: null

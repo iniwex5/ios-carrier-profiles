@@ -13,6 +13,14 @@ plmn_overrides:
         entitlement:
             entitlement_url: https://esim-es-open-prod-cyta.esimcloud.net/cyta/prod/executeAppleActions
         ims:
+            epdg:
+                configuration_attributes:
+                    - identifier: 16384
+                      name: AssignedPCSCFIPv4
+                      type: v4
+                    - identifier: 16386
+                      name: AssignedPCSCFIPv6
+                      type: v6
             ike:
                 nat_keepalive_enabled: true
                 child_sa:

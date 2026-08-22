@@ -29,6 +29,10 @@ common:
         apn: ims
         epdg:
             address: epdg.eps.truphone.net
+            configuration_attributes:
+                - identifier: 16384
+                  name: AssignedPCSCFIPv4
+                  type: v4
         ike:
             dpd:
                 enabled: false

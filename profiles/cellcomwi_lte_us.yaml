@@ -18,6 +18,14 @@ plmn_overrides:
             domain: ims.cellcom.com
             impi_format: imsi@carrierDomain
             impu_format: mdn@carrierDomain
+            epdg:
+                configuration_attributes:
+                    - identifier: 16384
+                      name: AssignedPCSCFIPv4
+                      type: v4
+                    - identifier: 16386
+                      name: AssignedPCSCFIPv6
+                      type: v6
             ike:
                 dpd:
                     enabled: false

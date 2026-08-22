@@ -10,7 +10,20 @@ common:
         apn: ims
         epdg:
             address: epdg.monaco-telecom.mc
+            configuration_attributes:
+                - identifier: 16384
+                  name: AssignedPCSCFIPv4
+                  type: v4
         ike:
+            child_sa:
+                lifetime_seconds: 86400
+                proposals:
+                    - encryption:
+                        - aes256
+                      integrity:
+                        - sha512
+                      pfs_group: modp2048
+                      lifetime_seconds: 86400
             nat_keepalive_enabled: true
             sa_lifetime_seconds: 86400
         ip_stack: ipv4

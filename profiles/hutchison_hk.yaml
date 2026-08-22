@@ -15,6 +15,13 @@ common:
         apn: ims
         epdg:
             address: wlan.three.com.hk
+            configuration_attributes:
+                - identifier: 16384
+                  name: AssignedPCSCFIPv4
+                  type: v4
+                - identifier: 16386
+                  name: AssignedPCSCFIPv6
+                  type: v6
         ike:
             child_sa:
                 lifetime_seconds: 80000

@@ -17,6 +17,13 @@ plmn_overrides:
             ip_stack: ipv4v6
             epdg:
                 address: epdg.pti.mnc110.mcc310.pub.3gppnetwork.org
+                configuration_attributes:
+                    - identifier: 16384
+                      name: AssignedPCSCFIPv4
+                      type: v4
+                    - identifier: 16386
+                      name: AssignedPCSCFIPv6
+                      type: v6
             ike:
                 proposals:
                     - encryption:
@@ -33,6 +40,15 @@ plmn_overrides:
                 dpd:
                     enabled: false
                     interval_seconds: 600
+                child_sa:
+                    proposals:
+                        - encryption:
+                            - aes256
+                          integrity:
+                            - sha512
+                          pfs_group: modp2048
+                          lifetime_seconds: 86400
+                    lifetime_seconds: 86400
                 local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
                 sa_lifetime_seconds: 86400
             register:

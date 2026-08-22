@@ -8,6 +8,14 @@ supported_plmns:
 common:
     ims:
         apn: ims
+        epdg:
+            configuration_attributes:
+                - identifier: 16389
+                  name: AssignedPCSCFIPv4
+                  type: v4
+                - identifier: 16390
+                  name: AssignedPCSCFIPv6
+                  type: v6
         ike:
             dpd:
                 enabled: false

@@ -14,6 +14,14 @@ plmn_overrides:
             entitlement_url: https://es.tim.it/new-entitlement/
         ims:
             apn: ims
+            epdg:
+                configuration_attributes:
+                    - identifier: 20
+                      name: AssignedPCSCFIPv4
+                      type: v4
+                    - identifier: 21
+                      name: AssignedPCSCFIPv6
+                      type: v6
             ike:
                 nat_keepalive_enabled: true
                 local_identifier: PseudoIMSI@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org

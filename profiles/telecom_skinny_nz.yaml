@@ -12,6 +12,13 @@ plmn_overrides:
             ip_stack: ipv6
             epdg:
                 address: epdg.epc.mnc005.mcc530.pub.3gppnetwork.spark.co.nz
+                configuration_attributes:
+                    - identifier: 20
+                      name: AssignedPCSCFIPv4
+                      type: v4
+                    - identifier: 21
+                      name: AssignedPCSCFIPv6
+                      type: v6
             ike:
                 dpd:
                     enabled: false

@@ -11,6 +11,13 @@ common:
         apn: ims
         epdg:
             address: epdg.epc.mnc009.mcc510.pub.3gppnetwork.org
+            configuration_attributes:
+                - identifier: 16389
+                  name: AssignedPCSCFIPv4
+                  type: v4
+                - identifier: 16390
+                  name: AssignedPCSCFIPv6
+                  type: v6
         ike:
             dpd:
                 enabled: false
@@ -35,4 +42,5 @@ common:
 plmn_overrides:
     "51009":
         ims:
-            epdg: null
+            epdg:
+                address: null

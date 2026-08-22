@@ -17,6 +17,10 @@ plmn_overrides:
             ip_stack: ipv4v6
             epdg:
                 address: epdg.ims.mnc010.mcc716.pub.3gppnetwork.org
+                configuration_attributes:
+                    - identifier: 16389
+                      name: AssignedPCSCFIPv4
+                      type: v4
             ike:
                 proposals:
                     - encryption:

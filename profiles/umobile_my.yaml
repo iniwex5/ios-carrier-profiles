@@ -14,6 +14,14 @@ plmn_overrides:
             entitlement_url: https://apple-es.u.com.my
         ims:
             apn: ims
+            epdg:
+                configuration_attributes:
+                    - identifier: 16384
+                      name: AssignedPCSCFIPv4
+                      type: v4
+                    - identifier: 16386
+                      name: AssignedPCSCFIPv6
+                      type: v6
             ike:
                 proposals:
                     - encryption:

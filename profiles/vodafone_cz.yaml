@@ -14,6 +14,11 @@ plmn_overrides:
             entitlement_url: https://es-cz.multiopco.entitlement.vodafone.com:4452/ium-OEMInterface/servlet/IUMServlet
         ims:
             apn: ims
+            epdg:
+                configuration_attributes:
+                    - identifier: 20
+                      name: AssignedPCSCFIPv4
+                      type: v4
             ike:
                 dpd:
                     enabled: false

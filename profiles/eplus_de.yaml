@@ -17,6 +17,13 @@ plmn_overrides:
             ip_stack: ipv6
             epdg:
                 address: epdg.epc.mnc007.mcc262.pub.3gppnetwork.org
+                configuration_attributes:
+                    - identifier: 16384
+                      name: AssignedPCSCFIPv4
+                      type: v4
+                    - identifier: 16390
+                      name: AssignedPCSCFIPv6
+                      type: v6
             ike:
                 nat_keepalive_enabled: true
                 nat_keepalive_seconds: 20

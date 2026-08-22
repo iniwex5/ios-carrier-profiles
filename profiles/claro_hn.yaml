@@ -11,6 +11,13 @@ common:
         apn: ims
         epdg:
             address: epdg.ims.mnc001.mcc708.pub.3gppnetwork.org
+            configuration_attributes:
+                - identifier: 16389
+                  name: AssignedPCSCFIPv4
+                  type: v4
+                - identifier: 16390
+                  name: AssignedPCSCFIPv6
+                  type: v6
         ike:
             child_sa:
                 lifetime_seconds: 86400

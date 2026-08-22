@@ -34,6 +34,14 @@ common:
         entitlement_url: https://hpdegprod.jio.com:8181/ium-OEMInterface/servlet/IUMServlet
     ims:
         apn: ims
+        epdg:
+            configuration_attributes:
+                - identifier: 16384
+                  name: AssignedPCSCFIPv4
+                  type: v4
+                - identifier: 16390
+                  name: AssignedPCSCFIPv6
+                  type: v6
         ike:
             dpd:
                 enabled: true

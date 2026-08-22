@@ -15,6 +15,20 @@ plmn_overrides:
         ims:
             apn: ims
             ip_stack: ipv4v6
+            epdg:
+                configuration_attributes:
+                    - identifier: 16384
+                      name: AssignedPCSCFIPv4
+                      type: v4
+                    - identifier: 20
+                      name: AssignedPCSCFIPv4
+                      type: v4
+                    - identifier: 16386
+                      name: AssignedPCSCFIPv6
+                      type: v6
+                    - identifier: 21
+                      name: AssignedPCSCFIPv6
+                      type: v6
             ike:
                 proposals:
                     - encryption:
@@ -23,6 +37,17 @@ plmn_overrides:
                         - sha256
                       prf:
                         - sha256
+                      dh_groups:
+                        - modp2048
+                      lifetime_seconds: 86400
+                      authentication_method: None
+                      eap_method: EAP-AKA
+                    - encryption:
+                        - aes256
+                      integrity:
+                        - sha512
+                      prf:
+                        - sha512
                       dh_groups:
                         - modp2048
                       lifetime_seconds: 86400

@@ -13,6 +13,11 @@ common:
         entitlement_url: https://apple-entitlement.sd-sfr.fr
     ims:
         apn: ims
+        epdg:
+            configuration_attributes:
+                - identifier: 16390
+                  name: AssignedPCSCFIPv6
+                  type: v6
         ike:
             child_sa:
                 lifetime_seconds: 86400

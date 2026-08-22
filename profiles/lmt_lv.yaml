@@ -13,6 +13,20 @@ plmn_overrides:
         entitlement:
             entitlement_url: https://es.mnc001.mcc247.pub.3gppnetwork.org:8443/entitlement
         ims:
+            epdg:
+                configuration_attributes:
+                    - identifier: 16384
+                      name: AssignedPCSCFIPv4
+                      type: v4
+                    - identifier: 20
+                      name: AssignedPCSCFIPv4
+                      type: v4
+                    - identifier: 16386
+                      name: AssignedPCSCFIPv6
+                      type: v6
+                    - identifier: 21
+                      name: AssignedPCSCFIPv6
+                      type: v6
             ike:
                 child_sa:
                     proposals:

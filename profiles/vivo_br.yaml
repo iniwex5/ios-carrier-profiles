@@ -17,6 +17,14 @@ common:
         entitlement_url: https://aes.mnc010.mcc724.pub.3gppnetwork.org/entitlement/
     ims:
         apn: ims
+        epdg:
+            configuration_attributes:
+                - identifier: 16384
+                  name: AssignedPCSCFIPv4
+                  type: v4
+                - identifier: 16386
+                  name: AssignedPCSCFIPv6
+                  type: v6
         ike:
             child_sa:
                 lifetime_seconds: 86400

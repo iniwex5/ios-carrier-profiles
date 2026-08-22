@@ -13,6 +13,11 @@ common:
         entitlement_url: https://es-nl.multiopco.entitlement.vodafone.com:4454/ium-OEMInterface/servlet/IUMServlet
     ims:
         apn: ims
+        epdg:
+            configuration_attributes:
+                - identifier: 16384
+                  name: AssignedPCSCFIPv4
+                  type: v4
         ike:
             child_sa:
                 lifetime_seconds: 80000

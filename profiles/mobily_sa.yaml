@@ -17,6 +17,13 @@ plmn_overrides:
             ip_stack: ipv4v6
             epdg:
                 address: epdg.mobily.com.sa
+                configuration_attributes:
+                    - identifier: 16384
+                      name: AssignedPCSCFIPv4
+                      type: v4
+                    - identifier: 16386
+                      name: AssignedPCSCFIPv6
+                      type: v6
             ike:
                 nat_keepalive_enabled: true
                 child_sa:

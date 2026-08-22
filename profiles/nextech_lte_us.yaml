@@ -18,6 +18,14 @@ plmn_overrides:
             domain: ims.mnc420.mcc312.3gppnetwork.org
             impi_format: imsi@carrierDomain
             impu_format: imsi@carrierDomain
+            epdg:
+                configuration_attributes:
+                    - identifier: 16384
+                      name: AssignedPCSCFIPv4
+                      type: v4
+                    - identifier: 16386
+                      name: AssignedPCSCFIPv6
+                      type: v6
             ike:
                 proposals:
                     - encryption:

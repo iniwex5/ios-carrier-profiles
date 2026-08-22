@@ -8,5 +8,13 @@ common: {}
 plmn_overrides:
     "25099":
         ims:
+            epdg:
+                configuration_attributes:
+                    - identifier: 20
+                      name: AssignedPCSCFIPv4
+                      type: v4
+                    - identifier: 21
+                      name: AssignedPCSCFIPv6
+                      type: v6
             ike:
                 sa_lifetime_seconds: 80000

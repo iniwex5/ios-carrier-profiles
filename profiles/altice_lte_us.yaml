@@ -13,6 +13,17 @@ common:
         entitlement_url: https://esrv.mnc390.mcc313.pub.3gppnetwork.org/entitlement/
     ims:
         apn: ims
+        epdg:
+            configuration_attributes:
+                - identifier: 16384
+                  name: AssignedPCSCFIPv4
+                  type: v4
+                - identifier: 16386
+                  name: AssignedPCSCFIPv6
+                  type: v6
+                - identifier: 16386
+                  name: AssignedPCSCFIPv6
+                  type: v6
         ike:
             child_sa:
                 lifetime_seconds: 80000

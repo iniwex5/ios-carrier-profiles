@@ -10,6 +10,11 @@ plmn_overrides:
         ims:
             apn: ims
             ip_stack: ipv6
+            epdg:
+                configuration_attributes:
+                    - identifier: 16390
+                      name: AssignedPCSCFIPv6
+                      type: v6
             ike:
                 proposals:
                     - encryption:
