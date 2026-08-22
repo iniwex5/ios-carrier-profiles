@@ -1,0 +1,36 @@
+version: 3
+kind: carrier_bundle
+id: apple_meditel_ma
+bundle: Meditel_ma.bundle
+supported_plmns:
+    - "60400"
+common: {}
+plmn_overrides:
+    "60400":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 81
+        entitlement:
+            entitlement_url: https://aes.orange.ma/ium-OEMInterface/servlet/IUMServlet
+        ims:
+            register:
+                use_ipsec: true
+            signaling:
+                support_p_early_media: false
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - "403"
+                        - "408"
+                        - 5XX
+                contact:
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            media:
+                rtp_inactivity_seconds: 20
+            volte:
+                enable_volte_by_default: true

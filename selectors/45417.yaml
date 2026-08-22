@@ -1,0 +1,8 @@
+version: 2
+plmn: "45417"
+profiles:
+    - id: apple_smartone_hk
+      path: profiles/smartone_hk.yaml
+      generic: true
+      selectors:
+        - raw: "45417"

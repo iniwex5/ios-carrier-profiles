@@ -1,0 +1,70 @@
+version: 3
+kind: carrier_bundle
+id: apple_stc_sa
+bundle: STC_sa.bundle
+supported_plmns:
+    - "42001"
+common: {}
+plmn_overrides:
+    "42001":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 9216
+        entitlement:
+            entitlement_url: https://api.stc.com.sa/a-iot/degEntlMgmt/gateway?apiKey=VGMLrNXbSwFfhy4Z8sZa16hsryu7x0bU76KsH8O
+        ims:
+            apn: IMS
+            ip_stack: ipv4
+            ike:
+                proposals:
+                    - encryption:
+                        - aes128
+                      integrity:
+                        - sha256
+                      prf:
+                        - sha256
+                      dh_groups:
+                        - modp2048
+                      lifetime_seconds: 80000
+                      authentication_method: None
+                      eap_method: EAP-AKA
+                dpd:
+                    enabled: false
+                    interval_seconds: 600
+                child_sa:
+                    proposals:
+                        - encryption:
+                            - aes128
+                          integrity:
+                            - sha256
+                          pfs_group: modp2048
+                          lifetime_seconds: 80000
+                    lifetime_seconds: 80000
+                local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                sa_lifetime_seconds: 80000
+            register:
+                use_ipsec: true
+                include_cellular_network_info: true
+            signaling:
+                preconditions: supported
+                support_p_early_media: true
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - 3XX
+                        - 5XX
+                        - 6XX
+                contact:
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            media:
+                rtp_inactivity_seconds: 25
+                remote_rtcp_deactivation: true
+            ussi:
+                enabled: true
+            volte:
+                enable_volte_by_default: true

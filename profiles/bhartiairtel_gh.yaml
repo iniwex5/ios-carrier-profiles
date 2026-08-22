@@ -1,0 +1,7 @@
+version: 3
+kind: carrier_bundle
+id: apple_bhartiairtel_gh
+bundle: BhartiAirtel_gh.bundle
+supported_plmns:
+    - "62006"
+common: {}

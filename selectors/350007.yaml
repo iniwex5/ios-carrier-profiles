@@ -1,0 +1,8 @@
+version: 2
+plmn: "350007"
+profiles:
+    - id: apple_paradise_bm
+      path: profiles/paradise_bm.yaml
+      generic: true
+      selectors:
+        - raw: "350007"

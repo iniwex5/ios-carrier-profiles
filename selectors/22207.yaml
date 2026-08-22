@@ -1,0 +1,8 @@
+version: 2
+plmn: "22207"
+profiles:
+    - id: apple_tim_kena_it
+      path: profiles/tim_kena_it.yaml
+      generic: true
+      selectors:
+        - raw: "22207"

@@ -1,0 +1,13 @@
+version: 2
+plmn: "20820"
+profiles:
+    - id: apple_bouygues_fr
+      path: profiles/bouygues_fr.yaml
+      generic: true
+      selectors:
+        - raw: "20820"
+        - raw: 20820_GID1-4C504D
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 4C504D

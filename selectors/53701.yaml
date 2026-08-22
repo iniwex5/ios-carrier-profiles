@@ -1,0 +1,8 @@
+version: 2
+plmn: "53701"
+profiles:
+    - id: apple_bmobile_pg
+      path: profiles/bmobile_pg.yaml
+      generic: true
+      selectors:
+        - raw: "53701"

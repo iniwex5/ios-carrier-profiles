@@ -1,0 +1,8 @@
+version: 2
+plmn: "314020"
+profiles:
+    - id: apple_charter_nr_us
+      path: profiles/charter_nr_us.yaml
+      generic: true
+      selectors:
+        - raw: "314020"

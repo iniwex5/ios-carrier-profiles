@@ -1,0 +1,55 @@
+version: 3
+kind: carrier_bundle
+id: apple_viva_kw
+bundle: Viva_kw.bundle
+supported_plmns:
+    - "41904"
+common: {}
+plmn_overrides:
+    "41904":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 9217
+        entitlement:
+            entitlement_url: https://esim.viva.com.kw/rest/deviceInterface/v1/service
+        ims:
+            apn: ims
+            ip_stack: ipv4
+            ike:
+                nat_keepalive_enabled: true
+                child_sa:
+                    proposals:
+                        - encryption:
+                            - aes128
+                          integrity:
+                            - sha256
+                          pfs_group: modp2048
+                          lifetime_seconds: 86400
+                    lifetime_seconds: 86400
+                sa_lifetime_seconds: 86400
+            register:
+                use_ipsec: true
+                include_cellular_network_info: true
+            signaling:
+                max_udp_message_size: 5000
+                preconditions: unsupported
+                support_p_early_media: true
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - 3XX
+                        - 5XX
+                        - 6XX
+                contact:
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            media:
+                rtp_inactivity_seconds: 25
+            ussi:
+                enabled: true
+            volte:
+                enable_volte_by_default: true

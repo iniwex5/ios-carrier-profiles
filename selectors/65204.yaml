@@ -1,0 +1,8 @@
+version: 2
+plmn: "65204"
+profiles:
+    - id: apple_btc_bw
+      path: profiles/btc_bw.yaml
+      generic: true
+      selectors:
+        - raw: "65204"

@@ -1,0 +1,58 @@
+version: 3
+kind: carrier_bundle
+id: apple_sonera_fi
+bundle: Sonera_fi.bundle
+supported_plmns:
+    - "24491"
+common: {}
+plmn_overrides:
+    "24491":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 11265
+        entitlement:
+            entitlement_url: https://es.mnc091.mcc244.pub.3gppnetwork.org:8443
+        ims:
+            apn: ims
+            ip_stack: ipv4v6
+            ike:
+                proposals:
+                    - encryption:
+                        - aes256
+                      integrity:
+                        - sha256
+                      prf:
+                        - sha256
+                      dh_groups:
+                        - modp2048
+                      lifetime_seconds: 86400
+                      authentication_method: None
+                      eap_method: EAP-AKA
+                dpd:
+                    enabled: false
+                    interval_seconds: 600
+                child_sa:
+                    proposals:
+                        - encryption:
+                            - aes256
+                          integrity:
+                            - sha256
+                          lifetime_seconds: 86400
+                    lifetime_seconds: 86400
+                local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                sa_lifetime_seconds: 86400
+            register:
+                use_ipsec: true
+                include_cellular_network_info: true
+            signaling:
+                preconditions: supported
+                support_p_early_media: true
+                contact:
+                    always_add_sip_instance: true
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+            volte:
+                enable_volte_by_default: true

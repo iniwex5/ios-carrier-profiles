@@ -1,0 +1,11 @@
+version: 2
+plmn: "45408"
+profiles:
+    - id: apple_truphone_us
+      path: profiles/truphone_us.yaml
+      selectors:
+        - raw: 45408_GID1-547275554B3030656E
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 547275554B3030656E

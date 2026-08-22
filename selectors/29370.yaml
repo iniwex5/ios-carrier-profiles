@@ -1,0 +1,8 @@
+version: 2
+plmn: "29370"
+profiles:
+    - id: apple_telemach_si
+      path: profiles/telemach_si.yaml
+      generic: true
+      selectors:
+        - raw: "29370"

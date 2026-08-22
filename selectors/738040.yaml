@@ -1,0 +1,8 @@
+version: 2
+plmn: "738040"
+profiles:
+    - id: apple_enetworks_gy
+      path: profiles/enetworks_gy.yaml
+      generic: true
+      selectors:
+        - raw: "738040"

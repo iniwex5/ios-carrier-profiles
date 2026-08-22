@@ -1,0 +1,8 @@
+version: 2
+plmn: "313390"
+profiles:
+    - id: apple_altice_lte_us
+      path: profiles/altice_lte_us.yaml
+      generic: true
+      selectors:
+        - raw: "313390"

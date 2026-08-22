@@ -1,0 +1,21 @@
+version: 3
+kind: carrier_bundle
+id: apple_vivacom_bg
+bundle: Vivacom_bg.bundle
+supported_plmns:
+    - "28403"
+common: {}
+plmn_overrides:
+    "28403":
+        ims:
+            signaling:
+                preconditions: supported
+                support_p_early_media: true
+                contact:
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+            volte:
+                enable_volte_by_default: true

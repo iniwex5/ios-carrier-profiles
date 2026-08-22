@@ -1,0 +1,119 @@
+version: 2
+plmn: "21407"
+profiles:
+    - id: apple_movistar_ar
+      path: profiles/movistar_ar.yaml
+      selectors:
+        - raw: 21407_ID-895407
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "895407"
+    - id: apple_movistar_cl
+      path: profiles/movistar_cl.yaml
+      selectors:
+        - raw: 21407_ID-895602
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "895602"
+    - id: apple_movistar_co
+      path: profiles/movistar_co.yaml
+      selectors:
+        - raw: 21407_ID-8957123
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8957123"
+    - id: apple_movistar_ec
+      path: profiles/movistar_ec.yaml
+      selectors:
+        - raw: 21407_ID-8959300
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8959300"
+    - id: apple_movistar_gt
+      path: profiles/movistar_gt.yaml
+      selectors:
+        - raw: 21407_ID-89502030
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89502030"
+    - id: apple_movistar_ni
+      path: profiles/movistar_ni.yaml
+      selectors:
+        - raw: 21407_ID-8950530
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8950530"
+    - id: apple_movistar_pa
+      path: profiles/movistar_pa.yaml
+      selectors:
+        - raw: 21407_ID-8950702
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8950702"
+    - id: apple_movistar_pe
+      path: profiles/movistar_pe.yaml
+      selectors:
+        - raw: 21407_ID-895106
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "895106"
+    - id: apple_movistar_sv
+      path: profiles/movistar_sv.yaml
+      selectors:
+        - raw: 21407_ID-89503040
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89503040"
+    - id: apple_movistar_uy
+      path: profiles/movistar_uy.yaml
+      selectors:
+        - raw: 21407_ID-8959807
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8959807"
+    - id: apple_setar_aw
+      path: profiles/setar_aw.yaml
+      selectors:
+        - raw: 21407_ID-8929736301
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8929736301"
+    - id: apple_telefonica_es
+      path: profiles/telefonica_es.yaml
+      generic: true
+      selectors:
+        - raw: "21407"
+    - id: apple_vivo_br
+      path: profiles/vivo_br.yaml
+      selectors:
+        - raw: 21407_ID-895506
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "895506"
+        - raw: 21407_ID-895510
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "895510"
+        - raw: 21407_ID-895511
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "895511"
+        - raw: 21407_ID-895523
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "895523"

@@ -1,0 +1,8 @@
+version: 2
+plmn: "74001"
+profiles:
+    - id: apple_porta_ec
+      path: profiles/porta_ec.yaml
+      generic: true
+      selectors:
+        - raw: "74001"

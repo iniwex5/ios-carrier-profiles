@@ -1,0 +1,37 @@
+version: 3
+kind: carrier_bundle
+id: apple_iusacell_unefon_mx
+bundle: iusacell_Unefon_mx.bundle
+supported_plmns:
+    - "22201"
+    - "33405"
+    - "334050"
+common:
+    ims:
+        apn: ims
+        ip_stack: ipv4
+        media:
+            rtcp_inactivity_seconds: 36000
+            rtp_inactivity_seconds: 20
+        register:
+            use_ipsec: true
+        signaling:
+            contact:
+                additional_contact_params:
+                    - selector: REGISTER,INVITE,INVITE:*
+                      params:
+                        - +g.3gpp.mid-call
+                        - +g.3gpp.srvcc-alerting
+                        - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+                always_add_sip_instance: true
+            csfb_on:
+                - method: INVITE
+                  statuses:
+                    - 3XX
+                    - 4XX
+                    - 5XX
+                    - 6XX
+            preconditions: unsupported
+            support_p_early_media: true
+        volte:
+            enable_volte_by_default: true

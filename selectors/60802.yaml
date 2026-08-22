@@ -1,0 +1,8 @@
+version: 2
+plmn: "60802"
+profiles:
+    - id: apple_tigo_sn
+      path: profiles/tigo_sn.yaml
+      generic: true
+      selectors:
+        - raw: "60802"

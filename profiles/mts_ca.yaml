@@ -1,0 +1,8 @@
+version: 3
+kind: carrier_bundle
+id: apple_mts_ca
+bundle: MTS_ca.bundle
+supported_plmns:
+    - "302370"
+    - "302660"
+common: {}

@@ -1,0 +1,14 @@
+version: 3
+kind: carrier_bundle
+id: apple_qtel_om
+bundle: Qtel_om.bundle
+supported_plmns:
+    - "42203"
+common: {}
+plmn_overrides:
+    "42203":
+        ims:
+            signaling:
+                support_p_early_media: false
+            volte:
+                enable_volte_by_default: true

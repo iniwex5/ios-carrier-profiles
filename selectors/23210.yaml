@@ -1,0 +1,49 @@
+version: 2
+plmn: "23210"
+profiles:
+    - id: apple_esimgo
+      path: profiles/esimgo.yaml
+      selectors:
+        - raw: 23210_GID1-0409
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "0409"
+    - id: apple_holafly
+      path: profiles/holafly.yaml
+      selectors:
+        - raw: 23210_GID1-0507_GID2-0507_ID-8935333
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "0507"
+            - field: gid2
+              match: prefix
+              value: "0507"
+            - field: iccid
+              match: prefix
+              value: "8935333"
+        - raw: 23210_GID1-0507_GID2-0507_ID-894310815
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "0507"
+            - field: gid2
+              match: prefix
+              value: "0507"
+            - field: iccid
+              match: prefix
+              value: "894310815"
+    - id: apple_hutchison_at
+      path: profiles/hutchison_at.yaml
+      generic: true
+      selectors:
+        - raw: "23210"
+    - id: apple_redteamobile
+      path: profiles/redteamobile.yaml
+      selectors:
+        - raw: 23210_ID-89852245280
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89852245280"

@@ -1,0 +1,8 @@
+version: 2
+plmn: "25902"
+profiles:
+    - id: apple_telia_md
+      path: profiles/telia_md.yaml
+      generic: true
+      selectors:
+        - raw: "25902"

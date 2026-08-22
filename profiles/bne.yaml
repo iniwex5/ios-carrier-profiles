@@ -1,0 +1,15 @@
+version: 3
+kind: carrier_bundle
+id: apple_bne
+bundle: BNE.bundle
+supported_plmns:
+    - "26006"
+    - "29505"
+    - "310840"
+    - "41677"
+    - "42501"
+    - "52505"
+common:
+    ims:
+        volte:
+            enable_volte_by_default: false

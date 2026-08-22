@@ -1,0 +1,8 @@
+version: 2
+plmn: "54720"
+profiles:
+    - id: apple_vini_pf
+      path: profiles/vini_pf.yaml
+      generic: true
+      selectors:
+        - raw: "54720"

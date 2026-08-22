@@ -1,0 +1,28 @@
+version: 3
+kind: carrier_bundle
+id: apple_rakuten_jp
+bundle: Rakuten_jp.bundle
+supported_plmns:
+    - "20801"
+    - "44011"
+common:
+    apple:
+        carrier_entitlements:
+            supported_entitlements: 11265
+    entitlement:
+        entitlement_url: https://entitlement.devicem.rm-n.jp/entitlement/
+    ims:
+        apn: ims
+        ip_stack: ipv6
+        media:
+            rtcp_interval_seconds: 5
+            rtp_inactivity_seconds: 15
+        register:
+            use_ipsec: true
+        signaling:
+            preconditions: supported
+            support_p_early_media: true
+        ussi:
+            enabled: true
+        volte:
+            enable_volte_by_default: true

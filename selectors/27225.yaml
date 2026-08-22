@@ -1,0 +1,16 @@
+version: 2
+plmn: "27225"
+profiles:
+    - id: apple_esimgo
+      path: profiles/esimgo.yaml
+      selectors:
+        - raw: 27225_GID1-0409
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "0409"
+    - id: apple_sky_ie
+      path: profiles/sky_ie.yaml
+      generic: true
+      selectors:
+        - raw: "27225"

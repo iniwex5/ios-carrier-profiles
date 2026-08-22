@@ -1,0 +1,14 @@
+version: 2
+plmn: "52502"
+profiles:
+    - id: apple_telefonica_esimflag
+      path: profiles/telefonica_esimflag.yaml
+      selectors:
+        - raw: 52502_GID1-80_ID-8910300
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "80"
+            - field: iccid
+              match: prefix
+              value: "8910300"

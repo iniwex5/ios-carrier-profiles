@@ -1,0 +1,11 @@
+version: 3
+kind: carrier_bundle
+id: apple_comcast_nr_us
+bundle: Comcast_NR_US.bundle
+supported_plmns:
+    - "310014"
+    - "314200"
+common:
+    ims:
+        volte:
+            enable_volte_by_default: false

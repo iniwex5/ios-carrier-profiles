@@ -1,0 +1,13 @@
+version: 3
+kind: carrier_bundle
+id: apple_atn_viya_vi
+bundle: ATN_Viya_vi.bundle
+supported_plmns:
+    - "311040"
+    - "311320"
+common:
+    ims:
+        signaling:
+            support_p_early_media: false
+        volte:
+            enable_volte_by_default: true

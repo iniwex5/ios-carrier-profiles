@@ -1,0 +1,8 @@
+version: 2
+plmn: "45605"
+profiles:
+    - id: apple_smart_kh
+      path: profiles/smart_kh.yaml
+      generic: true
+      selectors:
+        - raw: "45605"

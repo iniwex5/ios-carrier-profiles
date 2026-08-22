@@ -1,0 +1,8 @@
+version: 2
+plmn: "53001"
+profiles:
+    - id: apple_vodafone_nz
+      path: profiles/vodafone_nz.yaml
+      generic: true
+      selectors:
+        - raw: "53001"

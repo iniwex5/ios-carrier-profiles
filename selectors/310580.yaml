@@ -1,0 +1,8 @@
+version: 2
+plmn: "310580"
+profiles:
+    - id: apple_inland_lte_us
+      path: profiles/inland_lte_us.yaml
+      generic: true
+      selectors:
+        - raw: "310580"

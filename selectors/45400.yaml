@@ -1,0 +1,96 @@
+version: 2
+plmn: "45400"
+profiles:
+    - id: apple_affinityclick
+      path: profiles/affinityclick.yaml
+      selectors:
+        - raw: 45400_GID1-616C6F73696D31
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 616C6F73696D31
+    - id: apple_chinatelecom_hk
+      path: profiles/chinatelecom_hk.yaml
+      selectors:
+        - raw: 45400_ID-8985231
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8985231"
+    - id: apple_csl_hk
+      path: profiles/csl_hk.yaml
+      generic: true
+      selectors:
+        - raw: "45400"
+    - id: apple_csl_sunmobile_hk
+      path: profiles/csl_sunmobile_hk.yaml
+      selectors:
+        - raw: 45400_GID1-0103
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "0103"
+    - id: apple_knowroaming
+      path: profiles/knowroaming.yaml
+      selectors:
+        - raw: 45400_GID1-636f6e6e65637431
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 636F6E6E65637431
+    - id: apple_mysim
+      path: profiles/mysim.yaml
+      selectors:
+        - raw: 45400_GID1-434F423236303036
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 434F423236303036
+    - id: apple_redteamobile
+      path: profiles/redteamobile.yaml
+      selectors:
+        - raw: 45400_ID-89852245280
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89852245280"
+    - id: apple_roamless
+      path: profiles/roamless.yaml
+      selectors:
+        - raw: 45400_GID1-4D2E3F1A6B7C8D9E
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 4D2E3F1A6B7C8D9E
+    - id: apple_shinetown
+      path: profiles/shinetown.yaml
+      selectors:
+        - raw: 45400_GID1-AAAA
+          conditions:
+            - field: gid1
+              match: prefix
+              value: AAAA
+    - id: apple_simly
+      path: profiles/simly.yaml
+      selectors:
+        - raw: 45400_GID1-73696D6C7931
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 73696D6C7931
+    - id: apple_truphone_us
+      path: profiles/truphone_us.yaml
+      selectors:
+        - raw: 45400_GID1-547275554B3030656E
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 547275554B3030656E
+    - id: apple_webbing
+      path: profiles/webbing.yaml
+      selectors:
+        - raw: 45400_ID-8985235
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8985235"

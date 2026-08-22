@@ -1,0 +1,11 @@
+version: 2
+plmn: "28801"
+profiles:
+    - id: apple_faroesetelecom_fo
+      path: profiles/faroesetelecom_fo.yaml
+      selectors:
+        - raw: 28801_ID-8929801
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8929801"

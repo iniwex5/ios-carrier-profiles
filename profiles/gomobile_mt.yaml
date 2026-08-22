@@ -1,0 +1,12 @@
+version: 3
+kind: carrier_bundle
+id: apple_gomobile_mt
+bundle: GoMobile_mt.bundle
+supported_plmns:
+    - "27821"
+common: {}
+plmn_overrides:
+    "27821":
+        ims:
+            volte:
+                enable_volte_by_default: true

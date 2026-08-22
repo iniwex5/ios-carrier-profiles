@@ -1,0 +1,11 @@
+version: 2
+plmn: "45413"
+profiles:
+    - id: apple_multibyte
+      path: profiles/multibyte.yaml
+      selectors:
+        - raw: 45413_GID1-0331
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "0331"

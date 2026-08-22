@@ -1,0 +1,8 @@
+version: 2
+plmn: "51011"
+profiles:
+    - id: apple_xl_id
+      path: profiles/xl_id.yaml
+      generic: true
+      selectors:
+        - raw: "51011"

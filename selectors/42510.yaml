@@ -1,0 +1,8 @@
+version: 2
+plmn: "42510"
+profiles:
+    - id: apple_orange_il
+      path: profiles/orange_il.yaml
+      generic: true
+      selectors:
+        - raw: "42510"

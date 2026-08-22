@@ -1,0 +1,11 @@
+version: 2
+plmn: "20435"
+profiles:
+    - id: apple_airgsm
+      path: profiles/airgsm.yaml
+      selectors:
+        - raw: 20435_GID1-41
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "41"

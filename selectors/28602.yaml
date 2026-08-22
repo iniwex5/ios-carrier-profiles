@@ -1,0 +1,8 @@
+version: 2
+plmn: "28602"
+profiles:
+    - id: apple_vodafone_tr
+      path: profiles/vodafone_tr.yaml
+      generic: true
+      selectors:
+        - raw: "28602"

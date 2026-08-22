@@ -1,0 +1,51 @@
+version: 3
+kind: carrier_bundle
+id: apple_qtel_kw
+bundle: Qtel_kw.bundle
+supported_plmns:
+    - "41903"
+common: {}
+plmn_overrides:
+    "41903":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 9217
+        entitlement:
+            entitlement_url: https://es-prod.ooredoo.com.kw/rest/deviceInterface/v1/service
+        ims:
+            apn: IMS
+            ip_stack: ipv4
+            ike:
+                sa_lifetime_seconds: 80000
+            register:
+                use_ipsec: true
+                include_cellular_network_info: true
+            signaling:
+                max_udp_message_size: 5000
+                preconditions: unsupported
+                support_p_early_media: true
+                re_register_on:
+                    - method: REGISTER
+                      statuses:
+                        - "403"
+                        - "480"
+                        - "500"
+                        - "503"
+                        - "504"
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - 3XX
+                        - 5XX
+                        - 6XX
+                contact:
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            media:
+                rtp_inactivity_seconds: 15
+            volte:
+                enable_volte_by_default: true

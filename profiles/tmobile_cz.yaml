@@ -1,0 +1,64 @@
+version: 3
+kind: carrier_bundle
+id: apple_tmobile_cz
+bundle: TMobile_cz.bundle
+supported_plmns:
+    - "23001"
+common: {}
+plmn_overrides:
+    "23001":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 4203521
+        entitlement:
+            entitlement_url: https://entitlement-cz.telekom.net/
+        ims:
+            apn: ims
+            ip_stack: ipv6
+            ike:
+                proposals:
+                    - encryption:
+                        - aes256
+                      integrity:
+                        - sha256
+                      prf:
+                        - sha256
+                      dh_groups:
+                        - modp2048
+                      lifetime_seconds: 64800
+                      authentication_method: None
+                      eap_method: EAP-AKA
+                dpd:
+                    enabled: false
+                    interval_seconds: 600
+                child_sa:
+                    proposals:
+                        - encryption:
+                            - aes256
+                          integrity:
+                            - sha256
+                          lifetime_seconds: 64800
+                    lifetime_seconds: 64800
+                local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                sa_lifetime_seconds: 64800
+            register:
+                use_ipsec: true
+                include_cellular_network_info: true
+            signaling:
+                preconditions: supported
+                support_p_early_media: true
+                contact:
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*[primary]
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            media:
+                rtp_inactivity_seconds: 20
+                rtcp_inactivity_seconds: 180
+                rtcp_interval_seconds: 5
+            ussi:
+                enabled: true
+            volte:
+                enable_volte_by_default: true

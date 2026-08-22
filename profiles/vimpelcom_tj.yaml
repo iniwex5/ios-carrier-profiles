@@ -1,0 +1,7 @@
+version: 3
+kind: carrier_bundle
+id: apple_vimpelcom_tj
+bundle: VimpelCom_tj.bundle
+supported_plmns:
+    - "43605"
+common: {}

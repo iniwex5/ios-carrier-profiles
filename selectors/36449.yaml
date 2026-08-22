@@ -1,0 +1,8 @@
+version: 2
+plmn: "36449"
+profiles:
+    - id: apple_aliv_bs
+      path: profiles/aliv_bs.yaml
+      generic: true
+      selectors:
+        - raw: "36449"

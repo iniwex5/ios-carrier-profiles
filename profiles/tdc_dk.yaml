@@ -1,0 +1,68 @@
+version: 3
+kind: carrier_bundle
+id: apple_tdc_dk
+bundle: TDC_dk.bundle
+supported_plmns:
+    - "23801"
+common: {}
+plmn_overrides:
+    "23801":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 1041
+        entitlement:
+            entitlement_url: https://entitlement.tdc.dk:443/ium-OEMInterface/servlet/IUMServlet
+        ims:
+            apn: ims
+            ip_stack: ipv6
+            ike:
+                proposals:
+                    - encryption:
+                        - aes128
+                      integrity:
+                        - sha256
+                      prf:
+                        - sha256
+                      dh_groups:
+                        - modp2048
+                      lifetime_seconds: 80000
+                      authentication_method: None
+                      eap_method: EAP-AKA
+                nat_keepalive_enabled: true
+                nat_keepalive_seconds: 20
+                dpd:
+                    enabled: false
+                    interval_seconds: 600
+                child_sa:
+                    proposals:
+                        - encryption:
+                            - aes128
+                          integrity:
+                            - sha256
+                          lifetime_seconds: 80000
+                    lifetime_seconds: 80000
+                local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                sa_lifetime_seconds: 80000
+            register:
+                use_ipsec: true
+            signaling:
+                preconditions: supported
+                support_p_early_media: true
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - 3XX
+                        - 5XX
+                        - 6XX
+                contact:
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            media:
+                rtcp_inactivity_seconds: 36000
+                rtcp_interval_seconds: 5
+            volte:
+                enable_volte_by_default: true

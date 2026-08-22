@@ -1,0 +1,8 @@
+version: 3
+kind: carrier_bundle
+id: apple_sprint_boost_isim_lte_us
+bundle: Sprint_Boost_ISIM_LTE_US.bundle
+supported_plmns:
+    - "310120"
+    - "312530"
+common: {}

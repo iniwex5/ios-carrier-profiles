@@ -1,0 +1,8 @@
+version: 2
+plmn: "64704"
+profiles:
+    - id: apple_zeop_re
+      path: profiles/zeop_re.yaml
+      generic: true
+      selectors:
+        - raw: "64704"

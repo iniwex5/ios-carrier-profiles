@@ -1,0 +1,31 @@
+version: 3
+kind: carrier_bundle
+id: apple_ctm_mo
+bundle: CTM_mo.bundle
+supported_plmns:
+    - "45501"
+    - "45504"
+common:
+    apple:
+        carrier_entitlements:
+            supported_entitlements: 23553
+    entitlement:
+        entitlement_url: https://entitlement.ctm.net
+    ims:
+        apn: IMS
+        ip_stack: ipv4
+        register:
+            use_ipsec: true
+        signaling:
+            contact:
+                additional_contact_params:
+                    - selector: REGISTER,INVITE,INVITE:*
+                      params:
+                        - +g.3gpp.mid-call
+                        - +g.3gpp.srvcc-alerting
+            preconditions: unsupported
+            support_p_early_media: true
+        ussi:
+            enabled: true
+        volte:
+            enable_volte_by_default: true

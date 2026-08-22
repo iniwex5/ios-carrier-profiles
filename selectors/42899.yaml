@@ -1,0 +1,8 @@
+version: 2
+plmn: "42899"
+profiles:
+    - id: apple_mobicom_mn
+      path: profiles/mobicom_mn.yaml
+      generic: true
+      selectors:
+        - raw: "42899"

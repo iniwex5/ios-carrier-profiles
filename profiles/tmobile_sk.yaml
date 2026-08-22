@@ -1,0 +1,38 @@
+version: 3
+kind: carrier_bundle
+id: apple_tmobile_sk
+bundle: TMobile_sk.bundle
+supported_plmns:
+    - "23102"
+common: {}
+plmn_overrides:
+    "23102":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 4207617
+        entitlement:
+            entitlement_url: https://entitlement-sk.telekom.net
+        ims:
+            apn: ims
+            ip_stack: ipv6
+            register:
+                use_ipsec: true
+                include_cellular_network_info: true
+            signaling:
+                preconditions: supported
+                support_p_early_media: true
+                contact:
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*[primary]
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            media:
+                rtp_inactivity_seconds: 20
+                rtcp_inactivity_seconds: 180
+                rtcp_interval_seconds: 5
+            ussi:
+                enabled: true
+            volte:
+                enable_volte_by_default: true

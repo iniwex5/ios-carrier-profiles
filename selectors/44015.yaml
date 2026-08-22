@@ -1,0 +1,8 @@
+version: 2
+plmn: "44015"
+profiles:
+    - id: apple_softbank_bbb_jp
+      path: profiles/softbank_bbb_jp.yaml
+      generic: true
+      selectors:
+        - raw: "44015"

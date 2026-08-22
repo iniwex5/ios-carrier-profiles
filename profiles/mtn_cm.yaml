@@ -1,0 +1,7 @@
+version: 3
+kind: carrier_bundle
+id: apple_mtn_cm
+bundle: MTN_cm.bundle
+supported_plmns:
+    - "62401"
+common: {}

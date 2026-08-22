@@ -1,0 +1,65 @@
+version: 3
+kind: carrier_bundle
+id: apple_tmobile_mvno_us
+bundle: TMobile_MVNO_US.bundle
+supported_plmns:
+    - "310240"
+    - "310260"
+common:
+    apple:
+        carrier_entitlements:
+            supported_entitlements: 4194457
+    entitlement:
+        entitlement_url: https://eas3.msg.t-mobile.com
+    ims:
+        apn: ims
+        epdg:
+            address: ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
+        ike:
+            child_sa:
+                lifetime_seconds: 80000
+                proposals:
+                    - encryption:
+                        - aes256
+                      integrity:
+                        - sha256
+                      lifetime_seconds: 80000
+            dpd:
+                enabled: false
+                interval_seconds: 600
+            local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+            proposals:
+                - encryption:
+                    - aes256
+                  integrity:
+                    - sha256
+                  prf:
+                    - sha256
+                  dh_groups:
+                    - modp2048
+                  lifetime_seconds: 80000
+                  authentication_method: None
+                  eap_method: EAP-AKA
+            sa_lifetime_seconds: 80000
+        ip_stack: ipv4v6
+        media:
+            rtp_inactivity_seconds: 30
+        register:
+            use_ipsec: true
+        signaling:
+            contact:
+                additional_contact_params:
+                    - selector: REGISTER,INVITE,INVITE:*
+                      params:
+                        - +g.3gpp.mid-call
+                        - +g.3gpp.srvcc-alerting
+                        - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+                always_add_sip_instance: true
+            max_udp_message_size: 1200
+            preconditions: required
+            support_p_early_media: true
+        ussi:
+            enabled: true
+            response_timeout_milliseconds: 20000
+        volte:
+            enable_volte_by_default: true

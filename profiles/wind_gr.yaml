@@ -1,0 +1,53 @@
+version: 3
+kind: carrier_bundle
+id: apple_wind_gr
+bundle: Wind_gr.bundle
+supported_plmns:
+    - "20210"
+common: {}
+plmn_overrides:
+    "20210":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 1
+        entitlement:
+            entitlement_url: https://es.nova.gr
+        ims:
+            apn: ims
+            ip_stack: ipv6
+            ike:
+                nat_keepalive_enabled: true
+                child_sa:
+                    proposals:
+                        - encryption:
+                            - aes256
+                          integrity:
+                            - sha256
+                          pfs_group: modp2048
+                          lifetime_seconds: 86400
+                    lifetime_seconds: 86400
+                sa_lifetime_seconds: 80000
+            register:
+                use_ipsec: true
+                include_cellular_network_info: true
+            signaling:
+                preconditions: supported
+                support_p_early_media: true
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - 5XX
+                        - "403"
+                        - "380"
+                contact:
+                    always_add_sip_instance: true
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            media:
+                rtp_inactivity_seconds: 30
+            volte:
+                enable_volte_by_default: true

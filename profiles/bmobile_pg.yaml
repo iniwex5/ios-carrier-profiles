@@ -1,0 +1,7 @@
+version: 3
+kind: carrier_bundle
+id: apple_bmobile_pg
+bundle: bMobile_pg.bundle
+supported_plmns:
+    - "53701"
+common: {}

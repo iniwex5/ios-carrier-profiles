@@ -1,0 +1,21 @@
+version: 3
+kind: carrier_bundle
+id: apple_airgsm
+bundle: AirGSM.bundle
+supported_plmns:
+    - "20408"
+    - "20435"
+    - "20601"
+    - "20628"
+    - "20801"
+    - "20809"
+    - "23410"
+    - "29505"
+    - "310840"
+    - "52501"
+    - "52505"
+    - "732123"
+common:
+    ims:
+        volte:
+            enable_volte_by_default: false

@@ -1,0 +1,24 @@
+version: 3
+kind: carrier_bundle
+id: apple_videotron_fizz_ca
+bundle: Videotron_Fizz_ca.bundle
+supported_plmns:
+    - "302500"
+common: {}
+plmn_overrides:
+    "302500":
+        ims:
+            register:
+                use_ipsec: true
+            signaling:
+                preconditions: supported
+                support_p_early_media: true
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - "380"
+                        - "414"
+                        - "499"
+                        - "606"
+            volte:
+                enable_volte_by_default: true

@@ -1,0 +1,8 @@
+version: 2
+plmn: "21910"
+profiles:
+    - id: apple_mobilkom_hr
+      path: profiles/mobilkom_hr.yaml
+      generic: true
+      selectors:
+        - raw: "21910"

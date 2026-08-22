@@ -1,0 +1,37 @@
+version: 3
+kind: carrier_bundle
+id: apple_telecom_skinny_nz
+bundle: Telecom_Skinny_nz.bundle
+supported_plmns:
+    - "53005"
+common: {}
+plmn_overrides:
+    "53005":
+        ims:
+            epdg:
+                address: epdg.epc.mnc005.mcc530.pub.3gppnetwork.spark.co.nz
+            ike:
+                dpd:
+                    enabled: false
+                    interval_seconds: 600
+                child_sa:
+                    proposals:
+                        - encryption:
+                            - aes256
+                          integrity:
+                            - sha256
+                          pfs_group: modp2048
+                          lifetime_seconds: 86400
+                    lifetime_seconds: 86400
+                local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                sa_lifetime_seconds: 86400
+            register:
+                use_ipsec: true
+                include_cellular_network_info: true
+            signaling:
+                preconditions: supported
+                support_p_early_media: true
+            media:
+                rtp_inactivity_seconds: 10
+            volte:
+                enable_volte_by_default: true

@@ -1,0 +1,55 @@
+version: 3
+kind: carrier_bundle
+id: apple_dtac_th
+bundle: dtac_th.bundle
+supported_plmns:
+    - "52005"
+    - "52018"
+common:
+    apple:
+        carrier_entitlements:
+            supported_entitlements: 11473
+    entitlement:
+        entitlement_url: https://es-new.truecorp.co.th/apple
+    ims:
+        apn: ims
+        domain: ims.mnc005.mcc520.3gppnetwork.org
+        ike:
+            dpd:
+                enabled: false
+                interval_seconds: 600
+            local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+            sa_lifetime_seconds: 80000
+        impi_format: imsi@carrierDomain
+        impu_format: msisdn@carrierDomain
+        ip_stack: ipv6
+        register:
+            include_cellular_network_info: true
+            use_ipsec: true
+        signaling:
+            contact:
+                additional_contact_params:
+                    - selector: REGISTER,INVITE,INVITE:*
+                      params:
+                        - +g.3gpp.mid-call
+                        - +g.3gpp.srvcc-alerting
+                        - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            csfb_on:
+                - method: INVITE
+                  statuses:
+                    - "380"
+                    - "500"
+                    - "503"
+                    - "504"
+            max_udp_message_size: 1200
+            preconditions: supported
+            support_p_early_media: true
+        ussi:
+            enabled: true
+        volte:
+            enable_volte_by_default: true
+plmn_overrides:
+    "52018":
+        ims:
+            epdg:
+                address: epdg.epc.mnc005.mcc520.pub.3gppnetwork.org

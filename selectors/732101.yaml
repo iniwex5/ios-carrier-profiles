@@ -1,0 +1,8 @@
+version: 2
+plmn: "732101"
+profiles:
+    - id: apple_comcel_co
+      path: profiles/comcel_co.yaml
+      generic: true
+      selectors:
+        - raw: "732101"

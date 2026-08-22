@@ -1,0 +1,8 @@
+version: 2
+plmn: "50502"
+profiles:
+    - id: apple_optus_au
+      path: profiles/optus_au.yaml
+      generic: true
+      selectors:
+        - raw: "50502"

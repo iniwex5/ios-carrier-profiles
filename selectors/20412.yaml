@@ -1,0 +1,8 @@
+version: 2
+plmn: "20412"
+profiles:
+    - id: apple_kpn_telfort_nl
+      path: profiles/kpn_telfort_nl.yaml
+      generic: true
+      selectors:
+        - raw: "20412"

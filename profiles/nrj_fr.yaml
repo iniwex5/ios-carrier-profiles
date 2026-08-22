@@ -1,0 +1,14 @@
+version: 3
+kind: carrier_bundle
+id: apple_nrj_fr
+bundle: NRJ_fr.bundle
+supported_plmns:
+    - "20601"
+    - "20801"
+    - "20826"
+common:
+    ims:
+        signaling:
+            support_p_early_media: false
+        volte:
+            enable_volte_by_default: true

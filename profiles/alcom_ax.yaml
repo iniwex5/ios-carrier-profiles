@@ -1,0 +1,20 @@
+version: 3
+kind: carrier_bundle
+id: apple_alcom_ax
+bundle: Alcom_ax.bundle
+supported_plmns:
+    - "24414"
+common: {}
+plmn_overrides:
+    "24414":
+        ims:
+            register:
+                use_ipsec: true
+            signaling:
+                contact:
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting

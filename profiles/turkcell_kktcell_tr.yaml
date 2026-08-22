@@ -1,0 +1,7 @@
+version: 3
+kind: carrier_bundle
+id: apple_turkcell_kktcell_tr
+bundle: Turkcell_KKTCELL_tr.bundle
+supported_plmns:
+    - "28601"
+common: {}

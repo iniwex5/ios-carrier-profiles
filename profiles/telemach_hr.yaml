@@ -1,0 +1,7 @@
+version: 3
+kind: carrier_bundle
+id: apple_telemach_hr
+bundle: Telemach_hr.bundle
+supported_plmns:
+    - "21902"
+common: {}

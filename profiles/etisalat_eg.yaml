@@ -1,0 +1,44 @@
+version: 3
+kind: carrier_bundle
+id: apple_etisalat_eg
+bundle: Etisalat_eg.bundle
+supported_plmns:
+    - "60203"
+common: {}
+plmn_overrides:
+    "60203":
+        ims:
+            apn: ims
+            ip_stack: ipv4v6
+            register:
+                use_ipsec: true
+                include_cellular_network_info: true
+            signaling:
+                preconditions: supported
+                support_p_early_media: true
+                re_register_on:
+                    - method: INVITE
+                      statuses:
+                        - "403"
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - 3XX
+                        - 5XX
+                        - "600"
+                        - "604"
+                        - "606"
+                contact:
+                    always_add_sip_instance: true
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            media:
+                rtp_inactivity_seconds: 30
+                rtcp_inactivity_seconds: 25
+                rtcp_interval_seconds: 5
+            volte:
+                enable_volte_by_default: true

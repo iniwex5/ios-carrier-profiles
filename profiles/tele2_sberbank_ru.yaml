@@ -1,0 +1,9 @@
+version: 3
+kind: carrier_bundle
+id: apple_tele2_sberbank_ru
+bundle: Tele2_Sberbank_ru.bundle
+supported_plmns:
+    - "24007"
+    - "25020"
+    - "25050"
+common: {}

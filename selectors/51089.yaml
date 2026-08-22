@@ -1,0 +1,8 @@
+version: 2
+plmn: "51089"
+profiles:
+    - id: apple_indosat_id
+      path: profiles/indosat_id.yaml
+      generic: true
+      selectors:
+        - raw: "51089"

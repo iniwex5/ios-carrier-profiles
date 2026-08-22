@@ -1,0 +1,8 @@
+version: 2
+plmn: "40001"
+profiles:
+    - id: apple_telia_az
+      path: profiles/telia_az.yaml
+      generic: true
+      selectors:
+        - raw: "40001"

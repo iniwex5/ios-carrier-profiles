@@ -1,0 +1,22 @@
+version: 3
+kind: carrier_bundle
+id: apple_telekomslovenije_ba
+bundle: TelekomSlovenije_ba.bundle
+supported_plmns:
+    - "21890"
+common: {}
+plmn_overrides:
+    "21890":
+        ims:
+            signaling:
+                contact:
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            media:
+                rtp_inactivity_seconds: 20
+            volte:
+                enable_volte_by_default: true

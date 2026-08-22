@@ -1,0 +1,8 @@
+version: 2
+plmn: "45701"
+profiles:
+    - id: apple_laotel_la
+      path: profiles/laotel_la.yaml
+      generic: true
+      selectors:
+        - raw: "45701"

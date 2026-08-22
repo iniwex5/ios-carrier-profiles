@@ -1,0 +1,34 @@
+version: 3
+kind: carrier_bundle
+id: apple_cw_wi
+bundle: CW_wi.bundle
+supported_plmns:
+    - "338180"
+    - "342600"
+    - "344920"
+    - "346140"
+    - "348170"
+    - "352110"
+    - "35486"
+    - "354860"
+    - "35611"
+    - "356110"
+    - "35811"
+    - "358110"
+    - "360110"
+    - "365840"
+    - "366110"
+    - "37635"
+    - "376350"
+common:
+    ims:
+        register:
+            use_ipsec: true
+        signaling:
+            contact:
+                additional_contact_params:
+                    - selector: REGISTER,INVITE,INVITE:*
+                      params:
+                        - +g.3gpp.mid-call
+                        - +g.3gpp.srvcc-alerting
+                        - +g.3gpp.ps2cs-srvcc-orig-pre-alerting

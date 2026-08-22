@@ -1,0 +1,8 @@
+version: 2
+plmn: "43408"
+profiles:
+    - id: apple_uztelecom_uz
+      path: profiles/uztelecom_uz.yaml
+      generic: true
+      selectors:
+        - raw: "43408"

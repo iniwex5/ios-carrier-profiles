@@ -1,0 +1,8 @@
+version: 2
+plmn: "46601"
+profiles:
+    - id: apple_fareastone_tw
+      path: profiles/fareastone_tw.yaml
+      generic: true
+      selectors:
+        - raw: "46601"

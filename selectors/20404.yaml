@@ -1,0 +1,198 @@
+version: 2
+plmn: "20404"
+profiles:
+    - id: apple_avantel_co
+      path: profiles/avantel_co.yaml
+      selectors:
+        - raw: 20404_ID-8957732
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8957732"
+    - id: apple_cellularsouth_lte_us
+      path: profiles/cellularsouth_lte_us.yaml
+      selectors:
+        - raw: 20404_ID-890123
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890123"
+    - id: apple_chinatelecom_usim_cn
+      path: profiles/chinatelecom_usim_cn.yaml
+      selectors:
+        - raw: 20404_ID-898611
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "898611"
+    - id: apple_chinatelecom_usim_mo
+      path: profiles/chinatelecom_usim_mo.yaml
+      selectors:
+        - raw: 20404_ID-8985231
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8985231"
+        - raw: 20404_ID-8985307
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8985307"
+    - id: apple_gigsky_us
+      path: profiles/gigsky_us.yaml
+      selectors:
+        - raw: 20404_GID1-6F
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 6F
+    - id: apple_ice_no
+      path: profiles/ice_no.yaml
+      selectors:
+        - raw: 20404_ID-894707
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "894707"
+    - id: apple_iwireless_us
+      path: profiles/iwireless_us.yaml
+      selectors:
+        - raw: 20404_ID-890177
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890177"
+    - id: apple_mirs_il
+      path: profiles/mirs_il.yaml
+      selectors:
+        - raw: 20404_ID-8997207
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8997207"
+    - id: apple_pelephone_il
+      path: profiles/pelephone_il.yaml
+      selectors:
+        - raw: 20404_ID-8997250
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8997250"
+    - id: apple_sasktel_ca
+      path: profiles/sasktel_ca.yaml
+      selectors:
+        - raw: 20404_ID-89302780
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89302780"
+    - id: apple_truphone_us
+      path: profiles/truphone_us.yaml
+      selectors:
+        - raw: 20404_GID1-547275554B3030656E
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 547275554B3030656E
+    - id: apple_uscellular_lte_us
+      path: profiles/uscellular_lte_us.yaml
+      selectors:
+        - raw: 20404_ID-8901580
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901580"
+        - raw: 20404_ID-8901589
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901589"
+    - id: apple_verizon_charter_lte_us
+      path: profiles/verizon_charter_lte_us.yaml
+      selectors:
+        - raw: 20404_GID2-A7_ID-891480
+          conditions:
+            - field: gid2
+              match: prefix
+              value: A7
+            - field: iccid
+              match: prefix
+              value: "891480"
+    - id: apple_verizon_lte_us
+      path: profiles/verizon_lte_us.yaml
+      selectors:
+        - raw: 20404_ID-891480
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "891480"
+    - id: apple_verizon_response_lte_us
+      path: profiles/verizon_response_lte_us.yaml
+      selectors:
+        - raw: 20404_GID2-1B_ID-891480
+          conditions:
+            - field: gid2
+              match: prefix
+              value: 1B
+            - field: iccid
+              match: prefix
+              value: "891480"
+    - id: apple_verizon_ting_lte_us
+      path: profiles/verizon_ting_lte_us.yaml
+      selectors:
+        - raw: 20404_GID2-A9_ID-891480
+          conditions:
+            - field: gid2
+              match: prefix
+              value: A9
+            - field: iccid
+              match: prefix
+              value: "891480"
+    - id: apple_verizon_visible_lte_us
+      path: profiles/verizon_visible_lte_us.yaml
+      selectors:
+        - raw: 20404_GID2-1A_ID-891480
+          conditions:
+            - field: gid2
+              match: prefix
+              value: 1A
+            - field: iccid
+              match: prefix
+              value: "891480"
+    - id: apple_videotron_ca
+      path: profiles/videotron_ca.yaml
+      selectors:
+        - raw: 20404_ID-89302500
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89302500"
+    - id: apple_vodafone_nl
+      path: profiles/vodafone_nl.yaml
+      generic: true
+      selectors:
+        - raw: "20404"
+    - id: apple_vodafone_qa
+      path: profiles/vodafone_qa.yaml
+      selectors:
+        - raw: 20404_ID-8942702
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8942702"
+    - id: apple_webbing
+      path: profiles/webbing.yaml
+      selectors:
+        - raw: 20404_ID-8985235
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8985235"
+    - id: apple_xplornet_ca
+      path: profiles/xplornet_ca.yaml
+      selectors:
+        - raw: 20404_ID-89302130
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89302130"

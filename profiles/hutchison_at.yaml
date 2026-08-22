@@ -1,0 +1,42 @@
+version: 3
+kind: carrier_bundle
+id: apple_hutchison_at
+bundle: Hutchison_at.bundle
+supported_plmns:
+    - "23210"
+common: {}
+plmn_overrides:
+    "23210":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 13313
+        entitlement:
+            entitlement_url: https://esim-3at-es-prd.ipaas.amdocs.com/3at/prd/executeAppleActions
+        ims:
+            apn: ims
+            ip_stack: ipv4v6
+            ike:
+                dpd:
+                    enabled: false
+                    interval_seconds: 600
+                local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                sa_lifetime_seconds: 80000
+            register:
+                use_ipsec: true
+                include_cellular_network_info: true
+            signaling:
+                max_udp_message_size: 1200
+                support_p_early_media: true
+                contact:
+                    additional_contact_params:
+                        - selector: INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            media:
+                rtp_inactivity_seconds: 20
+            ussi:
+                enabled: true
+            volte:
+                enable_volte_by_default: true

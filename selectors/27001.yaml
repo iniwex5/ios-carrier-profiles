@@ -1,0 +1,8 @@
+version: 2
+plmn: "27001"
+profiles:
+    - id: apple_luxgsm_lu
+      path: profiles/luxgsm_lu.yaml
+      generic: true
+      selectors:
+        - raw: "27001"

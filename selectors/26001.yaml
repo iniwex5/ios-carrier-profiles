@@ -1,0 +1,74 @@
+version: 2
+plmn: "26001"
+profiles:
+    - id: apple_affinityclick
+      path: profiles/affinityclick.yaml
+      selectors:
+        - raw: 26001_GID1-616C6F73696D31
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 616C6F73696D31
+    - id: apple_dentwireless
+      path: profiles/dentwireless.yaml
+      selectors:
+        - raw: 26001_GID1-3597bfd533
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 3597BFD533
+        - raw: 26001_GID1-3597bfd534
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 3597BFD534
+        - raw: 26001_GID1-3597bfd535
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 3597BFD535
+    - id: apple_genesis
+      path: profiles/genesis.yaml
+      selectors:
+        - raw: 26001_GID1-596553494D313054FFFF
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 596553494D313054FFFF
+    - id: apple_knowroaming
+      path: profiles/knowroaming.yaml
+      selectors:
+        - raw: 26001_GID1-636f6e6e65637431
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 636F6E6E65637431
+    - id: apple_mysim
+      path: profiles/mysim.yaml
+      selectors:
+        - raw: 26001_GID1-434F423236303036
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 434F423236303036
+    - id: apple_polkomtel_pl
+      path: profiles/polkomtel_pl.yaml
+      generic: true
+      selectors:
+        - raw: "26001"
+    - id: apple_redteamobile
+      path: profiles/redteamobile.yaml
+      selectors:
+        - raw: 26001_ID-89852245280
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89852245280"
+    - id: apple_simly
+      path: profiles/simly.yaml
+      selectors:
+        - raw: 26001_GID1-73696D6C7931
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 73696D6C7931

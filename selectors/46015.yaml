@@ -1,0 +1,8 @@
+version: 2
+plmn: "46015"
+profiles:
+    - id: apple_cbn_cn
+      path: profiles/cbn_cn.yaml
+      generic: true
+      selectors:
+        - raw: "46015"

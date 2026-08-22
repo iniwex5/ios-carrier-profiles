@@ -1,0 +1,45 @@
+version: 3
+kind: carrier_bundle
+id: apple_cmcc_cn
+bundle: CMCC_cn.bundle
+supported_plmns:
+    - "46000"
+    - "46002"
+    - "46007"
+    - "46008"
+common:
+    apple:
+        carrier_entitlements:
+            supported_entitlements: 1024
+    entitlement:
+        entitlement_url: https://zdnlpz.yhdzd.chinamobile.com:8181/
+    ims:
+        media:
+            rtcp_inactivity_seconds: 20
+            rtcp_interval_seconds: 5
+            rtp_inactivity_seconds: 20
+        register:
+            use_ipsec: true
+        signaling:
+            contact:
+                additional_contact_params:
+                    - selector: INVITE:200,PRACK:200,UPDATE:200
+                      params:
+                        - audio
+                    - selector: REGISTER
+                      params:
+                        - +g.3gpp.accesstype="cellular2"
+                    - selector: REGISTER,INVITE,INVITE:*
+                      params:
+                        - +g.3gpp.mid-call
+                        - +g.3gpp.srvcc-alerting
+                        - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            csfb_on:
+                - method: INVITE
+                  statuses:
+                    - "500"
+                    - "503"
+            preconditions: supported
+            support_p_early_media: true
+        volte:
+            enable_volte_by_default: true

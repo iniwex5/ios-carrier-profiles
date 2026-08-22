@@ -1,0 +1,31 @@
+version: 3
+kind: carrier_bundle
+id: apple_redteamobile
+bundle: RedteaMobile.bundle
+supported_plmns:
+    - "20408"
+    - "20601"
+    - "22201"
+    - "23210"
+    - "23410"
+    - "23458"
+    - "26001"
+    - "26003"
+    - "26006"
+    - "29505"
+    - "310840"
+    - "41677"
+    - "42501"
+    - "45400"
+    - "45403"
+    - "45406"
+    - "45407"
+    - "45412"
+    - "45501"
+    - "50212"
+    - "52505"
+    - "71204"
+common:
+    ims:
+        volte:
+            enable_volte_by_default: false

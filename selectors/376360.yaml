@@ -1,0 +1,8 @@
+version: 2
+plmn: "376360"
+profiles:
+    - id: apple_atn_tc
+      path: profiles/atn_tc.yaml
+      generic: true
+      selectors:
+        - raw: "376360"

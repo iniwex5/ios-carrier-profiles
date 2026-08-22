@@ -1,0 +1,9 @@
+version: 3
+kind: carrier_bundle
+id: apple_nextel_mx
+bundle: Nextel_mx.bundle
+supported_plmns:
+    - "33409"
+    - "334090"
+    - "33490"
+common: {}

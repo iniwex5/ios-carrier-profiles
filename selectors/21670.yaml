@@ -1,0 +1,8 @@
+version: 2
+plmn: "21670"
+profiles:
+    - id: apple_vodafone_hu
+      path: profiles/vodafone_hu.yaml
+      generic: true
+      selectors:
+        - raw: "21670"

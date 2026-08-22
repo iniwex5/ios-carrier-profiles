@@ -1,0 +1,12 @@
+version: 3
+kind: carrier_bundle
+id: apple_telkomsel_id
+bundle: Telkomsel_id.bundle
+supported_plmns:
+    - "51010"
+common: {}
+plmn_overrides:
+    "51010":
+        ims:
+            ussi:
+                enabled: true

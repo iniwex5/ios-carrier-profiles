@@ -1,0 +1,8 @@
+version: 2
+plmn: "41503"
+profiles:
+    - id: apple_zain_lb
+      path: profiles/zain_lb.yaml
+      generic: true
+      selectors:
+        - raw: "41503"

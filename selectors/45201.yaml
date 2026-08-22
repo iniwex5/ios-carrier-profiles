@@ -1,0 +1,16 @@
+version: 2
+plmn: "45201"
+profiles:
+    - id: apple_knowroaming
+      path: profiles/knowroaming.yaml
+      selectors:
+        - raw: 45201_GID1-636f6e6e65637431
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 636F6E6E65637431
+    - id: apple_mobifone_vn
+      path: profiles/mobifone_vn.yaml
+      generic: true
+      selectors:
+        - raw: "45201"

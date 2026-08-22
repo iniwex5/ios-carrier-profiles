@@ -1,0 +1,8 @@
+version: 2
+plmn: "40102"
+profiles:
+    - id: apple_telia_kz
+      path: profiles/telia_kz.yaml
+      generic: true
+      selectors:
+        - raw: "40102"

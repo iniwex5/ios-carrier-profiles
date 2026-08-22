@@ -1,0 +1,8 @@
+version: 3
+kind: carrier_bundle
+id: apple_avantel_co
+bundle: Avantel_co.bundle
+supported_plmns:
+    - "20404"
+    - "732130"
+common: {}

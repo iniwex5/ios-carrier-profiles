@@ -1,0 +1,33 @@
+version: 3
+kind: carrier_bundle
+id: apple_lgu_kr
+bundle: LGU_kr.bundle
+supported_plmns:
+    - "45006"
+    - "45010"
+common:
+    apple:
+        carrier_entitlements:
+            supported_entitlements: 9233
+    entitlement:
+        entitlement_url: https://entitlement.uplus.co.kr
+    ims:
+        media:
+            rtcp_inactivity_seconds: 36000
+            rtcp_interval_seconds: 3
+        register:
+            use_ipsec: true
+        signaling:
+            csfb_on:
+                - method: INVITE
+                  statuses:
+                    - "380"
+            max_udp_message_size: 3000
+            preconditions: unsupported
+            re_register_on:
+                - method: INVITE
+                  statuses:
+                    - "403"
+            support_p_early_media: false
+        volte:
+            enable_volte_by_default: true

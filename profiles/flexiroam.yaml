@@ -1,0 +1,7 @@
+version: 3
+kind: carrier_bundle
+id: apple_flexiroam
+bundle: Flexiroam.bundle
+supported_plmns:
+    - "23450"
+common: {}

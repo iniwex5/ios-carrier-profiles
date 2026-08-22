@@ -1,0 +1,19 @@
+version: 2
+plmn: "45404"
+profiles:
+    - id: apple_hutchison_hk
+      path: profiles/hutchison_hk.yaml
+      generic: true
+      selectors:
+        - raw: "45404"
+    - id: apple_multibyte
+      path: profiles/multibyte.yaml
+      selectors:
+        - raw: 45404_GID1-0227_GID2-02280
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "0227"
+            - field: gid2
+              match: prefix
+              value: "02280"

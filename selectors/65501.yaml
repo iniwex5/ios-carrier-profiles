@@ -1,0 +1,8 @@
+version: 2
+plmn: "65501"
+profiles:
+    - id: apple_vodafone_za
+      path: profiles/vodafone_za.yaml
+      generic: true
+      selectors:
+        - raw: "65501"

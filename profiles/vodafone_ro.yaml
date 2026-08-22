@@ -1,0 +1,63 @@
+version: 3
+kind: carrier_bundle
+id: apple_vodafone_ro
+bundle: Vodafone_ro.bundle
+supported_plmns:
+    - "22601"
+common: {}
+plmn_overrides:
+    "22601":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 9216
+        entitlement:
+            entitlement_url: https://ro-prod.entitlement.vodafone.com:4450/ium-OEMInterface/servlet/IUMServlet
+        ims:
+            apn: ims
+            ike:
+                proposals:
+                    - encryption:
+                        - aes128
+                      integrity:
+                        - sha256
+                      prf:
+                        - sha256
+                      dh_groups:
+                        - modp2048
+                      lifetime_seconds: 86400
+                      authentication_method: None
+                      eap_method: EAP-AKA
+                dpd:
+                    enabled: false
+                    interval_seconds: 600
+                child_sa:
+                    proposals:
+                        - encryption:
+                            - aes128
+                          integrity:
+                            - sha256
+                          pfs_group: modp2048
+                          lifetime_seconds: 86400
+                    lifetime_seconds: 86400
+                local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                sa_lifetime_seconds: 86400
+            register:
+                use_ipsec: true
+                include_cellular_network_info: true
+            signaling:
+                preconditions: supported
+                support_p_early_media: true
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - "380"
+                        - 5XX
+                contact:
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            volte:
+                enable_volte_by_default: true

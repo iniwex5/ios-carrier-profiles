@@ -1,0 +1,8 @@
+version: 2
+plmn: "33490"
+profiles:
+    - id: apple_nextel_mx
+      path: profiles/nextel_mx.yaml
+      generic: true
+      selectors:
+        - raw: "33490"

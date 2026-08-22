@@ -1,0 +1,8 @@
+version: 2
+plmn: "28301"
+profiles:
+    - id: apple_vimpelcom_am
+      path: profiles/vimpelcom_am.yaml
+      generic: true
+      selectors:
+        - raw: "28301"

@@ -1,0 +1,8 @@
+version: 2
+plmn: "60801"
+profiles:
+    - id: apple_orange_sn
+      path: profiles/orange_sn.yaml
+      generic: true
+      selectors:
+        - raw: "60801"

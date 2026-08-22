@@ -1,0 +1,67 @@
+version: 3
+kind: carrier_bundle
+id: apple_telus_ca
+bundle: Telus_ca.bundle
+supported_plmns:
+    - "302220"
+    - "302221"
+    - "302222"
+common:
+    apple:
+        carrier_entitlements:
+            supported_entitlements: 4209841
+    entitlement:
+        entitlement_url: https://ent.telus.com/acmegw
+    ims:
+        apn: ims
+        epdg:
+            address: epdg.epc.mnc220.mcc302.pub.3gppnetwork.org
+        ike:
+            dpd:
+                enabled: false
+                interval_seconds: 600
+            local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+            sa_lifetime_seconds: 80000
+        ip_stack: ipv4v6
+        media:
+            rtcp_inactivity_seconds: 30
+            rtp_inactivity_seconds: 30
+        register:
+            include_cellular_network_info: true
+            use_ipsec: true
+        signaling:
+            contact:
+                additional_contact_params:
+                    - selector: REGISTER,INVITE,INVITE:*
+                      params:
+                        - +g.3gpp.mid-call
+                        - +g.3gpp.srvcc-alerting
+                        - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+                always_add_sip_instance: true
+            csfb_on:
+                - method: INVITE
+                  statuses:
+                    - "380"
+                    - "406"
+                    - "414"
+                    - "499"
+                    - "500"
+                    - "501"
+                    - "502"
+                    - "503"
+                    - "504"
+                    - "505"
+                    - "513"
+                    - "580"
+                    - "606"
+            max_udp_message_size: 1200
+            preconditions: supported
+            support_p_early_media: false
+        ussi:
+            enabled: true
+        volte:
+            enable_volte_by_default: true
+plmn_overrides:
+    "302220":
+        ims:
+            epdg: null

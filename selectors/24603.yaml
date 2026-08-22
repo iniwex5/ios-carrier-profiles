@@ -1,0 +1,8 @@
+version: 2
+plmn: "24603"
+profiles:
+    - id: apple_tele2_lt
+      path: profiles/tele2_lt.yaml
+      generic: true
+      selectors:
+        - raw: "24603"

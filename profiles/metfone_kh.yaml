@@ -1,0 +1,28 @@
+version: 3
+kind: carrier_bundle
+id: apple_metfone_kh
+bundle: Metfone_kh.bundle
+supported_plmns:
+    - "45204"
+    - "45608"
+common:
+    ims:
+        apn: IMS
+        signaling:
+            contact:
+                additional_contact_params:
+                    - selector: REGISTER,INVITE,INVITE:*
+                      params:
+                        - +g.3gpp.mid-call
+                        - +g.3gpp.srvcc-alerting
+                        - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+                always_add_sip_instance: true
+            csfb_on:
+                - method: INVITE
+                  statuses:
+                    - 3XX
+            support_p_early_media: true
+        ussi:
+            enabled: true
+        volte:
+            enable_volte_by_default: true

@@ -1,0 +1,16 @@
+version: 2
+plmn: "40101"
+profiles:
+    - id: apple_vimpelcom_izi_kz
+      path: profiles/vimpelcom_izi_kz.yaml
+      selectors:
+        - raw: 40101_ID-89997015608
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89997015608"
+    - id: apple_vimpelcom_kz
+      path: profiles/vimpelcom_kz.yaml
+      generic: true
+      selectors:
+        - raw: "40101"

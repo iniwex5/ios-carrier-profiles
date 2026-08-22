@@ -1,0 +1,8 @@
+version: 2
+plmn: "24214"
+profiles:
+    - id: apple_ice_no
+      path: profiles/ice_no.yaml
+      generic: true
+      selectors:
+        - raw: "24214"

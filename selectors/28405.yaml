@@ -1,0 +1,8 @@
+version: 2
+plmn: "28405"
+profiles:
+    - id: apple_tmobile_bg
+      path: profiles/tmobile_bg.yaml
+      generic: true
+      selectors:
+        - raw: "28405"

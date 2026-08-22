@@ -1,0 +1,14 @@
+version: 3
+kind: carrier_bundle
+id: apple_imagine_bn
+bundle: Imagine_bn.bundle
+supported_plmns:
+    - "52801"
+common: {}
+plmn_overrides:
+    "52801":
+        ims:
+            apn: ims
+            ip_stack: ipv4
+            signaling:
+                support_p_early_media: true

@@ -1,0 +1,8 @@
+version: 2
+plmn: "45608"
+profiles:
+    - id: apple_metfone_kh
+      path: profiles/metfone_kh.yaml
+      generic: true
+      selectors:
+        - raw: "45608"

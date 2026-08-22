@@ -1,0 +1,7 @@
+version: 3
+kind: carrier_bundle
+id: apple_djezzy_dz
+bundle: Djezzy_dz.bundle
+supported_plmns:
+    - "60302"
+common: {}

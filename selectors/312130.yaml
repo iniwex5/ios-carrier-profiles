@@ -1,0 +1,8 @@
+version: 2
+plmn: "312130"
+profiles:
+    - id: apple_appwire_lte_us
+      path: profiles/appwire_lte_us.yaml
+      generic: true
+      selectors:
+        - raw: "312130"

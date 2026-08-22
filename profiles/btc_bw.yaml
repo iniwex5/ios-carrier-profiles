@@ -1,0 +1,7 @@
+version: 3
+kind: carrier_bundle
+id: apple_btc_bw
+bundle: BTC_bw.bundle
+supported_plmns:
+    - "65204"
+common: {}

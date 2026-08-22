@@ -1,0 +1,51 @@
+version: 3
+kind: carrier_bundle
+id: apple_claro_pr
+bundle: Claro_pr.bundle
+supported_plmns:
+    - "33011"
+    - "330110"
+common:
+    apple:
+        carrier_entitlements:
+            supported_entitlements: 1041
+    entitlement:
+        entitlement_url: https://aes.mnc110.mcc330.pub.3gppnetwork.org/entitlement/
+    ims:
+        apn: ims
+        ike:
+            child_sa:
+                lifetime_seconds: 86400
+                proposals:
+                    - encryption:
+                        - aes256
+                      integrity:
+                        - sha256
+                      pfs_group: modp2048
+                      lifetime_seconds: 86400
+            dpd:
+                enabled: false
+                interval_seconds: 600
+            local_identifier: anonymous@nai.epc.mnc110.mcc330.3gppnetwork.org
+            sa_lifetime_seconds: 86400
+        ip_stack: ipv4v6
+        register:
+            use_ipsec: true
+        signaling:
+            contact:
+                additional_contact_params:
+                    - selector: REGISTER,INVITE,INVITE:*
+                      params:
+                        - +g.3gpp.mid-call
+                        - +g.3gpp.srvcc-alerting
+                        - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+                always_add_sip_instance: true
+            preconditions: supported
+            support_p_early_media: true
+        volte:
+            enable_volte_by_default: true
+plmn_overrides:
+    "33011":
+        ims:
+            epdg:
+                address: epdg.epc.mnc110.mcc330.pub.3gppnetwork.org

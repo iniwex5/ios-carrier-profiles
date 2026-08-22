@@ -1,0 +1,8 @@
+version: 2
+plmn: "42009"
+profiles:
+    - id: apple_zain_salammobile_sa
+      path: profiles/zain_salammobile_sa.yaml
+      generic: true
+      selectors:
+        - raw: "42009"

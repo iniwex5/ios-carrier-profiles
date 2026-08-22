@@ -1,0 +1,8 @@
+version: 2
+plmn: "20605"
+profiles:
+    - id: apple_telenet_be
+      path: profiles/telenet_be.yaml
+      generic: true
+      selectors:
+        - raw: "20605"

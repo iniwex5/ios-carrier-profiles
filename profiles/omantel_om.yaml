@@ -1,0 +1,42 @@
+version: 3
+kind: carrier_bundle
+id: apple_omantel_om
+bundle: Omantel_om.bundle
+supported_plmns:
+    - "42202"
+common: {}
+plmn_overrides:
+    "42202":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 13313
+        entitlement:
+            entitlement_url: https://impactes.omantel.om/entitlement/
+        ims:
+            apn: IMS
+            ip_stack: ipv4
+            register:
+                use_ipsec: true
+                include_cellular_network_info: true
+            signaling:
+                preconditions: supported
+                support_p_early_media: true
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - 3XX
+                        - 5XX
+                        - 6XX
+                contact:
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            media:
+                rtp_inactivity_seconds: 15
+            ussi:
+                enabled: true
+            volte:
+                enable_volte_by_default: true

@@ -1,0 +1,27 @@
+version: 2
+plmn: "72418"
+profiles:
+    - id: apple_affinityclick
+      path: profiles/affinityclick.yaml
+      selectors:
+        - raw: 72418_GID1-616C6F73696D31
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 616C6F73696D31
+    - id: apple_knowroaming
+      path: profiles/knowroaming.yaml
+      selectors:
+        - raw: 72418_GID1-636f6e6e65637431
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 636F6E6E65637431
+    - id: apple_webbing
+      path: profiles/webbing.yaml
+      selectors:
+        - raw: 72418_ID-8985235
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8985235"

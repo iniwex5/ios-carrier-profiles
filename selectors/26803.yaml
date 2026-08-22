@@ -1,0 +1,8 @@
+version: 2
+plmn: "26803"
+profiles:
+    - id: apple_optimus_pt
+      path: profiles/optimus_pt.yaml
+      generic: true
+      selectors:
+        - raw: "26803"

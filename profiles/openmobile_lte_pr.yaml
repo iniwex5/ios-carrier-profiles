@@ -1,0 +1,8 @@
+version: 3
+kind: carrier_bundle
+id: apple_openmobile_lte_pr
+bundle: OpenMobile_LTE_pr.bundle
+supported_plmns:
+    - "33012"
+    - "330120"
+common: {}

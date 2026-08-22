@@ -1,0 +1,11 @@
+version: 2
+plmn: "20837"
+profiles:
+    - id: apple_mysim
+      path: profiles/mysim.yaml
+      selectors:
+        - raw: 20837_GID1-434F423236303036
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 434F423236303036

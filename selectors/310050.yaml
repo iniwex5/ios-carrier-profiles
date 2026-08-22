@@ -1,0 +1,11 @@
+version: 2
+plmn: "310050"
+profiles:
+    - id: apple_acs_us
+      path: profiles/acs_us.yaml
+      selectors:
+        - raw: 310050_ID-8901310050
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901310050"

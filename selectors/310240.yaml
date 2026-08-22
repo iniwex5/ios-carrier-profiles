@@ -1,0 +1,265 @@
+version: 2
+plmn: "310240"
+profiles:
+    - id: apple_dentwireless
+      path: profiles/dentwireless.yaml
+      selectors:
+        - raw: 310240_GID1-3597bfd533
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 3597BFD533
+    - id: apple_dish_mvno_us
+      path: profiles/dish_mvno_us.yaml
+      selectors:
+        - raw: 310240_GID1-6432
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "6432"
+        - raw: 310240_GID1-6434
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "6434"
+    - id: apple_dish_ting_us
+      path: profiles/dish_ting_us.yaml
+      selectors:
+        - raw: 310240_GID1-6430
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "6430"
+    - id: apple_familymobile_us
+      path: profiles/familymobile_us.yaml
+      selectors:
+        - raw: 310240_GID1-4D4B
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 4D4B
+    - id: apple_tmobile_boost_us
+      path: profiles/tmobile_boost_us.yaml
+      selectors:
+        - raw: 310240_GID1-6230
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "6230"
+    - id: apple_tmobile_cc_us
+      path: profiles/tmobile_cc_us.yaml
+      selectors:
+        - raw: 310240_GID1-2AC9
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 2AC9
+    - id: apple_tmobile_charter_us
+      path: profiles/tmobile_charter_us.yaml
+      selectors:
+        - raw: 310240_GID1-BA02
+          conditions:
+            - field: gid1
+              match: prefix
+              value: BA02
+    - id: apple_tmobile_comcast_us
+      path: profiles/tmobile_comcast_us.yaml
+      selectors:
+        - raw: 310240_GID1-CC01
+          conditions:
+            - field: gid1
+              match: prefix
+              value: CC01
+    - id: apple_tmobile_metropcs_us
+      path: profiles/tmobile_metropcs_us.yaml
+      selectors:
+        - raw: 310240_GID1-6D
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 6D
+    - id: apple_tmobile_mvno_us
+      path: profiles/tmobile_mvno_us.yaml
+      selectors:
+        - raw: 310240_GID1-1A53
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 1A53
+        - raw: 310240_GID1-4201
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "4201"
+        - raw: 310240_GID1-4276
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "4276"
+        - raw: 310240_GID1-43
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "43"
+        - raw: 310240_GID1-4753
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "4753"
+        - raw: 310240_GID1-4B
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 4B
+        - raw: 310240_GID1-4C
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 4C
+        - raw: 310240_GID1-4E
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 4E
+        - raw: 310240_GID1-514C
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 514C
+        - raw: 310240_GID1-57
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "57"
+        - raw: 310240_GID1-6133
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "6133"
+        - raw: 310240_GID1-6134
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "6134"
+        - raw: 310240_GID1-6136
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "6136"
+        - raw: 310240_GID1-6137
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "6137"
+        - raw: 310240_GID1-6138
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "6138"
+        - raw: 310240_GID1-69
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "69"
+        - raw: 310240_GID1-6C
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 6C
+        - raw: 310240_GID1-70
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "70"
+        - raw: 310240_GID1-72
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "72"
+        - raw: 310240_GID1-73
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "73"
+        - raw: 310240_GID1-74
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "74"
+        - raw: 310240_GID1-82
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "82"
+        - raw: 310240_GID1-AB
+          conditions:
+            - field: gid1
+              match: prefix
+              value: AB
+        - raw: 310240_GID1-DD
+          conditions:
+            - field: gid1
+              match: prefix
+              value: DD
+    - id: apple_tmobile_tfw_simple_us
+      path: profiles/tmobile_tfw_simple_us.yaml
+      selectors:
+        - raw: 310240_GID1-534D
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 534D
+        - raw: 310240_GID1-DE
+          conditions:
+            - field: gid1
+              match: prefix
+              value: DE
+    - id: apple_tmobile_ting_us
+      path: profiles/tmobile_ting_us.yaml
+      selectors:
+        - raw: 310240_GID1-6135
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "6135"
+    - id: apple_tmobile_ultramint_us
+      path: profiles/tmobile_ultramint_us.yaml
+      selectors:
+        - raw: 310240_GID1-354d
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 354D
+        - raw: 310240_GID1-364d
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 364D
+        - raw: 310240_GID1-4153
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "4153"
+        - raw: 310240_GID1-4154
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "4154"
+        - raw: 310240_GID1-6132
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "6132"
+        - raw: 310240_GID1-756d
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 756D
+    - id: apple_tmobile_us
+      path: profiles/tmobile_us.yaml
+      selectors:
+        - raw: 310240_GID1-54
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "54"

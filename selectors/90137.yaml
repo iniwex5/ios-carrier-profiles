@@ -1,0 +1,21 @@
+version: 2
+plmn: "90137"
+profiles:
+    - id: apple_transatel
+      path: profiles/transatel.yaml
+      generic: true
+      selectors:
+        - raw: "90137"
+        - raw: 90137_ID-89882470001
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89882470001"
+    - id: apple_wonet
+      path: profiles/wonet.yaml
+      selectors:
+        - raw: 90137_GID1-CC11
+          conditions:
+            - field: gid1
+              match: prefix
+              value: CC11

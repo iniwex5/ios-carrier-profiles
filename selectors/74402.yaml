@@ -1,0 +1,8 @@
+version: 2
+plmn: "74402"
+profiles:
+    - id: apple_claro_py
+      path: profiles/claro_py.yaml
+      generic: true
+      selectors:
+        - raw: "74402"

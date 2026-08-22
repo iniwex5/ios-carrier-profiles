@@ -1,0 +1,96 @@
+version: 2
+plmn: "26006"
+profiles:
+    - id: apple_affinityclick
+      path: profiles/affinityclick.yaml
+      selectors:
+        - raw: 26006_GID1-616C6F73696D31
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 616C6F73696D31
+    - id: apple_bne
+      path: profiles/bne.yaml
+      selectors:
+        - raw: 26006_GID1-626e6573696d31
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 626E6573696D31
+    - id: apple_dentwireless
+      path: profiles/dentwireless.yaml
+      selectors:
+        - raw: 26006_GID1-3597bfd533
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 3597BFD533
+    - id: apple_knowroaming
+      path: profiles/knowroaming.yaml
+      selectors:
+        - raw: 26006_GID1-636f6e6e65637431
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 636F6E6E65637431
+    - id: apple_mysim
+      path: profiles/mysim.yaml
+      selectors:
+        - raw: 26006_GID1-434F423236303036
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 434F423236303036
+    - id: apple_optimus_pt
+      path: profiles/optimus_pt.yaml
+      selectors:
+        - raw: 26006_ID-8935103
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8935103"
+    - id: apple_play_pl
+      path: profiles/play_pl.yaml
+      generic: true
+      selectors:
+        - raw: "26006"
+    - id: apple_primemobile
+      path: profiles/primemobile.yaml
+      selectors:
+        - raw: 26006_GID1-2636
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "2636"
+    - id: apple_redteamobile
+      path: profiles/redteamobile.yaml
+      selectors:
+        - raw: 26006_ID-89852245280
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89852245280"
+    - id: apple_shinetown
+      path: profiles/shinetown.yaml
+      selectors:
+        - raw: 26006_GID1-AAAA
+          conditions:
+            - field: gid1
+              match: prefix
+              value: AAAA
+    - id: apple_simly
+      path: profiles/simly.yaml
+      selectors:
+        - raw: 26006_GID1-73696D6C7931
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 73696D6C7931
+    - id: apple_webbing
+      path: profiles/webbing.yaml
+      selectors:
+        - raw: 26006_ID-8985235
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8985235"

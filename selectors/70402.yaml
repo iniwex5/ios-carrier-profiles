@@ -1,0 +1,8 @@
+version: 2
+plmn: "70402"
+profiles:
+    - id: apple_tigo_gt
+      path: profiles/tigo_gt.yaml
+      generic: true
+      selectors:
+        - raw: "70402"

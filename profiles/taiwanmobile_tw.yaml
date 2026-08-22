@@ -1,0 +1,57 @@
+version: 3
+kind: carrier_bundle
+id: apple_taiwanmobile_tw
+bundle: TaiwanMobile_tw.bundle
+supported_plmns:
+    - "46697"
+common: {}
+plmn_overrides:
+    "46697":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 3201
+        entitlement:
+            entitlement_url: https://entitlement.taiwanmobile.com/volte
+        ims:
+            apn: ims
+            ip_stack: ipv6
+            domain: ims.taiwanmobile.com
+            impi_format: imsi@carrierDomain
+            impu_format: msisdn@carrierDomain
+            ike:
+                proposals:
+                    - encryption:
+                        - aes128
+                      integrity:
+                        - sha256
+                      prf:
+                        - sha256
+                      dh_groups:
+                        - modp2048
+                      lifetime_seconds: 86400
+                      authentication_method: None
+                      eap_method: EAP-AKA
+                dpd:
+                    enabled: false
+                    interval_seconds: 600
+                child_sa:
+                    proposals:
+                        - encryption:
+                            - aes128
+                          integrity:
+                            - sha256
+                          pfs_group: modp2048
+                          lifetime_seconds: 86400
+                    lifetime_seconds: 86400
+                local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                sa_lifetime_seconds: 86400
+            register:
+                use_ipsec: true
+                include_cellular_network_info: true
+            signaling:
+                preconditions: supported
+                support_p_early_media: true
+            media:
+                rtcp_inactivity_seconds: 180
+            volte:
+                enable_volte_by_default: true

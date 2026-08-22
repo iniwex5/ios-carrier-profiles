@@ -1,0 +1,35 @@
+version: 3
+kind: carrier_bundle
+id: apple_movistar_ar
+bundle: movistar_ar.bundle
+supported_plmns:
+    - "21407"
+    - "72207"
+    - "722070"
+common:
+    ims:
+        apn: ims
+        ip_stack: ipv6
+        media:
+            rtcp_inactivity_seconds: 25
+            rtcp_interval_seconds: 5
+            rtp_inactivity_seconds: 10
+        register:
+            use_ipsec: true
+        signaling:
+            contact:
+                additional_contact_params:
+                    - selector: REGISTER,INVITE,INVITE:*
+                      params:
+                        - +g.3gpp.srvcc-alerting
+                always_add_sip_instance: true
+            csfb_on:
+                - method: INVITE
+                  statuses:
+                    - 3XX
+            preconditions: supported
+            support_p_early_media: true
+        ussi:
+            enabled: false
+        volte:
+            enable_volte_by_default: true

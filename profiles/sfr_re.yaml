@@ -1,0 +1,8 @@
+version: 3
+kind: carrier_bundle
+id: apple_sfr_re
+bundle: SFR_re.bundle
+supported_plmns:
+    - "20809"
+    - "64710"
+common: {}

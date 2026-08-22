@@ -1,0 +1,71 @@
+version: 3
+kind: carrier_bundle
+id: apple_truphone_us
+bundle: Truphone_US.bundle
+supported_plmns:
+    - "20404"
+    - "20408"
+    - "20433"
+    - "20809"
+    - "20812"
+    - "21427"
+    - "23410"
+    - "23425"
+    - "26033"
+    - "26242"
+    - "27227"
+    - "310300"
+    - "45400"
+    - "45408"
+    - "50538"
+    - "72455"
+common:
+    apple:
+        carrier_entitlements:
+            supported_entitlements: 8411
+    entitlement:
+        entitlement_url: https://entitlement-prod.api.truphone.com
+    ims:
+        apn: ims
+        epdg:
+            address: epdg.eps.truphone.net
+        ike:
+            dpd:
+                enabled: false
+                interval_seconds: 600
+            local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+            sa_lifetime_seconds: 80000
+        ip_stack: ipv4v6
+        media:
+            rtcp_inactivity_seconds: 36000
+            rtcp_interval_seconds: 5
+            rtp_inactivity_seconds: 14
+        register:
+            include_cellular_network_info: true
+            use_ipsec: true
+        signaling:
+            contact:
+                always_add_sip_instance: true
+            csfb_on:
+                - method: INVITE
+                  statuses:
+                    - "380"
+                    - "406"
+                    - "414"
+                    - "499"
+                    - "500"
+                    - "501"
+                    - "502"
+                    - "503"
+                    - "504"
+                    - "505"
+                    - "513"
+                    - "580"
+                    - "606"
+            max_udp_message_size: 1200
+            preconditions: supported
+            support_p_early_media: true
+        ussi:
+            enabled: false
+        volte:
+            enable_volte_by_default: true

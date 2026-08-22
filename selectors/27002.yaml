@@ -1,0 +1,21 @@
+version: 2
+plmn: "27002"
+profiles:
+    - id: apple_mtx_b2b_lu
+      path: profiles/mtx_b2b_lu.yaml
+      selectors:
+        - raw: 27002_GID1-1F
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 1F
+        - raw: 27002_GID1-1FFFFFFFFFFFFFFFFFFF
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 1FFFFFFFFFFFFFFFFFFF
+    - id: apple_mtx_lu
+      path: profiles/mtx_lu.yaml
+      generic: true
+      selectors:
+        - raw: "27002"

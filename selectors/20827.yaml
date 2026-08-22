@@ -1,0 +1,8 @@
+version: 2
+plmn: "20827"
+profiles:
+    - id: apple_coriolis_fr
+      path: profiles/coriolis_fr.yaml
+      generic: true
+      selectors:
+        - raw: "20827"

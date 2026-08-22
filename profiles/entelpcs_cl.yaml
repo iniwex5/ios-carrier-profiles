@@ -1,0 +1,50 @@
+version: 3
+kind: carrier_bundle
+id: apple_entelpcs_cl
+bundle: EntelPCS_cl.bundle
+supported_plmns:
+    - "73001"
+    - "73010"
+common:
+    apple:
+        carrier_entitlements:
+            supported_entitlements: 525329
+    entitlement:
+        entitlement_url: https://aes.mnc001.mcc730.pub.3gppnetwork.org:3444/entitlement/
+    ims:
+        apn: ims
+        domain: ims.mnc001.mcc730.3gppnetwork.org
+        ike:
+            child_sa:
+                lifetime_seconds: 86400
+                proposals:
+                    - encryption:
+                        - aes256
+                      integrity:
+                        - sha256
+                      lifetime_seconds: 86400
+            dpd:
+                enabled: false
+                interval_seconds: 600
+            local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+            sa_lifetime_seconds: 86400
+        impi_format: imsi@carrierDomain
+        impu_format: imsi@carrierDomain
+        ip_stack: ipv6
+        media:
+            rtcp_inactivity_seconds: 15
+            rtcp_interval_seconds: 5
+            rtp_inactivity_seconds: 15
+        register:
+            use_ipsec: true
+        signaling:
+            contact:
+                additional_contact_params:
+                    - selector: INVITE,INVITE:*
+                      params:
+                        - +g.3gpp.mid-call
+                        - +g.3gpp.srvcc-alerting
+                        - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            support_p_early_media: true
+        volte:
+            enable_volte_by_default: true

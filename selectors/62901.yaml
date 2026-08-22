@@ -1,0 +1,8 @@
+version: 2
+plmn: "62901"
+profiles:
+    - id: apple_bhartiairtel_cg
+      path: profiles/bhartiairtel_cg.yaml
+      generic: true
+      selectors:
+        - raw: "62901"

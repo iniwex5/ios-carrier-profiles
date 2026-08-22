@@ -1,0 +1,8 @@
+version: 2
+plmn: "37413"
+profiles:
+    - id: apple_digicel_tt
+      path: profiles/digicel_tt.yaml
+      generic: true
+      selectors:
+        - raw: "37413"

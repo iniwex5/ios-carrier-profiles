@@ -1,0 +1,8 @@
+version: 2
+plmn: "310020"
+profiles:
+    - id: apple_unionwireless_us
+      path: profiles/unionwireless_us.yaml
+      generic: true
+      selectors:
+        - raw: "310020"

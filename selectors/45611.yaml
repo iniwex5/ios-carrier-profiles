@@ -1,0 +1,8 @@
+version: 2
+plmn: "45611"
+profiles:
+    - id: apple_seatel_kh
+      path: profiles/seatel_kh.yaml
+      generic: true
+      selectors:
+        - raw: "45611"

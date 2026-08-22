@@ -1,0 +1,16 @@
+version: 2
+plmn: "45431"
+profiles:
+    - id: apple_bics
+      path: profiles/bics.yaml
+      selectors:
+        - raw: 45431_ID-893204
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "893204"
+    - id: apple_chinatelecom_hk
+      path: profiles/chinatelecom_hk.yaml
+      generic: true
+      selectors:
+        - raw: "45431"

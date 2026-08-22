@@ -1,0 +1,8 @@
+version: 2
+plmn: "50571"
+profiles:
+    - id: apple_telstra_au
+      path: profiles/telstra_au.yaml
+      generic: true
+      selectors:
+        - raw: "50571"

@@ -1,0 +1,8 @@
+version: 2
+plmn: "53024"
+profiles:
+    - id: apple_2degrees_nz
+      path: profiles/2degrees_nz.yaml
+      generic: true
+      selectors:
+        - raw: "53024"

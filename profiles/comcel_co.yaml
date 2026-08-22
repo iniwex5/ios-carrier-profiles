@@ -1,0 +1,71 @@
+version: 3
+kind: carrier_bundle
+id: apple_comcel_co
+bundle: Comcel_co.bundle
+supported_plmns:
+    - "732101"
+common: {}
+plmn_overrides:
+    "732101":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 1041
+        entitlement:
+            entitlement_url: https://aes.mnc101.mcc732.pub.3gppnetwork.org/entitlement/
+        ims:
+            apn: ims
+            ip_stack: ipv4v6
+            epdg:
+                address: epdg.ims.mnc101.mcc732.pub.3gppnetwork.org
+            ike:
+                proposals:
+                    - encryption:
+                        - aes256
+                      integrity:
+                        - sha256
+                      prf:
+                        - sha256
+                      dh_groups:
+                        - modp2048
+                      lifetime_seconds: 86400
+                      authentication_method: None
+                      eap_method: EAP-AKA
+                dpd:
+                    enabled: true
+                    interval_seconds: 600
+                child_sa:
+                    proposals:
+                        - encryption:
+                            - aes256
+                          integrity:
+                            - sha256
+                          pfs_group: modp2048
+                          lifetime_seconds: 86400
+                    lifetime_seconds: 86400
+                local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                sa_lifetime_seconds: 86400
+            register:
+                use_ipsec: true
+                include_cellular_network_info: true
+            signaling:
+                support_p_early_media: true
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - 3XX
+                        - 4XX
+                        - 5XX
+                        - 6XX
+                contact:
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            media:
+                rtp_inactivity_seconds: 30
+                rtcp_inactivity_seconds: 25
+                rtcp_interval_seconds: 5
+            volte:
+                enable_volte_by_default: true

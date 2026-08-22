@@ -1,0 +1,7 @@
+version: 3
+kind: carrier_bundle
+id: apple_awcc_af
+bundle: AWCC_af.bundle
+supported_plmns:
+    - "41201"
+common: {}

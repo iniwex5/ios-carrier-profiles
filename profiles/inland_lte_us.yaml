@@ -1,0 +1,64 @@
+version: 3
+kind: carrier_bundle
+id: apple_inland_lte_us
+bundle: Inland_LTE_US.bundle
+supported_plmns:
+    - "310580"
+common: {}
+plmn_overrides:
+    "310580":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 145
+        entitlement:
+            entitlement_url: https://inland.dcc.entitlements.io3.com
+        ims:
+            impi_format: imsi@carrierDomain
+            impu_format: imsi@carrierDomain
+            ike:
+                proposals:
+                    - encryption:
+                        - aes256
+                      integrity:
+                        - sha256
+                      prf:
+                        - sha256
+                      dh_groups:
+                        - modp2048
+                      lifetime_seconds: 80000
+                      authentication_method: None
+                      eap_method: EAP-AKA
+                dpd:
+                    enabled: false
+                    interval_seconds: 600
+                child_sa:
+                    proposals:
+                        - encryption:
+                            - aes256
+                          integrity:
+                            - sha256
+                          pfs_group: modp2048
+                          lifetime_seconds: 86400
+                    lifetime_seconds: 86400
+                local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                local_identifier_type: IDUserFQDN
+                sa_lifetime_seconds: 80000
+            register:
+                use_ipsec: true
+            signaling:
+                max_udp_message_size: 1300
+                preconditions: unsupported
+                support_p_early_media: true
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - 3XX
+                        - 5XX
+                contact:
+                    always_add_sip_instance: true
+            media:
+                rtp_inactivity_seconds: 10
+                rtcp_inactivity_seconds: 10
+                rtcp_interval_seconds: 5
+            volte:
+                enable_volte_by_default: true

@@ -1,0 +1,8 @@
+version: 2
+plmn: "36291"
+profiles:
+    - id: apple_chippie_cw
+      path: profiles/chippie_cw.yaml
+      generic: true
+      selectors:
+        - raw: "36291"

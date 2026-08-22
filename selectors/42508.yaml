@@ -1,0 +1,8 @@
+version: 2
+plmn: "42508"
+profiles:
+    - id: apple_cellcom_golan_il
+      path: profiles/cellcom_golan_il.yaml
+      generic: true
+      selectors:
+        - raw: "42508"

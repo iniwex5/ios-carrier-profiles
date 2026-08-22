@@ -1,0 +1,8 @@
+version: 2
+plmn: "722010"
+profiles:
+    - id: apple_telefonica_tuenti_ar
+      path: profiles/telefonica_tuenti_ar.yaml
+      generic: true
+      selectors:
+        - raw: "722010"

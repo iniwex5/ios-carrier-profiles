@@ -1,0 +1,7 @@
+version: 3
+kind: carrier_bundle
+id: apple_fsmtc_fm
+bundle: FSMTC_fm.bundle
+supported_plmns:
+    - "55001"
+common: {}

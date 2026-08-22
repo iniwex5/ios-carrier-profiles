@@ -1,0 +1,57 @@
+version: 3
+kind: carrier_bundle
+id: apple_sunrise_ch
+bundle: Sunrise_ch.bundle
+supported_plmns:
+    - "22802"
+common: {}
+plmn_overrides:
+    "22802":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 64529
+        entitlement:
+            entitlement_url: https://eserver.sunrise.net/entitlement/apple
+        ims:
+            apn: ims
+            ip_stack: ipv4
+            ike:
+                proposals:
+                    - encryption:
+                        - aes128
+                      integrity:
+                        - sha256
+                      prf:
+                        - sha256
+                      dh_groups:
+                        - modp2048
+                      lifetime_seconds: 80000
+                      authentication_method: None
+                      eap_method: EAP-AKA
+                dpd:
+                    enabled: false
+                    interval_seconds: 600
+                child_sa:
+                    proposals:
+                        - encryption:
+                            - aes128
+                          integrity:
+                            - sha256
+                          lifetime_seconds: 80000
+                    lifetime_seconds: 80000
+                local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                sa_lifetime_seconds: 80000
+            register:
+                use_ipsec: true
+                include_cellular_network_info: true
+            signaling:
+                preconditions: supported
+                support_p_early_media: true
+            media:
+                rtp_inactivity_seconds: 20
+                rtcp_inactivity_seconds: 180
+                rtcp_interval_seconds: 5
+            ussi:
+                enabled: true
+            volte:
+                enable_volte_by_default: true

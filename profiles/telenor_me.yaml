@@ -1,0 +1,30 @@
+version: 3
+kind: carrier_bundle
+id: apple_telenor_me
+bundle: Telenor_me.bundle
+supported_plmns:
+    - "29701"
+common: {}
+plmn_overrides:
+    "29701":
+        ims:
+            register:
+                use_ipsec: true
+            signaling:
+                support_p_early_media: true
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - 3XX
+                        - 4XX
+                        - 5XX
+                        - 6XX
+                contact:
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*[primary]
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            volte:
+                enable_volte_by_default: true

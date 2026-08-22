@@ -1,0 +1,44 @@
+version: 3
+kind: carrier_bundle
+id: apple_elisa_fi
+bundle: elisa_fi.bundle
+supported_plmns:
+    - "24405"
+common: {}
+plmn_overrides:
+    "24405":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 1217
+        entitlement:
+            entitlement_url: https://entitlement1.ses.elisa.fi:8443
+        ims:
+            apn: ims
+            ip_stack: ipv6
+            ike:
+                nat_keepalive_enabled: true
+                sa_lifetime_seconds: 86400
+            register:
+                use_ipsec: true
+                include_cellular_network_info: true
+            signaling:
+                preconditions: supported
+                support_p_early_media: true
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - 5XX
+                contact:
+                    always_add_sip_instance: true
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            media:
+                rtcp_interval_seconds: 5
+            ussi:
+                enabled: true
+            volte:
+                enable_volte_by_default: true

@@ -1,0 +1,8 @@
+version: 3
+kind: carrier_bundle
+id: apple_smartone_mo
+bundle: SmarTone_mo.bundle
+supported_plmns:
+    - "45500"
+    - "45506"
+common: {}

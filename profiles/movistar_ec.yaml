@@ -1,0 +1,34 @@
+version: 3
+kind: carrier_bundle
+id: apple_movistar_ec
+bundle: movistar_ec.bundle
+supported_plmns:
+    - "21402"
+    - "21407"
+    - "74000"
+common:
+    ims:
+        apn: ims
+        media:
+            rtcp_inactivity_seconds: 36000
+        register:
+            use_ipsec: true
+        signaling:
+            contact:
+                additional_contact_params:
+                    - selector: REGISTER,INVITE,INVITE:*
+                      params:
+                        - +g.3gpp.mid-call
+                        - +g.3gpp.srvcc-alerting
+                        - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            csfb_on:
+                - method: INVITE
+                  statuses:
+                    - "380"
+                    - "500"
+            preconditions: supported
+            support_p_early_media: true
+        ussi:
+            enabled: true
+        volte:
+            enable_volte_by_default: true

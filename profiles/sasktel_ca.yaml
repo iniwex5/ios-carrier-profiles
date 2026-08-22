@@ -1,0 +1,43 @@
+version: 3
+kind: carrier_bundle
+id: apple_sasktel_ca
+bundle: Sasktel_ca.bundle
+supported_plmns:
+    - "20404"
+    - "302780"
+common:
+    apple:
+        carrier_entitlements:
+            supported_entitlements: 4205745
+    entitlement:
+        entitlement_url: https://entitlement.sasktel.com/entitlement/rest
+    ims:
+        apn: ims
+        ike:
+            dpd:
+                enabled: false
+                interval_seconds: 600
+            local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+            sa_lifetime_seconds: 86400
+        ip_stack: ipv4v6
+        register:
+            use_ipsec: true
+        signaling:
+            csfb_on:
+                - method: INVITE
+                  statuses:
+                    - "380"
+                    - "414"
+                    - "499"
+                    - "606"
+            preconditions: supported
+            support_p_early_media: true
+        ussi:
+            enabled: true
+        volte:
+            enable_volte_by_default: true
+plmn_overrides:
+    "20404":
+        ims:
+            epdg:
+                address: epdg.epc.mnc780.mcc302.pub.3gppnetwork.org

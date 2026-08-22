@@ -1,0 +1,155 @@
+version: 2
+plmn: "20601"
+profiles:
+    - id: apple_affinityclick
+      path: profiles/affinityclick.yaml
+      selectors:
+        - raw: 20601_GID1-616C6F73696D31
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 616C6F73696D31
+    - id: apple_airgsm
+      path: profiles/airgsm.yaml
+      selectors:
+        - raw: 20601_ID-893135
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "893135"
+    - id: apple_bics
+      path: profiles/bics.yaml
+      selectors:
+        - raw: 20601_ID-893204
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "893204"
+    - id: apple_cellcom_golan_il
+      path: profiles/cellcom_golan_il.yaml
+      selectors:
+        - raw: 20601_ID-89972080
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89972080"
+    - id: apple_cmcc_cmi
+      path: profiles/cmcc_cmi.yaml
+      selectors:
+        - raw: 20601_ID-8985234
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8985234"
+    - id: apple_eastlink_ca
+      path: profiles/eastlink_ca.yaml
+      selectors:
+        - raw: 20601_ID-891035
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "891035"
+    - id: apple_esimgo
+      path: profiles/esimgo.yaml
+      selectors:
+        - raw: 20601_GID1-0409
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "0409"
+    - id: apple_free_yt
+      path: profiles/free_yt.yaml
+      selectors:
+        - raw: 20601_GID1-f004_ID-8926202203
+          conditions:
+            - field: gid1
+              match: prefix
+              value: F004
+            - field: iccid
+              match: prefix
+              value: "8926202203"
+    - id: apple_holafly
+      path: profiles/holafly.yaml
+      selectors:
+        - raw: 20601_GID1-0407_ID-8935333
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "0407"
+            - field: iccid
+              match: prefix
+              value: "8935333"
+        - raw: 20601_GID1-0407_ID-8985234
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "0407"
+            - field: iccid
+              match: prefix
+              value: "8985234"
+    - id: apple_knowroaming
+      path: profiles/knowroaming.yaml
+      selectors:
+        - raw: 20601_GID1-636f6e6e65637431
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 636F6E6E65637431
+    - id: apple_nrj_fr
+      path: profiles/nrj_fr.yaml
+      selectors:
+        - raw: 20601_ID-893326
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "893326"
+    - id: apple_orange_am
+      path: profiles/orange_am.yaml
+      selectors:
+        - raw: 20601_ID-8937410
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8937410"
+    - id: apple_proximus_be
+      path: profiles/proximus_be.yaml
+      generic: true
+      selectors:
+        - raw: "20601"
+    - id: apple_redteamobile
+      path: profiles/redteamobile.yaml
+      selectors:
+        - raw: 20601_ID-89852245280
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89852245280"
+    - id: apple_roamless
+      path: profiles/roamless.yaml
+      selectors:
+        - raw: 20601_GID1-4D2E3F1A6B7C8D9E
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 4D2E3F1A6B7C8D9E
+    - id: apple_telenet_be
+      path: profiles/telenet_be.yaml
+      selectors:
+        - raw: 20601_ID-893207
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "893207"
+        - raw: 20601_ID-89410
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89410"
+    - id: apple_vtr_cl
+      path: profiles/vtr_cl.yaml
+      selectors:
+        - raw: 20601_ID-8956080
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8956080"

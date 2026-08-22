@@ -1,0 +1,64 @@
+version: 2
+plmn: "45403"
+profiles:
+    - id: apple_dentwireless
+      path: profiles/dentwireless.yaml
+      selectors:
+        - raw: 45403_GID1-3597bfd533
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 3597BFD533
+    - id: apple_hutchison_hk
+      path: profiles/hutchison_hk.yaml
+      generic: true
+      selectors:
+        - raw: "45403"
+    - id: apple_hutchison_hkbn_hk
+      path: profiles/hutchison_hkbn_hk.yaml
+      selectors:
+        - raw: 45403_GID1-0009
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "0009"
+        - raw: 45403_ID-8985203026
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8985203026"
+    - id: apple_multibyte
+      path: profiles/multibyte.yaml
+      selectors:
+        - raw: 45403_GID1-0227_GID2-02280
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "0227"
+            - field: gid2
+              match: prefix
+              value: "02280"
+    - id: apple_redteamobile
+      path: profiles/redteamobile.yaml
+      selectors:
+        - raw: 45403_ID-89852245280
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89852245280"
+    - id: apple_shinetown
+      path: profiles/shinetown.yaml
+      selectors:
+        - raw: 45403_GID1-AAAA
+          conditions:
+            - field: gid1
+              match: prefix
+              value: AAAA
+    - id: apple_webbing
+      path: profiles/webbing.yaml
+      selectors:
+        - raw: 45403_ID-8985235
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8985235"

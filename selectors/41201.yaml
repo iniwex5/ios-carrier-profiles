@@ -1,0 +1,8 @@
+version: 2
+plmn: "41201"
+profiles:
+    - id: apple_awcc_af
+      path: profiles/awcc_af.yaml
+      generic: true
+      selectors:
+        - raw: "41201"

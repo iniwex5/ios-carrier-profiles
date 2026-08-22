@@ -1,0 +1,23 @@
+version: 3
+kind: carrier_bundle
+id: apple_unionwireless_us
+bundle: UnionWireless_US.bundle
+supported_plmns:
+    - "310020"
+common: {}
+plmn_overrides:
+    "310020":
+        ims:
+            register:
+                use_ipsec: true
+                include_cellular_network_info: true
+            signaling:
+                max_udp_message_size: 1200
+                preconditions: supported
+                support_p_early_media: true
+                contact:
+                    always_add_sip_instance: true
+            media:
+                rtp_inactivity_seconds: 10
+            volte:
+                enable_volte_by_default: true

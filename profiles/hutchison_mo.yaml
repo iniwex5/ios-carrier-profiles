@@ -1,0 +1,41 @@
+version: 3
+kind: carrier_bundle
+id: apple_hutchison_mo
+bundle: Hutchison_mo.bundle
+supported_plmns:
+    - "45503"
+    - "45505"
+common:
+    ims:
+        epdg:
+            address: wlan.three.com.mo
+        ike:
+            dpd:
+                enabled: false
+                interval_seconds: 600
+            local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+            sa_lifetime_seconds: 80000
+        media:
+            rtcp_interval_seconds: 5
+            rtp_inactivity_seconds: 20
+        register:
+            include_cellular_network_info: true
+        signaling:
+            contact:
+                additional_contact_params:
+                    - selector: REGISTER,INVITE,INVITE:*
+                      params:
+                        - +g.3gpp.mid-call
+                        - +g.3gpp.srvcc-alerting
+            csfb_on:
+                - method: INVITE
+                  statuses:
+                    - 3XX
+                    - 4XX
+                    - 5XX
+                    - 6XX
+            max_udp_message_size: 1200
+            preconditions: unsupported
+            support_p_early_media: true
+        volte:
+            enable_volte_by_default: true

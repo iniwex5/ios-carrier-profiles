@@ -1,0 +1,13 @@
+version: 3
+kind: carrier_bundle
+id: apple_verizon_ting_lte_us
+bundle: Verizon_Ting_LTE_US.bundle
+supported_plmns:
+    - "20404"
+    - "311480"
+common:
+    apple:
+        carrier_entitlements:
+            supported_entitlements: 25
+    entitlement:
+        entitlement_url: https://spc.myvzw.com/ium-RoadrunnerInterface/servlet/IUMServlet

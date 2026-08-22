@@ -1,0 +1,8 @@
+version: 2
+plmn: "41301"
+profiles:
+    - id: apple_mobitel_lk
+      path: profiles/mobitel_lk.yaml
+      generic: true
+      selectors:
+        - raw: "41301"

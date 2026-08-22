@@ -1,0 +1,8 @@
+version: 2
+plmn: "72423"
+profiles:
+    - id: apple_vivo_br
+      path: profiles/vivo_br.yaml
+      generic: true
+      selectors:
+        - raw: "72423"

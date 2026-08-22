@@ -1,0 +1,7 @@
+version: 3
+kind: carrier_bundle
+id: apple_tcc_to
+bundle: TCC_to.bundle
+supported_plmns:
+    - "53901"
+common: {}

@@ -1,0 +1,8 @@
+version: 2
+plmn: "405862"
+profiles:
+    - id: apple_reliancejio_in
+      path: profiles/reliancejio_in.yaml
+      generic: true
+      selectors:
+        - raw: "405862"

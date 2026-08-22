@@ -1,0 +1,25 @@
+version: 3
+kind: carrier_bundle
+id: apple_enetworks_gy
+bundle: ENetworks_gy.bundle
+supported_plmns:
+    - "738040"
+common: {}
+plmn_overrides:
+    "738040":
+        ims:
+            apn: ims
+            ip_stack: ipv4v6
+            register:
+                use_ipsec: true
+            signaling:
+                preconditions: supported
+                support_p_early_media: true
+                contact:
+                    always_add_sip_instance: true
+            media:
+                rtp_inactivity_seconds: 10
+            ussi:
+                enabled: true
+            volte:
+                enable_volte_by_default: true

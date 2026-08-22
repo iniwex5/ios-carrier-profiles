@@ -1,0 +1,17 @@
+version: 3
+kind: carrier_bundle
+id: apple_gigsky_us
+bundle: GigSky_US.bundle
+supported_plmns:
+    - "20404"
+    - "20809"
+    - "22201"
+    - "23801"
+    - "24007"
+    - "310380"
+    - "312870"
+    - "338050"
+common:
+    ims:
+        volte:
+            enable_volte_by_default: false

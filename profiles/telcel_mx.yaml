@@ -1,0 +1,94 @@
+version: 3
+kind: carrier_bundle
+id: apple_telcel_mx
+bundle: Telcel_mx.bundle
+supported_plmns:
+    - "33402"
+    - "334020"
+    - "33420"
+common:
+    apple:
+        carrier_entitlements:
+            supported_entitlements: 9233
+    entitlement:
+        entitlement_url: https://aes.mnc020.mcc334.pub.3gppnetwork.org/entitlement/
+    ims:
+        apn: ims
+        epdg:
+            address: epdg.ims.mnc020.mcc334.pub.3gppnetwork.org
+        ike:
+            child_sa:
+                lifetime_seconds: 87000
+                proposals:
+                    - encryption:
+                        - aes256
+                      integrity:
+                        - sha256
+                      pfs_group: modp2048
+                      lifetime_seconds: 87000
+            dpd:
+                enabled: false
+                interval_seconds: 600
+            local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+            proposals:
+                - encryption:
+                    - aes256
+                  integrity:
+                    - sha256
+                  prf:
+                    - sha256
+                  dh_groups:
+                    - modp2048
+                  lifetime_seconds: 87000
+                  authentication_method: None
+                  eap_method: EAP-AKA
+            sa_lifetime_seconds: 87000
+        ip_stack: ipv6
+        media:
+            rtcp_inactivity_seconds: 25
+            rtp_inactivity_seconds: 30
+        register:
+            include_cellular_network_info: true
+            use_ipsec: true
+        signaling:
+            contact:
+                additional_contact_params:
+                    - selector: REGISTER,INVITE,INVITE:*
+                      params:
+                        - +g.3gpp.mid-call
+                        - +g.3gpp.srvcc-alerting
+                        - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+                    - selector: REGISTER,INVITE[-wifi]
+                      params:
+                        - +g.3gpp.accesstype="cellular2"
+                        - +g.3gpp.mid-call
+                        - +g.3gpp.srvcc-alerting
+                        - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+                    - selector: REGISTER[wifi]
+                      params:
+                        - +g.3gpp.accesstype="wlan1"
+                always_add_sip_instance: true
+            csfb_on:
+                - method: INVITE
+                  statuses:
+                    - "301"
+                    - "401"
+                    - "403"
+                    - "405"
+                    - "406"
+                    - "408"
+                    - "409"
+                    - "410"
+                    - "416"
+                    - "482"
+                    - "483"
+                    - "500"
+                    - "501"
+                    - "502"
+                    - "503"
+                    - "505"
+                    - "603"
+            max_udp_message_size: 1300
+            support_p_early_media: true
+        volte:
+            enable_volte_by_default: true

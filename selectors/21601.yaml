@@ -1,0 +1,8 @@
+version: 2
+plmn: "21601"
+profiles:
+    - id: apple_telenor_hu
+      path: profiles/telenor_hu.yaml
+      generic: true
+      selectors:
+        - raw: "21601"

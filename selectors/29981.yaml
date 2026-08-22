@@ -1,0 +1,8 @@
+version: 2
+plmn: "29981"
+profiles:
+    - id: apple_carrierlab
+      path: profiles/carrierlab.yaml
+      generic: true
+      selectors:
+        - raw: "29981"

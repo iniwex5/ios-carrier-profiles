@@ -1,0 +1,8 @@
+version: 2
+plmn: "311589"
+profiles:
+    - id: apple_uscellular_lte_us
+      path: profiles/uscellular_lte_us.yaml
+      generic: true
+      selectors:
+        - raw: "311589"

@@ -1,0 +1,7 @@
+version: 3
+kind: carrier_bundle
+id: apple_vini_pf
+bundle: Vini_pf.bundle
+supported_plmns:
+    - "54720"
+common: {}

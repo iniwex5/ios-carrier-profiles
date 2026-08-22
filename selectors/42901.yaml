@@ -1,0 +1,8 @@
+version: 2
+plmn: "42901"
+profiles:
+    - id: apple_nepaltelecom_np
+      path: profiles/nepaltelecom_np.yaml
+      generic: true
+      selectors:
+        - raw: "42901"

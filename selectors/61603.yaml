@@ -1,0 +1,8 @@
+version: 2
+plmn: "61603"
+profiles:
+    - id: apple_mtn_bj
+      path: profiles/mtn_bj.yaml
+      generic: true
+      selectors:
+        - raw: "61603"

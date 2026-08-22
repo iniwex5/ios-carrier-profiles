@@ -1,0 +1,8 @@
+version: 2
+plmn: "46605"
+profiles:
+    - id: apple_apt_tw
+      path: profiles/apt_tw.yaml
+      generic: true
+      selectors:
+        - raw: "46605"

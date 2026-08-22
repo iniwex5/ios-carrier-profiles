@@ -1,0 +1,8 @@
+version: 2
+plmn: "60502"
+profiles:
+    - id: apple_tuntel_tn
+      path: profiles/tuntel_tn.yaml
+      generic: true
+      selectors:
+        - raw: "60502"

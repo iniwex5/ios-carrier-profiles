@@ -1,0 +1,8 @@
+version: 2
+plmn: "64700"
+profiles:
+    - id: apple_orange_re
+      path: profiles/orange_re.yaml
+      generic: true
+      selectors:
+        - raw: "64700"

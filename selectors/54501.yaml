@@ -1,0 +1,8 @@
+version: 2
+plmn: "54501"
+profiles:
+    - id: apple_vodafone_ki
+      path: profiles/vodafone_ki.yaml
+      generic: true
+      selectors:
+        - raw: "54501"

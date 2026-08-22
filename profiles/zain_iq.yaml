@@ -1,0 +1,21 @@
+version: 3
+kind: carrier_bundle
+id: apple_zain_iq
+bundle: Zain_iq.bundle
+supported_plmns:
+    - "41820"
+    - "41830"
+common:
+    ims:
+        register:
+            use_ipsec: true
+        signaling:
+            contact:
+                additional_contact_params:
+                    - selector: REGISTER,INVITE,INVITE:*
+                      params:
+                        - +g.3gpp.mid-call
+                        - +g.3gpp.srvcc-alerting
+                        - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+        volte:
+            enable_volte_by_default: true

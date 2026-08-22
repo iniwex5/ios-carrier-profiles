@@ -1,0 +1,32 @@
+version: 2
+plmn: "50212"
+profiles:
+    - id: apple_bics
+      path: profiles/bics.yaml
+      selectors:
+        - raw: 50212_ID-893204
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "893204"
+    - id: apple_maxis_my
+      path: profiles/maxis_my.yaml
+      generic: true
+      selectors:
+        - raw: "50212"
+    - id: apple_redteamobile
+      path: profiles/redteamobile.yaml
+      selectors:
+        - raw: 50212_ID-89852245280
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89852245280"
+    - id: apple_soracom
+      path: profiles/soracom.yaml
+      selectors:
+        - raw: 50212_ID-8942310
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8942310"

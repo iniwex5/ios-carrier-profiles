@@ -1,0 +1,33 @@
+version: 3
+kind: carrier_bundle
+id: apple_orange_jo
+bundle: Orange_jo.bundle
+supported_plmns:
+    - "41677"
+common: {}
+plmn_overrides:
+    "41677":
+        ims:
+            register:
+                use_ipsec: true
+            signaling:
+                support_p_early_media: false
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - "403"
+                        - "408"
+                        - 5XX
+                contact:
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            media:
+                rtp_inactivity_seconds: 20
+            ussi:
+                enabled: true
+            volte:
+                enable_volte_by_default: true

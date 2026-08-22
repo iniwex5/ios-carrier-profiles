@@ -1,0 +1,8 @@
+version: 2
+plmn: "62007"
+profiles:
+    - id: apple_globacom_gh
+      path: profiles/globacom_gh.yaml
+      generic: true
+      selectors:
+        - raw: "62007"

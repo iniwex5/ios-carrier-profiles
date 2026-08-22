@@ -1,0 +1,11 @@
+version: 2
+plmn: "311530"
+profiles:
+    - id: apple_panhandle_us
+      path: profiles/panhandle_us.yaml
+      selectors:
+        - raw: 311530_GID1-5054
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "5054"

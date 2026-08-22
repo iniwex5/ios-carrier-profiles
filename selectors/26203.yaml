@@ -1,0 +1,8 @@
+version: 2
+plmn: "26203"
+profiles:
+    - id: apple_eplus_de
+      path: profiles/eplus_de.yaml
+      generic: true
+      selectors:
+        - raw: "26203"

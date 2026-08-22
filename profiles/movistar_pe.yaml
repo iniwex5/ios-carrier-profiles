@@ -1,0 +1,45 @@
+version: 3
+kind: carrier_bundle
+id: apple_movistar_pe
+bundle: movistar_pe.bundle
+supported_plmns:
+    - "21407"
+    - "71606"
+common:
+    ims:
+        apn: ims
+        ike:
+            dpd:
+                enabled: false
+                interval_seconds: 600
+            local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+            sa_lifetime_seconds: 80000
+        ip_stack: ipv4
+        register:
+            include_cellular_network_info: true
+            use_ipsec: true
+        signaling:
+            contact:
+                additional_contact_params:
+                    - selector: REGISTER,INVITE,INVITE:*
+                      params:
+                        - +g.3gpp.mid-call
+                        - +g.3gpp.srvcc-alerting
+                        - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            csfb_on:
+                - method: INVITE
+                  statuses:
+                    - 3XX
+                    - 4XX
+                    - 5XX
+                    - 6XX
+            max_udp_message_size: 1200
+            preconditions: supported
+            support_p_early_media: true
+        volte:
+            enable_volte_by_default: true
+plmn_overrides:
+    "21407":
+        ims:
+            epdg:
+                address: epdg.epc.mnc006.mcc716.pub.3gppnetwork.org

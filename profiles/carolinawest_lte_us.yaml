@@ -1,0 +1,43 @@
+version: 3
+kind: carrier_bundle
+id: apple_carolinawest_lte_us
+bundle: CarolinaWest_LTE_US.bundle
+supported_plmns:
+    - "310130"
+common: {}
+plmn_overrides:
+    "310130":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 1169
+        entitlement:
+            entitlement_url: https://cww.dcc.entitlements.io3.com/
+        ims:
+            impi_format: imsi@carrierDomain
+            impu_format: imsi@carrierDomain
+            ike:
+                dpd:
+                    enabled: false
+                    interval_seconds: 600
+                local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                local_identifier_type: IDUserFQDN
+                sa_lifetime_seconds: 43200
+            register:
+                use_ipsec: true
+                include_cellular_network_info: false
+            signaling:
+                max_udp_message_size: 1300
+                preconditions: supported
+                support_p_early_media: true
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - 3XX
+                contact:
+                    always_add_sip_instance: true
+            media:
+                rtp_inactivity_seconds: 20
+                rtcp_inactivity_seconds: 20
+                rtcp_interval_seconds: 5
+            volte:
+                enable_volte_by_default: true

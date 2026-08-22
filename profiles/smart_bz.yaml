@@ -1,0 +1,7 @@
+version: 3
+kind: carrier_bundle
+id: apple_smart_bz
+bundle: Smart_bz.bundle
+supported_plmns:
+    - "70269"
+common: {}

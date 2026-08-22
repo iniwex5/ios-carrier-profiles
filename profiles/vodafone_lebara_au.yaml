@@ -1,0 +1,35 @@
+version: 3
+kind: carrier_bundle
+id: apple_vodafone_lebara_au
+bundle: Vodafone_Lebara_au.bundle
+supported_plmns:
+    - "50503"
+common: {}
+plmn_overrides:
+    "50503":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 1
+        entitlement:
+            entitlement_url: https://ents.mnc003.mcc505.pub.3gppnetwork.org:8443
+        ims:
+            apn: ims
+            ip_stack: ipv4v6
+            ike:
+                local_identifier: vha@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                sa_lifetime_seconds: 80000
+            register:
+                use_ipsec: true
+                include_cellular_network_info: true
+            signaling:
+                support_p_early_media: true
+                contact:
+                    always_add_sip_instance: true
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            volte:
+                enable_volte_by_default: true

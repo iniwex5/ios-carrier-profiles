@@ -1,0 +1,18 @@
+version: 3
+kind: carrier_bundle
+id: apple_cmcc_cmi
+bundle: CMCC_CMI.bundle
+supported_plmns:
+    - "20601"
+    - "20628"
+    - "20801"
+    - "22201"
+    - "23410"
+    - "302220"
+    - "41004"
+    - "45406"
+    - "45412"
+    - "454384"
+    - "732123"
+    - "90101"
+common: {}

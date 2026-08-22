@@ -1,0 +1,16 @@
+version: 2
+plmn: "43701"
+profiles:
+    - id: apple_vimpelcom_izi_kg
+      path: profiles/vimpelcom_izi_kg.yaml
+      selectors:
+        - raw: 43701_ID-89996772888
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89996772888"
+    - id: apple_vimpelcom_kg
+      path: profiles/vimpelcom_kg.yaml
+      generic: true
+      selectors:
+        - raw: "43701"

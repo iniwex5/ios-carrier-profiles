@@ -1,0 +1,7 @@
+version: 3
+kind: carrier_bundle
+id: apple_tashicell_bt
+bundle: TashiCell_bt.bundle
+supported_plmns:
+    - "40277"
+common: {}

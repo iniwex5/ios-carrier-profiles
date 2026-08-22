@@ -1,0 +1,19 @@
+version: 2
+plmn: "21405"
+profiles:
+    - id: apple_knowroaming
+      path: profiles/knowroaming.yaml
+      selectors:
+        - raw: 21405_GID1-636f6e6e65637431
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 636F6E6E65637431
+    - id: apple_telefonica_esimflag
+      path: profiles/telefonica_esimflag.yaml
+      selectors:
+        - raw: 21405_GID1-80
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "80"

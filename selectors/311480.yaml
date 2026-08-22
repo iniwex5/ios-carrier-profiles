@@ -1,0 +1,128 @@
+version: 2
+plmn: "311480"
+profiles:
+    - id: apple_appalachian_lte_us
+      path: profiles/appalachian_lte_us.yaml
+      selectors:
+        - raw: 311480_GID2-CA
+          conditions:
+            - field: gid2
+              match: prefix
+              value: CA
+    - id: apple_cellcom_lte_us
+      path: profiles/cellcom_lte_us.yaml
+      selectors:
+        - raw: 311480_GID2-AD
+          conditions:
+            - field: gid2
+              match: prefix
+              value: AD
+    - id: apple_chat_lte_us
+      path: profiles/chat_lte_us.yaml
+      selectors:
+        - raw: 311480_GID2-CB
+          conditions:
+            - field: gid2
+              match: prefix
+              value: CB
+    - id: apple_coppervalley_lte_us
+      path: profiles/coppervalley_lte_us.yaml
+      selectors:
+        - raw: 311480_GID2-CF
+          conditions:
+            - field: gid2
+              match: prefix
+              value: CF
+    - id: apple_crosswireless_lte_us
+      path: profiles/crosswireless_lte_us.yaml
+      selectors:
+        - raw: 311480_GID2-AC
+          conditions:
+            - field: gid2
+              match: prefix
+              value: AC
+    - id: apple_nwm_lte_us
+      path: profiles/nwm_lte_us.yaml
+      selectors:
+        - raw: 311480_GID2-CD
+          conditions:
+            - field: gid2
+              match: prefix
+              value: CD
+    - id: apple_thc_lte_us
+      path: profiles/thc_lte_us.yaml
+      selectors:
+        - raw: 311480_GID2-AE
+          conditions:
+            - field: gid2
+              match: prefix
+              value: AE
+    - id: apple_verizon_charter_lte_us
+      path: profiles/verizon_charter_lte_us.yaml
+      selectors:
+        - raw: 311480_GID2-A7
+          conditions:
+            - field: gid2
+              match: prefix
+              value: A7
+    - id: apple_verizon_comcast_lte_us
+      path: profiles/verizon_comcast_lte_us.yaml
+      selectors:
+        - raw: 311480_GID2-A3
+          conditions:
+            - field: gid2
+              match: prefix
+              value: A3
+    - id: apple_verizon_core_visible_lte_us
+      path: profiles/verizon_core_visible_lte_us.yaml
+      selectors:
+        - raw: 311480_GID2-1C
+          conditions:
+            - field: gid2
+              match: prefix
+              value: 1C
+    - id: apple_verizon_cox_lte_us
+      path: profiles/verizon_cox_lte_us.yaml
+      selectors:
+        - raw: 311480_GID2-B100000000000000
+          conditions:
+            - field: gid2
+              match: prefix
+              value: B100000000000000
+    - id: apple_verizon_lte_us
+      path: profiles/verizon_lte_us.yaml
+      generic: true
+      selectors:
+        - raw: "311480"
+    - id: apple_verizon_response_lte_us
+      path: profiles/verizon_response_lte_us.yaml
+      selectors:
+        - raw: 311480_GID2-1B
+          conditions:
+            - field: gid2
+              match: prefix
+              value: 1B
+    - id: apple_verizon_tfw_lte_us
+      path: profiles/verizon_tfw_lte_us.yaml
+      selectors:
+        - raw: 311480_GID2-A1
+          conditions:
+            - field: gid2
+              match: prefix
+              value: A1
+    - id: apple_verizon_ting_lte_us
+      path: profiles/verizon_ting_lte_us.yaml
+      selectors:
+        - raw: 311480_GID2-A9
+          conditions:
+            - field: gid2
+              match: prefix
+              value: A9
+    - id: apple_verizon_visible_lte_us
+      path: profiles/verizon_visible_lte_us.yaml
+      selectors:
+        - raw: 311480_GID2-1A
+          conditions:
+            - field: gid2
+              match: prefix
+              value: 1A

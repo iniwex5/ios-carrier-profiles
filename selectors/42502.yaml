@@ -1,0 +1,16 @@
+version: 2
+plmn: "42502"
+profiles:
+    - id: apple_cellcom_golan_il
+      path: profiles/cellcom_golan_il.yaml
+      selectors:
+        - raw: 42502_ID-89972080
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89972080"
+    - id: apple_cellcom_il
+      path: profiles/cellcom_il.yaml
+      generic: true
+      selectors:
+        - raw: "42502"

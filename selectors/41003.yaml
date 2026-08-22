@@ -1,0 +1,8 @@
+version: 2
+plmn: "41003"
+profiles:
+    - id: apple_ufone_pk
+      path: profiles/ufone_pk.yaml
+      generic: true
+      selectors:
+        - raw: "41003"

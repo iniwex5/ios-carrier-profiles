@@ -1,0 +1,7 @@
+version: 3
+kind: carrier_bundle
+id: apple_movicel_ao
+bundle: Movicel_ao.bundle
+supported_plmns:
+    - "63104"
+common: {}

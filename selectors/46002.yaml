@@ -1,0 +1,8 @@
+version: 2
+plmn: "46002"
+profiles:
+    - id: apple_cmcc_cn
+      path: profiles/cmcc_cn.yaml
+      generic: true
+      selectors:
+        - raw: "46002"

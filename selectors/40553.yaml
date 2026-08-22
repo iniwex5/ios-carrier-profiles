@@ -1,0 +1,8 @@
+version: 2
+plmn: "40553"
+profiles:
+    - id: apple_bhartiairtel_in
+      path: profiles/bhartiairtel_in.yaml
+      generic: true
+      selectors:
+        - raw: "40553"

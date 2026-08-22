@@ -1,0 +1,28 @@
+version: 3
+kind: carrier_bundle
+id: apple_yoigo_pepephone_es
+bundle: Yoigo_Pepephone_es.bundle
+supported_plmns:
+    - "21404"
+common: {}
+plmn_overrides:
+    "21404":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 5121
+        entitlement:
+            entitlement_url: https://masmovil.entitlements.io3.com
+        ims:
+            register:
+                use_ipsec: true
+            signaling:
+                support_p_early_media: false
+                contact:
+                    additional_contact_params:
+                        - selector: REGISTER
+                          params:
+                            - +g.3gpp.accesstype="cellular2"
+            media:
+                rtcp_inactivity_seconds: 30
+            volte:
+                enable_volte_by_default: true

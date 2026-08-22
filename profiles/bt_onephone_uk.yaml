@@ -1,0 +1,75 @@
+version: 3
+kind: carrier_bundle
+id: apple_bt_onephone_uk
+bundle: BT_OnePhone_uk.bundle
+supported_plmns:
+    - "23408"
+    - "23430"
+common:
+    ims:
+        apn: ims.mnc008.mcc234.uktel.org
+        ike:
+            child_sa:
+                lifetime_seconds: 86400
+                proposals:
+                    - encryption:
+                        - aes128
+                      integrity:
+                        - sha256
+                      pfs_group: modp2048
+                      lifetime_seconds: 86400
+            dpd:
+                enabled: false
+                interval_seconds: 600
+            local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+            proposals:
+                - encryption:
+                    - aes128
+                  integrity:
+                    - sha256
+                  prf:
+                    - sha256
+                  dh_groups:
+                    - modp2048
+                  lifetime_seconds: 80000
+                  authentication_method: None
+                  eap_method: EAP-AKA
+            sa_lifetime_seconds: 80000
+        ip_stack: ipv4v6
+        media:
+            remote_rtcp_deactivation: true
+            rtcp_inactivity_seconds: 10
+            rtp_inactivity_seconds: 20
+        register:
+            use_ipsec: true
+        signaling:
+            contact:
+                additional_contact_params:
+                    - selector: REGISTER,INVITE,INVITE:*
+                      params:
+                        - +g.3gpp.mid-call
+                        - +g.3gpp.srvcc-alerting
+                        - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            csfb_on:
+                - method: INVITE
+                  statuses:
+                    - 3XX
+                    - 4XX
+                    - 5XX
+                    - 6XX
+            max_udp_message_size: 1200
+            preconditions: supported
+            re_register_on:
+                - method: INVITE
+                  statuses:
+                    - "403"
+            support_p_early_media: true
+        ussi:
+            enabled: true
+        volte:
+            enable_volte_by_default: true
+plmn_overrides:
+    "23430":
+        ims:
+            epdg:
+                address: epdg.epc.mnc008.mcc234.pub.3gppnetwork.org

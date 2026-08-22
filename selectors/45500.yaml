@@ -1,0 +1,8 @@
+version: 2
+plmn: "45500"
+profiles:
+    - id: apple_smartone_mo
+      path: profiles/smartone_mo.yaml
+      generic: true
+      selectors:
+        - raw: "45500"

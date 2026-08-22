@@ -1,0 +1,34 @@
+version: 3
+kind: carrier_bundle
+id: apple_tele2_lt
+bundle: Tele2_lt.bundle
+supported_plmns:
+    - "24603"
+common: {}
+plmn_overrides:
+    "24603":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 5121
+        entitlement:
+            entitlement_url: https://entitlementlt.tele2.com/entitlement/
+        ims:
+            apn: ims
+            ip_stack: ipv6
+            register:
+                use_ipsec: true
+            signaling:
+                support_p_early_media: false
+                contact:
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            media:
+                rtp_inactivity_seconds: 20
+            ussi:
+                enabled: true
+            volte:
+                enable_volte_by_default: true

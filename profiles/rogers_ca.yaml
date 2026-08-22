@@ -1,0 +1,53 @@
+version: 3
+kind: carrier_bundle
+id: apple_rogers_ca
+bundle: Rogers_ca.bundle
+supported_plmns:
+    - "302720"
+common: {}
+plmn_overrides:
+    "302720":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 4254897
+        entitlement:
+            entitlement_url: https://dmsa2.egslb.net.rogers.com:8181/ium-OEMInterface/servlet/IUMServlet
+        ims:
+            apn: ims
+            ip_stack: ipv6
+            ike:
+                dpd:
+                    enabled: false
+                    interval_seconds: 600
+                local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                sa_lifetime_seconds: 80000
+            register:
+                use_ipsec: true
+                include_cellular_network_info: true
+            signaling:
+                max_udp_message_size: 1200
+                preconditions: supported
+                support_p_early_media: true
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - "380"
+                        - "414"
+                        - "499"
+                        - "606"
+                contact:
+                    always_add_sip_instance: true
+                    additional_contact_params:
+                        - selector: INVITE[911]
+                          params:
+                            - sos
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            media:
+                rtp_inactivity_seconds: 30
+                rtcp_interval_seconds: 5
+            volte:
+                enable_volte_by_default: true

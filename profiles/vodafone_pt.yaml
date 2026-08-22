@@ -1,0 +1,32 @@
+version: 3
+kind: carrier_bundle
+id: apple_vodafone_pt
+bundle: Vodafone_pt.bundle
+supported_plmns:
+    - "26801"
+common: {}
+plmn_overrides:
+    "26801":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 13312
+        entitlement:
+            entitlement_url: https://es-pt.vodafone.com:4451/ium-OEMInterface/servlet/IUMServlet
+        ims:
+            apn: ims
+            register:
+                use_ipsec: true
+            signaling:
+                preconditions: supported
+                support_p_early_media: true
+                contact:
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            media:
+                rtcp_interval_seconds: 5
+            volte:
+                enable_volte_by_default: true

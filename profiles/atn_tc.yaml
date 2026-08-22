@@ -1,0 +1,7 @@
+version: 3
+kind: carrier_bundle
+id: apple_atn_tc
+bundle: ATN_tc.bundle
+supported_plmns:
+    - "376360"
+common: {}

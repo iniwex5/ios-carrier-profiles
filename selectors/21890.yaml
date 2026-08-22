@@ -1,0 +1,13 @@
+version: 2
+plmn: "21890"
+profiles:
+    - id: apple_telekomslovenije_ba
+      path: profiles/telekomslovenije_ba.yaml
+      generic: true
+      selectors:
+        - raw: "21890"
+        - raw: 21890_ID-89387010
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89387010"

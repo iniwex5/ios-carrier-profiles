@@ -1,0 +1,16 @@
+version: 2
+plmn: "28601"
+profiles:
+    - id: apple_turkcell_kktcell_tr
+      path: profiles/turkcell_kktcell_tr.yaml
+      selectors:
+        - raw: 28601_GID1-4B4B5443454C4C
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 4B4B5443454C4C
+    - id: apple_turkcell_tr
+      path: profiles/turkcell_tr.yaml
+      generic: true
+      selectors:
+        - raw: "28601"

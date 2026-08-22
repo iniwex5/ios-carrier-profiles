@@ -1,0 +1,61 @@
+version: 3
+kind: carrier_bundle
+id: apple_nextech_lte_us
+bundle: NexTech_LTE_US.bundle
+supported_plmns:
+    - "312420"
+common: {}
+plmn_overrides:
+    "312420":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 9361
+        entitlement:
+            entitlement_url: https://deg.ntwls.net/ium-OEMInterface/servlet/IUMServlet
+        ims:
+            apn: ims
+            ip_stack: ipv4v6
+            domain: ims.mnc420.mcc312.3gppnetwork.org
+            impi_format: imsi@carrierDomain
+            impu_format: imsi@carrierDomain
+            ike:
+                proposals:
+                    - encryption:
+                        - aes256
+                      integrity:
+                        - sha256
+                      prf:
+                        - sha256
+                      dh_groups:
+                        - modp2048
+                      lifetime_seconds: 80000
+                      authentication_method: None
+                      eap_method: EAP-AKA
+                dpd:
+                    enabled: false
+                    interval_seconds: 600
+                child_sa:
+                    proposals:
+                        - encryption:
+                            - aes256
+                          integrity:
+                            - sha256
+                          pfs_group: modp2048
+                          lifetime_seconds: 86400
+                    lifetime_seconds: 86400
+                local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                local_identifier_type: IDUserFQDN
+                sa_lifetime_seconds: 80000
+            register:
+                use_ipsec: true
+                include_cellular_network_info: true
+            signaling:
+                max_udp_message_size: 1200
+                preconditions: supported
+                support_p_early_media: true
+            media:
+                rtp_inactivity_seconds: 20
+                rtcp_inactivity_seconds: 20
+                rtcp_interval_seconds: 5
+            volte:
+                enable_volte_by_default: true

@@ -1,0 +1,56 @@
+version: 2
+plmn: "310599"
+profiles:
+    - id: apple_verizon_charter_lte_us
+      path: profiles/verizon_charter_lte_us.yaml
+      selectors:
+        - raw: 310599_GID2-A7
+          conditions:
+            - field: gid2
+              match: prefix
+              value: A7
+    - id: apple_verizon_comcast_lte_us
+      path: profiles/verizon_comcast_lte_us.yaml
+      selectors:
+        - raw: 310599_GID2-A3
+          conditions:
+            - field: gid2
+              match: prefix
+              value: A3
+    - id: apple_verizon_core_visible_lte_us
+      path: profiles/verizon_core_visible_lte_us.yaml
+      selectors:
+        - raw: 310599_GID2-1C
+          conditions:
+            - field: gid2
+              match: prefix
+              value: 1C
+    - id: apple_verizon_cox_lte_us
+      path: profiles/verizon_cox_lte_us.yaml
+      selectors:
+        - raw: 310599_GID2-B100000000000000
+          conditions:
+            - field: gid2
+              match: prefix
+              value: B100000000000000
+    - id: apple_verizon_lte_us
+      path: profiles/verizon_lte_us.yaml
+      generic: true
+      selectors:
+        - raw: "310599"
+    - id: apple_verizon_response_lte_us
+      path: profiles/verizon_response_lte_us.yaml
+      selectors:
+        - raw: 310599_GID2-1B
+          conditions:
+            - field: gid2
+              match: prefix
+              value: 1B
+    - id: apple_verizon_tfw_lte_us
+      path: profiles/verizon_tfw_lte_us.yaml
+      selectors:
+        - raw: 310599_GID2-A1
+          conditions:
+            - field: gid2
+              match: prefix
+              value: A1

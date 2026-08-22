@@ -1,0 +1,8 @@
+version: 2
+plmn: "47007"
+profiles:
+    - id: apple_robi_bhartiairtel_bd
+      path: profiles/robi_bhartiairtel_bd.yaml
+      generic: true
+      selectors:
+        - raw: "47007"

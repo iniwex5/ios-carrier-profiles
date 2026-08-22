@@ -1,0 +1,16 @@
+version: 2
+plmn: "33405"
+profiles:
+    - id: apple_iusacell_mx
+      path: profiles/iusacell_mx.yaml
+      generic: true
+      selectors:
+        - raw: "33405"
+    - id: apple_iusacell_unefon_mx
+      path: profiles/iusacell_unefon_mx.yaml
+      selectors:
+        - raw: 33405_GID2-FFFFFF55
+          conditions:
+            - field: gid2
+              match: prefix
+              value: FFFFFF55

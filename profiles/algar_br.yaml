@@ -1,0 +1,37 @@
+version: 3
+kind: carrier_bundle
+id: apple_algar_br
+bundle: Algar_br.bundle
+supported_plmns:
+    - "22201"
+    - "72432"
+    - "72433"
+    - "72434"
+common:
+    ims:
+        apn: ims
+        ip_stack: ipv4v6
+        register:
+            use_ipsec: true
+        signaling:
+            contact:
+                additional_contact_params:
+                    - selector: REGISTER,INVITE,INVITE:*
+                      params:
+                        - +g.3gpp.mid-call
+                        - +g.3gpp.srvcc-alerting
+                        - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+                always_add_sip_instance: false
+            csfb_on:
+                - method: INVITE
+                  statuses:
+                    - 3XX
+                    - 4XX
+                    - 5XX
+                    - 6XX
+            preconditions: unsupported
+            support_p_early_media: true
+        ussi:
+            enabled: false
+        volte:
+            enable_volte_by_default: true

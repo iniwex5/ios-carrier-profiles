@@ -1,0 +1,8 @@
+version: 2
+plmn: "54927"
+profiles:
+    - id: apple_bluesky_ws
+      path: profiles/bluesky_ws.yaml
+      generic: true
+      selectors:
+        - raw: "54927"

@@ -1,0 +1,29 @@
+version: 3
+kind: carrier_bundle
+id: apple_softbank_ymobile_jp
+bundle: Softbank_YMobile_jp.bundle
+supported_plmns:
+    - "44020"
+common: {}
+plmn_overrides:
+    "44020":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 4759569
+        entitlement:
+            entitlement_url: https://efr.softbank.jp/terminal/validate.do
+        ims:
+            apn: ims
+            ip_stack: ipv6
+            register:
+                use_ipsec: true
+            signaling:
+                preconditions: supported
+                support_p_early_media: true
+                contact:
+                    always_add_sip_instance: true
+            media:
+                rtcp_inactivity_seconds: 20
+                rtcp_interval_seconds: 5
+            volte:
+                enable_volte_by_default: true

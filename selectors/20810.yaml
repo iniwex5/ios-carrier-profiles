@@ -1,0 +1,31 @@
+version: 2
+plmn: "20810"
+profiles:
+    - id: apple_sfr_fr
+      path: profiles/sfr_fr.yaml
+      generic: true
+      selectors:
+        - raw: "20810"
+        - raw: 20810_ID-89331043
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89331043"
+        - raw: 20810_ID-89331069
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89331069"
+        - raw: 20810_ID-893330
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "893330"
+    - id: apple_sfr_lpm_fr
+      path: profiles/sfr_lpm_fr.yaml
+      selectors:
+        - raw: 20810_GID1-4C504D
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 4C504D

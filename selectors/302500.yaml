@@ -1,0 +1,16 @@
+version: 2
+plmn: "302500"
+profiles:
+    - id: apple_videotron_ca
+      path: profiles/videotron_ca.yaml
+      generic: true
+      selectors:
+        - raw: "302500"
+    - id: apple_videotron_fizz_ca
+      path: profiles/videotron_fizz_ca.yaml
+      selectors:
+        - raw: 302500_GID1-55
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "55"

@@ -1,0 +1,16 @@
+version: 2
+plmn: "311650"
+profiles:
+    - id: apple_ptci_lte_us
+      path: profiles/ptci_lte_us.yaml
+      selectors:
+        - raw: 311650_GID2-10FD
+          conditions:
+            - field: gid2
+              match: prefix
+              value: 10FD
+    - id: apple_unitedwireless_lte_us
+      path: profiles/unitedwireless_lte_us.yaml
+      generic: true
+      selectors:
+        - raw: "311650"

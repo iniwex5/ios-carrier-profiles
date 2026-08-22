@@ -1,0 +1,238 @@
+version: 2
+plmn: "22201"
+profiles:
+    - id: apple_affinityclick
+      path: profiles/affinityclick.yaml
+      selectors:
+        - raw: 22201_GID1-616C6F73696D31
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 616C6F73696D31
+    - id: apple_algar_br
+      path: profiles/algar_br.yaml
+      selectors:
+        - raw: 22201_ID-895532
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "895532"
+        - raw: 22201_ID-895533
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "895533"
+        - raw: 22201_ID-895534
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "895534"
+    - id: apple_cmcc_cmi
+      path: profiles/cmcc_cmi.yaml
+      selectors:
+        - raw: 22201_ID-8985234
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8985234"
+    - id: apple_gigsky_us
+      path: profiles/gigsky_us.yaml
+      selectors:
+        - raw: 22201_GID1-6F
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 6F
+    - id: apple_iusacell_mx
+      path: profiles/iusacell_mx.yaml
+      selectors:
+        - raw: 22201_ID-8952050
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8952050"
+    - id: apple_iusacell_unefon_mx
+      path: profiles/iusacell_unefon_mx.yaml
+      selectors:
+        - raw: 22201_GID2-FFFFFF55_ID-8952050
+          conditions:
+            - field: gid2
+              match: prefix
+              value: FFFFFF55
+            - field: iccid
+              match: prefix
+              value: "8952050"
+    - id: apple_knowroaming
+      path: profiles/knowroaming.yaml
+      selectors:
+        - raw: 22201_GID1-636f6e6e65637431
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 636F6E6E65637431
+    - id: apple_nova_is
+      path: profiles/nova_is.yaml
+      selectors:
+        - raw: 22201_ID-8935411
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8935411"
+    - id: apple_primetel_cy
+      path: profiles/primetel_cy.yaml
+      selectors:
+        - raw: 22201_ID-8935720
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8935720"
+    - id: apple_redteamobile
+      path: profiles/redteamobile.yaml
+      selectors:
+        - raw: 22201_ID-89852245280
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89852245280"
+    - id: apple_reliancejio_in
+      path: profiles/reliancejio_in.yaml
+      selectors:
+        - raw: 22201_ID-8991840
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8991840"
+        - raw: 22201_ID-8991854
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8991854"
+        - raw: 22201_ID-8991855
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8991855"
+        - raw: 22201_ID-8991856
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8991856"
+        - raw: 22201_ID-8991857
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8991857"
+        - raw: 22201_ID-8991858
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8991858"
+        - raw: 22201_ID-8991859
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8991859"
+        - raw: 22201_ID-8991860
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8991860"
+        - raw: 22201_ID-8991861
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8991861"
+        - raw: 22201_ID-8991862
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8991862"
+        - raw: 22201_ID-8991863
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8991863"
+        - raw: 22201_ID-8991864
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8991864"
+        - raw: 22201_ID-8991865
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8991865"
+        - raw: 22201_ID-8991866
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8991866"
+        - raw: 22201_ID-8991867
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8991867"
+        - raw: 22201_ID-8991868
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8991868"
+        - raw: 22201_ID-8991869
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8991869"
+        - raw: 22201_ID-8991870
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8991870"
+        - raw: 22201_ID-8991871
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8991871"
+        - raw: 22201_ID-8991872
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8991872"
+        - raw: 22201_ID-8991873
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8991873"
+        - raw: 22201_ID-8991874
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8991874"
+    - id: apple_tango
+      path: profiles/tango.yaml
+      selectors:
+        - raw: 22201_ID-894453
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "894453"
+    - id: apple_tim_italy
+      path: profiles/tim_italy.yaml
+      generic: true
+      selectors:
+        - raw: "22201"
+    - id: apple_tim_kena_it
+      path: profiles/tim_kena_it.yaml
+      selectors:
+        - raw: 22201_ID-893907
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "893907"
+    - id: apple_webbing
+      path: profiles/webbing.yaml
+      selectors:
+        - raw: 22201_ID-8985235
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8985235"

@@ -1,0 +1,8 @@
+version: 2
+plmn: "350000"
+profiles:
+    - id: apple_atn_bm
+      path: profiles/atn_bm.yaml
+      generic: true
+      selectors:
+        - raw: "350000"

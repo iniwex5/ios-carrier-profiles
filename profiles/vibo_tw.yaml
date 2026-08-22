@@ -1,0 +1,22 @@
+version: 3
+kind: carrier_bundle
+id: apple_vibo_tw
+bundle: Vibo_tw.bundle
+supported_plmns:
+    - "46689"
+    - "466891"
+    - "46690"
+common:
+    ims:
+        apn: ims
+        domain: ims.mnc089.mcc466.3gppnetwork.org
+        impi_format: imsi@carrierDomain
+        impu_format: msisdn@carrierDomain
+        ip_stack: ipv4
+        register:
+            use_ipsec: true
+        signaling:
+            preconditions: supported
+            support_p_early_media: true
+        volte:
+            enable_volte_by_default: true

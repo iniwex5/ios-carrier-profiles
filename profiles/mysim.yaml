@@ -1,0 +1,24 @@
+version: 3
+kind: carrier_bundle
+id: apple_mysim
+bundle: MySIM.bundle
+supported_plmns:
+    - "20837"
+    - "20839"
+    - "23410"
+    - "24007"
+    - "26001"
+    - "26006"
+    - "29505"
+    - "310840"
+    - "41677"
+    - "45204"
+    - "45400"
+    - "52501"
+    - "52505"
+    - "71204"
+    - "732123"
+common:
+    ims:
+        volte:
+            enable_volte_by_default: false

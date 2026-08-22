@@ -1,0 +1,8 @@
+version: 2
+plmn: "25702"
+profiles:
+    - id: apple_mts_by
+      path: profiles/mts_by.yaml
+      generic: true
+      selectors:
+        - raw: "25702"

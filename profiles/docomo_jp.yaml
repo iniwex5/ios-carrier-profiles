@@ -1,0 +1,68 @@
+version: 3
+kind: carrier_bundle
+id: apple_docomo_jp
+bundle: Docomo_jp.bundle
+supported_plmns:
+    - "44010"
+common: {}
+plmn_overrides:
+    "44010":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 41985
+        entitlement:
+            entitlement_url: https://adm.docomo.ne.jp
+        ims:
+            apn: ims
+            ip_stack: ipv6
+            register:
+                use_ipsec: true
+            signaling:
+                preconditions: supported
+                support_p_early_media: true
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - "400"
+                        - "401"
+                        - "402"
+                        - "405"
+                        - "406"
+                        - "407"
+                        - "408"
+                        - "410"
+                        - "412"
+                        - "413"
+                        - "414"
+                        - "415"
+                        - "416"
+                        - "417"
+                        - "420"
+                        - "421"
+                        - "422"
+                        - "423"
+                        - "429"
+                        - "470"
+                        - "482"
+                        - "485"
+                        - "488"
+                        - "489"
+                        - "491"
+                        - "493"
+                        - "494"
+                        - "500"
+                        - "501"
+                        - "502"
+                        - "503"
+                        - "504"
+                        - "505"
+                        - "513"
+                        - "580"
+                        - "604"
+                        - "606"
+            media:
+                rtp_inactivity_seconds: 14
+            ussi:
+                enabled: true
+            volte:
+                enable_volte_by_default: true

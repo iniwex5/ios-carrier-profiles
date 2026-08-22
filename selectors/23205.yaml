@@ -1,0 +1,8 @@
+version: 2
+plmn: "23205"
+profiles:
+    - id: apple_one_at
+      path: profiles/one_at.yaml
+      generic: true
+      selectors:
+        - raw: "23205"

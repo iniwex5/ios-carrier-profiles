@@ -1,0 +1,40 @@
+version: 3
+kind: carrier_bundle
+id: apple_vodafone_qa
+bundle: Vodafone_qa.bundle
+supported_plmns:
+    - "20404"
+    - "42702"
+common:
+    apple:
+        carrier_entitlements:
+            supported_entitlements: 13313
+    entitlement:
+        entitlement_url: https://entitlement.vodafone.com.qa/ium-OEMInterface/servlet/IUMServlet
+    ims:
+        apn: ims
+        ip_stack: ipv4
+        media:
+            rtcp_interval_seconds: 5
+        register:
+            use_ipsec: true
+        signaling:
+            contact:
+                additional_contact_params:
+                    - selector: REGISTER,INVITE,INVITE:*
+                      params:
+                        - +g.3gpp.srvcc-alerting
+                always_add_sip_instance: true
+            csfb_on:
+                - method: INVITE
+                  statuses:
+                    - 3XX
+                    - "403"
+                    - "500"
+                    - "503"
+            preconditions: supported
+            support_p_early_media: true
+        ussi:
+            enabled: true
+        volte:
+            enable_volte_by_default: true

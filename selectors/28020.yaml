@@ -1,0 +1,8 @@
+version: 2
+plmn: "28020"
+profiles:
+    - id: apple_primetel_cy
+      path: profiles/primetel_cy.yaml
+      generic: true
+      selectors:
+        - raw: "28020"

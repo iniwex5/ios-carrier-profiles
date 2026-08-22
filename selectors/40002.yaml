@@ -1,0 +1,8 @@
+version: 2
+plmn: "40002"
+profiles:
+    - id: apple_bakcell_az
+      path: profiles/bakcell_az.yaml
+      generic: true
+      selectors:
+        - raw: "40002"

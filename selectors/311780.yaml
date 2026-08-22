@@ -1,0 +1,11 @@
+version: 2
+plmn: "311780"
+profiles:
+    - id: apple_astca_as
+      path: profiles/astca_as.yaml
+      selectors:
+        - raw: 311780_ID-8901780
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901780"

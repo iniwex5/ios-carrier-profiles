@@ -1,0 +1,8 @@
+version: 2
+plmn: "52811"
+profiles:
+    - id: apple_dstcom_bn
+      path: profiles/dstcom_bn.yaml
+      generic: true
+      selectors:
+        - raw: "52811"

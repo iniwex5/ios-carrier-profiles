@@ -1,0 +1,8 @@
+version: 2
+plmn: "52004"
+profiles:
+    - id: apple_trueh_th
+      path: profiles/trueh_th.yaml
+      generic: true
+      selectors:
+        - raw: "52004"

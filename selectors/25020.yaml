@@ -1,0 +1,16 @@
+version: 2
+plmn: "25020"
+profiles:
+    - id: apple_tele2_ru
+      path: profiles/tele2_ru.yaml
+      generic: true
+      selectors:
+        - raw: "25020"
+    - id: apple_tele2_sberbank_ru
+      path: profiles/tele2_sberbank_ru.yaml
+      selectors:
+        - raw: 25020_GID1-FA3207
+          conditions:
+            - field: gid1
+              match: prefix
+              value: FA3207

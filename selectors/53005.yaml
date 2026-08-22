@@ -1,0 +1,32 @@
+version: 2
+plmn: "53005"
+profiles:
+    - id: apple_affinityclick
+      path: profiles/affinityclick.yaml
+      selectors:
+        - raw: 53005_GID1-616C6F73696D31
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 616C6F73696D31
+    - id: apple_knowroaming
+      path: profiles/knowroaming.yaml
+      selectors:
+        - raw: 53005_GID1-636f6e6e65637431
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 636F6E6E65637431
+    - id: apple_telecom_nz
+      path: profiles/telecom_nz.yaml
+      generic: true
+      selectors:
+        - raw: "53005"
+    - id: apple_telecom_skinny_nz
+      path: profiles/telecom_skinny_nz.yaml
+      selectors:
+        - raw: 53005_ID-89640520
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89640520"

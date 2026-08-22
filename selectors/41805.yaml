@@ -1,0 +1,8 @@
+version: 2
+plmn: "41805"
+profiles:
+    - id: apple_qtel_iq
+      path: profiles/qtel_iq.yaml
+      generic: true
+      selectors:
+        - raw: "41805"

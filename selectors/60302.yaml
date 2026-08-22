@@ -1,0 +1,8 @@
+version: 2
+plmn: "60302"
+profiles:
+    - id: apple_djezzy_dz
+      path: profiles/djezzy_dz.yaml
+      generic: true
+      selectors:
+        - raw: "60302"

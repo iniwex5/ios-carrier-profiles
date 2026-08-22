@@ -1,0 +1,8 @@
+version: 2
+plmn: "63510"
+profiles:
+    - id: apple_mtn_rw
+      path: profiles/mtn_rw.yaml
+      generic: true
+      selectors:
+        - raw: "63510"

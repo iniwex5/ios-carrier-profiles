@@ -1,0 +1,56 @@
+version: 2
+plmn: "20628"
+profiles:
+    - id: apple_affinityclick
+      path: profiles/affinityclick.yaml
+      selectors:
+        - raw: 20628_GID1-616C6F73696D31
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 616C6F73696D31
+    - id: apple_airgsm
+      path: profiles/airgsm.yaml
+      selectors:
+        - raw: 20628_ID-893135
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "893135"
+    - id: apple_bics
+      path: profiles/bics.yaml
+      generic: true
+      selectors:
+        - raw: "20628"
+    - id: apple_cmcc_cmi
+      path: profiles/cmcc_cmi.yaml
+      selectors:
+        - raw: 20628_ID-8985234
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8985234"
+    - id: apple_esimgo
+      path: profiles/esimgo.yaml
+      selectors:
+        - raw: 20628_GID1-0409
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "0409"
+    - id: apple_knowroaming
+      path: profiles/knowroaming.yaml
+      selectors:
+        - raw: 20628_GID1-636f6e6e65637431
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 636F6E6E65637431
+    - id: apple_roamless
+      path: profiles/roamless.yaml
+      selectors:
+        - raw: 20628_GID1-4D2E3F1A6B7C8D9E
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 4D2E3F1A6B7C8D9E

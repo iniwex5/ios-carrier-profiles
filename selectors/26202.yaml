@@ -1,0 +1,24 @@
+version: 2
+plmn: "26202"
+profiles:
+    - id: apple_vodafone_1and1_de
+      path: profiles/vodafone_1and1_de.yaml
+      selectors:
+        - raw: 26202_GID1-11
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "11"
+    - id: apple_vodafone_de
+      path: profiles/vodafone_de.yaml
+      generic: true
+      selectors:
+        - raw: "26202"
+    - id: apple_vodafone_nl
+      path: profiles/vodafone_nl.yaml
+      selectors:
+        - raw: 26202_ID-893144
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "893144"

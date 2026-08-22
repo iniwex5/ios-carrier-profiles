@@ -1,0 +1,11 @@
+version: 2
+plmn: "90188"
+profiles:
+    - id: apple_simly
+      path: profiles/simly.yaml
+      selectors:
+        - raw: 90188_GID1-73696D6C7931
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 73696D6C7931

@@ -1,0 +1,73 @@
+version: 3
+kind: carrier_bundle
+id: apple_mobilkom_at
+bundle: mobilkom_at.bundle
+supported_plmns:
+    - "23201"
+    - "23202"
+    - "23211"
+    - "23212"
+common:
+    apple:
+        carrier_entitlements:
+            supported_entitlements: 9217
+    entitlement:
+        entitlement_url: https://esim-es-open-prod-aoneat.esimcloud.net/aoneat/prod/executeAppleActions
+    ims:
+        apn: ims
+        epdg:
+            address: epdg.epc.mnc001.mcc232.pub.3gppnetwork.org
+        ike:
+            child_sa:
+                lifetime_seconds: 80000
+                proposals:
+                    - encryption:
+                        - aes256
+                      integrity:
+                        - sha256
+                      lifetime_seconds: 80000
+            dpd:
+                enabled: false
+                interval_seconds: 600
+            local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+            proposals:
+                - encryption:
+                    - aes256
+                  integrity:
+                    - sha256
+                  prf:
+                    - sha256
+                  dh_groups:
+                    - modp2048
+                  lifetime_seconds: 80000
+                  authentication_method: None
+                  eap_method: EAP-AKA
+            sa_lifetime_seconds: 80000
+        ip_stack: ipv4v6
+        media:
+            rtp_inactivity_seconds: 20
+        register:
+            use_ipsec: true
+        signaling:
+            contact:
+                additional_contact_params:
+                    - selector: REGISTER,INVITE,INVITE:*[primary]
+                      params:
+                        - +g.3gpp.mid-call
+                        - +g.3gpp.srvcc-alerting
+                        - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            csfb_on:
+                - method: INVITE
+                  statuses:
+                    - 3XX
+                    - 4XX
+                    - 5XX
+                    - 6XX
+            preconditions: supported
+            support_p_early_media: true
+        volte:
+            enable_volte_by_default: true
+plmn_overrides:
+    "23201":
+        ims:
+            epdg: null

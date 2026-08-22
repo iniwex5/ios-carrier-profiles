@@ -1,0 +1,30 @@
+version: 3
+kind: carrier_bundle
+id: apple_monacotel_mc
+bundle: MonacoTel_mc.bundle
+supported_plmns:
+    - "20801"
+    - "21210"
+common:
+    ims:
+        apn: ims
+        epdg:
+            address: epdg.monaco-telecom.mc
+        ike:
+            nat_keepalive_enabled: true
+            sa_lifetime_seconds: 86400
+        ip_stack: ipv4
+        register:
+            include_cellular_network_info: true
+            use_ipsec: true
+        signaling:
+            contact:
+                always_add_sip_instance: true
+            csfb_on:
+                - method: INVITE
+                  statuses:
+                    - "503"
+            preconditions: supported
+            support_p_early_media: false
+        volte:
+            enable_volte_by_default: true

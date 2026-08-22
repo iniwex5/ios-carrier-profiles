@@ -1,0 +1,8 @@
+version: 2
+plmn: "43605"
+profiles:
+    - id: apple_vimpelcom_tj
+      path: profiles/vimpelcom_tj.yaml
+      generic: true
+      selectors:
+        - raw: "43605"

@@ -1,0 +1,48 @@
+version: 3
+kind: carrier_bundle
+id: apple_lmt_lv
+bundle: LMT_lv.bundle
+supported_plmns:
+    - "24701"
+common: {}
+plmn_overrides:
+    "24701":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 5121
+        entitlement:
+            entitlement_url: https://es.mnc001.mcc247.pub.3gppnetwork.org:8443/entitlement
+        ims:
+            ike:
+                child_sa:
+                    proposals:
+                        - encryption:
+                            - aes256
+                          integrity:
+                            - sha256
+                          lifetime_seconds: 86400
+                    lifetime_seconds: 86400
+                local_identifier: anonymous@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                sa_lifetime_seconds: 86400
+            register:
+                use_ipsec: true
+                include_cellular_network_info: true
+            signaling:
+                preconditions: supported
+                support_p_early_media: true
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - 5XX
+                contact:
+                    always_add_sip_instance: true
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*[primary]
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            media:
+                rtp_inactivity_seconds: 15
+            volte:
+                enable_volte_by_default: true

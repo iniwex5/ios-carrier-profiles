@@ -1,0 +1,36 @@
+version: 3
+kind: carrier_bundle
+id: apple_smartfren_id
+bundle: Smartfren_id.bundle
+supported_plmns:
+    - "51009"
+    - "51028"
+    - "52505"
+common:
+    ims:
+        epdg:
+            address: epdg.epc.mnc009.mcc510.pub.3gppnetwork.org
+        ike:
+            dpd:
+                enabled: false
+                interval_seconds: 600
+            local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+            sa_lifetime_seconds: 80000
+        media:
+            rtcp_interval_seconds: 5
+        register:
+            include_cellular_network_info: true
+        signaling:
+            contact:
+                always_add_sip_instance: true
+            max_udp_message_size: 1000
+            preconditions: unsupported
+            support_p_early_media: true
+        ussi:
+            enabled: true
+        volte:
+            enable_volte_by_default: true
+plmn_overrides:
+    "51009":
+        ims:
+            epdg: null

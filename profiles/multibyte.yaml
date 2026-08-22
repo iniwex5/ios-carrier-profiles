@@ -1,0 +1,14 @@
+version: 3
+kind: carrier_bundle
+id: apple_multibyte
+bundle: Multibyte.bundle
+supported_plmns:
+    - "42501"
+    - "45403"
+    - "45404"
+    - "45406"
+    - "45412"
+    - "45413"
+    - "45424"
+    - "45501"
+common: {}

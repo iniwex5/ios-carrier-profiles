@@ -1,0 +1,26 @@
+version: 2
+plmn: "44020"
+profiles:
+    - id: apple_softbank_jp
+      path: profiles/softbank_jp.yaml
+      generic: true
+      selectors:
+        - raw: "44020"
+        - raw: 44020_GID1-48FFFF
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 48FFFF
+    - id: apple_softbank_ymobile_jp
+      path: profiles/softbank_ymobile_jp.yaml
+      selectors:
+        - raw: 44020_GID1-01FFFF
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 01FFFF
+        - raw: 44020_GID1-16FFFF
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 16FFFF

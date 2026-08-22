@@ -1,0 +1,14 @@
+version: 3
+kind: carrier_bundle
+id: apple_simly
+bundle: Simly.bundle
+supported_plmns:
+    - "20801"
+    - "26001"
+    - "26006"
+    - "310840"
+    - "42402"
+    - "45400"
+    - "52505"
+    - "90188"
+common: {}

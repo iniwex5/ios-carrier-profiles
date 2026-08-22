@@ -1,0 +1,890 @@
+version: 2
+plmn: "33805"
+profiles:
+    - id: apple_digicel_ag
+      path: profiles/digicel_ag.yaml
+      selectors:
+        - raw: 33805_ID-890105001834
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105001834"
+        - raw: 33805_ID-890105002834
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105002834"
+        - raw: 33805_ID-890105003834
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105003834"
+        - raw: 33805_ID-890105004834
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105004834"
+        - raw: 33805_ID-890105005834
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105005834"
+        - raw: 33805_ID-890105006834
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105006834"
+        - raw: 33805_ID-890105007834
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105007834"
+        - raw: 33805_ID-890105008834
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105008834"
+        - raw: 33805_ID-890105009834
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105009834"
+        - raw: 33805_ID-890105010834
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105010834"
+        - raw: 33805_ID-890105011834
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105011834"
+        - raw: 33805_ID-890105012834
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105012834"
+    - id: apple_digicel_ai
+      path: profiles/digicel_ai.yaml
+      selectors:
+        - raw: 33805_ID-890105001830
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105001830"
+        - raw: 33805_ID-890105002830
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105002830"
+        - raw: 33805_ID-890105003830
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105003830"
+        - raw: 33805_ID-890105004830
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105004830"
+        - raw: 33805_ID-890105005830
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105005830"
+        - raw: 33805_ID-890105006830
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105006830"
+        - raw: 33805_ID-890105007830
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105007830"
+        - raw: 33805_ID-890105008830
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105008830"
+        - raw: 33805_ID-890105009830
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105009830"
+        - raw: 33805_ID-890105010830
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105010830"
+        - raw: 33805_ID-890105011830
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105011830"
+        - raw: 33805_ID-890105012830
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105012830"
+    - id: apple_digicel_bb
+      path: profiles/digicel_bb.yaml
+      selectors:
+        - raw: 33805_ID-8901050015
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050015"
+        - raw: 33805_ID-8901050025
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050025"
+        - raw: 33805_ID-8901050035
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050035"
+        - raw: 33805_ID-8901050045
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050045"
+        - raw: 33805_ID-8901050055
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050055"
+        - raw: 33805_ID-8901050065
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050065"
+        - raw: 33805_ID-8901050075
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050075"
+        - raw: 33805_ID-8901050085
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050085"
+        - raw: 33805_ID-8901050095
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050095"
+        - raw: 33805_ID-8901050105
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050105"
+        - raw: 33805_ID-8901050115
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050115"
+        - raw: 33805_ID-8901050125
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050125"
+    - id: apple_digicel_bm
+      path: profiles/digicel_bm.yaml
+      selectors:
+        - raw: 33805_ID-890105001833
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105001833"
+        - raw: 33805_ID-890105002833
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105002833"
+        - raw: 33805_ID-890105003833
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105003833"
+        - raw: 33805_ID-890105004833
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105004833"
+        - raw: 33805_ID-890105005833
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105005833"
+        - raw: 33805_ID-890105006833
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105006833"
+        - raw: 33805_ID-890105007833
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105007833"
+        - raw: 33805_ID-890105008833
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105008833"
+        - raw: 33805_ID-890105009833
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105009833"
+        - raw: 33805_ID-890105010833
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105010833"
+        - raw: 33805_ID-890105011833
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105011833"
+        - raw: 33805_ID-890105012833
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105012833"
+    - id: apple_digicel_dm
+      path: profiles/digicel_dm.yaml
+      selectors:
+        - raw: 33805_ID-890105001832
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105001832"
+        - raw: 33805_ID-890105002832
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105002832"
+        - raw: 33805_ID-890105003832
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105003832"
+        - raw: 33805_ID-890105004832
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105004832"
+        - raw: 33805_ID-890105005832
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105005832"
+        - raw: 33805_ID-890105006832
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105006832"
+        - raw: 33805_ID-890105007832
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105007832"
+        - raw: 33805_ID-890105008832
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105008832"
+        - raw: 33805_ID-890105009832
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105009832"
+        - raw: 33805_ID-890105010832
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105010832"
+        - raw: 33805_ID-890105011832
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105011832"
+        - raw: 33805_ID-890105012832
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105012832"
+    - id: apple_digicel_gd
+      path: profiles/digicel_gd.yaml
+      selectors:
+        - raw: 33805_ID-8901050013
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050013"
+        - raw: 33805_ID-8901050023
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050023"
+        - raw: 33805_ID-8901050033
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050033"
+        - raw: 33805_ID-8901050043
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050043"
+        - raw: 33805_ID-8901050053
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050053"
+        - raw: 33805_ID-8901050063
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050063"
+        - raw: 33805_ID-8901050073
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050073"
+        - raw: 33805_ID-8901050083
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050083"
+        - raw: 33805_ID-8901050093
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050093"
+        - raw: 33805_ID-8901050103
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050103"
+        - raw: 33805_ID-8901050113
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050113"
+        - raw: 33805_ID-8901050123
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050123"
+    - id: apple_digicel_ht
+      path: profiles/digicel_ht.yaml
+      selectors:
+        - raw: 33805_ID-8901050019
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050019"
+        - raw: 33805_ID-8901050029
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050029"
+        - raw: 33805_ID-8901050039
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050039"
+        - raw: 33805_ID-8901050049
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050049"
+        - raw: 33805_ID-8901050059
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050059"
+        - raw: 33805_ID-8901050069
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050069"
+        - raw: 33805_ID-8901050079
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050079"
+        - raw: 33805_ID-8901050089
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050089"
+        - raw: 33805_ID-8901050099
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050099"
+        - raw: 33805_ID-8901050109
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050109"
+        - raw: 33805_ID-8901050119
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050119"
+        - raw: 33805_ID-8901050129
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050129"
+    - id: apple_digicel_jm
+      path: profiles/digicel_jm.yaml
+      selectors:
+        - raw: 33805_ID-8901050010
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050010"
+        - raw: 33805_ID-8901050020
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050020"
+        - raw: 33805_ID-8901050030
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050030"
+        - raw: 33805_ID-8901050040
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050040"
+        - raw: 33805_ID-8901050050
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050050"
+        - raw: 33805_ID-8901050060
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050060"
+        - raw: 33805_ID-8901050070
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050070"
+        - raw: 33805_ID-8901050080
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050080"
+        - raw: 33805_ID-8901050090
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050090"
+        - raw: 33805_ID-8901050100
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050100"
+        - raw: 33805_ID-8901050110
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050110"
+        - raw: 33805_ID-8901050120
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050120"
+    - id: apple_digicel_kn
+      path: profiles/digicel_kn.yaml
+      selectors:
+        - raw: 33805_ID-890105001831
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105001831"
+        - raw: 33805_ID-890105002831
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105002831"
+        - raw: 33805_ID-890105003831
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105003831"
+        - raw: 33805_ID-890105004831
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105004831"
+        - raw: 33805_ID-890105005831
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105005831"
+        - raw: 33805_ID-890105006831
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105006831"
+        - raw: 33805_ID-890105007831
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105007831"
+        - raw: 33805_ID-890105008831
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105008831"
+        - raw: 33805_ID-890105009831
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105009831"
+        - raw: 33805_ID-890105010831
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105010831"
+        - raw: 33805_ID-890105011831
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105011831"
+        - raw: 33805_ID-890105012831
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105012831"
+    - id: apple_digicel_ky
+      path: profiles/digicel_ky.yaml
+      selectors:
+        - raw: 33805_ID-8901050016
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050016"
+        - raw: 33805_ID-8901050026
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050026"
+        - raw: 33805_ID-8901050036
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050036"
+        - raw: 33805_ID-8901050046
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050046"
+        - raw: 33805_ID-8901050056
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050056"
+        - raw: 33805_ID-8901050066
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050066"
+        - raw: 33805_ID-8901050076
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050076"
+        - raw: 33805_ID-8901050086
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050086"
+        - raw: 33805_ID-8901050096
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050096"
+        - raw: 33805_ID-8901050106
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050106"
+        - raw: 33805_ID-8901050116
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050116"
+        - raw: 33805_ID-8901050126
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050126"
+    - id: apple_digicel_lc
+      path: profiles/digicel_lc.yaml
+      selectors:
+        - raw: 33805_ID-8901050011
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050011"
+        - raw: 33805_ID-8901050021
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050021"
+        - raw: 33805_ID-8901050031
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050031"
+        - raw: 33805_ID-8901050041
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050041"
+        - raw: 33805_ID-8901050051
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050051"
+        - raw: 33805_ID-8901050061
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050061"
+        - raw: 33805_ID-8901050071
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050071"
+        - raw: 33805_ID-8901050081
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050081"
+        - raw: 33805_ID-8901050091
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050091"
+        - raw: 33805_ID-8901050101
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050101"
+        - raw: 33805_ID-8901050111
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050111"
+        - raw: 33805_ID-8901050121
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050121"
+    - id: apple_digicel_ms
+      path: profiles/digicel_ms.yaml
+      selectors:
+        - raw: 33805_ID-890105000843
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105000843"
+        - raw: 33805_ID-890105001843
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105001843"
+        - raw: 33805_ID-890105002843
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105002843"
+        - raw: 33805_ID-890105003843
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105003843"
+        - raw: 33805_ID-890105004843
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105004843"
+        - raw: 33805_ID-890105005843
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105005843"
+        - raw: 33805_ID-890105006843
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105006843"
+        - raw: 33805_ID-890105007843
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105007843"
+        - raw: 33805_ID-890105008843
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105008843"
+        - raw: 33805_ID-890105009843
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105009843"
+        - raw: 33805_ID-890105010843
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105010843"
+        - raw: 33805_ID-890105011843
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105011843"
+        - raw: 33805_ID-890105012843
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105012843"
+    - id: apple_digicel_tc
+      path: profiles/digicel_tc.yaml
+      selectors:
+        - raw: 33805_ID-890105001837
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105001837"
+        - raw: 33805_ID-890105002837
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105002837"
+        - raw: 33805_ID-890105003837
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105003837"
+        - raw: 33805_ID-890105004837
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105004837"
+        - raw: 33805_ID-890105005837
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105005837"
+        - raw: 33805_ID-890105006837
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105006837"
+        - raw: 33805_ID-890105007837
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105007837"
+        - raw: 33805_ID-890105008837
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105008837"
+        - raw: 33805_ID-890105009837
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105009837"
+        - raw: 33805_ID-890105010837
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105010837"
+        - raw: 33805_ID-890105011837
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105011837"
+        - raw: 33805_ID-890105012837
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890105012837"
+    - id: apple_digicel_vc
+      path: profiles/digicel_vc.yaml
+      selectors:
+        - raw: 33805_ID-8901050012
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050012"
+        - raw: 33805_ID-8901050022
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050022"
+        - raw: 33805_ID-8901050032
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050032"
+        - raw: 33805_ID-8901050042
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050042"
+        - raw: 33805_ID-8901050052
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050052"
+        - raw: 33805_ID-8901050062
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050062"
+        - raw: 33805_ID-8901050072
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050072"
+        - raw: 33805_ID-8901050082
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050082"
+        - raw: 33805_ID-8901050092
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050092"
+        - raw: 33805_ID-8901050102
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050102"
+        - raw: 33805_ID-8901050112
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050112"
+        - raw: 33805_ID-8901050122
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901050122"

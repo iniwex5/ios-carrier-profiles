@@ -1,0 +1,8 @@
+version: 2
+plmn: "24001"
+profiles:
+    - id: apple_telia_se
+      path: profiles/telia_se.yaml
+      generic: true
+      selectors:
+        - raw: "24001"

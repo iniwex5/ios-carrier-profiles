@@ -1,0 +1,8 @@
+version: 2
+plmn: "23455"
+profiles:
+    - id: apple_sure_im
+      path: profiles/sure_im.yaml
+      generic: true
+      selectors:
+        - raw: "23455"

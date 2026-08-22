@@ -1,0 +1,117 @@
+version: 2
+plmn: "52505"
+profiles:
+    - id: apple_affinityclick
+      path: profiles/affinityclick.yaml
+      selectors:
+        - raw: 52505_GID1-616C6F73696D31
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 616C6F73696D31
+    - id: apple_airgsm
+      path: profiles/airgsm.yaml
+      selectors:
+        - raw: 52505_GID1-616972616c6f31
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 616972616C6F31
+    - id: apple_apt_tw
+      path: profiles/apt_tw.yaml
+      selectors:
+        - raw: 52505_ID-8988605
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8988605"
+    - id: apple_bics
+      path: profiles/bics.yaml
+      selectors:
+        - raw: 52505_ID-893204
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "893204"
+    - id: apple_bne
+      path: profiles/bne.yaml
+      selectors:
+        - raw: 52505_GID1-626e6573696d31
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 626E6573696D31
+    - id: apple_docomo_gu
+      path: profiles/docomo_gu.yaml
+      selectors:
+        - raw: 52505_ID-891377
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "891377"
+    - id: apple_knowroaming
+      path: profiles/knowroaming.yaml
+      selectors:
+        - raw: 52505_GID1-636f6e6e65637431
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 636F6E6E65637431
+    - id: apple_mysim
+      path: profiles/mysim.yaml
+      selectors:
+        - raw: 52505_GID1-434F423236303036
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 434F423236303036
+    - id: apple_redteamobile
+      path: profiles/redteamobile.yaml
+      selectors:
+        - raw: 52505_ID-89852245280
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89852245280"
+    - id: apple_simly
+      path: profiles/simly.yaml
+      selectors:
+        - raw: 52505_GID1-73696D6C7931
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 73696D6C7931
+    - id: apple_smartfren_id
+      path: profiles/smartfren_id.yaml
+      selectors:
+        - raw: 52505_ID-896209
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "896209"
+        - raw: 52505_ID-896228
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "896228"
+    - id: apple_starhub_giga_sg
+      path: profiles/starhub_giga_sg.yaml
+      selectors:
+        - raw: 52505_GID1-4442
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "4442"
+    - id: apple_starhub_sg
+      path: profiles/starhub_sg.yaml
+      generic: true
+      selectors:
+        - raw: "52505"
+    - id: apple_yes_my
+      path: profiles/yes_my.yaml
+      selectors:
+        - raw: 52505_ID-8960152
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8960152"

@@ -1,0 +1,44 @@
+version: 3
+kind: carrier_bundle
+id: apple_coriolis_fr
+bundle: Coriolis_fr.bundle
+supported_plmns:
+    - "20801"
+    - "20809"
+    - "20827"
+common:
+    ims:
+        apn: ims
+        epdg:
+            address: epdg.epc.mnc027.mcc208.pub.3gppnetwork.org
+        ike:
+            child_sa:
+                lifetime_seconds: 86400
+                proposals:
+                    - encryption:
+                        - aes256
+                      integrity:
+                        - sha256
+                      pfs_group: modp2048
+                      lifetime_seconds: 86400
+            nat_keepalive_enabled: true
+            sa_lifetime_seconds: 86400
+        ip_stack: ipv4v6
+        media:
+            rtp_inactivity_seconds: 20
+        register:
+            use_ipsec: true
+        signaling:
+            csfb_on:
+                - method: INVITE
+                  statuses:
+                    - "403"
+                    - "500"
+                    - "503"
+                    - "488"
+            preconditions: supported
+            support_p_early_media: true
+plmn_overrides:
+    "20827":
+        ims:
+            epdg: null

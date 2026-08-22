@@ -1,0 +1,58 @@
+version: 3
+kind: carrier_bundle
+id: apple_viva_bh
+bundle: Viva_bh.bundle
+supported_plmns:
+    - "42001"
+    - "42604"
+common:
+    apple:
+        carrier_entitlements:
+            supported_entitlements: 13313
+    entitlement:
+        entitlement_url: https://appes.stc.com.bh/apple
+    ims:
+        apn: IMS
+        epdg:
+            address: epdg.epc.mnc004.mcc426.pub.stc.com.bh
+        ike:
+            child_sa:
+                lifetime_seconds: 86400
+                proposals:
+                    - encryption:
+                        - aes128
+                      integrity:
+                        - sha256
+                      pfs_group: modp2048
+                      lifetime_seconds: 86400
+            nat_keepalive_enabled: true
+            sa_lifetime_seconds: 86400
+        ip_stack: ipv4
+        media:
+            rtcp_inactivity_seconds: 36000
+            rtcp_interval_seconds: 5
+            rtp_inactivity_seconds: 15
+        register:
+            include_cellular_network_info: true
+            use_ipsec: true
+        signaling:
+            contact:
+                additional_contact_params:
+                    - selector: REGISTER,INVITE,INVITE:*
+                      params:
+                        - +g.3gpp.mid-call
+                        - +g.3gpp.srvcc-alerting
+                        - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            csfb_on:
+                - method: INVITE
+                  statuses:
+                    - 3XX
+                    - 5XX
+                    - 6XX
+            max_udp_message_size: 1500
+            preconditions: supported
+            support_p_early_media: true
+        ussi:
+            enabled: true
+        volte:
+            enable_volte_by_default: true

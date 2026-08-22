@@ -1,0 +1,16 @@
+version: 2
+plmn: "51001"
+profiles:
+    - id: apple_indosat_id
+      path: profiles/indosat_id.yaml
+      generic: true
+      selectors:
+        - raw: "51001"
+    - id: apple_knowroaming
+      path: profiles/knowroaming.yaml
+      selectors:
+        - raw: 51001_GID1-636f6e6e65637431
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 636F6E6E65637431

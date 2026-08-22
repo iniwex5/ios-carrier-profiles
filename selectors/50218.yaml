@@ -1,0 +1,8 @@
+version: 2
+plmn: "50218"
+profiles:
+    - id: apple_umobile_my
+      path: profiles/umobile_my.yaml
+      generic: true
+      selectors:
+        - raw: "50218"

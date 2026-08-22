@@ -1,0 +1,28 @@
+version: 3
+kind: carrier_bundle
+id: apple_zain_salammobile_sa
+bundle: Zain_SalamMobile_sa.bundle
+supported_plmns:
+    - "42009"
+common: {}
+plmn_overrides:
+    "42009":
+        ims:
+            register:
+                use_ipsec: true
+                include_cellular_network_info: true
+            signaling:
+                support_p_early_media: true
+                contact:
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            media:
+                rtp_inactivity_seconds: 20
+            ussi:
+                enabled: true
+            volte:
+                enable_volte_by_default: true

@@ -1,0 +1,8 @@
+version: 2
+plmn: "60303"
+profiles:
+    - id: apple_qtel_dz
+      path: profiles/qtel_dz.yaml
+      generic: true
+      selectors:
+        - raw: "60303"

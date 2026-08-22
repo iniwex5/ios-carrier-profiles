@@ -1,0 +1,49 @@
+version: 3
+kind: carrier_bundle
+id: apple_vivo_br
+bundle: vivo_br.bundle
+supported_plmns:
+    - "21402"
+    - "21407"
+    - "72406"
+    - "72410"
+    - "72411"
+    - "72423"
+common:
+    apple:
+        carrier_entitlements:
+            supported_entitlements: 4203537
+    entitlement:
+        entitlement_url: https://aes.mnc010.mcc724.pub.3gppnetwork.org/entitlement/
+    ims:
+        apn: ims
+        ike:
+            child_sa:
+                lifetime_seconds: 86400
+                proposals:
+                    - encryption:
+                        - aes256
+                      integrity:
+                        - sha256
+                      lifetime_seconds: 86400
+            dpd:
+                enabled: false
+                interval_seconds: 600
+            local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+            sa_lifetime_seconds: 86400
+        ip_stack: ipv4v6
+        media:
+            rtcp_interval_seconds: 5
+            rtp_inactivity_seconds: 30
+        register:
+            use_ipsec: true
+        signaling:
+            contact:
+                additional_contact_params:
+                    - selector: REGISTER,INVITE,INVITE:*
+                      params:
+                        - +g.3gpp.srvcc-alerting
+            preconditions: supported
+            support_p_early_media: true
+        volte:
+            enable_volte_by_default: true

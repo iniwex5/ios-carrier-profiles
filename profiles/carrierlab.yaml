@@ -1,0 +1,61 @@
+version: 3
+kind: carrier_bundle
+id: apple_carrierlab
+bundle: CarrierLab.bundle
+supported_plmns:
+    - "00101"
+    - "001011"
+    - "00102"
+    - "00111"
+    - "00211"
+    - "00281"
+    - "00321"
+    - "00431"
+    - "00541"
+    - "00651"
+    - "00761"
+    - "00871"
+    - "00902"
+    - "01012"
+    - "01122"
+    - "01232"
+    - "10101"
+    - "240680"
+    - "240681"
+    - "24608"
+    - "246081"
+    - "24681"
+    - "246813"
+    - "26280"
+    - "262820"
+    - "26284"
+    - "29981"
+    - "311011"
+common:
+    ims:
+        apn: IMS
+        ip_stack: ipv4v6
+        media:
+            rtcp_interval_seconds: 5
+            rtp_inactivity_seconds: 120
+        register:
+            use_ipsec: true
+        signaling:
+            contact:
+                additional_contact_params:
+                    - selector: INVITE,INVITE:180,INVITE:183
+                      params:
+                        - +g.3gpp.mid-call
+                        - +g.3gpp.srvcc-alerting
+                        - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+                        - audio
+                    - selector: INVITE:200,PRACK:200,UPDATE:200
+                      params:
+                        - audio
+                    - selector: REGISTER
+                      params:
+                        - +g.3gpp.mid-call
+                        - +g.3gpp.srvcc-alerting
+                        - +g.3gpp.accesstype="cellular2"
+            preconditions: supported
+            support_p_early_media: true

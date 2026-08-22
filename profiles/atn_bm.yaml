@@ -1,0 +1,16 @@
+version: 3
+kind: carrier_bundle
+id: apple_atn_bm
+bundle: ATN_bm.bundle
+supported_plmns:
+    - "204043"
+    - "350000"
+common:
+    ims:
+        media:
+            rtcp_interval_seconds: 5
+            rtp_inactivity_seconds: 30
+        signaling:
+            support_p_early_media: false
+        volte:
+            enable_volte_by_default: true

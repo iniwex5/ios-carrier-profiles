@@ -1,0 +1,8 @@
+version: 2
+plmn: "41001"
+profiles:
+    - id: apple_mobilink_pk
+      path: profiles/mobilink_pk.yaml
+      generic: true
+      selectors:
+        - raw: "41001"

@@ -1,0 +1,8 @@
+version: 2
+plmn: "24202"
+profiles:
+    - id: apple_netcom_no
+      path: profiles/netcom_no.yaml
+      generic: true
+      selectors:
+        - raw: "24202"

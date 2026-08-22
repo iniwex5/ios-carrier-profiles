@@ -1,0 +1,8 @@
+version: 2
+plmn: "62150"
+profiles:
+    - id: apple_globacom_ng
+      path: profiles/globacom_ng.yaml
+      generic: true
+      selectors:
+        - raw: "62150"

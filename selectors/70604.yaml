@@ -1,0 +1,8 @@
+version: 2
+plmn: "70604"
+profiles:
+    - id: apple_movistar_sv
+      path: profiles/movistar_sv.yaml
+      generic: true
+      selectors:
+        - raw: "70604"

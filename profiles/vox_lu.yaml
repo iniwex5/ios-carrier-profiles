@@ -1,0 +1,46 @@
+version: 3
+kind: carrier_bundle
+id: apple_vox_lu
+bundle: VOX_lu.bundle
+supported_plmns:
+    - "27099"
+common: {}
+plmn_overrides:
+    "27099":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 8401
+        entitlement:
+            entitlement_url: https://aes.orange.lu:443/ium-OEMInterface/servlet/IUMServlet
+        ims:
+            apn: ims
+            ip_stack: ipv4
+            ike:
+                nat_keepalive_enabled: true
+                sa_lifetime_seconds: 80000
+            register:
+                use_ipsec: true
+                include_cellular_network_info: false
+            signaling:
+                preconditions: supported
+                support_p_early_media: true
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - "403"
+                        - "408"
+                        - 5XX
+                contact:
+                    always_add_sip_instance: true
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+            media:
+                rtp_inactivity_seconds: 20
+                rtcp_interval_seconds: 5
+            ussi:
+                enabled: false
+            volte:
+                enable_volte_by_default: true

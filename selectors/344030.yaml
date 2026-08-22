@@ -1,0 +1,8 @@
+version: 2
+plmn: "344030"
+profiles:
+    - id: apple_apua_ag
+      path: profiles/apua_ag.yaml
+      generic: true
+      selectors:
+        - raw: "344030"

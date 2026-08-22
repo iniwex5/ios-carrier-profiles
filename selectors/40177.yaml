@@ -1,0 +1,19 @@
+version: 2
+plmn: "40177"
+profiles:
+    - id: apple_tele2_altel_kz
+      path: profiles/tele2_altel_kz.yaml
+      selectors:
+        - raw: 40177_ID-8999707
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8999707"
+    - id: apple_tele2_kz
+      path: profiles/tele2_kz.yaml
+      selectors:
+        - raw: 40177_ID-8999777
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8999777"

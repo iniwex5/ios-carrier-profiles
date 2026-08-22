@@ -1,0 +1,35 @@
+version: 3
+kind: carrier_bundle
+id: apple_tigo_gt
+bundle: Tigo_gt.bundle
+supported_plmns:
+    - "70402"
+common: {}
+plmn_overrides:
+    "70402":
+        ims:
+            apn: ims
+            ip_stack: ipv4v6
+            register:
+                use_ipsec: true
+            signaling:
+                preconditions: supported
+                support_p_early_media: true
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - 3XX
+                        - 4XX
+                        - 5XX
+                        - 6XX
+                contact:
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            ussi:
+                enabled: true
+            volte:
+                enable_volte_by_default: true

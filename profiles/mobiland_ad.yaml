@@ -1,0 +1,23 @@
+version: 3
+kind: carrier_bundle
+id: apple_mobiland_ad
+bundle: Mobiland_ad.bundle
+supported_plmns:
+    - "21303"
+common: {}
+plmn_overrides:
+    "21303":
+        ims:
+            register:
+                use_ipsec: true
+            signaling:
+                support_p_early_media: true
+                contact:
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            volte:
+                enable_volte_by_default: true

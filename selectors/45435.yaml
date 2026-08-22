@@ -1,0 +1,11 @@
+version: 2
+plmn: "45435"
+profiles:
+    - id: apple_webbing
+      path: profiles/webbing.yaml
+      selectors:
+        - raw: 45435_ID-8985235
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8985235"

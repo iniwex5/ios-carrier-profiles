@@ -1,0 +1,69 @@
+version: 3
+kind: carrier_bundle
+id: apple_bhartiairtel_in
+bundle: BhartiAirtel_in.bundle
+supported_plmns:
+    - "40402"
+    - "40403"
+    - "40410"
+    - "40416"
+    - "40431"
+    - "40440"
+    - "40445"
+    - "40449"
+    - "40470"
+    - "40490"
+    - "40492"
+    - "40493"
+    - "40494"
+    - "40495"
+    - "40496"
+    - "40497"
+    - "40498"
+    - "40551"
+    - "40552"
+    - "40553"
+    - "40554"
+    - "40555"
+    - "40556"
+common:
+    apple:
+        carrier_entitlements:
+            supported_entitlements: 9233
+    entitlement:
+        entitlement_url: https://ES.airtel.in:443/entitlement/
+    ims:
+        apn: ims
+        ike:
+            dpd:
+                enabled: true
+                interval_seconds: 600
+            local_identifier: 0$impi_user@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+            sa_lifetime_seconds: 80000
+        ip_stack: ipv4
+        media:
+            rtcp_interval_seconds: 5
+            rtp_inactivity_seconds: 20
+        register:
+            include_cellular_network_info: true
+            use_ipsec: true
+        signaling:
+            contact:
+                additional_contact_params:
+                    - selector: REGISTER,INVITE,INVITE:*
+                      params:
+                        - +g.3gpp.mid-call
+                        - +g.3gpp.srvcc-alerting
+                        - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            csfb_on:
+                - method: INVITE
+                  statuses:
+                    - 3XX
+                    - 5XX
+                    - 6XX
+            preconditions: supported
+            support_p_early_media: true
+        ussi:
+            enabled: true
+        volte:
+            enable_volte_by_default: true

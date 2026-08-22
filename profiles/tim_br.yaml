@@ -1,0 +1,43 @@
+version: 3
+kind: carrier_bundle
+id: apple_tim_br
+bundle: TIM_br.bundle
+supported_plmns:
+    - "72402"
+    - "72403"
+    - "72404"
+common:
+    apple:
+        carrier_entitlements:
+            supported_entitlements: 4203537
+    entitlement:
+        entitlement_url: https://apple.entitlement.tim.com.br
+    ims:
+        apn: ims
+        ip_stack: ipv6
+        media:
+            rtcp_interval_seconds: 5
+            rtp_inactivity_seconds: 25
+        signaling:
+            contact:
+                additional_contact_params:
+                    - selector: REGISTER,INVITE,INVITE:*
+                      params:
+                        - +g.3gpp.mid-call
+                        - +g.3gpp.srvcc-alerting
+                        - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+                always_add_sip_instance: true
+            csfb_on:
+                - method: INVITE
+                  statuses:
+                    - 3XX
+                    - 4XX
+                    - 5XX
+                    - 6XX
+            max_udp_message_size: 1200
+            preconditions: unsupported
+            support_p_early_media: true
+        ussi:
+            enabled: true
+        volte:
+            enable_volte_by_default: true

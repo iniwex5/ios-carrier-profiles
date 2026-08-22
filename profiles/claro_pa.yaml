@@ -1,0 +1,36 @@
+version: 3
+kind: carrier_bundle
+id: apple_claro_pa
+bundle: Claro_pa.bundle
+supported_plmns:
+    - "33402"
+    - "334020"
+    - "71403"
+common:
+    ims:
+        apn: ims
+        epdg:
+            address: epdg.ims.mnc003.mcc714.pub.3gppnetwork.org
+        ike:
+            local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+            sa_lifetime_seconds: 86400
+        ip_stack: ipv4
+        media:
+            rtp_inactivity_seconds: 10
+        register:
+            use_ipsec: true
+        signaling:
+            contact:
+                additional_contact_params:
+                    - selector: REGISTER,INVITE,INVITE:*
+                      params:
+                        - +g.3gpp.mid-call
+                        - +g.3gpp.srvcc-alerting
+                        - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+                always_add_sip_instance: true
+            preconditions: supported
+            support_p_early_media: true
+        ussi:
+            enabled: false
+        volte:
+            enable_volte_by_default: true

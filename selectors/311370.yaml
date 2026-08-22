@@ -1,0 +1,29 @@
+version: 2
+plmn: "311370"
+profiles:
+    - id: apple_acs_us
+      path: profiles/acs_us.yaml
+      selectors:
+        - raw: 311370_ID-89013113702
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89013113702"
+        - raw: 311370_ID-89013113708
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89013113708"
+    - id: apple_gci_us
+      path: profiles/gci_us.yaml
+      selectors:
+        - raw: 311370_GID1-0050
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "0050"
+        - raw: 311370_ID-89013113701
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89013113701"

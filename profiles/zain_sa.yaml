@@ -1,0 +1,70 @@
+version: 3
+kind: carrier_bundle
+id: apple_zain_sa
+bundle: Zain_sa.bundle
+supported_plmns:
+    - "42004"
+common: {}
+plmn_overrides:
+    "42004":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 13313
+        entitlement:
+            entitlement_url: https://es.aes.mnc004.mcc420.pub.3gppnetwork.org
+        ims:
+            apn: ims
+            ip_stack: ipv4v6
+            ike:
+                proposals:
+                    - encryption:
+                        - aes128
+                      integrity:
+                        - sha256
+                      prf:
+                        - sha256
+                      dh_groups:
+                        - modp2048
+                      lifetime_seconds: 80000
+                      authentication_method: None
+                      eap_method: EAP-AKA
+                dpd:
+                    enabled: false
+                    interval_seconds: 600
+                child_sa:
+                    proposals:
+                        - encryption:
+                            - aes128
+                          integrity:
+                            - sha256
+                          pfs_group: modp2048
+                          lifetime_seconds: 80000
+                    lifetime_seconds: 80000
+                local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                sa_lifetime_seconds: 80000
+            register:
+                use_ipsec: true
+                include_cellular_network_info: true
+            signaling:
+                preconditions: supported
+                support_p_early_media: true
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - 3XX
+                        - 5XX
+                        - 6XX
+                contact:
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            media:
+                rtp_inactivity_seconds: 20
+                rtcp_interval_seconds: 5
+            ussi:
+                enabled: true
+            volte:
+                enable_volte_by_default: true

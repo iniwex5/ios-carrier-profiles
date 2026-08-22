@@ -1,0 +1,65 @@
+version: 3
+kind: carrier_bundle
+id: apple_tmobile_comcast_us
+bundle: TMobile_Comcast_US.bundle
+supported_plmns:
+    - "310240"
+common: {}
+plmn_overrides:
+    "310240":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 4205977
+        entitlement:
+            entitlement_url: https://eas3.msg.t-mobile.com
+        ims:
+            epdg:
+                address: ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
+            ike:
+                proposals:
+                    - encryption:
+                        - aes256
+                      integrity:
+                        - sha256
+                      prf:
+                        - sha256
+                      dh_groups:
+                        - modp2048
+                      lifetime_seconds: 80000
+                      authentication_method: None
+                      eap_method: EAP-AKA
+                dpd:
+                    enabled: false
+                    interval_seconds: 600
+                child_sa:
+                    proposals:
+                        - encryption:
+                            - aes256
+                          integrity:
+                            - sha256
+                          lifetime_seconds: 80000
+                    lifetime_seconds: 80000
+                local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                sa_lifetime_seconds: 80000
+            register:
+                use_ipsec: true
+            signaling:
+                max_udp_message_size: 1200
+                preconditions: required
+                support_p_early_media: true
+                re_register_on:
+                    - method: INVITE
+                      statuses:
+                        - "403"
+                contact:
+                    always_add_sip_instance: true
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params: []
+            media:
+                rtp_inactivity_seconds: 30
+            ussi:
+                enabled: true
+                response_timeout_milliseconds: 20000
+            volte:
+                enable_volte_by_default: true

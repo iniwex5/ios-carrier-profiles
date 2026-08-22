@@ -1,0 +1,16 @@
+version: 2
+plmn: "302320"
+profiles:
+    - id: apple_rogers_chatr_ca
+      path: profiles/rogers_chatr_ca.yaml
+      selectors:
+        - raw: 302320_ID-89302320100
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89302320100"
+        - raw: 302320_ID-89302320900
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89302320900"

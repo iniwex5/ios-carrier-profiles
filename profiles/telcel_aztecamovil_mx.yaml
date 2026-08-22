@@ -1,0 +1,14 @@
+version: 3
+kind: carrier_bundle
+id: apple_telcel_aztecamovil_mx
+bundle: Telcel_AztecaMovil_mx.bundle
+supported_plmns:
+    - "334020"
+common: {}
+plmn_overrides:
+    "334020":
+        ims:
+            register:
+                use_ipsec: true
+            signaling:
+                preconditions: supported

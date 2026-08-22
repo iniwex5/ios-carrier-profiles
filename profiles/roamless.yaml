@@ -1,0 +1,11 @@
+version: 3
+kind: carrier_bundle
+id: apple_roamless
+bundle: Roamless.bundle
+supported_plmns:
+    - "20601"
+    - "20628"
+    - "310840"
+    - "45400"
+    - "732123"
+common: {}

@@ -1,0 +1,24 @@
+version: 3
+kind: carrier_bundle
+id: apple_kddi_jcom_lte_only_jp
+bundle: KDDI_JCOM_LTE_only_jp.bundle
+supported_plmns:
+    - "44051"
+common: {}
+plmn_overrides:
+    "44051":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 8193
+        entitlement:
+            entitlement_url: https://station01.ezweb.ne.jp/ENT/servlet/EntServlet3
+        ims:
+            register:
+                use_ipsec: true
+            signaling:
+                support_p_early_media: true
+            media:
+                rtp_inactivity_seconds: 20
+                remote_rtcp_deactivation: true
+            volte:
+                enable_volte_by_default: true

@@ -1,0 +1,8 @@
+version: 2
+plmn: "47002"
+profiles:
+    - id: apple_robi_bd
+      path: profiles/robi_bd.yaml
+      generic: true
+      selectors:
+        - raw: "47002"

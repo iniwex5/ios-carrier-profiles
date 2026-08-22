@@ -1,0 +1,7 @@
+version: 3
+kind: carrier_bundle
+id: apple_orange_ne
+bundle: Orange_ne.bundle
+supported_plmns:
+    - "61404"
+common: {}

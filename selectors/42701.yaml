@@ -1,0 +1,8 @@
+version: 2
+plmn: "42701"
+profiles:
+    - id: apple_qtel_qa
+      path: profiles/qtel_qa.yaml
+      generic: true
+      selectors:
+        - raw: "42701"

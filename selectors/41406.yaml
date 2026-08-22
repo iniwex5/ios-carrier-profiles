@@ -1,0 +1,8 @@
+version: 2
+plmn: "41406"
+profiles:
+    - id: apple_telenor_mm
+      path: profiles/telenor_mm.yaml
+      generic: true
+      selectors:
+        - raw: "41406"

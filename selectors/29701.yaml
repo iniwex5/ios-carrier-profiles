@@ -1,0 +1,8 @@
+version: 2
+plmn: "29701"
+profiles:
+    - id: apple_telenor_me
+      path: profiles/telenor_me.yaml
+      generic: true
+      selectors:
+        - raw: "29701"

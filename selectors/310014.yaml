@@ -1,0 +1,8 @@
+version: 2
+plmn: "310014"
+profiles:
+    - id: apple_comcast_nr_us
+      path: profiles/comcast_nr_us.yaml
+      generic: true
+      selectors:
+        - raw: "310014"

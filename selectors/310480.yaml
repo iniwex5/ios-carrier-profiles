@@ -1,0 +1,8 @@
+version: 2
+plmn: "310480"
+profiles:
+    - id: apple_choice_gu
+      path: profiles/choice_gu.yaml
+      generic: true
+      selectors:
+        - raw: "310480"

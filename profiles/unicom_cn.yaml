@@ -1,0 +1,41 @@
+version: 3
+kind: carrier_bundle
+id: apple_unicom_cn
+bundle: Unicom_cn.bundle
+supported_plmns:
+    - "46001"
+    - "46009"
+common:
+    apple:
+        carrier_entitlements:
+            supported_entitlements: 3073
+    entitlement:
+        entitlement_url: https://es.10010.com
+    ims:
+        apn: ims
+        ip_stack: ipv6
+        media:
+            rtcp_inactivity_seconds: 30
+            rtp_inactivity_seconds: 20
+        register:
+            use_ipsec: true
+        signaling:
+            contact:
+                additional_contact_params:
+                    - selector: REGISTER,INVITE,INVITE:*
+                      params:
+                        - +g.3gpp.mid-call
+                        - +g.3gpp.srvcc-alerting
+                        - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+                always_add_sip_instance: true
+            csfb_on:
+                - method: INVITE
+                  statuses:
+                    - "503"
+                    - "500"
+            preconditions: supported
+            support_p_early_media: true
+        ussi:
+            enabled: true
+        volte:
+            enable_volte_by_default: true

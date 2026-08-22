@@ -1,0 +1,8 @@
+version: 2
+plmn: "42505"
+profiles:
+    - id: apple_jawwal_ps
+      path: profiles/jawwal_ps.yaml
+      generic: true
+      selectors:
+        - raw: "42505"

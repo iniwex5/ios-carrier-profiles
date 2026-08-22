@@ -1,0 +1,8 @@
+version: 2
+plmn: "311230"
+profiles:
+    - id: apple_cellularsouth_lte_us
+      path: profiles/cellularsouth_lte_us.yaml
+      generic: true
+      selectors:
+        - raw: "311230"

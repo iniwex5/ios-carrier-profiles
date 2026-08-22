@@ -1,0 +1,8 @@
+version: 2
+plmn: "23106"
+profiles:
+    - id: apple_o2_sk
+      path: profiles/o2_sk.yaml
+      generic: true
+      selectors:
+        - raw: "23106"

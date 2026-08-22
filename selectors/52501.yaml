@@ -1,0 +1,72 @@
+version: 2
+plmn: "52501"
+profiles:
+    - id: apple_affinityclick
+      path: profiles/affinityclick.yaml
+      selectors:
+        - raw: 52501_GID1-616C6F73696D31
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 616C6F73696D31
+    - id: apple_airgsm
+      path: profiles/airgsm.yaml
+      selectors:
+        - raw: 52501_GID1-41
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "41"
+        - raw: 52501_GID1-616972616c6f31
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 616972616C6F31
+    - id: apple_datapro
+      path: profiles/datapro.yaml
+      selectors:
+        - raw: 52501_GID1-45736B696D6F
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 45736B696D6F
+    - id: apple_knowroaming
+      path: profiles/knowroaming.yaml
+      selectors:
+        - raw: 52501_GID1-636f6e6e65637431
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 636F6E6E65637431
+    - id: apple_lotusflare
+      path: profiles/lotusflare.yaml
+      selectors:
+        - raw: 52501_GID1-4745544E4F4D4144
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 4745544E4F4D4144
+    - id: apple_mysim
+      path: profiles/mysim.yaml
+      selectors:
+        - raw: 52501_GID1-434F423236303036
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 434F423236303036
+    - id: apple_singtel_sg
+      path: profiles/singtel_sg.yaml
+      generic: true
+      selectors:
+        - raw: "52501"
+    - id: apple_telefonica_esimflag
+      path: profiles/telefonica_esimflag.yaml
+      selectors:
+        - raw: 52501_GID1-80_ID-8910300
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "80"
+            - field: iccid
+              match: prefix
+              value: "8910300"

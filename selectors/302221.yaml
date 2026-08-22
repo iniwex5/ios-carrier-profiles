@@ -1,0 +1,16 @@
+version: 2
+plmn: "302221"
+profiles:
+    - id: apple_telus_ca
+      path: profiles/telus_ca.yaml
+      generic: true
+      selectors:
+        - raw: "302221"
+    - id: apple_telus_koodo_ca
+      path: profiles/telus_koodo_ca.yaml
+      selectors:
+        - raw: 302221_GID1-4B
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 4B

@@ -1,0 +1,11 @@
+version: 2
+plmn: "310450"
+profiles:
+    - id: apple_viaero_us
+      path: profiles/viaero_us.yaml
+      selectors:
+        - raw: 310450_ID-8901450
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901450"

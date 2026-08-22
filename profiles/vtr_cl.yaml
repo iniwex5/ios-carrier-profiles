@@ -1,0 +1,9 @@
+version: 3
+kind: carrier_bundle
+id: apple_vtr_cl
+bundle: vtr_cl.bundle
+supported_plmns:
+    - "20601"
+    - "302370"
+    - "73008"
+common: {}

@@ -1,0 +1,40 @@
+version: 3
+kind: carrier_bundle
+id: apple_cyta_cy
+bundle: Cyta_cy.bundle
+supported_plmns:
+    - "28001"
+common: {}
+plmn_overrides:
+    "28001":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 13313
+        entitlement:
+            entitlement_url: https://esim-es-open-prod-cyta.esimcloud.net/cyta/prod/executeAppleActions
+        ims:
+            ike:
+                nat_keepalive_enabled: true
+                child_sa:
+                    proposals:
+                        - encryption:
+                            - aes256
+                          integrity:
+                            - sha256
+                          lifetime_seconds: 28800
+                    lifetime_seconds: 28800
+                sa_lifetime_seconds: 86400
+            register:
+                use_ipsec: true
+                include_cellular_network_info: true
+            signaling:
+                support_p_early_media: true
+                contact:
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            volte:
+                enable_volte_by_default: true

@@ -1,0 +1,8 @@
+version: 2
+plmn: "61205"
+profiles:
+    - id: apple_mtn_ci
+      path: profiles/mtn_ci.yaml
+      generic: true
+      selectors:
+        - raw: "61205"

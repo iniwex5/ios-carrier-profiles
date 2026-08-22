@@ -1,0 +1,7 @@
+version: 3
+kind: carrier_bundle
+id: apple_tele2_ru
+bundle: Tele2_ru.bundle
+supported_plmns:
+    - "25020"
+common: {}

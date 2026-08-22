@@ -1,0 +1,7 @@
+version: 3
+kind: carrier_bundle
+id: apple_inwi_ma
+bundle: INWI_ma.bundle
+supported_plmns:
+    - "60402"
+common: {}

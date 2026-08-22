@@ -1,0 +1,135 @@
+version: 2
+plmn: "20809"
+profiles:
+    - id: apple_affinityclick
+      path: profiles/affinityclick.yaml
+      selectors:
+        - raw: 20809_GID1-616C6F73696D31
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 616C6F73696D31
+    - id: apple_airgsm
+      path: profiles/airgsm.yaml
+      selectors:
+        - raw: 20809_ID-893135
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "893135"
+    - id: apple_aliv_bs
+      path: profiles/aliv_bs.yaml
+      selectors:
+        - raw: 20809_ID-891364049
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "891364049"
+    - id: apple_altice_lte_us
+      path: profiles/altice_lte_us.yaml
+      selectors:
+        - raw: 20809_ID-8901390
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8901390"
+    - id: apple_bics
+      path: profiles/bics.yaml
+      selectors:
+        - raw: 20809_ID-893204
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "893204"
+    - id: apple_coriolis_fr
+      path: profiles/coriolis_fr.yaml
+      selectors:
+        - raw: 20809_ID-893327
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "893327"
+    - id: apple_esimgo
+      path: profiles/esimgo.yaml
+      selectors:
+        - raw: 20809_GID1-0409
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "0409"
+    - id: apple_gigsky_us
+      path: profiles/gigsky_us.yaml
+      selectors:
+        - raw: 20809_GID1-6F
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 6F
+    - id: apple_knowroaming
+      path: profiles/knowroaming.yaml
+      selectors:
+        - raw: 20809_GID1-636f6e6e65637431
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 636F6E6E65637431
+    - id: apple_mirs_il
+      path: profiles/mirs_il.yaml
+      selectors:
+        - raw: 20809_ID-8997207
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8997207"
+    - id: apple_sfr_caraibe_mq
+      path: profiles/sfr_caraibe_mq.yaml
+      selectors:
+        - raw: 20809_ID-8959002
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8959002"
+        - raw: 20809_ID-8959402
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8959402"
+        - raw: 20809_ID-8959602
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8959602"
+    - id: apple_sfr_re
+      path: profiles/sfr_re.yaml
+      selectors:
+        - raw: 20809_ID-89331065
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89331065"
+        - raw: 20809_ID-89331085
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89331085"
+    - id: apple_telecomegypt_eg
+      path: profiles/telecomegypt_eg.yaml
+      selectors:
+        - raw: 20809_ID-892004
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "892004"
+        - raw: 20809_ID-89204
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89204"
+    - id: apple_truphone_us
+      path: profiles/truphone_us.yaml
+      selectors:
+        - raw: 20809_GID1-547275554B3030656E
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 547275554B3030656E

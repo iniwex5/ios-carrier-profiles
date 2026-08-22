@@ -1,0 +1,8 @@
+version: 2
+plmn: "65510"
+profiles:
+    - id: apple_mtn_za
+      path: profiles/mtn_za.yaml
+      generic: true
+      selectors:
+        - raw: "65510"

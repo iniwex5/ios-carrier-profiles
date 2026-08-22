@@ -1,0 +1,16 @@
+version: 2
+plmn: "29341"
+profiles:
+    - id: apple_telekom_si
+      path: profiles/telekom_si.yaml
+      generic: true
+      selectors:
+        - raw: "29341"
+    - id: apple_telekomslovenije_xk
+      path: profiles/telekomslovenije_xk.yaml
+      selectors:
+        - raw: 29341_GID1-90
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "90"

@@ -1,0 +1,8 @@
+version: 3
+kind: carrier_bundle
+id: apple_bluesky_as
+bundle: Bluesky_as.bundle
+supported_plmns:
+    - "54411"
+    - "544110"
+common: {}

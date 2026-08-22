@@ -1,0 +1,65 @@
+version: 3
+kind: carrier_bundle
+id: apple_orange_mq
+bundle: Orange_mq.bundle
+supported_plmns:
+    - "34001"
+common: {}
+plmn_overrides:
+    "34001":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 17
+        entitlement:
+            entitlement_url: https://aes.mnc001.mcc340.pub.3gppnetwork.org:8181/ium-OEMInterface/servlet/IUMServlet
+        ims:
+            apn: ims
+            ip_stack: ipv4v6
+            ike:
+                proposals:
+                    - encryption:
+                        - aes256
+                      integrity:
+                        - sha256
+                      prf:
+                        - sha256
+                      dh_groups:
+                        - modp2048
+                      lifetime_seconds: 80000
+                      authentication_method: None
+                      eap_method: EAP-AKA
+                nat_keepalive_enabled: true
+                nat_keepalive_seconds: 20
+                dpd:
+                    enabled: false
+                    interval_seconds: 600
+                child_sa:
+                    proposals:
+                        - encryption:
+                            - aes256
+                          integrity:
+                            - sha256
+                          pfs_group: modp2048
+                          lifetime_seconds: 80000
+                    lifetime_seconds: 80000
+                local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                sa_lifetime_seconds: 80000
+            register:
+                use_ipsec: true
+                include_cellular_network_info: true
+            signaling:
+                preconditions: supported
+                support_p_early_media: true
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - "403"
+                        - "408"
+                        - 5XX
+                contact:
+                    always_add_sip_instance: true
+            media:
+                rtp_inactivity_seconds: 20
+                rtcp_interval_seconds: 5
+            volte:
+                enable_volte_by_default: true

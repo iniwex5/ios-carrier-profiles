@@ -1,0 +1,11 @@
+version: 2
+plmn: "310380"
+profiles:
+    - id: apple_gigsky_us
+      path: profiles/gigsky_us.yaml
+      selectors:
+        - raw: 310380_GID1-6F
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 6F

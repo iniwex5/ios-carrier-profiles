@@ -1,0 +1,8 @@
+version: 2
+plmn: "41820"
+profiles:
+    - id: apple_zain_iq
+      path: profiles/zain_iq.yaml
+      generic: true
+      selectors:
+        - raw: "41820"

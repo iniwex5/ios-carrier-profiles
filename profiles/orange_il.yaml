@@ -1,0 +1,43 @@
+version: 3
+kind: carrier_bundle
+id: apple_orange_il
+bundle: Orange_il.bundle
+supported_plmns:
+    - "42501"
+    - "42510"
+common:
+    apple:
+        carrier_entitlements:
+            supported_entitlements: 9217
+    entitlement:
+        entitlement_url: https://entitlement.partner.co.il/api/Apple
+    ims:
+        apn: ims
+        ike:
+            dpd:
+                enabled: false
+                interval_seconds: 600
+            local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+            nat_keepalive_enabled: true
+            nat_keepalive_seconds: 20
+            sa_lifetime_seconds: 80000
+        ip_stack: ipv6
+        register:
+            include_cellular_network_info: true
+            use_ipsec: true
+        signaling:
+            contact:
+                additional_contact_params:
+                    - selector: REGISTER,INVITE,INVITE:*
+                      params:
+                        - +g.3gpp.mid-call
+                        - +g.3gpp.srvcc-alerting
+                        - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            csfb_on:
+                - method: INVITE
+                  statuses:
+                    - "380"
+            preconditions: supported
+            support_p_early_media: true
+        volte:
+            enable_volte_by_default: true

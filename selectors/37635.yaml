@@ -1,0 +1,8 @@
+version: 2
+plmn: "37635"
+profiles:
+    - id: apple_cw_wi
+      path: profiles/cw_wi.yaml
+      generic: true
+      selectors:
+        - raw: "37635"

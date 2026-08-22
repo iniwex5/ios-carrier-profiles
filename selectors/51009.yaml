@@ -1,0 +1,8 @@
+version: 2
+plmn: "51009"
+profiles:
+    - id: apple_smartfren_id
+      path: profiles/smartfren_id.yaml
+      generic: true
+      selectors:
+        - raw: "51009"

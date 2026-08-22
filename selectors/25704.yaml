@@ -1,0 +1,8 @@
+version: 2
+plmn: "25704"
+profiles:
+    - id: apple_life_by
+      path: profiles/life_by.yaml
+      generic: true
+      selectors:
+        - raw: "25704"

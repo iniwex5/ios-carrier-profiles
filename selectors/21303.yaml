@@ -1,0 +1,8 @@
+version: 2
+plmn: "21303"
+profiles:
+    - id: apple_mobiland_ad
+      path: profiles/mobiland_ad.yaml
+      generic: true
+      selectors:
+        - raw: "21303"

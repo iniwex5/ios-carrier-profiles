@@ -1,0 +1,7 @@
+version: 3
+kind: carrier_bundle
+id: apple_cellcom_lte_us
+bundle: Cellcom_LTE_US.bundle
+supported_plmns:
+    - "311480"
+common: {}

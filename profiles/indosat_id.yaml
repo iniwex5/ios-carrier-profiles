@@ -1,0 +1,12 @@
+version: 3
+kind: carrier_bundle
+id: apple_indosat_id
+bundle: Indosat_id.bundle
+supported_plmns:
+    - "51001"
+    - "51021"
+    - "51089"
+common:
+    ims:
+        volte:
+            enable_volte_by_default: true

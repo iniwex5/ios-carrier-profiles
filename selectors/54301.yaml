@@ -1,0 +1,8 @@
+version: 2
+plmn: "54301"
+profiles:
+    - id: apple_spt_wf
+      path: profiles/spt_wf.yaml
+      generic: true
+      selectors:
+        - raw: "54301"

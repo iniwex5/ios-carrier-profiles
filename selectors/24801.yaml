@@ -1,0 +1,8 @@
+version: 2
+plmn: "24801"
+profiles:
+    - id: apple_emt_ee
+      path: profiles/emt_ee.yaml
+      generic: true
+      selectors:
+        - raw: "24801"

@@ -1,0 +1,8 @@
+version: 2
+plmn: "61807"
+profiles:
+    - id: apple_orange_lr
+      path: profiles/orange_lr.yaml
+      generic: true
+      selectors:
+        - raw: "61807"

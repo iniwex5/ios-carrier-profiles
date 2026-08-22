@@ -1,0 +1,11 @@
+version: 2
+plmn: "54705"
+profiles:
+    - id: apple_ora_pf
+      path: profiles/ora_pf.yaml
+      selectors:
+        - raw: 54705_ID-8954705
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8954705"

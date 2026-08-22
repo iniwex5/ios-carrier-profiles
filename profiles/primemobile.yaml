@@ -1,0 +1,11 @@
+version: 3
+kind: carrier_bundle
+id: apple_primemobile
+bundle: PrimeMobile.bundle
+supported_plmns:
+    - "23450"
+    - "26003"
+    - "26006"
+    - "42501"
+    - "42512"
+common: {}

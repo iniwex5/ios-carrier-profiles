@@ -1,0 +1,12 @@
+version: 3
+kind: carrier_bundle
+id: apple_telemach_si
+bundle: Telemach_si.bundle
+supported_plmns:
+    - "29370"
+common: {}
+plmn_overrides:
+    "29370":
+        ims:
+            volte:
+                enable_volte_by_default: true

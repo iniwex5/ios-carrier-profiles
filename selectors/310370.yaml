@@ -1,0 +1,8 @@
+version: 2
+plmn: "310370"
+profiles:
+    - id: apple_docomo_gu
+      path: profiles/docomo_gu.yaml
+      generic: true
+      selectors:
+        - raw: "310370"

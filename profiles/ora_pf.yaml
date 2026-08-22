@@ -1,0 +1,50 @@
+version: 3
+kind: carrier_bundle
+id: apple_ora_pf
+bundle: Ora_pf.bundle
+supported_plmns:
+    - "20801"
+    - "54705"
+common:
+    ims:
+        ike:
+            child_sa:
+                lifetime_seconds: 86400
+                proposals:
+                    - encryption:
+                        - aes256
+                      integrity:
+                        - sha256
+                      pfs_group: modp2048
+                      lifetime_seconds: 86400
+            dpd:
+                enabled: true
+                interval_seconds: 600
+            local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+            proposals:
+                - encryption:
+                    - aes256
+                  integrity:
+                    - sha256
+                  prf:
+                    - sha256
+                  dh_groups:
+                    - modp2048
+                  lifetime_seconds: 86400
+                  authentication_method: None
+                  eap_method: EAP-AKA
+            sa_lifetime_seconds: 86400
+        register:
+            use_ipsec: true
+        signaling:
+            contact:
+                always_add_sip_instance: true
+            preconditions: supported
+            support_p_early_media: false
+        volte:
+            enable_volte_by_default: true
+plmn_overrides:
+    "20801":
+        ims:
+            epdg:
+                address: epdg.epc.mnc005.mcc547.pub.3gppnetwork.org

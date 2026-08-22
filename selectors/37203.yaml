@@ -1,0 +1,8 @@
+version: 2
+plmn: "37203"
+profiles:
+    - id: apple_natcom_ht
+      path: profiles/natcom_ht.yaml
+      generic: true
+      selectors:
+        - raw: "37203"

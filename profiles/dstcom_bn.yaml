@@ -1,0 +1,13 @@
+version: 3
+kind: carrier_bundle
+id: apple_dstcom_bn
+bundle: DSTCom_bn.bundle
+supported_plmns:
+    - "52803"
+    - "52811"
+common:
+    ims:
+        apn: ims
+        ip_stack: ipv4
+        signaling:
+            support_p_early_media: true

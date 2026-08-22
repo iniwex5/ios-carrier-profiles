@@ -1,0 +1,8 @@
+version: 2
+plmn: "310770"
+profiles:
+    - id: apple_iwireless_us
+      path: profiles/iwireless_us.yaml
+      generic: true
+      selectors:
+        - raw: "310770"

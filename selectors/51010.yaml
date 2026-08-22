@@ -1,0 +1,16 @@
+version: 2
+plmn: "51010"
+profiles:
+    - id: apple_knowroaming
+      path: profiles/knowroaming.yaml
+      selectors:
+        - raw: 51010_GID1-636f6e6e65637431
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 636F6E6E65637431
+    - id: apple_telkomsel_id
+      path: profiles/telkomsel_id.yaml
+      generic: true
+      selectors:
+        - raw: "51010"

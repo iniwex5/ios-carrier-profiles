@@ -1,0 +1,8 @@
+version: 2
+plmn: "27401"
+profiles:
+    - id: apple_siminn_is
+      path: profiles/siminn_is.yaml
+      generic: true
+      selectors:
+        - raw: "27401"

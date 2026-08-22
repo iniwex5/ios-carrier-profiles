@@ -1,0 +1,7 @@
+version: 3
+kind: carrier_bundle
+id: apple_oi_br
+bundle: Oi_br.bundle
+supported_plmns:
+    - "72431"
+common: {}

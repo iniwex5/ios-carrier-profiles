@@ -1,0 +1,8 @@
+version: 2
+plmn: "26278"
+profiles:
+    - id: apple_tmobile_germany
+      path: profiles/tmobile_germany.yaml
+      generic: true
+      selectors:
+        - raw: "26278"

@@ -1,0 +1,32 @@
+version: 3
+kind: carrier_bundle
+id: apple_mobinil_eg
+bundle: mobinil_eg.bundle
+supported_plmns:
+    - "60201"
+common: {}
+plmn_overrides:
+    "60201":
+        ims:
+            register:
+                use_ipsec: true
+                include_cellular_network_info: true
+            signaling:
+                support_p_early_media: false
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - "403"
+                        - "408"
+                        - 5XX
+                contact:
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            media:
+                rtp_inactivity_seconds: 20
+            volte:
+                enable_volte_by_default: true

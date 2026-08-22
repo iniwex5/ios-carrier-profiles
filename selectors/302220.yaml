@@ -1,0 +1,80 @@
+version: 2
+plmn: "302220"
+profiles:
+    - id: apple_bics
+      path: profiles/bics.yaml
+      selectors:
+        - raw: 302220_ID-893204
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "893204"
+    - id: apple_cmcc_cmi
+      path: profiles/cmcc_cmi.yaml
+      selectors:
+        - raw: 302220_ID-8985234
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8985234"
+    - id: apple_dish_us
+      path: profiles/dish_us.yaml
+      selectors:
+        - raw: 302220_GID1-6332
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "6332"
+        - raw: 302220_GID1-6336
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "6336"
+    - id: apple_holafly
+      path: profiles/holafly.yaml
+      selectors:
+        - raw: 302220_GID2-0407_ID-8985234
+          conditions:
+            - field: gid2
+              match: prefix
+              value: "0407"
+            - field: iccid
+              match: prefix
+              value: "8985234"
+    - id: apple_telus_ca
+      path: profiles/telus_ca.yaml
+      generic: true
+      selectors:
+        - raw: "302220"
+    - id: apple_telus_koodo_ca
+      path: profiles/telus_koodo_ca.yaml
+      selectors:
+        - raw: 302220_GID1-4B
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 4B
+    - id: apple_telus_pcmobile_ca
+      path: profiles/telus_pcmobile_ca.yaml
+      selectors:
+        - raw: 302220_GID1-50
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "50"
+    - id: apple_telus_publicmobile_ca
+      path: profiles/telus_publicmobile_ca.yaml
+      selectors:
+        - raw: 302220_GID1-4D
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 4D
+    - id: apple_wom_co
+      path: profiles/wom_co.yaml
+      selectors:
+        - raw: 302220_ID-8957360
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8957360"

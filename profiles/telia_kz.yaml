@@ -1,0 +1,7 @@
+version: 3
+kind: carrier_bundle
+id: apple_telia_kz
+bundle: Telia_kz.bundle
+supported_plmns:
+    - "40102"
+common: {}

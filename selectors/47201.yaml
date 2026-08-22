@@ -1,0 +1,8 @@
+version: 2
+plmn: "47201"
+profiles:
+    - id: apple_dhiraagu_mv
+      path: profiles/dhiraagu_mv.yaml
+      generic: true
+      selectors:
+        - raw: "47201"

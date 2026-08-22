@@ -1,0 +1,8 @@
+version: 2
+plmn: "42604"
+profiles:
+    - id: apple_viva_bh
+      path: profiles/viva_bh.yaml
+      generic: true
+      selectors:
+        - raw: "42604"

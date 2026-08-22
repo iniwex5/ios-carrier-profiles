@@ -1,0 +1,8 @@
+version: 2
+plmn: "28403"
+profiles:
+    - id: apple_vivacom_bg
+      path: profiles/vivacom_bg.yaml
+      generic: true
+      selectors:
+        - raw: "28403"

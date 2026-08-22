@@ -1,0 +1,38 @@
+version: 3
+kind: carrier_bundle
+id: apple_skt_kr
+bundle: SKT_kr.bundle
+supported_plmns:
+    - "45005"
+common: {}
+plmn_overrides:
+    "45005":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 9233
+        entitlement:
+            entitlement_url: https://entitlements-prod.sktdns.com
+        ims:
+            register:
+                use_ipsec: true
+            signaling:
+                max_udp_message_size: 3000
+                preconditions: unsupported
+                support_p_early_media: false
+                re_register_on:
+                    - method: INVITE
+                      statuses:
+                        - "408"
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - "380"
+                        - "404"
+                        - "414"
+                        - "499"
+                        - "606"
+            media:
+                rtcp_inactivity_seconds: 36000
+                rtcp_interval_seconds: 3
+            volte:
+                enable_volte_by_default: true

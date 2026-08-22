@@ -1,0 +1,8 @@
+version: 2
+plmn: "24403"
+profiles:
+    - id: apple_dna_fi
+      path: profiles/dna_fi.yaml
+      generic: true
+      selectors:
+        - raw: "24403"

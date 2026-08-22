@@ -1,0 +1,78 @@
+version: 2
+plmn: "310840"
+profiles:
+    - id: apple_affinityclick
+      path: profiles/affinityclick.yaml
+      selectors:
+        - raw: 310840_GID1-616C6F73696D31
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 616C6F73696D31
+    - id: apple_airgsm
+      path: profiles/airgsm.yaml
+      selectors:
+        - raw: 310840_GID1-616972616c6f31
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 616972616C6F31
+    - id: apple_bne
+      path: profiles/bne.yaml
+      selectors:
+        - raw: 310840_GID1-626e6573696d31
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 626E6573696D31
+    - id: apple_knowroaming
+      path: profiles/knowroaming.yaml
+      selectors:
+        - raw: 310840_GID1-636f6e6e65637431
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 636F6E6E65637431
+    - id: apple_mysim
+      path: profiles/mysim.yaml
+      selectors:
+        - raw: 310840_GID1-434F423236303036
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 434F423236303036
+    - id: apple_redteamobile
+      path: profiles/redteamobile.yaml
+      selectors:
+        - raw: 310840_ID-89852245280
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89852245280"
+    - id: apple_roamless
+      path: profiles/roamless.yaml
+      selectors:
+        - raw: 310840_GID1-4D2E3F1A6B7C8D9E
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 4D2E3F1A6B7C8D9E
+    - id: apple_simly
+      path: profiles/simly.yaml
+      selectors:
+        - raw: 310840_GID1-73696D6C7931
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 73696D6C7931
+    - id: apple_telefonica_esimflag
+      path: profiles/telefonica_esimflag.yaml
+      selectors:
+        - raw: 310840_GID1-80_ID-8910300
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "80"
+            - field: iccid
+              match: prefix
+              value: "8910300"

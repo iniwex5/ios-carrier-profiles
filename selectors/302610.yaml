@@ -1,0 +1,32 @@
+version: 2
+plmn: "302610"
+profiles:
+    - id: apple_bell_ca
+      path: profiles/bell_ca.yaml
+      generic: true
+      selectors:
+        - raw: "302610"
+    - id: apple_bell_lucky_ca
+      path: profiles/bell_lucky_ca.yaml
+      selectors:
+        - raw: 302610_GID1-42
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "42"
+    - id: apple_bell_virgin_ca
+      path: profiles/bell_virgin_ca.yaml
+      selectors:
+        - raw: 302610_GID1-3e
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 3E
+    - id: apple_knowroaming
+      path: profiles/knowroaming.yaml
+      selectors:
+        - raw: 302610_GID1-636f6e6e65637431
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 636F6E6E65637431

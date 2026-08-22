@@ -1,0 +1,24 @@
+version: 2
+plmn: "45407"
+profiles:
+    - id: apple_redteamobile
+      path: profiles/redteamobile.yaml
+      selectors:
+        - raw: 45407_ID-89852245280
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89852245280"
+    - id: apple_shinetown
+      path: profiles/shinetown.yaml
+      selectors:
+        - raw: 45407_GID1-AAAA
+          conditions:
+            - field: gid1
+              match: prefix
+              value: AAAA
+    - id: apple_unicom_hk
+      path: profiles/unicom_hk.yaml
+      generic: true
+      selectors:
+        - raw: "45407"

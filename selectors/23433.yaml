@@ -1,0 +1,8 @@
+version: 2
+plmn: "23433"
+profiles:
+    - id: apple_orange_uk
+      path: profiles/orange_uk.yaml
+      generic: true
+      selectors:
+        - raw: "23433"

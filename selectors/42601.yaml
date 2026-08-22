@@ -1,0 +1,8 @@
+version: 2
+plmn: "42601"
+profiles:
+    - id: apple_batelco_bh
+      path: profiles/batelco_bh.yaml
+      generic: true
+      selectors:
+        - raw: "42601"

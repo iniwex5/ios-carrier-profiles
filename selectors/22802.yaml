@@ -1,0 +1,8 @@
+version: 2
+plmn: "22802"
+profiles:
+    - id: apple_sunrise_ch
+      path: profiles/sunrise_ch.yaml
+      generic: true
+      selectors:
+        - raw: "22802"

@@ -1,0 +1,9 @@
+version: 3
+kind: carrier_bundle
+id: apple_movistar_pa
+bundle: movistar_pa.bundle
+supported_plmns:
+    - "21407"
+    - "71402"
+    - "71420"
+common: {}

@@ -1,0 +1,13 @@
+version: 2
+plmn: "44055"
+profiles:
+    - id: apple_kddi_lte_only_jp
+      path: profiles/kddi_lte_only_jp.yaml
+      generic: true
+      selectors:
+        - raw: "44055"
+    - id: apple_kddi_nr_jp
+      path: profiles/kddi_nr_jp.yaml
+      generic: true
+      selectors:
+        - raw: "44055"

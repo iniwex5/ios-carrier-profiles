@@ -1,0 +1,12 @@
+version: 3
+kind: carrier_bundle
+id: apple_tele_gl
+bundle: TELE_gl.bundle
+supported_plmns:
+    - "29001"
+common: {}
+plmn_overrides:
+    "29001":
+        ims:
+            volte:
+                enable_volte_by_default: true

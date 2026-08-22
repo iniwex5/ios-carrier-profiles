@@ -1,0 +1,42 @@
+version: 3
+kind: carrier_bundle
+id: apple_du_virgin_ae
+bundle: du_Virgin_ae.bundle
+supported_plmns:
+    - "42403"
+common: {}
+plmn_overrides:
+    "42403":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 1025
+        entitlement:
+            entitlement_url: https://esim-prov.virginmobile.ae
+        ims:
+            apn: ims
+            ip_stack: ipv4
+            register:
+                use_ipsec: true
+            signaling:
+                preconditions: supported
+                support_p_early_media: true
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - 3XX
+                        - 5XX
+                        - 6XX
+                contact:
+                    always_add_sip_instance: true
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            media:
+                rtp_inactivity_seconds: 20
+                rtcp_interval_seconds: 5
+                remote_rtcp_deactivation: true
+            volte:
+                enable_volte_by_default: true

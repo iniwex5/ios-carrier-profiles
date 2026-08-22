@@ -1,0 +1,8 @@
+version: 2
+plmn: "52503"
+profiles:
+    - id: apple_mobileone_sg
+      path: profiles/mobileone_sg.yaml
+      generic: true
+      selectors:
+        - raw: "52503"

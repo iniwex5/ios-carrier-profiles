@@ -1,0 +1,16 @@
+version: 2
+plmn: "44011"
+profiles:
+    - id: apple_dentwireless
+      path: profiles/dentwireless.yaml
+      selectors:
+        - raw: 44011_GID1-3597bfd533
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 3597BFD533
+    - id: apple_rakuten_jp
+      path: profiles/rakuten_jp.yaml
+      generic: true
+      selectors:
+        - raw: "44011"

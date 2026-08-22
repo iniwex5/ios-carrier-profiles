@@ -1,0 +1,8 @@
+version: 2
+plmn: "60400"
+profiles:
+    - id: apple_meditel_ma
+      path: profiles/meditel_ma.yaml
+      generic: true
+      selectors:
+        - raw: "60400"

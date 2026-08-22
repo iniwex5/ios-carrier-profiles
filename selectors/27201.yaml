@@ -1,0 +1,11 @@
+version: 2
+plmn: "27201"
+profiles:
+    - id: apple_vodafone_ie
+      path: profiles/vodafone_ie.yaml
+      selectors:
+        - raw: 27201_GID1-FF
+          conditions:
+            - field: gid1
+              match: prefix
+              value: FF

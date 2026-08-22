@@ -1,0 +1,8 @@
+version: 2
+plmn: "28310"
+profiles:
+    - id: apple_orange_am
+      path: profiles/orange_am.yaml
+      generic: true
+      selectors:
+        - raw: "28310"

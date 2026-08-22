@@ -1,0 +1,7 @@
+version: 3
+kind: carrier_bundle
+id: apple_vodafone_mz
+bundle: Vodafone_mz.bundle
+supported_plmns:
+    - "64304"
+common: {}

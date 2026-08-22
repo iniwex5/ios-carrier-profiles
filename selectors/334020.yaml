@@ -1,0 +1,45 @@
+version: 2
+plmn: "334020"
+profiles:
+    - id: apple_affinityclick
+      path: profiles/affinityclick.yaml
+      selectors:
+        - raw: 334020_GID1-616C6F73696D31
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 616C6F73696D31
+    - id: apple_claro_pa
+      path: profiles/claro_pa.yaml
+      selectors:
+        - raw: 334020_ID-8950703
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8950703"
+    - id: apple_knowroaming
+      path: profiles/knowroaming.yaml
+      selectors:
+        - raw: 334020_GID1-636f6e6e65637431
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 636F6E6E65637431
+    - id: apple_telcel_aztecamovil_mx
+      path: profiles/telcel_aztecamovil_mx.yaml
+      selectors:
+        - raw: 334020_GID1-ffffffffffffff4f5549
+          conditions:
+            - field: gid1
+              match: prefix
+              value: FFFFFFFFFFFFFF4F5549
+        - raw: 334020_GID2-ffffffffffffff4f5549
+          conditions:
+            - field: gid2
+              match: prefix
+              value: FFFFFFFFFFFFFF4F5549
+    - id: apple_telcel_mx
+      path: profiles/telcel_mx.yaml
+      generic: true
+      selectors:
+        - raw: "334020"

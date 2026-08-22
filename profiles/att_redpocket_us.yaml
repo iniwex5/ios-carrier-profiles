@@ -1,0 +1,73 @@
+version: 3
+kind: carrier_bundle
+id: apple_att_redpocket_us
+bundle: ATT_RedPocket_US.bundle
+supported_plmns:
+    - "310280"
+    - "310410"
+common:
+    apple:
+        carrier_entitlements:
+            supported_entitlements: 4204169
+    entitlement:
+        entitlement_url: https://sentitlement2.mobile.att.net
+    ims:
+        epdg:
+            address: epdg.epc.att.net
+        ike:
+            child_sa:
+                lifetime_seconds: 80000
+                proposals:
+                    - encryption:
+                        - aes128
+                      integrity:
+                        - sha256
+                      lifetime_seconds: 80000
+            dpd:
+                enabled: false
+                interval_seconds: 600
+            local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+            proposals:
+                - encryption:
+                    - aes128
+                  integrity:
+                    - sha256
+                  prf:
+                    - sha256
+                  dh_groups:
+                    - modp2048
+                  lifetime_seconds: 80000
+                  authentication_method: None
+                  eap_method: EAP-AKA
+            sa_lifetime_seconds: 80000
+        media:
+            remote_rtcp_deactivation: true
+            rtcp_inactivity_seconds: 20
+            rtcp_interval_seconds: 5
+            rtp_inactivity_seconds: 20
+        register:
+            use_ipsec: true
+        signaling:
+            contact:
+                additional_contact_params:
+                    - selector: INVITE,INVITE:*
+                      params:
+                        - +g.3gpp.mid-call
+                        - +g.3gpp.srvcc-alerting
+            preconditions: supported
+            re_register_on:
+                - method: REGISTER
+                  statuses:
+                    - "480"
+                    - "500"
+                    - "503"
+                    - "504"
+                - method: INVITE
+                  statuses:
+                    - "403"
+                    - "504"
+            support_p_early_media: true
+        ussi:
+            enabled: true
+        volte:
+            enable_volte_by_default: true

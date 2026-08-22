@@ -1,0 +1,47 @@
+version: 3
+kind: carrier_bundle
+id: apple_o2_ie
+bundle: O2_ie.bundle
+supported_plmns:
+    - "27202"
+common: {}
+plmn_overrides:
+    "27202":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 13441
+        entitlement:
+            entitlement_url: https://ses.three.ie
+        ims:
+            apn: ims
+            ip_stack: ipv4v6
+            epdg:
+                address: epdg.three.ie
+            ike:
+                nat_keepalive_enabled: true
+                child_sa:
+                    proposals:
+                        - encryption:
+                            - aes128
+                          integrity:
+                            - sha256
+                          pfs_group: modp2048
+                          lifetime_seconds: 86400
+                    lifetime_seconds: 86400
+                sa_lifetime_seconds: 86400
+            register:
+                use_ipsec: true
+            signaling:
+                preconditions: supported
+                support_p_early_media: true
+                contact:
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*[primary]
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            media:
+                rtp_inactivity_seconds: 20
+            volte:
+                enable_volte_by_default: true

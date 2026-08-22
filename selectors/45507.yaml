@@ -1,0 +1,8 @@
+version: 2
+plmn: "45507"
+profiles:
+    - id: apple_chinatelecom_usim_mo
+      path: profiles/chinatelecom_usim_mo.yaml
+      generic: true
+      selectors:
+        - raw: "45507"

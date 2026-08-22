@@ -1,0 +1,8 @@
+version: 3
+kind: carrier_bundle
+id: apple_mtx_lu
+bundle: MTX_lu.bundle
+supported_plmns:
+    - "27002"
+    - "90139"
+common: {}

@@ -1,0 +1,8 @@
+version: 2
+plmn: "29001"
+profiles:
+    - id: apple_tele_gl
+      path: profiles/tele_gl.yaml
+      generic: true
+      selectors:
+        - raw: "29001"

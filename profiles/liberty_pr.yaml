@@ -1,0 +1,50 @@
+version: 3
+kind: carrier_bundle
+id: apple_liberty_pr
+bundle: Liberty_pr.bundle
+supported_plmns:
+    - "313790"
+common: {}
+plmn_overrides:
+    "313790":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 11673
+        entitlement:
+            entitlement_url: https://ses.mnc790.mcc313.pub.3gppnetwork.org
+        ims:
+            apn: ims
+            ip_stack: ipv4v6
+            ike:
+                nat_keepalive_enabled: true
+                child_sa:
+                    proposals:
+                        - encryption:
+                            - aes256
+                          integrity:
+                            - sha256
+                          pfs_group: modp2048
+                          lifetime_seconds: 86400
+                    lifetime_seconds: 86400
+                local_identifier: anonymous@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                sa_lifetime_seconds: 86400
+            register:
+                use_ipsec: true
+                include_cellular_network_info: true
+            signaling:
+                max_udp_message_size: 1200
+                preconditions: supported
+                support_p_early_media: false
+                contact:
+                    always_add_sip_instance: true
+                    additional_contact_params:
+                        - selector: INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+            media:
+                rtp_inactivity_seconds: 20
+            ussi:
+                enabled: true
+            volte:
+                enable_volte_by_default: true

@@ -1,0 +1,38 @@
+version: 3
+kind: carrier_bundle
+id: apple_bhartiairtel_lk
+bundle: BhartiAirtel_lk.bundle
+supported_plmns:
+    - "41305"
+common: {}
+plmn_overrides:
+    "41305":
+        ims:
+            apn: ims
+            ip_stack: ipv4
+            register:
+                include_cellular_network_info: false
+            signaling:
+                max_udp_message_size: 2000
+                preconditions: supported
+                support_p_early_media: true
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - 5XX
+                        - 6XX
+                contact:
+                    always_add_sip_instance: true
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            media:
+                rtp_inactivity_seconds: 20
+                rtcp_interval_seconds: 5
+            ussi:
+                enabled: false
+            volte:
+                enable_volte_by_default: true

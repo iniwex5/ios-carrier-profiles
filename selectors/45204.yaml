@@ -1,0 +1,56 @@
+version: 2
+plmn: "45204"
+profiles:
+    - id: apple_affinityclick
+      path: profiles/affinityclick.yaml
+      selectors:
+        - raw: 45204_GID1-616C6F73696D31
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 616C6F73696D31
+    - id: apple_knowroaming
+      path: profiles/knowroaming.yaml
+      selectors:
+        - raw: 45204_GID1-636f6e6e65637431
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 636F6E6E65637431
+    - id: apple_metfone_kh
+      path: profiles/metfone_kh.yaml
+      selectors:
+        - raw: 45204_ID-8985508
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8985508"
+    - id: apple_mysim
+      path: profiles/mysim.yaml
+      selectors:
+        - raw: 45204_GID1-434F423236303036
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 434F423236303036
+    - id: apple_natcom_ht
+      path: profiles/natcom_ht.yaml
+      selectors:
+        - raw: 45204_ID-8950903
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8950903"
+    - id: apple_unitel_la
+      path: profiles/unitel_la.yaml
+      selectors:
+        - raw: 45204_ID-8945703
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8945703"
+    - id: apple_viettel_vn
+      path: profiles/viettel_vn.yaml
+      generic: true
+      selectors:
+        - raw: "45204"

@@ -1,0 +1,7 @@
+version: 3
+kind: carrier_bundle
+id: apple_telekomsrbija_me
+bundle: TelekomSrbija_me.bundle
+supported_plmns:
+    - "29703"
+common: {}

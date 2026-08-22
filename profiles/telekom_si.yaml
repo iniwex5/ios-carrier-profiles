@@ -1,0 +1,42 @@
+version: 3
+kind: carrier_bundle
+id: apple_telekom_si
+bundle: Telekom_si.bundle
+supported_plmns:
+    - "29341"
+common: {}
+plmn_overrides:
+    "29341":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 5121
+        entitlement:
+            entitlement_url: https://ios.entitlement.telekom.si
+        ims:
+            apn: ims
+            ip_stack: ipv4
+            ike:
+                dpd:
+                    enabled: false
+                    interval_seconds: 600
+                local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                sa_lifetime_seconds: 86400
+            register:
+                use_ipsec: true
+                include_cellular_network_info: true
+            signaling:
+                preconditions: supported
+                support_p_early_media: true
+                contact:
+                    always_add_sip_instance: true
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            media:
+                rtcp_interval_seconds: 5
+                remote_rtcp_deactivation: true
+            volte:
+                enable_volte_by_default: true

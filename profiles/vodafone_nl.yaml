@@ -1,0 +1,46 @@
+version: 3
+kind: carrier_bundle
+id: apple_vodafone_nl
+bundle: Vodafone_nl.bundle
+supported_plmns:
+    - "20404"
+    - "26202"
+common:
+    apple:
+        carrier_entitlements:
+            supported_entitlements: 9216
+    entitlement:
+        entitlement_url: https://es-nl.multiopco.entitlement.vodafone.com:4454/ium-OEMInterface/servlet/IUMServlet
+    ims:
+        apn: ims
+        ike:
+            child_sa:
+                lifetime_seconds: 80000
+                proposals:
+                    - encryption:
+                        - aes256
+                      integrity:
+                        - sha256
+                      pfs_group: modp2048
+                      lifetime_seconds: 80000
+            dpd:
+                enabled: false
+                interval_seconds: 600
+            local_identifier: anonymous@nai.epc.mnc004.mcc204.3gppnetwork.org
+            sa_lifetime_seconds: 80000
+        register:
+            include_cellular_network_info: true
+            use_ipsec: true
+        signaling:
+            contact:
+                additional_contact_params:
+                    - selector: REGISTER,INVITE,INVITE:*
+                      params:
+                        - +g.3gpp.mid-call
+                        - +g.3gpp.srvcc-alerting
+                        - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+                always_add_sip_instance: true
+            preconditions: supported
+            support_p_early_media: true
+        volte:
+            enable_volte_by_default: true

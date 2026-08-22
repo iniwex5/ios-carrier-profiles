@@ -1,0 +1,48 @@
+version: 2
+plmn: "20408"
+profiles:
+    - id: apple_affinityclick
+      path: profiles/affinityclick.yaml
+      selectors:
+        - raw: 20408_GID1-616C6F73696D31
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 616C6F73696D31
+    - id: apple_airgsm
+      path: profiles/airgsm.yaml
+      selectors:
+        - raw: 20408_GID1-41
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "41"
+    - id: apple_knowroaming
+      path: profiles/knowroaming.yaml
+      selectors:
+        - raw: 20408_GID1-636f6e6e65637431
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 636F6E6E65637431
+    - id: apple_kpn_nl
+      path: profiles/kpn_nl.yaml
+      generic: true
+      selectors:
+        - raw: "20408"
+    - id: apple_redteamobile
+      path: profiles/redteamobile.yaml
+      selectors:
+        - raw: 20408_ID-89852245280
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89852245280"
+    - id: apple_truphone_us
+      path: profiles/truphone_us.yaml
+      selectors:
+        - raw: 20408_GID1-547275554B3030656E
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 547275554B3030656E

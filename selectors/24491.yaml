@@ -1,0 +1,8 @@
+version: 2
+plmn: "24491"
+profiles:
+    - id: apple_sonera_fi
+      path: profiles/sonera_fi.yaml
+      generic: true
+      selectors:
+        - raw: "24491"

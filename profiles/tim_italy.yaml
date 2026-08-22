@@ -1,0 +1,41 @@
+version: 3
+kind: carrier_bundle
+id: apple_tim_italy
+bundle: TIM_Italy.bundle
+supported_plmns:
+    - "22201"
+common: {}
+plmn_overrides:
+    "22201":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 13313
+        entitlement:
+            entitlement_url: https://es.tim.it/new-entitlement/
+        ims:
+            apn: ims
+            ike:
+                nat_keepalive_enabled: true
+                local_identifier: PseudoIMSI@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                sa_lifetime_seconds: 86400
+            register:
+                use_ipsec: true
+                include_cellular_network_info: true
+            signaling:
+                preconditions: supported
+                support_p_early_media: true
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - "380"
+                contact:
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            media:
+                rtp_inactivity_seconds: 15
+            volte:
+                enable_volte_by_default: true

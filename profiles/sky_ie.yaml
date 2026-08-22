@@ -1,0 +1,18 @@
+version: 3
+kind: carrier_bundle
+id: apple_sky_ie
+bundle: Sky_ie.bundle
+supported_plmns:
+    - "24007"
+    - "27225"
+common:
+    apple:
+        carrier_entitlements:
+            supported_entitlements: 8193
+    entitlement:
+        entitlement_url: https://esim-es-open-prod-skyroi.esimcloud.net/skyroi/prod/executeAppleActions/
+    ims:
+        register:
+            use_ipsec: true
+        volte:
+            enable_volte_by_default: true

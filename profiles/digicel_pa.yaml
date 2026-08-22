@@ -1,0 +1,7 @@
+version: 3
+kind: carrier_bundle
+id: apple_digicel_pa
+bundle: Digicel_pa.bundle
+supported_plmns:
+    - "71404"
+common: {}

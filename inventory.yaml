@@ -1,0 +1,6730 @@
+version: 1
+summary:
+    bundles_discovered: 691
+    carrier_plists: 690
+    profiles_generated: 683
+    variants_generated: 1343
+    bundles_without_supported_sims: 1
+    parse_errors: 7
+    rejected_profiles: 0
+bundles:
+    - bundle: 1and1_de.bundle
+      carrier_plist: true
+      supported_sims:
+        - "26223"
+        - 20801_ID-894936
+      profiles:
+        - apple_1and1_de
+      variants_generated: 2
+      status: ready
+    - bundle: 2degrees_nz.bundle
+      carrier_plist: true
+      supported_sims:
+        - "53024"
+      profiles:
+        - apple_2degrees_nz
+      variants_generated: 1
+      status: ready
+    - bundle: 8ta_za.bundle
+      carrier_plist: true
+      supported_sims:
+        - "65502"
+      profiles:
+        - apple_8ta_za
+      variants_generated: 1
+      status: ready
+    - bundle: ACS_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 311370_ID-89013113708
+        - 311370_ID-89013113702
+        - 310050_ID-8901310050
+      profiles:
+        - apple_acs_us
+      variants_generated: 2
+      status: ready
+    - bundle: AIS_th.bundle
+      carrier_plist: true
+      supported_sims:
+        - "52001"
+        - "52003"
+      profiles:
+        - apple_ais_th
+      variants_generated: 2
+      status: ready
+    - bundle: APT_tw.bundle
+      carrier_plist: true
+      supported_sims:
+        - "46605"
+        - 52505_ID-8988605
+      profiles:
+        - apple_apt_tw
+      variants_generated: 2
+      status: ready
+    - bundle: APUA_ag.bundle
+      carrier_plist: true
+      supported_sims:
+        - "34403"
+        - "344030"
+      profiles:
+        - apple_apua_ag
+      variants_generated: 2
+      status: ready
+    - bundle: ASTCA_as.bundle
+      carrier_plist: true
+      supported_sims:
+        - 311780_ID-8901780
+        - "313120"
+      profiles:
+        - apple_astca_as
+      variants_generated: 2
+      status: ready
+    - bundle: ATN_Viya_vi.bundle
+      carrier_plist: true
+      supported_sims:
+        - "311040"
+        - "311320"
+      profiles:
+        - apple_atn_viya_vi
+      variants_generated: 2
+      status: ready
+    - bundle: ATN_bm.bundle
+      carrier_plist: true
+      supported_sims:
+        - "350000"
+        - 204043_ID-891351
+        - 204043_ID-890135
+      profiles:
+        - apple_atn_bm
+      variants_generated: 2
+      status: ready
+    - bundle: ATN_gy.bundle
+      carrier_plist: true
+      supported_sims:
+        - "738002"
+      profiles:
+        - apple_atn_gy
+      variants_generated: 1
+      status: ready
+    - bundle: ATN_tc.bundle
+      carrier_plist: true
+      supported_sims:
+        - "376360"
+      profiles:
+        - apple_atn_tc
+      variants_generated: 1
+      status: ready
+    - bundle: ATT_CC_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 310170_GID1-2A
+        - 310410_GID1-2A
+        - 311180_GID1-2A
+        - 310560_GID1-2A
+        - 310280_GID1-2A
+        - 310030_GID1-2A
+        - 310950_GID1-2A
+      profiles:
+        - apple_att_cc_us
+      variants_generated: 7
+      status: ready
+    - bundle: ATT_Dish_MVNO_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 310410_GID1-3432
+        - 310280_GID1-3432
+        - 310410_GID1-3436
+        - 310410_GID1-3434
+      profiles:
+        - apple_att_dish_mvno_us
+      variants_generated: 2
+      status: ready
+    - bundle: ATT_FirstNet_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - "313100"
+        - "312670"
+      profiles:
+        - apple_att_firstnet_us
+      variants_generated: 2
+      status: ready
+    - bundle: ATT_MVNO_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 310410_GID1-4102
+        - 310280_GID1-4102
+        - 311180_GID1-4102
+        - 310950_GID1-4102
+        - 310410_GID1-44FF
+        - 310280_GID1-44FF
+        - 311180_GID1-44FF
+        - 310950_GID1-44FF
+        - 310280_GID1-20FF
+        - 310950_GID1-20FF
+      profiles:
+        - apple_att_mvno_us
+      variants_generated: 4
+      status: ready
+    - bundle: ATT_NR_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 310410_GID1-53FF
+        - 310280_GID1-53FF
+        - 311180_GID1-53FF
+        - 310560_GID1-53FF
+        - 310030_GID1-53FF
+        - 310950_GID1-53FF
+        - 310950_GID1-52FF
+        - 310030_GID1-52FF
+        - 310560_GID1-52FF
+        - 311180_GID1-52FF
+        - 310280_GID1-52FF
+        - 310410_GID1-52FF
+      profiles:
+        - apple_att_nr_us
+      variants_generated: 6
+      status: ready
+    - bundle: ATT_Puretalk_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 310170_GID1-62
+        - 310410_GID1-62
+        - 311180_GID1-62
+        - 310560_GID1-62
+        - 310280_GID1-62
+        - 310030_GID1-62
+        - 310950_GID1-62
+      profiles:
+        - apple_att_puretalk_us
+      variants_generated: 7
+      status: ready
+    - bundle: ATT_RedPocket_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 310410_GID1-42
+        - 310280_GID1-42
+      profiles:
+        - apple_att_redpocket_us
+      variants_generated: 2
+      status: ready
+    - bundle: ATT_TFW_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 310170_GID1-DE
+        - 310410_GID1-DE
+        - 311180_GID1-DE
+        - 310560_GID1-DE
+        - 310280_GID1-DE
+        - 310030_GID1-DE
+        - 310950_GID1-DE
+      profiles:
+        - apple_att_tfw_us
+      variants_generated: 7
+      status: ready
+    - bundle: ATT_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - "310170"
+        - 310410_GID1-FFFF
+        - 311180_GID1-FFFF
+        - 310560_GID1-FFFF
+        - 310280_GID1-FFFF
+        - "310030"
+        - 310950_GID1-FFFF
+      profiles:
+        - apple_att_us
+      variants_generated: 7
+      status: ready
+    - bundle: ATT_aio_NR_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 310150_GID1-53FF
+      profiles:
+        - apple_att_aio_nr_us
+      variants_generated: 1
+      status: ready
+    - bundle: ATT_aio_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - "310150"
+      profiles:
+        - apple_att_aio_us
+      variants_generated: 1
+      status: ready
+    - bundle: AVEA_tr.bundle
+      carrier_plist: true
+      supported_sims:
+        - "28603"
+        - "28604"
+      profiles:
+        - apple_avea_tr
+      variants_generated: 2
+      status: ready
+    - bundle: AWCC_af.bundle
+      carrier_plist: true
+      supported_sims:
+        - "41201"
+      profiles:
+        - apple_awcc_af
+      variants_generated: 1
+      status: ready
+    - bundle: AffinityClick.bundle
+      carrier_plist: true
+      supported_sims:
+        - 310840_GID1-616C6F73696D31
+        - 26006_GID1-616C6F73696D31
+        - 52505_GID1-616C6F73696D31
+        - 29505_GID1-616C6F73696D31
+        - 23410_GID1-616C6F73696D31
+        - 26001_GID1-616C6F73696D31
+        - 45400_GID1-616C6F73696D31
+        - 41677_GID1-616C6F73696D31
+        - 52501_GID1-616C6F73696D31
+        - 334020_GID1-616C6F73696D31
+        - 20408_GID1-616C6F73696D31
+        - 26806_GID1-616C6F73696D31
+        - 20809_GID1-616C6F73696D31
+        - 20601_GID1-616C6F73696D31
+        - 20628_GID1-616C6F73696D31
+        - 42202_GID1-616C6F73696D31
+        - 42204_GID1-616C6F73696D31
+        - 41302_GID1-616C6F73696D31
+        - 41311_GID1-616C6F73696D31
+        - 20801_GID1-616C6F73696D31
+        - 53005_GID1-616C6F73696D31
+        - 22201_GID1-616C6F73696D31
+        - 42501_GID1-616C6F73696D31
+        - 42402_GID1-616C6F73696D31
+        - 60202_GID1-616C6F73696D31
+        - 23450_GID1-616C6F73696D31
+        - 53703_GID1-616C6F73696D31
+        - 45204_GID1-616C6F73696D31
+        - 71204_GID1-616C6F73696D31
+        - 72418_GID1-616C6F73696D31
+        - 732123_GID1-616C6F73696D31
+        - 24007_GID1-616C6F73696D31
+        - 20802_GID1-616C6F73696D31
+        - 90131_GID1-616C6F73696D31
+      profiles:
+        - apple_affinityclick
+      variants_generated: 34
+      status: ready
+    - bundle: AirGSM.bundle
+      carrier_plist: true
+      supported_sims:
+        - 29505_GID1-616972616c6f31
+        - 310840_GID1-616972616c6f31
+        - 52505_GID1-616972616c6f31
+        - 23410_GID1-616972616c6f31
+        - 732123_GID1-616972616c6f31
+        - 52501_GID1-616972616c6f31
+        - 20809_ID-893135
+        - 52501_GID1-41
+        - 20601_ID-893135
+        - 20408_GID1-41
+        - 20801_GID1-41
+        - 20435_GID1-41
+        - 20628_ID-893135
+      profiles:
+        - apple_airgsm
+      variants_generated: 12
+      status: ready
+    - bundle: Alcom_ax.bundle
+      carrier_plist: true
+      supported_sims:
+        - "24414"
+      profiles:
+        - apple_alcom_ax
+      variants_generated: 1
+      status: ready
+    - bundle: Alfa_lb.bundle
+      carrier_plist: true
+      supported_sims:
+        - "41501"
+      profiles:
+        - apple_alfa_lb
+      variants_generated: 1
+      status: ready
+    - bundle: Algar_br.bundle
+      carrier_plist: true
+      supported_sims:
+        - "72432"
+        - "72433"
+        - "72434"
+        - 22201_ID-895532
+        - 22201_ID-895533
+        - 22201_ID-895534
+      profiles:
+        - apple_algar_br
+      variants_generated: 4
+      status: ready
+    - bundle: Aliv_bs.bundle
+      carrier_plist: true
+      supported_sims:
+        - "36449"
+        - 20809_ID-891364049
+      profiles:
+        - apple_aliv_bs
+      variants_generated: 2
+      status: ready
+    - bundle: Almadar_ly.bundle
+      carrier_plist: true
+      supported_sims:
+        - "60601"
+      profiles:
+        - apple_almadar_ly
+      variants_generated: 1
+      status: ready
+    - bundle: Altice_LTE_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - "313390"
+        - 20809_ID-8901390
+      profiles:
+        - apple_altice_lte_us
+      variants_generated: 2
+      status: ready
+    - bundle: Antel_uy.bundle
+      carrier_plist: true
+      supported_sims:
+        - "74801"
+      profiles:
+        - apple_antel_uy
+      variants_generated: 1
+      status: ready
+    - bundle: AppWire_LTE_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - "312130"
+      profiles:
+        - apple_appwire_lte_us
+      variants_generated: 1
+      status: ready
+    - bundle: Appalachian_LTE_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 311480_GID2-CA
+      profiles:
+        - apple_appalachian_lte_us
+      variants_generated: 1
+      status: ready
+    - bundle: Avantel_co.bundle
+      carrier_plist: true
+      supported_sims:
+        - "732130"
+        - 20404_ID-8957732
+      profiles:
+        - apple_avantel_co
+      variants_generated: 2
+      status: ready
+    - bundle: Azerfon_az.bundle
+      carrier_plist: true
+      supported_sims:
+        - "40004"
+      profiles:
+        - apple_azerfon_az
+      variants_generated: 1
+      status: ready
+    - bundle: BASE_be.bundle
+      carrier_plist: true
+      supported_sims:
+        - "20620"
+      profiles:
+        - apple_base_be
+      variants_generated: 1
+      status: ready
+    - bundle: BICS.bundle
+      carrier_plist: true
+      supported_sims:
+        - "20628"
+        - 20809_ID-893204
+        - 302220_ID-893204
+        - 52505_ID-893204
+        - 50212_ID-893204
+        - 20601_ID-893204
+        - 45431_ID-893204
+        - 72454_ID-893204
+      profiles:
+        - apple_bics
+      variants_generated: 8
+      status: ready
+    - bundle: BNE.bundle
+      carrier_plist: true
+      supported_sims:
+        - 26006_GID1-626e6573696d31
+        - 310840_GID1-626e6573696d31
+        - 41677_GID1-626e6573696d31
+        - 42501_GID1-626e6573696d31
+        - 52505_GID1-626e6573696d31
+        - 29505_GID1-626e6573696d31
+      profiles:
+        - apple_bne
+      variants_generated: 6
+      status: ready
+    - bundle: BTC_bw.bundle
+      carrier_plist: true
+      supported_sims:
+        - "65204"
+      profiles:
+        - apple_btc_bw
+      variants_generated: 1
+      status: ready
+    - bundle: BTL_bz.bundle
+      carrier_plist: true
+      supported_sims:
+        - "70267"
+      profiles:
+        - apple_btl_bz
+      variants_generated: 1
+      status: ready
+    - bundle: BT_Business_uk.bundle
+      carrier_plist: true
+      supported_sims:
+        - 23430_GID1-B3
+      profiles:
+        - apple_bt_business_uk
+      variants_generated: 1
+      status: ready
+    - bundle: BT_Consumer_uk.bundle
+      carrier_plist: true
+      supported_sims:
+        - 23430_GID1-C3
+      profiles:
+        - apple_bt_consumer_uk
+      variants_generated: 1
+      status: ready
+    - bundle: BT_OnePhone_uk.bundle
+      carrier_plist: true
+      supported_sims:
+        - "23408"
+        - 23430_GID1-B2
+      profiles:
+        - apple_bt_onephone_uk
+      variants_generated: 2
+      status: ready
+    - bundle: Bakcell_az.bundle
+      carrier_plist: true
+      supported_sims:
+        - "40002"
+      profiles:
+        - apple_bakcell_az
+      variants_generated: 1
+      status: ready
+    - bundle: Banglalink_bd.bundle
+      carrier_plist: true
+      supported_sims:
+        - "47003"
+      profiles:
+        - apple_banglalink_bd
+      variants_generated: 1
+      status: ready
+    - bundle: Batelco_bh.bundle
+      carrier_plist: true
+      supported_sims:
+        - "42601"
+      profiles:
+        - apple_batelco_bh
+      variants_generated: 1
+      status: ready
+    - bundle: Bell_Lucky_ca.bundle
+      carrier_plist: true
+      supported_sims:
+        - 302610_GID1-42
+      profiles:
+        - apple_bell_lucky_ca
+      variants_generated: 1
+      status: ready
+    - bundle: Bell_Virgin_ca.bundle
+      carrier_plist: true
+      supported_sims:
+        - 302610_GID1-3e
+      profiles:
+        - apple_bell_virgin_ca
+      variants_generated: 1
+      status: ready
+    - bundle: Bell_ca.bundle
+      carrier_plist: true
+      supported_sims:
+        - "302610"
+        - "302630"
+        - "302640"
+      profiles:
+        - apple_bell_ca
+      variants_generated: 3
+      status: ready
+    - bundle: BhartiAirtel_bf.bundle
+      carrier_plist: true
+      supported_sims:
+        - "61302"
+      profiles:
+        - apple_bhartiairtel_bf
+      variants_generated: 1
+      status: ready
+    - bundle: BhartiAirtel_cd.bundle
+      carrier_plist: true
+      supported_sims:
+        - "63002"
+      profiles:
+        - apple_bhartiairtel_cd
+      variants_generated: 1
+      status: ready
+    - bundle: BhartiAirtel_cg.bundle
+      carrier_plist: true
+      supported_sims:
+        - "62901"
+      profiles:
+        - apple_bhartiairtel_cg
+      variants_generated: 1
+      status: ready
+    - bundle: BhartiAirtel_ga.bundle
+      carrier_plist: true
+      supported_sims:
+        - "62803"
+      profiles:
+        - apple_bhartiairtel_ga
+      variants_generated: 1
+      status: ready
+    - bundle: BhartiAirtel_gh.bundle
+      carrier_plist: true
+      supported_sims:
+        - "62006"
+      profiles:
+        - apple_bhartiairtel_gh
+      variants_generated: 1
+      status: ready
+    - bundle: BhartiAirtel_in.bundle
+      carrier_plist: true
+      supported_sims:
+        - "40410"
+        - "40492"
+        - "40440"
+        - "40431"
+        - "40490"
+        - "40498"
+        - "40449"
+        - "40445"
+        - "40494"
+        - "40495"
+        - "40402"
+        - "40496"
+        - "40497"
+        - "40554"
+        - "40470"
+        - "40493"
+        - "40551"
+        - "40403"
+        - "40552"
+        - "40553"
+        - "40556"
+        - "40416"
+        - "40555"
+      profiles:
+        - apple_bhartiairtel_in
+      variants_generated: 23
+      status: ready
+    - bundle: BhartiAirtel_ke.bundle
+      carrier_plist: true
+      supported_sims:
+        - "63903"
+      profiles:
+        - apple_bhartiairtel_ke
+      variants_generated: 1
+      status: ready
+    - bundle: BhartiAirtel_lk.bundle
+      carrier_plist: true
+      supported_sims:
+        - "41305"
+      profiles:
+        - apple_bhartiairtel_lk
+      variants_generated: 1
+      status: ready
+    - bundle: BhartiAirtel_mg.bundle
+      carrier_plist: true
+      supported_sims:
+        - "64601"
+      profiles:
+        - apple_bhartiairtel_mg
+      variants_generated: 1
+      status: ready
+    - bundle: BhartiAirtel_mw.bundle
+      carrier_plist: true
+      supported_sims:
+        - "65010"
+      profiles:
+        - apple_bhartiairtel_mw
+      variants_generated: 1
+      status: ready
+    - bundle: BhartiAirtel_ne.bundle
+      carrier_plist: true
+      supported_sims:
+        - "61402"
+      profiles:
+        - apple_bhartiairtel_ne
+      variants_generated: 1
+      status: ready
+    - bundle: BhartiAirtel_ng.bundle
+      carrier_plist: true
+      supported_sims:
+        - "62120"
+      profiles:
+        - apple_bhartiairtel_ng
+      variants_generated: 1
+      status: ready
+    - bundle: BhartiAirtel_rw.bundle
+      carrier_plist: true
+      supported_sims:
+        - "63514"
+      profiles:
+        - apple_bhartiairtel_rw
+      variants_generated: 1
+      status: ready
+    - bundle: BhartiAirtel_sc.bundle
+      carrier_plist: true
+      supported_sims:
+        - "63310"
+      profiles:
+        - apple_bhartiairtel_sc
+      variants_generated: 1
+      status: ready
+    - bundle: BhartiAirtel_sl.bundle
+      carrier_plist: true
+      supported_sims:
+        - "61901"
+      profiles:
+        - apple_bhartiairtel_sl
+      variants_generated: 1
+      status: ready
+    - bundle: BhartiAirtel_td.bundle
+      carrier_plist: true
+      supported_sims:
+        - "62201"
+      profiles:
+        - apple_bhartiairtel_td
+      variants_generated: 1
+      status: ready
+    - bundle: BhartiAirtel_tz.bundle
+      carrier_plist: true
+      supported_sims:
+        - "64005"
+      profiles:
+        - apple_bhartiairtel_tz
+      variants_generated: 1
+      status: ready
+    - bundle: BhartiAirtel_ug.bundle
+      carrier_plist: true
+      supported_sims:
+        - "64101"
+      profiles:
+        - apple_bhartiairtel_ug
+      variants_generated: 1
+      status: ready
+    - bundle: BhartiAirtel_zm.bundle
+      carrier_plist: true
+      supported_sims:
+        - "64501"
+      profiles:
+        - apple_bhartiairtel_zm
+      variants_generated: 1
+      status: ready
+    - bundle: BhutanTelecom_bt.bundle
+      carrier_plist: true
+      supported_sims:
+        - "40211"
+      profiles:
+        - apple_bhutantelecom_bt
+      variants_generated: 1
+      status: ready
+    - bundle: Bite_lt.bundle
+      carrier_plist: true
+      supported_sims:
+        - "24602"
+      profiles:
+        - apple_bite_lt
+      variants_generated: 1
+      status: ready
+    - bundle: Bite_lv.bundle
+      carrier_plist: true
+      supported_sims:
+        - 24705_ID-8937105
+      profiles:
+        - apple_bite_lv
+      variants_generated: 1
+      status: ready
+    - bundle: Bluesky_as.bundle
+      carrier_plist: true
+      supported_sims:
+        - "54411"
+        - "544110"
+      profiles:
+        - apple_bluesky_as
+      variants_generated: 2
+      status: ready
+    - bundle: Bluesky_ws.bundle
+      carrier_plist: true
+      supported_sims:
+        - "54927"
+      profiles:
+        - apple_bluesky_ws
+      variants_generated: 1
+      status: ready
+    - bundle: Bootstrap_ATT_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 310380_GID1-39
+        - bs-310380
+      profiles: []
+      status: invalid_selector
+    - bundle: Bootstrap_Verizon_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 311270_GID2-1D
+        - bs-311270
+      profiles: []
+      status: invalid_selector
+    - bundle: Bouygues_fr.bundle
+      carrier_plist: true
+      supported_sims:
+        - "20820"
+        - 20820_GID1-4C504D
+      profiles:
+        - apple_bouygues_fr
+      variants_generated: 1
+      status: ready
+    - bundle: CBN_cn.bundle
+      carrier_plist: true
+      supported_sims:
+        - "46015"
+      profiles:
+        - apple_cbn_cn
+      variants_generated: 1
+      status: ready
+    - bundle: CMCC_CMI.bundle
+      carrier_plist: true
+      supported_sims:
+        - 45412_ID-8985234
+        - 20601_ID-8985234
+        - 302220_ID-8985234
+        - 20801_ID-8985234
+        - 90101_ID-8985234
+        - 22201_ID-8985234
+        - 23410_ID-8985234
+        - 732123_ID-8985234
+        - 454384_ID-8985234
+        - 20628_ID-8985234
+        - 41004_ID-8985234
+        - 45406_ID-8985234
+      profiles:
+        - apple_cmcc_cmi
+      variants_generated: 12
+      status: ready
+    - bundle: CMCC_HKBN_hk.bundle
+      carrier_plist: true
+      supported_sims:
+        - 45412_GID1-0009
+      profiles:
+        - apple_cmcc_hkbn_hk
+      variants_generated: 1
+      status: ready
+    - bundle: CMCC_cn.bundle
+      carrier_plist: true
+      supported_sims:
+        - "46000"
+        - "46002"
+        - "46007"
+        - "46008"
+      profiles:
+        - apple_cmcc_cn
+      variants_generated: 4
+      status: ready
+    - bundle: CMCC_hk.bundle
+      carrier_plist: true
+      supported_sims:
+        - "45412"
+      profiles:
+        - apple_cmcc_hk
+      variants_generated: 1
+      status: ready
+    - bundle: CSL_SunMobile_hk.bundle
+      carrier_plist: true
+      supported_sims:
+        - 45400_GID1-0103
+      profiles:
+        - apple_csl_sunmobile_hk
+      variants_generated: 1
+      status: ready
+    - bundle: CSL_hk.bundle
+      carrier_plist: true
+      supported_sims:
+        - "45400"
+        - "45402"
+        - "45410"
+        - "45418"
+      profiles:
+        - apple_csl_hk
+      variants_generated: 4
+      status: ready
+    - bundle: CTM_mo.bundle
+      carrier_plist: true
+      supported_sims:
+        - "45501"
+        - "45504"
+      profiles:
+        - apple_ctm_mo
+      variants_generated: 2
+      status: ready
+    - bundle: CW_bs.bundle
+      carrier_plist: true
+      supported_sims:
+        - "364039"
+        - "36439"
+        - "364390"
+      profiles:
+        - apple_cw_bs
+      variants_generated: 3
+      status: ready
+    - bundle: CW_pa.bundle
+      carrier_plist: true
+      supported_sims:
+        - "71401"
+      profiles:
+        - apple_cw_pa
+      variants_generated: 1
+      status: ready
+    - bundle: CW_sc.bundle
+      carrier_plist: true
+      supported_sims:
+        - "63301"
+      profiles:
+        - apple_cw_sc
+      variants_generated: 1
+      status: ready
+    - bundle: CW_tt.bundle
+      carrier_plist: true
+      supported_sims:
+        - "37412"
+        - "374012"
+      profiles:
+        - apple_cw_tt
+      variants_generated: 2
+      status: ready
+    - bundle: CW_wi.bundle
+      carrier_plist: true
+      supported_sims:
+        - "338180"
+        - "346140"
+        - "344920"
+        - "365840"
+        - "342600"
+        - "348170"
+        - "366110"
+        - "352110"
+        - "354860"
+        - "356110"
+        - "358110"
+        - "360110"
+        - "376350"
+        - "35611"
+        - "35486"
+        - "37635"
+        - "35811"
+      profiles:
+        - apple_cw_wi
+      variants_generated: 17
+      status: ready
+    - bundle: CarolinaWest_LTE_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - "310130"
+      profiles:
+        - apple_carolinawest_lte_us
+      variants_generated: 1
+      status: ready
+    - bundle: CarrierLab.bundle
+      carrier_plist: true
+      supported_sims:
+        - "00101"
+        - "00281"
+        - "001011"
+        - "00102"
+        - "00111"
+        - "00211"
+        - "00321"
+        - "00431"
+        - "00541"
+        - "00651"
+        - "00761"
+        - "00871"
+        - "00902"
+        - "01012"
+        - "01122"
+        - "01232"
+        - "10101"
+        - "24608"
+        - "246081"
+        - "24681"
+        - "246813"
+        - "311011"
+        - "29981"
+        - "26280"
+        - "26284"
+        - "262820"
+        - "240681"
+        - "240680"
+      profiles:
+        - apple_carrierlab
+      variants_generated: 28
+      status: ready
+    - bundle: Celcom_Yoodo_my.bundle
+      carrier_plist: true
+      supported_sims:
+        - 50219_ID-89601917089
+        - 50219_ID-8960191916
+        - 50219_ID-8960192016
+      profiles:
+        - apple_celcom_yoodo_my
+      variants_generated: 1
+      status: ready
+    - bundle: Celcom_my.bundle
+      carrier_plist: true
+      supported_sims:
+        - "50219"
+      profiles:
+        - apple_celcom_my
+      variants_generated: 1
+      status: ready
+    - bundle: CellC_za.bundle
+      carrier_plist: true
+      supported_sims:
+        - "65507"
+      profiles:
+        - apple_cellc_za
+      variants_generated: 1
+      status: ready
+    - bundle: Cellcard_kh.bundle
+      carrier_plist: true
+      supported_sims:
+        - "45601"
+      profiles:
+        - apple_cellcard_kh
+      variants_generated: 1
+      status: ready
+    - bundle: CellcomWI_LTE_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 311840_GID1-C1
+      profiles:
+        - apple_cellcomwi_lte_us
+      variants_generated: 1
+      status: ready
+    - bundle: Cellcom_Golan_il.bundle
+      carrier_plist: true
+      supported_sims:
+        - "42508"
+        - 20601_ID-89972080
+        - 42502_ID-89972080
+      profiles:
+        - apple_cellcom_golan_il
+      variants_generated: 3
+      status: ready
+    - bundle: Cellcom_LTE_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 311480_GID2-AD
+      profiles:
+        - apple_cellcom_lte_us
+      variants_generated: 1
+      status: ready
+    - bundle: Cellcom_il.bundle
+      carrier_plist: true
+      supported_sims:
+        - "42502"
+      profiles:
+        - apple_cellcom_il
+      variants_generated: 1
+      status: ready
+    - bundle: CellularSouth_LTE_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - "311230"
+        - 20404_ID-890123
+      profiles:
+        - apple_cellularsouth_lte_us
+      variants_generated: 2
+      status: ready
+    - bundle: Charter_NR_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - "314020"
+      profiles:
+        - apple_charter_nr_us
+      variants_generated: 1
+      status: ready
+    - bundle: Chat_LTE_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 311480_GID2-CB
+      profiles:
+        - apple_chat_lte_us
+      variants_generated: 1
+      status: ready
+    - bundle: ChinaTelecom_USIM_cn.bundle
+      carrier_plist: true
+      supported_sims:
+        - "46011"
+        - 20404_ID-898611
+      profiles:
+        - apple_chinatelecom_usim_cn
+      variants_generated: 2
+      status: ready
+    - bundle: ChinaTelecom_USIM_mo.bundle
+      carrier_plist: true
+      supported_sims:
+        - "45507"
+        - 20404_ID-8985307
+        - 20404_ID-8985231
+      profiles:
+        - apple_chinatelecom_usim_mo
+      variants_generated: 2
+      status: ready
+    - bundle: ChinaTelecom_hk.bundle
+      carrier_plist: true
+      supported_sims:
+        - "45431"
+        - 45400_ID-8985231
+      profiles:
+        - apple_chinatelecom_hk
+      variants_generated: 2
+      status: ready
+    - bundle: Chippie_cw.bundle
+      carrier_plist: true
+      supported_sims:
+        - "36291"
+      profiles:
+        - apple_chippie_cw
+      variants_generated: 1
+      status: ready
+    - bundle: Chippie_mf.bundle
+      carrier_plist: true
+      supported_sims:
+        - "34003"
+      profiles:
+        - apple_chippie_mf
+      variants_generated: 1
+      status: ready
+    - bundle: Choice_gu.bundle
+      carrier_plist: true
+      supported_sims:
+        - "310480"
+      profiles:
+        - apple_choice_gu
+      variants_generated: 1
+      status: ready
+    - bundle: Chunghwa_tw.bundle
+      carrier_plist: true
+      supported_sims:
+        - "46692"
+      profiles:
+        - apple_chunghwa_tw
+      variants_generated: 1
+      status: ready
+    - bundle: Claro_ar.bundle
+      carrier_plist: true
+      supported_sims:
+        - "722310"
+      profiles:
+        - apple_claro_ar
+      variants_generated: 1
+      status: ready
+    - bundle: Claro_br.bundle
+      carrier_plist: true
+      supported_sims:
+        - "72405"
+      profiles:
+        - apple_claro_br
+      variants_generated: 1
+      status: ready
+    - bundle: Claro_cl.bundle
+      carrier_plist: true
+      supported_sims:
+        - "73003"
+      profiles:
+        - apple_claro_cl
+      variants_generated: 1
+      status: ready
+    - bundle: Claro_cr.bundle
+      carrier_plist: true
+      supported_sims:
+        - "71230"
+        - "71203"
+        - "712300"
+        - "712030"
+      profiles:
+        - apple_claro_cr
+      variants_generated: 4
+      status: ready
+    - bundle: Claro_do.bundle
+      carrier_plist: true
+      supported_sims:
+        - "37002"
+      profiles:
+        - apple_claro_do
+      variants_generated: 1
+      status: ready
+    - bundle: Claro_gt.bundle
+      carrier_plist: true
+      supported_sims:
+        - "70401"
+      profiles:
+        - apple_claro_gt
+      variants_generated: 1
+      status: ready
+    - bundle: Claro_hn.bundle
+      carrier_plist: true
+      supported_sims:
+        - "70800"
+        - "70801"
+        - "708001"
+      profiles:
+        - apple_claro_hn
+      variants_generated: 3
+      status: ready
+    - bundle: Claro_ni.bundle
+      carrier_plist: true
+      supported_sims:
+        - "71021"
+      profiles:
+        - apple_claro_ni
+      variants_generated: 1
+      status: ready
+    - bundle: Claro_pa.bundle
+      carrier_plist: true
+      supported_sims:
+        - "71403"
+        - 334020_ID-8950703
+        - 33402_ID-8950703
+      profiles:
+        - apple_claro_pa
+      variants_generated: 3
+      status: ready
+    - bundle: Claro_pe.bundle
+      carrier_plist: true
+      supported_sims:
+        - "71610"
+      profiles:
+        - apple_claro_pe
+      variants_generated: 1
+      status: ready
+    - bundle: Claro_pr.bundle
+      carrier_plist: true
+      supported_sims:
+        - "330110"
+        - "33011"
+      profiles:
+        - apple_claro_pr
+      variants_generated: 2
+      status: ready
+    - bundle: Claro_py.bundle
+      carrier_plist: true
+      supported_sims:
+        - "74402"
+      profiles:
+        - apple_claro_py
+      variants_generated: 1
+      status: ready
+    - bundle: Claro_sv.bundle
+      carrier_plist: true
+      supported_sims:
+        - "70601"
+      profiles:
+        - apple_claro_sv
+      variants_generated: 1
+      status: ready
+    - bundle: Claro_uy.bundle
+      carrier_plist: true
+      supported_sims:
+        - "74810"
+      profiles:
+        - apple_claro_uy
+      variants_generated: 1
+      status: ready
+    - bundle: Comcast_NR_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - "310014"
+        - "314200"
+      profiles:
+        - apple_comcast_nr_us
+      variants_generated: 2
+      status: ready
+    - bundle: Comcel_co.bundle
+      carrier_plist: true
+      supported_sims:
+        - "732101"
+      profiles:
+        - apple_comcel_co
+      variants_generated: 1
+      status: ready
+    - bundle: Comviq_se.bundle
+      carrier_plist: true
+      supported_sims:
+        - 24007_GID1-4951
+      profiles:
+        - apple_comviq_se
+      variants_generated: 1
+      status: ready
+    - bundle: CopperValleyTelecom_LTE_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - "312380"
+      profiles:
+        - apple_coppervalleytelecom_lte_us
+      variants_generated: 1
+      status: ready
+    - bundle: CopperValley_LTE_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 311480_GID2-CF
+      profiles:
+        - apple_coppervalley_lte_us
+      variants_generated: 1
+      status: ready
+    - bundle: Coriolis_fr.bundle
+      carrier_plist: true
+      supported_sims:
+        - "20827"
+        - 20801_ID-893327
+        - 20809_ID-893327
+      profiles:
+        - apple_coriolis_fr
+      variants_generated: 3
+      status: ready
+    - bundle: CrossWireless_Bravado_LTE_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - "313010"
+      profiles:
+        - apple_crosswireless_bravado_lte_us
+      variants_generated: 1
+      status: ready
+    - bundle: CrossWireless_LTE_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 311480_GID2-AC
+      profiles:
+        - apple_crosswireless_lte_us
+      variants_generated: 1
+      status: ready
+    - bundle: Cyta_cy.bundle
+      carrier_plist: true
+      supported_sims:
+        - "28001"
+      profiles:
+        - apple_cyta_cy
+      variants_generated: 1
+      status: ready
+    - bundle: DNA_fi.bundle
+      carrier_plist: true
+      supported_sims:
+        - "24403"
+        - "24412"
+      profiles:
+        - apple_dna_fi
+      variants_generated: 2
+      status: ready
+    - bundle: DSTCom_bn.bundle
+      carrier_plist: true
+      supported_sims:
+        - "52811"
+        - "52803"
+      profiles:
+        - apple_dstcom_bn
+      variants_generated: 2
+      status: ready
+    - bundle: DataPro.bundle
+      carrier_plist: true
+      supported_sims:
+        - 52501_GID1-45736B696D6F
+      profiles:
+        - apple_datapro
+      variants_generated: 1
+      status: ready
+    - bundle: Default.bundle
+      carrier_plist: true
+      supported_sims:
+        - DefaultBundle
+      profiles: []
+      status: invalid_selector
+    - bundle: DentWireless.bundle
+      carrier_plist: true
+      supported_sims:
+        - 311882_GID1-3597bfd533
+        - 26001_GID1-3597bfd533
+        - 26001_GID1-3597bfd534
+        - 26001_GID1-3597bfd535
+        - 27877_GID1-3597bfd533
+        - 44011_GID1-3597bfd533
+        - 310260_GID1-3597bfd533
+        - 310240_GID1-3597bfd533
+        - 26003_GID1-3597bfd533
+        - 23450_GID1-3597bfd533
+        - 42501_GID1-3597bfd533
+        - 45403_GID1-3597bfd533
+        - 51503_GID1-3597bfd533
+        - 26006_GID1-3597bfd533
+      profiles:
+        - apple_dentwireless
+      variants_generated: 12
+      status: ready
+    - bundle: Dhiraagu_mv.bundle
+      carrier_plist: true
+      supported_sims:
+        - "47201"
+      profiles:
+        - apple_dhiraagu_mv
+      variants_generated: 1
+      status: ready
+    - bundle: DiGi_my.bundle
+      carrier_plist: true
+      supported_sims:
+        - "50216"
+      profiles:
+        - apple_digi_my
+      variants_generated: 1
+      status: ready
+    - bundle: Dialog_lk.bundle
+      carrier_plist: true
+      supported_sims:
+        - "41302"
+      profiles:
+        - apple_dialog_lk
+      variants_generated: 1
+      status: ready
+    - bundle: Digicel_ag.bundle
+      carrier_plist: true
+      supported_sims:
+        - 33805_ID-890105001834
+        - 33805_ID-890105002834
+        - 33805_ID-890105003834
+        - 33805_ID-890105004834
+        - 33805_ID-890105005834
+        - 33805_ID-890105006834
+        - 33805_ID-890105007834
+        - 33805_ID-890105008834
+        - 33805_ID-890105009834
+        - 33805_ID-890105010834
+        - 33805_ID-890105011834
+        - 33805_ID-890105012834
+        - 338050_ID-890105001834
+        - 338050_ID-890105002834
+        - 338050_ID-890105003834
+        - 338050_ID-890105004834
+        - 338050_ID-890105005834
+        - 338050_ID-890105006834
+        - 338050_ID-890105007834
+        - 338050_ID-890105008834
+        - 338050_ID-890105009834
+        - 338050_ID-890105010834
+        - 338050_ID-890105011834
+        - 338050_ID-890105012834
+      profiles:
+        - apple_digicel_ag
+      variants_generated: 2
+      status: ready
+    - bundle: Digicel_ai.bundle
+      carrier_plist: true
+      supported_sims:
+        - 33805_ID-890105001830
+        - 33805_ID-890105002830
+        - 33805_ID-890105003830
+        - 33805_ID-890105004830
+        - 33805_ID-890105005830
+        - 33805_ID-890105006830
+        - 33805_ID-890105007830
+        - 33805_ID-890105008830
+        - 33805_ID-890105009830
+        - 33805_ID-890105010830
+        - 33805_ID-890105011830
+        - 33805_ID-890105012830
+        - 338050_ID-890105001830
+        - 338050_ID-890105002830
+        - 338050_ID-890105003830
+        - 338050_ID-890105004830
+        - 338050_ID-890105005830
+        - 338050_ID-890105006830
+        - 338050_ID-890105007830
+        - 338050_ID-890105008830
+        - 338050_ID-890105009830
+        - 338050_ID-890105010830
+        - 338050_ID-890105011830
+        - 338050_ID-890105012830
+      profiles:
+        - apple_digicel_ai
+      variants_generated: 2
+      status: ready
+    - bundle: Digicel_aw.bundle
+      carrier_plist: true
+      supported_sims:
+        - "36302"
+      profiles:
+        - apple_digicel_aw
+      variants_generated: 1
+      status: ready
+    - bundle: Digicel_bb.bundle
+      carrier_plist: true
+      supported_sims:
+        - 33805_ID-8901050015
+        - 33805_ID-8901050025
+        - 33805_ID-8901050035
+        - 33805_ID-8901050045
+        - 33805_ID-8901050055
+        - 33805_ID-8901050065
+        - 33805_ID-8901050075
+        - 33805_ID-8901050085
+        - 33805_ID-8901050095
+        - 33805_ID-8901050105
+        - 33805_ID-8901050115
+        - 33805_ID-8901050125
+        - 338050_ID-8901050015
+        - 338050_ID-8901050025
+        - 338050_ID-8901050035
+        - 338050_ID-8901050045
+        - 338050_ID-8901050055
+        - 338050_ID-8901050065
+        - 338050_ID-8901050075
+        - 338050_ID-8901050085
+        - 338050_ID-8901050095
+        - 338050_ID-8901050105
+        - 338050_ID-8901050115
+        - 338050_ID-8901050125
+      profiles:
+        - apple_digicel_bb
+      variants_generated: 2
+      status: ready
+    - bundle: Digicel_bm.bundle
+      carrier_plist: true
+      supported_sims:
+        - 33805_ID-890105001833
+        - 33805_ID-890105002833
+        - 33805_ID-890105003833
+        - 33805_ID-890105004833
+        - 33805_ID-890105005833
+        - 33805_ID-890105006833
+        - 33805_ID-890105007833
+        - 33805_ID-890105008833
+        - 33805_ID-890105009833
+        - 33805_ID-890105010833
+        - 33805_ID-890105011833
+        - 33805_ID-890105012833
+        - 338050_ID-890105001833
+        - 338050_ID-890105002833
+        - 338050_ID-890105003833
+        - 338050_ID-890105004833
+        - 338050_ID-890105005833
+        - 338050_ID-890105006833
+        - 338050_ID-890105007833
+        - 338050_ID-890105008833
+        - 338050_ID-890105009833
+        - 338050_ID-890105010833
+        - 338050_ID-890105011833
+        - 338050_ID-890105012833
+      profiles:
+        - apple_digicel_bm
+      variants_generated: 2
+      status: ready
+    - bundle: Digicel_cw.bundle
+      carrier_plist: true
+      supported_sims:
+        - "36269"
+      profiles:
+        - apple_digicel_cw
+      variants_generated: 1
+      status: ready
+    - bundle: Digicel_dm.bundle
+      carrier_plist: true
+      supported_sims:
+        - 33805_ID-890105001832
+        - 33805_ID-890105002832
+        - 33805_ID-890105003832
+        - 33805_ID-890105004832
+        - 33805_ID-890105005832
+        - 33805_ID-890105006832
+        - 33805_ID-890105007832
+        - 33805_ID-890105008832
+        - 33805_ID-890105009832
+        - 33805_ID-890105010832
+        - 33805_ID-890105011832
+        - 33805_ID-890105012832
+        - 338050_ID-890105001832
+        - 338050_ID-890105002832
+        - 338050_ID-890105003832
+        - 338050_ID-890105004832
+        - 338050_ID-890105005832
+        - 338050_ID-890105006832
+        - 338050_ID-890105007832
+        - 338050_ID-890105008832
+        - 338050_ID-890105009832
+        - 338050_ID-890105010832
+        - 338050_ID-890105011832
+        - 338050_ID-890105012832
+      profiles:
+        - apple_digicel_dm
+      variants_generated: 2
+      status: ready
+    - bundle: Digicel_fj.bundle
+      carrier_plist: true
+      supported_sims:
+        - 54202_ID-8967902
+      profiles:
+        - apple_digicel_fj
+      variants_generated: 1
+      status: ready
+    - bundle: Digicel_gd.bundle
+      carrier_plist: true
+      supported_sims:
+        - 33805_ID-8901050013
+        - 33805_ID-8901050023
+        - 33805_ID-8901050033
+        - 33805_ID-8901050043
+        - 33805_ID-8901050053
+        - 33805_ID-8901050063
+        - 33805_ID-8901050073
+        - 33805_ID-8901050083
+        - 33805_ID-8901050093
+        - 33805_ID-8901050103
+        - 33805_ID-8901050113
+        - 33805_ID-8901050123
+        - 338050_ID-8901050013
+        - 338050_ID-8901050023
+        - 338050_ID-8901050033
+        - 338050_ID-8901050043
+        - 338050_ID-8901050053
+        - 338050_ID-8901050063
+        - 338050_ID-8901050073
+        - 338050_ID-8901050083
+        - 338050_ID-8901050093
+        - 338050_ID-8901050103
+        - 338050_ID-8901050113
+        - 338050_ID-8901050123
+      profiles:
+        - apple_digicel_gd
+      variants_generated: 2
+      status: ready
+    - bundle: Digicel_gy.bundle
+      carrier_plist: true
+      supported_sims:
+        - "73801"
+      profiles:
+        - apple_digicel_gy
+      variants_generated: 1
+      status: ready
+    - bundle: Digicel_ht.bundle
+      carrier_plist: true
+      supported_sims:
+        - "37201"
+        - 33805_ID-8901050019
+        - 33805_ID-8901050029
+        - 33805_ID-8901050039
+        - 33805_ID-8901050049
+        - 33805_ID-8901050059
+        - 33805_ID-8901050069
+        - 33805_ID-8901050089
+        - 33805_ID-8901050099
+        - 33805_ID-8901050109
+        - 33805_ID-8901050119
+        - 33805_ID-8901050129
+        - 33805_ID-8901050079
+        - 338050_ID-8901050019
+        - 338050_ID-8901050029
+        - 338050_ID-8901050039
+        - 338050_ID-8901050049
+        - 338050_ID-8901050059
+        - 338050_ID-8901050069
+        - 338050_ID-8901050089
+        - 338050_ID-8901050099
+        - 338050_ID-8901050109
+        - 338050_ID-8901050119
+        - 338050_ID-8901050129
+        - 338050_ID-8901050079
+      profiles:
+        - apple_digicel_ht
+      variants_generated: 3
+      status: ready
+    - bundle: Digicel_jm.bundle
+      carrier_plist: true
+      supported_sims:
+        - 33805_ID-8901050010
+        - 33805_ID-8901050020
+        - 33805_ID-8901050030
+        - 33805_ID-8901050040
+        - 33805_ID-8901050050
+        - 33805_ID-8901050060
+        - 33805_ID-8901050070
+        - 33805_ID-8901050080
+        - 33805_ID-8901050090
+        - 33805_ID-8901050100
+        - 33805_ID-8901050110
+        - 33805_ID-8901050120
+        - 338050_ID-8901050010
+        - 338050_ID-8901050020
+        - 338050_ID-8901050030
+        - 338050_ID-8901050040
+        - 338050_ID-8901050050
+        - 338050_ID-8901050060
+        - 338050_ID-8901050070
+        - 338050_ID-8901050080
+        - 338050_ID-8901050090
+        - 338050_ID-8901050100
+        - 338050_ID-8901050110
+        - 338050_ID-8901050120
+      profiles:
+        - apple_digicel_jm
+      variants_generated: 2
+      status: ready
+    - bundle: Digicel_kn.bundle
+      carrier_plist: true
+      supported_sims:
+        - 33805_ID-890105001831
+        - 33805_ID-890105002831
+        - 33805_ID-890105003831
+        - 33805_ID-890105004831
+        - 33805_ID-890105005831
+        - 33805_ID-890105006831
+        - 33805_ID-890105007831
+        - 33805_ID-890105008831
+        - 33805_ID-890105009831
+        - 33805_ID-890105010831
+        - 33805_ID-890105011831
+        - 33805_ID-890105012831
+        - 338050_ID-890105001831
+        - 338050_ID-890105002831
+        - 338050_ID-890105003831
+        - 338050_ID-890105004831
+        - 338050_ID-890105005831
+        - 338050_ID-890105006831
+        - 338050_ID-890105007831
+        - 338050_ID-890105008831
+        - 338050_ID-890105009831
+        - 338050_ID-890105010831
+        - 338050_ID-890105011831
+        - 338050_ID-890105012831
+      profiles:
+        - apple_digicel_kn
+      variants_generated: 2
+      status: ready
+    - bundle: Digicel_ky.bundle
+      carrier_plist: true
+      supported_sims:
+        - 33805_ID-8901050016
+        - 33805_ID-8901050026
+        - 33805_ID-8901050036
+        - 33805_ID-8901050046
+        - 33805_ID-8901050056
+        - 33805_ID-8901050066
+        - 33805_ID-8901050086
+        - 33805_ID-8901050096
+        - 33805_ID-8901050106
+        - 33805_ID-8901050116
+        - 33805_ID-8901050126
+        - 33805_ID-8901050076
+        - 338050_ID-8901050016
+        - 338050_ID-8901050026
+        - 338050_ID-8901050036
+        - 338050_ID-8901050046
+        - 338050_ID-8901050056
+        - 338050_ID-8901050066
+        - 338050_ID-8901050086
+        - 338050_ID-8901050096
+        - 338050_ID-8901050106
+        - 338050_ID-8901050116
+        - 338050_ID-8901050126
+        - 338050_ID-8901050076
+      profiles:
+        - apple_digicel_ky
+      variants_generated: 2
+      status: ready
+    - bundle: Digicel_lc.bundle
+      carrier_plist: true
+      supported_sims:
+        - 33805_ID-8901050011
+        - 33805_ID-8901050021
+        - 33805_ID-8901050031
+        - 33805_ID-8901050041
+        - 33805_ID-8901050051
+        - 33805_ID-8901050061
+        - 33805_ID-8901050071
+        - 33805_ID-8901050081
+        - 33805_ID-8901050091
+        - 33805_ID-8901050101
+        - 33805_ID-8901050111
+        - 33805_ID-8901050121
+        - 338050_ID-8901050011
+        - 338050_ID-8901050021
+        - 338050_ID-8901050031
+        - 338050_ID-8901050041
+        - 338050_ID-8901050051
+        - 338050_ID-8901050061
+        - 338050_ID-8901050071
+        - 338050_ID-8901050081
+        - 338050_ID-8901050091
+        - 338050_ID-8901050101
+        - 338050_ID-8901050111
+        - 338050_ID-8901050121
+      profiles:
+        - apple_digicel_lc
+      variants_generated: 2
+      status: ready
+    - bundle: Digicel_mq.bundle
+      carrier_plist: true
+      supported_sims:
+        - "34020"
+        - 34020_ID-895962002
+      profiles:
+        - apple_digicel_mq
+      variants_generated: 1
+      status: ready
+    - bundle: Digicel_ms.bundle
+      carrier_plist: true
+      supported_sims:
+        - 33805_ID-890105000843
+        - 33805_ID-890105001843
+        - 33805_ID-890105002843
+        - 33805_ID-890105003843
+        - 33805_ID-890105004843
+        - 33805_ID-890105005843
+        - 33805_ID-890105006843
+        - 33805_ID-890105007843
+        - 33805_ID-890105008843
+        - 33805_ID-890105009843
+        - 33805_ID-890105010843
+        - 33805_ID-890105011843
+        - 33805_ID-890105012843
+        - 338050_ID-890105000843
+        - 338050_ID-890105001843
+        - 338050_ID-890105002843
+        - 338050_ID-890105003843
+        - 338050_ID-890105004843
+        - 338050_ID-890105005843
+        - 338050_ID-890105006843
+        - 338050_ID-890105007843
+        - 338050_ID-890105008843
+        - 338050_ID-890105009843
+        - 338050_ID-890105010843
+        - 338050_ID-890105011843
+        - 338050_ID-890105012843
+      profiles:
+        - apple_digicel_ms
+      variants_generated: 2
+      status: ready
+    - bundle: Digicel_nr.bundle
+      carrier_plist: true
+      supported_sims:
+        - 54202_ID-8967402
+      profiles:
+        - apple_digicel_nr
+      variants_generated: 1
+      status: ready
+    - bundle: Digicel_pa.bundle
+      carrier_plist: true
+      supported_sims:
+        - "71404"
+      profiles:
+        - apple_digicel_pa
+      variants_generated: 1
+      status: ready
+    - bundle: Digicel_pg.bundle
+      carrier_plist: true
+      supported_sims:
+        - "53703"
+      profiles:
+        - apple_digicel_pg
+      variants_generated: 1
+      status: ready
+    - bundle: Digicel_sr.bundle
+      carrier_plist: true
+      supported_sims:
+        - "74603"
+      profiles:
+        - apple_digicel_sr
+      variants_generated: 1
+      status: ready
+    - bundle: Digicel_sv.bundle
+      carrier_plist: true
+      supported_sims:
+        - "70602"
+      profiles:
+        - apple_digicel_sv
+      variants_generated: 1
+      status: ready
+    - bundle: Digicel_tc.bundle
+      carrier_plist: true
+      supported_sims:
+        - 33805_ID-890105001837
+        - 33805_ID-890105002837
+        - 33805_ID-890105003837
+        - 33805_ID-890105004837
+        - 33805_ID-890105005837
+        - 33805_ID-890105006837
+        - 33805_ID-890105007837
+        - 33805_ID-890105008837
+        - 33805_ID-890105009837
+        - 33805_ID-890105010837
+        - 33805_ID-890105011837
+        - 33805_ID-890105012837
+        - 338050_ID-890105001837
+        - 338050_ID-890105002837
+        - 338050_ID-890105003837
+        - 338050_ID-890105004837
+        - 338050_ID-890105005837
+        - 338050_ID-890105006837
+        - 338050_ID-890105007837
+        - 338050_ID-890105008837
+        - 338050_ID-890105009837
+        - 338050_ID-890105010837
+        - 338050_ID-890105011837
+        - 338050_ID-890105012837
+      profiles:
+        - apple_digicel_tc
+      variants_generated: 2
+      status: ready
+    - bundle: Digicel_to.bundle
+      carrier_plist: true
+      supported_sims:
+        - "53988"
+      profiles:
+        - apple_digicel_to
+      variants_generated: 1
+      status: ready
+    - bundle: Digicel_tt.bundle
+      carrier_plist: true
+      supported_sims:
+        - "374130"
+        - "37413"
+      profiles:
+        - apple_digicel_tt
+      variants_generated: 2
+      status: ready
+    - bundle: Digicel_vc.bundle
+      carrier_plist: true
+      supported_sims:
+        - 33805_ID-8901050012
+        - 33805_ID-8901050022
+        - 33805_ID-8901050032
+        - 33805_ID-8901050042
+        - 33805_ID-8901050052
+        - 33805_ID-8901050062
+        - 33805_ID-8901050072
+        - 33805_ID-8901050082
+        - 33805_ID-8901050092
+        - 33805_ID-8901050102
+        - 33805_ID-8901050112
+        - 33805_ID-8901050122
+        - 338050_ID-8901050012
+        - 338050_ID-8901050022
+        - 338050_ID-8901050032
+        - 338050_ID-8901050042
+        - 338050_ID-8901050052
+        - 338050_ID-8901050062
+        - 338050_ID-8901050072
+        - 338050_ID-8901050082
+        - 338050_ID-8901050092
+        - 338050_ID-8901050102
+        - 338050_ID-8901050112
+        - 338050_ID-8901050122
+      profiles:
+        - apple_digicel_vc
+      variants_generated: 2
+      status: ready
+    - bundle: Digicel_vg.bundle
+      carrier_plist: true
+      supported_sims:
+        - "348770"
+        - 338050_ID-890177000842
+        - 338050_ID-890177001842
+        - 338050_ID-890177002842
+        - 338050_ID-890177003842
+        - 338050_ID-890177004842
+        - 338050_ID-890177005842
+        - 338050_ID-890177006842
+        - 338050_ID-890177007842
+        - 338050_ID-890177008842
+        - 338050_ID-890177009842
+        - 338050_ID-890177010842
+        - 338050_ID-890177011842
+        - 338050_ID-890177012842
+      profiles:
+        - apple_digicel_vg
+      variants_generated: 2
+      status: ready
+    - bundle: Digicel_vu.bundle
+      carrier_plist: true
+      supported_sims:
+        - "54105"
+      profiles:
+        - apple_digicel_vu
+      variants_generated: 1
+      status: ready
+    - bundle: Digicel_ws.bundle
+      carrier_plist: true
+      supported_sims:
+        - "54900"
+      profiles:
+        - apple_digicel_ws
+      variants_generated: 1
+      status: ready
+    - bundle: Dish_MVNO_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 310240_GID1-6432
+        - 310240_GID1-6434
+      profiles:
+        - apple_dish_mvno_us
+      variants_generated: 1
+      status: ready
+    - bundle: Dish_Ting_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 310240_GID1-6430
+        - 310260_GID1-6430
+      profiles:
+        - apple_dish_ting_us
+      variants_generated: 2
+      status: ready
+    - bundle: Dish_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 313340_GID1-6332
+        - 302220_GID1-6336
+        - 313340_GID1-6336
+        - 302220_GID1-6332
+        - 313340_GID1-6530
+        - 313340_GID2-6531
+      profiles:
+        - apple_dish_us
+      variants_generated: 2
+      status: ready
+    - bundle: Djezzy_dz.bundle
+      carrier_plist: true
+      supported_sims:
+        - "60302"
+      profiles:
+        - apple_djezzy_dz
+      variants_generated: 1
+      status: ready
+    - bundle: Docomo_gu.bundle
+      carrier_plist: true
+      supported_sims:
+        - "310370"
+        - 52505_ID-891377
+        - "310470"
+        - "313110"
+      profiles:
+        - apple_docomo_gu
+      variants_generated: 4
+      status: ready
+    - bundle: Docomo_jp.bundle
+      carrier_plist: true
+      supported_sims:
+        - "44010"
+        - 44010_GID1-01FFFF
+      profiles:
+        - apple_docomo_jp
+      variants_generated: 1
+      status: ready
+    - bundle: EMT_ee.bundle
+      carrier_plist: true
+      supported_sims:
+        - "24801"
+      profiles:
+        - apple_emt_ee
+      variants_generated: 1
+      status: ready
+    - bundle: ENetworks_gy.bundle
+      carrier_plist: true
+      supported_sims:
+        - "738040"
+      profiles:
+        - apple_enetworks_gy
+      variants_generated: 1
+      status: ready
+    - bundle: EPlus_de.bundle
+      carrier_plist: true
+      supported_sims:
+        - "26203"
+      profiles:
+        - apple_eplus_de
+      variants_generated: 1
+      status: ready
+    - bundle: Eastlink_ca.bundle
+      carrier_plist: true
+      supported_sims:
+        - "302270"
+        - 20601_ID-891035
+      profiles:
+        - apple_eastlink_ca
+      variants_generated: 2
+      status: ready
+    - bundle: Econet_zw.bundle
+      carrier_plist: true
+      supported_sims:
+        - "64804"
+      profiles:
+        - apple_econet_zw
+      variants_generated: 1
+      status: ready
+    - bundle: Elisa_ee.bundle
+      carrier_plist: true
+      supported_sims:
+        - "24802"
+      profiles:
+        - apple_elisa_ee
+      variants_generated: 1
+      status: ready
+    - bundle: EntelPCS_cl.bundle
+      carrier_plist: true
+      supported_sims:
+        - "73001"
+        - "73010"
+      profiles:
+        - apple_entelpcs_cl
+      variants_generated: 2
+      status: ready
+    - bundle: Entel_pe.bundle
+      carrier_plist: true
+      supported_sims:
+        - "71617"
+      profiles:
+        - apple_entel_pe
+      variants_generated: 1
+      status: ready
+    - bundle: Etisalat_ae.bundle
+      carrier_plist: true
+      supported_sims:
+        - "42402"
+      profiles:
+        - apple_etisalat_ae
+      variants_generated: 1
+      status: ready
+    - bundle: Etisalat_af.bundle
+      carrier_plist: true
+      supported_sims:
+        - "41250"
+      profiles:
+        - apple_etisalat_af
+      variants_generated: 1
+      status: ready
+    - bundle: Etisalat_bj.bundle
+      carrier_plist: true
+      supported_sims:
+        - "61602"
+      profiles:
+        - apple_etisalat_bj
+      variants_generated: 1
+      status: ready
+    - bundle: Etisalat_ci.bundle
+      carrier_plist: true
+      supported_sims:
+        - "61202"
+      profiles:
+        - apple_etisalat_ci
+      variants_generated: 1
+      status: ready
+    - bundle: Etisalat_eg.bundle
+      carrier_plist: true
+      supported_sims:
+        - "60203"
+      profiles:
+        - apple_etisalat_eg
+      variants_generated: 1
+      status: ready
+    - bundle: Etisalat_ng.bundle
+      carrier_plist: true
+      supported_sims:
+        - "62160"
+      profiles:
+        - apple_etisalat_ng
+      variants_generated: 1
+      status: ready
+    - bundle: Etisalat_tz.bundle
+      carrier_plist: true
+      supported_sims:
+        - "64003"
+      profiles:
+        - apple_etisalat_tz
+      variants_generated: 1
+      status: ready
+    - bundle: FSMTC_fm.bundle
+      carrier_plist: true
+      supported_sims:
+        - "55001"
+      profiles:
+        - apple_fsmtc_fm
+      variants_generated: 1
+      status: ready
+    - bundle: FamilyMobile_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 310240_GID1-4D4B
+        - 310260_GID1-4D4B
+      profiles:
+        - apple_familymobile_us
+      variants_generated: 2
+      status: ready
+    - bundle: FarEasTone_tw.bundle
+      carrier_plist: true
+      supported_sims:
+        - "46601"
+      profiles:
+        - apple_fareastone_tw
+      variants_generated: 1
+      status: ready
+    - bundle: FaroeseTelecom_fo.bundle
+      carrier_plist: true
+      supported_sims:
+        - 28801_ID-8929801
+      profiles:
+        - apple_faroesetelecom_fo
+      variants_generated: 1
+      status: ready
+    - bundle: Fastweb_it.bundle
+      carrier_plist: true
+      supported_sims:
+        - "22208"
+        - 22801_GID1-D8FFFFFFFFFFFFFF
+      profiles:
+        - apple_fastweb_it
+      variants_generated: 2
+      status: ready
+    - bundle: Fido_ca.bundle
+      carrier_plist: true
+      supported_sims:
+        - "302370"
+      profiles:
+        - apple_fido_ca
+      variants_generated: 1
+      status: ready
+    - bundle: Flexiroam.bundle
+      carrier_plist: true
+      supported_sims:
+        - 23450_GID1-46526F616D313054
+      profiles:
+        - apple_flexiroam
+      variants_generated: 1
+      status: ready
+    - bundle: Free_fr.bundle
+      carrier_plist: true
+      supported_sims:
+        - "20815"
+      profiles:
+        - apple_free_fr
+      variants_generated: 1
+      status: ready
+    - bundle: Free_mq.bundle
+      carrier_plist: true
+      supported_sims:
+        - "34009"
+        - "34004"
+        - 20815_GID1-f007
+        - 20815_GID1-f008
+      profiles:
+        - apple_free_mq
+      variants_generated: 3
+      status: ready
+    - bundle: Free_re.bundle
+      carrier_plist: true
+      supported_sims:
+        - "64703"
+        - 20815_GID1-F233_ID-8926203
+        - 20815_GID1-F006
+      profiles:
+        - apple_free_re
+      variants_generated: 2
+      status: ready
+    - bundle: Free_yt.bundle
+      carrier_plist: true
+      supported_sims:
+        - 64702_GID1-f004
+        - 20601_GID1-f004_ID-8926202203
+      profiles:
+        - apple_free_yt
+      variants_generated: 2
+      status: ready
+    - bundle: FreedomMobile_ca.bundle
+      carrier_plist: true
+      supported_sims:
+        - "302490"
+      profiles:
+        - apple_freedommobile_ca
+      variants_generated: 1
+      status: ready
+    - bundle: GCI_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 311370_GID1-0050
+        - 311370_ID-89013113701
+      profiles:
+        - apple_gci_us
+      variants_generated: 1
+      status: ready
+    - bundle: GTA_gu.bundle
+      carrier_plist: true
+      supported_sims:
+        - "310140"
+      profiles:
+        - apple_gta_gu
+      variants_generated: 1
+      status: ready
+    - bundle: Genesis.bundle
+      carrier_plist: true
+      supported_sims:
+        - 26001_GID1-596553494D313054FFFF
+      profiles:
+        - apple_genesis
+      variants_generated: 1
+      status: ready
+    - bundle: GigSky_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 22201_GID1-6F
+        - 20404_GID1-6F
+        - 23801_GID1-6F
+        - 24007_GID1-6F
+        - 338050_GID1-6F
+        - 310380_GID1-6F
+        - 312870_GID1-6F
+        - 20809_GID1-6F
+      profiles:
+        - apple_gigsky_us
+      variants_generated: 8
+      status: ready
+    - bundle: Globacom_bj.bundle
+      carrier_plist: true
+      supported_sims:
+        - "61605"
+      profiles:
+        - apple_globacom_bj
+      variants_generated: 1
+      status: ready
+    - bundle: Globacom_gh.bundle
+      carrier_plist: true
+      supported_sims:
+        - "62007"
+      profiles:
+        - apple_globacom_gh
+      variants_generated: 1
+      status: ready
+    - bundle: Globacom_ng.bundle
+      carrier_plist: true
+      supported_sims:
+        - "62150"
+      profiles:
+        - apple_globacom_ng
+      variants_generated: 1
+      status: ready
+    - bundle: Globe_ph.bundle
+      carrier_plist: true
+      supported_sims:
+        - "51502"
+      profiles:
+        - apple_globe_ph
+      variants_generated: 1
+      status: ready
+    - bundle: GoMobile_mt.bundle
+      carrier_plist: true
+      supported_sims:
+        - "27821"
+      profiles:
+        - apple_gomobile_mt
+      variants_generated: 1
+      status: ready
+    - bundle: Grameenphone_bd.bundle
+      carrier_plist: true
+      supported_sims:
+        - "47001"
+      profiles:
+        - apple_grameenphone_bd
+      variants_generated: 1
+      status: ready
+    - bundle: Holafly.bundle
+      carrier_plist: true
+      supported_sims:
+        - 23210_GID1-0507_GID2-0507_ID-894310815
+        - 45412_GID1-0407_ID-8985234
+        - 20601_GID1-0407_ID-8985234
+        - 302220_GID2-0407_ID-8985234
+        - 20801_GID1-0407_ID-893301
+        - 23210_GID1-0507_GID2-0507_ID-8935333
+        - 45412_GID1-0407_ID-8935333
+        - 20601_GID1-0407_ID-8935333
+      profiles:
+        - apple_holafly
+      variants_generated: 5
+      status: ready
+    - bundle: Hutchison_HKBN_hk.bundle
+      carrier_plist: true
+      supported_sims:
+        - 45403_ID-8985203026
+        - 45403_GID1-0009
+      profiles:
+        - apple_hutchison_hkbn_hk
+      variants_generated: 1
+      status: ready
+    - bundle: Hutchison_Wind_it.bundle
+      carrier_plist: true
+      supported_sims:
+        - "22288"
+      profiles:
+        - apple_hutchison_wind_it
+      variants_generated: 1
+      status: ready
+    - bundle: Hutchison_at.bundle
+      carrier_plist: true
+      supported_sims:
+        - "23210"
+      profiles:
+        - apple_hutchison_at
+      variants_generated: 1
+      status: ready
+    - bundle: Hutchison_dk.bundle
+      carrier_plist: true
+      supported_sims:
+        - "23806"
+      profiles:
+        - apple_hutchison_dk
+      variants_generated: 1
+      status: ready
+    - bundle: Hutchison_hk.bundle
+      carrier_plist: true
+      supported_sims:
+        - "45403"
+        - "45404"
+      profiles:
+        - apple_hutchison_hk
+      variants_generated: 2
+      status: ready
+    - bundle: Hutchison_iD_uk.bundle
+      carrier_plist: true
+      supported_sims:
+        - 23420_GID1-0305
+      profiles:
+        - apple_hutchison_id_uk
+      variants_generated: 1
+      status: ready
+    - bundle: Hutchison_ie.bundle
+      carrier_plist: true
+      supported_sims:
+        - "27205"
+      profiles:
+        - apple_hutchison_ie
+      variants_generated: 1
+      status: ready
+    - bundle: Hutchison_it.bundle
+      carrier_plist: true
+      supported_sims:
+        - "22299"
+      profiles:
+        - apple_hutchison_it
+      variants_generated: 1
+      status: ready
+    - bundle: Hutchison_lk.bundle
+      carrier_plist: true
+      supported_sims:
+        - "41308"
+      profiles:
+        - apple_hutchison_lk
+      variants_generated: 1
+      status: ready
+    - bundle: Hutchison_mo.bundle
+      carrier_plist: true
+      supported_sims:
+        - "45503"
+        - "45505"
+      profiles:
+        - apple_hutchison_mo
+      variants_generated: 2
+      status: ready
+    - bundle: Hutchison_se.bundle
+      carrier_plist: true
+      supported_sims:
+        - "24002"
+        - 24002_GID1-00000002
+      profiles:
+        - apple_hutchison_se
+      variants_generated: 1
+      status: ready
+    - bundle: Hutchison_uk.bundle
+      carrier_plist: true
+      supported_sims:
+        - "23420"
+      profiles:
+        - apple_hutchison_uk
+      variants_generated: 1
+      status: ready
+    - bundle: ICE_cr.bundle
+      carrier_plist: true
+      supported_sims:
+        - "71201"
+        - "71202"
+      profiles:
+        - apple_ice_cr
+      variants_generated: 2
+      status: ready
+    - bundle: INWI_ma.bundle
+      carrier_plist: true
+      supported_sims:
+        - "60402"
+      profiles:
+        - apple_inwi_ma
+      variants_generated: 1
+      status: ready
+    - bundle: ITE_gu.bundle
+      carrier_plist: true
+      supported_sims:
+        - "310110"
+      profiles:
+        - apple_ite_gu
+      variants_generated: 1
+      status: ready
+    - bundle: Ice_no.bundle
+      carrier_plist: true
+      supported_sims:
+        - "24214"
+        - 20404_ID-894707
+      profiles:
+        - apple_ice_no
+      variants_generated: 2
+      status: ready
+    - bundle: Idea_in.bundle
+      carrier_plist: true
+      supported_sims:
+        - "40422"
+        - "40424"
+        - "40407"
+        - "40478"
+        - "40404"
+        - "40412"
+        - "40456"
+        - "40419"
+        - "40489"
+        - "40487"
+        - "40482"
+        - "405799"
+        - "40570"
+        - "405845"
+        - "405846"
+        - "40444"
+        - "405848"
+        - "405849"
+        - "405850"
+        - "40414"
+        - "405852"
+        - "405853"
+      profiles:
+        - apple_idea_in
+      variants_generated: 22
+      status: ready
+    - bundle: Iliad_it.bundle
+      carrier_plist: true
+      supported_sims:
+        - "22250"
+        - 22250_GID1-F003
+        - 20815_GID1-F003
+      profiles:
+        - apple_iliad_it
+      variants_generated: 2
+      status: ready
+    - bundle: Imagine_bn.bundle
+      carrier_plist: true
+      supported_sims:
+        - "52801"
+      profiles:
+        - apple_imagine_bn
+      variants_generated: 1
+      status: ready
+    - bundle: Indosat_id.bundle
+      carrier_plist: true
+      supported_sims:
+        - "51001"
+        - "51089"
+        - "51021"
+      profiles:
+        - apple_indosat_id
+      variants_generated: 3
+      status: ready
+    - bundle: Inland_LTE_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - "310580"
+      profiles:
+        - apple_inland_lte_us
+      variants_generated: 1
+      status: ready
+    - bundle: Jawwal_ps.bundle
+      carrier_plist: true
+      supported_sims:
+        - "42505"
+      profiles:
+        - apple_jawwal_ps
+      variants_generated: 1
+      status: ready
+    - bundle: JerseyTelecom_je.bundle
+      carrier_plist: true
+      supported_sims:
+        - "23450"
+      profiles:
+        - apple_jerseytelecom_je
+      variants_generated: 1
+      status: ready
+    - bundle: KDDI_BIGLOBE_LTE_only_jp.bundle
+      carrier_plist: true
+      supported_sims:
+        - 44051_GID1-24_GID2-00
+      profiles:
+        - apple_kddi_biglobe_lte_only_jp
+      variants_generated: 1
+      status: ready
+    - bundle: KDDI_JCOM_LTE_only_jp.bundle
+      carrier_plist: true
+      supported_sims:
+        - 44051_GID1-22_GID2-00
+      profiles:
+        - apple_kddi_jcom_lte_only_jp
+      variants_generated: 1
+      status: ready
+    - bundle: KDDI_LTE_only_jp.bundle
+      carrier_plist: true
+      supported_sims:
+        - 44051_GID1-26_GID2-00
+        - "44051"
+        - "44055"
+      profiles:
+        - apple_kddi_lte_only_jp
+      variants_generated: 2
+      status: ready
+    - bundle: KDDI_NR_jp.bundle
+      carrier_plist: true
+      supported_sims:
+        - "44054"
+        - "44055"
+      profiles:
+        - apple_kddi_nr_jp
+      variants_generated: 2
+      status: ready
+    - bundle: KDDI_Povo_NR_jp.bundle
+      carrier_plist: true
+      supported_sims:
+        - 44054_GID1-26_GID2-00
+      profiles:
+        - apple_kddi_povo_nr_jp
+      variants_generated: 1
+      status: ready
+    - bundle: KDDI_UQ_LTE_only_jp.bundle
+      carrier_plist: true
+      supported_sims:
+        - 44051_GID1-20_GID2-00
+      profiles:
+        - apple_kddi_uq_lte_only_jp
+      variants_generated: 1
+      status: ready
+    - bundle: KDDI_UQ_NR_jp.bundle
+      carrier_plist: true
+      supported_sims:
+        - 44054_GID1-20_GID2-00
+      profiles:
+        - apple_kddi_uq_nr_jp
+      variants_generated: 1
+      status: ready
+    - bundle: KPN_Telfort_nl.bundle
+      carrier_plist: true
+      supported_sims:
+        - "20412"
+      profiles:
+        - apple_kpn_telfort_nl
+      variants_generated: 1
+      status: ready
+    - bundle: KPN_nl.bundle
+      carrier_plist: true
+      supported_sims:
+        - "20408"
+        - "20469"
+      profiles:
+        - apple_kpn_nl
+      variants_generated: 2
+      status: ready
+    - bundle: KTF_kr.bundle
+      carrier_plist: true
+      supported_sims:
+        - "45008"
+        - "45002"
+      profiles:
+        - apple_ktf_kr
+      variants_generated: 2
+      status: ready
+    - bundle: KnowRoaming.bundle
+      carrier_plist: true
+      supported_sims:
+        - 310840_GID1-636f6e6e65637431
+        - 22201_GID1-636f6e6e65637431
+        - 42501_GID1-636f6e6e65637431
+        - 26006_GID1-636f6e6e65637431
+        - 42402_GID1-636f6e6e65637431
+        - 60202_GID1-636f6e6e65637431
+        - 52505_GID1-636f6e6e65637431
+        - 23450_GID1-636f6e6e65637431
+        - 53703_GID1-636f6e6e65637431
+        - 29505_GID1-636f6e6e65637431
+        - 41677_GID1-636f6e6e65637431
+        - 45204_GID1-636f6e6e65637431
+        - 71204_GID1-636f6e6e65637431
+        - 72418_GID1-636f6e6e65637431
+        - 732123_GID1-636f6e6e65637431
+        - 23410_GID1-636f6e6e65637431
+        - 24007_GID1-636f6e6e65637431
+        - 26001_GID1-636f6e6e65637431
+        - 45400_GID1-636f6e6e65637431
+        - 52501_GID1-636f6e6e65637431
+        - 334020_GID1-636f6e6e65637431
+        - 20408_GID1-636f6e6e65637431
+        - 26806_GID1-636f6e6e65637431
+        - 20809_GID1-636f6e6e65637431
+        - 20628_GID1-636f6e6e65637431
+        - 20601_GID1-636f6e6e65637431
+        - 42202_GID1-636f6e6e65637431
+        - 42204_GID1-636f6e6e65637431
+        - 41302_GID1-636f6e6e65637431
+        - 41311_GID1-636f6e6e65637431
+        - 20801_GID1-636f6e6e65637431
+        - 20802_GID1-636f6e6e65637431
+        - 90131_GID1-636f6e6e65637431
+        - 53005_GID1-636f6e6e65637431
+        - 42003_GID1-636f6e6e65637431
+        - 51001_GID1-636f6e6e65637431
+        - 72236_GID1-636f6e6e65637431
+        - 72234_GID1-636f6e6e65637431
+        - 41909_GID1-636f6e6e65637431
+        - 41904_GID1-636f6e6e65637431
+        - 42702_GID1-636f6e6e65637431
+        - 51010_GID1-636f6e6e65637431
+        - 31399_GID1-636f6e6e65637431
+        - 313790_GID1-636f6e6e65637431
+        - 314720_GID1-636f6e6e65637431
+        - 21405_GID1-636f6e6e65637431
+        - 334170_GID1-636f6e6e65637431
+        - 302691_GID1-636f6e6e65637431
+        - 302690_GID1-636f6e6e65637431
+        - 302610_GID1-636f6e6e65637431
+        - 45201_GID1-636f6e6e65637431
+        - 51502_GID1-636f6e6e65637431
+        - 502012_GID1-636f6e6e65637431
+        - 722368_GID1-636f6e6e65637431
+      profiles:
+        - apple_knowroaming
+      variants_generated: 54
+      status: ready
+    - bundle: Korek_iq.bundle
+      carrier_plist: true
+      supported_sims:
+        - "41840"
+      profiles:
+        - apple_korek_iq
+      variants_generated: 1
+      status: ready
+    - bundle: Kyivstar_ua.bundle
+      carrier_plist: true
+      supported_sims:
+        - "25503"
+      profiles:
+        - apple_kyivstar_ua
+      variants_generated: 1
+      status: ready
+    - bundle: LGU_kr.bundle
+      carrier_plist: true
+      supported_sims:
+        - "45006"
+        - "45010"
+      profiles:
+        - apple_lgu_kr
+      variants_generated: 2
+      status: ready
+    - bundle: LMT_lv.bundle
+      carrier_plist: true
+      supported_sims:
+        - "24701"
+      profiles:
+        - apple_lmt_lv
+      variants_generated: 1
+      status: ready
+    - bundle: Laotel_la.bundle
+      carrier_plist: true
+      supported_sims:
+        - "45701"
+      profiles:
+        - apple_laotel_la
+      variants_generated: 1
+      status: ready
+    - bundle: Liberty_pr.bundle
+      carrier_plist: true
+      supported_sims:
+        - "313790"
+      profiles:
+        - apple_liberty_pr
+      variants_generated: 1
+      status: ready
+    - bundle: LotusFlare.bundle
+      carrier_plist: true
+      supported_sims:
+        - 52501_GID1-4745544E4F4D4144
+      profiles:
+        - apple_lotusflare
+      variants_generated: 1
+      status: ready
+    - bundle: LuxGSM_lu.bundle
+      carrier_plist: true
+      supported_sims:
+        - "27001"
+      profiles:
+        - apple_luxgsm_lu
+      variants_generated: 1
+      status: ready
+    - bundle: MTC_na.bundle
+      carrier_plist: true
+      supported_sims:
+        - "64901"
+      profiles:
+        - apple_mtc_na
+      variants_generated: 1
+      status: ready
+    - bundle: MTN_bj.bundle
+      carrier_plist: true
+      supported_sims:
+        - "61603"
+      profiles:
+        - apple_mtn_bj
+      variants_generated: 1
+      status: ready
+    - bundle: MTN_cg.bundle
+      carrier_plist: true
+      supported_sims:
+        - "62910"
+      profiles:
+        - apple_mtn_cg
+      variants_generated: 1
+      status: ready
+    - bundle: MTN_ci.bundle
+      carrier_plist: true
+      supported_sims:
+        - "61205"
+      profiles:
+        - apple_mtn_ci
+      variants_generated: 1
+      status: ready
+    - bundle: MTN_cm.bundle
+      carrier_plist: true
+      supported_sims:
+        - "62401"
+      profiles:
+        - apple_mtn_cm
+      variants_generated: 1
+      status: ready
+    - bundle: MTN_cy.bundle
+      carrier_plist: true
+      supported_sims:
+        - "28010"
+      profiles:
+        - apple_mtn_cy
+      variants_generated: 1
+      status: ready
+    - bundle: MTN_gh.bundle
+      carrier_plist: true
+      supported_sims:
+        - "62001"
+      profiles:
+        - apple_mtn_gh
+      variants_generated: 1
+      status: ready
+    - bundle: MTN_ng.bundle
+      carrier_plist: true
+      supported_sims:
+        - "62130"
+      profiles:
+        - apple_mtn_ng
+      variants_generated: 1
+      status: ready
+    - bundle: MTN_rw.bundle
+      carrier_plist: true
+      supported_sims:
+        - "63510"
+      profiles:
+        - apple_mtn_rw
+      variants_generated: 1
+      status: ready
+    - bundle: MTN_ug.bundle
+      carrier_plist: true
+      supported_sims:
+        - "64110"
+      profiles:
+        - apple_mtn_ug
+      variants_generated: 1
+      status: ready
+    - bundle: MTN_za.bundle
+      carrier_plist: true
+      supported_sims:
+        - "65510"
+      profiles:
+        - apple_mtn_za
+      variants_generated: 1
+      status: ready
+    - bundle: MTN_zm.bundle
+      carrier_plist: true
+      supported_sims:
+        - "64502"
+      profiles:
+        - apple_mtn_zm
+      variants_generated: 1
+      status: ready
+    - bundle: MTS_am.bundle
+      carrier_plist: true
+      supported_sims:
+        - "28305"
+      profiles:
+        - apple_mts_am
+      variants_generated: 1
+      status: ready
+    - bundle: MTS_by.bundle
+      carrier_plist: true
+      supported_sims:
+        - "25702"
+      profiles:
+        - apple_mts_by
+      variants_generated: 1
+      status: ready
+    - bundle: MTS_ca.bundle
+      carrier_plist: true
+      supported_sims:
+        - "302660"
+        - 302370_ID-891660
+      profiles:
+        - apple_mts_ca
+      variants_generated: 2
+      status: ready
+    - bundle: MTS_ru.bundle
+      carrier_plist: true
+      supported_sims:
+        - "25001"
+      profiles:
+        - apple_mts_ru
+      variants_generated: 1
+      status: ready
+    - bundle: MTS_ua.bundle
+      carrier_plist: true
+      supported_sims:
+        - "25501"
+      profiles:
+        - apple_mts_ua
+      variants_generated: 1
+      status: ready
+    - bundle: MTX_B2B_lu.bundle
+      carrier_plist: true
+      supported_sims:
+        - 27002_GID1-1F
+        - 27002_GID1-1FFFFFFFFFFFFFFFFFFF
+        - 90139_GID1-1F
+        - 90139_GID1-1FFFFFFFFFFFFFFFFFFF
+      profiles:
+        - apple_mtx_b2b_lu
+      variants_generated: 2
+      status: ready
+    - bundle: MTX_lu.bundle
+      carrier_plist: true
+      supported_sims:
+        - "27002"
+        - "90139"
+      profiles:
+        - apple_mtx_lu
+      variants_generated: 2
+      status: ready
+    - bundle: Magticom_ge.bundle
+      carrier_plist: true
+      supported_sims:
+        - "28202"
+      profiles:
+        - apple_magticom_ge
+      variants_generated: 1
+      status: ready
+    - bundle: ManxTelecom_im.bundle
+      carrier_plist: true
+      supported_sims:
+        - "23458"
+      profiles:
+        - apple_manxtelecom_im
+      variants_generated: 1
+      status: ready
+    - bundle: Maroc_ma.bundle
+      carrier_plist: true
+      supported_sims:
+        - "60401"
+      profiles:
+        - apple_maroc_ma
+      variants_generated: 1
+      status: ready
+    - bundle: Mascom_bw.bundle
+      carrier_plist: true
+      supported_sims:
+        - "65201"
+      profiles:
+        - apple_mascom_bw
+      variants_generated: 1
+      status: ready
+    - bundle: Maxis_my.bundle
+      carrier_plist: true
+      supported_sims:
+        - "50212"
+      profiles:
+        - apple_maxis_my
+      variants_generated: 1
+      status: ready
+    - bundle: Meditel_ma.bundle
+      carrier_plist: true
+      supported_sims:
+        - "60400"
+      profiles:
+        - apple_meditel_ma
+      variants_generated: 1
+      status: ready
+    - bundle: MegaFon_Yota_ru.bundle
+      carrier_plist: true
+      supported_sims:
+        - "25011"
+        - 25002_ID-8970111
+      profiles:
+        - apple_megafon_yota_ru
+      variants_generated: 2
+      status: ready
+    - bundle: MegaFon_ru.bundle
+      carrier_plist: true
+      supported_sims:
+        - "25002"
+      profiles:
+        - apple_megafon_ru
+      variants_generated: 1
+      status: ready
+    - bundle: Melita_mt.bundle
+      carrier_plist: true
+      supported_sims:
+        - "27877"
+      profiles:
+        - apple_melita_mt
+      variants_generated: 1
+      status: ready
+    - bundle: Meteor_ie.bundle
+      carrier_plist: true
+      supported_sims:
+        - "27203"
+      profiles:
+        - apple_meteor_ie
+      variants_generated: 1
+      status: ready
+    - bundle: Metfone_kh.bundle
+      carrier_plist: true
+      supported_sims:
+        - "45608"
+        - 45204_ID-8985508
+      profiles:
+        - apple_metfone_kh
+      variants_generated: 2
+      status: ready
+    - bundle: Mirs_il.bundle
+      carrier_plist: true
+      supported_sims:
+        - "42507"
+        - 20404_ID-8997207
+        - 20809_ID-8997207
+      profiles:
+        - apple_mirs_il
+      variants_generated: 3
+      status: ready
+    - bundle: MobiCom_mn.bundle
+      carrier_plist: true
+      supported_sims:
+        - "42899"
+      profiles:
+        - apple_mobicom_mn
+      variants_generated: 1
+      status: ready
+    - bundle: Mobifone_vn.bundle
+      carrier_plist: true
+      supported_sims:
+        - "45201"
+      profiles:
+        - apple_mobifone_vn
+      variants_generated: 1
+      status: ready
+    - bundle: Mobiland_ad.bundle
+      carrier_plist: true
+      supported_sims:
+        - "21303"
+      profiles:
+        - apple_mobiland_ad
+      variants_generated: 1
+      status: ready
+    - bundle: MobileOne_sg.bundle
+      carrier_plist: true
+      supported_sims:
+        - "52503"
+      profiles:
+        - apple_mobileone_sg
+      variants_generated: 1
+      status: ready
+    - bundle: Mobilink_pk.bundle
+      carrier_plist: true
+      supported_sims:
+        - "41001"
+      profiles:
+        - apple_mobilink_pk
+      variants_generated: 1
+      status: ready
+    - bundle: Mobilis_dz.bundle
+      carrier_plist: true
+      supported_sims:
+        - "60301"
+      profiles:
+        - apple_mobilis_dz
+      variants_generated: 1
+      status: ready
+    - bundle: Mobistar_be.bundle
+      carrier_plist: true
+      supported_sims:
+        - "20610"
+      profiles:
+        - apple_mobistar_be
+      variants_generated: 1
+      status: ready
+    - bundle: Mobitel_lk.bundle
+      carrier_plist: true
+      supported_sims:
+        - "41301"
+      profiles:
+        - apple_mobitel_lk
+      variants_generated: 1
+      status: ready
+    - bundle: MonacoTel_mc.bundle
+      carrier_plist: true
+      supported_sims:
+        - 20801_ID-8937710
+        - "21210"
+      profiles:
+        - apple_monacotel_mc
+      variants_generated: 2
+      status: ready
+    - bundle: Moov_ga.bundle
+      carrier_plist: true
+      supported_sims:
+        - "62802"
+      profiles:
+        - apple_moov_ga
+      variants_generated: 1
+      status: ready
+    - bundle: Movicel_ao.bundle
+      carrier_plist: true
+      supported_sims:
+        - "63104"
+      profiles:
+        - apple_movicel_ao
+      variants_generated: 1
+      status: ready
+    - bundle: Multibyte.bundle
+      carrier_plist: true
+      supported_sims:
+        - "45424"
+        - 45406_GID1-58300_GID2-58301
+        - 45412_GID1-0331
+        - 45413_GID1-0331
+        - 45403_GID1-0227_GID2-02280
+        - 45404_GID1-0227_GID2-02280
+        - 45501_GID1-1501
+        - 42501_GID1-9601
+      profiles:
+        - apple_multibyte
+      variants_generated: 8
+      status: ready
+    - bundle: MySIM.bundle
+      carrier_plist: true
+      supported_sims:
+        - 310840_GID1-434F423236303036
+        - 26006_GID1-434F423236303036
+        - 52505_GID1-434F423236303036
+        - 23410_GID1-434F423236303036
+        - 26001_GID1-434F423236303036
+        - 45400_GID1-434F423236303036
+        - 29505_GID1-434F423236303036
+        - 41677_GID1-434F423236303036
+        - 45204_GID1-434F423236303036
+        - 71204_GID1-434F423236303036
+        - 732123_GID1-434F423236303036
+        - 24007_GID1-434F423236303036
+        - 52501_GID1-434F423236303036
+        - 20837_GID1-434F423236303036
+        - 20839_GID1-434F423236303036
+      profiles:
+        - apple_mysim
+      variants_generated: 15
+      status: ready
+    - bundle: NRJ_fr.bundle
+      carrier_plist: true
+      supported_sims:
+        - "20826"
+        - 20601_ID-893326
+        - 20801_ID-893326
+      profiles:
+        - apple_nrj_fr
+      variants_generated: 3
+      status: ready
+    - bundle: NWM_LTE_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 311480_GID2-CD
+      profiles:
+        - apple_nwm_lte_us
+      variants_generated: 1
+      status: ready
+    - bundle: Natcom_ht.bundle
+      carrier_plist: true
+      supported_sims:
+        - "37203"
+        - 45204_ID-8950903
+      profiles:
+        - apple_natcom_ht
+      variants_generated: 2
+      status: ready
+    - bundle: Ncell_np.bundle
+      carrier_plist: true
+      supported_sims:
+        - "42902"
+      profiles:
+        - apple_ncell_np
+      variants_generated: 1
+      status: ready
+    - bundle: NemontWireless_LTE_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 312480_GID2-CA000000000004C4A0FF
+      profiles:
+        - apple_nemontwireless_lte_us
+      variants_generated: 1
+      status: ready
+    - bundle: Nemont_LTE_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - "312480"
+      profiles:
+        - apple_nemont_lte_us
+      variants_generated: 1
+      status: ready
+    - bundle: NepalTelecom_np.bundle
+      carrier_plist: true
+      supported_sims:
+        - "42901"
+      profiles:
+        - apple_nepaltelecom_np
+      variants_generated: 1
+      status: ready
+    - bundle: NetCom_no.bundle
+      carrier_plist: true
+      supported_sims:
+        - "24202"
+      profiles:
+        - apple_netcom_no
+      variants_generated: 1
+      status: ready
+    - bundle: NetworkNorway_no.bundle
+      carrier_plist: true
+      supported_sims:
+        - "24205"
+      profiles:
+        - apple_networknorway_no
+      variants_generated: 1
+      status: ready
+    - bundle: NexTech_LTE_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - "312420"
+      profiles:
+        - apple_nextech_lte_us
+      variants_generated: 1
+      status: ready
+    - bundle: Nextel_cl.bundle
+      carrier_plist: true
+      supported_sims:
+        - "73009"
+        - "730090"
+      profiles:
+        - apple_nextel_cl
+      variants_generated: 2
+      status: ready
+    - bundle: Nextel_mx.bundle
+      carrier_plist: true
+      supported_sims:
+        - "33490"
+        - "334090"
+        - "33409"
+      profiles:
+        - apple_nextel_mx
+      variants_generated: 3
+      status: ready
+    - bundle: NonPublicNetwork.bundle
+      carrier_plist: true
+      supported_sims:
+        - "999"
+        - "315010"
+        - "24065"
+        - "24066"
+        - "26298"
+        - "26892"
+        - "24271"
+        - "24272"
+        - "24273"
+        - "24274"
+        - "24275"
+        - "45040"
+        - "45041"
+        - "45042"
+        - "45043"
+        - "45044"
+        - "45045"
+        - "45046"
+        - "45047"
+        - "45048"
+        - "45049"
+        - "20690"
+        - "20691"
+      profiles: []
+      status: invalid_selector
+    - bundle: Nova_is.bundle
+      carrier_plist: true
+      supported_sims:
+        - "27411"
+        - 22201_ID-8935411
+      profiles:
+        - apple_nova_is
+      variants_generated: 2
+      status: ready
+    - bundle: O2_1and1_de.bundle
+      carrier_plist: true
+      supported_sims:
+        - 26207_GID1-250109
+      profiles:
+        - apple_o2_1and1_de
+      variants_generated: 1
+      status: ready
+    - bundle: O2_Debitel_de.bundle
+      carrier_plist: true
+      supported_sims:
+        - 26207_GID1-000002
+      profiles:
+        - apple_o2_debitel_de
+      variants_generated: 1
+      status: ready
+    - bundle: O2_Germany.bundle
+      carrier_plist: true
+      supported_sims:
+        - "26207"
+      profiles:
+        - apple_o2_germany
+      variants_generated: 1
+      status: ready
+    - bundle: O2_Giffgaff_UK.bundle
+      carrier_plist: true
+      supported_sims:
+        - 23410_GID1-508FFFFF
+      profiles:
+        - apple_o2_giffgaff_uk
+      variants_generated: 1
+      status: ready
+    - bundle: O2_Prepaid_UK.bundle
+      carrier_plist: true
+      supported_sims:
+        - 23410_GID1-99FFFF
+        - 23410_GID1-61FFFF
+        - 23410_GID1-67FFFF
+        - 23410_GID1-85FFFF
+      profiles:
+        - apple_o2_prepaid_uk
+      variants_generated: 1
+      status: ready
+    - bundle: O2_Sky_uk.bundle
+      carrier_plist: true
+      supported_sims:
+        - 23457_GID1-0C
+        - 24007_ID-894442
+      profiles:
+        - apple_o2_sky_uk
+      variants_generated: 2
+      status: ready
+    - bundle: O2_Tesco_UK.bundle
+      carrier_plist: true
+      supported_sims:
+        - 23410_GID1-0AFFFF
+      profiles:
+        - apple_o2_tesco_uk
+      variants_generated: 1
+      status: ready
+    - bundle: O2_UK.bundle
+      carrier_plist: true
+      supported_sims:
+        - "23410"
+        - 23410_GID1-520F
+      profiles:
+        - apple_o2_uk
+      variants_generated: 1
+      status: ready
+    - bundle: O2_cz.bundle
+      carrier_plist: true
+      supported_sims:
+        - "23002"
+      profiles:
+        - apple_o2_cz
+      variants_generated: 1
+      status: ready
+    - bundle: O2_ie.bundle
+      carrier_plist: true
+      supported_sims:
+        - "27202"
+      profiles:
+        - apple_o2_ie
+      variants_generated: 1
+      status: ready
+    - bundle: O2_sk.bundle
+      carrier_plist: true
+      supported_sims:
+        - "23106"
+      profiles:
+        - apple_o2_sk
+      variants_generated: 1
+      status: ready
+    - bundle: OPT_nc.bundle
+      carrier_plist: true
+      supported_sims:
+        - "54601"
+      profiles:
+        - apple_opt_nc
+      variants_generated: 1
+      status: ready
+    - bundle: OQCFactoryMultimode.bundle
+      carrier_plist: true
+      supported_sims:
+        - 101FAC
+      profiles: []
+      status: invalid_selector
+    - bundle: OQCFactoryUMTS.bundle
+      carrier_plist: true
+      supported_sims:
+        - 000FAC
+      profiles: []
+      status: invalid_selector
+    - bundle: Oi_BrT_br.bundle
+      carrier_plist: true
+      supported_sims:
+        - "72416"
+      profiles:
+        - apple_oi_brt_br
+      variants_generated: 1
+      status: ready
+    - bundle: Oi_br.bundle
+      carrier_plist: true
+      supported_sims:
+        - "72431"
+      profiles:
+        - apple_oi_br
+      variants_generated: 1
+      status: ready
+    - bundle: Omantel_om.bundle
+      carrier_plist: true
+      supported_sims:
+        - "42202"
+      profiles:
+        - apple_omantel_om
+      variants_generated: 1
+      status: ready
+    - bundle: Omnitel_lt.bundle
+      carrier_plist: true
+      supported_sims:
+        - "24601"
+      profiles:
+        - apple_omnitel_lt
+      variants_generated: 1
+      status: ready
+    - bundle: One_at.bundle
+      carrier_plist: true
+      supported_sims:
+        - "23205"
+      profiles:
+        - apple_one_at
+      variants_generated: 1
+      status: ready
+    - bundle: OpenMobile_LTE_pr.bundle
+      carrier_plist: true
+      supported_sims:
+        - "33012"
+        - "330120"
+      profiles:
+        - apple_openmobile_lte_pr
+      variants_generated: 2
+      status: ready
+    - bundle: Optimus_pt.bundle
+      carrier_plist: true
+      supported_sims:
+        - "26803"
+        - 26006_ID-8935103
+      profiles:
+        - apple_optimus_pt
+      variants_generated: 2
+      status: ready
+    - bundle: Optus_au.bundle
+      carrier_plist: true
+      supported_sims:
+        - "50502"
+      profiles:
+        - apple_optus_au
+      variants_generated: 1
+      status: ready
+    - bundle: Ora_pf.bundle
+      carrier_plist: true
+      supported_sims:
+        - 54705_ID-8954705
+        - 20801_ID-8954705
+      profiles:
+        - apple_ora_pf
+      variants_generated: 2
+      status: ready
+    - bundle: Orange_France.bundle
+      carrier_plist: true
+      supported_sims:
+        - "20801"
+        - "20802"
+      profiles:
+        - apple_orange_france
+      variants_generated: 2
+      status: ready
+    - bundle: Orange_am.bundle
+      carrier_plist: true
+      supported_sims:
+        - "28310"
+        - 20601_ID-8937410
+      profiles:
+        - apple_orange_am
+      variants_generated: 2
+      status: ready
+    - bundle: Orange_bw.bundle
+      carrier_plist: true
+      supported_sims:
+        - "65202"
+      profiles:
+        - apple_orange_bw
+      variants_generated: 1
+      status: ready
+    - bundle: Orange_cd.bundle
+      carrier_plist: true
+      supported_sims:
+        - "63086"
+      profiles:
+        - apple_orange_cd
+      variants_generated: 1
+      status: ready
+    - bundle: Orange_cf.bundle
+      carrier_plist: true
+      supported_sims:
+        - "62303"
+      profiles:
+        - apple_orange_cf
+      variants_generated: 1
+      status: ready
+    - bundle: Orange_ch.bundle
+      carrier_plist: true
+      supported_sims:
+        - "22803"
+      profiles:
+        - apple_orange_ch
+      variants_generated: 1
+      status: ready
+    - bundle: Orange_ci.bundle
+      carrier_plist: true
+      supported_sims:
+        - "61203"
+      profiles:
+        - apple_orange_ci
+      variants_generated: 1
+      status: ready
+    - bundle: Orange_cm.bundle
+      carrier_plist: true
+      supported_sims:
+        - "62402"
+      profiles:
+        - apple_orange_cm
+      variants_generated: 1
+      status: ready
+    - bundle: Orange_do.bundle
+      carrier_plist: true
+      supported_sims:
+        - "37001"
+      profiles:
+        - apple_orange_do
+      variants_generated: 1
+      status: ready
+    - bundle: Orange_es.bundle
+      carrier_plist: true
+      supported_sims:
+        - "21403"
+      profiles:
+        - apple_orange_es
+      variants_generated: 1
+      status: ready
+    - bundle: Orange_gn.bundle
+      carrier_plist: true
+      supported_sims:
+        - "61101"
+      profiles:
+        - apple_orange_gn
+      variants_generated: 1
+      status: ready
+    - bundle: Orange_gw.bundle
+      carrier_plist: true
+      supported_sims:
+        - "63203"
+      profiles:
+        - apple_orange_gw
+      variants_generated: 1
+      status: ready
+    - bundle: Orange_il.bundle
+      carrier_plist: true
+      supported_sims:
+        - "42501"
+        - "42510"
+      profiles:
+        - apple_orange_il
+      variants_generated: 2
+      status: ready
+    - bundle: Orange_jo.bundle
+      carrier_plist: true
+      supported_sims:
+        - "41677"
+      profiles:
+        - apple_orange_jo
+      variants_generated: 1
+      status: ready
+    - bundle: Orange_ke.bundle
+      carrier_plist: true
+      supported_sims:
+        - "63907"
+      profiles:
+        - apple_orange_ke
+      variants_generated: 1
+      status: ready
+    - bundle: Orange_li.bundle
+      carrier_plist: true
+      supported_sims:
+        - "29502"
+      profiles:
+        - apple_orange_li
+      variants_generated: 1
+      status: ready
+    - bundle: Orange_lr.bundle
+      carrier_plist: true
+      supported_sims:
+        - "61807"
+      profiles:
+        - apple_orange_lr
+      variants_generated: 1
+      status: ready
+    - bundle: Orange_md.bundle
+      carrier_plist: true
+      supported_sims:
+        - "25901"
+      profiles:
+        - apple_orange_md
+      variants_generated: 1
+      status: ready
+    - bundle: Orange_mg.bundle
+      carrier_plist: true
+      supported_sims:
+        - "64602"
+      profiles:
+        - apple_orange_mg
+      variants_generated: 1
+      status: ready
+    - bundle: Orange_ml.bundle
+      carrier_plist: true
+      supported_sims:
+        - "61002"
+      profiles:
+        - apple_orange_ml
+      variants_generated: 1
+      status: ready
+    - bundle: Orange_mq.bundle
+      carrier_plist: true
+      supported_sims:
+        - "34001"
+      profiles:
+        - apple_orange_mq
+      variants_generated: 1
+      status: ready
+    - bundle: Orange_mu.bundle
+      carrier_plist: true
+      supported_sims:
+        - "61701"
+      profiles:
+        - apple_orange_mu
+      variants_generated: 1
+      status: ready
+    - bundle: Orange_ne.bundle
+      carrier_plist: true
+      supported_sims:
+        - "61404"
+      profiles:
+        - apple_orange_ne
+      variants_generated: 1
+      status: ready
+    - bundle: Orange_pl.bundle
+      carrier_plist: true
+      supported_sims:
+        - "26003"
+      profiles:
+        - apple_orange_pl
+      variants_generated: 1
+      status: ready
+    - bundle: Orange_pm.bundle
+      carrier_plist: true
+      supported_sims:
+        - "30803"
+      profiles:
+        - apple_orange_pm
+      variants_generated: 1
+      status: ready
+    - bundle: Orange_re.bundle
+      carrier_plist: true
+      supported_sims:
+        - "64700"
+      profiles:
+        - apple_orange_re
+      variants_generated: 1
+      status: ready
+    - bundle: Orange_ro.bundle
+      carrier_plist: true
+      supported_sims:
+        - "22610"
+      profiles:
+        - apple_orange_ro
+      variants_generated: 1
+      status: ready
+    - bundle: Orange_sk.bundle
+      carrier_plist: true
+      supported_sims:
+        - "23101"
+      profiles:
+        - apple_orange_sk
+      variants_generated: 1
+      status: ready
+    - bundle: Orange_sn.bundle
+      carrier_plist: true
+      supported_sims:
+        - "60801"
+      profiles:
+        - apple_orange_sn
+      variants_generated: 1
+      status: ready
+    - bundle: Orange_tn.bundle
+      carrier_plist: true
+      supported_sims:
+        - "60501"
+      profiles:
+        - apple_orange_tn
+      variants_generated: 1
+      status: ready
+    - bundle: Orange_uk.bundle
+      carrier_plist: true
+      supported_sims:
+        - "23433"
+      profiles:
+        - apple_orange_uk
+      variants_generated: 1
+      status: ready
+    - bundle: Orange_vu.bundle
+      carrier_plist: true
+      supported_sims:
+        - "54101"
+      profiles:
+        - apple_orange_vu
+      variants_generated: 1
+      status: ready
+    - bundle: OtherKnown.bundle
+      carrier_plist: false
+      supported_sims: []
+      profiles: []
+      status: parse_error
+    - bundle: PCCW_hk.bundle
+      carrier_plist: true
+      supported_sims:
+        - "45419"
+        - "45416"
+        - "45420"
+      profiles:
+        - apple_pccw_hk
+      variants_generated: 3
+      status: ready
+    - bundle: PNCC_pw.bundle
+      carrier_plist: true
+      supported_sims:
+        - "55201"
+      profiles:
+        - apple_pncc_pw
+      variants_generated: 1
+      status: ready
+    - bundle: PTCI_LTE_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 311650_GID2-10FD
+      profiles:
+        - apple_ptci_lte_us
+      variants_generated: 1
+      status: ready
+    - bundle: PTCI_LTE_only_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - "311450"
+      profiles:
+        - apple_ptci_lte_only_us
+      variants_generated: 1
+      status: ready
+    - bundle: Panhandle_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 311530_GID1-5054
+      profiles:
+        - apple_panhandle_us
+      variants_generated: 1
+      status: ready
+    - bundle: Paradise_bm.bundle
+      carrier_plist: true
+      supported_sims:
+        - "350007"
+      profiles:
+        - apple_paradise_bm
+      variants_generated: 1
+      status: ready
+    - bundle: Pelephone_il.bundle
+      carrier_plist: true
+      supported_sims:
+        - "42503"
+        - 20404_ID-8997250
+      profiles:
+        - apple_pelephone_il
+      variants_generated: 2
+      status: ready
+    - bundle: Personal_ar.bundle
+      carrier_plist: true
+      supported_sims:
+        - "72234"
+        - "722341"
+      profiles:
+        - apple_personal_ar
+      variants_generated: 2
+      status: ready
+    - bundle: Play_pl.bundle
+      carrier_plist: true
+      supported_sims:
+        - "26006"
+      profiles:
+        - apple_play_pl
+      variants_generated: 1
+      status: ready
+    - bundle: Polkomtel_pl.bundle
+      carrier_plist: true
+      supported_sims:
+        - "26001"
+      profiles:
+        - apple_polkomtel_pl
+      variants_generated: 1
+      status: ready
+    - bundle: Porta_ec.bundle
+      carrier_plist: true
+      supported_sims:
+        - "74001"
+      profiles:
+        - apple_porta_ec
+      variants_generated: 1
+      status: ready
+    - bundle: PrimeMobile.bundle
+      carrier_plist: true
+      supported_sims:
+        - 42512_GID1-2636
+        - 42501_GID1-2636
+        - 26006_GID1-2636
+        - 26003_GID1-2636
+        - 23450_GID1-2636
+      profiles:
+        - apple_primemobile
+      variants_generated: 5
+      status: ready
+    - bundle: PrimeTel_cy.bundle
+      carrier_plist: true
+      supported_sims:
+        - "28020"
+        - 22201_ID-8935720
+      profiles:
+        - apple_primetel_cy
+      variants_generated: 2
+      status: ready
+    - bundle: Progresif_bn.bundle
+      carrier_plist: true
+      supported_sims:
+        - "52802"
+      profiles:
+        - apple_progresif_bn
+      variants_generated: 1
+      status: ready
+    - bundle: Proximus_be.bundle
+      carrier_plist: true
+      supported_sims:
+        - "20601"
+      profiles:
+        - apple_proximus_be
+      variants_generated: 1
+      status: ready
+    - bundle: Qtel_dz.bundle
+      carrier_plist: true
+      supported_sims:
+        - "60303"
+      profiles:
+        - apple_qtel_dz
+      variants_generated: 1
+      status: ready
+    - bundle: Qtel_iq.bundle
+      carrier_plist: true
+      supported_sims:
+        - "41805"
+      profiles:
+        - apple_qtel_iq
+      variants_generated: 1
+      status: ready
+    - bundle: Qtel_kw.bundle
+      carrier_plist: true
+      supported_sims:
+        - "41903"
+      profiles:
+        - apple_qtel_kw
+      variants_generated: 1
+      status: ready
+    - bundle: Qtel_mm.bundle
+      carrier_plist: true
+      supported_sims:
+        - "41405"
+      profiles:
+        - apple_qtel_mm
+      variants_generated: 1
+      status: ready
+    - bundle: Qtel_mv.bundle
+      carrier_plist: true
+      supported_sims:
+        - "47202"
+      profiles:
+        - apple_qtel_mv
+      variants_generated: 1
+      status: ready
+    - bundle: Qtel_om.bundle
+      carrier_plist: true
+      supported_sims:
+        - "42203"
+      profiles:
+        - apple_qtel_om
+      variants_generated: 1
+      status: ready
+    - bundle: Qtel_ps.bundle
+      carrier_plist: true
+      supported_sims:
+        - "42506"
+      profiles:
+        - apple_qtel_ps
+      variants_generated: 1
+      status: ready
+    - bundle: Qtel_qa.bundle
+      carrier_plist: true
+      supported_sims:
+        - "42701"
+      profiles:
+        - apple_qtel_qa
+      variants_generated: 1
+      status: ready
+    - bundle: Qtel_tn.bundle
+      carrier_plist: true
+      supported_sims:
+        - "60503"
+      profiles:
+        - apple_qtel_tn
+      variants_generated: 1
+      status: ready
+    - bundle: Rakuten_jp.bundle
+      carrier_plist: true
+      supported_sims:
+        - "44011"
+        - 20801_ID-8981090
+      profiles:
+        - apple_rakuten_jp
+      variants_generated: 2
+      status: ready
+    - bundle: RedteaMobile.bundle
+      carrier_plist: true
+      supported_sims:
+        - 45406_ID-89852245280
+        - 45400_ID-89852245280
+        - 45403_ID-89852245280
+        - 45407_ID-89852245280
+        - 45412_ID-89852245280
+        - 45501_ID-89852245280
+        - 71204_ID-89852245280
+        - 26006_ID-89852245280
+        - 41677_ID-89852245280
+        - 22201_ID-89852245280
+        - 52505_ID-89852245280
+        - 310840_ID-89852245280
+        - 23458_ID-89852245280
+        - 20601_ID-89852245280
+        - 23210_ID-89852245280
+        - 23410_ID-89852245280
+        - 26001_ID-89852245280
+        - 42501_ID-89852245280
+        - 50212_ID-89852245280
+        - 20408_ID-89852245280
+        - 26003_ID-89852245280
+        - 29505_ID-89852245280
+      profiles:
+        - apple_redteamobile
+      variants_generated: 22
+      status: ready
+    - bundle: RelianceJio_in.bundle
+      carrier_plist: true
+      supported_sims:
+        - "405874"
+        - "405840"
+        - "405854"
+        - "405855"
+        - "405856"
+        - "405857"
+        - "405858"
+        - "405859"
+        - "405860"
+        - "405861"
+        - "405862"
+        - "405863"
+        - "405864"
+        - "405865"
+        - "405866"
+        - "405867"
+        - "405868"
+        - "405869"
+        - "405870"
+        - "405871"
+        - "405872"
+        - "405873"
+        - 22201_ID-8991874
+        - 22201_ID-8991840
+        - 22201_ID-8991854
+        - 22201_ID-8991855
+        - 22201_ID-8991856
+        - 22201_ID-8991857
+        - 22201_ID-8991858
+        - 22201_ID-8991859
+        - 22201_ID-8991860
+        - 22201_ID-8991861
+        - 22201_ID-8991862
+        - 22201_ID-8991863
+        - 22201_ID-8991864
+        - 22201_ID-8991865
+        - 22201_ID-8991866
+        - 22201_ID-8991867
+        - 22201_ID-8991868
+        - 22201_ID-8991869
+        - 22201_ID-8991870
+        - 22201_ID-8991871
+        - 22201_ID-8991872
+        - 22201_ID-8991873
+      profiles:
+        - apple_reliancejio_in
+      variants_generated: 23
+      status: ready
+    - bundle: Roamless.bundle
+      carrier_plist: true
+      supported_sims:
+        - 20601_GID1-4D2E3F1A6B7C8D9E
+        - 20628_GID1-4D2E3F1A6B7C8D9E
+        - 732123_GID1-4D2E3F1A6B7C8D9E
+        - 310840_GID1-4D2E3F1A6B7C8D9E
+        - 45400_GID1-4D2E3F1A6B7C8D9E
+      profiles:
+        - apple_roamless
+      variants_generated: 5
+      status: ready
+    - bundle: Robi_BhartiAirtel_bd.bundle
+      carrier_plist: true
+      supported_sims:
+        - "47007"
+      profiles:
+        - apple_robi_bhartiairtel_bd
+      variants_generated: 1
+      status: ready
+    - bundle: Robi_bd.bundle
+      carrier_plist: true
+      supported_sims:
+        - "47002"
+      profiles:
+        - apple_robi_bd
+      variants_generated: 1
+      status: ready
+    - bundle: Rogers_Cityfone_ca.bundle
+      carrier_plist: true
+      supported_sims:
+        - 302720_GID1-CC
+      profiles:
+        - apple_rogers_cityfone_ca
+      variants_generated: 1
+      status: ready
+    - bundle: Rogers_ca.bundle
+      carrier_plist: true
+      supported_sims:
+        - "302720"
+      profiles:
+        - apple_rogers_ca
+      variants_generated: 1
+      status: ready
+    - bundle: Rogers_chatr_ca.bundle
+      carrier_plist: true
+      supported_sims:
+        - 302720_ID-8930272040194
+        - 302720_ID-8930272040794
+        - 302720_ID-8930272041794
+        - 302720_ID-8930272041394
+        - 302720_ID-8930272051394
+        - 302720_GID1-D2
+        - 302320_ID-89302320100
+        - 302320_ID-89302320900
+      profiles:
+        - apple_rogers_chatr_ca
+      variants_generated: 2
+      status: ready
+    - bundle: Roshan_af.bundle
+      carrier_plist: true
+      supported_sims:
+        - 41220_ID-8993200
+      profiles:
+        - apple_roshan_af
+      variants_generated: 1
+      status: ready
+    - bundle: SFR_Caraibe_mq.bundle
+      carrier_plist: true
+      supported_sims:
+        - 34002_ID-8959602
+        - 20809_ID-8959602
+        - 34002_ID-8959002
+        - 20809_ID-8959002
+        - 34002_ID-8959402
+        - 20809_ID-8959402
+      profiles:
+        - apple_sfr_caraibe_mq
+      variants_generated: 2
+      status: ready
+    - bundle: SFR_LPM_fr.bundle
+      carrier_plist: true
+      supported_sims:
+        - 20810_GID1-4C504D
+      profiles:
+        - apple_sfr_lpm_fr
+      variants_generated: 1
+      status: ready
+    - bundle: SFR_fr.bundle
+      carrier_plist: true
+      supported_sims:
+        - "20810"
+        - 28010_ID-893327
+        - 28010_ID-89331014
+        - 20810_ID-89331043
+        - 20810_ID-893330
+        - 20810_ID-89331069
+      profiles:
+        - apple_sfr_fr
+      variants_generated: 2
+      status: ready
+    - bundle: SFR_re.bundle
+      carrier_plist: true
+      supported_sims:
+        - "64710"
+        - 20809_ID-89331085
+        - 20809_ID-89331065
+      profiles:
+        - apple_sfr_re
+      variants_generated: 2
+      status: ready
+    - bundle: SKT_kr.bundle
+      carrier_plist: true
+      supported_sims:
+        - "45005"
+      profiles:
+        - apple_skt_kr
+      variants_generated: 1
+      status: ready
+    - bundle: SPT_wf.bundle
+      carrier_plist: true
+      supported_sims:
+        - "54301"
+      profiles:
+        - apple_spt_wf
+      variants_generated: 1
+      status: ready
+    - bundle: STC_sa.bundle
+      carrier_plist: true
+      supported_sims:
+        - "42001"
+      profiles:
+        - apple_stc_sa
+      variants_generated: 1
+      status: ready
+    - bundle: Safaricom_ke.bundle
+      carrier_plist: true
+      supported_sims:
+        - "63902"
+      profiles:
+        - apple_safaricom_ke
+      variants_generated: 1
+      status: ready
+    - bundle: Sasktel_Lum_ca.bundle
+      carrier_plist: true
+      supported_sims:
+        - 302780_GID1-5b
+      profiles:
+        - apple_sasktel_lum_ca
+      variants_generated: 1
+      status: ready
+    - bundle: Sasktel_ca.bundle
+      carrier_plist: true
+      supported_sims:
+        - "302780"
+        - 20404_ID-89302780
+      profiles:
+        - apple_sasktel_ca
+      variants_generated: 2
+      status: ready
+    - bundle: Saunalahti_fi.bundle
+      carrier_plist: true
+      supported_sims:
+        - "24421"
+      profiles:
+        - apple_saunalahti_fi
+      variants_generated: 1
+      status: ready
+    - bundle: Seatel_kh.bundle
+      carrier_plist: true
+      supported_sims:
+        - "45611"
+      profiles:
+        - apple_seatel_kh
+      variants_generated: 1
+      status: ready
+    - bundle: Setar_aw.bundle
+      carrier_plist: true
+      supported_sims:
+        - "36301"
+        - 21407_ID-8929736301
+      profiles:
+        - apple_setar_aw
+      variants_generated: 2
+      status: ready
+    - bundle: Shinetown.bundle
+      carrier_plist: true
+      supported_sims:
+        - 45400_GID1-AAAA
+        - 45501_GID1-AAAA
+        - 26006_GID1-AAAA
+        - 45403_GID1-AAAA
+        - 45407_GID1-AAAA
+      profiles:
+        - apple_shinetown
+      variants_generated: 5
+      status: ready
+    - bundle: Siminn_is.bundle
+      carrier_plist: true
+      supported_sims:
+        - "27401"
+      profiles:
+        - apple_siminn_is
+      variants_generated: 1
+      status: ready
+    - bundle: Simly.bundle
+      carrier_plist: true
+      supported_sims:
+        - 310840_GID1-73696D6C7931
+        - 90188_GID1-73696D6C7931
+        - 20801_GID1-73696D6C7931
+        - 45400_GID1-73696D6C7931
+        - 26001_GID1-73696D6C7931
+        - 52505_GID1-73696D6C7931
+        - 42402_GID1-73696D6C7931
+        - 26006_GID1-73696D6C7931
+      profiles:
+        - apple_simly
+      variants_generated: 8
+      status: ready
+    - bundle: SingTel_sg.bundle
+      carrier_plist: true
+      supported_sims:
+        - "52501"
+      profiles:
+        - apple_singtel_sg
+      variants_generated: 1
+      status: ready
+    - bundle: Sky_ie.bundle
+      carrier_plist: true
+      supported_sims:
+        - "27225"
+        - 24007_GID1-0d
+      profiles:
+        - apple_sky_ie
+      variants_generated: 2
+      status: ready
+    - bundle: SmarTone_HKBN_hk.bundle
+      carrier_plist: true
+      supported_sims:
+        - 45406_GID1-0009
+      profiles:
+        - apple_smartone_hkbn_hk
+      variants_generated: 1
+      status: ready
+    - bundle: SmarTone_hk.bundle
+      carrier_plist: true
+      supported_sims:
+        - "45406"
+        - "45415"
+        - "45417"
+      profiles:
+        - apple_smartone_hk
+      variants_generated: 3
+      status: ready
+    - bundle: SmarTone_mo.bundle
+      carrier_plist: true
+      supported_sims:
+        - "45500"
+        - "45506"
+      profiles:
+        - apple_smartone_mo
+      variants_generated: 2
+      status: ready
+    - bundle: Smart_bz.bundle
+      carrier_plist: true
+      supported_sims:
+        - "70269"
+      profiles:
+        - apple_smart_bz
+      variants_generated: 1
+      status: ready
+    - bundle: Smart_kh.bundle
+      carrier_plist: true
+      supported_sims:
+        - "45602"
+        - "45605"
+        - "45606"
+      profiles:
+        - apple_smart_kh
+      variants_generated: 3
+      status: ready
+    - bundle: Smart_ph.bundle
+      carrier_plist: true
+      supported_sims:
+        - "51503"
+      profiles:
+        - apple_smart_ph
+      variants_generated: 1
+      status: ready
+    - bundle: Smartfren_id.bundle
+      carrier_plist: true
+      supported_sims:
+        - "51009"
+        - "51028"
+        - 52505_ID-896209
+        - 52505_ID-896228
+      profiles:
+        - apple_smartfren_id
+      variants_generated: 3
+      status: ready
+    - bundle: Softbank_BBB_jp.bundle
+      carrier_plist: true
+      supported_sims:
+        - "44015"
+      profiles:
+        - apple_softbank_bbb_jp
+      variants_generated: 1
+      status: ready
+    - bundle: Softbank_YMobile_jp.bundle
+      carrier_plist: true
+      supported_sims:
+        - 44020_GID1-01FFFF
+        - 44020_GID1-16FFFF
+      profiles:
+        - apple_softbank_ymobile_jp
+      variants_generated: 1
+      status: ready
+    - bundle: Softbank_jp.bundle
+      carrier_plist: true
+      supported_sims:
+        - "44020"
+        - 44020_GID1-48FFFF
+      profiles:
+        - apple_softbank_jp
+      variants_generated: 1
+      status: ready
+    - bundle: Sonera_fi.bundle
+      carrier_plist: true
+      supported_sims:
+        - "24491"
+      profiles:
+        - apple_sonera_fi
+      variants_generated: 1
+      status: ready
+    - bundle: Soracom.bundle
+      carrier_plist: true
+      supported_sims:
+        - 29505_ID-8942310
+        - 29510_ID-8942310
+        - 50212_ID-8942310
+      profiles:
+        - apple_soracom
+      variants_generated: 3
+      status: ready
+    - bundle: Sprint_Boost_ISIM_LTE_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 310120_GID2-13
+        - 312530_GID2-13
+      profiles:
+        - apple_sprint_boost_isim_lte_us
+      variants_generated: 2
+      status: ready
+    - bundle: Sprint_ISIM_LTE_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 310120_GID2-11
+        - 312530_GID2-11
+      profiles:
+        - apple_sprint_isim_lte_us
+      variants_generated: 2
+      status: ready
+    - bundle: Sprint_Virgin_ISIM_LTE_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 310120_GID2-12
+        - 312530_GID2-12
+      profiles:
+        - apple_sprint_virgin_isim_lte_us
+      variants_generated: 2
+      status: ready
+    - bundle: StarHub_giga_sg.bundle
+      carrier_plist: true
+      supported_sims:
+        - 52505_GID1-4442
+      profiles:
+        - apple_starhub_giga_sg
+      variants_generated: 1
+      status: ready
+    - bundle: StarHub_sg.bundle
+      carrier_plist: true
+      supported_sims:
+        - "52505"
+      profiles:
+        - apple_starhub_sg
+      variants_generated: 1
+      status: ready
+    - bundle: StrataNetwork_LTE_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - "312290"
+      profiles:
+        - apple_stratanetwork_lte_us
+      variants_generated: 1
+      status: ready
+    - bundle: Sunrise_ch.bundle
+      carrier_plist: true
+      supported_sims:
+        - "22802"
+      profiles:
+        - apple_sunrise_ch
+      variants_generated: 1
+      status: ready
+    - bundle: Sure_im.bundle
+      carrier_plist: true
+      supported_sims:
+        - "23455"
+      profiles:
+        - apple_sure_im
+      variants_generated: 1
+      status: ready
+    - bundle: Swisscom_Wingo_ch.bundle
+      carrier_plist: true
+      supported_sims:
+        - 22801_GID1-01_GID2-01
+      profiles:
+        - apple_swisscom_wingo_ch
+      variants_generated: 1
+      status: ready
+    - bundle: Swisscom_ch.bundle
+      carrier_plist: true
+      supported_sims:
+        - "22801"
+      profiles:
+        - apple_swisscom_ch
+      variants_generated: 1
+      status: ready
+    - bundle: TCC_to.bundle
+      carrier_plist: true
+      supported_sims:
+        - "53901"
+      profiles:
+        - apple_tcc_to
+      variants_generated: 1
+      status: ready
+    - bundle: TDC_dk.bundle
+      carrier_plist: true
+      supported_sims:
+        - "23801"
+      profiles:
+        - apple_tdc_dk
+      variants_generated: 1
+      status: ready
+    - bundle: TELE_gl.bundle
+      carrier_plist: true
+      supported_sims:
+        - "29001"
+      profiles:
+        - apple_tele_gl
+      variants_generated: 1
+      status: ready
+    - bundle: THC_LTE_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 311480_GID2-AE
+      profiles:
+        - apple_thc_lte_us
+      variants_generated: 1
+      status: ready
+    - bundle: TIM_Italy.bundle
+      carrier_plist: true
+      supported_sims:
+        - "22201"
+      profiles:
+        - apple_tim_italy
+      variants_generated: 1
+      status: ready
+    - bundle: TIM_Kena_it.bundle
+      carrier_plist: true
+      supported_sims:
+        - "22207"
+        - 22201_ID-893907
+      profiles:
+        - apple_tim_kena_it
+      variants_generated: 2
+      status: ready
+    - bundle: TIM_br.bundle
+      carrier_plist: true
+      supported_sims:
+        - "72402"
+        - "72403"
+        - "72404"
+      profiles:
+        - apple_tim_br
+      variants_generated: 3
+      status: ready
+    - bundle: TMN_pt.bundle
+      carrier_plist: true
+      supported_sims:
+        - "26806"
+      profiles:
+        - apple_tmn_pt
+      variants_generated: 1
+      status: ready
+    - bundle: TMobile_Boost_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 310240_GID1-6230
+        - 310260_GID1-6230
+      profiles:
+        - apple_tmobile_boost_us
+      variants_generated: 2
+      status: ready
+    - bundle: TMobile_CC_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 310240_GID1-2AC9
+        - 310260_GID1-2AC9
+      profiles:
+        - apple_tmobile_cc_us
+      variants_generated: 2
+      status: ready
+    - bundle: TMobile_Charter_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 310240_GID1-BA02
+      profiles:
+        - apple_tmobile_charter_us
+      variants_generated: 1
+      status: ready
+    - bundle: TMobile_Comcast_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 310240_GID1-CC01
+      profiles:
+        - apple_tmobile_comcast_us
+      variants_generated: 1
+      status: ready
+    - bundle: TMobile_Germany.bundle
+      carrier_plist: true
+      supported_sims:
+        - 26298_GID1-CA
+        - "26201"
+        - "26206"
+        - "26278"
+      profiles:
+        - apple_tmobile_germany
+      variants_generated: 4
+      status: ready
+    - bundle: TMobile_MVNO_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 310240_GID1-DD
+        - 310260_GID1-DD
+        - 310240_GID1-4753
+        - 310260_GID1-4753
+        - 310260_ID-890126095
+        - 310260_ID-890126084
+        - 310260_ID-890126096
+        - 310240_GID1-AB
+        - 310260_GID1-AB
+        - 310240_GID1-6C
+        - 310260_GID1-6C
+        - 310240_GID1-43
+        - 310260_GID1-43
+        - 310240_GID1-4201
+        - 310260_GID1-4201
+        - 310240_GID1-4276
+        - 310260_GID1-4276
+        - 310240_GID1-73
+        - 310260_GID1-73
+        - 310240_GID1-57
+        - 310260_GID1-57
+        - 310240_GID1-6133
+        - 310260_GID1-6133
+        - 310240_GID1-6134
+        - 310260_GID1-6134
+        - 310240_GID1-6136
+        - 310260_GID1-6136
+        - 310240_GID1-6137
+        - 310260_GID1-6137
+        - 310240_GID1-6138
+        - 310260_GID1-6138
+        - 310240_GID1-4C
+        - 310260_GID1-4C
+        - 310240_GID1-4E
+        - 310260_GID1-4E
+        - 310240_GID1-4B
+        - 310260_GID1-4B
+        - 310240_GID1-82
+        - 310260_GID1-82
+        - 310240_GID1-74
+        - 310260_GID1-74
+        - 310240_GID1-72
+        - 310260_GID1-72
+        - 310240_GID1-70
+        - 310260_GID1-70
+        - 310240_GID1-69
+        - 310260_GID1-69
+        - 310240_GID1-514C
+        - 310260_GID1-514C
+        - 310240_GID1-1A53
+        - 310260_GID1-1A53
+      profiles:
+        - apple_tmobile_mvno_us
+      variants_generated: 2
+      status: ready
+    - bundle: TMobile_MetroPCS_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 310260_GID1-6D
+        - 310240_GID1-6D
+      profiles:
+        - apple_tmobile_metropcs_us
+      variants_generated: 2
+      status: ready
+    - bundle: TMobile_TFW_Simple_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 310240_GID1-DE
+        - 310240_GID1-534D
+        - 310260_GID1-DE
+        - 310260_GID1-534D
+      profiles:
+        - apple_tmobile_tfw_simple_us
+      variants_generated: 2
+      status: ready
+    - bundle: TMobile_Ting_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 310240_GID1-6135
+        - 310260_GID1-6135
+      profiles:
+        - apple_tmobile_ting_us
+      variants_generated: 2
+      status: ready
+    - bundle: TMobile_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 310240_GID1-54
+        - "310160"
+        - "310200"
+        - "310210"
+        - "310220"
+        - "310230"
+        - "310250"
+        - 310260_GID1-54
+        - 310260_ID-89012600
+        - 310260_ID-89012601
+        - 310260_ID-89012602
+        - 310260_ID-89012603
+        - 310260_ID-89012604
+        - 310260_ID-89012605
+        - 310260_ID-890126060
+        - 310260_ID-890126061
+        - 310260_ID-890126062
+        - 310260_ID-890126065
+        - 310260_ID-890126070
+        - 310260_ID-890126075
+        - 310260_ID-890126080
+        - 310260_ID-890126081
+        - 310260_ID-890126087
+        - 310260_ID-890126090
+        - 310260_ID-890126091
+        - 310260_ID-890126093
+        - 310260_ID-890126098
+        - 310260_ID-890126099
+        - "310270"
+        - "310310"
+        - "310490"
+        - "310660"
+        - "310800"
+        - "311660"
+        - "311882"
+      profiles:
+        - apple_tmobile_us
+      variants_generated: 15
+      status: ready
+    - bundle: TMobile_UltraMint_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 310240_GID1-4153
+        - 310240_GID1-6132
+        - 310240_GID1-354d
+        - 310240_GID1-364d
+        - 310240_GID1-756d
+        - 310240_GID1-4154
+        - 310260_GID1-4153
+        - 310260_GID1-6132
+        - 310260_GID1-354d
+        - 310260_GID1-364d
+        - 310260_GID1-756d
+        - 310260_GID1-4154
+      profiles:
+        - apple_tmobile_ultramint_us
+      variants_generated: 2
+      status: ready
+    - bundle: TMobile_al.bundle
+      carrier_plist: true
+      supported_sims:
+        - "27601"
+      profiles:
+        - apple_tmobile_al
+      variants_generated: 1
+      status: ready
+    - bundle: TMobile_at.bundle
+      carrier_plist: true
+      supported_sims:
+        - "23223"
+        - 23207_GID1-07
+        - 23207_GID1-FF
+        - 23207_GID1-31
+        - 23207_GID1-74
+        - 23207_GID1-75
+        - 23207_GID1-72
+        - 23207_GID1-70
+        - 23207_GID1-30
+        - "23203"
+      profiles:
+        - apple_tmobile_at
+      variants_generated: 3
+      status: ready
+    - bundle: TMobile_bg.bundle
+      carrier_plist: true
+      supported_sims:
+        - "28405"
+      profiles:
+        - apple_tmobile_bg
+      variants_generated: 1
+      status: ready
+    - bundle: TMobile_cz.bundle
+      carrier_plist: true
+      supported_sims:
+        - "23001"
+      profiles:
+        - apple_tmobile_cz
+      variants_generated: 1
+      status: ready
+    - bundle: TMobile_gr.bundle
+      carrier_plist: true
+      supported_sims:
+        - "20201"
+      profiles:
+        - apple_tmobile_gr
+      variants_generated: 1
+      status: ready
+    - bundle: TMobile_hr.bundle
+      carrier_plist: true
+      supported_sims:
+        - "21901"
+        - "21920"
+      profiles:
+        - apple_tmobile_hr
+      variants_generated: 2
+      status: ready
+    - bundle: TMobile_hu.bundle
+      carrier_plist: true
+      supported_sims:
+        - "21630"
+      profiles:
+        - apple_tmobile_hu
+      variants_generated: 1
+      status: ready
+    - bundle: TMobile_me.bundle
+      carrier_plist: true
+      supported_sims:
+        - "29702"
+      profiles:
+        - apple_tmobile_me
+      variants_generated: 1
+      status: ready
+    - bundle: TMobile_mk.bundle
+      carrier_plist: true
+      supported_sims:
+        - "29401"
+      profiles:
+        - apple_tmobile_mk
+      variants_generated: 1
+      status: ready
+    - bundle: TMobile_nl.bundle
+      carrier_plist: true
+      supported_sims:
+        - "20416"
+      profiles:
+        - apple_tmobile_nl
+      variants_generated: 1
+      status: ready
+    - bundle: TMobile_pl.bundle
+      carrier_plist: true
+      supported_sims:
+        - "26002"
+      profiles:
+        - apple_tmobile_pl
+      variants_generated: 1
+      status: ready
+    - bundle: TMobile_ro.bundle
+      carrier_plist: true
+      supported_sims:
+        - "22603"
+        - "22606"
+      profiles:
+        - apple_tmobile_ro
+      variants_generated: 2
+      status: ready
+    - bundle: TMobile_sk.bundle
+      carrier_plist: true
+      supported_sims:
+        - "23102"
+      profiles:
+        - apple_tmobile_sk
+      variants_generated: 1
+      status: ready
+    - bundle: TMobile_uk.bundle
+      carrier_plist: true
+      supported_sims:
+        - "23430"
+      profiles:
+        - apple_tmobile_uk
+      variants_generated: 1
+      status: ready
+    - bundle: TaiwanMobile_tw.bundle
+      carrier_plist: true
+      supported_sims:
+        - "46697"
+      profiles:
+        - apple_taiwanmobile_tw
+      variants_generated: 1
+      status: ready
+    - bundle: Talkmobile_uk.bundle
+      carrier_plist: true
+      supported_sims:
+        - 23415_GID1-C1
+      profiles:
+        - apple_talkmobile_uk
+      variants_generated: 1
+      status: ready
+    - bundle: Tango.bundle
+      carrier_plist: true
+      supported_sims:
+        - 22201_ID-894453
+        - "313770"
+        - "23453"
+      profiles:
+        - apple_tango
+      variants_generated: 3
+      status: ready
+    - bundle: Tango_lu.bundle
+      carrier_plist: true
+      supported_sims:
+        - "27077"
+      profiles:
+        - apple_tango_lu
+      variants_generated: 1
+      status: ready
+    - bundle: TashiCell_bt.bundle
+      carrier_plist: true
+      supported_sims:
+        - "40277"
+      profiles:
+        - apple_tashicell_bt
+      variants_generated: 1
+      status: ready
+    - bundle: Tbaytel_ca.bundle
+      carrier_plist: true
+      supported_sims:
+        - 302720_GID1-BA
+      profiles:
+        - apple_tbaytel_ca
+      variants_generated: 1
+      status: ready
+    - bundle: Telcel_AztecaMovil_mx.bundle
+      carrier_plist: true
+      supported_sims:
+        - 334020_GID1-ffffffffffffff4f5549
+        - 334020_GID2-ffffffffffffff4f5549
+      profiles:
+        - apple_telcel_aztecamovil_mx
+      variants_generated: 1
+      status: ready
+    - bundle: Telcel_mx.bundle
+      carrier_plist: true
+      supported_sims:
+        - "33402"
+        - "334020"
+        - "33420"
+      profiles:
+        - apple_telcel_mx
+      variants_generated: 3
+      status: ready
+    - bundle: Tele2_Altel_kz.bundle
+      carrier_plist: true
+      supported_sims:
+        - 40177_ID-8999707
+      profiles:
+        - apple_tele2_altel_kz
+      variants_generated: 1
+      status: ready
+    - bundle: Tele2_Sberbank_ru.bundle
+      carrier_plist: true
+      supported_sims:
+        - "25050"
+        - 25020_GID1-FA3207
+        - 24007_ID-8970150
+      profiles:
+        - apple_tele2_sberbank_ru
+      variants_generated: 3
+      status: ready
+    - bundle: Tele2_ee.bundle
+      carrier_plist: true
+      supported_sims:
+        - "24803"
+      profiles:
+        - apple_tele2_ee
+      variants_generated: 1
+      status: ready
+    - bundle: Tele2_kz.bundle
+      carrier_plist: true
+      supported_sims:
+        - 40177_ID-8999777
+      profiles:
+        - apple_tele2_kz
+      variants_generated: 1
+      status: ready
+    - bundle: Tele2_lt.bundle
+      carrier_plist: true
+      supported_sims:
+        - "24603"
+      profiles:
+        - apple_tele2_lt
+      variants_generated: 1
+      status: ready
+    - bundle: Tele2_lv.bundle
+      carrier_plist: true
+      supported_sims:
+        - "24702"
+      profiles:
+        - apple_tele2_lv
+      variants_generated: 1
+      status: ready
+    - bundle: Tele2_ru.bundle
+      carrier_plist: true
+      supported_sims:
+        - "25020"
+      profiles:
+        - apple_tele2_ru
+      variants_generated: 1
+      status: ready
+    - bundle: Tele2_se.bundle
+      carrier_plist: true
+      supported_sims:
+        - 24007_ID-894620
+        - 24007_GID1-4900
+        - "24007"
+      profiles:
+        - apple_tele2_se
+      variants_generated: 1
+      status: ready
+    - bundle: TelecomCook_ck.bundle
+      carrier_plist: true
+      supported_sims:
+        - "54801"
+      profiles:
+        - apple_telecomcook_ck
+      variants_generated: 1
+      status: ready
+    - bundle: TelecomEgypt_eg.bundle
+      carrier_plist: true
+      supported_sims:
+        - "60204"
+        - 20809_ID-89204
+        - 20809_ID-892004
+      profiles:
+        - apple_telecomegypt_eg
+      variants_generated: 2
+      status: ready
+    - bundle: TelecomLiechtenstein_li.bundle
+      carrier_plist: true
+      supported_sims:
+        - "29505"
+      profiles:
+        - apple_telecomliechtenstein_li
+      variants_generated: 1
+      status: ready
+    - bundle: TelecomNamibia_na.bundle
+      carrier_plist: true
+      supported_sims:
+        - "64903"
+      profiles:
+        - apple_telecomnamibia_na
+      variants_generated: 1
+      status: ready
+    - bundle: Telecom_Skinny_nz.bundle
+      carrier_plist: true
+      supported_sims:
+        - 53005_ID-89640520
+      profiles:
+        - apple_telecom_skinny_nz
+      variants_generated: 1
+      status: ready
+    - bundle: Telecom_nz.bundle
+      carrier_plist: true
+      supported_sims:
+        - "53005"
+        - 23410_ID-896405
+      profiles:
+        - apple_telecom_nz
+      variants_generated: 2
+      status: ready
+    - bundle: Telefonica_Tuenti_ar.bundle
+      carrier_plist: true
+      supported_sims:
+        - "722010"
+      profiles:
+        - apple_telefonica_tuenti_ar
+      variants_generated: 1
+      status: ready
+    - bundle: Telefonica_eSimFLAG.bundle
+      carrier_plist: true
+      supported_sims:
+        - 21405_GID1-80
+        - 52501_GID1-80_ID-8910300
+        - 52502_GID1-80_ID-8910300
+        - 310840_GID1-80_ID-8910300
+      profiles:
+        - apple_telefonica_esimflag
+      variants_generated: 4
+      status: ready
+    - bundle: Telefonica_es.bundle
+      carrier_plist: true
+      supported_sims:
+        - "21407"
+      profiles:
+        - apple_telefonica_es
+      variants_generated: 1
+      status: ready
+    - bundle: TelekomSlovenije_ba.bundle
+      carrier_plist: true
+      supported_sims:
+        - 21890_ID-89387010
+        - "21890"
+      profiles:
+        - apple_telekomslovenije_ba
+      variants_generated: 1
+      status: ready
+    - bundle: TelekomSlovenije_gi.bundle
+      carrier_plist: true
+      supported_sims:
+        - "26601"
+      profiles:
+        - apple_telekomslovenije_gi
+      variants_generated: 1
+      status: ready
+    - bundle: TelekomSlovenije_mk.bundle
+      carrier_plist: true
+      supported_sims:
+        - "29402"
+      profiles:
+        - apple_telekomslovenije_mk
+      variants_generated: 1
+      status: ready
+    - bundle: TelekomSlovenije_xk.bundle
+      carrier_plist: true
+      supported_sims:
+        - "22102"
+        - 29341_GID1-90
+      profiles:
+        - apple_telekomslovenije_xk
+      variants_generated: 2
+      status: ready
+    - bundle: TelekomSrbija_ba.bundle
+      carrier_plist: true
+      supported_sims:
+        - "21805"
+      profiles:
+        - apple_telekomsrbija_ba
+      variants_generated: 1
+      status: ready
+    - bundle: TelekomSrbija_me.bundle
+      carrier_plist: true
+      supported_sims:
+        - "29703"
+      profiles:
+        - apple_telekomsrbija_me
+      variants_generated: 1
+      status: ready
+    - bundle: TelekomSrbija_rs.bundle
+      carrier_plist: true
+      supported_sims:
+        - "22003"
+      profiles:
+        - apple_telekomsrbija_rs
+      variants_generated: 1
+      status: ready
+    - bundle: Telekom_si.bundle
+      carrier_plist: true
+      supported_sims:
+        - "29341"
+      profiles:
+        - apple_telekom_si
+      variants_generated: 1
+      status: ready
+    - bundle: Telemach_hr.bundle
+      carrier_plist: true
+      supported_sims:
+        - "21902"
+      profiles:
+        - apple_telemach_hr
+      variants_generated: 1
+      status: ready
+    - bundle: Telemach_si.bundle
+      carrier_plist: true
+      supported_sims:
+        - "29370"
+      profiles:
+        - apple_telemach_si
+      variants_generated: 1
+      status: ready
+    - bundle: Telenet_be.bundle
+      carrier_plist: true
+      supported_sims:
+        - "20605"
+        - 20601_ID-89410
+        - 20601_ID-893207
+      profiles:
+        - apple_telenet_be
+      variants_generated: 2
+      status: ready
+    - bundle: Telenor_dk.bundle
+      carrier_plist: true
+      supported_sims:
+        - "23802"
+      profiles:
+        - apple_telenor_dk
+      variants_generated: 1
+      status: ready
+    - bundle: Telenor_hu.bundle
+      carrier_plist: true
+      supported_sims:
+        - "21601"
+      profiles:
+        - apple_telenor_hu
+      variants_generated: 1
+      status: ready
+    - bundle: Telenor_me.bundle
+      carrier_plist: true
+      supported_sims:
+        - "29701"
+      profiles:
+        - apple_telenor_me
+      variants_generated: 1
+      status: ready
+    - bundle: Telenor_mm.bundle
+      carrier_plist: true
+      supported_sims:
+        - "41406"
+      profiles:
+        - apple_telenor_mm
+      variants_generated: 1
+      status: ready
+    - bundle: Telenor_no.bundle
+      carrier_plist: true
+      supported_sims:
+        - "24201"
+        - 24201_ID-89470002
+        - 24201_ID-89470003
+        - 24201_ID-89470022
+        - 24201_ID-89470023
+      profiles:
+        - apple_telenor_no
+      variants_generated: 1
+      status: ready
+    - bundle: Telenor_pk.bundle
+      carrier_plist: true
+      supported_sims:
+        - "41006"
+      profiles:
+        - apple_telenor_pk
+      variants_generated: 1
+      status: ready
+    - bundle: Telenor_rs.bundle
+      carrier_plist: true
+      supported_sims:
+        - "22001"
+      profiles:
+        - apple_telenor_rs
+      variants_generated: 1
+      status: ready
+    - bundle: Telenor_se.bundle
+      carrier_plist: true
+      supported_sims:
+        - "24008"
+      profiles:
+        - apple_telenor_se
+      variants_generated: 1
+      status: ready
+    - bundle: Telesur_sr.bundle
+      carrier_plist: true
+      supported_sims:
+        - "74602"
+      profiles:
+        - apple_telesur_sr
+      variants_generated: 1
+      status: ready
+    - bundle: Telia_az.bundle
+      carrier_plist: true
+      supported_sims:
+        - "40001"
+      profiles:
+        - apple_telia_az
+      variants_generated: 1
+      status: ready
+    - bundle: Telia_dk.bundle
+      carrier_plist: true
+      supported_sims:
+        - "23820"
+        - "23830"
+      profiles:
+        - apple_telia_dk
+      variants_generated: 2
+      status: ready
+    - bundle: Telia_ge.bundle
+      carrier_plist: true
+      supported_sims:
+        - "28201"
+      profiles:
+        - apple_telia_ge
+      variants_generated: 1
+      status: ready
+    - bundle: Telia_kz.bundle
+      carrier_plist: true
+      supported_sims:
+        - "40102"
+      profiles:
+        - apple_telia_kz
+      variants_generated: 1
+      status: ready
+    - bundle: Telia_md.bundle
+      carrier_plist: true
+      supported_sims:
+        - "25902"
+      profiles:
+        - apple_telia_md
+      variants_generated: 1
+      status: ready
+    - bundle: Telia_se.bundle
+      carrier_plist: true
+      supported_sims:
+        - "24001"
+      profiles:
+        - apple_telia_se
+      variants_generated: 1
+      status: ready
+    - bundle: Telia_tj.bundle
+      carrier_plist: true
+      supported_sims:
+        - "43601"
+        - "43602"
+      profiles:
+        - apple_telia_tj
+      variants_generated: 2
+      status: ready
+    - bundle: Telkomsel_id.bundle
+      carrier_plist: true
+      supported_sims:
+        - "51010"
+      profiles:
+        - apple_telkomsel_id
+      variants_generated: 1
+      status: ready
+    - bundle: Telma_mg.bundle
+      carrier_plist: true
+      supported_sims:
+        - "64604"
+      profiles:
+        - apple_telma_mg
+      variants_generated: 1
+      status: ready
+    - bundle: Telstra_au.bundle
+      carrier_plist: true
+      supported_sims:
+        - "50501"
+        - "50571"
+        - "50572"
+      profiles:
+        - apple_telstra_au
+      variants_generated: 3
+      status: ready
+    - bundle: Telus_Koodo_ca.bundle
+      carrier_plist: true
+      supported_sims:
+        - 302222_GID1-4B
+        - 302221_GID1-4B
+        - 302220_GID1-4B
+      profiles:
+        - apple_telus_koodo_ca
+      variants_generated: 3
+      status: ready
+    - bundle: Telus_PCMobile_ca.bundle
+      carrier_plist: true
+      supported_sims:
+        - 302220_GID1-50
+      profiles:
+        - apple_telus_pcmobile_ca
+      variants_generated: 1
+      status: ready
+    - bundle: Telus_PublicMobile_ca.bundle
+      carrier_plist: true
+      supported_sims:
+        - 302220_GID1-4D
+      profiles:
+        - apple_telus_publicmobile_ca
+      variants_generated: 1
+      status: ready
+    - bundle: Telus_ca.bundle
+      carrier_plist: true
+      supported_sims:
+        - "302220"
+        - "302221"
+        - "302222"
+      profiles:
+        - apple_telus_ca
+      variants_generated: 3
+      status: ready
+    - bundle: Tigo_bo.bundle
+      carrier_plist: true
+      supported_sims:
+        - "73603"
+      profiles:
+        - apple_tigo_bo
+      variants_generated: 1
+      status: ready
+    - bundle: Tigo_cd.bundle
+      carrier_plist: true
+      supported_sims:
+        - "63089"
+      profiles:
+        - apple_tigo_cd
+      variants_generated: 1
+      status: ready
+    - bundle: Tigo_co.bundle
+      carrier_plist: true
+      supported_sims:
+        - "732103"
+        - 732111_ID-895773
+      profiles:
+        - apple_tigo_co
+      variants_generated: 2
+      status: ready
+    - bundle: Tigo_gh.bundle
+      carrier_plist: true
+      supported_sims:
+        - "62003"
+      profiles:
+        - apple_tigo_gh
+      variants_generated: 1
+      status: ready
+    - bundle: Tigo_gt.bundle
+      carrier_plist: true
+      supported_sims:
+        - "70402"
+      profiles:
+        - apple_tigo_gt
+      variants_generated: 1
+      status: ready
+    - bundle: Tigo_hn.bundle
+      carrier_plist: true
+      supported_sims:
+        - "70802"
+      profiles:
+        - apple_tigo_hn
+      variants_generated: 1
+      status: ready
+    - bundle: Tigo_mu.bundle
+      carrier_plist: true
+      supported_sims:
+        - "61710"
+      profiles:
+        - apple_tigo_mu
+      variants_generated: 1
+      status: ready
+    - bundle: Tigo_py.bundle
+      carrier_plist: true
+      supported_sims:
+        - "74404"
+      profiles:
+        - apple_tigo_py
+      variants_generated: 1
+      status: ready
+    - bundle: Tigo_rw.bundle
+      carrier_plist: true
+      supported_sims:
+        - "63513"
+      profiles:
+        - apple_tigo_rw
+      variants_generated: 1
+      status: ready
+    - bundle: Tigo_sn.bundle
+      carrier_plist: true
+      supported_sims:
+        - "60802"
+      profiles:
+        - apple_tigo_sn
+      variants_generated: 1
+      status: ready
+    - bundle: Tigo_sv.bundle
+      carrier_plist: true
+      supported_sims:
+        - "70603"
+      profiles:
+        - apple_tigo_sv
+      variants_generated: 1
+      status: ready
+    - bundle: Tigo_td.bundle
+      carrier_plist: true
+      supported_sims:
+        - "62203"
+      profiles:
+        - apple_tigo_td
+      variants_generated: 1
+      status: ready
+    - bundle: Tigo_tz.bundle
+      carrier_plist: true
+      supported_sims:
+        - "64002"
+      profiles:
+        - apple_tigo_tz
+      variants_generated: 1
+      status: ready
+    - bundle: TimorTelecom_tl.bundle
+      carrier_plist: true
+      supported_sims:
+        - "51402"
+      profiles:
+        - apple_timortelecom_tl
+      variants_generated: 1
+      status: ready
+    - bundle: Transatel.bundle
+      carrier_plist: true
+      supported_sims:
+        - 90137_ID-89882470001
+        - "90137"
+      profiles:
+        - apple_transatel
+      variants_generated: 1
+      status: ready
+    - bundle: TrueH_th.bundle
+      carrier_plist: true
+      supported_sims:
+        - 52000_GID1-01
+        - "52004"
+      profiles:
+        - apple_trueh_th
+      variants_generated: 2
+      status: ready
+    - bundle: Truphone_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 23410_GID1-547275554B3030656E
+        - 45400_GID1-547275554B3030656E
+        - 20408_GID1-547275554B3030656E
+        - 20433_GID1-547275554B3030656E
+        - 20404_GID1-547275554B3030656E
+        - 23425_GID1-547275554B3030656E
+        - 310300_GID1-547275554B3030656E
+        - 45408_GID1-547275554B3030656E
+        - 21427_GID1-547275554B3030656E
+        - 26242_GID1-547275554B3030656E
+        - 26033_GID1-547275554B3030656E
+        - 50538_GID1-547275554B3030656E
+        - 20809_GID1-547275554B3030656E
+        - 20812_GID1-547275554B3030656E
+        - 72455_GID1-547275554B3030656E
+        - 27227_GID1-547275554B3030656E
+      profiles:
+        - apple_truphone_us
+      variants_generated: 16
+      status: ready
+    - bundle: Tuntel_tn.bundle
+      carrier_plist: true
+      supported_sims:
+        - "60502"
+      profiles:
+        - apple_tuntel_tn
+      variants_generated: 1
+      status: ready
+    - bundle: Turkcell_KKTCELL_tr.bundle
+      carrier_plist: true
+      supported_sims:
+        - 28601_GID1-4B4B5443454C4C
+      profiles:
+        - apple_turkcell_kktcell_tr
+      variants_generated: 1
+      status: ready
+    - bundle: Turkcell_lifecell_ua.bundle
+      carrier_plist: true
+      supported_sims:
+        - "25506"
+      profiles:
+        - apple_turkcell_lifecell_ua
+      variants_generated: 1
+      status: ready
+    - bundle: Turkcell_tr.bundle
+      carrier_plist: true
+      supported_sims:
+        - "28601"
+      profiles:
+        - apple_turkcell_tr
+      variants_generated: 1
+      status: ready
+    - bundle: UMobile_my.bundle
+      carrier_plist: true
+      supported_sims:
+        - "50218"
+      profiles:
+        - apple_umobile_my
+      variants_generated: 1
+      status: ready
+    - bundle: USCellular_LTE_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - "311580"
+        - "311589"
+        - 20404_ID-8901580
+        - 20404_ID-8901589
+      profiles:
+        - apple_uscellular_lte_us
+      variants_generated: 3
+      status: ready
+    - bundle: UZTelecom_uz.bundle
+      carrier_plist: true
+      supported_sims:
+        - "43408"
+      profiles:
+        - apple_uztelecom_uz
+      variants_generated: 1
+      status: ready
+    - bundle: Ufone_pk.bundle
+      carrier_plist: true
+      supported_sims:
+        - "41003"
+      profiles:
+        - apple_ufone_pk
+      variants_generated: 1
+      status: ready
+    - bundle: Umniah_jo.bundle
+      carrier_plist: true
+      supported_sims:
+        - "41603"
+      profiles:
+        - apple_umniah_jo
+      variants_generated: 1
+      status: ready
+    - bundle: Unicom_cn.bundle
+      carrier_plist: true
+      supported_sims:
+        - "46001"
+        - "46009"
+      profiles:
+        - apple_unicom_cn
+      variants_generated: 2
+      status: ready
+    - bundle: Unicom_hk.bundle
+      carrier_plist: true
+      supported_sims:
+        - "45407"
+      profiles:
+        - apple_unicom_hk
+      variants_generated: 1
+      status: ready
+    - bundle: UnionWireless_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - "310020"
+      profiles:
+        - apple_unionwireless_us
+      variants_generated: 1
+      status: ready
+    - bundle: UnitedWireless_LTE_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - "311650"
+      profiles:
+        - apple_unitedwireless_lte_us
+      variants_generated: 1
+      status: ready
+    - bundle: Unitel_ao.bundle
+      carrier_plist: true
+      supported_sims:
+        - "63102"
+      profiles:
+        - apple_unitel_ao
+      variants_generated: 1
+      status: ready
+    - bundle: Unitel_la.bundle
+      carrier_plist: true
+      supported_sims:
+        - "45703"
+        - 45204_ID-8945703
+      profiles:
+        - apple_unitel_la
+      variants_generated: 2
+      status: ready
+    - bundle: Unitel_mn.bundle
+      carrier_plist: true
+      supported_sims:
+        - "42888"
+      profiles:
+        - apple_unitel_mn
+      variants_generated: 1
+      status: ready
+    - bundle: Unknown.bundle
+      carrier_plist: true
+      supported_sims: []
+      profiles: []
+      status: no_supported_sims
+    - bundle: Uros.bundle
+      carrier_plist: true
+      supported_sims:
+        - 24042_GID1-C5
+      profiles:
+        - apple_uros
+      variants_generated: 1
+      status: ready
+    - bundle: VOX_lu.bundle
+      carrier_plist: true
+      supported_sims:
+        - "27099"
+      profiles:
+        - apple_vox_lu
+      variants_generated: 1
+      status: ready
+    - bundle: Verizon_Charter_LTE_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 311480_GID2-A7
+        - 20404_GID2-A7_ID-891480
+        - 310599_GID2-A7
+        - 310590_GID2-A7
+      profiles:
+        - apple_verizon_charter_lte_us
+      variants_generated: 4
+      status: ready
+    - bundle: Verizon_Comcast_LTE_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 311480_GID2-A3
+        - 310599_GID2-A3
+        - 310590_GID2-A3
+      profiles:
+        - apple_verizon_comcast_lte_us
+      variants_generated: 3
+      status: ready
+    - bundle: Verizon_Core_Visible_LTE_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 311480_GID2-1C
+        - 310599_GID2-1C
+        - 310590_GID2-1C
+      profiles:
+        - apple_verizon_core_visible_lte_us
+      variants_generated: 3
+      status: ready
+    - bundle: Verizon_Cox_LTE_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 311480_GID2-B100000000000000
+        - 310590_GID2-B100000000000000
+        - 310599_GID2-B100000000000000
+      profiles:
+        - apple_verizon_cox_lte_us
+      variants_generated: 3
+      status: ready
+    - bundle: Verizon_LTE_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - "311480"
+        - 20404_ID-891480
+        - "310599"
+        - "310590"
+      profiles:
+        - apple_verizon_lte_us
+      variants_generated: 4
+      status: ready
+    - bundle: Verizon_Response_LTE_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 20404_GID2-1B_ID-891480
+        - 311480_GID2-1B
+        - 310599_GID2-1B
+        - 310590_GID2-1B
+      profiles:
+        - apple_verizon_response_lte_us
+      variants_generated: 4
+      status: ready
+    - bundle: Verizon_TFW_LTE_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 311480_GID2-A1
+        - 310599_GID2-A1
+        - 310590_GID2-A1
+      profiles:
+        - apple_verizon_tfw_lte_us
+      variants_generated: 3
+      status: ready
+    - bundle: Verizon_Ting_LTE_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 311480_GID2-A9
+        - 20404_GID2-A9_ID-891480
+      profiles:
+        - apple_verizon_ting_lte_us
+      variants_generated: 2
+      status: ready
+    - bundle: Verizon_Visible_LTE_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 311480_GID2-1A
+        - 20404_GID2-1A_ID-891480
+      profiles:
+        - apple_verizon_visible_lte_us
+      variants_generated: 2
+      status: ready
+    - bundle: Viaero_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - 310450_ID-8901450
+      profiles:
+        - apple_viaero_us
+      variants_generated: 1
+      status: ready
+    - bundle: Vibo_tw.bundle
+      carrier_plist: true
+      supported_sims:
+        - "46689"
+        - "46690"
+        - "466891"
+      profiles:
+        - apple_vibo_tw
+      variants_generated: 3
+      status: ready
+    - bundle: Videotron_Fizz_ca.bundle
+      carrier_plist: true
+      supported_sims:
+        - 302500_GID1-55
+      profiles:
+        - apple_videotron_fizz_ca
+      variants_generated: 1
+      status: ready
+    - bundle: Videotron_ca.bundle
+      carrier_plist: true
+      supported_sims:
+        - "302500"
+        - 20404_ID-89302500
+      profiles:
+        - apple_videotron_ca
+      variants_generated: 2
+      status: ready
+    - bundle: Viettel_vn.bundle
+      carrier_plist: true
+      supported_sims:
+        - "45204"
+      profiles:
+        - apple_viettel_vn
+      variants_generated: 1
+      status: ready
+    - bundle: VimpelCom_Izi_kg.bundle
+      carrier_plist: true
+      supported_sims:
+        - 43701_ID-89996772888
+      profiles:
+        - apple_vimpelcom_izi_kg
+      variants_generated: 1
+      status: ready
+    - bundle: VimpelCom_Izi_kz.bundle
+      carrier_plist: true
+      supported_sims:
+        - 40101_ID-89997015608
+      profiles:
+        - apple_vimpelcom_izi_kz
+      variants_generated: 1
+      status: ready
+    - bundle: VimpelCom_am.bundle
+      carrier_plist: true
+      supported_sims:
+        - "28301"
+      profiles:
+        - apple_vimpelcom_am
+      variants_generated: 1
+      status: ready
+    - bundle: VimpelCom_ge.bundle
+      carrier_plist: true
+      supported_sims:
+        - "28204"
+      profiles:
+        - apple_vimpelcom_ge
+      variants_generated: 1
+      status: ready
+    - bundle: VimpelCom_kg.bundle
+      carrier_plist: true
+      supported_sims:
+        - "43701"
+      profiles:
+        - apple_vimpelcom_kg
+      variants_generated: 1
+      status: ready
+    - bundle: VimpelCom_kz.bundle
+      carrier_plist: true
+      supported_sims:
+        - "40101"
+      profiles:
+        - apple_vimpelcom_kz
+      variants_generated: 1
+      status: ready
+    - bundle: VimpelCom_ru.bundle
+      carrier_plist: true
+      supported_sims:
+        - "25099"
+      profiles:
+        - apple_vimpelcom_ru
+      variants_generated: 1
+      status: ready
+    - bundle: VimpelCom_tj.bundle
+      carrier_plist: true
+      supported_sims:
+        - "43605"
+      profiles:
+        - apple_vimpelcom_tj
+      variants_generated: 1
+      status: ready
+    - bundle: VimpelCom_uz.bundle
+      carrier_plist: true
+      supported_sims:
+        - "43404"
+      profiles:
+        - apple_vimpelcom_uz
+      variants_generated: 1
+      status: ready
+    - bundle: VinaPhone_vn.bundle
+      carrier_plist: true
+      supported_sims:
+        - "45202"
+      profiles:
+        - apple_vinaphone_vn
+      variants_generated: 1
+      status: ready
+    - bundle: Vini_pf.bundle
+      carrier_plist: true
+      supported_sims:
+        - "54720"
+      profiles:
+        - apple_vini_pf
+      variants_generated: 1
+      status: ready
+    - bundle: Viva_bh.bundle
+      carrier_plist: true
+      supported_sims:
+        - "42604"
+        - 42001_ID-8997304
+      profiles:
+        - apple_viva_bh
+      variants_generated: 2
+      status: ready
+    - bundle: Viva_kw.bundle
+      carrier_plist: true
+      supported_sims:
+        - "41904"
+      profiles:
+        - apple_viva_kw
+      variants_generated: 1
+      status: ready
+    - bundle: Vivacom_bg.bundle
+      carrier_plist: true
+      supported_sims:
+        - "28403"
+      profiles:
+        - apple_vivacom_bg
+      variants_generated: 1
+      status: ready
+    - bundle: Vodafone_1and1_de.bundle
+      carrier_plist: true
+      supported_sims:
+        - 26202_GID1-11
+      profiles:
+        - apple_vodafone_1and1_de
+      variants_generated: 1
+      status: ready
+    - bundle: Vodafone_Ho_it.bundle
+      carrier_plist: true
+      supported_sims:
+        - 22210_GID1-20
+      profiles:
+        - apple_vodafone_ho_it
+      variants_generated: 1
+      status: ready
+    - bundle: Vodafone_Lebara_au.bundle
+      carrier_plist: true
+      supported_sims:
+        - 50503_GID1-01
+      profiles:
+        - apple_vodafone_lebara_au
+      variants_generated: 1
+      status: ready
+    - bundle: Vodafone_Lowi_es.bundle
+      carrier_plist: true
+      supported_sims:
+        - 21406_ID-89345710
+        - 21406_ID-89345712
+      profiles:
+        - apple_vodafone_lowi_es
+      variants_generated: 1
+      status: ready
+    - bundle: Vodafone_al.bundle
+      carrier_plist: true
+      supported_sims:
+        - "27602"
+      profiles:
+        - apple_vodafone_al
+      variants_generated: 1
+      status: ready
+    - bundle: Vodafone_au.bundle
+      carrier_plist: true
+      supported_sims:
+        - "50503"
+      profiles:
+        - apple_vodafone_au
+      variants_generated: 1
+      status: ready
+    - bundle: Vodafone_cd.bundle
+      carrier_plist: true
+      supported_sims:
+        - "63001"
+      profiles:
+        - apple_vodafone_cd
+      variants_generated: 1
+      status: ready
+    - bundle: Vodafone_cz.bundle
+      carrier_plist: true
+      supported_sims:
+        - "23003"
+      profiles:
+        - apple_vodafone_cz
+      variants_generated: 1
+      status: ready
+    - bundle: Vodafone_de.bundle
+      carrier_plist: true
+      supported_sims:
+        - "26202"
+      profiles:
+        - apple_vodafone_de
+      variants_generated: 1
+      status: ready
+    - bundle: Vodafone_eg.bundle
+      carrier_plist: true
+      supported_sims:
+        - "60202"
+      profiles:
+        - apple_vodafone_eg
+      variants_generated: 1
+      status: ready
+    - bundle: Vodafone_es.bundle
+      carrier_plist: true
+      supported_sims:
+        - "21401"
+      profiles:
+        - apple_vodafone_es
+      variants_generated: 1
+      status: ready
+    - bundle: Vodafone_fj.bundle
+      carrier_plist: true
+      supported_sims:
+        - "54201"
+      profiles:
+        - apple_vodafone_fj
+      variants_generated: 1
+      status: ready
+    - bundle: Vodafone_gr.bundle
+      carrier_plist: true
+      supported_sims:
+        - "20205"
+      profiles:
+        - apple_vodafone_gr
+      variants_generated: 1
+      status: ready
+    - bundle: Vodafone_hu.bundle
+      carrier_plist: true
+      supported_sims:
+        - "21670"
+      profiles:
+        - apple_vodafone_hu
+      variants_generated: 1
+      status: ready
+    - bundle: Vodafone_ie.bundle
+      carrier_plist: true
+      supported_sims:
+        - 27201_GID1-FF
+      profiles:
+        - apple_vodafone_ie
+      variants_generated: 1
+      status: ready
+    - bundle: Vodafone_in.bundle
+      carrier_plist: true
+      supported_sims:
+        - "40427"
+        - "40446"
+        - "40443"
+        - "40460"
+        - "40401"
+        - "40415"
+        - "40430"
+        - "40405"
+        - "40420"
+        - "40411"
+        - "40413"
+        - "40484"
+        - "40486"
+        - "40567"
+        - "40566"
+        - "40488"
+        - "405750"
+        - "405751"
+        - "405752"
+        - "405753"
+        - "405754"
+        - "405755"
+        - "405756"
+      profiles:
+        - apple_vodafone_in
+      variants_generated: 23
+      status: ready
+    - bundle: Vodafone_is.bundle
+      carrier_plist: true
+      supported_sims:
+        - "27402"
+      profiles:
+        - apple_vodafone_is
+      variants_generated: 1
+      status: ready
+    - bundle: Vodafone_it.bundle
+      carrier_plist: true
+      supported_sims:
+        - "22210"
+      profiles:
+        - apple_vodafone_it
+      variants_generated: 1
+      status: ready
+    - bundle: Vodafone_ki.bundle
+      carrier_plist: true
+      supported_sims:
+        - "54501"
+      profiles:
+        - apple_vodafone_ki
+      variants_generated: 1
+      status: ready
+    - bundle: Vodafone_ls.bundle
+      carrier_plist: true
+      supported_sims:
+        - "65101"
+      profiles:
+        - apple_vodafone_ls
+      variants_generated: 1
+      status: ready
+    - bundle: Vodafone_mt.bundle
+      carrier_plist: true
+      supported_sims:
+        - "27801"
+      profiles:
+        - apple_vodafone_mt
+      variants_generated: 1
+      status: ready
+    - bundle: Vodafone_mz.bundle
+      carrier_plist: true
+      supported_sims:
+        - "64304"
+      profiles:
+        - apple_vodafone_mz
+      variants_generated: 1
+      status: ready
+    - bundle: Vodafone_nl.bundle
+      carrier_plist: true
+      supported_sims:
+        - "20404"
+        - 26202_ID-893144
+      profiles:
+        - apple_vodafone_nl
+      variants_generated: 2
+      status: ready
+    - bundle: Vodafone_nz.bundle
+      carrier_plist: true
+      supported_sims:
+        - "53001"
+      profiles:
+        - apple_vodafone_nz
+      variants_generated: 1
+      status: ready
+    - bundle: Vodafone_om.bundle
+      carrier_plist: true
+      supported_sims:
+        - "42206"
+      profiles:
+        - apple_vodafone_om
+      variants_generated: 1
+      status: ready
+    - bundle: Vodafone_pt.bundle
+      carrier_plist: true
+      supported_sims:
+        - "26801"
+      profiles:
+        - apple_vodafone_pt
+      variants_generated: 1
+      status: ready
+    - bundle: Vodafone_qa.bundle
+      carrier_plist: true
+      supported_sims:
+        - "42702"
+        - 20404_ID-8942702
+      profiles:
+        - apple_vodafone_qa
+      variants_generated: 2
+      status: ready
+    - bundle: Vodafone_ro.bundle
+      carrier_plist: true
+      supported_sims:
+        - "22601"
+      profiles:
+        - apple_vodafone_ro
+      variants_generated: 1
+      status: ready
+    - bundle: Vodafone_tr.bundle
+      carrier_plist: true
+      supported_sims:
+        - "28602"
+      profiles:
+        - apple_vodafone_tr
+      variants_generated: 1
+      status: ready
+    - bundle: Vodafone_tz.bundle
+      carrier_plist: true
+      supported_sims:
+        - "64004"
+      profiles:
+        - apple_vodafone_tz
+      variants_generated: 1
+      status: ready
+    - bundle: Vodafone_uk.bundle
+      carrier_plist: true
+      supported_sims:
+        - "23415"
+      profiles:
+        - apple_vodafone_uk
+      variants_generated: 1
+      status: ready
+    - bundle: Vodafone_za.bundle
+      carrier_plist: true
+      supported_sims:
+        - "65501"
+      profiles:
+        - apple_vodafone_za
+      variants_generated: 1
+      status: ready
+    - bundle: WOM_co.bundle
+      carrier_plist: true
+      supported_sims:
+        - 302220_ID-8957360
+        - "732360"
+      profiles:
+        - apple_wom_co
+      variants_generated: 2
+      status: ready
+    - bundle: Warid_pk.bundle
+      carrier_plist: true
+      supported_sims:
+        - "41007"
+      profiles:
+        - apple_warid_pk
+      variants_generated: 1
+      status: ready
+    - bundle: Webbing.bundle
+      carrier_plist: true
+      supported_sims:
+        - 72418_ID-8985235
+        - 20404_ID-8985235
+        - 45435_ID-8985235
+        - 42402_ID-8985235
+        - 45412_ID-8985235
+        - 45403_ID-8985235
+        - 20801_ID-8985235
+        - 24007_ID-8985235
+        - 42501_ID-8985235
+        - 45400_ID-8985235
+        - 311588_ID-8985235
+        - 90101_ID-8985235
+        - 90131_ID-8985235
+        - 22201_ID-8985235
+        - 26006_ID-8985235
+        - 42504_ID-8985235
+      profiles:
+        - apple_webbing
+      variants_generated: 16
+      status: ready
+    - bundle: Wind_Very_it.bundle
+      carrier_plist: true
+      supported_sims:
+        - 22299_GID1-0000000099
+        - 22288_GID1-0000000099
+      profiles:
+        - apple_wind_very_it
+      variants_generated: 2
+      status: ready
+    - bundle: Wind_gr.bundle
+      carrier_plist: true
+      supported_sims:
+        - "20210"
+      profiles:
+        - apple_wind_gr
+      variants_generated: 1
+      status: ready
+    - bundle: Wonet.bundle
+      carrier_plist: true
+      supported_sims:
+        - 90137_GID1-CC11
+      profiles:
+        - apple_wonet
+      variants_generated: 1
+      status: ready
+    - bundle: XL_id.bundle
+      carrier_plist: true
+      supported_sims:
+        - "51011"
+      profiles:
+        - apple_xl_id
+      variants_generated: 1
+      status: ready
+    - bundle: Xplornet_ca.bundle
+      carrier_plist: true
+      supported_sims:
+        - "302130"
+        - 20404_ID-89302130
+      profiles:
+        - apple_xplornet_ca
+      variants_generated: 2
+      status: ready
+    - bundle: Yes_my.bundle
+      carrier_plist: true
+      supported_sims:
+        - 52505_ID-8960152
+        - "502152"
+      profiles:
+        - apple_yes_my
+      variants_generated: 2
+      status: ready
+    - bundle: Yoigo_Masmovil_es.bundle
+      carrier_plist: true
+      supported_sims:
+        - 21404_ID-89340414
+        - 21404_ID-89340424
+        - 21404_ID-89340434
+        - 21404_ID-89340452
+        - 21404_ID-89340462
+        - 21404_ID-89340432
+        - 21404_ID-89340471
+        - 21404_ID-89340475
+      profiles:
+        - apple_yoigo_masmovil_es
+      variants_generated: 1
+      status: ready
+    - bundle: Yoigo_Pepephone_es.bundle
+      carrier_plist: true
+      supported_sims:
+        - 21404_ID-89340419
+        - 21404_ID-89340429
+        - 21404_ID-89340439
+        - 21404_ID-89340474
+      profiles:
+        - apple_yoigo_pepephone_es
+      variants_generated: 1
+      status: ready
+    - bundle: Yoigo_es.bundle
+      carrier_plist: true
+      supported_sims:
+        - "21404"
+      profiles:
+        - apple_yoigo_es
+      variants_generated: 1
+      status: ready
+    - bundle: Zain_SalamMobile_sa.bundle
+      carrier_plist: true
+      supported_sims:
+        - "42009"
+      profiles:
+        - apple_zain_salammobile_sa
+      variants_generated: 1
+      status: ready
+    - bundle: Zain_bh.bundle
+      carrier_plist: true
+      supported_sims:
+        - "42602"
+      profiles:
+        - apple_zain_bh
+      variants_generated: 1
+      status: ready
+    - bundle: Zain_iq.bundle
+      carrier_plist: true
+      supported_sims:
+        - "41820"
+        - "41830"
+      profiles:
+        - apple_zain_iq
+      variants_generated: 2
+      status: ready
+    - bundle: Zain_jo.bundle
+      carrier_plist: true
+      supported_sims:
+        - "41601"
+      profiles:
+        - apple_zain_jo
+      variants_generated: 1
+      status: ready
+    - bundle: Zain_kw.bundle
+      carrier_plist: true
+      supported_sims:
+        - "41902"
+      profiles:
+        - apple_zain_kw
+      variants_generated: 1
+      status: ready
+    - bundle: Zain_lb.bundle
+      carrier_plist: true
+      supported_sims:
+        - "41503"
+      profiles:
+        - apple_zain_lb
+      variants_generated: 1
+      status: ready
+    - bundle: Zain_sa.bundle
+      carrier_plist: true
+      supported_sims:
+        - "42004"
+      profiles:
+        - apple_zain_sa
+      variants_generated: 1
+      status: ready
+    - bundle: Zeop_re.bundle
+      carrier_plist: true
+      supported_sims:
+        - "64704"
+        - 20801_ID-892620497
+      profiles:
+        - apple_zeop_re
+      variants_generated: 2
+      status: ready
+    - bundle: Zong_pk.bundle
+      carrier_plist: true
+      supported_sims:
+        - "41004"
+      profiles:
+        - apple_zong_pk
+      variants_generated: 1
+      status: ready
+    - bundle: bMobile_pg.bundle
+      carrier_plist: true
+      supported_sims:
+        - "53701"
+      profiles:
+        - apple_bmobile_pg
+      variants_generated: 1
+      status: ready
+    - bundle: bMobile_sb.bundle
+      carrier_plist: true
+      supported_sims:
+        - "54002"
+      profiles:
+        - apple_bmobile_sb
+      variants_generated: 1
+      status: ready
+    - bundle: dtac_th.bundle
+      carrier_plist: true
+      supported_sims:
+        - "52018"
+        - "52005"
+      profiles:
+        - apple_dtac_th
+      variants_generated: 2
+      status: ready
+    - bundle: du_Virgin_ae.bundle
+      carrier_plist: true
+      supported_sims:
+        - 42403_ID-89971031010
+      profiles:
+        - apple_du_virgin_ae
+      variants_generated: 1
+      status: ready
+    - bundle: du_ae.bundle
+      carrier_plist: true
+      supported_sims:
+        - "42403"
+      profiles:
+        - apple_du_ae
+      variants_generated: 1
+      status: ready
+    - bundle: eSIMGO.bundle
+      carrier_plist: true
+      supported_sims:
+        - 23210_GID1-0409
+        - 20601_GID1-0409
+        - 20628_GID1-0409
+        - 23457_GID1-0409
+        - 27225_GID1-0409
+        - 20809_GID1-0409
+        - 26050_GID1-0409
+      profiles:
+        - apple_esimgo
+      variants_generated: 7
+      status: ready
+    - bundle: elisa_fi.bundle
+      carrier_plist: true
+      supported_sims:
+        - "24405"
+      profiles:
+        - apple_elisa_fi
+      variants_generated: 1
+      status: ready
+    - bundle: iWireless_US.bundle
+      carrier_plist: true
+      supported_sims:
+        - "310770"
+        - 20404_ID-890177
+      profiles:
+        - apple_iwireless_us
+      variants_generated: 2
+      status: ready
+    - bundle: iusacell_Unefon_mx.bundle
+      carrier_plist: true
+      supported_sims:
+        - 33405_GID2-FFFFFF55
+        - 334050_GID2-FFFFFF55
+        - 22201_GID2-FFFFFF55_ID-8952050
+      profiles:
+        - apple_iusacell_unefon_mx
+      variants_generated: 3
+      status: ready
+    - bundle: iusacell_WIM_mx.bundle
+      carrier_plist: true
+      supported_sims:
+        - 334050_GID1-4F4E45
+      profiles:
+        - apple_iusacell_wim_mx
+      variants_generated: 1
+      status: ready
+    - bundle: iusacell_mx.bundle
+      carrier_plist: true
+      supported_sims:
+        - "33405"
+        - "334050"
+        - 22201_ID-8952050
+      profiles:
+        - apple_iusacell_mx
+      variants_generated: 3
+      status: ready
+    - bundle: life_by.bundle
+      carrier_plist: true
+      supported_sims:
+        - "25704"
+      profiles:
+        - apple_life_by
+      variants_generated: 1
+      status: ready
+    - bundle: mcel_mz.bundle
+      carrier_plist: true
+      supported_sims:
+        - "64301"
+      profiles:
+        - apple_mcel_mz
+      variants_generated: 1
+      status: ready
+    - bundle: mobilkom_at.bundle
+      carrier_plist: true
+      supported_sims:
+        - "23201"
+        - "23202"
+        - "23211"
+        - "23212"
+      profiles:
+        - apple_mobilkom_at
+      variants_generated: 4
+      status: ready
+    - bundle: mobilkom_bg.bundle
+      carrier_plist: true
+      supported_sims:
+        - "28401"
+      profiles:
+        - apple_mobilkom_bg
+      variants_generated: 1
+      status: ready
+    - bundle: mobilkom_by.bundle
+      carrier_plist: true
+      supported_sims:
+        - "25701"
+      profiles:
+        - apple_mobilkom_by
+      variants_generated: 1
+      status: ready
+    - bundle: mobilkom_hr.bundle
+      carrier_plist: true
+      supported_sims:
+        - "21910"
+      profiles:
+        - apple_mobilkom_hr
+      variants_generated: 1
+      status: ready
+    - bundle: mobilkom_mk.bundle
+      carrier_plist: true
+      supported_sims:
+        - "29403"
+      profiles:
+        - apple_mobilkom_mk
+      variants_generated: 1
+      status: ready
+    - bundle: mobilkom_rs.bundle
+      carrier_plist: true
+      supported_sims:
+        - "22005"
+      profiles:
+        - apple_mobilkom_rs
+      variants_generated: 1
+      status: ready
+    - bundle: mobilkom_si.bundle
+      carrier_plist: true
+      supported_sims:
+        - "29340"
+      profiles:
+        - apple_mobilkom_si
+      variants_generated: 1
+      status: ready
+    - bundle: mobily_sa.bundle
+      carrier_plist: true
+      supported_sims:
+        - "42003"
+      profiles:
+        - apple_mobily_sa
+      variants_generated: 1
+      status: ready
+    - bundle: mobinil_eg.bundle
+      carrier_plist: true
+      supported_sims:
+        - "60201"
+      profiles:
+        - apple_mobinil_eg
+      variants_generated: 1
+      status: ready
+    - bundle: movistar_ar.bundle
+      carrier_plist: true
+      supported_sims:
+        - "72207"
+        - "722070"
+        - 21407_ID-895407
+      profiles:
+        - apple_movistar_ar
+      variants_generated: 3
+      status: ready
+    - bundle: movistar_cl.bundle
+      carrier_plist: true
+      supported_sims:
+        - "73002"
+        - 21407_ID-895602
+      profiles:
+        - apple_movistar_cl
+      variants_generated: 2
+      status: ready
+    - bundle: movistar_co.bundle
+      carrier_plist: true
+      supported_sims:
+        - "732123"
+        - 21407_ID-8957123
+      profiles:
+        - apple_movistar_co
+      variants_generated: 2
+      status: ready
+    - bundle: movistar_cr.bundle
+      carrier_plist: true
+      supported_sims:
+        - "71204"
+      profiles:
+        - apple_movistar_cr
+      variants_generated: 1
+      status: ready
+    - bundle: movistar_ec.bundle
+      carrier_plist: true
+      supported_sims:
+        - "74000"
+        - 21407_ID-8959300
+        - 21402_ID-8959300
+      profiles:
+        - apple_movistar_ec
+      variants_generated: 3
+      status: ready
+    - bundle: movistar_gt.bundle
+      carrier_plist: true
+      supported_sims:
+        - "70403"
+        - 21407_ID-89502030
+      profiles:
+        - apple_movistar_gt
+      variants_generated: 2
+      status: ready
+    - bundle: movistar_mx.bundle
+      carrier_plist: true
+      supported_sims:
+        - "33403"
+      profiles:
+        - apple_movistar_mx
+      variants_generated: 1
+      status: ready
+    - bundle: movistar_ni.bundle
+      carrier_plist: true
+      supported_sims:
+        - "71030"
+        - "710300"
+        - 21407_ID-8950530
+      profiles:
+        - apple_movistar_ni
+      variants_generated: 3
+      status: ready
+    - bundle: movistar_pa.bundle
+      carrier_plist: true
+      supported_sims:
+        - "71402"
+        - "71420"
+        - 21407_ID-8950702
+      profiles:
+        - apple_movistar_pa
+      variants_generated: 3
+      status: ready
+    - bundle: movistar_pe.bundle
+      carrier_plist: true
+      supported_sims:
+        - "71606"
+        - 21407_ID-895106
+      profiles:
+        - apple_movistar_pe
+      variants_generated: 2
+      status: ready
+    - bundle: movistar_sv.bundle
+      carrier_plist: true
+      supported_sims:
+        - "70604"
+        - 21407_ID-89503040
+      profiles:
+        - apple_movistar_sv
+      variants_generated: 2
+      status: ready
+    - bundle: movistar_uy.bundle
+      carrier_plist: true
+      supported_sims:
+        - "74807"
+        - 21407_ID-8959807
+      profiles:
+        - apple_movistar_uy
+      variants_generated: 2
+      status: ready
+    - bundle: vivo_br.bundle
+      carrier_plist: true
+      supported_sims:
+        - "72406"
+        - "72410"
+        - "72411"
+        - "72423"
+        - 21407_ID-895506
+        - 21407_ID-895510
+        - 21407_ID-895511
+        - 21407_ID-895523
+        - 21402_ID-895506
+        - 21402_ID-895510
+        - 21402_ID-895511
+        - 21402_ID-895523
+      profiles:
+        - apple_vivo_br
+      variants_generated: 6
+      status: ready
+    - bundle: vtr_cl.bundle
+      carrier_plist: true
+      supported_sims:
+        - "73008"
+        - 302370_ID-8956080
+        - 20601_ID-8956080
+      profiles:
+        - apple_vtr_cl
+      variants_generated: 3
+      status: ready

@@ -1,0 +1,8 @@
+version: 2
+plmn: "45010"
+profiles:
+    - id: apple_lgu_kr
+      path: profiles/lgu_kr.yaml
+      generic: true
+      selectors:
+        - raw: "45010"

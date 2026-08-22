@@ -1,0 +1,8 @@
+version: 2
+plmn: "21902"
+profiles:
+    - id: apple_telemach_hr
+      path: profiles/telemach_hr.yaml
+      generic: true
+      selectors:
+        - raw: "21902"

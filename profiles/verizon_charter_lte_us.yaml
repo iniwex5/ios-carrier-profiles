@@ -1,0 +1,62 @@
+version: 3
+kind: carrier_bundle
+id: apple_verizon_charter_lte_us
+bundle: Verizon_Charter_LTE_US.bundle
+supported_plmns:
+    - "20404"
+    - "310590"
+    - "310599"
+    - "311480"
+common:
+    apple:
+        carrier_entitlements:
+            supported_entitlements: 42137
+    entitlement:
+        entitlement_url: https://spc.myvzw.com/ium-RoadrunnerInterface/servlet/IUMServlet
+    ims:
+        epdg:
+            address: wo.vzwwo.com
+        ike:
+            child_sa:
+                lifetime_seconds: 86400
+                proposals:
+                    - encryption:
+                        - aes256
+                      integrity:
+                        - sha256
+                      pfs_group: modp2048
+                      lifetime_seconds: 86400
+            dpd:
+                enabled: false
+                interval_seconds: 600
+            local_identifier: 0$impi_user@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+            proposals:
+                - encryption:
+                    - aes256
+                  integrity:
+                    - sha256
+                  prf:
+                    - sha256
+                  dh_groups:
+                    - modp2048
+                  lifetime_seconds: 80000
+                  authentication_method: None
+                  eap_method: EAP-AKA
+            sa_lifetime_seconds: 80000
+        media:
+            rtcp_inactivity_seconds: 20
+            rtcp_interval_seconds: 5
+            rtp_inactivity_seconds: 20
+        signaling:
+            contact:
+                additional_contact_params:
+                    - selector: REGISTER:*
+                      params: []
+            csfb_on:
+                - method: INVITE
+                  statuses:
+                    - "503"
+            preconditions: unsupported
+            support_p_early_media: true
+        volte:
+            enable_volte_by_default: true

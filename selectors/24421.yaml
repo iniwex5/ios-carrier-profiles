@@ -1,0 +1,8 @@
+version: 2
+plmn: "24421"
+profiles:
+    - id: apple_saunalahti_fi
+      path: profiles/saunalahti_fi.yaml
+      generic: true
+      selectors:
+        - raw: "24421"

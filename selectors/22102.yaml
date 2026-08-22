@@ -1,0 +1,8 @@
+version: 2
+plmn: "22102"
+profiles:
+    - id: apple_telekomslovenije_xk
+      path: profiles/telekomslovenije_xk.yaml
+      generic: true
+      selectors:
+        - raw: "22102"

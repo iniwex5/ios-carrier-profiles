@@ -1,0 +1,8 @@
+version: 2
+plmn: "312290"
+profiles:
+    - id: apple_stratanetwork_lte_us
+      path: profiles/stratanetwork_lte_us.yaml
+      generic: true
+      selectors:
+        - raw: "312290"

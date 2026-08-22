@@ -1,0 +1,8 @@
+version: 2
+plmn: "43601"
+profiles:
+    - id: apple_telia_tj
+      path: profiles/telia_tj.yaml
+      generic: true
+      selectors:
+        - raw: "43601"

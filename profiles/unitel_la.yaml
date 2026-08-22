@@ -1,0 +1,11 @@
+version: 3
+kind: carrier_bundle
+id: apple_unitel_la
+bundle: Unitel_la.bundle
+supported_plmns:
+    - "45204"
+    - "45703"
+common:
+    ims:
+        ussi:
+            enabled: true

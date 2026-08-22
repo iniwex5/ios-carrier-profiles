@@ -1,0 +1,8 @@
+version: 3
+kind: carrier_bundle
+id: apple_free_yt
+bundle: Free_yt.bundle
+supported_plmns:
+    - "20601"
+    - "64702"
+common: {}

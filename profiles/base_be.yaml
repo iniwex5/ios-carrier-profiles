@@ -1,0 +1,51 @@
+version: 3
+kind: carrier_bundle
+id: apple_base_be
+bundle: BASE_be.bundle
+supported_plmns:
+    - "20620"
+common: {}
+plmn_overrides:
+    "20620":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 4194304
+        entitlement:
+            entitlement_url: https://api.prd.telenet.be/es/ios
+        ims:
+            apn: ims
+            ip_stack: ipv6
+            epdg:
+                address: epdg.telco.telenet-ops.be
+            ike:
+                nat_keepalive_enabled: true
+                nat_keepalive_seconds: 20
+                dpd:
+                    enabled: false
+                    interval_seconds: 600
+                local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                sa_lifetime_seconds: 80000
+            register:
+                use_ipsec: true
+                include_cellular_network_info: true
+            signaling:
+                preconditions: supported
+                support_p_early_media: true
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - 3XX
+                        - 4XX
+                        - 5XX
+                        - 6XX
+                contact:
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            media:
+                rtcp_interval_seconds: 5
+            volte:
+                enable_volte_by_default: true

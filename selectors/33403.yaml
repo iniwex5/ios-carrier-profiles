@@ -1,0 +1,8 @@
+version: 2
+plmn: "33403"
+profiles:
+    - id: apple_movistar_mx
+      path: profiles/movistar_mx.yaml
+      generic: true
+      selectors:
+        - raw: "33403"

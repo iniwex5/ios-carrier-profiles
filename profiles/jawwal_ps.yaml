@@ -1,0 +1,7 @@
+version: 3
+kind: carrier_bundle
+id: apple_jawwal_ps
+bundle: Jawwal_ps.bundle
+supported_plmns:
+    - "42505"
+common: {}

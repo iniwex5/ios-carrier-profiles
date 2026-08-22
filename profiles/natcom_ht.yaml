@@ -1,0 +1,8 @@
+version: 3
+kind: carrier_bundle
+id: apple_natcom_ht
+bundle: Natcom_ht.bundle
+supported_plmns:
+    - "37203"
+    - "45204"
+common: {}

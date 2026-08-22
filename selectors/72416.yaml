@@ -1,0 +1,8 @@
+version: 2
+plmn: "72416"
+profiles:
+    - id: apple_oi_brt_br
+      path: profiles/oi_brt_br.yaml
+      generic: true
+      selectors:
+        - raw: "72416"

@@ -1,0 +1,8 @@
+version: 2
+plmn: "24414"
+profiles:
+    - id: apple_alcom_ax
+      path: profiles/alcom_ax.yaml
+      generic: true
+      selectors:
+        - raw: "24414"

@@ -1,0 +1,46 @@
+version: 3
+kind: carrier_bundle
+id: apple_mobistar_be
+bundle: Mobistar_be.bundle
+supported_plmns:
+    - "20610"
+common: {}
+plmn_overrides:
+    "20610":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 4202705
+        entitlement:
+            entitlement_url: https://aes.orange.be:443/ium-OEMInterface/servlet/IUMServlet
+        ims:
+            apn: ims
+            ike:
+                nat_keepalive_enabled: true
+                nat_keepalive_seconds: 20
+                dpd:
+                    enabled: false
+                    interval_seconds: 600
+                local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                sa_lifetime_seconds: 80000
+            register:
+                use_ipsec: true
+            signaling:
+                preconditions: supported
+                support_p_early_media: true
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - "403"
+                        - "408"
+                        - 5XX
+                contact:
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+            media:
+                rtp_inactivity_seconds: 20
+                rtcp_interval_seconds: 5
+            volte:
+                enable_volte_by_default: true

@@ -1,0 +1,42 @@
+version: 3
+kind: carrier_bundle
+id: apple_qtel_qa
+bundle: Qtel_qa.bundle
+supported_plmns:
+    - "42701"
+common: {}
+plmn_overrides:
+    "42701":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 31745
+        entitlement:
+            entitlement_url: https://es.ooredoo.qa:8443/
+        ims:
+            apn: ims
+            ip_stack: ipv6
+            register:
+                use_ipsec: true
+            signaling:
+                max_udp_message_size: 5000
+                preconditions: supported
+                support_p_early_media: true
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - 3XX
+                        - 5XX
+                        - 6XX
+                contact:
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            media:
+                rtp_inactivity_seconds: 15
+            ussi:
+                enabled: true
+            volte:
+                enable_volte_by_default: true

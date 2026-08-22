@@ -1,0 +1,8 @@
+version: 2
+plmn: "37002"
+profiles:
+    - id: apple_claro_do
+      path: profiles/claro_do.yaml
+      generic: true
+      selectors:
+        - raw: "37002"

@@ -1,0 +1,8 @@
+version: 2
+plmn: "47003"
+profiles:
+    - id: apple_banglalink_bd
+      path: profiles/banglalink_bd.yaml
+      generic: true
+      selectors:
+        - raw: "47003"

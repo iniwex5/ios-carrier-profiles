@@ -1,0 +1,13 @@
+version: 3
+kind: carrier_bundle
+id: apple_dish_ting_us
+bundle: Dish_Ting_US.bundle
+supported_plmns:
+    - "310240"
+    - "310260"
+common:
+    apple:
+        carrier_entitlements:
+            supported_entitlements: 409
+    entitlement:
+        entitlement_url: https://eas3.msg.t-mobile.com

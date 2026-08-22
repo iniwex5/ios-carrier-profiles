@@ -1,0 +1,16 @@
+version: 2
+plmn: "312480"
+profiles:
+    - id: apple_nemont_lte_us
+      path: profiles/nemont_lte_us.yaml
+      generic: true
+      selectors:
+        - raw: "312480"
+    - id: apple_nemontwireless_lte_us
+      path: profiles/nemontwireless_lte_us.yaml
+      selectors:
+        - raw: 312480_GID2-CA000000000004C4A0FF
+          conditions:
+            - field: gid2
+              match: prefix
+              value: CA000000000004C4A0FF

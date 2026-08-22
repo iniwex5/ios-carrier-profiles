@@ -1,0 +1,44 @@
+version: 3
+kind: carrier_bundle
+id: apple_ice_no
+bundle: Ice_no.bundle
+supported_plmns:
+    - "20404"
+    - "24214"
+common:
+    ims:
+        apn: ims
+        ike:
+            child_sa:
+                lifetime_seconds: 86400
+                proposals:
+                    - encryption:
+                        - aes256
+                      integrity:
+                        - sha256
+                      pfs_group: modp2048
+                      lifetime_seconds: 86400
+            nat_keepalive_enabled: true
+            sa_lifetime_seconds: 86400
+        ip_stack: ipv6
+        media:
+            rtp_inactivity_seconds: 20
+        register:
+            include_cellular_network_info: true
+            use_ipsec: true
+        signaling:
+            contact:
+                always_add_sip_instance: true
+            csfb_on:
+                - method: INVITE
+                  statuses:
+                    - 3XX
+            preconditions: supported
+            support_p_early_media: true
+        volte:
+            enable_volte_by_default: true
+plmn_overrides:
+    "20404":
+        ims:
+            epdg:
+                address: epdg.epc.mnc014.mcc242.pub.3gppnetwork.org

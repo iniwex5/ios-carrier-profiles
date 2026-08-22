@@ -1,0 +1,16 @@
+version: 2
+plmn: "23420"
+profiles:
+    - id: apple_hutchison_id_uk
+      path: profiles/hutchison_id_uk.yaml
+      selectors:
+        - raw: 23420_GID1-0305
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "0305"
+    - id: apple_hutchison_uk
+      path: profiles/hutchison_uk.yaml
+      generic: true
+      selectors:
+        - raw: "23420"

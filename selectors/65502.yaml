@@ -1,0 +1,8 @@
+version: 2
+plmn: "65502"
+profiles:
+    - id: apple_8ta_za
+      path: profiles/8ta_za.yaml
+      generic: true
+      selectors:
+        - raw: "65502"

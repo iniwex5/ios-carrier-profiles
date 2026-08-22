@@ -1,0 +1,116 @@
+version: 2
+plmn: "23410"
+profiles:
+    - id: apple_affinityclick
+      path: profiles/affinityclick.yaml
+      selectors:
+        - raw: 23410_GID1-616C6F73696D31
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 616C6F73696D31
+    - id: apple_airgsm
+      path: profiles/airgsm.yaml
+      selectors:
+        - raw: 23410_GID1-616972616c6f31
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 616972616C6F31
+    - id: apple_cmcc_cmi
+      path: profiles/cmcc_cmi.yaml
+      selectors:
+        - raw: 23410_ID-8985234
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8985234"
+    - id: apple_knowroaming
+      path: profiles/knowroaming.yaml
+      selectors:
+        - raw: 23410_GID1-636f6e6e65637431
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 636F6E6E65637431
+    - id: apple_mysim
+      path: profiles/mysim.yaml
+      selectors:
+        - raw: 23410_GID1-434F423236303036
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 434F423236303036
+    - id: apple_o2_giffgaff_uk
+      path: profiles/o2_giffgaff_uk.yaml
+      selectors:
+        - raw: 23410_GID1-508FFFFF
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 508FFFFF
+    - id: apple_o2_prepaid_uk
+      path: profiles/o2_prepaid_uk.yaml
+      selectors:
+        - raw: 23410_GID1-61FFFF
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 61FFFF
+        - raw: 23410_GID1-67FFFF
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 67FFFF
+        - raw: 23410_GID1-85FFFF
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 85FFFF
+        - raw: 23410_GID1-99FFFF
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 99FFFF
+    - id: apple_o2_tesco_uk
+      path: profiles/o2_tesco_uk.yaml
+      selectors:
+        - raw: 23410_GID1-0AFFFF
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 0AFFFF
+    - id: apple_o2_uk
+      path: profiles/o2_uk.yaml
+      generic: true
+      selectors:
+        - raw: "23410"
+        - raw: 23410_GID1-520F
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 520F
+    - id: apple_redteamobile
+      path: profiles/redteamobile.yaml
+      selectors:
+        - raw: 23410_ID-89852245280
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89852245280"
+    - id: apple_telecom_nz
+      path: profiles/telecom_nz.yaml
+      selectors:
+        - raw: 23410_ID-896405
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "896405"
+    - id: apple_truphone_us
+      path: profiles/truphone_us.yaml
+      selectors:
+        - raw: 23410_GID1-547275554B3030656E
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 547275554B3030656E

@@ -1,0 +1,34 @@
+version: 3
+kind: carrier_bundle
+id: apple_docomo_gu
+bundle: Docomo_gu.bundle
+supported_plmns:
+    - "310370"
+    - "310470"
+    - "313110"
+    - "52505"
+common:
+    ims:
+        apn: ims
+        ip_stack: ipv4
+        register:
+            use_ipsec: true
+        signaling:
+            contact:
+                additional_contact_params:
+                    - selector: INVITE,INVITE:*
+                      params:
+                        - +g.3gpp.srvcc-alerting
+                        - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+                        - +g.3gpp.mid-call
+                always_add_sip_instance: true
+            csfb_on:
+                - method: INVITE
+                  statuses:
+                    - "403"
+                    - "500"
+                    - "503"
+            preconditions: supported
+            support_p_early_media: false
+        volte:
+            enable_volte_by_default: true

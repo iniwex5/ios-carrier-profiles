@@ -1,0 +1,8 @@
+version: 2
+plmn: "62802"
+profiles:
+    - id: apple_moov_ga
+      path: profiles/moov_ga.yaml
+      generic: true
+      selectors:
+        - raw: "62802"

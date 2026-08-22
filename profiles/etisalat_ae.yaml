@@ -1,0 +1,74 @@
+version: 3
+kind: carrier_bundle
+id: apple_etisalat_ae
+bundle: Etisalat_ae.bundle
+supported_plmns:
+    - "42402"
+common: {}
+plmn_overrides:
+    "42402":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 11265
+        entitlement:
+            entitlement_url: https://MTS1-SES.etisalat.ae
+        ims:
+            apn: ims
+            ip_stack: ipv4v6
+            epdg:
+                address: epdg.epc.mnc002.mcc424.etisalat.ae
+            ike:
+                proposals:
+                    - encryption:
+                        - aes256
+                      integrity:
+                        - sha256
+                      prf:
+                        - sha256
+                      dh_groups:
+                        - modp2048
+                      lifetime_seconds: 80000
+                      authentication_method: None
+                      eap_method: EAP-AKA
+                dpd:
+                    enabled: false
+                    interval_seconds: 600
+                child_sa:
+                    proposals:
+                        - encryption:
+                            - aes256
+                          integrity:
+                            - sha256
+                          lifetime_seconds: 80000
+                    lifetime_seconds: 80000
+                local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                sa_lifetime_seconds: 80000
+            register:
+                use_ipsec: true
+                include_cellular_network_info: true
+            signaling:
+                max_udp_message_size: 1400
+                preconditions: supported
+                support_p_early_media: true
+                re_register_on:
+                    - method: INVITE
+                      statuses:
+                        - "403"
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - 3XX
+                        - 5XX
+                        - "600"
+                        - "604"
+                        - "606"
+                contact:
+                    always_add_sip_instance: true
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            volte:
+                enable_volte_by_default: true

@@ -1,0 +1,8 @@
+version: 2
+plmn: "34001"
+profiles:
+    - id: apple_orange_mq
+      path: profiles/orange_mq.yaml
+      generic: true
+      selectors:
+        - raw: "34001"

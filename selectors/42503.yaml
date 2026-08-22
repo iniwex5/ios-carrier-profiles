@@ -1,0 +1,8 @@
+version: 2
+plmn: "42503"
+profiles:
+    - id: apple_pelephone_il
+      path: profiles/pelephone_il.yaml
+      generic: true
+      selectors:
+        - raw: "42503"

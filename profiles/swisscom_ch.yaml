@@ -1,0 +1,56 @@
+version: 3
+kind: carrier_bundle
+id: apple_swisscom_ch
+bundle: Swisscom_ch.bundle
+supported_plmns:
+    - "22801"
+common: {}
+plmn_overrides:
+    "22801":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 113665
+        entitlement:
+            entitlement_url: https://ses.node.mnc001.mcc228.pub.3gppnetwork.org
+        ims:
+            apn: ims
+            ip_stack: ipv4v6
+            ike:
+                nat_keepalive_enabled: true
+                dpd:
+                    enabled: false
+                    interval_seconds: 600
+                child_sa:
+                    proposals:
+                        - encryption:
+                            - aes256
+                            - aes128
+                          integrity:
+                            - sha256
+                          lifetime_seconds: 80000
+                    lifetime_seconds: 80000
+                local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                sa_lifetime_seconds: 80000
+            register:
+                use_ipsec: true
+            signaling:
+                preconditions: supported
+                support_p_early_media: true
+                re_register_on:
+                    - method: REGISTER
+                      statuses:
+                        - "504"
+                    - method: INVITE
+                      statuses:
+                        - "504"
+                contact:
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*[primary]
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            media:
+                rtcp_interval_seconds: 5
+            volte:
+                enable_volte_by_default: true

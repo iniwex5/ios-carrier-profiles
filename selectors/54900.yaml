@@ -1,0 +1,8 @@
+version: 2
+plmn: "54900"
+profiles:
+    - id: apple_digicel_ws
+      path: profiles/digicel_ws.yaml
+      generic: true
+      selectors:
+        - raw: "54900"

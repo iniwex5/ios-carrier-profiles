@@ -1,0 +1,7 @@
+version: 3
+kind: carrier_bundle
+id: apple_tigo_tz
+bundle: Tigo_tz.bundle
+supported_plmns:
+    - "64002"
+common: {}

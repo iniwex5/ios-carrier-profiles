@@ -1,0 +1,8 @@
+version: 3
+kind: carrier_bundle
+id: apple_movistar_gt
+bundle: movistar_gt.bundle
+supported_plmns:
+    - "21407"
+    - "70403"
+common: {}

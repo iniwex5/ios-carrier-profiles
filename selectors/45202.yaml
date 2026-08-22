@@ -1,0 +1,8 @@
+version: 2
+plmn: "45202"
+profiles:
+    - id: apple_vinaphone_vn
+      path: profiles/vinaphone_vn.yaml
+      generic: true
+      selectors:
+        - raw: "45202"

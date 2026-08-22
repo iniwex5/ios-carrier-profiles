@@ -1,0 +1,7 @@
+version: 3
+kind: carrier_bundle
+id: apple_uros
+bundle: Uros.bundle
+supported_plmns:
+    - "24042"
+common: {}

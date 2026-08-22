@@ -1,0 +1,55 @@
+version: 3
+kind: carrier_bundle
+id: apple_telstra_au
+bundle: Telstra_au.bundle
+supported_plmns:
+    - "50501"
+    - "50571"
+    - "50572"
+common:
+    apple:
+        carrier_entitlements:
+            supported_entitlements: 533505
+    entitlement:
+        entitlement_url: https://telentprod.mobile.telstra.com
+    ims:
+        epdg:
+            address: epdg.epc.mnc001.mcc505.pub.3gppnetwork.org
+        ike:
+            child_sa:
+                lifetime_seconds: 80000
+                proposals:
+                    - encryption:
+                        - aes256
+                      integrity:
+                        - sha256
+                      pfs_group: modp2048
+                      lifetime_seconds: 80000
+            dpd:
+                enabled: false
+                interval_seconds: 300
+            local_identifier: Telstra@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+            sa_lifetime_seconds: 80000
+        media:
+            rtcp_interval_seconds: 5
+            rtp_inactivity_seconds: 30
+        register:
+            include_cellular_network_info: true
+            use_ipsec: true
+        signaling:
+            contact:
+                additional_contact_params:
+                    - selector: REGISTER,INVITE,INVITE:*
+                      params:
+                        - +g.3gpp.mid-call
+                        - +g.3gpp.srvcc-alerting
+                        - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+                always_add_sip_instance: true
+            preconditions: supported
+            support_p_early_media: true
+        volte:
+            enable_volte_by_default: true
+plmn_overrides:
+    "50501":
+        ims:
+            epdg: null

@@ -1,0 +1,28 @@
+version: 3
+kind: carrier_bundle
+id: apple_mobitel_lk
+bundle: Mobitel_lk.bundle
+supported_plmns:
+    - "41301"
+common: {}
+plmn_overrides:
+    "41301":
+        ims:
+            ike:
+                dpd:
+                    enabled: false
+                    interval_seconds: 600
+                local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                sa_lifetime_seconds: 86400
+            register:
+                use_ipsec: true
+            signaling:
+                preconditions: required
+                support_p_early_media: true
+                contact:
+                    additional_contact_params:
+                        - selector: INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+                            - +g.3gpp.mid-call

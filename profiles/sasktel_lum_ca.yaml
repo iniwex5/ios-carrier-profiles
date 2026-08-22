@@ -1,0 +1,39 @@
+version: 3
+kind: carrier_bundle
+id: apple_sasktel_lum_ca
+bundle: Sasktel_Lum_ca.bundle
+supported_plmns:
+    - "302780"
+common: {}
+plmn_overrides:
+    "302780":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 4194481
+        entitlement:
+            entitlement_url: https://entitlement.sasktel.com/entitlement/rest
+        ims:
+            apn: ims
+            ip_stack: ipv4v6
+            ike:
+                dpd:
+                    enabled: false
+                    interval_seconds: 600
+                local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                sa_lifetime_seconds: 86400
+            register:
+                use_ipsec: true
+            signaling:
+                preconditions: supported
+                support_p_early_media: true
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - "380"
+                        - "414"
+                        - "499"
+                        - "606"
+            ussi:
+                enabled: true
+            volte:
+                enable_volte_by_default: true

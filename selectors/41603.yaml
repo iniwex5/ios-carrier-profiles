@@ -1,0 +1,8 @@
+version: 2
+plmn: "41603"
+profiles:
+    - id: apple_umniah_jo
+      path: profiles/umniah_jo.yaml
+      generic: true
+      selectors:
+        - raw: "41603"

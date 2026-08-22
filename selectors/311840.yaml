@@ -1,0 +1,11 @@
+version: 2
+plmn: "311840"
+profiles:
+    - id: apple_cellcomwi_lte_us
+      path: profiles/cellcomwi_lte_us.yaml
+      selectors:
+        - raw: 311840_GID1-C1
+          conditions:
+            - field: gid1
+              match: prefix
+              value: C1

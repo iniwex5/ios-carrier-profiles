@@ -1,0 +1,7 @@
+version: 3
+kind: carrier_bundle
+id: apple_telekomslovenije_mk
+bundle: TelekomSlovenije_mk.bundle
+supported_plmns:
+    - "29402"
+common: {}

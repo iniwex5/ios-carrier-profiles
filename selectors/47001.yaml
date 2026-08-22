@@ -1,0 +1,8 @@
+version: 2
+plmn: "47001"
+profiles:
+    - id: apple_grameenphone_bd
+      path: profiles/grameenphone_bd.yaml
+      generic: true
+      selectors:
+        - raw: "47001"

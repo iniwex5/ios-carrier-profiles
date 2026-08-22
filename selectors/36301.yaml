@@ -1,0 +1,8 @@
+version: 2
+plmn: "36301"
+profiles:
+    - id: apple_setar_aw
+      path: profiles/setar_aw.yaml
+      generic: true
+      selectors:
+        - raw: "36301"

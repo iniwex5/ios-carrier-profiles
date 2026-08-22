@@ -1,0 +1,16 @@
+version: 2
+plmn: "42001"
+profiles:
+    - id: apple_stc_sa
+      path: profiles/stc_sa.yaml
+      generic: true
+      selectors:
+        - raw: "42001"
+    - id: apple_viva_bh
+      path: profiles/viva_bh.yaml
+      selectors:
+        - raw: 42001_ID-8997304
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8997304"

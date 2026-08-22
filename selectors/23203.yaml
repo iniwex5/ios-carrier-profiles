@@ -1,0 +1,8 @@
+version: 2
+plmn: "23203"
+profiles:
+    - id: apple_tmobile_at
+      path: profiles/tmobile_at.yaml
+      generic: true
+      selectors:
+        - raw: "23203"

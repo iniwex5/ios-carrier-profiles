@@ -1,0 +1,10 @@
+version: 3
+kind: carrier_bundle
+id: apple_telefonica_esimflag
+bundle: Telefonica_eSimFLAG.bundle
+supported_plmns:
+    - "21405"
+    - "310840"
+    - "52501"
+    - "52502"
+common: {}

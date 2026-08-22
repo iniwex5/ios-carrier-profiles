@@ -1,0 +1,8 @@
+version: 2
+plmn: "61710"
+profiles:
+    - id: apple_tigo_mu
+      path: profiles/tigo_mu.yaml
+      generic: true
+      selectors:
+        - raw: "61710"

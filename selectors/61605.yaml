@@ -1,0 +1,8 @@
+version: 2
+plmn: "61605"
+profiles:
+    - id: apple_globacom_bj
+      path: profiles/globacom_bj.yaml
+      generic: true
+      selectors:
+        - raw: "61605"

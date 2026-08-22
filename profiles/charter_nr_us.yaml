@@ -1,0 +1,12 @@
+version: 3
+kind: carrier_bundle
+id: apple_charter_nr_us
+bundle: Charter_NR_US.bundle
+supported_plmns:
+    - "314020"
+common: {}
+plmn_overrides:
+    "314020":
+        ims:
+            volte:
+                enable_volte_by_default: false

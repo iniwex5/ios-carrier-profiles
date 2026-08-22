@@ -1,0 +1,46 @@
+version: 3
+kind: carrier_bundle
+id: apple_rogers_chatr_ca
+bundle: Rogers_chatr_ca.bundle
+supported_plmns:
+    - "302320"
+    - "302720"
+common:
+    apple:
+        carrier_entitlements:
+            supported_entitlements: 4194305
+    entitlement:
+        entitlement_url: https://dmsa.egslb.net.rogers.com:8181/ium-OEMInterface/servlet/IUMServlet
+    ims:
+        apn: ims
+        ip_stack: ipv6
+        media:
+            rtcp_interval_seconds: 5
+            rtp_inactivity_seconds: 30
+        register:
+            include_cellular_network_info: true
+            use_ipsec: true
+        signaling:
+            contact:
+                additional_contact_params:
+                    - selector: INVITE[911]
+                      params:
+                        - sos
+                    - selector: REGISTER,INVITE,INVITE:*
+                      params:
+                        - +g.3gpp.mid-call
+                        - +g.3gpp.srvcc-alerting
+                        - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+                always_add_sip_instance: true
+            csfb_on:
+                - method: INVITE
+                  statuses:
+                    - "380"
+                    - "414"
+                    - "499"
+                    - "606"
+            max_udp_message_size: 1200
+            preconditions: supported
+            support_p_early_media: true
+        volte:
+            enable_volte_by_default: true

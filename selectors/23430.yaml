@@ -1,0 +1,32 @@
+version: 2
+plmn: "23430"
+profiles:
+    - id: apple_bt_business_uk
+      path: profiles/bt_business_uk.yaml
+      selectors:
+        - raw: 23430_GID1-B3
+          conditions:
+            - field: gid1
+              match: prefix
+              value: B3
+    - id: apple_bt_consumer_uk
+      path: profiles/bt_consumer_uk.yaml
+      selectors:
+        - raw: 23430_GID1-C3
+          conditions:
+            - field: gid1
+              match: prefix
+              value: C3
+    - id: apple_bt_onephone_uk
+      path: profiles/bt_onephone_uk.yaml
+      selectors:
+        - raw: 23430_GID1-B2
+          conditions:
+            - field: gid1
+              match: prefix
+              value: B2
+    - id: apple_tmobile_uk
+      path: profiles/tmobile_uk.yaml
+      generic: true
+      selectors:
+        - raw: "23430"

@@ -1,0 +1,46 @@
+version: 2
+plmn: "23207"
+profiles:
+    - id: apple_tmobile_at
+      path: profiles/tmobile_at.yaml
+      selectors:
+        - raw: 23207_GID1-07
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "07"
+        - raw: 23207_GID1-30
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "30"
+        - raw: 23207_GID1-31
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "31"
+        - raw: 23207_GID1-70
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "70"
+        - raw: 23207_GID1-72
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "72"
+        - raw: 23207_GID1-74
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "74"
+        - raw: 23207_GID1-75
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "75"
+        - raw: 23207_GID1-FF
+          conditions:
+            - field: gid1
+              match: prefix
+              value: FF

@@ -1,0 +1,8 @@
+version: 2
+plmn: "24701"
+profiles:
+    - id: apple_lmt_lv
+      path: profiles/lmt_lv.yaml
+      generic: true
+      selectors:
+        - raw: "24701"

@@ -1,0 +1,8 @@
+version: 2
+plmn: "29703"
+profiles:
+    - id: apple_telekomsrbija_me
+      path: profiles/telekomsrbija_me.yaml
+      generic: true
+      selectors:
+        - raw: "29703"

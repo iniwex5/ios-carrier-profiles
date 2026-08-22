@@ -1,0 +1,8 @@
+version: 2
+plmn: "64901"
+profiles:
+    - id: apple_mtc_na
+      path: profiles/mtc_na.yaml
+      generic: true
+      selectors:
+        - raw: "64901"

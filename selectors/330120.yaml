@@ -1,0 +1,8 @@
+version: 2
+plmn: "330120"
+profiles:
+    - id: apple_openmobile_lte_pr
+      path: profiles/openmobile_lte_pr.yaml
+      generic: true
+      selectors:
+        - raw: "330120"

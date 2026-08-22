@@ -1,0 +1,13 @@
+version: 2
+plmn: "22250"
+profiles:
+    - id: apple_iliad_it
+      path: profiles/iliad_it.yaml
+      generic: true
+      selectors:
+        - raw: "22250"
+        - raw: 22250_GID1-F003
+          conditions:
+            - field: gid1
+              match: prefix
+              value: F003

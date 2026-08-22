@@ -1,0 +1,16 @@
+version: 2
+plmn: "23415"
+profiles:
+    - id: apple_talkmobile_uk
+      path: profiles/talkmobile_uk.yaml
+      selectors:
+        - raw: 23415_GID1-C1
+          conditions:
+            - field: gid1
+              match: prefix
+              value: C1
+    - id: apple_vodafone_uk
+      path: profiles/vodafone_uk.yaml
+      generic: true
+      selectors:
+        - raw: "23415"

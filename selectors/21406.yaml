@@ -1,0 +1,16 @@
+version: 2
+plmn: "21406"
+profiles:
+    - id: apple_vodafone_lowi_es
+      path: profiles/vodafone_lowi_es.yaml
+      selectors:
+        - raw: 21406_ID-89345710
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89345710"
+        - raw: 21406_ID-89345712
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89345712"

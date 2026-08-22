@@ -1,0 +1,8 @@
+version: 2
+plmn: "60601"
+profiles:
+    - id: apple_almadar_ly
+      path: profiles/almadar_ly.yaml
+      generic: true
+      selectors:
+        - raw: "60601"

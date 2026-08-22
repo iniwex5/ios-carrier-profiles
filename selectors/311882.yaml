@@ -1,0 +1,16 @@
+version: 2
+plmn: "311882"
+profiles:
+    - id: apple_dentwireless
+      path: profiles/dentwireless.yaml
+      selectors:
+        - raw: 311882_GID1-3597bfd533
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 3597BFD533
+    - id: apple_tmobile_us
+      path: profiles/tmobile_us.yaml
+      generic: true
+      selectors:
+        - raw: "311882"

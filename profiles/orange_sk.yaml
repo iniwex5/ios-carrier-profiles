@@ -1,0 +1,51 @@
+version: 3
+kind: carrier_bundle
+id: apple_orange_sk
+bundle: Orange_sk.bundle
+supported_plmns:
+    - "23101"
+common: {}
+plmn_overrides:
+    "23101":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 5329
+        entitlement:
+            entitlement_url: https://aes.orange.sk/ium-OEMInterface/servlet/IUMServlet
+        ims:
+            apn: ims
+            ip_stack: ipv4v6
+            ike:
+                nat_keepalive_enabled: true
+                child_sa:
+                    proposals:
+                        - encryption:
+                            - aes256
+                          integrity:
+                            - sha256
+                          pfs_group: modp2048
+                          lifetime_seconds: 86400
+                    lifetime_seconds: 86400
+                sa_lifetime_seconds: 86400
+            register:
+                use_ipsec: true
+            signaling:
+                preconditions: supported
+                support_p_early_media: true
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - "403"
+                        - "408"
+                        - 5XX
+                contact:
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+            media:
+                rtp_inactivity_seconds: 20
+                rtcp_interval_seconds: 5
+            volte:
+                enable_volte_by_default: true

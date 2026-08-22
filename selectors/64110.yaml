@@ -1,0 +1,8 @@
+version: 2
+plmn: "64110"
+profiles:
+    - id: apple_mtn_ug
+      path: profiles/mtn_ug.yaml
+      generic: true
+      selectors:
+        - raw: "64110"

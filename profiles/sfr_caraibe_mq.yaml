@@ -1,0 +1,16 @@
+version: 3
+kind: carrier_bundle
+id: apple_sfr_caraibe_mq
+bundle: SFR_Caraibe_mq.bundle
+supported_plmns:
+    - "20809"
+    - "34002"
+common:
+    apple:
+        carrier_entitlements:
+            supported_entitlements: 1
+    entitlement:
+        entitlement_url: https://apple.mnc002.mcc340.pub.3gppnetwork.org
+    ims:
+        volte:
+            enable_volte_by_default: true

@@ -1,0 +1,7 @@
+version: 3
+kind: carrier_bundle
+id: apple_tuntel_tn
+bundle: Tuntel_tn.bundle
+supported_plmns:
+    - "60502"
+common: {}

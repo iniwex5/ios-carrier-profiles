@@ -1,0 +1,8 @@
+version: 2
+plmn: "25050"
+profiles:
+    - id: apple_tele2_sberbank_ru
+      path: profiles/tele2_sberbank_ru.yaml
+      generic: true
+      selectors:
+        - raw: "25050"

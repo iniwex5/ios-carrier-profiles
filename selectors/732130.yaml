@@ -1,0 +1,8 @@
+version: 2
+plmn: "732130"
+profiles:
+    - id: apple_avantel_co
+      path: profiles/avantel_co.yaml
+      generic: true
+      selectors:
+        - raw: "732130"

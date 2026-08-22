@@ -1,0 +1,8 @@
+version: 3
+kind: carrier_bundle
+id: apple_iwireless_us
+bundle: iWireless_US.bundle
+supported_plmns:
+    - "20404"
+    - "310770"
+common: {}

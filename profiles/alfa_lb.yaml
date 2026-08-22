@@ -1,0 +1,7 @@
+version: 3
+kind: carrier_bundle
+id: apple_alfa_lb
+bundle: Alfa_lb.bundle
+supported_plmns:
+    - "41501"
+common: {}

@@ -1,0 +1,8 @@
+version: 2
+plmn: "71617"
+profiles:
+    - id: apple_entel_pe
+      path: profiles/entel_pe.yaml
+      generic: true
+      selectors:
+        - raw: "71617"

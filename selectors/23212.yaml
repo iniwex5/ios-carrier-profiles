@@ -1,0 +1,8 @@
+version: 2
+plmn: "23212"
+profiles:
+    - id: apple_mobilkom_at
+      path: profiles/mobilkom_at.yaml
+      generic: true
+      selectors:
+        - raw: "23212"

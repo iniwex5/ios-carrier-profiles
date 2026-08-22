@@ -1,0 +1,7 @@
+version: 3
+kind: carrier_bundle
+id: apple_sure_im
+bundle: Sure_im.bundle
+supported_plmns:
+    - "23455"
+common: {}

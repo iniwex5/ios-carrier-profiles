@@ -1,0 +1,32 @@
+version: 3
+kind: carrier_bundle
+id: apple_tmobile_ro
+bundle: TMobile_ro.bundle
+supported_plmns:
+    - "22603"
+    - "22606"
+common:
+    ims:
+        apn: ims
+        ip_stack: ipv4
+        media:
+            rtcp_inactivity_seconds: 180
+            rtcp_interval_seconds: 5
+            rtp_inactivity_seconds: 20
+        register:
+            include_cellular_network_info: true
+            use_ipsec: true
+        signaling:
+            contact:
+                additional_contact_params:
+                    - selector: REGISTER,INVITE,INVITE:*[primary]
+                      params:
+                        - +g.3gpp.mid-call
+                        - +g.3gpp.srvcc-alerting
+                        - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            preconditions: supported
+            support_p_early_media: true
+        ussi:
+            enabled: false
+        volte:
+            enable_volte_by_default: true

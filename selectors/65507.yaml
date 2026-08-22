@@ -1,0 +1,8 @@
+version: 2
+plmn: "65507"
+profiles:
+    - id: apple_cellc_za
+      path: profiles/cellc_za.yaml
+      generic: true
+      selectors:
+        - raw: "65507"

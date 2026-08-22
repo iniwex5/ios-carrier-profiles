@@ -1,0 +1,82 @@
+version: 2
+plmn: "310280"
+profiles:
+    - id: apple_att_cc_us
+      path: profiles/att_cc_us.yaml
+      selectors:
+        - raw: 310280_GID1-2A
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 2A
+    - id: apple_att_dish_mvno_us
+      path: profiles/att_dish_mvno_us.yaml
+      selectors:
+        - raw: 310280_GID1-3432
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "3432"
+    - id: apple_att_mvno_us
+      path: profiles/att_mvno_us.yaml
+      selectors:
+        - raw: 310280_GID1-20FF
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 20FF
+        - raw: 310280_GID1-4102
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "4102"
+        - raw: 310280_GID1-44FF
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 44FF
+    - id: apple_att_nr_us
+      path: profiles/att_nr_us.yaml
+      selectors:
+        - raw: 310280_GID1-52FF
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 52FF
+        - raw: 310280_GID1-53FF
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 53FF
+    - id: apple_att_puretalk_us
+      path: profiles/att_puretalk_us.yaml
+      selectors:
+        - raw: 310280_GID1-62
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "62"
+    - id: apple_att_redpocket_us
+      path: profiles/att_redpocket_us.yaml
+      selectors:
+        - raw: 310280_GID1-42
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "42"
+    - id: apple_att_tfw_us
+      path: profiles/att_tfw_us.yaml
+      selectors:
+        - raw: 310280_GID1-DE
+          conditions:
+            - field: gid1
+              match: prefix
+              value: DE
+    - id: apple_att_us
+      path: profiles/att_us.yaml
+      selectors:
+        - raw: 310280_GID1-FFFF
+          conditions:
+            - field: gid1
+              match: prefix
+              value: FFFF

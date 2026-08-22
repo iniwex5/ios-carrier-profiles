@@ -1,0 +1,51 @@
+version: 3
+kind: carrier_bundle
+id: apple_uscellular_lte_us
+bundle: USCellular_LTE_US.bundle
+supported_plmns:
+    - "20404"
+    - "311580"
+    - "311589"
+common:
+    apple:
+        carrier_entitlements:
+            supported_entitlements: 4218033
+    entitlement:
+        entitlement_url: https://mdm.uscc.net/entitlement/
+    ims:
+        epdg:
+            address: epdg.epc.mnc580.mcc311.pub.3gppnetwork.org
+        ike:
+            dpd:
+                enabled: false
+                interval_seconds: 600
+            local_identifier: anonymous@nai.epc.mnc580.mcc311.3gppnetwork.org
+            local_identifier_type: IDUserFQDN
+            sa_lifetime_seconds: 80000
+        impi_format: imsi@carrierDomain
+        impu_format: imsi@carrierDomain
+        media:
+            rtcp_inactivity_seconds: 20
+            rtcp_interval_seconds: 5
+            rtp_inactivity_seconds: 20
+        register:
+            include_cellular_network_info: true
+        signaling:
+            contact:
+                always_add_sip_instance: true
+            csfb_on:
+                - method: INVITE
+                  statuses:
+                    - 3XX
+                    - 4XX
+                    - 5XX
+                    - 6XX
+            max_udp_message_size: 1080
+            preconditions: unsupported
+            support_p_early_media: true
+        volte:
+            enable_volte_by_default: true
+plmn_overrides:
+    "311580":
+        ims:
+            epdg: null

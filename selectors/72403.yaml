@@ -1,0 +1,8 @@
+version: 2
+plmn: "72403"
+profiles:
+    - id: apple_tim_br
+      path: profiles/tim_br.yaml
+      generic: true
+      selectors:
+        - raw: "72403"

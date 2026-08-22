@@ -1,0 +1,7 @@
+version: 3
+kind: carrier_bundle
+id: apple_chippie_mf
+bundle: Chippie_mf.bundle
+supported_plmns:
+    - "34003"
+common: {}

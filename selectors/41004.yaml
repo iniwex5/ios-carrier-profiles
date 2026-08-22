@@ -1,0 +1,16 @@
+version: 2
+plmn: "41004"
+profiles:
+    - id: apple_cmcc_cmi
+      path: profiles/cmcc_cmi.yaml
+      selectors:
+        - raw: 41004_ID-8985234
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8985234"
+    - id: apple_zong_pk
+      path: profiles/zong_pk.yaml
+      generic: true
+      selectors:
+        - raw: "41004"

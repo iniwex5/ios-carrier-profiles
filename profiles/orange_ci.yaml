@@ -1,0 +1,7 @@
+version: 3
+kind: carrier_bundle
+id: apple_orange_ci
+bundle: Orange_ci.bundle
+supported_plmns:
+    - "61203"
+common: {}

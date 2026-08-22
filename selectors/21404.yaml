@@ -1,0 +1,74 @@
+version: 2
+plmn: "21404"
+profiles:
+    - id: apple_yoigo_es
+      path: profiles/yoigo_es.yaml
+      generic: true
+      selectors:
+        - raw: "21404"
+    - id: apple_yoigo_masmovil_es
+      path: profiles/yoigo_masmovil_es.yaml
+      selectors:
+        - raw: 21404_ID-89340414
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89340414"
+        - raw: 21404_ID-89340424
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89340424"
+        - raw: 21404_ID-89340432
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89340432"
+        - raw: 21404_ID-89340434
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89340434"
+        - raw: 21404_ID-89340452
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89340452"
+        - raw: 21404_ID-89340462
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89340462"
+        - raw: 21404_ID-89340471
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89340471"
+        - raw: 21404_ID-89340475
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89340475"
+    - id: apple_yoigo_pepephone_es
+      path: profiles/yoigo_pepephone_es.yaml
+      selectors:
+        - raw: 21404_ID-89340419
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89340419"
+        - raw: 21404_ID-89340429
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89340429"
+        - raw: 21404_ID-89340439
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89340439"
+        - raw: 21404_ID-89340474
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89340474"

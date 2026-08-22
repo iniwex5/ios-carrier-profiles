@@ -1,0 +1,8 @@
+version: 3
+kind: carrier_bundle
+id: apple_acs_us
+bundle: ACS_US.bundle
+supported_plmns:
+    - "310050"
+    - "311370"
+common: {}

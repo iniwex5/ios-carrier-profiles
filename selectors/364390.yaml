@@ -1,0 +1,8 @@
+version: 2
+plmn: "364390"
+profiles:
+    - id: apple_cw_bs
+      path: profiles/cw_bs.yaml
+      generic: true
+      selectors:
+        - raw: "364390"

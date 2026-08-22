@@ -1,0 +1,69 @@
+version: 3
+kind: carrier_bundle
+id: apple_telenor_mm
+bundle: Telenor_mm.bundle
+supported_plmns:
+    - "41406"
+common: {}
+plmn_overrides:
+    "41406":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 81
+        entitlement:
+            entitlement_url: https://es.atom.com.mm/entitlement
+        ims:
+            domain: ims.mnc006.mcc414.3gppnetwork.org
+            impi_format: imsi@carrierDomain
+            impu_format: imsi@carrierDomain
+            register:
+                use_ipsec: true
+            signaling:
+                preconditions: supported
+                support_p_early_media: true
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - "380"
+                        - "400"
+                        - "401"
+                        - "404"
+                        - "405"
+                        - "406"
+                        - "407"
+                        - "408"
+                        - "410"
+                        - "413"
+                        - "414"
+                        - "415"
+                        - "416"
+                        - "420"
+                        - "421"
+                        - "423"
+                        - "481"
+                        - "482"
+                        - "484"
+                        - "485"
+                        - "488"
+                        - "489"
+                        - "491"
+                        - "493"
+                        - "494"
+                        - "500"
+                        - "501"
+                        - "502"
+                        - "503"
+                        - "504"
+                        - "505"
+                        - "513"
+                        - "604"
+                        - "606"
+                contact:
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.mid-call
+            media:
+                rtp_inactivity_seconds: 20
+                rtcp_interval_seconds: 5

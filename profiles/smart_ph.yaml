@@ -1,0 +1,53 @@
+version: 3
+kind: carrier_bundle
+id: apple_smart_ph
+bundle: Smart_ph.bundle
+supported_plmns:
+    - "51503"
+common: {}
+plmn_overrides:
+    "51503":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 1
+        entitlement:
+            entitlement_url: https://esim-pldt-es-prd.ipaas.amdocs.com/pldt/prd/executeAppleActions
+        ims:
+            apn: IMS
+            ip_stack: ipv4v6
+            domain: ims.mnc003.mcc515.3gppnetwork.org
+            impi_format: imsi@carrierDomain
+            impu_format: msisdn@carrierDomain
+            ike:
+                nat_keepalive_enabled: true
+                dpd:
+                    enabled: false
+                    interval_seconds: 600
+                local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                sa_lifetime_seconds: 86400
+            register:
+                use_ipsec: false
+                include_cellular_network_info: true
+            signaling:
+                max_udp_message_size: 1200
+                preconditions: supported
+                support_p_early_media: false
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - 3XX
+                        - 4XX
+                        - 5XX
+                        - 6XX
+                contact:
+                    always_add_sip_instance: true
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            media:
+                rtcp_interval_seconds: 5
+            volte:
+                enable_volte_by_default: true

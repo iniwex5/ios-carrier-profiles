@@ -1,0 +1,8 @@
+version: 2
+plmn: "311040"
+profiles:
+    - id: apple_atn_viya_vi
+      path: profiles/atn_viya_vi.yaml
+      generic: true
+      selectors:
+        - raw: "311040"

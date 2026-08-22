@@ -1,0 +1,8 @@
+version: 2
+plmn: "42888"
+profiles:
+    - id: apple_unitel_mn
+      path: profiles/unitel_mn.yaml
+      generic: true
+      selectors:
+        - raw: "42888"

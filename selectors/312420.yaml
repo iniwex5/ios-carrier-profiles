@@ -1,0 +1,8 @@
+version: 2
+plmn: "312420"
+profiles:
+    - id: apple_nextech_lte_us
+      path: profiles/nextech_lte_us.yaml
+      generic: true
+      selectors:
+        - raw: "312420"

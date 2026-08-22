@@ -1,0 +1,8 @@
+version: 2
+plmn: "46001"
+profiles:
+    - id: apple_unicom_cn
+      path: profiles/unicom_cn.yaml
+      generic: true
+      selectors:
+        - raw: "46001"

@@ -1,0 +1,8 @@
+version: 2
+plmn: "52801"
+profiles:
+    - id: apple_imagine_bn
+      path: profiles/imagine_bn.yaml
+      generic: true
+      selectors:
+        - raw: "52801"

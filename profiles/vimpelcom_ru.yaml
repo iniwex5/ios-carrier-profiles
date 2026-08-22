@@ -1,0 +1,12 @@
+version: 3
+kind: carrier_bundle
+id: apple_vimpelcom_ru
+bundle: VimpelCom_ru.bundle
+supported_plmns:
+    - "25099"
+common: {}
+plmn_overrides:
+    "25099":
+        ims:
+            ike:
+                sa_lifetime_seconds: 80000

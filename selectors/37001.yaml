@@ -1,0 +1,8 @@
+version: 2
+plmn: "37001"
+profiles:
+    - id: apple_orange_do
+      path: profiles/orange_do.yaml
+      generic: true
+      selectors:
+        - raw: "37001"

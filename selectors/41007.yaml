@@ -1,0 +1,8 @@
+version: 2
+plmn: "41007"
+profiles:
+    - id: apple_warid_pk
+      path: profiles/warid_pk.yaml
+      generic: true
+      selectors:
+        - raw: "41007"

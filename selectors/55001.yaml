@@ -1,0 +1,8 @@
+version: 2
+plmn: "55001"
+profiles:
+    - id: apple_fsmtc_fm
+      path: profiles/fsmtc_fm.yaml
+      generic: true
+      selectors:
+        - raw: "55001"

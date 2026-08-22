@@ -1,0 +1,8 @@
+version: 2
+plmn: "20610"
+profiles:
+    - id: apple_mobistar_be
+      path: profiles/mobistar_be.yaml
+      generic: true
+      selectors:
+        - raw: "20610"

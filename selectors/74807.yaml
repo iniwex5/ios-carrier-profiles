@@ -1,0 +1,8 @@
+version: 2
+plmn: "74807"
+profiles:
+    - id: apple_movistar_uy
+      path: profiles/movistar_uy.yaml
+      generic: true
+      selectors:
+        - raw: "74807"

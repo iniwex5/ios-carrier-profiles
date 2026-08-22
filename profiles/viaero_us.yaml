@@ -1,0 +1,36 @@
+version: 3
+kind: carrier_bundle
+id: apple_viaero_us
+bundle: Viaero_US.bundle
+supported_plmns:
+    - "310450"
+common: {}
+plmn_overrides:
+    "310450":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 176
+        entitlement:
+            entitlement_url: https://ses.mnc450.mcc310.pub.3gppnetwork.org
+        ims:
+            ike:
+                dpd:
+                    enabled: true
+                sa_lifetime_seconds: 80000
+            register:
+                use_ipsec: true
+                include_cellular_network_info: true
+            signaling:
+                preconditions: supported
+                support_p_early_media: true
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - "380"
+                        - "414"
+                        - "499"
+                        - "606"
+            media:
+                rtp_inactivity_seconds: 30
+            volte:
+                enable_volte_by_default: true

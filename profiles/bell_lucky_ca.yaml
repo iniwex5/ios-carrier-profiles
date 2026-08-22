@@ -1,0 +1,45 @@
+version: 3
+kind: carrier_bundle
+id: apple_bell_lucky_ca
+bundle: Bell_Lucky_ca.bundle
+supported_plmns:
+    - "302610"
+common: {}
+plmn_overrides:
+    "302610":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 4202577
+        entitlement:
+            entitlement_url: https://egw.wireless.bell.ca/ium-OEMInterface/servlet/IUMServlet/
+        ims:
+            apn: ims
+            ip_stack: ipv6
+            domain: ims.bell.ca
+            impi_format: imsi@carrierDomain
+            register:
+                use_ipsec: true
+                include_cellular_network_info: true
+            signaling:
+                max_udp_message_size: 1200
+                preconditions: supported
+                support_p_early_media: true
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - "403"
+                        - "408"
+                        - "480"
+                        - "488"
+                        - "500"
+                        - "504"
+                        - "600"
+                        - "606"
+                        - "503"
+                contact:
+                    always_add_sip_instance: true
+            media:
+                rtp_inactivity_seconds: 30
+                rtcp_interval_seconds: 5
+            volte:
+                enable_volte_by_default: true

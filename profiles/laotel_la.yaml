@@ -1,0 +1,28 @@
+version: 3
+kind: carrier_bundle
+id: apple_laotel_la
+bundle: Laotel_la.bundle
+supported_plmns:
+    - "45701"
+common: {}
+plmn_overrides:
+    "45701":
+        ims:
+            register:
+                use_ipsec: true
+            signaling:
+                support_p_early_media: true
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - "500"
+                        - "503"
+                        - "380"
+                contact:
+                    always_add_sip_instance: true
+                    additional_contact_params:
+                        - selector: INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.srvcc-alerting
+            media:
+                rtp_inactivity_seconds: 30

@@ -1,0 +1,8 @@
+version: 2
+plmn: "54601"
+profiles:
+    - id: apple_opt_nc
+      path: profiles/opt_nc.yaml
+      generic: true
+      selectors:
+        - raw: "54601"

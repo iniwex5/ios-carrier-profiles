@@ -1,0 +1,8 @@
+version: 2
+plmn: "27205"
+profiles:
+    - id: apple_hutchison_ie
+      path: profiles/hutchison_ie.yaml
+      generic: true
+      selectors:
+        - raw: "27205"

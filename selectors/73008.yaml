@@ -1,0 +1,8 @@
+version: 2
+plmn: "73008"
+profiles:
+    - id: apple_vtr_cl
+      path: profiles/vtr_cl.yaml
+      generic: true
+      selectors:
+        - raw: "73008"

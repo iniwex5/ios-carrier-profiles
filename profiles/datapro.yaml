@@ -1,0 +1,12 @@
+version: 3
+kind: carrier_bundle
+id: apple_datapro
+bundle: DataPro.bundle
+supported_plmns:
+    - "52501"
+common: {}
+plmn_overrides:
+    "52501":
+        ims:
+            volte:
+                enable_volte_by_default: false

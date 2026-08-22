@@ -1,0 +1,8 @@
+version: 2
+plmn: "47202"
+profiles:
+    - id: apple_qtel_mv
+      path: profiles/qtel_mv.yaml
+      generic: true
+      selectors:
+        - raw: "47202"

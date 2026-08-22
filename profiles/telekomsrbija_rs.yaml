@@ -1,0 +1,16 @@
+version: 3
+kind: carrier_bundle
+id: apple_telekomsrbija_rs
+bundle: TelekomSrbija_rs.bundle
+supported_plmns:
+    - "22003"
+common: {}
+plmn_overrides:
+    "22003":
+        ims:
+            register:
+                use_ipsec: true
+            signaling:
+                support_p_early_media: true
+            volte:
+                enable_volte_by_default: true

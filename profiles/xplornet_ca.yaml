@@ -1,0 +1,8 @@
+version: 3
+kind: carrier_bundle
+id: apple_xplornet_ca
+bundle: Xplornet_ca.bundle
+supported_plmns:
+    - "20404"
+    - "302130"
+common: {}

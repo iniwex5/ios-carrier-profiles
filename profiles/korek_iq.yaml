@@ -1,0 +1,7 @@
+version: 3
+kind: carrier_bundle
+id: apple_korek_iq
+bundle: Korek_iq.bundle
+supported_plmns:
+    - "41840"
+common: {}

@@ -1,0 +1,55 @@
+version: 3
+kind: carrier_bundle
+id: apple_vinaphone_vn
+bundle: VinaPhone_vn.bundle
+supported_plmns:
+    - "45202"
+common: {}
+plmn_overrides:
+    "45202":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 9233
+        entitlement:
+            entitlement_url: https://aes.mnc002.mcc452.pub.3gppnetwork.org
+        ims:
+            apn: ims
+            ip_stack: ipv4v6
+            domain: ims.mnc002.mcc452.3gppnetwork.org
+            impi_format: imsi@carrierDomain
+            impu_format: imsi@carrierDomain
+            ike:
+                nat_keepalive_enabled: true
+                dpd:
+                    enabled: true
+                    interval_seconds: 600
+                local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                sa_lifetime_seconds: 43200
+            register:
+                use_ipsec: true
+                include_cellular_network_info: true
+            signaling:
+                max_udp_message_size: 1280
+                preconditions: supported
+                support_p_early_media: true
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - "380"
+                        - "403"
+                        - "500"
+                        - "503"
+                contact:
+                    always_add_sip_instance: true
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            media:
+                rtcp_inactivity_seconds: 36000
+            ussi:
+                enabled: true
+            volte:
+                enable_volte_by_default: true

@@ -1,0 +1,8 @@
+version: 2
+plmn: "64301"
+profiles:
+    - id: apple_mcel_mz
+      path: profiles/mcel_mz.yaml
+      generic: true
+      selectors:
+        - raw: "64301"

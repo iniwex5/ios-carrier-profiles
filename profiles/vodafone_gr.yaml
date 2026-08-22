@@ -1,0 +1,42 @@
+version: 3
+kind: carrier_bundle
+id: apple_vodafone_gr
+bundle: Vodafone_gr.bundle
+supported_plmns:
+    - "20205"
+common: {}
+plmn_overrides:
+    "20205":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 13440
+        entitlement:
+            entitlement_url: https://gr-prod.entitlement.vodafone.com:4448/ium-OEMInterface/servlet/IUMServlet
+        ims:
+            apn: ims
+            ike:
+                dpd:
+                    enabled: false
+                    interval_seconds: 600
+                sa_lifetime_seconds: 3600
+            register:
+                use_ipsec: true
+                include_cellular_network_info: true
+            signaling:
+                preconditions: supported
+                support_p_early_media: true
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - "380"
+                        - 5XX
+                contact:
+                    always_add_sip_instance: true
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*[primary]
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            volte:
+                enable_volte_by_default: true

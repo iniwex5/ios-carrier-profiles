@@ -1,0 +1,39 @@
+version: 3
+kind: carrier_bundle
+id: apple_dna_fi
+bundle: DNA_fi.bundle
+supported_plmns:
+    - "24403"
+    - "24412"
+common:
+    apple:
+        carrier_entitlements:
+            supported_entitlements: 13313
+    entitlement:
+        entitlement_url: https://ents.mnc012.mcc244.pub.3gppnetwork.org
+    ims:
+        apn: ims
+        ip_stack: ipv6
+        media:
+            rtcp_interval_seconds: 5
+            rtp_inactivity_seconds: 10
+        register:
+            use_ipsec: true
+        signaling:
+            contact:
+                additional_contact_params:
+                    - selector: REGISTER,INVITE,INVITE:*
+                      params:
+                        - +g.3gpp.mid-call
+                        - +g.3gpp.srvcc-alerting
+                        - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            csfb_on:
+                - method: INVITE
+                  statuses:
+                    - 6XX
+            preconditions: supported
+            support_p_early_media: true
+        ussi:
+            enabled: false
+        volte:
+            enable_volte_by_default: true

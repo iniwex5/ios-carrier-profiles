@@ -1,0 +1,8 @@
+version: 2
+plmn: "74404"
+profiles:
+    - id: apple_tigo_py
+      path: profiles/tigo_py.yaml
+      generic: true
+      selectors:
+        - raw: "74404"

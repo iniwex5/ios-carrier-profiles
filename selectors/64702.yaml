@@ -1,0 +1,11 @@
+version: 2
+plmn: "64702"
+profiles:
+    - id: apple_free_yt
+      path: profiles/free_yt.yaml
+      selectors:
+        - raw: 64702_GID1-f004
+          conditions:
+            - field: gid1
+              match: prefix
+              value: F004

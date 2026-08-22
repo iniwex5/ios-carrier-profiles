@@ -1,0 +1,8 @@
+version: 2
+plmn: "72434"
+profiles:
+    - id: apple_algar_br
+      path: profiles/algar_br.yaml
+      generic: true
+      selectors:
+        - raw: "72434"

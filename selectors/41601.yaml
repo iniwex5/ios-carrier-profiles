@@ -1,0 +1,8 @@
+version: 2
+plmn: "41601"
+profiles:
+    - id: apple_zain_jo
+      path: profiles/zain_jo.yaml
+      generic: true
+      selectors:
+        - raw: "41601"

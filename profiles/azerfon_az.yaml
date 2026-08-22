@@ -1,0 +1,21 @@
+version: 3
+kind: carrier_bundle
+id: apple_azerfon_az
+bundle: Azerfon_az.bundle
+supported_plmns:
+    - "40004"
+common: {}
+plmn_overrides:
+    "40004":
+        ims:
+            register:
+                use_ipsec: true
+            signaling:
+                support_p_early_media: true
+                contact:
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*[primary]
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting

@@ -1,0 +1,38 @@
+version: 3
+kind: carrier_bundle
+id: apple_celcom_yoodo_my
+bundle: Celcom_Yoodo_my.bundle
+supported_plmns:
+    - "50219"
+common: {}
+plmn_overrides:
+    "50219":
+        ims:
+            ike:
+                nat_keepalive_enabled: true
+                dpd:
+                    enabled: false
+                    interval_seconds: 600
+                local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                sa_lifetime_seconds: 86400
+            register:
+                use_ipsec: true
+            signaling:
+                preconditions: unsupported
+                support_p_early_media: true
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - "403"
+                        - "500"
+                        - "503"
+                contact:
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+            media:
+                rtp_inactivity_seconds: 10
+            volte:
+                enable_volte_by_default: true

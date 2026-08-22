@@ -1,0 +1,8 @@
+version: 2
+plmn: "42507"
+profiles:
+    - id: apple_mirs_il
+      path: profiles/mirs_il.yaml
+      generic: true
+      selectors:
+        - raw: "42507"

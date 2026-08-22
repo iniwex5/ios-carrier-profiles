@@ -1,0 +1,37 @@
+version: 3
+kind: carrier_bundle
+id: apple_tmobile_al
+bundle: TMobile_al.bundle
+supported_plmns:
+    - "27601"
+common: {}
+plmn_overrides:
+    "27601":
+        ims:
+            apn: ims
+            register:
+                use_ipsec: true
+            signaling:
+                preconditions: supported
+                support_p_early_media: true
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - 3XX
+                        - 4XX
+                        - 5XX
+                        - 6XX
+                contact:
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*[primary]
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            media:
+                rtp_inactivity_seconds: 10
+                rtcp_interval_seconds: 5
+            ussi:
+                enabled: false
+            volte:
+                enable_volte_by_default: true

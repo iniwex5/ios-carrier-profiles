@@ -1,0 +1,8 @@
+version: 2
+plmn: "20469"
+profiles:
+    - id: apple_kpn_nl
+      path: profiles/kpn_nl.yaml
+      generic: true
+      selectors:
+        - raw: "20469"

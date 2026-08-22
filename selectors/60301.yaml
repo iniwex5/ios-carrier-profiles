@@ -1,0 +1,8 @@
+version: 2
+plmn: "60301"
+profiles:
+    - id: apple_mobilis_dz
+      path: profiles/mobilis_dz.yaml
+      generic: true
+      selectors:
+        - raw: "60301"

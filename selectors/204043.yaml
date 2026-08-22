@@ -1,0 +1,16 @@
+version: 2
+plmn: "204043"
+profiles:
+    - id: apple_atn_bm
+      path: profiles/atn_bm.yaml
+      selectors:
+        - raw: 204043_ID-890135
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "890135"
+        - raw: 204043_ID-891351
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "891351"

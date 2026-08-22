@@ -1,0 +1,16 @@
+version: 2
+plmn: "25002"
+profiles:
+    - id: apple_megafon_ru
+      path: profiles/megafon_ru.yaml
+      generic: true
+      selectors:
+        - raw: "25002"
+    - id: apple_megafon_yota_ru
+      path: profiles/megafon_yota_ru.yaml
+      selectors:
+        - raw: 25002_ID-8970111
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8970111"

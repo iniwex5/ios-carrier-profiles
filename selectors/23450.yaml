@@ -1,0 +1,48 @@
+version: 2
+plmn: "23450"
+profiles:
+    - id: apple_affinityclick
+      path: profiles/affinityclick.yaml
+      selectors:
+        - raw: 23450_GID1-616C6F73696D31
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 616C6F73696D31
+    - id: apple_dentwireless
+      path: profiles/dentwireless.yaml
+      selectors:
+        - raw: 23450_GID1-3597bfd533
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 3597BFD533
+    - id: apple_flexiroam
+      path: profiles/flexiroam.yaml
+      selectors:
+        - raw: 23450_GID1-46526F616D313054
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 46526F616D313054
+    - id: apple_jerseytelecom_je
+      path: profiles/jerseytelecom_je.yaml
+      generic: true
+      selectors:
+        - raw: "23450"
+    - id: apple_knowroaming
+      path: profiles/knowroaming.yaml
+      selectors:
+        - raw: 23450_GID1-636f6e6e65637431
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 636F6E6E65637431
+    - id: apple_primemobile
+      path: profiles/primemobile.yaml
+      selectors:
+        - raw: 23450_GID1-2636
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "2636"

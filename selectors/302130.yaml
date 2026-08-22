@@ -1,0 +1,8 @@
+version: 2
+plmn: "302130"
+profiles:
+    - id: apple_xplornet_ca
+      path: profiles/xplornet_ca.yaml
+      generic: true
+      selectors:
+        - raw: "302130"

@@ -1,0 +1,8 @@
+version: 2
+plmn: "24602"
+profiles:
+    - id: apple_bite_lt
+      path: profiles/bite_lt.yaml
+      generic: true
+      selectors:
+        - raw: "24602"

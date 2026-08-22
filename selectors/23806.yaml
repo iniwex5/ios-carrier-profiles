@@ -1,0 +1,8 @@
+version: 2
+plmn: "23806"
+profiles:
+    - id: apple_hutchison_dk
+      path: profiles/hutchison_dk.yaml
+      generic: true
+      selectors:
+        - raw: "23806"

@@ -1,0 +1,8 @@
+version: 2
+plmn: "27411"
+profiles:
+    - id: apple_nova_is
+      path: profiles/nova_is.yaml
+      generic: true
+      selectors:
+        - raw: "27411"

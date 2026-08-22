@@ -1,0 +1,28 @@
+version: 3
+kind: carrier_bundle
+id: apple_coppervalley_lte_us
+bundle: CopperValley_LTE_US.bundle
+supported_plmns:
+    - "311480"
+common: {}
+plmn_overrides:
+    "311480":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 80
+        entitlement:
+            entitlement_url: https://spc.myvzw.com/ium-RoadrunnerInterface/servlet/IUMServlet
+        ims:
+            signaling:
+                preconditions: unsupported
+                support_p_early_media: false
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - "503"
+            media:
+                rtp_inactivity_seconds: 20
+                rtcp_inactivity_seconds: 20
+                rtcp_interval_seconds: 5
+            volte:
+                enable_volte_by_default: true

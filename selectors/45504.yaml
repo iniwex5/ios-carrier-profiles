@@ -1,0 +1,8 @@
+version: 2
+plmn: "45504"
+profiles:
+    - id: apple_ctm_mo
+      path: profiles/ctm_mo.yaml
+      generic: true
+      selectors:
+        - raw: "45504"

@@ -1,0 +1,8 @@
+version: 2
+plmn: "70403"
+profiles:
+    - id: apple_movistar_gt
+      path: profiles/movistar_gt.yaml
+      generic: true
+      selectors:
+        - raw: "70403"

@@ -1,0 +1,8 @@
+version: 2
+plmn: "302630"
+profiles:
+    - id: apple_bell_ca
+      path: profiles/bell_ca.yaml
+      generic: true
+      selectors:
+        - raw: "302630"

@@ -1,0 +1,8 @@
+version: 2
+plmn: "20620"
+profiles:
+    - id: apple_base_be
+      path: profiles/base_be.yaml
+      generic: true
+      selectors:
+        - raw: "20620"

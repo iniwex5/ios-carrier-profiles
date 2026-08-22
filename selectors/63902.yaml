@@ -1,0 +1,8 @@
+version: 2
+plmn: "63902"
+profiles:
+    - id: apple_safaricom_ke
+      path: profiles/safaricom_ke.yaml
+      generic: true
+      selectors:
+        - raw: "63902"

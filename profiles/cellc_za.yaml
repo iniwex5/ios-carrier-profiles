@@ -1,0 +1,7 @@
+version: 3
+kind: carrier_bundle
+id: apple_cellc_za
+bundle: CellC_za.bundle
+supported_plmns:
+    - "65507"
+common: {}

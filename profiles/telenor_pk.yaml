@@ -1,0 +1,30 @@
+version: 3
+kind: carrier_bundle
+id: apple_telenor_pk
+bundle: Telenor_pk.bundle
+supported_plmns:
+    - "41006"
+common: {}
+plmn_overrides:
+    "41006":
+        ims:
+            apn: ims
+            signaling:
+                preconditions: supported
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - "403"
+                        - "500"
+                        - "503"
+                        - "504"
+                contact:
+                    always_add_sip_instance: true
+                    additional_contact_params:
+                        - selector: INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+                            - +g.3gpp.mid-call
+            volte:
+                enable_volte_by_default: true

@@ -1,0 +1,8 @@
+version: 2
+plmn: "302270"
+profiles:
+    - id: apple_eastlink_ca
+      path: profiles/eastlink_ca.yaml
+      generic: true
+      selectors:
+        - raw: "302270"

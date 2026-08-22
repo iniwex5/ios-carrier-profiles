@@ -1,0 +1,11 @@
+version: 3
+kind: carrier_bundle
+id: apple_shinetown
+bundle: Shinetown.bundle
+supported_plmns:
+    - "26006"
+    - "45400"
+    - "45403"
+    - "45407"
+    - "45501"
+common: {}

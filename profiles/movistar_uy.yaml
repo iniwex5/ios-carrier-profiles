@@ -1,0 +1,33 @@
+version: 3
+kind: carrier_bundle
+id: apple_movistar_uy
+bundle: movistar_uy.bundle
+supported_plmns:
+    - "21407"
+    - "74807"
+common:
+    ims:
+        apn: ims
+        ip_stack: ipv6
+        register:
+            use_ipsec: true
+        signaling:
+            contact:
+                additional_contact_params:
+                    - selector: REGISTER,INVITE,INVITE:*
+                      params:
+                        - +g.3gpp.mid-call
+                        - +g.3gpp.srvcc-alerting
+            csfb_on:
+                - method: INVITE
+                  statuses:
+                    - 3XX
+                    - "403"
+                    - "408"
+                    - 5XX
+                    - 6XX
+            max_udp_message_size: 1500
+            preconditions: supported
+            support_p_early_media: true
+        volte:
+            enable_volte_by_default: true

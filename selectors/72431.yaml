@@ -1,0 +1,8 @@
+version: 2
+plmn: "72431"
+profiles:
+    - id: apple_oi_br
+      path: profiles/oi_br.yaml
+      generic: true
+      selectors:
+        - raw: "72431"

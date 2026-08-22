@@ -1,0 +1,33 @@
+version: 3
+kind: carrier_bundle
+id: apple_maroc_ma
+bundle: Maroc_ma.bundle
+supported_plmns:
+    - "60401"
+common: {}
+plmn_overrides:
+    "60401":
+        ims:
+            apn: ims
+            ip_stack: ipv4
+            register:
+                use_ipsec: true
+            signaling:
+                preconditions: unsupported
+                support_p_early_media: true
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - 3XX
+                        - 5XX
+                        - 6XX
+                contact:
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            media:
+                rtp_inactivity_seconds: 15
+                rtcp_interval_seconds: 5

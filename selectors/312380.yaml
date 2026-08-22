@@ -1,0 +1,8 @@
+version: 2
+plmn: "312380"
+profiles:
+    - id: apple_coppervalleytelecom_lte_us
+      path: profiles/coppervalleytelecom_lte_us.yaml
+      generic: true
+      selectors:
+        - raw: "312380"

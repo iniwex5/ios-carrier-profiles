@@ -1,0 +1,19 @@
+version: 2
+plmn: "23457"
+profiles:
+    - id: apple_esimgo
+      path: profiles/esimgo.yaml
+      selectors:
+        - raw: 23457_GID1-0409
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "0409"
+    - id: apple_o2_sky_uk
+      path: profiles/o2_sky_uk.yaml
+      selectors:
+        - raw: 23457_GID1-0C
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 0C

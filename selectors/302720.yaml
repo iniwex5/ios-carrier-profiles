@@ -1,0 +1,57 @@
+version: 2
+plmn: "302720"
+profiles:
+    - id: apple_rogers_ca
+      path: profiles/rogers_ca.yaml
+      generic: true
+      selectors:
+        - raw: "302720"
+    - id: apple_rogers_chatr_ca
+      path: profiles/rogers_chatr_ca.yaml
+      selectors:
+        - raw: 302720_GID1-D2
+          conditions:
+            - field: gid1
+              match: prefix
+              value: D2
+        - raw: 302720_ID-8930272040194
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8930272040194"
+        - raw: 302720_ID-8930272040794
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8930272040794"
+        - raw: 302720_ID-8930272041394
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8930272041394"
+        - raw: 302720_ID-8930272041794
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8930272041794"
+        - raw: 302720_ID-8930272051394
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8930272051394"
+    - id: apple_rogers_cityfone_ca
+      path: profiles/rogers_cityfone_ca.yaml
+      selectors:
+        - raw: 302720_GID1-CC
+          conditions:
+            - field: gid1
+              match: prefix
+              value: CC
+    - id: apple_tbaytel_ca
+      path: profiles/tbaytel_ca.yaml
+      selectors:
+        - raw: 302720_GID1-BA
+          conditions:
+            - field: gid1
+              match: prefix
+              value: BA

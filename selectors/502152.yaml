@@ -1,0 +1,8 @@
+version: 2
+plmn: "502152"
+profiles:
+    - id: apple_yes_my
+      path: profiles/yes_my.yaml
+      generic: true
+      selectors:
+        - raw: "502152"

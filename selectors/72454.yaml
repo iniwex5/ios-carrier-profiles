@@ -1,0 +1,11 @@
+version: 2
+plmn: "72454"
+profiles:
+    - id: apple_bics
+      path: profiles/bics.yaml
+      selectors:
+        - raw: 72454_ID-893204
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "893204"

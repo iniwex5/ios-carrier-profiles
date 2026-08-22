@@ -1,0 +1,8 @@
+version: 2
+plmn: "24802"
+profiles:
+    - id: apple_elisa_ee
+      path: profiles/elisa_ee.yaml
+      generic: true
+      selectors:
+        - raw: "24802"

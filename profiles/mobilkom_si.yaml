@@ -1,0 +1,37 @@
+version: 3
+kind: carrier_bundle
+id: apple_mobilkom_si
+bundle: mobilkom_si.bundle
+supported_plmns:
+    - "29340"
+common: {}
+plmn_overrides:
+    "29340":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 8193
+        entitlement:
+            entitlement_url: https://esim-es-open-prod-aonesi.esimcloud.net/aonesi/prod/executeAppleActions
+        ims:
+            register:
+                use_ipsec: true
+            signaling:
+                preconditions: supported
+                support_p_early_media: false
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - 3XX
+                        - 4XX
+                        - 5XX
+                        - 6XX
+                contact:
+                    always_add_sip_instance: true
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*[primary]
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            volte:
+                enable_volte_by_default: true

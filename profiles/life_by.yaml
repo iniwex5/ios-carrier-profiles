@@ -1,0 +1,7 @@
+version: 3
+kind: carrier_bundle
+id: apple_life_by
+bundle: life_by.bundle
+supported_plmns:
+    - "25704"
+common: {}

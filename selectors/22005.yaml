@@ -1,0 +1,8 @@
+version: 2
+plmn: "22005"
+profiles:
+    - id: apple_mobilkom_rs
+      path: profiles/mobilkom_rs.yaml
+      generic: true
+      selectors:
+        - raw: "22005"

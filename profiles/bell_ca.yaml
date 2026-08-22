@@ -1,0 +1,69 @@
+version: 3
+kind: carrier_bundle
+id: apple_bell_ca
+bundle: Bell_ca.bundle
+supported_plmns:
+    - "302610"
+    - "302630"
+    - "302640"
+common:
+    apple:
+        carrier_entitlements:
+            supported_entitlements: 4205777
+    entitlement:
+        entitlement_url: https://egw.wireless.bell.ca/ium-OEMInterface/servlet/IUMServlet/
+    ims:
+        apn: ims
+        domain: ims.bell.ca
+        epdg:
+            address: epdg.epc.mnc610.mcc302.pub.3gppnetwork.org
+        ike:
+            dpd:
+                enabled: false
+                interval_seconds: 600
+            local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+            proposals:
+                - encryption:
+                    - aes256
+                  integrity:
+                    - sha256
+                  prf:
+                    - sha256
+                  dh_groups:
+                    - modp2048
+                  lifetime_seconds: 80000
+                  authentication_method: None
+                  eap_method: EAP-AKA
+            sa_lifetime_seconds: 80000
+        impi_format: imsi@carrierDomain
+        ip_stack: ipv6
+        media:
+            rtcp_interval_seconds: 5
+            rtp_inactivity_seconds: 30
+        register:
+            include_cellular_network_info: true
+            use_ipsec: true
+        signaling:
+            contact:
+                always_add_sip_instance: true
+            csfb_on:
+                - method: INVITE
+                  statuses:
+                    - "403"
+                    - "408"
+                    - "480"
+                    - "488"
+                    - "500"
+                    - "504"
+                    - "600"
+                    - "606"
+                    - "503"
+            max_udp_message_size: 1200
+            preconditions: supported
+            support_p_early_media: true
+        volte:
+            enable_volte_by_default: true
+plmn_overrides:
+    "302610":
+        ims:
+            epdg: null

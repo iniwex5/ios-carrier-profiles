@@ -1,0 +1,8 @@
+version: 2
+plmn: "43404"
+profiles:
+    - id: apple_vimpelcom_uz
+      path: profiles/vimpelcom_uz.yaml
+      generic: true
+      selectors:
+        - raw: "43404"

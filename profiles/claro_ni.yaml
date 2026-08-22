@@ -1,0 +1,27 @@
+version: 3
+kind: carrier_bundle
+id: apple_claro_ni
+bundle: Claro_ni.bundle
+supported_plmns:
+    - "71021"
+common: {}
+plmn_overrides:
+    "71021":
+        ims:
+            apn: ims
+            ip_stack: ipv4
+            register:
+                use_ipsec: true
+            signaling:
+                preconditions: supported
+                support_p_early_media: true
+                contact:
+                    always_add_sip_instance: true
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            volte:
+                enable_volte_by_default: true

@@ -1,0 +1,8 @@
+version: 2
+plmn: "60201"
+profiles:
+    - id: apple_mobinil_eg
+      path: profiles/mobinil_eg.yaml
+      generic: true
+      selectors:
+        - raw: "60201"

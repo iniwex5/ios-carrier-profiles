@@ -1,0 +1,8 @@
+version: 2
+plmn: "42902"
+profiles:
+    - id: apple_ncell_np
+      path: profiles/ncell_np.yaml
+      generic: true
+      selectors:
+        - raw: "42902"

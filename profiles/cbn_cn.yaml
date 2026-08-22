@@ -1,0 +1,21 @@
+version: 3
+kind: carrier_bundle
+id: apple_cbn_cn
+bundle: CBN_cn.bundle
+supported_plmns:
+    - "46015"
+common: {}
+plmn_overrides:
+    "46015":
+        ims:
+            register:
+                use_ipsec: true
+            signaling:
+                preconditions: supported
+                support_p_early_media: true
+            media:
+                rtp_inactivity_seconds: 20
+                rtcp_inactivity_seconds: 20
+                rtcp_interval_seconds: 5
+            volte:
+                enable_volte_by_default: true

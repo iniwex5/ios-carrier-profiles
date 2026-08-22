@@ -1,0 +1,44 @@
+version: 3
+kind: carrier_bundle
+id: apple_eastlink_ca
+bundle: Eastlink_ca.bundle
+supported_plmns:
+    - "20601"
+    - "302270"
+common:
+    apple:
+        carrier_entitlements:
+            supported_entitlements: 8369
+    entitlement:
+        entitlement_url: https://wireless-entitlements.eastlink.ca
+    ims:
+        ike:
+            dpd:
+                enabled: false
+                interval_seconds: 600
+            local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+            sa_lifetime_seconds: 86400
+        impi_format: imsi@carrierDomain
+        impu_format: msisdn@carrierDomain
+        media:
+            rtp_inactivity_seconds: 30
+        register:
+            include_cellular_network_info: true
+            use_ipsec: true
+        signaling:
+            csfb_on:
+                - method: INVITE
+                  statuses:
+                    - "380"
+                    - "414"
+                    - "499"
+                    - "606"
+            preconditions: supported
+            support_p_early_media: false
+        volte:
+            enable_volte_by_default: true
+plmn_overrides:
+    "20601":
+        ims:
+            epdg:
+                address: epdg.epc.mnc270.mcc302.pub.3gppnetwork.org

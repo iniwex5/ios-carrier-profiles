@@ -1,0 +1,8 @@
+version: 2
+plmn: "45601"
+profiles:
+    - id: apple_cellcard_kh
+      path: profiles/cellcard_kh.yaml
+      generic: true
+      selectors:
+        - raw: "45601"

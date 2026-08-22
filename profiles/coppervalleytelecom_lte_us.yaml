@@ -1,0 +1,38 @@
+version: 3
+kind: carrier_bundle
+id: apple_coppervalleytelecom_lte_us
+bundle: CopperValleyTelecom_LTE_US.bundle
+supported_plmns:
+    - "312380"
+common: {}
+plmn_overrides:
+    "312380":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 209
+        entitlement:
+            entitlement_url: https://cvt.dcc.entitlements.io3.com
+        ims:
+            epdg:
+                address: epdg.epc.mnc290.mcc312.pub.3gppnetwork.org
+            ike:
+                dpd:
+                    enabled: false
+                    interval_seconds: 600
+                local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                local_identifier_type: IDUserFQDN
+                sa_lifetime_seconds: 80000
+            register:
+                use_ipsec: true
+                include_cellular_network_info: true
+            signaling:
+                max_udp_message_size: 1200
+                support_p_early_media: false
+                contact:
+                    always_add_sip_instance: true
+            media:
+                rtp_inactivity_seconds: 20
+                rtcp_inactivity_seconds: 20
+                rtcp_interval_seconds: 5
+            volte:
+                enable_volte_by_default: true

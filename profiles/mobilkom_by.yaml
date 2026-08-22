@@ -1,0 +1,34 @@
+version: 3
+kind: carrier_bundle
+id: apple_mobilkom_by
+bundle: mobilkom_by.bundle
+supported_plmns:
+    - "25701"
+common: {}
+plmn_overrides:
+    "25701":
+        ims:
+            register:
+                use_ipsec: true
+            signaling:
+                preconditions: supported
+                support_p_early_media: true
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - 3XX
+                        - 4XX
+                        - 5XX
+                        - 6XX
+                contact:
+                    always_add_sip_instance: true
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*[primary]
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            media:
+                rtp_inactivity_seconds: 20
+            volte:
+                enable_volte_by_default: true

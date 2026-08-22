@@ -1,0 +1,11 @@
+version: 2
+plmn: "42512"
+profiles:
+    - id: apple_primemobile
+      path: profiles/primemobile.yaml
+      selectors:
+        - raw: 42512_GID1-2636
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "2636"

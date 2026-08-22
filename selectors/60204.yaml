@@ -1,0 +1,8 @@
+version: 2
+plmn: "60204"
+profiles:
+    - id: apple_telecomegypt_eg
+      path: profiles/telecomegypt_eg.yaml
+      generic: true
+      selectors:
+        - raw: "60204"

@@ -1,0 +1,8 @@
+version: 2
+plmn: "71201"
+profiles:
+    - id: apple_ice_cr
+      path: profiles/ice_cr.yaml
+      generic: true
+      selectors:
+        - raw: "71201"

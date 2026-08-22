@@ -1,0 +1,8 @@
+version: 2
+plmn: "23408"
+profiles:
+    - id: apple_bt_onephone_uk
+      path: profiles/bt_onephone_uk.yaml
+      generic: true
+      selectors:
+        - raw: "23408"

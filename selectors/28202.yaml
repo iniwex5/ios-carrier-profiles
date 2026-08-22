@@ -1,0 +1,8 @@
+version: 2
+plmn: "28202"
+profiles:
+    - id: apple_magticom_ge
+      path: profiles/magticom_ge.yaml
+      generic: true
+      selectors:
+        - raw: "28202"

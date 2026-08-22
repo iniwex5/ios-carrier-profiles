@@ -1,0 +1,43 @@
+version: 2
+plmn: "45406"
+profiles:
+    - id: apple_cmcc_cmi
+      path: profiles/cmcc_cmi.yaml
+      selectors:
+        - raw: 45406_ID-8985234
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8985234"
+    - id: apple_multibyte
+      path: profiles/multibyte.yaml
+      selectors:
+        - raw: 45406_GID1-58300_GID2-58301
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "58300"
+            - field: gid2
+              match: prefix
+              value: "58301"
+    - id: apple_redteamobile
+      path: profiles/redteamobile.yaml
+      selectors:
+        - raw: 45406_ID-89852245280
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89852245280"
+    - id: apple_smartone_hk
+      path: profiles/smartone_hk.yaml
+      generic: true
+      selectors:
+        - raw: "45406"
+    - id: apple_smartone_hkbn_hk
+      path: profiles/smartone_hkbn_hk.yaml
+      selectors:
+        - raw: 45406_GID1-0009
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "0009"

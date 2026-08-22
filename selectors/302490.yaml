@@ -1,0 +1,8 @@
+version: 2
+plmn: "302490"
+profiles:
+    - id: apple_freedommobile_ca
+      path: profiles/freedommobile_ca.yaml
+      generic: true
+      selectors:
+        - raw: "302490"

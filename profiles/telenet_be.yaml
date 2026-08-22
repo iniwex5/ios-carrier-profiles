@@ -1,0 +1,50 @@
+version: 3
+kind: carrier_bundle
+id: apple_telenet_be
+bundle: Telenet_be.bundle
+supported_plmns:
+    - "20601"
+    - "20605"
+common:
+    apple:
+        carrier_entitlements:
+            supported_entitlements: 1025
+    entitlement:
+        entitlement_url: https://esim-telenet-es-prd.ipaas.amdocs.com/telenet/prod/executeAppleActions
+    ims:
+        apn: ims
+        epdg:
+            address: epdg.telco.telenet-ops.be
+        ike:
+            dpd:
+                enabled: false
+                interval_seconds: 600
+            local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+            nat_keepalive_enabled: true
+            nat_keepalive_seconds: 20
+            sa_lifetime_seconds: 80000
+        ip_stack: ipv6
+        media:
+            rtcp_interval_seconds: 5
+        register:
+            include_cellular_network_info: true
+            use_ipsec: true
+        signaling:
+            contact:
+                additional_contact_params:
+                    - selector: REGISTER,INVITE,INVITE:*
+                      params:
+                        - +g.3gpp.mid-call
+                        - +g.3gpp.srvcc-alerting
+                        - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            csfb_on:
+                - method: INVITE
+                  statuses:
+                    - 3XX
+                    - 4XX
+                    - 5XX
+                    - 6XX
+            preconditions: supported
+            support_p_early_media: true
+        volte:
+            enable_volte_by_default: true

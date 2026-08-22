@@ -1,0 +1,8 @@
+version: 3
+kind: carrier_bundle
+id: apple_digicel_kn
+bundle: Digicel_kn.bundle
+supported_plmns:
+    - "33805"
+    - "338050"
+common: {}

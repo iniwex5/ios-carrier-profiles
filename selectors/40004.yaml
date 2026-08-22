@@ -1,0 +1,8 @@
+version: 2
+plmn: "40004"
+profiles:
+    - id: apple_azerfon_az
+      path: profiles/azerfon_az.yaml
+      generic: true
+      selectors:
+        - raw: "40004"

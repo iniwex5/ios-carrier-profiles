@@ -1,0 +1,8 @@
+version: 2
+plmn: "61202"
+profiles:
+    - id: apple_etisalat_ci
+      path: profiles/etisalat_ci.yaml
+      generic: true
+      selectors:
+        - raw: "61202"

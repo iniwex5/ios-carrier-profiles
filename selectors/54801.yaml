@@ -1,0 +1,8 @@
+version: 2
+plmn: "54801"
+profiles:
+    - id: apple_telecomcook_ck
+      path: profiles/telecomcook_ck.yaml
+      generic: true
+      selectors:
+        - raw: "54801"

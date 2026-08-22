@@ -1,0 +1,8 @@
+version: 2
+plmn: "313100"
+profiles:
+    - id: apple_att_firstnet_us
+      path: profiles/att_firstnet_us.yaml
+      generic: true
+      selectors:
+        - raw: "313100"

@@ -1,0 +1,27 @@
+version: 2
+plmn: "310120"
+profiles:
+    - id: apple_sprint_boost_isim_lte_us
+      path: profiles/sprint_boost_isim_lte_us.yaml
+      selectors:
+        - raw: 310120_GID2-13
+          conditions:
+            - field: gid2
+              match: prefix
+              value: "13"
+    - id: apple_sprint_isim_lte_us
+      path: profiles/sprint_isim_lte_us.yaml
+      selectors:
+        - raw: 310120_GID2-11
+          conditions:
+            - field: gid2
+              match: prefix
+              value: "11"
+    - id: apple_sprint_virgin_isim_lte_us
+      path: profiles/sprint_virgin_isim_lte_us.yaml
+      selectors:
+        - raw: 310120_GID2-12
+          conditions:
+            - field: gid2
+              match: prefix
+              value: "12"

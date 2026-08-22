@@ -1,0 +1,8 @@
+version: 3
+kind: carrier_bundle
+id: apple_free_re
+bundle: Free_re.bundle
+supported_plmns:
+    - "20815"
+    - "64703"
+common: {}

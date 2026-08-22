@@ -1,0 +1,123 @@
+version: 2
+plmn: "20801"
+profiles:
+    - id: apple_1and1_de
+      path: profiles/1and1_de.yaml
+      selectors:
+        - raw: 20801_ID-894936
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "894936"
+    - id: apple_affinityclick
+      path: profiles/affinityclick.yaml
+      selectors:
+        - raw: 20801_GID1-616C6F73696D31
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 616C6F73696D31
+    - id: apple_airgsm
+      path: profiles/airgsm.yaml
+      selectors:
+        - raw: 20801_GID1-41
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "41"
+    - id: apple_cmcc_cmi
+      path: profiles/cmcc_cmi.yaml
+      selectors:
+        - raw: 20801_ID-8985234
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8985234"
+    - id: apple_coriolis_fr
+      path: profiles/coriolis_fr.yaml
+      selectors:
+        - raw: 20801_ID-893327
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "893327"
+    - id: apple_holafly
+      path: profiles/holafly.yaml
+      selectors:
+        - raw: 20801_GID1-0407_ID-893301
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "0407"
+            - field: iccid
+              match: prefix
+              value: "893301"
+    - id: apple_knowroaming
+      path: profiles/knowroaming.yaml
+      selectors:
+        - raw: 20801_GID1-636f6e6e65637431
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 636F6E6E65637431
+    - id: apple_monacotel_mc
+      path: profiles/monacotel_mc.yaml
+      selectors:
+        - raw: 20801_ID-8937710
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8937710"
+    - id: apple_nrj_fr
+      path: profiles/nrj_fr.yaml
+      selectors:
+        - raw: 20801_ID-893326
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "893326"
+    - id: apple_ora_pf
+      path: profiles/ora_pf.yaml
+      selectors:
+        - raw: 20801_ID-8954705
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8954705"
+    - id: apple_orange_france
+      path: profiles/orange_france.yaml
+      generic: true
+      selectors:
+        - raw: "20801"
+    - id: apple_rakuten_jp
+      path: profiles/rakuten_jp.yaml
+      selectors:
+        - raw: 20801_ID-8981090
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8981090"
+    - id: apple_simly
+      path: profiles/simly.yaml
+      selectors:
+        - raw: 20801_GID1-73696D6C7931
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 73696D6C7931
+    - id: apple_webbing
+      path: profiles/webbing.yaml
+      selectors:
+        - raw: 20801_ID-8985235
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8985235"
+    - id: apple_zeop_re
+      path: profiles/zeop_re.yaml
+      selectors:
+        - raw: 20801_ID-892620497
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "892620497"

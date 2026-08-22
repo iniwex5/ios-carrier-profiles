@@ -1,0 +1,7 @@
+version: 3
+kind: carrier_bundle
+id: apple_globacom_gh
+bundle: Globacom_gh.bundle
+supported_plmns:
+    - "62007"
+common: {}

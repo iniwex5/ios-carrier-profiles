@@ -1,0 +1,12 @@
+version: 3
+kind: carrier_bundle
+id: apple_cellcard_kh
+bundle: Cellcard_kh.bundle
+supported_plmns:
+    - "45601"
+common: {}
+plmn_overrides:
+    "45601":
+        ims:
+            volte:
+                enable_volte_by_default: true

@@ -1,0 +1,8 @@
+version: 2
+plmn: "311450"
+profiles:
+    - id: apple_ptci_lte_only_us
+      path: profiles/ptci_lte_only_us.yaml
+      generic: true
+      selectors:
+        - raw: "311450"

@@ -1,0 +1,21 @@
+version: 2
+plmn: "28010"
+profiles:
+    - id: apple_mtn_cy
+      path: profiles/mtn_cy.yaml
+      generic: true
+      selectors:
+        - raw: "28010"
+    - id: apple_sfr_fr
+      path: profiles/sfr_fr.yaml
+      selectors:
+        - raw: 28010_ID-89331014
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89331014"
+        - raw: 28010_ID-893327
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "893327"

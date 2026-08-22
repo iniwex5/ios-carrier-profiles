@@ -1,0 +1,16 @@
+version: 3
+kind: carrier_bundle
+id: apple_8ta_za
+bundle: 8ta_za.bundle
+supported_plmns:
+    - "65502"
+common: {}
+plmn_overrides:
+    "65502":
+        ims:
+            register:
+                use_ipsec: true
+            signaling:
+                support_p_early_media: false
+            volte:
+                enable_volte_by_default: true

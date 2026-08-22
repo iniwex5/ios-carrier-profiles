@@ -1,0 +1,8 @@
+version: 2
+plmn: "74602"
+profiles:
+    - id: apple_telesur_sr
+      path: profiles/telesur_sr.yaml
+      generic: true
+      selectors:
+        - raw: "74602"

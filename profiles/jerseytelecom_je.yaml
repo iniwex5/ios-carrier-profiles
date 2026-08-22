@@ -1,0 +1,12 @@
+version: 3
+kind: carrier_bundle
+id: apple_jerseytelecom_je
+bundle: JerseyTelecom_je.bundle
+supported_plmns:
+    - "23450"
+common: {}
+plmn_overrides:
+    "23450":
+        ims:
+            volte:
+                enable_volte_by_default: true

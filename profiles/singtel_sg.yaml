@@ -1,0 +1,46 @@
+version: 3
+kind: carrier_bundle
+id: apple_singtel_sg
+bundle: SingTel_sg.bundle
+supported_plmns:
+    - "52501"
+common: {}
+plmn_overrides:
+    "52501":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 4197377
+        entitlement:
+            entitlement_url: https://ses.singtel.com
+        ims:
+            apn: ims
+            ip_stack: ipv6
+            ike:
+                dpd:
+                    enabled: false
+                    interval_seconds: 600
+                child_sa:
+                    proposals:
+                        - encryption:
+                            - aes128
+                          integrity:
+                            - sha256
+                          pfs_group: modp2048
+                          lifetime_seconds: 80000
+                    lifetime_seconds: 80000
+                local_identifier: anonymous@nai.epc.mnc001.mcc525.3gppnetwork.org
+                sa_lifetime_seconds: 80000
+            register:
+                use_ipsec: true
+            signaling:
+                preconditions: unsupported
+                support_p_early_media: true
+                contact:
+                    additional_contact_params:
+                        - selector: INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+                            - +g.3gpp.mid-call
+            volte:
+                enable_volte_by_default: true

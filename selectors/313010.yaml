@@ -1,0 +1,8 @@
+version: 2
+plmn: "313010"
+profiles:
+    - id: apple_crosswireless_bravado_lte_us
+      path: profiles/crosswireless_bravado_lte_us.yaml
+      generic: true
+      selectors:
+        - raw: "313010"

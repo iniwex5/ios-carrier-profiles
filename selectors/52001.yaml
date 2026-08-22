@@ -1,0 +1,8 @@
+version: 2
+plmn: "52001"
+profiles:
+    - id: apple_ais_th
+      path: profiles/ais_th.yaml
+      generic: true
+      selectors:
+        - raw: "52001"

@@ -1,0 +1,19 @@
+version: 2
+plmn: "54202"
+profiles:
+    - id: apple_digicel_fj
+      path: profiles/digicel_fj.yaml
+      selectors:
+        - raw: 54202_ID-8967902
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8967902"
+    - id: apple_digicel_nr
+      path: profiles/digicel_nr.yaml
+      selectors:
+        - raw: 54202_ID-8967402
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8967402"

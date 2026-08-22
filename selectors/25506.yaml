@@ -1,0 +1,8 @@
+version: 2
+plmn: "25506"
+profiles:
+    - id: apple_turkcell_lifecell_ua
+      path: profiles/turkcell_lifecell_ua.yaml
+      generic: true
+      selectors:
+        - raw: "25506"

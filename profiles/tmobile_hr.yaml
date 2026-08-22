@@ -1,0 +1,56 @@
+version: 3
+kind: carrier_bundle
+id: apple_tmobile_hr
+bundle: TMobile_hr.bundle
+supported_plmns:
+    - "21901"
+    - "21920"
+common:
+    apple:
+        carrier_entitlements:
+            supported_entitlements: 1025
+    entitlement:
+        entitlement_url: https://entitlement-hr.telekom.net
+    ims:
+        apn: ims
+        ike:
+            child_sa:
+                lifetime_seconds: 64800
+                proposals:
+                    - encryption:
+                        - aes256
+                      integrity:
+                        - sha256
+                      lifetime_seconds: 64800
+            dpd:
+                enabled: false
+                interval_seconds: 600
+            local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+            sa_lifetime_seconds: 64800
+        ip_stack: ipv4
+        media:
+            rtcp_inactivity_seconds: 180
+            rtcp_interval_seconds: 5
+            rtp_inactivity_seconds: 20
+        register:
+            include_cellular_network_info: true
+            use_ipsec: true
+        signaling:
+            contact:
+                additional_contact_params:
+                    - selector: REGISTER,INVITE,INVITE:*[primary]
+                      params:
+                        - +g.3gpp.mid-call
+                        - +g.3gpp.srvcc-alerting
+                        - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            preconditions: supported
+            support_p_early_media: true
+        ussi:
+            enabled: true
+        volte:
+            enable_volte_by_default: true
+plmn_overrides:
+    "21920":
+        ims:
+            epdg:
+                address: epdg.epc.mnc001.mcc219.pub.3gppnetwork.org

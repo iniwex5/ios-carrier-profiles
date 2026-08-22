@@ -1,0 +1,59 @@
+version: 3
+kind: carrier_bundle
+id: apple_tmobile_germany
+bundle: TMobile_Germany.bundle
+supported_plmns:
+    - "26201"
+    - "26206"
+    - "26278"
+    - "26298"
+common:
+    apple:
+        carrier_entitlements:
+            supported_entitlements: 4307969
+    entitlement:
+        entitlement_url: https://entitlement.telekom.de
+    ims:
+        apn: ims
+        epdg:
+            address: epdg.epc.mnc001.mcc262.pub.3gppnetwork.org
+        ike:
+            child_sa:
+                lifetime_seconds: 64800
+                proposals:
+                    - encryption:
+                        - aes256
+                      integrity:
+                        - sha256
+                      lifetime_seconds: 64800
+            dpd:
+                enabled: false
+                interval_seconds: 600
+            local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+            sa_lifetime_seconds: 64800
+        ip_stack: ipv6
+        media:
+            rtcp_inactivity_seconds: 180
+            rtcp_interval_seconds: 5
+            rtp_inactivity_seconds: 20
+        register:
+            include_cellular_network_info: true
+            use_ipsec: true
+        signaling:
+            contact:
+                additional_contact_params:
+                    - selector: REGISTER,INVITE,INVITE:*[primary]
+                      params:
+                        - +g.3gpp.mid-call
+                        - +g.3gpp.srvcc-alerting
+                        - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            preconditions: supported
+            support_p_early_media: true
+        ussi:
+            enabled: true
+        volte:
+            enable_volte_by_default: true
+plmn_overrides:
+    "26201":
+        ims:
+            epdg: null

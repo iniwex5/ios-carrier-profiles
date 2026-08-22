@@ -1,0 +1,8 @@
+version: 2
+plmn: "74801"
+profiles:
+    - id: apple_antel_uy
+      path: profiles/antel_uy.yaml
+      generic: true
+      selectors:
+        - raw: "74801"

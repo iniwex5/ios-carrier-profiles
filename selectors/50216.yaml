@@ -1,0 +1,8 @@
+version: 2
+plmn: "50216"
+profiles:
+    - id: apple_digi_my
+      path: profiles/digi_my.yaml
+      generic: true
+      selectors:
+        - raw: "50216"

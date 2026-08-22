@@ -1,0 +1,7 @@
+version: 3
+kind: carrier_bundle
+id: apple_kpn_telfort_nl
+bundle: KPN_Telfort_nl.bundle
+supported_plmns:
+    - "20412"
+common: {}

@@ -1,0 +1,40 @@
+version: 2
+plmn: "42402"
+profiles:
+    - id: apple_affinityclick
+      path: profiles/affinityclick.yaml
+      selectors:
+        - raw: 42402_GID1-616C6F73696D31
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 616C6F73696D31
+    - id: apple_etisalat_ae
+      path: profiles/etisalat_ae.yaml
+      generic: true
+      selectors:
+        - raw: "42402"
+    - id: apple_knowroaming
+      path: profiles/knowroaming.yaml
+      selectors:
+        - raw: 42402_GID1-636f6e6e65637431
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 636F6E6E65637431
+    - id: apple_simly
+      path: profiles/simly.yaml
+      selectors:
+        - raw: 42402_GID1-73696D6C7931
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 73696D6C7931
+    - id: apple_webbing
+      path: profiles/webbing.yaml
+      selectors:
+        - raw: 42402_ID-8985235
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8985235"

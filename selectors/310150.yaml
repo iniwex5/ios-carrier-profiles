@@ -1,0 +1,16 @@
+version: 2
+plmn: "310150"
+profiles:
+    - id: apple_att_aio_nr_us
+      path: profiles/att_aio_nr_us.yaml
+      selectors:
+        - raw: 310150_GID1-53FF
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 53FF
+    - id: apple_att_aio_us
+      path: profiles/att_aio_us.yaml
+      generic: true
+      selectors:
+        - raw: "310150"

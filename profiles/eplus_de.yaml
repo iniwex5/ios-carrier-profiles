@@ -1,0 +1,58 @@
+version: 3
+kind: carrier_bundle
+id: apple_eplus_de
+bundle: EPlus_de.bundle
+supported_plmns:
+    - "26203"
+common: {}
+plmn_overrides:
+    "26203":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 4203521
+        entitlement:
+            entitlement_url: https://entitlement.ncs.telefonica.de/magnolia/
+        ims:
+            apn: ims
+            ip_stack: ipv6
+            epdg:
+                address: epdg.epc.mnc007.mcc262.pub.3gppnetwork.org
+            ike:
+                nat_keepalive_enabled: true
+                nat_keepalive_seconds: 20
+                dpd:
+                    enabled: false
+                    interval_seconds: 600
+                child_sa:
+                    proposals:
+                        - encryption:
+                            - aes256
+                          integrity:
+                            - sha256
+                          lifetime_seconds: 80000
+                    lifetime_seconds: 80000
+                local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                sa_lifetime_seconds: 80000
+            register:
+                use_ipsec: true
+                include_cellular_network_info: true
+            signaling:
+                max_udp_message_size: 1200
+                preconditions: supported
+                support_p_early_media: true
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - 3XX
+                        - 5XX
+                contact:
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            media:
+                rtcp_interval_seconds: 5
+            volte:
+                enable_volte_by_default: true

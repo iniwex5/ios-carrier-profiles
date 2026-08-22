@@ -1,0 +1,75 @@
+version: 3
+kind: carrier_bundle
+id: apple_1and1_de
+bundle: 1and1_de.bundle
+supported_plmns:
+    - "20801"
+    - "26223"
+common:
+    apple:
+        carrier_entitlements:
+            supported_entitlements: 4203537
+    entitlement:
+        entitlement_url: https://es.1und1-mobilfunk.de
+    ims:
+        apn: ims
+        ike:
+            child_sa:
+                lifetime_seconds: 86400
+                proposals:
+                    - encryption:
+                        - aes256
+                      integrity:
+                        - sha256
+                      pfs_group: modp2048
+                      lifetime_seconds: 86400
+            dpd:
+                enabled: false
+                interval_seconds: 600
+            local_identifier: 0$impi_user@nai.epc.mnc023.mcc262.3gppnetwork.org
+            nat_keepalive_enabled: true
+            proposals:
+                - encryption:
+                    - aes256
+                  integrity:
+                    - sha256
+                  prf:
+                    - sha256
+                  dh_groups:
+                    - modp2048
+                  lifetime_seconds: 80000
+                  authentication_method: None
+                  eap_method: EAP-AKA
+            sa_lifetime_seconds: 80000
+        ip_stack: ipv6
+        media:
+            rtcp_interval_seconds: 5
+            rtp_inactivity_seconds: 10
+        register:
+            include_cellular_network_info: true
+            use_ipsec: true
+        signaling:
+            contact:
+                additional_contact_params:
+                    - selector: REGISTER,INVITE,INVITE:*
+                      params:
+                        - +g.3gpp.mid-call
+                        - +g.3gpp.srvcc-alerting
+                        - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+                always_add_sip_instance: true
+            csfb_on:
+                - method: INVITE
+                  statuses:
+                    - 5XX
+                    - "380"
+            preconditions: supported
+            support_p_early_media: true
+        ussi:
+            enabled: true
+        volte:
+            enable_volte_by_default: true
+plmn_overrides:
+    "20801":
+        ims:
+            epdg:
+                address: epdg.epc.mnc023.mcc262.pub.3gppnetwork.org

@@ -1,0 +1,16 @@
+version: 2
+plmn: "22210"
+profiles:
+    - id: apple_vodafone_ho_it
+      path: profiles/vodafone_ho_it.yaml
+      selectors:
+        - raw: 22210_GID1-20
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "20"
+    - id: apple_vodafone_it
+      path: profiles/vodafone_it.yaml
+      generic: true
+      selectors:
+        - raw: "22210"

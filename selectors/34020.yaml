@@ -1,0 +1,13 @@
+version: 2
+plmn: "34020"
+profiles:
+    - id: apple_digicel_mq
+      path: profiles/digicel_mq.yaml
+      generic: true
+      selectors:
+        - raw: "34020"
+        - raw: 34020_ID-895962002
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "895962002"

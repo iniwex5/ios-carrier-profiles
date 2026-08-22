@@ -1,0 +1,8 @@
+version: 3
+kind: carrier_bundle
+id: apple_apua_ag
+bundle: APUA_ag.bundle
+supported_plmns:
+    - "34403"
+    - "344030"
+common: {}

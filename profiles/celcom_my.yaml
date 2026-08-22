@@ -1,0 +1,43 @@
+version: 3
+kind: carrier_bundle
+id: apple_celcom_my
+bundle: Celcom_my.bundle
+supported_plmns:
+    - "50219"
+common: {}
+plmn_overrides:
+    "50219":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 9217
+        entitlement:
+            entitlement_url: https://es.celcom.com.my/
+        ims:
+            ike:
+                nat_keepalive_enabled: true
+                dpd:
+                    enabled: false
+                    interval_seconds: 600
+                local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                sa_lifetime_seconds: 86400
+            register:
+                use_ipsec: true
+            signaling:
+                preconditions: unsupported
+                support_p_early_media: true
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - "403"
+                        - "500"
+                        - "503"
+                contact:
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+            ussi:
+                enabled: true
+            volte:
+                enable_volte_by_default: true

@@ -1,0 +1,8 @@
+version: 2
+plmn: "20210"
+profiles:
+    - id: apple_wind_gr
+      path: profiles/wind_gr.yaml
+      generic: true
+      selectors:
+        - raw: "20210"

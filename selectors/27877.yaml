@@ -1,0 +1,16 @@
+version: 2
+plmn: "27877"
+profiles:
+    - id: apple_dentwireless
+      path: profiles/dentwireless.yaml
+      selectors:
+        - raw: 27877_GID1-3597bfd533
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 3597BFD533
+    - id: apple_melita_mt
+      path: profiles/melita_mt.yaml
+      generic: true
+      selectors:
+        - raw: "27877"

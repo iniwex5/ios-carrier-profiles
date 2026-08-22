@@ -1,0 +1,95 @@
+version: 3
+kind: carrier_bundle
+id: apple_appwire_lte_us
+bundle: AppWire_LTE_US.bundle
+supported_plmns:
+    - "312130"
+common: {}
+plmn_overrides:
+    "312130":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 1209
+        entitlement:
+            entitlement_url: https://aes.ekn.com
+        ims:
+            domain: ims.mnc130.mcc312.3gppnetwork.org
+            impi_format: imsi@carrierDomain
+            impu_format: imsi@carrierDomain
+            epdg:
+                address: epdg.myawi.com
+            ike:
+                proposals:
+                    - encryption:
+                        - aes256
+                      integrity:
+                        - sha256
+                      prf:
+                        - sha256
+                      dh_groups:
+                        - modp2048
+                      lifetime_seconds: 80000
+                      authentication_method: None
+                      eap_method: EAP-AKA
+                dpd:
+                    enabled: false
+                    interval_seconds: 600
+                child_sa:
+                    proposals:
+                        - encryption:
+                            - aes256
+                          integrity:
+                            - sha256
+                          pfs_group: modp2048
+                          lifetime_seconds: 86400
+                    lifetime_seconds: 86400
+                local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                local_identifier_type: IDUserFQDN
+                sa_lifetime_seconds: 80000
+            register:
+                use_ipsec: true
+                include_cellular_network_info: true
+            signaling:
+                max_udp_message_size: 1200
+                preconditions: supported
+                support_p_early_media: true
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - 3XX
+                        - "400"
+                        - "401"
+                        - "402"
+                        - "405"
+                        - "406"
+                        - "407"
+                        - "408"
+                        - "412"
+                        - "413"
+                        - "414"
+                        - "415"
+                        - "416"
+                        - "417"
+                        - "420"
+                        - "421"
+                        - "423"
+                        - "424"
+                        - "428"
+                        - "429"
+                        - "481"
+                        - "482"
+                        - "483"
+                        - "485"
+                        - "487"
+                        - "488"
+                        - "489"
+                        - "491"
+                        - "493"
+                        - 5XX
+                        - 6XX
+            media:
+                rtp_inactivity_seconds: 20
+                rtcp_inactivity_seconds: 20
+                rtcp_interval_seconds: 5
+            volte:
+                enable_volte_by_default: true

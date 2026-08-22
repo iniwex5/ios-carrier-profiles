@@ -1,0 +1,8 @@
+version: 2
+plmn: "64604"
+profiles:
+    - id: apple_telma_mg
+      path: profiles/telma_mg.yaml
+      generic: true
+      selectors:
+        - raw: "64604"

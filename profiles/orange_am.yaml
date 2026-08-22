@@ -1,0 +1,8 @@
+version: 3
+kind: carrier_bundle
+id: apple_orange_am
+bundle: Orange_am.bundle
+supported_plmns:
+    - "20601"
+    - "28310"
+common: {}

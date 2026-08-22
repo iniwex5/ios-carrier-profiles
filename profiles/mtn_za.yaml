@@ -1,0 +1,41 @@
+version: 3
+kind: carrier_bundle
+id: apple_mtn_za
+bundle: MTN_za.bundle
+supported_plmns:
+    - "65510"
+common: {}
+plmn_overrides:
+    "65510":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 5121
+        entitlement:
+            entitlement_url: https://es1staging.mtn.co.za/entitlement/
+        ims:
+            apn: ims
+            ip_stack: ipv4
+            ike:
+                nat_keepalive_enabled: true
+                sa_lifetime_seconds: 86400
+            register:
+                use_ipsec: true
+                include_cellular_network_info: true
+            signaling:
+                preconditions: supported
+                support_p_early_media: true
+                contact:
+                    always_add_sip_instance: true
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            media:
+                rtp_inactivity_seconds: 20
+                remote_rtcp_deactivation: true
+            ussi:
+                enabled: true
+            volte:
+                enable_volte_by_default: true

@@ -1,0 +1,8 @@
+version: 2
+plmn: "20201"
+profiles:
+    - id: apple_tmobile_gr
+      path: profiles/tmobile_gr.yaml
+      generic: true
+      selectors:
+        - raw: "20201"

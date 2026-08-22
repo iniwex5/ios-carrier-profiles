@@ -1,0 +1,34 @@
+version: 3
+kind: carrier_bundle
+id: apple_verizon_visible_lte_us
+bundle: Verizon_Visible_LTE_US.bundle
+supported_plmns:
+    - "20404"
+    - "311480"
+common:
+    apple:
+        carrier_entitlements:
+            supported_entitlements: 1209
+    entitlement:
+        entitlement_url: https://spc.myvzw.com/ium-RoadrunnerInterface/servlet/IUMServlet
+    ims:
+        epdg:
+            address: wo.vzwwo.com
+        ike:
+            dpd:
+                enabled: false
+                interval_seconds: 600
+            local_identifier: anonymous@nai.epc.mnc480.mcc311.3gppnetwork.org
+            sa_lifetime_seconds: 80000
+        media:
+            rtcp_inactivity_seconds: 20
+            rtp_inactivity_seconds: 20
+        signaling:
+            csfb_on:
+                - method: INVITE
+                  statuses:
+                    - "503"
+            preconditions: unsupported
+            support_p_early_media: false
+        volte:
+            enable_volte_by_default: true

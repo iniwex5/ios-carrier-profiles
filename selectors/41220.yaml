@@ -1,0 +1,11 @@
+version: 2
+plmn: "41220"
+profiles:
+    - id: apple_roshan_af
+      path: profiles/roshan_af.yaml
+      selectors:
+        - raw: 41220_ID-8993200
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8993200"

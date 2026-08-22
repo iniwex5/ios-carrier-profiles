@@ -1,0 +1,28 @@
+version: 3
+kind: carrier_bundle
+id: apple_vodafone_is
+bundle: Vodafone_is.bundle
+supported_plmns:
+    - "27402"
+common: {}
+plmn_overrides:
+    "27402":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 5121
+        entitlement:
+            entitlement_url: https://entitlements.api-prod.c.is
+        ims:
+            register:
+                include_cellular_network_info: true
+            signaling:
+                support_p_early_media: false
+                contact:
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            volte:
+                enable_volte_by_default: true

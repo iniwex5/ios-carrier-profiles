@@ -1,0 +1,55 @@
+version: 3
+kind: carrier_bundle
+id: apple_telus_publicmobile_ca
+bundle: Telus_PublicMobile_ca.bundle
+supported_plmns:
+    - "302220"
+common: {}
+plmn_overrides:
+    "302220":
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 4194337
+        entitlement:
+            entitlement_url: https://ent.telus.com/acmegw
+        ims:
+            apn: ims
+            ip_stack: ipv6
+            register:
+                use_ipsec: true
+                include_cellular_network_info: true
+            signaling:
+                max_udp_message_size: 1200
+                preconditions: supported
+                support_p_early_media: false
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - "380"
+                        - "406"
+                        - "414"
+                        - "499"
+                        - "500"
+                        - "501"
+                        - "502"
+                        - "503"
+                        - "504"
+                        - "505"
+                        - "513"
+                        - "580"
+                        - "606"
+                contact:
+                    always_add_sip_instance: true
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            media:
+                rtp_inactivity_seconds: 30
+                rtcp_inactivity_seconds: 30
+            ussi:
+                enabled: true
+            volte:
+                enable_volte_by_default: true

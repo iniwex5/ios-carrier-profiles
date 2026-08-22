@@ -1,0 +1,8 @@
+version: 2
+plmn: "45424"
+profiles:
+    - id: apple_multibyte
+      path: profiles/multibyte.yaml
+      generic: true
+      selectors:
+        - raw: "45424"

@@ -1,0 +1,8 @@
+version: 2
+plmn: "45002"
+profiles:
+    - id: apple_ktf_kr
+      path: profiles/ktf_kr.yaml
+      generic: true
+      selectors:
+        - raw: "45002"

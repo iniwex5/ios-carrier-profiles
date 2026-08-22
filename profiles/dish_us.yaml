@@ -1,0 +1,72 @@
+version: 3
+kind: carrier_bundle
+id: apple_dish_us
+bundle: Dish_US.bundle
+supported_plmns:
+    - "302220"
+    - "313340"
+common:
+    apple:
+        carrier_entitlements:
+            supported_entitlements: 4205705
+    entitlement:
+        entitlement_url: https://aes.mnc340.mcc313.pub.3gppnetwork.org/entitlement
+    ims:
+        ike:
+            child_sa:
+                lifetime_seconds: 80000
+                proposals:
+                    - encryption:
+                        - aes256
+                      integrity:
+                        - sha256
+                      lifetime_seconds: 80000
+            dpd:
+                enabled: false
+                interval_seconds: 600
+            local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+            proposals:
+                - encryption:
+                    - aes256
+                  integrity:
+                    - sha256
+                  prf:
+                    - sha256
+                  dh_groups:
+                    - modp2048
+                  lifetime_seconds: 80000
+                  authentication_method: None
+                  eap_method: EAP-AKA
+            sa_lifetime_seconds: 80000
+        media:
+            remote_rtcp_deactivation: true
+            rtcp_inactivity_seconds: 20
+            rtcp_interval_seconds: 5
+            rtp_inactivity_seconds: 20
+        register:
+            use_ipsec: true
+        signaling:
+            contact:
+                always_add_sip_instance: true
+            preconditions: supported
+            re_register_on:
+                - method: REGISTER
+                  statuses:
+                    - "480"
+                    - "500"
+                    - "503"
+                    - "504"
+                - method: INVITE
+                  statuses:
+                    - "403"
+                    - "504"
+            support_p_early_media: true
+        ussi:
+            enabled: true
+        volte:
+            enable_volte_by_default: true
+plmn_overrides:
+    "302220":
+        ims:
+            epdg:
+                address: epdg.epc.mnc340.mcc313.pub.3gppnetwork.org

@@ -1,0 +1,7 @@
+version: 3
+kind: carrier_bundle
+id: apple_o2_1and1_de
+bundle: O2_1and1_de.bundle
+supported_plmns:
+    - "26207"
+common: {}

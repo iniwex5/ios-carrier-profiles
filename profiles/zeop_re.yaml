@@ -1,0 +1,11 @@
+version: 3
+kind: carrier_bundle
+id: apple_zeop_re
+bundle: Zeop_re.bundle
+supported_plmns:
+    - "20801"
+    - "64704"
+common:
+    ims:
+        volte:
+            enable_volte_by_default: true

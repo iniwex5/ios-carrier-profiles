@@ -1,0 +1,32 @@
+version: 2
+plmn: "45501"
+profiles:
+    - id: apple_ctm_mo
+      path: profiles/ctm_mo.yaml
+      generic: true
+      selectors:
+        - raw: "45501"
+    - id: apple_multibyte
+      path: profiles/multibyte.yaml
+      selectors:
+        - raw: 45501_GID1-1501
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "1501"
+    - id: apple_redteamobile
+      path: profiles/redteamobile.yaml
+      selectors:
+        - raw: 45501_ID-89852245280
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "89852245280"
+    - id: apple_shinetown
+      path: profiles/shinetown.yaml
+      selectors:
+        - raw: 45501_GID1-AAAA
+          conditions:
+            - field: gid1
+              match: prefix
+              value: AAAA

@@ -1,0 +1,35 @@
+version: 3
+kind: carrier_bundle
+id: apple_vodafone_ho_it
+bundle: Vodafone_Ho_it.bundle
+supported_plmns:
+    - "22210"
+common: {}
+plmn_overrides:
+    "22210":
+        ims:
+            apn: ims
+            ip_stack: ipv4
+            register:
+                use_ipsec: true
+            signaling:
+                preconditions: supported
+                support_p_early_media: true
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - 3XX
+                        - 4XX
+                        - 5XX
+                        - 6XX
+                contact:
+                    always_add_sip_instance: true
+                    additional_contact_params:
+                        - selector: INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+            media:
+                rtp_inactivity_seconds: 20
+            volte:
+                enable_volte_by_default: true

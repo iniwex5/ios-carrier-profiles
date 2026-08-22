@@ -1,0 +1,7 @@
+version: 3
+kind: carrier_bundle
+id: apple_zong_pk
+bundle: Zong_pk.bundle
+supported_plmns:
+    - "41004"
+common: {}

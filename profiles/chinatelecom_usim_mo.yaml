@@ -1,0 +1,23 @@
+version: 3
+kind: carrier_bundle
+id: apple_chinatelecom_usim_mo
+bundle: ChinaTelecom_USIM_mo.bundle
+supported_plmns:
+    - "20404"
+    - "45507"
+common:
+    ims:
+        domain: ims.mnc007.mcc455.3gppnetwork.org
+        impi_format: imsi@carrierDomain
+        impu_format: imsi@carrierDomain
+        media:
+            rtcp_inactivity_seconds: 20
+            rtcp_interval_seconds: 5
+        register:
+            use_ipsec: true
+        signaling:
+            support_p_early_media: true
+        ussi:
+            enabled: true
+        volte:
+            enable_volte_by_default: true

@@ -1,0 +1,8 @@
+version: 2
+plmn: "46690"
+profiles:
+    - id: apple_vibo_tw
+      path: profiles/vibo_tw.yaml
+      generic: true
+      selectors:
+        - raw: "46690"

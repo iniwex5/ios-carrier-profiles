@@ -1,0 +1,8 @@
+version: 2
+plmn: "21630"
+profiles:
+    - id: apple_tmobile_hu
+      path: profiles/tmobile_hu.yaml
+      generic: true
+      selectors:
+        - raw: "21630"

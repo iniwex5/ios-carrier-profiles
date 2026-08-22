@@ -1,0 +1,41 @@
+version: 3
+kind: carrier_bundle
+id: apple_ktf_kr
+bundle: KTF_kr.bundle
+supported_plmns:
+    - "45002"
+    - "45008"
+common:
+    apple:
+        carrier_entitlements:
+            supported_entitlements: 9217
+    entitlement:
+        entitlement_url: https://api.econovation.co.kr/adcb/rest/getEapAKA
+    ims:
+        apn: IMS
+        ip_stack: ipv4v6
+        media:
+            rtcp_interval_seconds: 5
+        register:
+            use_ipsec: true
+        signaling:
+            csfb_on:
+                - method: INVITE
+                  statuses:
+                    - "380"
+                    - "404"
+                    - "414"
+                    - "499"
+                    - "606"
+            max_udp_message_size: 3000
+            preconditions: unsupported
+            re_register_on:
+                - method: INVITE
+                  statuses:
+                    - "403"
+                    - "406"
+                    - "408"
+                    - "504"
+            support_p_early_media: true
+        volte:
+            enable_volte_by_default: true

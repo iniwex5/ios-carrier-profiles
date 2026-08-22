@@ -1,0 +1,39 @@
+version: 3
+kind: carrier_bundle
+id: apple_vodafone_lowi_es
+bundle: Vodafone_Lowi_es.bundle
+supported_plmns:
+    - "21406"
+common: {}
+plmn_overrides:
+    "21406":
+        ims:
+            epdg:
+                address: epdg.epc.mnc001.mcc214.pub.3gppnetwork.org
+            ike:
+                nat_keepalive_enabled: true
+                dpd:
+                    enabled: false
+                child_sa:
+                    proposals:
+                        - encryption:
+                            - aes256
+                          integrity:
+                            - sha256
+                          lifetime_seconds: 86400
+                    lifetime_seconds: 86400
+                sa_lifetime_seconds: 86400
+            register:
+                include_cellular_network_info: true
+            signaling:
+                preconditions: supported
+                support_p_early_media: true
+                contact:
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            volte:
+                enable_volte_by_default: true

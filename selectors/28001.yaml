@@ -1,0 +1,8 @@
+version: 2
+plmn: "28001"
+profiles:
+    - id: apple_cyta_cy
+      path: profiles/cyta_cy.yaml
+      generic: true
+      selectors:
+        - raw: "28001"

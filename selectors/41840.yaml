@@ -1,0 +1,8 @@
+version: 2
+plmn: "41840"
+profiles:
+    - id: apple_korek_iq
+      path: profiles/korek_iq.yaml
+      generic: true
+      selectors:
+        - raw: "41840"

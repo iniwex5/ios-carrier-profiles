@@ -1,0 +1,8 @@
+version: 2
+plmn: "45005"
+profiles:
+    - id: apple_skt_kr
+      path: profiles/skt_kr.yaml
+      generic: true
+      selectors:
+        - raw: "45005"

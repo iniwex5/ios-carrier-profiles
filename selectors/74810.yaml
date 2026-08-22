@@ -1,0 +1,8 @@
+version: 2
+plmn: "74810"
+profiles:
+    - id: apple_claro_uy
+      path: profiles/claro_uy.yaml
+      generic: true
+      selectors:
+        - raw: "74810"

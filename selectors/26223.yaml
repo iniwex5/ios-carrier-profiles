@@ -1,0 +1,8 @@
+version: 2
+plmn: "26223"
+profiles:
+    - id: apple_1and1_de
+      path: profiles/1and1_de.yaml
+      generic: true
+      selectors:
+        - raw: "26223"

@@ -1,0 +1,16 @@
+version: 2
+plmn: "302780"
+profiles:
+    - id: apple_sasktel_ca
+      path: profiles/sasktel_ca.yaml
+      generic: true
+      selectors:
+        - raw: "302780"
+    - id: apple_sasktel_lum_ca
+      path: profiles/sasktel_lum_ca.yaml
+      selectors:
+        - raw: 302780_GID1-5b
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 5B

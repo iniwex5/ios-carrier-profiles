@@ -1,0 +1,7 @@
+version: 3
+kind: carrier_bundle
+id: apple_qtel_dz
+bundle: Qtel_dz.bundle
+supported_plmns:
+    - "60303"
+common: {}

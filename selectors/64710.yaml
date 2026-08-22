@@ -1,0 +1,8 @@
+version: 2
+plmn: "64710"
+profiles:
+    - id: apple_sfr_re
+      path: profiles/sfr_re.yaml
+      generic: true
+      selectors:
+        - raw: "64710"

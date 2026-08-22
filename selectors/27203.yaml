@@ -1,0 +1,8 @@
+version: 2
+plmn: "27203"
+profiles:
+    - id: apple_meteor_ie
+      path: profiles/meteor_ie.yaml
+      generic: true
+      selectors:
+        - raw: "27203"

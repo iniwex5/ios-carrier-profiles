@@ -1,0 +1,8 @@
+version: 2
+plmn: "25503"
+profiles:
+    - id: apple_kyivstar_ua
+      path: profiles/kyivstar_ua.yaml
+      generic: true
+      selectors:
+        - raw: "25503"

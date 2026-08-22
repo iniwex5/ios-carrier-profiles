@@ -1,0 +1,13 @@
+version: 3
+kind: carrier_bundle
+id: apple_sprint_isim_lte_us
+bundle: Sprint_ISIM_LTE_US.bundle
+supported_plmns:
+    - "310120"
+    - "312530"
+common:
+    apple:
+        carrier_entitlements:
+            supported_entitlements: 3521
+    entitlement:
+        entitlement_url: https://deg.spcsdns.net/ium-OEMInterface/servlet/IUMServlet

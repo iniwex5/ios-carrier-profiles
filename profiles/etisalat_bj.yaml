@@ -1,0 +1,7 @@
+version: 3
+kind: carrier_bundle
+id: apple_etisalat_bj
+bundle: Etisalat_bj.bundle
+supported_plmns:
+    - "61602"
+common: {}

@@ -1,0 +1,7 @@
+version: 3
+kind: carrier_bundle
+id: apple_timortelecom_tl
+bundle: TimorTelecom_tl.bundle
+supported_plmns:
+    - "51402"
+common: {}

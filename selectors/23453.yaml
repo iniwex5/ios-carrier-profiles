@@ -1,0 +1,8 @@
+version: 2
+plmn: "23453"
+profiles:
+    - id: apple_tango
+      path: profiles/tango.yaml
+      generic: true
+      selectors:
+        - raw: "23453"

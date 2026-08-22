@@ -1,0 +1,16 @@
+version: 3
+kind: carrier_bundle
+id: apple_robi_bd
+bundle: Robi_bd.bundle
+supported_plmns:
+    - "47002"
+common: {}
+plmn_overrides:
+    "47002":
+        ims:
+            apn: ims
+            signaling:
+                preconditions: unsupported
+                support_p_early_media: true
+                contact:
+                    always_add_sip_instance: true

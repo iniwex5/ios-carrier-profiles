@@ -1,0 +1,11 @@
+version: 2
+plmn: "24705"
+profiles:
+    - id: apple_bite_lv
+      path: profiles/bite_lv.yaml
+      selectors:
+        - raw: 24705_ID-8937105
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8937105"

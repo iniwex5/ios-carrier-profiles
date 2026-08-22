@@ -1,0 +1,29 @@
+version: 3
+kind: carrier_bundle
+id: apple_tele2_lv
+bundle: Tele2_lv.bundle
+supported_plmns:
+    - "24702"
+common: {}
+plmn_overrides:
+    "24702":
+        ims:
+            apn: ims
+            ip_stack: ipv6
+            register:
+                use_ipsec: true
+            signaling:
+                support_p_early_media: false
+                contact:
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            media:
+                rtp_inactivity_seconds: 20
+            ussi:
+                enabled: true
+            volte:
+                enable_volte_by_default: true

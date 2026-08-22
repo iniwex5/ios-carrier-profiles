@@ -1,0 +1,49 @@
+version: 2
+plmn: "44051"
+profiles:
+    - id: apple_kddi_biglobe_lte_only_jp
+      path: profiles/kddi_biglobe_lte_only_jp.yaml
+      selectors:
+        - raw: 44051_GID1-24_GID2-00
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "24"
+            - field: gid2
+              match: prefix
+              value: "00"
+    - id: apple_kddi_jcom_lte_only_jp
+      path: profiles/kddi_jcom_lte_only_jp.yaml
+      selectors:
+        - raw: 44051_GID1-22_GID2-00
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "22"
+            - field: gid2
+              match: prefix
+              value: "00"
+    - id: apple_kddi_lte_only_jp
+      path: profiles/kddi_lte_only_jp.yaml
+      generic: true
+      selectors:
+        - raw: "44051"
+        - raw: 44051_GID1-26_GID2-00
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "26"
+            - field: gid2
+              match: prefix
+              value: "00"
+    - id: apple_kddi_uq_lte_only_jp
+      path: profiles/kddi_uq_lte_only_jp.yaml
+      selectors:
+        - raw: 44051_GID1-20_GID2-00
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "20"
+            - field: gid2
+              match: prefix
+              value: "00"

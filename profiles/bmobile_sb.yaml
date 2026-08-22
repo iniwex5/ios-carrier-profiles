@@ -1,0 +1,7 @@
+version: 3
+kind: carrier_bundle
+id: apple_bmobile_sb
+bundle: bMobile_sb.bundle
+supported_plmns:
+    - "54002"
+common: {}

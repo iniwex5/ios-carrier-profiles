@@ -1,0 +1,7 @@
+version: 3
+kind: carrier_bundle
+id: apple_crosswireless_lte_us
+bundle: CrossWireless_LTE_US.bundle
+supported_plmns:
+    - "311480"
+common: {}

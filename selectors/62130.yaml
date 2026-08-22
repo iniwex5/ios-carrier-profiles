@@ -1,0 +1,8 @@
+version: 2
+plmn: "62130"
+profiles:
+    - id: apple_mtn_ng
+      path: profiles/mtn_ng.yaml
+      generic: true
+      selectors:
+        - raw: "62130"

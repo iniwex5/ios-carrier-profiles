@@ -1,0 +1,45 @@
+version: 2
+plmn: "20815"
+profiles:
+    - id: apple_free_fr
+      path: profiles/free_fr.yaml
+      generic: true
+      selectors:
+        - raw: "20815"
+    - id: apple_free_mq
+      path: profiles/free_mq.yaml
+      selectors:
+        - raw: 20815_GID1-f007
+          conditions:
+            - field: gid1
+              match: prefix
+              value: F007
+        - raw: 20815_GID1-f008
+          conditions:
+            - field: gid1
+              match: prefix
+              value: F008
+    - id: apple_free_re
+      path: profiles/free_re.yaml
+      selectors:
+        - raw: 20815_GID1-F006
+          conditions:
+            - field: gid1
+              match: prefix
+              value: F006
+        - raw: 20815_GID1-F233_ID-8926203
+          conditions:
+            - field: gid1
+              match: prefix
+              value: F233
+            - field: iccid
+              match: prefix
+              value: "8926203"
+    - id: apple_iliad_it
+      path: profiles/iliad_it.yaml
+      selectors:
+        - raw: 20815_GID1-F003
+          conditions:
+            - field: gid1
+              match: prefix
+              value: F003

@@ -1,0 +1,8 @@
+version: 3
+kind: carrier_bundle
+id: apple_setar_aw
+bundle: Setar_aw.bundle
+supported_plmns:
+    - "21407"
+    - "36301"
+common: {}

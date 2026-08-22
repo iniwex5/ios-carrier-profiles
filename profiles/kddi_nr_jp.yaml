@@ -1,0 +1,23 @@
+version: 3
+kind: carrier_bundle
+id: apple_kddi_nr_jp
+bundle: KDDI_NR_jp.bundle
+supported_plmns:
+    - "44054"
+    - "44055"
+common:
+    apple:
+        carrier_entitlements:
+            supported_entitlements: 44041
+    entitlement:
+        entitlement_url: https://station01.ezweb.ne.jp/ENT/servlet/EntServlet3
+    ims:
+        media:
+            remote_rtcp_deactivation: true
+            rtp_inactivity_seconds: 20
+        register:
+            use_ipsec: true
+        signaling:
+            support_p_early_media: true
+        volte:
+            enable_volte_by_default: true

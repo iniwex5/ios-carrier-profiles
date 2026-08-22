@@ -1,0 +1,32 @@
+version: 2
+plmn: "310170"
+profiles:
+    - id: apple_att_cc_us
+      path: profiles/att_cc_us.yaml
+      selectors:
+        - raw: 310170_GID1-2A
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 2A
+    - id: apple_att_puretalk_us
+      path: profiles/att_puretalk_us.yaml
+      selectors:
+        - raw: 310170_GID1-62
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "62"
+    - id: apple_att_tfw_us
+      path: profiles/att_tfw_us.yaml
+      selectors:
+        - raw: 310170_GID1-DE
+          conditions:
+            - field: gid1
+              match: prefix
+              value: DE
+    - id: apple_att_us
+      path: profiles/att_us.yaml
+      generic: true
+      selectors:
+        - raw: "310170"

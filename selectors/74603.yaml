@@ -1,0 +1,8 @@
+version: 2
+plmn: "74603"
+profiles:
+    - id: apple_digicel_sr
+      path: profiles/digicel_sr.yaml
+      generic: true
+      selectors:
+        - raw: "74603"

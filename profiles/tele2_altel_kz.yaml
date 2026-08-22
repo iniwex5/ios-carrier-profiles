@@ -1,0 +1,22 @@
+version: 3
+kind: carrier_bundle
+id: apple_tele2_altel_kz
+bundle: Tele2_Altel_kz.bundle
+supported_plmns:
+    - "40177"
+common: {}
+plmn_overrides:
+    "40177":
+        ims:
+            register:
+                use_ipsec: true
+            signaling:
+                contact:
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            volte:
+                enable_volte_by_default: true

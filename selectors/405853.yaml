@@ -1,0 +1,8 @@
+version: 2
+plmn: "405853"
+profiles:
+    - id: apple_idea_in
+      path: profiles/idea_in.yaml
+      generic: true
+      selectors:
+        - raw: "405853"

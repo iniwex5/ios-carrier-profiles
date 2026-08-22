@@ -1,0 +1,8 @@
+version: 2
+plmn: "52802"
+profiles:
+    - id: apple_progresif_bn
+      path: profiles/progresif_bn.yaml
+      generic: true
+      selectors:
+        - raw: "52802"

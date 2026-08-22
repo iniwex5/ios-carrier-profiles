@@ -1,0 +1,90 @@
+version: 2
+plmn: "24007"
+profiles:
+    - id: apple_affinityclick
+      path: profiles/affinityclick.yaml
+      selectors:
+        - raw: 24007_GID1-616C6F73696D31
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 616C6F73696D31
+    - id: apple_comviq_se
+      path: profiles/comviq_se.yaml
+      selectors:
+        - raw: 24007_GID1-4951
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "4951"
+    - id: apple_gigsky_us
+      path: profiles/gigsky_us.yaml
+      selectors:
+        - raw: 24007_GID1-6F
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 6F
+    - id: apple_knowroaming
+      path: profiles/knowroaming.yaml
+      selectors:
+        - raw: 24007_GID1-636f6e6e65637431
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 636F6E6E65637431
+    - id: apple_mysim
+      path: profiles/mysim.yaml
+      selectors:
+        - raw: 24007_GID1-434F423236303036
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 434F423236303036
+    - id: apple_o2_sky_uk
+      path: profiles/o2_sky_uk.yaml
+      selectors:
+        - raw: 24007_ID-894442
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "894442"
+    - id: apple_sky_ie
+      path: profiles/sky_ie.yaml
+      selectors:
+        - raw: 24007_GID1-0d
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 0D
+    - id: apple_tele2_sberbank_ru
+      path: profiles/tele2_sberbank_ru.yaml
+      selectors:
+        - raw: 24007_ID-8970150
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8970150"
+    - id: apple_tele2_se
+      path: profiles/tele2_se.yaml
+      generic: true
+      selectors:
+        - raw: "24007"
+        - raw: 24007_GID1-4900
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "4900"
+        - raw: 24007_ID-894620
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "894620"
+    - id: apple_webbing
+      path: profiles/webbing.yaml
+      selectors:
+        - raw: 24007_ID-8985235
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8985235"

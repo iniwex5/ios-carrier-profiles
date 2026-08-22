@@ -1,0 +1,8 @@
+version: 2
+plmn: "45419"
+profiles:
+    - id: apple_pccw_hk
+      path: profiles/pccw_hk.yaml
+      generic: true
+      selectors:
+        - raw: "45419"

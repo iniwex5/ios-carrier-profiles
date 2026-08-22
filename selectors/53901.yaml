@@ -1,0 +1,8 @@
+version: 2
+plmn: "53901"
+profiles:
+    - id: apple_tcc_to
+      path: profiles/tcc_to.yaml
+      generic: true
+      selectors:
+        - raw: "53901"

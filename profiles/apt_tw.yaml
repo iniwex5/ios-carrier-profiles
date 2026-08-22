@@ -1,0 +1,46 @@
+version: 3
+kind: carrier_bundle
+id: apple_apt_tw
+bundle: APT_tw.bundle
+supported_plmns:
+    - "46605"
+    - "52505"
+common:
+    apple:
+        carrier_entitlements:
+            supported_entitlements: 1040
+    entitlement:
+        entitlement_url: https://es.gtcloud.net.tw
+    ims:
+        apn: ims
+        domain: volte.aptg.com.tw
+        epdg:
+            address: epdg.epc.aptg.com.tw
+        ike:
+            child_sa:
+                lifetime_seconds: 80000
+                proposals:
+                    - encryption:
+                        - aes256
+                      integrity:
+                        - sha256
+                      pfs_group: modp2048
+                      lifetime_seconds: 80000
+            dpd:
+                enabled: false
+                interval_seconds: 600
+            local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+            sa_lifetime_seconds: 80000
+        impi_format: imsi@carrierDomain
+        impu_format: msisdn@carrierDomain
+        ip_stack: ipv4v6
+        media:
+            rtp_inactivity_seconds: 20
+        register:
+            include_cellular_network_info: true
+        signaling:
+            max_udp_message_size: 1200
+            preconditions: supported
+            support_p_early_media: true
+        volte:
+            enable_volte_by_default: true

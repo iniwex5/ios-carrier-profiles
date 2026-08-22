@@ -1,0 +1,8 @@
+version: 2
+plmn: "24601"
+profiles:
+    - id: apple_omnitel_lt
+      path: profiles/omnitel_lt.yaml
+      generic: true
+      selectors:
+        - raw: "24601"

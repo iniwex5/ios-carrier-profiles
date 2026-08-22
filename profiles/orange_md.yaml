@@ -1,0 +1,29 @@
+version: 3
+kind: carrier_bundle
+id: apple_orange_md
+bundle: Orange_md.bundle
+supported_plmns:
+    - "25901"
+common: {}
+plmn_overrides:
+    "25901":
+        ims:
+            register:
+                use_ipsec: true
+            signaling:
+                support_p_early_media: false
+                csfb_on:
+                    - method: INVITE
+                      statuses:
+                        - "403"
+                        - "408"
+                        - 5XX
+                contact:
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            volte:
+                enable_volte_by_default: true

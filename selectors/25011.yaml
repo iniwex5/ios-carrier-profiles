@@ -1,0 +1,8 @@
+version: 2
+plmn: "25011"
+profiles:
+    - id: apple_megafon_yota_ru
+      path: profiles/megafon_yota_ru.yaml
+      generic: true
+      selectors:
+        - raw: "25011"

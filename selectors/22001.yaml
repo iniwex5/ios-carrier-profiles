@@ -1,0 +1,8 @@
+version: 2
+plmn: "22001"
+profiles:
+    - id: apple_telenor_rs
+      path: profiles/telenor_rs.yaml
+      generic: true
+      selectors:
+        - raw: "22001"

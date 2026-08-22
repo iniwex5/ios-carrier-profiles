@@ -1,0 +1,16 @@
+version: 2
+plmn: "22288"
+profiles:
+    - id: apple_hutchison_wind_it
+      path: profiles/hutchison_wind_it.yaml
+      generic: true
+      selectors:
+        - raw: "22288"
+    - id: apple_wind_very_it
+      path: profiles/wind_very_it.yaml
+      selectors:
+        - raw: 22288_GID1-0000000099
+          conditions:
+            - field: gid1
+              match: prefix
+              value: "0000000099"
