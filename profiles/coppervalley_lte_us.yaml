@@ -13,6 +13,8 @@ plmn_overrides:
         entitlement:
             entitlement_url: https://spc.myvzw.com/ium-RoadrunnerInterface/servlet/IUMServlet
         ims:
+            apn: ims
+            ip_stack: ipv6
             signaling:
                 preconditions: unsupported
                 support_p_early_media: false

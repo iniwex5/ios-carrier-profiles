@@ -13,6 +13,8 @@ plmn_overrides:
         entitlement:
             entitlement_url: https://device.three.com.hk:8181/ium-OEMInterface/servlet/IUMServlet
         ims:
+            apn: ims
+            ip_stack: ipv6
             epdg:
                 address: wlan.three.com.hk
             ike:

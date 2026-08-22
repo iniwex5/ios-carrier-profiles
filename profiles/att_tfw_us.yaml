@@ -17,6 +17,7 @@ common:
     entitlement:
         entitlement_url: https://sentitlement2.mobile.att.net
     ims:
+        apn: ims
         epdg:
             address: epdg.epc.att.net
         ike:
@@ -45,6 +46,7 @@ common:
                   authentication_method: None
                   eap_method: EAP-AKA
             sa_lifetime_seconds: 80000
+        ip_stack: ipv4v6
         media:
             remote_rtcp_deactivation: true
             rtcp_inactivity_seconds: 20

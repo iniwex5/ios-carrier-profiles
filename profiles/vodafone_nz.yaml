@@ -13,6 +13,7 @@ plmn_overrides:
         entitlement:
             entitlement_url: https://esim.one.nz/entitlement/
         ims:
+            apn: ims
             ike:
                 proposals:
                     - encryption:

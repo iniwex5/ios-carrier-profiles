@@ -13,7 +13,7 @@ plmn_overrides:
         entitlement:
             entitlement_url: https://es-prod.ooredoo.com.kw/rest/deviceInterface/v1/service
         ims:
-            apn: IMS
+            apn: ims
             ip_stack: ipv4
             ike:
                 sa_lifetime_seconds: 80000

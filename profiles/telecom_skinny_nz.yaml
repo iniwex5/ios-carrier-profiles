@@ -8,6 +8,8 @@ common: {}
 plmn_overrides:
     "53005":
         ims:
+            apn: ims
+            ip_stack: ipv6
             epdg:
                 address: epdg.epc.mnc005.mcc530.pub.3gppnetwork.spark.co.nz
             ike:

@@ -13,6 +13,7 @@ plmn_overrides:
         entitlement:
             entitlement_url: https://apple-es.u.com.my
         ims:
+            apn: ims
             ike:
                 proposals:
                     - encryption:

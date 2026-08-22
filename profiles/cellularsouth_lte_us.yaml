@@ -12,6 +12,7 @@ common:
     entitlement:
         entitlement_url: https://DEG.CSPIRE.COM/ium-OEMInterface/servlet/IUMServlet
     ims:
+        apn: ims
         domain: ims.mnc230.mcc311.3gppnetwork.org
         epdg:
             address: ePDG.VoWifi.Cspire.com
@@ -45,6 +46,7 @@ common:
             sa_lifetime_seconds: 80000
         impi_format: imsi@carrierDomain
         impu_format: imsi@carrierDomain
+        ip_stack: ipv4v6
         media:
             rtcp_inactivity_seconds: 20
             rtcp_interval_seconds: 5

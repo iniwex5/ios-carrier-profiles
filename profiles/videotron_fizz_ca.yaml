@@ -8,6 +8,8 @@ common: {}
 plmn_overrides:
     "302500":
         ims:
+            apn: ims
+            ip_stack: ipv6
             register:
                 use_ipsec: true
             signaling:

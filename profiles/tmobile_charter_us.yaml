@@ -13,6 +13,8 @@ plmn_overrides:
         entitlement:
             entitlement_url: https://eas3.msg.t-mobile.com
         ims:
+            apn: ims
+            ip_stack: ipv4v6
             epdg:
                 address: ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
             ike:

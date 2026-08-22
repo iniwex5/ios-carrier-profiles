@@ -12,6 +12,7 @@ common:
     entitlement:
         entitlement_url: https://eas3.msg.t-mobile.com
     ims:
+        apn: ims
         epdg:
             address: ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
         ike:
@@ -40,6 +41,7 @@ common:
                   authentication_method: None
                   eap_method: EAP-AKA
             sa_lifetime_seconds: 80000
+        ip_stack: ipv4v6
         media:
             rtp_inactivity_seconds: 30
         register:

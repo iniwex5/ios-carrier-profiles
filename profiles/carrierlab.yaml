@@ -33,7 +33,7 @@ supported_plmns:
     - "311011"
 common:
     ims:
-        apn: IMS
+        apn: ims
         ip_stack: ipv4v6
         media:
             rtcp_interval_seconds: 5

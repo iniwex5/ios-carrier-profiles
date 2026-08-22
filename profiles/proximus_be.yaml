@@ -13,6 +13,8 @@ plmn_overrides:
         entitlement:
             entitlement_url: https://prod.ses.proximus.be:443
         ims:
+            apn: ims
+            ip_stack: ipv4v6
             ike:
                 proposals:
                     - encryption:

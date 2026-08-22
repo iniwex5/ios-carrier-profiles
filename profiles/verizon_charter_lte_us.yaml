@@ -14,6 +14,7 @@ common:
     entitlement:
         entitlement_url: https://spc.myvzw.com/ium-RoadrunnerInterface/servlet/IUMServlet
     ims:
+        apn: ims
         epdg:
             address: wo.vzwwo.com
         ike:
@@ -43,6 +44,7 @@ common:
                   authentication_method: None
                   eap_method: EAP-AKA
             sa_lifetime_seconds: 80000
+        ip_stack: ipv6
         media:
             rtcp_inactivity_seconds: 20
             rtcp_interval_seconds: 5

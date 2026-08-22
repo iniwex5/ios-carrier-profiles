@@ -12,6 +12,8 @@ common:
     entitlement:
         entitlement_url: https://station01.ezweb.ne.jp/ENT/servlet/EntServlet3
     ims:
+        apn: ims
+        ip_stack: ipv6
         media:
             remote_rtcp_deactivation: true
             rtp_inactivity_seconds: 20

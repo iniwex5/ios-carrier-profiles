@@ -8,6 +8,8 @@ common: {}
 plmn_overrides:
     "41301":
         ims:
+            apn: ims
+            ip_stack: ipv4v6
             ike:
                 dpd:
                     enabled: false

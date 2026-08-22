@@ -13,6 +13,8 @@ plmn_overrides:
         entitlement:
             entitlement_url: https://oes.optusnet.com.au
         ims:
+            apn: ims
+            ip_stack: ipv6
             ike:
                 dpd:
                     enabled: false

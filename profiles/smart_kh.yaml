@@ -13,6 +13,7 @@ common:
     entitlement:
         entitlement_url: https://es.smart.com.kh
     ims:
+        apn: ims
         epdg:
             address: epdg.epc.mnc006.mcc456.pub.3gppnetwork.org
         ike:

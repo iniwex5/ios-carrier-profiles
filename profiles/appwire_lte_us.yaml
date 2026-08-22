@@ -13,6 +13,8 @@ plmn_overrides:
         entitlement:
             entitlement_url: https://aes.ekn.com
         ims:
+            apn: ims
+            ip_stack: ipv4v6
             domain: ims.mnc130.mcc312.3gppnetwork.org
             impi_format: imsi@carrierDomain
             impu_format: imsi@carrierDomain

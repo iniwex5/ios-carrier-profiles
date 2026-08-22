@@ -8,6 +8,8 @@ common: {}
 plmn_overrides:
     "50219":
         ims:
+            apn: ims
+            ip_stack: ipv4v6
             ike:
                 nat_keepalive_enabled: true
                 dpd:

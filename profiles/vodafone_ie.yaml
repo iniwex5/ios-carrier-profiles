@@ -13,7 +13,7 @@ plmn_overrides:
         entitlement:
             entitlement_url: https://es-ie.vodafone.com:4449/ium-OEMInterface/servlet/IUMServlet
         ims:
-            apn: IMS
+            apn: ims
             ike:
                 proposals:
                     - encryption:

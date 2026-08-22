@@ -13,6 +13,7 @@ common:
     entitlement:
         entitlement_url: https://spc.myvzw.com/ium-RoadrunnerInterface/servlet/IUMServlet
     ims:
+        apn: ims
         epdg:
             address: wo.vzwwo.com
         ike:
@@ -30,6 +31,7 @@ common:
                 interval_seconds: 600
             local_identifier: anonymous@nai.epc.mnc480.mcc311.3gppnetwork.org
             sa_lifetime_seconds: 80000
+        ip_stack: ipv6
         media:
             rtcp_inactivity_seconds: 20
             rtp_inactivity_seconds: 20

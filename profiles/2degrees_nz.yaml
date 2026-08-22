@@ -13,6 +13,8 @@ plmn_overrides:
         entitlement:
             entitlement_url: https://ios.es.2degreesmobile.co.nz
         ims:
+            apn: ims
+            ip_stack: ipv4
             epdg:
                 address: epdg.ims.2degrees.net.nz
             ike:

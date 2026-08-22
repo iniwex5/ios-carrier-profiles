@@ -7,7 +7,7 @@ supported_plmns:
     - "45608"
 common:
     ims:
-        apn: IMS
+        apn: ims
         signaling:
             contact:
                 additional_contact_params:

@@ -13,6 +13,8 @@ plmn_overrides:
         entitlement:
             entitlement_url: https://deg.ims.cellcom.com/ium-OEMInterface/servlet/IUMServlet
         ims:
+            apn: ims
+            ip_stack: ipv4v6
             domain: ims.cellcom.com
             impi_format: imsi@carrierDomain
             impu_format: mdn@carrierDomain

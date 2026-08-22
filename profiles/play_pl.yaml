@@ -13,7 +13,7 @@ plmn_overrides:
         entitlement:
             entitlement_url: https://es.play.pl/rest/deviceInterface/v1/service
         ims:
-            apn: IMS
+            apn: ims
             ip_stack: ipv4v6
             ike:
                 proposals:

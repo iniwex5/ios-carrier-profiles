@@ -13,6 +13,8 @@ plmn_overrides:
         entitlement:
             entitlement_url: https://nemont.dcc.entitlements.io3.com
         ims:
+            apn: ims
+            ip_stack: ipv4v6
             epdg:
                 address: epdgn.epc.mnc480.mcc312.pub.3gppnetwork.org
             ike:

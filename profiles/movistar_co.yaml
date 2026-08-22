@@ -12,6 +12,7 @@ common:
     entitlement:
         entitlement_url: https://entitlement.movistar.co/tf-colombia/apple
     ims:
+        apn: ims
         register:
             use_ipsec: true
         signaling:

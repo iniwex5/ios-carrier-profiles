@@ -13,6 +13,8 @@ plmn_overrides:
         entitlement:
             entitlement_url: https://sdeweb.hkcsl.com/acme/api/
         ims:
+            apn: ims
+            ip_stack: ipv6
             ike:
                 proposals:
                     - encryption:

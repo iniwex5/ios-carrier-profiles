@@ -13,6 +13,8 @@ plmn_overrides:
         entitlement:
             entitlement_url: https://es.celcom.com.my/
         ims:
+            apn: ims
+            ip_stack: ipv4v6
             ike:
                 nat_keepalive_enabled: true
                 dpd:

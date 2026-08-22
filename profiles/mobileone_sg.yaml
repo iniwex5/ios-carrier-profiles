@@ -13,6 +13,8 @@ plmn_overrides:
         entitlement:
             entitlement_url: https://mdm.m1.com.sg/ES/apple
         ims:
+            apn: ims
+            ip_stack: ipv4v6
             epdg:
                 address: epdg.mobileone.net.sg
             ike:

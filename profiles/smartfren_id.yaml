@@ -8,6 +8,7 @@ supported_plmns:
     - "52505"
 common:
     ims:
+        apn: ims
         epdg:
             address: epdg.epc.mnc009.mcc510.pub.3gppnetwork.org
         ike:
@@ -16,6 +17,7 @@ common:
                 interval_seconds: 600
             local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
             sa_lifetime_seconds: 80000
+        ip_stack: ipv4
         media:
             rtcp_interval_seconds: 5
         register:

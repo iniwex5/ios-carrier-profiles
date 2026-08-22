@@ -12,6 +12,7 @@ common:
     entitlement:
         entitlement_url: https://aes.mnc340.mcc313.pub.3gppnetwork.org/entitlement
     ims:
+        apn: ims
         ike:
             child_sa:
                 lifetime_seconds: 80000
@@ -38,6 +39,7 @@ common:
                   authentication_method: None
                   eap_method: EAP-AKA
             sa_lifetime_seconds: 80000
+        ip_stack: ipv4v6
         media:
             remote_rtcp_deactivation: true
             rtcp_inactivity_seconds: 20

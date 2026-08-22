@@ -7,9 +7,11 @@ supported_plmns:
     - "52505"
 common:
     ims:
+        apn: ims
         domain: ims.mnc152.mcc502.3gppnetwork.org
         impi_format: imsi@carrierDomain
         impu_format: imsi@carrierDomain
+        ip_stack: ipv6
         register:
             use_ipsec: true
         signaling:

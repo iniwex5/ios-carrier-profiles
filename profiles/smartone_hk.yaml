@@ -13,6 +13,7 @@ common:
     entitlement:
         entitlement_url: https://tremblant.ses.smcn3a.net/entitlement/
     ims:
+        apn: ims
         epdg:
             address: epdg.epc.mnc006.mcc454.pub.3gppnetwork.org
         ike:

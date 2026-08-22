@@ -13,7 +13,7 @@ plmn_overrides:
         entitlement:
             entitlement_url: https://es.kw.zain.com
         ims:
-            apn: IMS
+            apn: ims
             ip_stack: ipv4
             ike:
                 proposals:

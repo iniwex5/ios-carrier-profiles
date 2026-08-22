@@ -13,7 +13,7 @@ plmn_overrides:
         entitlement:
             entitlement_url: https://impactes.omantel.om/entitlement/
         ims:
-            apn: IMS
+            apn: ims
             ip_stack: ipv4
             register:
                 use_ipsec: true

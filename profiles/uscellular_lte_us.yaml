@@ -13,6 +13,7 @@ common:
     entitlement:
         entitlement_url: https://mdm.uscc.net/entitlement/
     ims:
+        apn: ims
         epdg:
             address: epdg.epc.mnc580.mcc311.pub.3gppnetwork.org
         ike:
@@ -24,6 +25,7 @@ common:
             sa_lifetime_seconds: 80000
         impi_format: imsi@carrierDomain
         impu_format: imsi@carrierDomain
+        ip_stack: ipv4v6
         media:
             rtcp_inactivity_seconds: 20
             rtcp_interval_seconds: 5

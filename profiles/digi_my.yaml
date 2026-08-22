@@ -13,6 +13,8 @@ plmn_overrides:
         entitlement:
             entitlement_url: https://es.digi.com.my/entitlement
         ims:
+            apn: ims
+            ip_stack: ipv6
             ike:
                 proposals:
                     - encryption:

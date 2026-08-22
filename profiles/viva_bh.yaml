@@ -12,7 +12,7 @@ common:
     entitlement:
         entitlement_url: https://appes.stc.com.bh/apple
     ims:
-        apn: IMS
+        apn: ims
         epdg:
             address: epdg.epc.mnc004.mcc426.pub.stc.com.bh
         ike:

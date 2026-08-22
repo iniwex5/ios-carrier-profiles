@@ -12,7 +12,7 @@ common:
     entitlement:
         entitlement_url: https://api.econovation.co.kr/adcb/rest/getEapAKA
     ims:
-        apn: IMS
+        apn: ims
         ip_stack: ipv4v6
         media:
             rtcp_interval_seconds: 5

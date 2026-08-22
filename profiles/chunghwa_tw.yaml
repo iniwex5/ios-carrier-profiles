@@ -13,7 +13,7 @@ plmn_overrides:
         entitlement:
             entitlement_url: https://es.emome.net
         ims:
-            apn: IMS
+            apn: ims
             ip_stack: ipv4
             domain: ims.mnc092.mcc466.3gppnetwork.org
             impi_format: imsi@carrierDomain

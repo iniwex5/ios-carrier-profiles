@@ -13,7 +13,7 @@ plmn_overrides:
         entitlement:
             entitlement_url: https://api.stc.com.sa/a-iot/degEntlMgmt/gateway?apiKey=VGMLrNXbSwFfhy4Z8sZa16hsryu7x0bU76KsH8O
         ims:
-            apn: IMS
+            apn: ims
             ip_stack: ipv4
             ike:
                 proposals:

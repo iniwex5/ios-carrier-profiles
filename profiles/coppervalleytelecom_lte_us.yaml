@@ -13,6 +13,8 @@ plmn_overrides:
         entitlement:
             entitlement_url: https://cvt.dcc.entitlements.io3.com
         ims:
+            apn: ims
+            ip_stack: ipv4v6
             epdg:
                 address: epdg.epc.mnc290.mcc312.pub.3gppnetwork.org
             ike:

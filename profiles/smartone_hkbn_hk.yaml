@@ -13,6 +13,7 @@ plmn_overrides:
         entitlement:
             entitlement_url: https://cmc.ses.smcn3a.net/entitlement/
         ims:
+            apn: ims
             ike:
                 proposals:
                     - encryption:

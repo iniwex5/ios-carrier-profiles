@@ -13,6 +13,8 @@ plmn_overrides:
         entitlement:
             entitlement_url: https://entitlements-prod.sktdns.com
         ims:
+            apn: ims
+            ip_stack: ipv4v6
             register:
                 use_ipsec: true
             signaling:

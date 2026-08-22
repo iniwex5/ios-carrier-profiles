@@ -12,7 +12,7 @@ common:
     entitlement:
         entitlement_url: https://es.ais.co.th
     ims:
-        apn: IMS
+        apn: ims
         domain: ims.mnc003.mcc520.3gppnetwork.org
         ike:
             child_sa:

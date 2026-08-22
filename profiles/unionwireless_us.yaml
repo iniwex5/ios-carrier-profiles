@@ -8,6 +8,8 @@ common: {}
 plmn_overrides:
     "310020":
         ims:
+            apn: ims
+            ip_stack: ipv4v6
             register:
                 use_ipsec: true
                 include_cellular_network_info: true

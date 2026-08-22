@@ -13,6 +13,8 @@ plmn_overrides:
         entitlement:
             entitlement_url: https://es.dialog.lk
         ims:
+            apn: ims
+            ip_stack: ipv6
             ike:
                 dpd:
                     enabled: false

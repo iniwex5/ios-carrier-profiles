@@ -12,6 +12,7 @@ common:
     entitlement:
         entitlement_url: https://wireless-entitlements.eastlink.ca
     ims:
+        apn: ims
         ike:
             dpd:
                 enabled: false
@@ -20,6 +21,7 @@ common:
             sa_lifetime_seconds: 86400
         impi_format: imsi@carrierDomain
         impu_format: msisdn@carrierDomain
+        ip_stack: ipv6
         media:
             rtp_inactivity_seconds: 30
         register:

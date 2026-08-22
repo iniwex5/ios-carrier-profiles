@@ -13,6 +13,8 @@ plmn_overrides:
         entitlement:
             entitlement_url: https://station01.ezweb.ne.jp/ENT/servlet/EntServlet3
         ims:
+            apn: ims
+            ip_stack: ipv6
             register:
                 use_ipsec: true
             signaling:

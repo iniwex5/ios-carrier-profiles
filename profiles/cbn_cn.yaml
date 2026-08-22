@@ -8,6 +8,8 @@ common: {}
 plmn_overrides:
     "46015":
         ims:
+            apn: ims
+            ip_stack: ipv4v6
             register:
                 use_ipsec: true
             signaling:

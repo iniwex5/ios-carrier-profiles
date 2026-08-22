@@ -13,6 +13,8 @@ plmn_overrides:
         entitlement:
             entitlement_url: https://cww.dcc.entitlements.io3.com/
         ims:
+            apn: ims
+            ip_stack: ipv4v6
             impi_format: imsi@carrierDomain
             impu_format: imsi@carrierDomain
             ike:

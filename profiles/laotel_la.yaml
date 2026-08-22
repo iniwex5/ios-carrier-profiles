@@ -8,6 +8,7 @@ common: {}
 plmn_overrides:
     "45701":
         ims:
+            apn: ims
             register:
                 use_ipsec: true
             signaling:
