@@ -14,6 +14,11 @@ common:
     apple:
         carrier_entitlements:
             supported_entitlements: 4206477
+    e911:
+        emergency_urns:
+            "911": 911@one.att.net
+            default: urn:service:sos
+        over_itech_supported: false
     entitlement:
         entitlement_url: https://sentitlement2.mobile.att.net
     ims:
@@ -36,9 +41,13 @@ common:
                       integrity:
                         - sha256
                       lifetime_seconds: 80000
+                replay_window_size: 12
             dpd:
                 enabled: false
                 interval_seconds: 600
+                max_retries: 4
+                retry_interval_seconds: 10
+            ipsec_mtu: 1280
             local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
             proposals:
                 - encryption:
@@ -53,6 +62,7 @@ common:
                   authentication_method: None
                   eap_method: EAP-AKA
             sa_lifetime_seconds: 80000
+            validate_remote_certificate: false
         ip_stack: ipv4v6
         media:
             remote_rtcp_deactivation: true
@@ -62,6 +72,17 @@ common:
         register:
             use_ipsec: true
         signaling:
+            additional_headers:
+                - selector: INVITE[wifi,911]
+                  headers:
+                    - 'P-Emergency-Info: IEEE-802.11b;i-wlan-node-id=${DEVICE_REF_ID}'
+                    - 'Supported: geolocation'
+                - selector: REGISTER
+                  headers:
+                    - 'Supported: gruu'
+                - selector: REGISTER[wifi]
+                  headers:
+                    - 'P-IMS-Softphone-Label: 6172637469637365636f6e6461727921;${SHORT_DEVICE_CLASS};"${DEVICE_NAME}"'
             contact:
                 additional_contact_params:
                     - selector: INVITE,INVITE:*
@@ -80,8 +101,24 @@ common:
                     - "403"
                     - "408"
                     - "504"
+            sip_timers:
+                AckReceiveTimeout: 32000
+                AckRetransmitTimer: 32000
+                B: 32000
+                D: 32000
+                F: 32000
+                H: 32000
+                InviteResponseTimeout: 0
+                J: 32000
             support_p_early_media: true
         ussi:
             enabled: true
         volte:
             enable_volte_by_default: true
+    roaming:
+        wifi_calling_allowed: true
+selector_overrides:
+    "310170":
+        ims:
+            apn: null
+            ip_stack: null

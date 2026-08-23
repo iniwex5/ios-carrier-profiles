@@ -4,7 +4,6 @@ id: apple_cw_sc
 bundle: CW_sc.bundle
 supported_plmns:
     - "63301"
-common: {}
 plmn_overrides:
     "63301":
         ims:

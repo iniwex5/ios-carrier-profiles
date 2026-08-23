@@ -4,7 +4,6 @@ id: apple_iusacell_wim_mx
 bundle: iusacell_WIM_mx.bundle
 supported_plmns:
     - "334050"
-common: {}
 plmn_overrides:
     "334050":
         apple:

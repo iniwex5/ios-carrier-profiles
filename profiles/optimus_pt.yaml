@@ -9,6 +9,9 @@ common:
     apple:
         carrier_entitlements:
             supported_entitlements: 5121
+    e911:
+        over_itech_supported: false
+        wifi_calling_without_entitlement: true
     entitlement:
         entitlement_url: https://ses.ims.nos.pt
     ims:
@@ -55,11 +58,15 @@ common:
                     - "408"
                     - 5XX
             preconditions: supported
+            sip_timers:
+                InviteResponseTimeout: 4000
             support_p_early_media: true
         ussi:
             enabled: true
         volte:
             enable_volte_by_default: true
+    roaming:
+        wifi_calling_allowed: false
 plmn_overrides:
     "26006":
         ims:

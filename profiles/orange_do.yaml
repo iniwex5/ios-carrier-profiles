@@ -4,7 +4,6 @@ id: apple_orange_do
 bundle: Orange_do.bundle
 supported_plmns:
     - "37001"
-common: {}
 plmn_overrides:
     "37001":
         ims:

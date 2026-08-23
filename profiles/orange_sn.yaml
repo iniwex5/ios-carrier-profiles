@@ -4,7 +4,6 @@ id: apple_orange_sn
 bundle: Orange_sn.bundle
 supported_plmns:
     - "60801"
-common: {}
 plmn_overrides:
     "60801":
         ims:

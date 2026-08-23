@@ -4,7 +4,6 @@ id: apple_tele2_kz
 bundle: Tele2_kz.bundle
 supported_plmns:
     - "40177"
-common: {}
 plmn_overrides:
     "40177":
         ims:

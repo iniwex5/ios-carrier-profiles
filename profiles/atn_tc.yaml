@@ -4,4 +4,3 @@ id: apple_atn_tc
 bundle: ATN_tc.bundle
 supported_plmns:
     - "376360"
-common: {}

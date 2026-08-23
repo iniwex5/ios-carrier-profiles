@@ -4,7 +4,6 @@ id: apple_jerseytelecom_je
 bundle: JerseyTelecom_je.bundle
 supported_plmns:
     - "23450"
-common: {}
 plmn_overrides:
     "23450":
         ims:

@@ -4,4 +4,3 @@ id: apple_mcel_mz
 bundle: mcel_mz.bundle
 supported_plmns:
     - "64301"
-common: {}

@@ -4,4 +4,3 @@ id: apple_movistar_cr
 bundle: movistar_cr.bundle
 supported_plmns:
     - "71204"
-common: {}

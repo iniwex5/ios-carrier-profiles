@@ -4,9 +4,11 @@ id: apple_mobifone_vn
 bundle: Mobifone_vn.bundle
 supported_plmns:
     - "45201"
-common: {}
 plmn_overrides:
     "45201":
+        e911:
+            over_itech_supported: false
+            wifi_calling_without_entitlement: true
         ims:
             apn: ims
             ip_stack: ipv4v6
@@ -39,6 +41,8 @@ plmn_overrides:
                 dpd:
                     enabled: false
                     interval_seconds: 600
+                    max_retries: 4
+                    retry_interval_seconds: 10
                 child_sa:
                     proposals:
                         - encryption:
@@ -48,7 +52,9 @@ plmn_overrides:
                           rekey_pfs_group: modp8192
                           lifetime_seconds: 43200
                     lifetime_seconds: 43200
+                    replay_window_size: 12
                 local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                validate_remote_certificate: false
                 sa_lifetime_seconds: 43200
             register:
                 use_ipsec: true
@@ -71,9 +77,21 @@ plmn_overrides:
                           params:
                             - +g.3gpp.mid-call
                             - +g.3gpp.srvcc-alerting
+                sip_timers:
+                    B: 32000
+                    D: 32000
+                    F: 32000
+                    H: 32000
+                    InviteResponseTimeout: 30000
+                    J: 32000
+                    T1: 2000
+                    T2: 16000
+                    T4: 17000
             media:
                 rtcp_inactivity_seconds: 36000
             ussi:
                 enabled: true
             volte:
                 enable_volte_by_default: false
+        roaming:
+            wifi_calling_allowed: true

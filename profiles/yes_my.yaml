@@ -6,6 +6,8 @@ supported_plmns:
     - "502152"
     - "52505"
 common:
+    e911:
+        over_itech_supported: false
     ims:
         apn: ims
         domain: ims.mnc152.mcc502.3gppnetwork.org

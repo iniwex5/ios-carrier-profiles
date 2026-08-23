@@ -4,4 +4,3 @@ id: apple_warid_pk
 bundle: Warid_pk.bundle
 supported_plmns:
     - "41007"
-common: {}

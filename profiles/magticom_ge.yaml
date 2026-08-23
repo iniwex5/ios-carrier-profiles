@@ -4,7 +4,6 @@ id: apple_magticom_ge
 bundle: Magticom_ge.bundle
 supported_plmns:
     - "28202"
-common: {}
 plmn_overrides:
     "28202":
         ims:

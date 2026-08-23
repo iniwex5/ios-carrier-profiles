@@ -4,4 +4,3 @@ id: apple_megafon_ru
 bundle: MegaFon_ru.bundle
 supported_plmns:
     - "25002"
-common: {}

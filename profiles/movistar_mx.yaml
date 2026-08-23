@@ -4,7 +4,6 @@ id: apple_movistar_mx
 bundle: movistar_mx.bundle
 supported_plmns:
     - "33403"
-common: {}
 plmn_overrides:
     "33403":
         apple:
@@ -34,6 +33,8 @@ plmn_overrides:
                         - selector: REGISTER,INVITE,INVITE:*
                           params:
                             - +g.3gpp.mid-call
+                sip_timers:
+                    InviteResponseTimeout: 16000
             media:
                 rtp_inactivity_seconds: 30
                 rtcp_inactivity_seconds: 30

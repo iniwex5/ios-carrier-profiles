@@ -4,12 +4,14 @@ id: apple_o2_cz
 bundle: O2_cz.bundle
 supported_plmns:
     - "23002"
-common: {}
 plmn_overrides:
     "23002":
         apple:
             carrier_entitlements:
                 supported_entitlements: 5121
+        e911:
+            over_itech_supported: false
+            wifi_calling_without_entitlement: true
         entitlement:
             entitlement_url: https://esim-o2cz-es-prd.ipaas.amdocs.com/o2cz/prd/executeAppleActions/
         ims:
@@ -53,3 +55,5 @@ plmn_overrides:
                 enabled: true
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: false

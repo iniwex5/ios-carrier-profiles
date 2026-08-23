@@ -4,12 +4,14 @@ id: apple_umobile_my
 bundle: UMobile_my.bundle
 supported_plmns:
     - "50218"
-common: {}
 plmn_overrides:
     "50218":
         apple:
             carrier_entitlements:
                 supported_entitlements: 9217
+        e911:
+            over_itech_supported: true
+            wifi_calling_without_entitlement: true
         entitlement:
             entitlement_url: https://apple-es.u.com.my
         ims:
@@ -38,6 +40,8 @@ plmn_overrides:
                 dpd:
                     enabled: false
                     interval_seconds: 600
+                    max_retries: 4
+                    retry_interval_seconds: 10
                 child_sa:
                     proposals:
                         - encryption:
@@ -47,7 +51,9 @@ plmn_overrides:
                           rekey_pfs_group: modp2048
                           lifetime_seconds: 80000
                     lifetime_seconds: 80000
+                    replay_window_size: 12
                 local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                validate_remote_certificate: false
                 sa_lifetime_seconds: 80000
             register:
                 use_ipsec: true
@@ -75,3 +81,5 @@ plmn_overrides:
                 enabled: true
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: true

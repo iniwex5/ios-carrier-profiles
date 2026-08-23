@@ -5,4 +5,3 @@ bundle: MegaFon_Yota_ru.bundle
 supported_plmns:
     - "25002"
     - "25011"
-common: {}

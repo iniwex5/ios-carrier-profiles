@@ -4,9 +4,11 @@ id: apple_mts_am
 bundle: MTS_am.bundle
 supported_plmns:
     - "28305"
-common: {}
 plmn_overrides:
     "28305":
+        e911:
+            over_itech_supported: false
+            wifi_calling_without_entitlement: true
         ims:
             apn: ims
             ip_stack: ipv4
@@ -41,6 +43,7 @@ plmn_overrides:
                           rekey_pfs_group: modp3072
                           lifetime_seconds: 86400
                     lifetime_seconds: 86400
+                    replay_window_size: 12
                 sa_lifetime_seconds: 86400
             register:
                 use_ipsec: true
@@ -66,3 +69,5 @@ plmn_overrides:
                 enabled: false
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: true

@@ -4,4 +4,3 @@ id: apple_zong_pk
 bundle: Zong_pk.bundle
 supported_plmns:
     - "41004"
-common: {}

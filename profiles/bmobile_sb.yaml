@@ -4,4 +4,3 @@ id: apple_bmobile_sb
 bundle: bMobile_sb.bundle
 supported_plmns:
     - "54002"
-common: {}

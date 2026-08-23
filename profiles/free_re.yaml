@@ -5,4 +5,3 @@ bundle: Free_re.bundle
 supported_plmns:
     - "20815"
     - "64703"
-common: {}

@@ -5,4 +5,3 @@ bundle: SmarTone_mo.bundle
 supported_plmns:
     - "45500"
     - "45506"
-common: {}

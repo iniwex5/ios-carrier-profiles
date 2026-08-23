@@ -9,6 +9,9 @@ common:
     apple:
         carrier_entitlements:
             supported_entitlements: 11393
+    e911:
+        over_itech_supported: true
+        wifi_calling_without_entitlement: false
     entitlement:
         entitlement_url: https://es.ais.co.th
     ims:
@@ -32,9 +35,12 @@ common:
                         - sha256
                       rekey_pfs_group: modp2048
                       lifetime_seconds: 80000
+                replay_window_size: 12
             dpd:
                 enabled: false
                 interval_seconds: 600
+                max_retries: 4
+                retry_interval_seconds: 10
             local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
             proposals:
                 - encryption:
@@ -49,6 +55,7 @@ common:
                   authentication_method: None
                   eap_method: EAP-AKA
             sa_lifetime_seconds: 80000
+            validate_remote_certificate: false
         impi_format: imsi@carrierDomain
         ip_stack: ipv6
         register:
@@ -79,6 +86,8 @@ common:
             enabled: true
         volte:
             enable_volte_by_default: true
+    roaming:
+        wifi_calling_allowed: true
 plmn_overrides:
     "52001":
         ims:

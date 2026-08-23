@@ -4,12 +4,18 @@ id: apple_claro_pe
 bundle: Claro_pe.bundle
 supported_plmns:
     - "71610"
-common: {}
 plmn_overrides:
     "71610":
         apple:
             carrier_entitlements:
                 supported_entitlements: 1041
+        e911:
+            over_itech_supported: false
+            wifi_calling_without_entitlement: true
+            emergency_urns:
+                "105": urn:service:sos.police
+                "112": urn:service:sos.police
+                "911": urn:service:sos.police
         entitlement:
             entitlement_url: https://aes.mnc010.mcc716.pub.3gppnetwork.org:44314/entitlement/
         ims:
@@ -38,6 +44,8 @@ plmn_overrides:
                 dpd:
                     enabled: false
                     interval_seconds: 600
+                    max_retries: 4
+                    retry_interval_seconds: 10
                 child_sa:
                     proposals:
                         - encryption:
@@ -47,6 +55,7 @@ plmn_overrides:
                           rekey_pfs_group: modp2048
                           lifetime_seconds: 80000
                     lifetime_seconds: 80000
+                    replay_window_size: 12
                 local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
                 sa_lifetime_seconds: 87000
             register:
@@ -75,3 +84,5 @@ plmn_overrides:
                 rtcp_inactivity_seconds: 25
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: false

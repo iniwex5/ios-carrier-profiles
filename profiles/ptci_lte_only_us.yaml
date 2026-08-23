@@ -4,9 +4,10 @@ id: apple_ptci_lte_only_us
 bundle: PTCI_LTE_only_US.bundle
 supported_plmns:
     - "311450"
-common: {}
 plmn_overrides:
     "311450":
+        e911:
+            wifi_calling_without_entitlement: false
         ims:
             apn: ims
             ip_stack: ipv4v6
@@ -32,6 +33,8 @@ plmn_overrides:
                             - +g.3gpp.mid-call
                             - +g.3gpp.srvcc-alerting
                             - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+                sip_timers:
+                    InviteResponseTimeout: 5000
             media:
                 rtp_inactivity_seconds: 30
             ussi:

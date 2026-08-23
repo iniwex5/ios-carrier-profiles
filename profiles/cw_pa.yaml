@@ -4,12 +4,14 @@ id: apple_cw_pa
 bundle: CW_pa.bundle
 supported_plmns:
     - "71401"
-common: {}
 plmn_overrides:
     "71401":
         apple:
             carrier_entitlements:
                 supported_entitlements: 129
+        e911:
+            over_itech_supported: false
+            wifi_calling_without_entitlement: false
         entitlement:
             entitlement_url: https://SESCWP.cwpanama.com
         ims:
@@ -39,6 +41,8 @@ plmn_overrides:
                 dpd:
                     enabled: true
                     interval_seconds: 600
+                    max_retries: 4
+                    retry_interval_seconds: 10
                 child_sa:
                     proposals:
                         - encryption:
@@ -47,6 +51,7 @@ plmn_overrides:
                             - sha256
                           lifetime_seconds: 80000
                     lifetime_seconds: 80000
+                    replay_window_size: 12
                 local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
                 sa_lifetime_seconds: 80000
             register:
@@ -70,5 +75,9 @@ plmn_overrides:
                             - +g.3gpp.mid-call
                             - +g.3gpp.srvcc-alerting
                             - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+                sip_timers:
+                    InviteResponseTimeout: 4500
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: true

@@ -4,7 +4,6 @@ id: apple_robi_bhartiairtel_bd
 bundle: Robi_BhartiAirtel_bd.bundle
 supported_plmns:
     - "47007"
-common: {}
 plmn_overrides:
     "47007":
         ims:

@@ -5,4 +5,3 @@ bundle: ICE_cr.bundle
 supported_plmns:
     - "71201"
     - "71202"
-common: {}

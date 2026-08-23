@@ -4,4 +4,3 @@ id: apple_roshan_af
 bundle: Roshan_af.bundle
 supported_plmns:
     - "41220"
-common: {}

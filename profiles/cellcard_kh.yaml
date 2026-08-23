@@ -4,7 +4,6 @@ id: apple_cellcard_kh
 bundle: Cellcard_kh.bundle
 supported_plmns:
     - "45601"
-common: {}
 plmn_overrides:
     "45601":
         ims:

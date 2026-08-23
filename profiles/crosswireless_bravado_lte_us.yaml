@@ -4,9 +4,12 @@ id: apple_crosswireless_bravado_lte_us
 bundle: CrossWireless_Bravado_LTE_US.bundle
 supported_plmns:
     - "313010"
-common: {}
 plmn_overrides:
     "313010":
+        e911:
+            wifi_calling_without_entitlement: true
+            emergency_urns:
+                "922": 922@vzims.com
         ims:
             apn: ims
             ip_stack: ipv4v6
@@ -21,6 +24,13 @@ plmn_overrides:
                         - 3XX
                 contact:
                     always_add_sip_instance: true
+                sip_timers:
+                    D: 128000
+                    F: 30000
+                    InviteResponseTimeout: 10000
+                    T1: 3000
+                    T2: 16000
+                    T4: 17000
             media:
                 rtp_inactivity_seconds: 10
                 rtcp_inactivity_seconds: 20

@@ -4,4 +4,3 @@ id: apple_swisscom_wingo_ch
 bundle: Swisscom_Wingo_ch.bundle
 supported_plmns:
     - "22801"
-common: {}

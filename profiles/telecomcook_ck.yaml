@@ -4,4 +4,3 @@ id: apple_telecomcook_ck
 bundle: TelecomCook_ck.bundle
 supported_plmns:
     - "54801"
-common: {}

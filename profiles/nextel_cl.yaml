@@ -6,6 +6,9 @@ supported_plmns:
     - "73009"
     - "730090"
 common:
+    e911:
+        over_itech_supported: false
+        wifi_calling_without_entitlement: true
     ims:
         apn: ims
         epdg:
@@ -24,6 +27,7 @@ common:
                         - aes256
                       integrity:
                         - sha256
+                      protocol: esp
                       rekey_pfs_group: modp2048
                       lifetime_seconds: 86400
             local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
@@ -66,11 +70,15 @@ common:
                     - 5XX
                     - 6XX
             preconditions: supported
+            sip_timers:
+                InviteResponseTimeout: 10000
             support_p_early_media: true
         ussi:
             enabled: true
         volte:
             enable_volte_by_default: true
+    roaming:
+        wifi_calling_allowed: true
 plmn_overrides:
     "730090":
         ims:

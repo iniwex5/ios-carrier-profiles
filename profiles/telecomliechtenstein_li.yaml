@@ -4,4 +4,3 @@ id: apple_telecomliechtenstein_li
 bundle: TelecomLiechtenstein_li.bundle
 supported_plmns:
     - "29505"
-common: {}

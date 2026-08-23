@@ -10,6 +10,9 @@ common:
     apple:
         carrier_entitlements:
             supported_entitlements: 1
+    e911:
+        over_itech_supported: true
+        wifi_calling_without_entitlement: true
     entitlement:
         entitlement_url: https://es.smart.com.kh
     ims:
@@ -31,11 +34,16 @@ common:
                         - aes128
                       integrity:
                         - sha256
+                      protocol: esp
                       rekey_pfs_group: modp2048
                       lifetime_seconds: 80000
+                replay_window_size: 12
+            disable_switch_to_natt_port: true
             dpd:
                 enabled: false
                 interval_seconds: 600
+                max_retries: 4
+                retry_interval_seconds: 10
             local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
             local_identifier_type: IDUserFQDN
             nat_keepalive_enabled: true
@@ -53,6 +61,7 @@ common:
                   authentication_method: None
                   eap_method: EAP-AKA
             sa_lifetime_seconds: 80000
+            validate_remote_certificate: false
         register:
             use_ipsec: true
         signaling:
@@ -68,6 +77,8 @@ common:
             enabled: true
         volte:
             enable_volte_by_default: true
+    roaming:
+        wifi_calling_allowed: true
 plmn_overrides:
     "45606":
         ims:

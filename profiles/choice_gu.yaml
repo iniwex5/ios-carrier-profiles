@@ -4,4 +4,3 @@ id: apple_choice_gu
 bundle: Choice_gu.bundle
 supported_plmns:
     - "310480"
-common: {}

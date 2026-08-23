@@ -4,7 +4,6 @@ id: apple_polkomtel_pl
 bundle: Polkomtel_pl.bundle
 supported_plmns:
     - "26001"
-common: {}
 plmn_overrides:
     "26001":
         ims:

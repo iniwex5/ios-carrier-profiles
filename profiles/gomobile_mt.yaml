@@ -4,7 +4,6 @@ id: apple_gomobile_mt
 bundle: GoMobile_mt.bundle
 supported_plmns:
     - "27821"
-common: {}
 plmn_overrides:
     "27821":
         ims:

@@ -4,7 +4,6 @@ id: apple_mtn_cy
 bundle: MTN_cy.bundle
 supported_plmns:
     - "28010"
-common: {}
 plmn_overrides:
     "28010":
         ims:

@@ -9,6 +9,9 @@ common:
     apple:
         carrier_entitlements:
             supported_entitlements: 1041
+    e911:
+        emergency_urns:
+            <EmergencyURNsItem>: urn:service:sos
     entitlement:
         entitlement_url: https://aliv.entitlements.io3.com
     ims:

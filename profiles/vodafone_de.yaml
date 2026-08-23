@@ -4,12 +4,14 @@ id: apple_vodafone_de
 bundle: Vodafone_de.bundle
 supported_plmns:
     - "26202"
-common: {}
 plmn_overrides:
     "26202":
         apple:
             carrier_entitlements:
                 supported_entitlements: 76800
+        e911:
+            over_itech_supported: false
+            wifi_calling_without_entitlement: true
         entitlement:
             entitlement_url: https://es-de.vodafone.com:4445/ium-OEMInterface/servlet/IUMServlet
         ims:
@@ -36,6 +38,8 @@ plmn_overrides:
                 dpd:
                     enabled: false
                     interval_seconds: 600
+                    max_retries: 4
+                    retry_interval_seconds: 10
                 child_sa:
                     proposals:
                         - encryption:
@@ -45,6 +49,7 @@ plmn_overrides:
                           rekey_pfs_group: modp2048
                           lifetime_seconds: 14400
                     lifetime_seconds: 14400
+                    replay_window_size: 12
                 local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
                 sa_lifetime_seconds: 86400
             register:
@@ -72,3 +77,5 @@ plmn_overrides:
                 rtcp_interval_seconds: 5
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: false

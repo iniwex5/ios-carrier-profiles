@@ -4,7 +4,6 @@ id: apple_vimpelcom_izi_kz
 bundle: VimpelCom_Izi_kz.bundle
 supported_plmns:
     - "40101"
-common: {}
 plmn_overrides:
     "40101":
         ims:

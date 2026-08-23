@@ -41,6 +41,10 @@ common:
         register:
             use_ipsec: true
         signaling:
+            additional_headers:
+                - selector: INVITE
+                  headers:
+                    - 'Accept: application/sdp,application/3gpp-ims+xml'
             contact:
                 additional_contact_params:
                     - selector: INVITE,INVITE:180,INVITE:183
@@ -58,4 +62,5 @@ common:
                         - +g.3gpp.srvcc-alerting
                         - +g.3gpp.accesstype="cellular2"
             preconditions: supported
+            require_qos_before_ringing: true
             support_p_early_media: true

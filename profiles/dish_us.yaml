@@ -9,6 +9,8 @@ common:
     apple:
         carrier_entitlements:
             supported_entitlements: 4205705
+    e911:
+        over_itech_supported: false
     entitlement:
         entitlement_url: https://aes.mnc340.mcc313.pub.3gppnetwork.org/entitlement
     ims:
@@ -33,9 +35,12 @@ common:
                       integrity:
                         - sha256
                       lifetime_seconds: 80000
+                replay_window_size: 12
             dpd:
                 enabled: false
                 interval_seconds: 600
+                max_retries: 4
+                retry_interval_seconds: 10
             local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
             proposals:
                 - encryption:
@@ -50,6 +55,7 @@ common:
                   authentication_method: None
                   eap_method: EAP-AKA
             sa_lifetime_seconds: 80000
+            validate_remote_certificate: false
         ip_stack: ipv4v6
         media:
             remote_rtcp_deactivation: true
@@ -59,6 +65,10 @@ common:
         register:
             use_ipsec: true
         signaling:
+            additional_headers:
+                - selector: INVITE[911,wifi]
+                  headers:
+                    - 'Supported: geolocation'
             contact:
                 always_add_sip_instance: true
             preconditions: supported
@@ -73,6 +83,15 @@ common:
                   statuses:
                     - "403"
                     - "504"
+            sip_timers:
+                AckReceiveTimeout: 32000
+                AckRetransmitTimer: 32000
+                B: 32000
+                D: 32000
+                F: 32000
+                H: 32000
+                InviteResponseTimeout: 0
+                J: 32000
             support_p_early_media: true
         ussi:
             enabled: true

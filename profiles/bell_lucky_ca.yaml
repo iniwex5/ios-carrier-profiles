@@ -4,7 +4,6 @@ id: apple_bell_lucky_ca
 bundle: Bell_Lucky_ca.bundle
 supported_plmns:
     - "302610"
-common: {}
 plmn_overrides:
     "302610":
         apple:
@@ -38,6 +37,8 @@ plmn_overrides:
                         - "503"
                 contact:
                     always_add_sip_instance: true
+                sip_timers:
+                    InviteResponseTimeout: 5000
             media:
                 rtp_inactivity_seconds: 30
                 rtcp_interval_seconds: 5

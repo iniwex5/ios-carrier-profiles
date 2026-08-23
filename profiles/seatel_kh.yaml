@@ -4,4 +4,3 @@ id: apple_seatel_kh
 bundle: Seatel_kh.bundle
 supported_plmns:
     - "45611"
-common: {}

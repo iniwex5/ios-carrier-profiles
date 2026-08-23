@@ -5,4 +5,3 @@ bundle: iWireless_US.bundle
 supported_plmns:
     - "20404"
     - "310770"
-common: {}

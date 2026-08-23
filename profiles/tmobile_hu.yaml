@@ -4,12 +4,14 @@ id: apple_tmobile_hu
 bundle: TMobile_hu.bundle
 supported_plmns:
     - "21630"
-common: {}
 plmn_overrides:
     "21630":
         apple:
             carrier_entitlements:
                 supported_entitlements: 4203721
+        e911:
+            over_itech_supported: true
+            wifi_calling_without_entitlement: true
         entitlement:
             entitlement_url: https://entitlement.telekom.hu
         ims:
@@ -39,6 +41,8 @@ plmn_overrides:
                 dpd:
                     enabled: false
                     interval_seconds: 600
+                    max_retries: 4
+                    retry_interval_seconds: 10
                 child_sa:
                     proposals:
                         - encryption:
@@ -47,7 +51,10 @@ plmn_overrides:
                             - sha256
                           lifetime_seconds: 64800
                     lifetime_seconds: 64800
+                    replay_window_size: 12
                 local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                remote_identifier_type: KeyID
+                validate_remote_certificate: false
                 sa_lifetime_seconds: 64800
             register:
                 use_ipsec: true
@@ -64,6 +71,8 @@ plmn_overrides:
                             - +g.3gpp.srvcc-alerting
                             - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
                             - +g.3gpp.smsip
+                sip_timers:
+                    InviteResponseTimeout: 4000
             media:
                 rtp_inactivity_seconds: 20
                 rtcp_inactivity_seconds: 180
@@ -72,3 +81,5 @@ plmn_overrides:
                 enabled: false
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: false

@@ -4,7 +4,6 @@ id: apple_unionwireless_us
 bundle: UnionWireless_US.bundle
 supported_plmns:
     - "310020"
-common: {}
 plmn_overrides:
     "310020":
         ims:
@@ -19,6 +18,12 @@ plmn_overrides:
                 support_p_early_media: true
                 contact:
                     always_add_sip_instance: true
+                additional_headers:
+                    - selector: INVITE[911,wifi]
+                      headers:
+                        - 'Supported: geolocation'
+                sip_timers:
+                    InviteResponseTimeout: 5000
             media:
                 rtp_inactivity_seconds: 10
             volte:

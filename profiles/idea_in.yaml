@@ -29,6 +29,9 @@ common:
     apple:
         carrier_entitlements:
             supported_entitlements: 1041
+    e911:
+        over_itech_supported: false
+        wifi_calling_without_entitlement: true
     entitlement:
         entitlement_url: https://wes.vodafoneidea.com/Apple/
     ims:
@@ -50,10 +53,15 @@ common:
                       integrity:
                         - sha256
                         - sha1
+                      protocol: esp
+                      secure_rekey: false
                       lifetime_seconds: 86400
+            disable_switch_to_natt_port: true
             dpd:
                 enabled: true
                 interval_seconds: 600
+                max_retries: 4
+                retry_interval_seconds: 10
             local_identifier: 0$impi_user@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
             proposals:
                 - encryption:
@@ -68,7 +76,7 @@ common:
                   authentication_method: None
                   eap_method: EAP-AKA
             sa_lifetime_seconds: 80000
-        ip_stack: ipv4
+        ip_stack: ipv4v6
         media:
             rtcp_interval_seconds: 5
             rtp_inactivity_seconds: 30
@@ -95,3 +103,5 @@ common:
             enabled: true
         volte:
             enable_volte_by_default: true
+    roaming:
+        wifi_calling_allowed: false

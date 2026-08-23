@@ -4,4 +4,3 @@ id: apple_globacom_ng
 bundle: Globacom_ng.bundle
 supported_plmns:
     - "62150"
-common: {}

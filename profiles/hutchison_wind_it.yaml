@@ -4,9 +4,11 @@ id: apple_hutchison_wind_it
 bundle: Hutchison_Wind_it.bundle
 supported_plmns:
     - "22288"
-common: {}
 plmn_overrides:
     "22288":
+        e911:
+            over_itech_supported: false
+            wifi_calling_without_entitlement: true
         ims:
             apn: ims
             ip_stack: ipv4v6
@@ -55,3 +57,5 @@ plmn_overrides:
                 rtp_inactivity_seconds: 20
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: false

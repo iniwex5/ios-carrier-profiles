@@ -4,7 +4,6 @@ id: apple_du_virgin_ae
 bundle: du_Virgin_ae.bundle
 supported_plmns:
     - "42403"
-common: {}
 plmn_overrides:
     "42403":
         apple:
@@ -34,6 +33,8 @@ plmn_overrides:
                             - +g.3gpp.mid-call
                             - +g.3gpp.srvcc-alerting
                             - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+                sip_timers:
+                    InviteResponseTimeout: 10000
             media:
                 rtp_inactivity_seconds: 20
                 rtcp_interval_seconds: 5

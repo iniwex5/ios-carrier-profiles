@@ -4,7 +4,6 @@ id: apple_alcom_ax
 bundle: Alcom_ax.bundle
 supported_plmns:
     - "24414"
-common: {}
 plmn_overrides:
     "24414":
         ims:

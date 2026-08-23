@@ -9,6 +9,15 @@ common:
     apple:
         carrier_entitlements:
             supported_entitlements: 9233
+    e911:
+        emergency_urns:
+            "112": urn:service:sos.police
+            "131": urn:service:sos.ambulance
+            "132": urn:service:sos.fire
+            "133": urn:service:sos.police
+            "137": urn:service:sos.marine
+            "138": urn:service:sos.mountain
+            "911": urn:service:sos.police
     entitlement:
         entitlement_url: https://Entitlement.Movistar.cl/entitlement/
     ims:

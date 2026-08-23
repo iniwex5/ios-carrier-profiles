@@ -4,12 +4,16 @@ id: apple_appalachian_lte_us
 bundle: Appalachian_LTE_US.bundle
 supported_plmns:
     - "311480"
-common: {}
 plmn_overrides:
     "311480":
         apple:
             carrier_entitlements:
                 supported_entitlements: 208
+        e911:
+            over_itech_supported: false
+            wifi_calling_without_entitlement: false
+            emergency_urns:
+                "922": 922@vzims.com
         entitlement:
             entitlement_url: https://spc.myvzw.com/ium-RoadrunnerInterface/servlet/IUMServlet
         ims:
@@ -17,6 +21,7 @@ plmn_overrides:
             ip_stack: ipv6
             epdg:
                 address: wo.vzwwo.com
+                timeout_seconds: 30
                 configuration_attributes:
                     - identifier: 16390
                       name: AssignedPCSCFIPv6
@@ -34,16 +39,21 @@ plmn_overrides:
                       lifetime_seconds: 80000
                       authentication_method: None
                       eap_method: EAP-AKA
+                disable_switch_to_natt_port: true
                 dpd:
                     enabled: false
                     interval_seconds: 600
+                    max_retries: 4
+                    retry_interval_seconds: 10
                 child_sa:
                     proposals:
                         - encryption:
                             - aes256
                           integrity:
                             - sha256
+                          protocol: esp
                           rekey_pfs_group: modp2048
+                          secure_rekey: false
                           lifetime_seconds: 86400
                     lifetime_seconds: 86400
                 local_identifier: 0$impi_user@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
@@ -55,9 +65,22 @@ plmn_overrides:
                     - method: INVITE
                       statuses:
                         - "503"
+                additional_headers:
+                    - selector: INVITE[911,wifi]
+                      headers:
+                        - 'P-com.ServiceType: Static-Emergency'
+                sip_timers:
+                    D: 128000
+                    F: 30000
+                    InviteResponseTimeout: 10000
+                    T1: 3000
+                    T2: 16000
+                    T4: 17000
             media:
                 rtp_inactivity_seconds: 20
                 rtcp_inactivity_seconds: 20
                 rtcp_interval_seconds: 5
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: true

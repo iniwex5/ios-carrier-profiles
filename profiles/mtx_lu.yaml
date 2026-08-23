@@ -5,4 +5,3 @@ bundle: MTX_lu.bundle
 supported_plmns:
     - "27002"
     - "90139"
-common: {}

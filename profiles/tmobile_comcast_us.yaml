@@ -4,12 +4,15 @@ id: apple_tmobile_comcast_us
 bundle: TMobile_Comcast_US.bundle
 supported_plmns:
     - "310240"
-common: {}
 plmn_overrides:
     "310240":
         apple:
             carrier_entitlements:
                 supported_entitlements: 4205977
+        e911:
+            over_itech_supported: false
+            emergency_urns:
+                default: urn:service:sos
         entitlement:
             entitlement_url: https://eas3.msg.t-mobile.com
         ims:
@@ -40,9 +43,12 @@ plmn_overrides:
                       lifetime_seconds: 80000
                       authentication_method: None
                       eap_method: EAP-AKA
+                disable_switch_to_natt_port: false
                 dpd:
                     enabled: false
                     interval_seconds: 600
+                    max_retries: 4
+                    retry_interval_seconds: 10
                 child_sa:
                     proposals:
                         - encryption:
@@ -51,7 +57,9 @@ plmn_overrides:
                             - sha256
                           lifetime_seconds: 80000
                     lifetime_seconds: 80000
+                    replay_window_size: 12
                 local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                validate_remote_certificate: false
                 sa_lifetime_seconds: 80000
             register:
                 use_ipsec: true
@@ -68,6 +76,10 @@ plmn_overrides:
                     additional_contact_params:
                         - selector: REGISTER,INVITE,INVITE:*
                           params: []
+                sip_timers:
+                    EmergencyInviteResponseTimeout: 5000
+                    F: 30000
+                    InviteResponseTimeout: 0
             media:
                 rtp_inactivity_seconds: 30
             ussi:

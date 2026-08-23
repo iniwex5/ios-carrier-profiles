@@ -6,6 +6,9 @@ supported_plmns:
     - "20404"
     - "24214"
 common:
+    e911:
+        over_itech_supported: true
+        wifi_calling_without_entitlement: true
     ims:
         apn: ims
         epdg:

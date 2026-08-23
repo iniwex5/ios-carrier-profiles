@@ -30,6 +30,9 @@ common:
     apple:
         carrier_entitlements:
             supported_entitlements: 11265
+    e911:
+        over_itech_supported: true
+        wifi_calling_without_entitlement: true
     entitlement:
         entitlement_url: https://hpdegprod.jio.com:8181/ium-OEMInterface/servlet/IUMServlet
     ims:
@@ -50,10 +53,15 @@ common:
                         - aes128
                       integrity:
                         - sha1
+                      protocol: esp
+                      secure_rekey: false
                       lifetime_seconds: 86400
+            disable_switch_to_natt_port: true
             dpd:
                 enabled: true
                 interval_seconds: 300
+                max_retries: 4
+                retry_interval_seconds: 10
             local_identifier: 0$impi_user@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
             proposals:
                 - encryption:
@@ -68,7 +76,7 @@ common:
                   authentication_method: None
                   eap_method: EAP-AKA
             sa_lifetime_seconds: 80000
-        ip_stack: ipv6
+        ip_stack: ipv4v6
         media:
             rtp_inactivity_seconds: 20
         register:
@@ -85,3 +93,5 @@ common:
             enabled: true
         volte:
             enable_volte_by_default: true
+    roaming:
+        wifi_calling_allowed: true

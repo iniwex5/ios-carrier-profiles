@@ -4,7 +4,6 @@ id: apple_maroc_ma
 bundle: Maroc_ma.bundle
 supported_plmns:
     - "60401"
-common: {}
 plmn_overrides:
     "60401":
         ims:
@@ -28,6 +27,10 @@ plmn_overrides:
                             - +g.3gpp.mid-call
                             - +g.3gpp.srvcc-alerting
                             - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+                additional_headers:
+                    - selector: INVITE,INVITE:*
+                      headers:
+                        - 'Feature-Caps: *;+g.3gpp.srvcc-alerting'
             media:
                 rtp_inactivity_seconds: 15
                 rtcp_interval_seconds: 5

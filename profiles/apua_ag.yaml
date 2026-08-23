@@ -5,4 +5,3 @@ bundle: APUA_ag.bundle
 supported_plmns:
     - "34403"
     - "344030"
-common: {}

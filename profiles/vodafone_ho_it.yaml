@@ -4,7 +4,6 @@ id: apple_vodafone_ho_it
 bundle: Vodafone_Ho_it.bundle
 supported_plmns:
     - "22210"
-common: {}
 plmn_overrides:
     "22210":
         ims:

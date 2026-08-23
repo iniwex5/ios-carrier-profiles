@@ -4,12 +4,14 @@ id: apple_porta_ec
 bundle: Porta_ec.bundle
 supported_plmns:
     - "74001"
-common: {}
 plmn_overrides:
     "74001":
         apple:
             carrier_entitlements:
                 supported_entitlements: 1041
+        e911:
+            over_itech_supported: false
+            wifi_calling_without_entitlement: true
         entitlement:
             entitlement_url: https://aes.mnc001.mcc740.pub.3gppnetwork.org:44307/entitlement/
         ims:
@@ -39,6 +41,8 @@ plmn_overrides:
                 dpd:
                     enabled: false
                     interval_seconds: 600
+                    max_retries: 4
+                    retry_interval_seconds: 10
                 child_sa:
                     proposals:
                         - encryption:
@@ -48,6 +52,7 @@ plmn_overrides:
                           rekey_pfs_group: modp2048
                           lifetime_seconds: 86400
                     lifetime_seconds: 86400
+                    replay_window_size: 12
                 local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
                 sa_lifetime_seconds: 86400
             register:
@@ -74,3 +79,5 @@ plmn_overrides:
                 enabled: true
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: true

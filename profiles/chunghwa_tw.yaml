@@ -4,12 +4,18 @@ id: apple_chunghwa_tw
 bundle: Chunghwa_tw.bundle
 supported_plmns:
     - "46692"
-common: {}
 plmn_overrides:
     "46692":
         apple:
             carrier_entitlements:
                 supported_entitlements: 3216
+        e911:
+            over_itech_supported: true
+            wifi_calling_without_entitlement: false
+            emergency_urns:
+                "110": urn:service:sos.police
+                "112": urn:service:sos.ambulance
+                "119": urn:service:sos.fire
         entitlement:
             entitlement_url: https://es.emome.net
         ims:
@@ -42,6 +48,8 @@ plmn_overrides:
                 dpd:
                     enabled: false
                     interval_seconds: 600
+                    max_retries: 4
+                    retry_interval_seconds: 10
                 child_sa:
                     proposals:
                         - encryption:
@@ -51,6 +59,7 @@ plmn_overrides:
                           rekey_pfs_group: modp2048
                           lifetime_seconds: 80000
                     lifetime_seconds: 80000
+                    replay_window_size: 12
                 local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
                 sa_lifetime_seconds: 80000
             register:
@@ -69,3 +78,5 @@ plmn_overrides:
                         - "606"
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: true

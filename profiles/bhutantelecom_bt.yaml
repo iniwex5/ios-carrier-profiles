@@ -4,7 +4,6 @@ id: apple_bhutantelecom_bt
 bundle: BhutanTelecom_bt.bundle
 supported_plmns:
     - "40211"
-common: {}
 plmn_overrides:
     "40211":
         ims:

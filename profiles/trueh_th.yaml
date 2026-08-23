@@ -9,6 +9,15 @@ common:
     apple:
         carrier_entitlements:
             supported_entitlements: 11457
+    e911:
+        emergency_urns:
+            "112": urn:service:sos.police
+            "1669": urn:service:sos.ambulance
+            "191": urn:service:sos.police
+            "199": urn:service:sos.fire
+            "911": urn:service:sos.police
+        over_itech_supported: true
+        wifi_calling_without_entitlement: false
     entitlement:
         entitlement_url: https://iquery.truecorp.co.th/iquery
     ims:
@@ -32,9 +41,12 @@ common:
                         - sha512
                       rekey_pfs_group: modp2048
                       lifetime_seconds: 80000
+                replay_window_size: 12
             dpd:
                 enabled: false
                 interval_seconds: 600
+                max_retries: 4
+                retry_interval_seconds: 10
             local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
             proposals:
                 - encryption:
@@ -49,6 +61,7 @@ common:
                   authentication_method: None
                   eap_method: EAP-AKA
             sa_lifetime_seconds: 80000
+            validate_remote_certificate: false
         ip_stack: ipv4v6
         register:
             include_cellular_network_info: true

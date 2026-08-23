@@ -11,3 +11,7 @@ common:
         ip_stack: ipv4
         signaling:
             support_p_early_media: true
+selector_overrides:
+    "52803":
+        ims:
+            ip_stack: null

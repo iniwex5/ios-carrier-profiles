@@ -4,12 +4,22 @@ id: apple_skt_kr
 bundle: SKT_kr.bundle
 supported_plmns:
     - "45005"
-common: {}
 plmn_overrides:
     "45005":
         apple:
             carrier_entitlements:
                 supported_entitlements: 9233
+        e911:
+            emergency_urns:
+                "111": urn:service:sos.country-specific.kr.111
+                "112": urn:service:sos.police
+                "113": urn:service:sos.country-specific.kr.113
+                "117": urn:service:sos.country-specific.kr.117
+                "118": urn:service:sos.country-specific.kr.118
+                "119": urn:service:sos.fire
+                "122": urn:service:sos.marine
+                "125": urn:service:sos.country-specific.kr.125
+                "911": urn:service:sos.fire
         entitlement:
             entitlement_url: https://entitlements-prod.sktdns.com
         ims:
@@ -33,6 +43,13 @@ plmn_overrides:
                         - "414"
                         - "499"
                         - "606"
+                sip_timers:
+                    B: 8000
+                    D: 32000
+                    F: 44000
+                    H: 36000
+                    InviteResponseTimeout: 5000
+                    J: 32000
             media:
                 rtcp_inactivity_seconds: 36000
                 rtcp_interval_seconds: 3

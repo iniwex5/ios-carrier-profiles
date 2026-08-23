@@ -4,7 +4,6 @@ id: apple_vivacom_bg
 bundle: Vivacom_bg.bundle
 supported_plmns:
     - "28403"
-common: {}
 plmn_overrides:
     "28403":
         ims:

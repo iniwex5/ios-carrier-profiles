@@ -4,7 +4,6 @@ id: apple_omnitel_lt
 bundle: Omnitel_lt.bundle
 supported_plmns:
     - "24601"
-common: {}
 plmn_overrides:
     "24601":
         apple:

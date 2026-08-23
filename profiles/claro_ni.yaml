@@ -4,7 +4,6 @@ id: apple_claro_ni
 bundle: Claro_ni.bundle
 supported_plmns:
     - "71021"
-common: {}
 plmn_overrides:
     "71021":
         ims:

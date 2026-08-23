@@ -6,6 +6,10 @@ supported_plmns:
     - "732103"
     - "732111"
 common:
+    e911:
+        emergency_urns:
+            "112": urn:service:sos.police
+            "123": urn:service:sos.ambulance
     ims:
         apn: ims
         ip_stack: ipv4v6
@@ -32,6 +36,8 @@ common:
                     - 5XX
                     - 6XX
             preconditions: supported
+            sip_timers:
+                InviteResponseTimeout: 5000
             support_p_early_media: false
         ussi:
             enabled: false

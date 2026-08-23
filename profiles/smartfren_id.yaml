@@ -7,6 +7,9 @@ supported_plmns:
     - "51028"
     - "52505"
 common:
+    e911:
+        over_itech_supported: false
+        wifi_calling_without_entitlement: true
     ims:
         apn: ims
         epdg:
@@ -31,9 +34,12 @@ common:
                         - sha256
                       rekey_pfs_group: modp2048
                       lifetime_seconds: 80000
+                replay_window_size: 12
             dpd:
                 enabled: false
                 interval_seconds: 600
+                max_retries: 4
+                retry_interval_seconds: 10
             local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
             sa_lifetime_seconds: 80000
         ip_stack: ipv4
@@ -46,11 +52,15 @@ common:
                 always_add_sip_instance: true
             max_udp_message_size: 1000
             preconditions: unsupported
+            sip_timers:
+                InviteResponseTimeout: 0
             support_p_early_media: true
         ussi:
             enabled: true
         volte:
             enable_volte_by_default: true
+    roaming:
+        wifi_calling_allowed: true
 plmn_overrides:
     "51009":
         ims:

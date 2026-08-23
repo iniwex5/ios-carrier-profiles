@@ -4,4 +4,3 @@ id: apple_digicel_mq
 bundle: Digicel_mq.bundle
 supported_plmns:
     - "34020"
-common: {}

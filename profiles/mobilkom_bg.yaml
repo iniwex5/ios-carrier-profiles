@@ -4,7 +4,6 @@ id: apple_mobilkom_bg
 bundle: mobilkom_bg.bundle
 supported_plmns:
     - "28401"
-common: {}
 plmn_overrides:
     "28401":
         apple:

@@ -5,4 +5,3 @@ bundle: PrimeTel_cy.bundle
 supported_plmns:
     - "22201"
     - "28020"
-common: {}

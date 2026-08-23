@@ -4,4 +4,3 @@ id: apple_awcc_af
 bundle: AWCC_af.bundle
 supported_plmns:
     - "41201"
-common: {}

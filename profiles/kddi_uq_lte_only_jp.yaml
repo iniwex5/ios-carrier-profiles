@@ -4,12 +4,16 @@ id: apple_kddi_uq_lte_only_jp
 bundle: KDDI_UQ_LTE_only_jp.bundle
 supported_plmns:
     - "44051"
-common: {}
 plmn_overrides:
     "44051":
         apple:
             carrier_entitlements:
                 supported_entitlements: 8193
+        e911:
+            emergency_urns:
+                "110": urn:service:sos.police
+                "118": urn:service:sos.marine
+                "119": urn:service:sos.fire
         entitlement:
             entitlement_url: https://station01.ezweb.ne.jp/ENT/servlet/EntServlet3
         ims:
@@ -19,6 +23,15 @@ plmn_overrides:
                 use_ipsec: true
             signaling:
                 support_p_early_media: true
+                require_qos_before_ringing: true
+                sip_timers:
+                    B: 10000
+                    F: 30000
+                    H: 30000
+                    InviteResponseTimeout: 0
+                    J: 30000
+                    T1: 3000
+                    T2: 16000
             media:
                 rtp_inactivity_seconds: 20
                 remote_rtcp_deactivation: true

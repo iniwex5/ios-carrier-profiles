@@ -4,4 +4,3 @@ id: apple_bhartiairtel_ke
 bundle: BhartiAirtel_ke.bundle
 supported_plmns:
     - "63903"
-common: {}

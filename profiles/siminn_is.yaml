@@ -4,12 +4,13 @@ id: apple_siminn_is
 bundle: Siminn_is.bundle
 supported_plmns:
     - "27401"
-common: {}
 plmn_overrides:
     "27401":
         apple:
             carrier_entitlements:
                 supported_entitlements: 5121
+        e911:
+            over_itech_supported: false
         entitlement:
             entitlement_url: https://aes.siminn.is
         ims:

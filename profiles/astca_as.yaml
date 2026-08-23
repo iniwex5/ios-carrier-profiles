@@ -6,6 +6,9 @@ supported_plmns:
     - "311780"
     - "313120"
 common:
+    e911:
+        over_itech_supported: false
+        wifi_calling_without_entitlement: true
     ims:
         apn: ims
         epdg:
@@ -23,9 +26,12 @@ common:
                         - sha256
                       rekey_pfs_group: modp2048
                       lifetime_seconds: 86400
+                replay_window_size: 12
             dpd:
                 enabled: true
                 interval_seconds: 600
+                max_retries: 4
+                retry_interval_seconds: 10
             local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
             proposals:
                 - encryption:
@@ -55,3 +61,8 @@ plmn_overrides:
         ims:
             epdg:
                 address: epdg.epc.mnc780.mcc311.pub.3gppnetwork.org
+selector_overrides:
+    "313120":
+        ims:
+            apn: null
+            ip_stack: null

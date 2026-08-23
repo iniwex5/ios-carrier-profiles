@@ -9,6 +9,9 @@ common:
     apple:
         carrier_entitlements:
             supported_entitlements: 13313
+    e911:
+        over_itech_supported: false
+        wifi_calling_without_entitlement: true
     entitlement:
         entitlement_url: https://appes.stc.com.bh/apple
     ims:
@@ -58,8 +61,12 @@ common:
                     - 6XX
             max_udp_message_size: 1500
             preconditions: supported
+            sip_timers:
+                InviteResponseTimeout: 10000
             support_p_early_media: true
         ussi:
             enabled: true
         volte:
             enable_volte_by_default: true
+    roaming:
+        wifi_calling_allowed: false

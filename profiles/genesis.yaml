@@ -4,4 +4,3 @@ id: apple_genesis
 bundle: Genesis.bundle
 supported_plmns:
     - "26001"
-common: {}

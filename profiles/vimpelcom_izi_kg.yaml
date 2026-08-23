@@ -4,4 +4,3 @@ id: apple_vimpelcom_izi_kg
 bundle: VimpelCom_Izi_kg.bundle
 supported_plmns:
     - "43701"
-common: {}

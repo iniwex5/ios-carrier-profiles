@@ -4,7 +4,6 @@ id: apple_qtel_iq
 bundle: Qtel_iq.bundle
 supported_plmns:
     - "41805"
-common: {}
 plmn_overrides:
     "41805":
         ims:
@@ -18,5 +17,9 @@ plmn_overrides:
                             - +g.3gpp.mid-call
                             - +g.3gpp.srvcc-alerting
                             - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+                additional_headers:
+                    - selector: INVITE,INVITE:*
+                      headers:
+                        - 'Feature-Caps: *;+g.3gpp.srvcc-alerting'
             volte:
                 enable_volte_by_default: true

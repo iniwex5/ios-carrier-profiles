@@ -4,7 +4,6 @@ id: apple_grameenphone_bd
 bundle: Grameenphone_bd.bundle
 supported_plmns:
     - "47001"
-common: {}
 plmn_overrides:
     "47001":
         ims:

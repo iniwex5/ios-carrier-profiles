@@ -4,7 +4,6 @@ id: apple_vodafone_eg
 bundle: Vodafone_eg.bundle
 supported_plmns:
     - "60202"
-common: {}
 plmn_overrides:
     "60202":
         ims:

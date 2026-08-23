@@ -4,7 +4,6 @@ id: apple_telekomsrbija_rs
 bundle: TelekomSrbija_rs.bundle
 supported_plmns:
     - "22003"
-common: {}
 plmn_overrides:
     "22003":
         ims:

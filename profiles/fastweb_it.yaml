@@ -6,6 +6,8 @@ supported_plmns:
     - "22208"
     - "22801"
 common:
+    e911:
+        wifi_calling_without_entitlement: true
     ims:
         domain: ims.mnc008.mcc222.3gppnetwork.org
         epdg:
@@ -46,3 +48,9 @@ common:
             support_p_early_media: true
         volte:
             enable_volte_by_default: true
+    roaming:
+        wifi_calling_allowed: false
+selector_overrides:
+    22801_GID1-D8FFFFFFFFFFFFFF:
+        ims:
+            domain: ims.mnc001.mcc228.3gppnetwork.org

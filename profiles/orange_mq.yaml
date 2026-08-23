@@ -4,12 +4,14 @@ id: apple_orange_mq
 bundle: Orange_mq.bundle
 supported_plmns:
     - "34001"
-common: {}
 plmn_overrides:
     "34001":
         apple:
             carrier_entitlements:
                 supported_entitlements: 17
+        e911:
+            over_itech_supported: false
+            wifi_calling_without_entitlement: true
         entitlement:
             entitlement_url: https://aes.mnc001.mcc340.pub.3gppnetwork.org:8181/ium-OEMInterface/servlet/IUMServlet
         ims:
@@ -41,6 +43,8 @@ plmn_overrides:
                 dpd:
                     enabled: false
                     interval_seconds: 600
+                    max_retries: 4
+                    retry_interval_seconds: 10
                 child_sa:
                     proposals:
                         - encryption:
@@ -50,7 +54,10 @@ plmn_overrides:
                           rekey_pfs_group: modp2048
                           lifetime_seconds: 80000
                     lifetime_seconds: 80000
+                    replay_window_size: 12
                 local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                remote_identifier_type: KeyID
+                validate_remote_certificate: false
                 sa_lifetime_seconds: 80000
             register:
                 use_ipsec: true

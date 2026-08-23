@@ -4,7 +4,6 @@ id: apple_mobinil_eg
 bundle: mobinil_eg.bundle
 supported_plmns:
     - "60201"
-common: {}
 plmn_overrides:
     "60201":
         ims:

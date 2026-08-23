@@ -4,9 +4,11 @@ id: apple_hutchison_id_uk
 bundle: Hutchison_iD_uk.bundle
 supported_plmns:
     - "23420"
-common: {}
 plmn_overrides:
     "23420":
+        e911:
+            over_itech_supported: true
+            wifi_calling_without_entitlement: true
         ims:
             apn: ims
             ip_stack: ipv4v6
@@ -22,6 +24,8 @@ plmn_overrides:
                 dpd:
                     enabled: false
                     interval_seconds: 600
+                    max_retries: 4
+                    retry_interval_seconds: 10
                 child_sa:
                     proposals:
                         - encryption:
@@ -30,7 +34,11 @@ plmn_overrides:
                             - sha256
                           lifetime_seconds: 80000
                     lifetime_seconds: 80000
+                    replay_window_size: 12
                 local_identifier: anonymous@nai.epc.mnc020.mcc234.3gppnetwork.org
+                remote_certificate_authority_name: DigiCert Global Root G2
+                remote_certificate_hostname: epdg.epc.mnc020.mcc234.pub.3gppnetwork.org
+                validate_remote_certificate: true
                 sa_lifetime_seconds: 80000
             register:
                 use_ipsec: true
@@ -56,3 +64,5 @@ plmn_overrides:
                 rtcp_interval_seconds: 5
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: false

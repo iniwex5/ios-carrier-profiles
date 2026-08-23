@@ -4,12 +4,14 @@ id: apple_vodafone_it
 bundle: Vodafone_it.bundle
 supported_plmns:
     - "22210"
-common: {}
 plmn_overrides:
     "22210":
         apple:
             carrier_entitlements:
                 supported_entitlements: 9216
+        e911:
+            over_itech_supported: false
+            wifi_calling_without_entitlement: true
         entitlement:
             entitlement_url: https://es-it.vodafone.com:4447/ium-OEMInterface/servlet/IUMServlet
         ims:

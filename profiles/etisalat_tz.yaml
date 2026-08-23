@@ -4,4 +4,3 @@ id: apple_etisalat_tz
 bundle: Etisalat_tz.bundle
 supported_plmns:
     - "64003"
-common: {}

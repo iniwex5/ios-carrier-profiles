@@ -4,12 +4,18 @@ id: apple_tmobile_cz
 bundle: TMobile_cz.bundle
 supported_plmns:
     - "23001"
-common: {}
 plmn_overrides:
     "23001":
         apple:
             carrier_entitlements:
                 supported_entitlements: 4203521
+        e911:
+            over_itech_supported: true
+            wifi_calling_without_entitlement: true
+            emergency_urns:
+                "150": urn:service:sos.fire
+                "155": urn:service:sos.ambulance
+                "158": urn:service:sos.police
         entitlement:
             entitlement_url: https://entitlement-cz.telekom.net/
         ims:
@@ -39,6 +45,8 @@ plmn_overrides:
                 dpd:
                     enabled: false
                     interval_seconds: 600
+                    max_retries: 4
+                    retry_interval_seconds: 10
                 child_sa:
                     proposals:
                         - encryption:
@@ -47,7 +55,9 @@ plmn_overrides:
                             - sha256
                           lifetime_seconds: 64800
                     lifetime_seconds: 64800
+                    replay_window_size: 12
                 local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                validate_remote_certificate: false
                 sa_lifetime_seconds: 64800
             register:
                 use_ipsec: true
@@ -62,6 +72,8 @@ plmn_overrides:
                             - +g.3gpp.mid-call
                             - +g.3gpp.srvcc-alerting
                             - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+                sip_timers:
+                    InviteResponseTimeout: 4000
             media:
                 rtp_inactivity_seconds: 20
                 rtcp_inactivity_seconds: 180
@@ -70,3 +82,5 @@ plmn_overrides:
                 enabled: true
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: true

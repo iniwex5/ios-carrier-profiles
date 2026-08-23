@@ -4,7 +4,6 @@ id: apple_mobilkom_rs
 bundle: mobilkom_rs.bundle
 supported_plmns:
     - "22005"
-common: {}
 plmn_overrides:
     "22005":
         apple:

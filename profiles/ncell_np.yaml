@@ -4,7 +4,6 @@ id: apple_ncell_np
 bundle: Ncell_np.bundle
 supported_plmns:
     - "42902"
-common: {}
 plmn_overrides:
     "42902":
         ims:

@@ -4,4 +4,3 @@ id: apple_tigo_rw
 bundle: Tigo_rw.bundle
 supported_plmns:
     - "63513"
-common: {}

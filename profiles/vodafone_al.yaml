@@ -4,9 +4,11 @@ id: apple_vodafone_al
 bundle: Vodafone_al.bundle
 supported_plmns:
     - "27602"
-common: {}
 plmn_overrides:
     "27602":
+        e911:
+            over_itech_supported: true
+            wifi_calling_without_entitlement: true
         ims:
             apn: ims
             ip_stack: ipv4
@@ -52,3 +54,5 @@ plmn_overrides:
                 rtp_inactivity_seconds: 10
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: false

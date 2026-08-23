@@ -7,6 +7,9 @@ supported_plmns:
     - "20809"
     - "20827"
 common:
+    e911:
+        over_itech_supported: true
+        wifi_calling_without_entitlement: true
     ims:
         apn: ims
         epdg:
@@ -45,6 +48,8 @@ common:
                     - "488"
             preconditions: supported
             support_p_early_media: true
+    roaming:
+        wifi_calling_allowed: false
 plmn_overrides:
     "20827":
         ims:

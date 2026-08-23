@@ -4,4 +4,3 @@ id: apple_moov_ga
 bundle: Moov_ga.bundle
 supported_plmns:
     - "62802"
-common: {}

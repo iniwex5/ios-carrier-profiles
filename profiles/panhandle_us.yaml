@@ -4,4 +4,3 @@ id: apple_panhandle_us
 bundle: Panhandle_US.bundle
 supported_plmns:
     - "311530"
-common: {}

@@ -4,17 +4,18 @@ id: apple_telus_publicmobile_ca
 bundle: Telus_PublicMobile_ca.bundle
 supported_plmns:
     - "302220"
-common: {}
 plmn_overrides:
     "302220":
         apple:
             carrier_entitlements:
                 supported_entitlements: 4194337
+        e911:
+            wifi_calling_without_entitlement: false
         entitlement:
             entitlement_url: https://ent.telus.com/acmegw
         ims:
             apn: ims
-            ip_stack: ipv6
+            ip_stack: ipv4v6
             register:
                 use_ipsec: true
                 include_cellular_network_info: true
@@ -46,6 +47,10 @@ plmn_overrides:
                             - +g.3gpp.mid-call
                             - +g.3gpp.srvcc-alerting
                             - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+                sip_timers:
+                    B: 8000
+                    F: 16000
+                    InviteResponseTimeout: 5000
             media:
                 rtp_inactivity_seconds: 30
                 rtcp_inactivity_seconds: 30

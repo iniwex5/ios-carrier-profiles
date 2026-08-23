@@ -4,7 +4,6 @@ id: apple_telenor_rs
 bundle: Telenor_rs.bundle
 supported_plmns:
     - "22001"
-common: {}
 plmn_overrides:
     "22001":
         ims:

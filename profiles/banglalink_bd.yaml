@@ -4,7 +4,6 @@ id: apple_banglalink_bd
 bundle: Banglalink_bd.bundle
 supported_plmns:
     - "47003"
-common: {}
 plmn_overrides:
     "47003":
         ims:

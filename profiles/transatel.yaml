@@ -4,4 +4,3 @@ id: apple_transatel
 bundle: Transatel.bundle
 supported_plmns:
     - "90137"
-common: {}

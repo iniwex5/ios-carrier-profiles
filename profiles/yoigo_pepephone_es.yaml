@@ -4,7 +4,6 @@ id: apple_yoigo_pepephone_es
 bundle: Yoigo_Pepephone_es.bundle
 supported_plmns:
     - "21404"
-common: {}
 plmn_overrides:
     "21404":
         apple:

@@ -4,7 +4,6 @@ id: apple_ufone_pk
 bundle: Ufone_pk.bundle
 supported_plmns:
     - "41003"
-common: {}
 plmn_overrides:
     "41003":
         ims:

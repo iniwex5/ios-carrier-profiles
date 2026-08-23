@@ -4,7 +4,6 @@ id: apple_etisalat_eg
 bundle: Etisalat_eg.bundle
 supported_plmns:
     - "60203"
-common: {}
 plmn_overrides:
     "60203":
         ims:
@@ -36,6 +35,10 @@ plmn_overrides:
                             - +g.3gpp.mid-call
                             - +g.3gpp.srvcc-alerting
                             - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+                additional_headers:
+                    - selector: INVITE,INVITE:*
+                      headers:
+                        - 'Feature-Caps: *;+g.3gpp.srvcc-alerting'
             media:
                 rtp_inactivity_seconds: 30
                 rtcp_inactivity_seconds: 25

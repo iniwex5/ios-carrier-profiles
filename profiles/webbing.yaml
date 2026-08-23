@@ -23,6 +23,9 @@ common:
     apple:
         carrier_entitlements:
             supported_entitlements: 8209
+    e911:
+        over_itech_supported: false
+        wifi_calling_without_entitlement: false
     entitlement:
         entitlement_url: https://entitlement.iamwebbing.com
     ims:

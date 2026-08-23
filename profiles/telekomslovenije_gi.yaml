@@ -4,7 +4,6 @@ id: apple_telekomslovenije_gi
 bundle: TelekomSlovenije_gi.bundle
 supported_plmns:
     - "26601"
-common: {}
 plmn_overrides:
     "26601":
         ims:

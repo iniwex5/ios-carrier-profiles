@@ -4,12 +4,14 @@ id: apple_bouygues_fr
 bundle: Bouygues_fr.bundle
 supported_plmns:
     - "20820"
-common: {}
 plmn_overrides:
     "20820":
         apple:
             carrier_entitlements:
                 supported_entitlements: 4202705
+        e911:
+            over_itech_supported: true
+            wifi_calling_without_entitlement: true
         entitlement:
             entitlement_url: https://entitlements-prod.bouyguestelecom.fr:8181/ium-OEMInterface/servlet/IUMServlet
         ims:
@@ -28,6 +30,8 @@ plmn_overrides:
                 dpd:
                     enabled: false
                     interval_seconds: 600
+                    max_retries: 4
+                    retry_interval_seconds: 10
                 child_sa:
                     proposals:
                         - encryption:
@@ -37,7 +41,11 @@ plmn_overrides:
                           rekey_pfs_group: modp2048
                           lifetime_seconds: 80000
                     lifetime_seconds: 80000
+                    replay_window_size: 12
                 local_identifier: anonymous@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                remote_certificate_authority_name: DigiCert Global G2 TLS RSA SHA256 2020 CA1
+                remote_certificate_hostname: epdg.epc.mnc020.mcc208.pub.3gppnetwork.org
+                validate_remote_certificate: true
                 sa_lifetime_seconds: 80000
             register:
                 use_ipsec: true
@@ -53,9 +61,17 @@ plmn_overrides:
                             - +g.3gpp.mid-call
                             - +g.3gpp.srvcc-alerting
                             - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+                additional_headers:
+                    - selector: INVITE
+                      headers:
+                        - 'Accept: application/sdp,application/3gpp-ims+xml'
+                sip_timers:
+                    InviteResponseTimeout: 4000
             media:
                 rtp_inactivity_seconds: 20
                 rtcp_inactivity_seconds: 36000
                 rtcp_interval_seconds: 5
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: false

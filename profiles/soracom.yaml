@@ -6,4 +6,3 @@ supported_plmns:
     - "29505"
     - "29510"
     - "50212"
-common: {}

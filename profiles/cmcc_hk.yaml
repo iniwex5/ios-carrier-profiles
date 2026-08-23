@@ -4,12 +4,14 @@ id: apple_cmcc_hk
 bundle: CMCC_hk.bundle
 supported_plmns:
     - "45412"
-common: {}
 plmn_overrides:
     "45412":
         apple:
             carrier_entitlements:
                 supported_entitlements: 1153
+        e911:
+            over_itech_supported: true
+            wifi_calling_without_entitlement: false
         entitlement:
             entitlement_url: https://ses.hk.chinamobile.com
         ims:
@@ -39,6 +41,8 @@ plmn_overrides:
                 dpd:
                     enabled: false
                     interval_seconds: 600
+                    max_retries: 4
+                    retry_interval_seconds: 10
                 child_sa:
                     proposals:
                         - encryption:
@@ -48,7 +52,9 @@ plmn_overrides:
                           rekey_pfs_group: modp2048
                           lifetime_seconds: 80000
                     lifetime_seconds: 80000
+                    replay_window_size: 12
                 local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                validate_remote_certificate: false
                 sa_lifetime_seconds: 80000
             register:
                 use_ipsec: true
@@ -63,7 +69,11 @@ plmn_overrides:
                           params:
                             - +g.3gpp.mid-call
                             - +g.3gpp.srvcc-alerting
+                sip_timers:
+                    F: 30000
             ussi:
                 enabled: true
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: false

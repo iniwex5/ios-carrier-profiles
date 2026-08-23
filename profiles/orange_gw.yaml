@@ -4,4 +4,3 @@ id: apple_orange_gw
 bundle: Orange_gw.bundle
 supported_plmns:
     - "63203"
-common: {}

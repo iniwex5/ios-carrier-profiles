@@ -4,12 +4,17 @@ id: apple_mobileone_sg
 bundle: MobileOne_sg.bundle
 supported_plmns:
     - "52503"
-common: {}
 plmn_overrides:
     "52503":
         apple:
             carrier_entitlements:
                 supported_entitlements: 9217
+        e911:
+            over_itech_supported: true
+            wifi_calling_without_entitlement: true
+            emergency_urns:
+                "995": urn:service:sos.ambulance
+                "999": urn:service:sos.police
         entitlement:
             entitlement_url: https://mdm.m1.com.sg/ES/apple
         ims:
@@ -40,6 +45,8 @@ plmn_overrides:
                 dpd:
                     enabled: false
                     interval_seconds: 600
+                    max_retries: 4
+                    retry_interval_seconds: 10
                 child_sa:
                     proposals:
                         - encryption:
@@ -49,7 +56,9 @@ plmn_overrides:
                           rekey_pfs_group: modp2048
                           lifetime_seconds: 8640
                     lifetime_seconds: 8640
+                    replay_window_size: 12
                 local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                validate_remote_certificate: false
                 sa_lifetime_seconds: 8640
             register:
                 use_ipsec: true
@@ -69,3 +78,5 @@ plmn_overrides:
                 enabled: true
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: false

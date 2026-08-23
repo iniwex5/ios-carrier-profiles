@@ -4,9 +4,11 @@ id: apple_claro_gt
 bundle: Claro_gt.bundle
 supported_plmns:
     - "70401"
-common: {}
 plmn_overrides:
     "70401":
+        e911:
+            over_itech_supported: false
+            wifi_calling_without_entitlement: true
         ims:
             apn: ims
             ip_stack: ipv4v6
@@ -62,3 +64,5 @@ plmn_overrides:
                 enabled: false
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: true

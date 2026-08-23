@@ -4,12 +4,14 @@ id: apple_vodafone_lebara_au
 bundle: Vodafone_Lebara_au.bundle
 supported_plmns:
     - "50503"
-common: {}
 plmn_overrides:
     "50503":
         apple:
             carrier_entitlements:
                 supported_entitlements: 1
+        e911:
+            over_itech_supported: true
+            wifi_calling_without_entitlement: true
         entitlement:
             entitlement_url: https://ents.mnc003.mcc505.pub.3gppnetwork.org:8443
         ims:
@@ -33,7 +35,11 @@ plmn_overrides:
                           rekey_pfs_group: modp2048
                           lifetime_seconds: 80000
                     lifetime_seconds: 80000
+                    replay_window_size: 12
                 local_identifier: vha@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                remote_certificate_authority_name: DigiCert Global Root G2
+                remote_certificate_hostname: epdg.epc.mnc003.mcc505.pub.3gppnetwork.org
+                validate_remote_certificate: true
                 sa_lifetime_seconds: 80000
             register:
                 use_ipsec: true

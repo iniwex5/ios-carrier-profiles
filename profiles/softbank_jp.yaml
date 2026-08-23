@@ -4,12 +4,16 @@ id: apple_softbank_jp
 bundle: Softbank_jp.bundle
 supported_plmns:
     - "44020"
-common: {}
 plmn_overrides:
     "44020":
         apple:
             carrier_entitlements:
                 supported_entitlements: 4762649
+        e911:
+            emergency_urns:
+                "110": urn:service:sos.police
+                "118": urn:service:sos.marine
+                "119": urn:service:sos.fire
         entitlement:
             entitlement_url: https://efr.softbank.jp/terminal/validate.do
         ims:

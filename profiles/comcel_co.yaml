@@ -4,12 +4,18 @@ id: apple_comcel_co
 bundle: Comcel_co.bundle
 supported_plmns:
     - "732101"
-common: {}
 plmn_overrides:
     "732101":
         apple:
             carrier_entitlements:
                 supported_entitlements: 1041
+        e911:
+            over_itech_supported: false
+            wifi_calling_without_entitlement: true
+            emergency_urns:
+                "112": urn:service:sos.police
+                "123": urn:service:sos
+                "911": urn:service:sos
         entitlement:
             entitlement_url: https://aes.mnc101.mcc732.pub.3gppnetwork.org/entitlement/
         ims:
@@ -40,6 +46,8 @@ plmn_overrides:
                 dpd:
                     enabled: true
                     interval_seconds: 600
+                    max_retries: 5
+                    retry_interval_seconds: 10
                 child_sa:
                     proposals:
                         - encryption:
@@ -49,6 +57,7 @@ plmn_overrides:
                           rekey_pfs_group: modp2048
                           lifetime_seconds: 86400
                     lifetime_seconds: 86400
+                    replay_window_size: 12
                 local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
                 sa_lifetime_seconds: 86400
             register:

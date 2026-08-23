@@ -4,4 +4,3 @@ id: apple_spt_wf
 bundle: SPT_wf.bundle
 supported_plmns:
     - "54301"
-common: {}

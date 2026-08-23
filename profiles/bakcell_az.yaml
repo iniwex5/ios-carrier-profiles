@@ -4,7 +4,6 @@ id: apple_bakcell_az
 bundle: Bakcell_az.bundle
 supported_plmns:
     - "40002"
-common: {}
 plmn_overrides:
     "40002":
         ims:

@@ -4,12 +4,14 @@ id: apple_wind_gr
 bundle: Wind_gr.bundle
 supported_plmns:
     - "20210"
-common: {}
 plmn_overrides:
     "20210":
         apple:
             carrier_entitlements:
                 supported_entitlements: 1
+        e911:
+            over_itech_supported: true
+            wifi_calling_without_entitlement: true
         entitlement:
             entitlement_url: https://es.nova.gr
         ims:

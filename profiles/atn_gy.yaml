@@ -4,4 +4,3 @@ id: apple_atn_gy
 bundle: ATN_gy.bundle
 supported_plmns:
     - "738002"
-common: {}

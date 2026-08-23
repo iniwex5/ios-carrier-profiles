@@ -4,17 +4,22 @@ id: apple_singtel_sg
 bundle: SingTel_sg.bundle
 supported_plmns:
     - "52501"
-common: {}
 plmn_overrides:
     "52501":
         apple:
             carrier_entitlements:
                 supported_entitlements: 4197377
+        e911:
+            over_itech_supported: true
+            wifi_calling_without_entitlement: true
+            emergency_urns:
+                "995": urn:service:sos.ambulance
+                "999": urn:service:sos.police
         entitlement:
             entitlement_url: https://ses.singtel.com
         ims:
             apn: ims
-            ip_stack: ipv6
+            ip_stack: ipv4v6
             epdg:
                 configuration_attributes:
                     - identifier: 16384
@@ -27,6 +32,8 @@ plmn_overrides:
                 dpd:
                     enabled: false
                     interval_seconds: 600
+                    max_retries: 4
+                    retry_interval_seconds: 10
                 child_sa:
                     proposals:
                         - encryption:
@@ -36,7 +43,11 @@ plmn_overrides:
                           rekey_pfs_group: modp2048
                           lifetime_seconds: 80000
                     lifetime_seconds: 80000
+                    replay_window_size: 12
                 local_identifier: anonymous@nai.epc.mnc001.mcc525.3gppnetwork.org
+                remote_certificate_authority_name: DigiCert Global Root G2
+                remote_certificate_hostname: epdg.epc.mnc001.mcc525.pub.3gppnetwork.org
+                validate_remote_certificate: true
                 sa_lifetime_seconds: 80000
             register:
                 use_ipsec: true
@@ -50,5 +61,11 @@ plmn_overrides:
                             - +g.3gpp.srvcc-alerting
                             - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
                             - +g.3gpp.mid-call
+                additional_headers:
+                    - selector: INVITE
+                      headers:
+                        - Supported:histinfo
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: false

@@ -4,7 +4,6 @@ id: apple_meditel_ma
 bundle: Meditel_ma.bundle
 supported_plmns:
     - "60400"
-common: {}
 plmn_overrides:
     "60400":
         apple:

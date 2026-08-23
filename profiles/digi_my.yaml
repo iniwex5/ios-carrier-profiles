@@ -4,12 +4,14 @@ id: apple_digi_my
 bundle: DiGi_my.bundle
 supported_plmns:
     - "50216"
-common: {}
 plmn_overrides:
     "50216":
         apple:
             carrier_entitlements:
                 supported_entitlements: 9217
+        e911:
+            over_itech_supported: true
+            wifi_calling_without_entitlement: true
         entitlement:
             entitlement_url: https://es.digi.com.my/entitlement
         ims:
@@ -39,6 +41,8 @@ plmn_overrides:
                 dpd:
                     enabled: false
                     interval_seconds: 600
+                    max_retries: 5
+                    retry_interval_seconds: 10
                 child_sa:
                     proposals:
                         - encryption:
@@ -48,6 +52,7 @@ plmn_overrides:
                           rekey_pfs_group: modp2048
                           lifetime_seconds: 80000
                     lifetime_seconds: 80000
+                    replay_window_size: 12
                 local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
                 sa_lifetime_seconds: 80000
             register:
@@ -67,7 +72,13 @@ plmn_overrides:
                           params:
                             - +g.3gpp.mid-call
                             - +g.3gpp.srvcc-alerting
+                additional_headers:
+                    - selector: INVITE,INVITE:*
+                      headers:
+                        - 'Feature-Caps: *;+g.3gpp.srvcc-alerting'
             ussi:
                 enabled: true
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: true

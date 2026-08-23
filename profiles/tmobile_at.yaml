@@ -10,6 +10,9 @@ common:
     apple:
         carrier_entitlements:
             supported_entitlements: 4203521
+    e911:
+        over_itech_supported: true
+        wifi_calling_without_entitlement: true
     entitlement:
         entitlement_url: https://entitlement-tma.telekom.de
     ims:
@@ -32,9 +35,12 @@ common:
                       integrity:
                         - sha256
                       lifetime_seconds: 64800
+                replay_window_size: 12
             dpd:
                 enabled: false
                 interval_seconds: 600
+                max_retries: 4
+                retry_interval_seconds: 10
             local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
             proposals:
                 - encryption:
@@ -49,6 +55,7 @@ common:
                   authentication_method: None
                   eap_method: EAP-AKA
             sa_lifetime_seconds: 64800
+            validate_remote_certificate: false
         ip_stack: ipv6
         media:
             rtcp_inactivity_seconds: 180
@@ -66,11 +73,15 @@ common:
                         - +g.3gpp.srvcc-alerting
                         - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
             preconditions: supported
+            sip_timers:
+                InviteResponseTimeout: 4000
             support_p_early_media: true
         ussi:
             enabled: true
         volte:
             enable_volte_by_default: true
+    roaming:
+        wifi_calling_allowed: true
 plmn_overrides:
     "23203":
         ims:

@@ -9,6 +9,10 @@ common:
     apple:
         carrier_entitlements:
             supported_entitlements: 4202649
+    e911:
+        emergency_urns:
+            default: urn:service:sos
+        over_itech_supported: false
     entitlement:
         entitlement_url: https://eas3.msg.t-mobile.com
     ims:
@@ -34,9 +38,13 @@ common:
                       integrity:
                         - sha256
                       lifetime_seconds: 80000
+                replay_window_size: 12
+            disable_switch_to_natt_port: false
             dpd:
                 enabled: false
                 interval_seconds: 600
+                max_retries: 4
+                retry_interval_seconds: 10
             local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
             proposals:
                 - encryption:
@@ -51,6 +59,7 @@ common:
                   authentication_method: None
                   eap_method: EAP-AKA
             sa_lifetime_seconds: 80000
+            validate_remote_certificate: false
         ip_stack: ipv4v6
         media:
             rtp_inactivity_seconds: 30
@@ -68,6 +77,10 @@ common:
                 - method: INVITE
                   statuses:
                     - "403"
+            sip_timers:
+                EmergencyInviteResponseTimeout: 5000
+                F: 30000
+                InviteResponseTimeout: 0
             support_p_early_media: true
         ussi:
             enabled: true

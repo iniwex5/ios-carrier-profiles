@@ -6,6 +6,12 @@ supported_plmns:
     - "374012"
     - "37412"
 common:
+    e911:
+        emergency_urns:
+            "811": urn:service:sos.ambulance
+            "911": urn:service:sos
+            "990": urn:service:sos.fire
+            "999": urn:service:sos.police
     ims:
         apn: ims
         ip_stack: ipv4v6

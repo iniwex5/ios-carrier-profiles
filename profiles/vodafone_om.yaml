@@ -4,7 +4,6 @@ id: apple_vodafone_om
 bundle: Vodafone_om.bundle
 supported_plmns:
     - "42206"
-common: {}
 plmn_overrides:
     "42206":
         ims:
@@ -19,5 +18,9 @@ plmn_overrides:
                             - +g.3gpp.mid-call
                             - +g.3gpp.srvcc-alerting
                             - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+                additional_headers:
+                    - selector: INVITE,INVITE:*
+                      headers:
+                        - 'Feature-Caps: *;+g.3gpp.srvcc-alerting'
             volte:
                 enable_volte_by_default: true

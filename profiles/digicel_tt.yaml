@@ -5,4 +5,3 @@ bundle: Digicel_tt.bundle
 supported_plmns:
     - "37413"
     - "374130"
-common: {}

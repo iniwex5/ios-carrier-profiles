@@ -4,7 +4,6 @@ id: apple_telia_az
 bundle: Telia_az.bundle
 supported_plmns:
     - "40001"
-common: {}
 plmn_overrides:
     "40001":
         apple:

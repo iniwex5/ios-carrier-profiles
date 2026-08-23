@@ -9,6 +9,10 @@ common:
     apple:
         carrier_entitlements:
             supported_entitlements: 4205721
+    e911:
+        emergency_urns:
+            default: urn:service:sos
+        over_itech_supported: false
     entitlement:
         entitlement_url: https://DEG.CSPIRE.COM/ium-OEMInterface/servlet/IUMServlet
     ims:
@@ -33,9 +37,12 @@ common:
                         - sha256
                       rekey_pfs_group: modp2048
                       lifetime_seconds: 86400
+                replay_window_size: 12
             dpd:
                 enabled: false
                 interval_seconds: 600
+                max_retries: 4
+                retry_interval_seconds: 10
             local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
             local_identifier_type: IDUserFQDN
             proposals:
@@ -50,7 +57,9 @@ common:
                   lifetime_seconds: 80000
                   authentication_method: None
                   eap_method: EAP-AKA
+            remote_identifier_type: IDFQDN
             sa_lifetime_seconds: 80000
+            validate_remote_certificate: false
         impi_format: imsi@carrierDomain
         impu_format: imsi@carrierDomain
         ip_stack: ipv4v6
@@ -62,6 +71,14 @@ common:
             include_cellular_network_info: true
             use_ipsec: true
         signaling:
+            additional_headers:
+                - selector: INVITE[911,wifi]
+                  headers:
+                    - 'Supported: geolocation'
+                - selector: INVITE[wifi,911]
+                  headers:
+                    - 'P-Emergency-Info: IEEE-802.11b;i-wlan-node-id=${DEVICE_REF_ID}'
+                    - 'Supported: geolocation'
             contact:
                 always_add_sip_instance: true
             csfb_on:
@@ -73,6 +90,10 @@ common:
                     - 6XX
             max_udp_message_size: 1200
             preconditions: unsupported
+            sip_timers:
+                InviteResponseTimeout: 6000
             support_p_early_media: true
         volte:
             enable_volte_by_default: true
+    roaming:
+        wifi_calling_allowed: true

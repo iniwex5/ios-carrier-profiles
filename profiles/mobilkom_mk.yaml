@@ -4,4 +4,3 @@ id: apple_mobilkom_mk
 bundle: mobilkom_mk.bundle
 supported_plmns:
     - "29403"
-common: {}

@@ -5,4 +5,3 @@ bundle: Avantel_co.bundle
 supported_plmns:
     - "20404"
     - "732130"
-common: {}

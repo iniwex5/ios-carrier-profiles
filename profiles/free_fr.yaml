@@ -4,12 +4,14 @@ id: apple_free_fr
 bundle: Free_fr.bundle
 supported_plmns:
     - "20815"
-common: {}
 plmn_overrides:
     "20815":
         apple:
             carrier_entitlements:
                 supported_entitlements: 4240385
+        e911:
+            over_itech_supported: false
+            wifi_calling_without_entitlement: true
         entitlement:
             entitlement_url: https://entitlement-apl.free-mobile.fr
         ims:
@@ -49,3 +51,5 @@ plmn_overrides:
                             - +g.3gpp.srvcc-alerting
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: true

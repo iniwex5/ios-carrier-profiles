@@ -5,4 +5,3 @@ bundle: Xplornet_ca.bundle
 supported_plmns:
     - "20404"
     - "302130"
-common: {}

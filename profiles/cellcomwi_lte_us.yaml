@@ -4,12 +4,15 @@ id: apple_cellcomwi_lte_us
 bundle: CellcomWI_LTE_US.bundle
 supported_plmns:
     - "311840"
-common: {}
 plmn_overrides:
     "311840":
         apple:
             carrier_entitlements:
                 supported_entitlements: 11481
+        e911:
+            over_itech_supported: false
+            emergency_urns:
+                default: urn:service:sos
         entitlement:
             entitlement_url: https://deg.ims.cellcom.com/ium-OEMInterface/servlet/IUMServlet
         ims:
@@ -42,8 +45,12 @@ plmn_overrides:
                 dpd:
                     enabled: false
                     interval_seconds: 600
+                    max_retries: 4
+                    retry_interval_seconds: 10
                 local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
                 local_identifier_type: IDUserFQDN
+                remote_identifier_type: IDFQDN
+                validate_remote_certificate: false
                 sa_lifetime_seconds: 86400
             register:
                 include_cellular_network_info: true
@@ -60,9 +67,22 @@ plmn_overrides:
                         - 6XX
                 contact:
                     always_add_sip_instance: true
+                additional_headers:
+                    - selector: INVITE[911,wifi]
+                      headers:
+                        - 'Supported: geolocation'
+                sip_timers:
+                    D: 128000
+                    F: 30000
+                    InviteResponseTimeout: 10000
+                    T1: 2000
+                    T2: 16000
+                    T4: 17000
             media:
                 rtp_inactivity_seconds: 20
                 rtcp_inactivity_seconds: 20
                 rtcp_interval_seconds: 5
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: true

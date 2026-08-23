@@ -4,4 +4,3 @@ id: apple_mtn_ng
 bundle: MTN_ng.bundle
 supported_plmns:
     - "62130"
-common: {}

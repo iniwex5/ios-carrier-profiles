@@ -4,12 +4,13 @@ id: apple_orange_ro
 bundle: Orange_ro.bundle
 supported_plmns:
     - "22610"
-common: {}
 plmn_overrides:
     "22610":
         apple:
             carrier_entitlements:
                 supported_entitlements: 9345
+        e911:
+            over_itech_supported: false
         entitlement:
             entitlement_url: https://aes.orange.ro/ium-OEMInterface/servlet/IUMServlet
         ims:
@@ -40,6 +41,8 @@ plmn_overrides:
                 dpd:
                     enabled: false
                     interval_seconds: 600
+                    max_retries: 4
+                    retry_interval_seconds: 10
                 child_sa:
                     proposals:
                         - encryption:
@@ -48,7 +51,9 @@ plmn_overrides:
                             - sha256
                           lifetime_seconds: 80000
                     lifetime_seconds: 80000
+                    replay_window_size: 12
                 local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                validate_remote_certificate: false
                 sa_lifetime_seconds: 80000
             register:
                 use_ipsec: true
@@ -70,8 +75,19 @@ plmn_overrides:
                           params:
                             - +g.3gpp.mid-call
                             - +g.3gpp.srvcc-alerting
+                additional_headers:
+                    - selector: INVITE
+                      headers:
+                        - 'Accept: application/sdp,application/3gpp-ims+xml'
+                    - selector: INVITE,INVITE:*
+                      headers:
+                        - 'Feature-Caps: *;+g.3gpp.srvcc-alerting'
+                sip_timers:
+                    InviteResponseTimeout: 3000
             media:
                 rtp_inactivity_seconds: 20
                 rtcp_interval_seconds: 5
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: false

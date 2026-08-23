@@ -4,7 +4,6 @@ id: apple_kyivstar_ua
 bundle: Kyivstar_ua.bundle
 supported_plmns:
     - "25503"
-common: {}
 plmn_overrides:
     "25503":
         ims:

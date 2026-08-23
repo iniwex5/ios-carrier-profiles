@@ -4,7 +4,6 @@ id: apple_datapro
 bundle: DataPro.bundle
 supported_plmns:
     - "52501"
-common: {}
 plmn_overrides:
     "52501":
         ims:

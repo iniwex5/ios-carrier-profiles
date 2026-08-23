@@ -4,12 +4,21 @@ id: apple_turkcell_tr
 bundle: Turkcell_tr.bundle
 supported_plmns:
     - "28601"
-common: {}
 plmn_overrides:
     "28601":
         apple:
             carrier_entitlements:
                 supported_entitlements: 5121
+        e911:
+            over_itech_supported: true
+            wifi_calling_without_entitlement: true
+            emergency_urns:
+                "110": urn:service:sos_110
+                "122": urn:service:sos_122
+                "155": urn:service:sos_155
+                "156": urn:service:sos_156
+                "158": urn:service:sos_158
+                "177": urn:service:sos_177
         entitlement:
             entitlement_url: https://ses-prod.turkcell.com.tr
         ims:
@@ -39,6 +48,8 @@ plmn_overrides:
                 dpd:
                     enabled: false
                     interval_seconds: 600
+                    max_retries: 4
+                    retry_interval_seconds: 10
                 child_sa:
                     proposals:
                         - encryption:
@@ -48,6 +59,7 @@ plmn_overrides:
                           rekey_pfs_group: modp2048
                           lifetime_seconds: 80000
                     lifetime_seconds: 80000
+                    replay_window_size: 12
                 local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
                 sa_lifetime_seconds: 80000
             register:
@@ -70,6 +82,10 @@ plmn_overrides:
                             - +g.3gpp.mid-call
                             - +g.3gpp.srvcc-alerting
                             - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+                additional_headers:
+                    - selector: INVITE[wifi,112,110,911,122,131,132,136,140,151,155,156,157,158,159,161,168,177)
+                      headers:
+                        - 'Supported: geolocation'
             media:
                 rtp_inactivity_seconds: 30
                 rtcp_inactivity_seconds: 3600
@@ -78,3 +94,5 @@ plmn_overrides:
                 enabled: true
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: true

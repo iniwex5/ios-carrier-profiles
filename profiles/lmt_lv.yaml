@@ -4,7 +4,6 @@ id: apple_lmt_lv
 bundle: LMT_lv.bundle
 supported_plmns:
     - "24701"
-common: {}
 plmn_overrides:
     "24701":
         apple:
@@ -37,6 +36,9 @@ plmn_overrides:
                           lifetime_seconds: 86400
                     lifetime_seconds: 86400
                 local_identifier: anonymous@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                remote_certificate_authority_name: Sectigo RSA Domain Validation Secure Server CA
+                remote_certificate_hostname: epdg.epc.mnc001.mcc247.pub.3gppnetwork.org
+                validate_remote_certificate: true
                 sa_lifetime_seconds: 86400
             register:
                 use_ipsec: true
@@ -60,3 +62,5 @@ plmn_overrides:
                 rtp_inactivity_seconds: 15
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: true

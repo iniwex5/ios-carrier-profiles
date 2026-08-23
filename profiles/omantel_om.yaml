@@ -4,7 +4,6 @@ id: apple_omantel_om
 bundle: Omantel_om.bundle
 supported_plmns:
     - "42202"
-common: {}
 plmn_overrides:
     "42202":
         apple:
@@ -34,6 +33,12 @@ plmn_overrides:
                             - +g.3gpp.mid-call
                             - +g.3gpp.srvcc-alerting
                             - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+                additional_headers:
+                    - selector: INVITE,INVITE:*
+                      headers:
+                        - 'Feature-Caps: *;+g.3gpp.srvcc-alerting'
+                sip_timers:
+                    InviteResponseTimeout: 10000
             media:
                 rtp_inactivity_seconds: 15
             ussi:

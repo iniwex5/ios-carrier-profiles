@@ -25,6 +25,8 @@ common:
                         - +g.3gpp.srvcc-alerting
                         - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
             preconditions: supported
+            sip_timers:
+                InviteResponseTimeout: 4000
             support_p_early_media: true
         ussi:
             enabled: false

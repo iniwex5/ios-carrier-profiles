@@ -4,7 +4,6 @@ id: apple_zain_salammobile_sa
 bundle: Zain_SalamMobile_sa.bundle
 supported_plmns:
     - "42009"
-common: {}
 plmn_overrides:
     "42009":
         ims:

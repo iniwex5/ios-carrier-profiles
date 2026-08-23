@@ -5,4 +5,3 @@ bundle: TelekomSlovenije_xk.bundle
 supported_plmns:
     - "22102"
     - "29341"
-common: {}

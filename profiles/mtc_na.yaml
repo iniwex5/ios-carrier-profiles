@@ -4,4 +4,3 @@ id: apple_mtc_na
 bundle: MTC_na.bundle
 supported_plmns:
     - "64901"
-common: {}

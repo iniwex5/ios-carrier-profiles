@@ -4,7 +4,6 @@ id: apple_telekomslovenije_ba
 bundle: TelekomSlovenije_ba.bundle
 supported_plmns:
     - "21890"
-common: {}
 plmn_overrides:
     "21890":
         ims:

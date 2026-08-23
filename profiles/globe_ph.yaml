@@ -4,12 +4,16 @@ id: apple_globe_ph
 bundle: Globe_ph.bundle
 supported_plmns:
     - "51502"
-common: {}
 plmn_overrides:
     "51502":
         apple:
             carrier_entitlements:
                 supported_entitlements: 9233
+        e911:
+            over_itech_supported: true
+            wifi_calling_without_entitlement: true
+            emergency_urns:
+                "911": urn:service:sos
         entitlement:
             entitlement_url: https://esim-es-open-prod-globe.esimcloud.net/globe/prod/executeAppleActions
         ims:
@@ -26,6 +30,7 @@ plmn_overrides:
                       type: v6
             ike:
                 nat_keepalive_enabled: true
+                ipsec_mtu: 1280
                 child_sa:
                     proposals:
                         - encryption:
@@ -35,6 +40,7 @@ plmn_overrides:
                           rekey_pfs_group: modp2048
                           lifetime_seconds: 86400
                     lifetime_seconds: 86400
+                    replay_window_size: 12
                 sa_lifetime_seconds: 86400
             register:
                 use_ipsec: true
@@ -58,3 +64,5 @@ plmn_overrides:
                 rtp_inactivity_seconds: 20
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: false

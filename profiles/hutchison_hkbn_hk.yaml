@@ -4,17 +4,19 @@ id: apple_hutchison_hkbn_hk
 bundle: Hutchison_HKBN_hk.bundle
 supported_plmns:
     - "45403"
-common: {}
 plmn_overrides:
     "45403":
         apple:
             carrier_entitlements:
                 supported_entitlements: 1
+        e911:
+            over_itech_supported: true
+            wifi_calling_without_entitlement: true
         entitlement:
             entitlement_url: https://device.three.com.hk:8181/ium-OEMInterface/servlet/IUMServlet
         ims:
             apn: ims
-            ip_stack: ipv6
+            ip_stack: ipv4v6
             epdg:
                 address: wlan.three.com.hk
                 configuration_attributes:
@@ -40,6 +42,8 @@ plmn_overrides:
                 dpd:
                     enabled: false
                     interval_seconds: 600
+                    max_retries: 4
+                    retry_interval_seconds: 10
                 child_sa:
                     proposals:
                         - encryption:
@@ -49,7 +53,9 @@ plmn_overrides:
                           rekey_pfs_group: modp2048
                           lifetime_seconds: 80000
                     lifetime_seconds: 80000
+                    replay_window_size: 12
                 local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                validate_remote_certificate: false
                 sa_lifetime_seconds: 80000
             register:
                 include_cellular_network_info: true
@@ -64,6 +70,7 @@ plmn_overrides:
                         - 4XX
                         - 5XX
                         - 6XX
+                require_qos_before_ringing: true
                 contact:
                     additional_contact_params:
                         - selector: REGISTER,INVITE,INVITE:*
@@ -74,3 +81,5 @@ plmn_overrides:
                 rtcp_interval_seconds: 5
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: true

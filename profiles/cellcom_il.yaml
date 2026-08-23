@@ -4,12 +4,14 @@ id: apple_cellcom_il
 bundle: Cellcom_il.bundle
 supported_plmns:
     - "42502"
-common: {}
 plmn_overrides:
     "42502":
         apple:
             carrier_entitlements:
                 supported_entitlements: 13328
+        e911:
+            over_itech_supported: false
+            wifi_calling_without_entitlement: true
         entitlement:
             entitlement_url: https://esim-es-open-prod-cellcom.esimcloud.net/cellcom/prod/executeAppleActions
         ims:
@@ -40,6 +42,8 @@ plmn_overrides:
                 dpd:
                     enabled: false
                     interval_seconds: 600
+                    max_retries: 4
+                    retry_interval_seconds: 10
                 child_sa:
                     proposals:
                         - encryption:
@@ -49,6 +53,7 @@ plmn_overrides:
                           rekey_pfs_group: modp2048
                           lifetime_seconds: 86400
                     lifetime_seconds: 86400
+                    replay_window_size: 12
                 local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
                 local_identifier_type: IDUserFQDN
                 sa_lifetime_seconds: 86400

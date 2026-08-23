@@ -4,12 +4,14 @@ id: apple_gci_us
 bundle: GCI_US.bundle
 supported_plmns:
     - "311370"
-common: {}
 plmn_overrides:
     "311370":
         apple:
             carrier_entitlements:
                 supported_entitlements: 1200
+        e911:
+            over_itech_supported: false
+            wifi_calling_without_entitlement: false
         entitlement:
             entitlement_url: https://ses.epdg.gci.net
         ims:
@@ -42,6 +44,8 @@ plmn_overrides:
                       eap_method: EAP-AKA
                 dpd:
                     enabled: true
+                    max_retries: 3
+                    retry_interval_seconds: 15
                 child_sa:
                     proposals:
                         - encryption:
@@ -50,6 +54,8 @@ plmn_overrides:
                             - sha256
                           lifetime_seconds: 86400
                     lifetime_seconds: 86400
+                    replay_window_size: 12
+                validate_remote_certificate: false
                 sa_lifetime_seconds: 80000
             register:
                 use_ipsec: true
@@ -73,9 +79,13 @@ plmn_overrides:
                             - +g.3gpp.mid-call
                             - +g.3gpp.srvcc-alerting
                             - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+                sip_timers:
+                    InviteResponseTimeout: 5000
             media:
                 rtp_inactivity_seconds: 30
             ussi:
                 enabled: true
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: true

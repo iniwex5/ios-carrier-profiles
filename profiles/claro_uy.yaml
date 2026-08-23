@@ -4,9 +4,18 @@ id: apple_claro_uy
 bundle: Claro_uy.bundle
 supported_plmns:
     - "74810"
-common: {}
 plmn_overrides:
     "74810":
+        e911:
+            over_itech_supported: false
+            wifi_calling_without_entitlement: true
+            emergency_urns:
+                "104": urn:service:sos.fire
+                "105": urn:service:sos.ambulance
+                "106": urn:service:sos.marine
+                "108": urn:service:sos.police
+                "128": urn:service:sos.mountain
+                "911": urn:service:sos.police
         ims:
             apn: ims
             ip_stack: ipv6
@@ -34,6 +43,8 @@ plmn_overrides:
                 dpd:
                     enabled: false
                     interval_seconds: 600
+                    max_retries: 4
+                    retry_interval_seconds: 10
                 child_sa:
                     proposals:
                         - encryption:
@@ -43,6 +54,7 @@ plmn_overrides:
                           rekey_pfs_group: modp2048
                           lifetime_seconds: 86400
                     lifetime_seconds: 86400
+                    replay_window_size: 12
                 local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
                 sa_lifetime_seconds: 86400
             register:
@@ -65,3 +77,5 @@ plmn_overrides:
                 enabled: false
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: true

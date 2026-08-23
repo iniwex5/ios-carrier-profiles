@@ -4,4 +4,3 @@ id: apple_telia_ge
 bundle: Telia_ge.bundle
 supported_plmns:
     - "28201"
-common: {}

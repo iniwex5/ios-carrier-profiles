@@ -4,12 +4,15 @@ id: apple_coppervalley_lte_us
 bundle: CopperValley_LTE_US.bundle
 supported_plmns:
     - "311480"
-common: {}
 plmn_overrides:
     "311480":
         apple:
             carrier_entitlements:
                 supported_entitlements: 80
+        e911:
+            over_itech_supported: false
+            emergency_urns:
+                "922": 922@vzims.com
         entitlement:
             entitlement_url: https://spc.myvzw.com/ium-RoadrunnerInterface/servlet/IUMServlet
         ims:
@@ -22,6 +25,18 @@ plmn_overrides:
                     - method: INVITE
                       statuses:
                         - "503"
+                additional_headers:
+                    - selector: INVITE[wifi,911]
+                      headers:
+                        - 'P-Emergency-Info: IEEE-802.11b;i-wlan-node-id=${DEVICE_REF_ID}'
+                        - 'Supported: geolocation'
+                sip_timers:
+                    D: 128000
+                    F: 30000
+                    InviteResponseTimeout: 10000
+                    T1: 3000
+                    T2: 16000
+                    T4: 17000
             media:
                 rtp_inactivity_seconds: 20
                 rtcp_inactivity_seconds: 20

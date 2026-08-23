@@ -4,12 +4,13 @@ id: apple_o2_ie
 bundle: O2_ie.bundle
 supported_plmns:
     - "27202"
-common: {}
 plmn_overrides:
     "27202":
         apple:
             carrier_entitlements:
                 supported_entitlements: 13441
+        e911:
+            over_itech_supported: false
         entitlement:
             entitlement_url: https://ses.three.ie
         ims:
@@ -52,3 +53,5 @@ plmn_overrides:
                 rtp_inactivity_seconds: 20
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: false

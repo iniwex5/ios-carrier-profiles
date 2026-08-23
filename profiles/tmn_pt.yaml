@@ -4,7 +4,6 @@ id: apple_tmn_pt
 bundle: TMN_pt.bundle
 supported_plmns:
     - "26806"
-common: {}
 plmn_overrides:
     "26806":
         apple:

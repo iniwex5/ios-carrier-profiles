@@ -9,6 +9,9 @@ common:
     apple:
         carrier_entitlements:
             supported_entitlements: 13313
+    e911:
+        over_itech_supported: false
+        wifi_calling_without_entitlement: true
     entitlement:
         entitlement_url: https://rsp-es-prod.sip.is
     ims:
@@ -52,6 +55,8 @@ common:
             support_p_early_media: true
         volte:
             enable_volte_by_default: true
+    roaming:
+        wifi_calling_allowed: true
 plmn_overrides:
     "22201":
         ims:

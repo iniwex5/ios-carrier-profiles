@@ -5,4 +5,3 @@ bundle: Telia_tj.bundle
 supported_plmns:
     - "43601"
     - "43602"
-common: {}

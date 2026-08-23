@@ -10,6 +10,10 @@ common:
         register:
             use_ipsec: true
         signaling:
+            additional_headers:
+                - selector: INVITE,INVITE:*
+                  headers:
+                    - 'Feature-Caps: *;+g.3gpp.srvcc-alerting'
             contact:
                 additional_contact_params:
                     - selector: REGISTER,INVITE,INVITE:*

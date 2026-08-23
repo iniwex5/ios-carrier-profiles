@@ -4,4 +4,3 @@ id: apple_nepaltelecom_np
 bundle: NepalTelecom_np.bundle
 supported_plmns:
     - "42901"
-common: {}

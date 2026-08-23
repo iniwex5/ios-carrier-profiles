@@ -4,7 +4,6 @@ id: apple_xl_id
 bundle: XL_id.bundle
 supported_plmns:
     - "51011"
-common: {}
 plmn_overrides:
     "51011":
         ims:

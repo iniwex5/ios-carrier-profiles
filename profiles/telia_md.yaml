@@ -4,7 +4,6 @@ id: apple_telia_md
 bundle: Telia_md.bundle
 supported_plmns:
     - "25902"
-common: {}
 plmn_overrides:
     "25902":
         ims:

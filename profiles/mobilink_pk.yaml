@@ -4,4 +4,3 @@ id: apple_mobilink_pk
 bundle: Mobilink_pk.bundle
 supported_plmns:
     - "41001"
-common: {}

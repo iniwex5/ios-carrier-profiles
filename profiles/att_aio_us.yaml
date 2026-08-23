@@ -4,12 +4,13 @@ id: apple_att_aio_us
 bundle: ATT_aio_US.bundle
 supported_plmns:
     - "310150"
-common: {}
 plmn_overrides:
     "310150":
         apple:
             carrier_entitlements:
                 supported_entitlements: 4206217
+        e911:
+            over_itech_supported: false
         entitlement:
             entitlement_url: https://sentitlement2.mobile.att.net
         ims:
@@ -37,9 +38,12 @@ plmn_overrides:
                       lifetime_seconds: 80000
                       authentication_method: None
                       eap_method: EAP-AKA
+                ipsec_mtu: 1280
                 dpd:
                     enabled: false
                     interval_seconds: 600
+                    max_retries: 4
+                    retry_interval_seconds: 10
                 child_sa:
                     proposals:
                         - encryption:
@@ -48,7 +52,9 @@ plmn_overrides:
                             - sha256
                           lifetime_seconds: 80000
                     lifetime_seconds: 80000
+                    replay_window_size: 12
                 local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                validate_remote_certificate: false
                 sa_lifetime_seconds: 80000
             register:
                 use_ipsec: true
@@ -72,6 +78,20 @@ plmn_overrides:
                           params:
                             - +g.3gpp.mid-call
                             - +g.3gpp.srvcc-alerting
+                additional_headers:
+                    - selector: INVITE[wifi,911]
+                      headers:
+                        - 'P-Emergency-Info: IEEE-802.11b;i-wlan-node-id=${DEVICE_REF_ID}'
+                        - 'Supported: geolocation'
+                sip_timers:
+                    AckReceiveTimeout: 32000
+                    AckRetransmitTimer: 32000
+                    B: 32000
+                    D: 32000
+                    F: 32000
+                    H: 32000
+                    InviteResponseTimeout: 0
+                    J: 32000
             media:
                 rtp_inactivity_seconds: 20
                 rtcp_inactivity_seconds: 20
@@ -81,3 +101,5 @@ plmn_overrides:
                 enabled: true
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: true

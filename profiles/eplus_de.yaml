@@ -4,12 +4,17 @@ id: apple_eplus_de
 bundle: EPlus_de.bundle
 supported_plmns:
     - "26203"
-common: {}
 plmn_overrides:
     "26203":
         apple:
             carrier_entitlements:
                 supported_entitlements: 4203521
+        e911:
+            over_itech_supported: false
+            wifi_calling_without_entitlement: true
+            emergency_urns:
+                "110": urn:service:sos.police
+                "112": urn:service:sos.fire
         entitlement:
             entitlement_url: https://entitlement.ncs.telefonica.de/magnolia/
         ims:
@@ -42,6 +47,8 @@ plmn_overrides:
                 dpd:
                     enabled: false
                     interval_seconds: 600
+                    max_retries: 4
+                    retry_interval_seconds: 10
                 child_sa:
                     proposals:
                         - encryption:
@@ -50,7 +57,9 @@ plmn_overrides:
                             - sha256
                           lifetime_seconds: 80000
                     lifetime_seconds: 80000
+                    replay_window_size: 12
                 local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                validate_remote_certificate: false
                 sa_lifetime_seconds: 80000
             register:
                 use_ipsec: true
@@ -75,3 +84,5 @@ plmn_overrides:
                 rtcp_interval_seconds: 5
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: true

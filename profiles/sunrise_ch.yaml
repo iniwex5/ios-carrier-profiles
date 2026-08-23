@@ -4,12 +4,14 @@ id: apple_sunrise_ch
 bundle: Sunrise_ch.bundle
 supported_plmns:
     - "22802"
-common: {}
 plmn_overrides:
     "22802":
         apple:
             carrier_entitlements:
                 supported_entitlements: 64529
+        e911:
+            over_itech_supported: false
+            wifi_calling_without_entitlement: true
         entitlement:
             entitlement_url: https://eserver.sunrise.net/entitlement/apple
         ims:
@@ -36,6 +38,8 @@ plmn_overrides:
                 dpd:
                     enabled: false
                     interval_seconds: 600
+                    max_retries: 4
+                    retry_interval_seconds: 10
                 child_sa:
                     proposals:
                         - encryption:
@@ -44,6 +48,7 @@ plmn_overrides:
                             - sha256
                           lifetime_seconds: 80000
                     lifetime_seconds: 80000
+                    replay_window_size: 12
                 local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
                 sa_lifetime_seconds: 80000
             register:
@@ -52,6 +57,8 @@ plmn_overrides:
             signaling:
                 preconditions: supported
                 support_p_early_media: true
+                sip_timers:
+                    InviteResponseTimeout: 4000
             media:
                 rtp_inactivity_seconds: 20
                 rtcp_inactivity_seconds: 180

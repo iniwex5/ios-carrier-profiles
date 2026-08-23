@@ -4,9 +4,11 @@ id: apple_telecom_skinny_nz
 bundle: Telecom_Skinny_nz.bundle
 supported_plmns:
     - "53005"
-common: {}
 plmn_overrides:
     "53005":
+        e911:
+            over_itech_supported: true
+            wifi_calling_without_entitlement: true
         ims:
             apn: ims
             ip_stack: ipv6
@@ -23,6 +25,8 @@ plmn_overrides:
                 dpd:
                     enabled: false
                     interval_seconds: 600
+                    max_retries: 4
+                    retry_interval_seconds: 10
                 child_sa:
                     proposals:
                         - encryption:
@@ -32,7 +36,11 @@ plmn_overrides:
                           rekey_pfs_group: modp2048
                           lifetime_seconds: 86400
                     lifetime_seconds: 86400
+                    replay_window_size: 12
                 local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                remote_certificate_authority_name: DigiCert Global Root G2
+                remote_certificate_hostname: epdg.epc.mnc005.mcc530.pub.3gppnetwork.spark.co.nz
+                validate_remote_certificate: true
                 sa_lifetime_seconds: 86400
             register:
                 use_ipsec: true
@@ -44,3 +52,5 @@ plmn_overrides:
                 rtp_inactivity_seconds: 10
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: true

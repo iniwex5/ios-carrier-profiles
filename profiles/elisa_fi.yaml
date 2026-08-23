@@ -4,12 +4,14 @@ id: apple_elisa_fi
 bundle: elisa_fi.bundle
 supported_plmns:
     - "24405"
-common: {}
 plmn_overrides:
     "24405":
         apple:
             carrier_entitlements:
                 supported_entitlements: 1217
+        e911:
+            over_itech_supported: false
+            wifi_calling_without_entitlement: false
         entitlement:
             entitlement_url: https://entitlement1.ses.elisa.fi:8443
         ims:
@@ -56,3 +58,5 @@ plmn_overrides:
                 enabled: true
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: true

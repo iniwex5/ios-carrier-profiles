@@ -4,4 +4,3 @@ id: apple_hutchison_lk
 bundle: Hutchison_lk.bundle
 supported_plmns:
     - "41308"
-common: {}

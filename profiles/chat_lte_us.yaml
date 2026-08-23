@@ -4,7 +4,6 @@ id: apple_chat_lte_us
 bundle: Chat_LTE_US.bundle
 supported_plmns:
     - "311480"
-common: {}
 plmn_overrides:
     "311480":
         apple:

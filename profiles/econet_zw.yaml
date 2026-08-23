@@ -4,4 +4,3 @@ id: apple_econet_zw
 bundle: Econet_zw.bundle
 supported_plmns:
     - "64804"
-common: {}

@@ -11,6 +11,12 @@ common:
     apple:
         carrier_entitlements:
             supported_entitlements: 1024
+    e911:
+        emergency_urns:
+            "110": urn:service:sos.police
+            "119": urn:service:sos.fire
+            "120": urn:service:sos.ambulance
+            "122": urn:service:sos.traffic
     entitlement:
         entitlement_url: https://zdnlpz.yhdzd.chinamobile.com:8181/
     ims:
@@ -42,6 +48,8 @@ common:
                     - "500"
                     - "503"
             preconditions: supported
+            sip_timers:
+                InviteResponseTimeout: 6000
             support_p_early_media: true
         volte:
             enable_volte_by_default: true

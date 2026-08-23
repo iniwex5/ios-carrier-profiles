@@ -4,4 +4,3 @@ id: apple_unitel_mn
 bundle: Unitel_mn.bundle
 supported_plmns:
     - "42888"
-common: {}

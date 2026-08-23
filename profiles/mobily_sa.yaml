@@ -4,12 +4,14 @@ id: apple_mobily_sa
 bundle: mobily_sa.bundle
 supported_plmns:
     - "42003"
-common: {}
 plmn_overrides:
     "42003":
         apple:
             carrier_entitlements:
                 supported_entitlements: 13313
+        e911:
+            over_itech_supported: false
+            wifi_calling_without_entitlement: true
         entitlement:
             entitlement_url: https://ses.mobily.com.sa
         ims:
@@ -59,3 +61,5 @@ plmn_overrides:
                 rtp_inactivity_seconds: 30
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: false

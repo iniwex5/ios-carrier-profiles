@@ -4,9 +4,13 @@ id: apple_enetworks_gy
 bundle: ENetworks_gy.bundle
 supported_plmns:
     - "738040"
-common: {}
 plmn_overrides:
     "738040":
+        e911:
+            emergency_urns:
+                "911": urn:service:sos.police
+                "912": urn:service:sos.fire
+                "913": urn:service:sos.ambulance
         ims:
             apn: ims
             ip_stack: ipv4v6

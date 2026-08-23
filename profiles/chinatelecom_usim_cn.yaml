@@ -9,6 +9,13 @@ common:
     apple:
         carrier_entitlements:
             supported_entitlements: 3121
+    e911:
+        emergency_urns:
+            "110": urn:service:sos.police
+            "119": urn:service:sos.fire
+            "120": urn:service:sos.ambulance
+            "122": urn:service:sos.marine
+            "999": urn:service:sos.mountain
     entitlement:
         entitlement_url: https://applecsb.crm.189.cn:8101/CRM-CSB/HttpAppleService
     ims:
@@ -24,6 +31,7 @@ common:
         register:
             use_ipsec: true
         signaling:
+            require_qos_before_ringing: true
             support_p_early_media: true
         ussi:
             enabled: true

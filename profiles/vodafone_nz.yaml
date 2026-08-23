@@ -4,12 +4,14 @@ id: apple_vodafone_nz
 bundle: Vodafone_nz.bundle
 supported_plmns:
     - "53001"
-common: {}
 plmn_overrides:
     "53001":
         apple:
             carrier_entitlements:
                 supported_entitlements: 533505
+        e911:
+            over_itech_supported: true
+            wifi_calling_without_entitlement: true
         entitlement:
             entitlement_url: https://esim.one.nz/entitlement/
         ims:
@@ -44,6 +46,7 @@ plmn_overrides:
                           rekey_pfs_group: modp2048
                           lifetime_seconds: 86400
                     lifetime_seconds: 86400
+                    replay_window_size: 12
                 local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
                 sa_lifetime_seconds: 86400
             register:
@@ -59,7 +62,11 @@ plmn_overrides:
                             - +g.3gpp.mid-call
                             - +g.3gpp.srvcc-alerting
                             - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+                sip_timers:
+                    InviteResponseTimeout: 6000
             media:
                 rtp_inactivity_seconds: 20
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: true

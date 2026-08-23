@@ -4,7 +4,6 @@ id: apple_bite_lv
 bundle: Bite_lv.bundle
 supported_plmns:
     - "24705"
-common: {}
 plmn_overrides:
     "24705":
         apple:

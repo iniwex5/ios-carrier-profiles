@@ -4,4 +4,3 @@ id: apple_tigo_py
 bundle: Tigo_py.bundle
 supported_plmns:
     - "74404"
-common: {}

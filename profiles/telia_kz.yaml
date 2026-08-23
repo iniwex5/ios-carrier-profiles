@@ -4,4 +4,3 @@ id: apple_telia_kz
 bundle: Telia_kz.bundle
 supported_plmns:
     - "40102"
-common: {}

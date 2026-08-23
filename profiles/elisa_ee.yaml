@@ -4,12 +4,14 @@ id: apple_elisa_ee
 bundle: Elisa_ee.bundle
 supported_plmns:
     - "24802"
-common: {}
 plmn_overrides:
     "24802":
         apple:
             carrier_entitlements:
                 supported_entitlements: 5313
+        e911:
+            over_itech_supported: true
+            wifi_calling_without_entitlement: false
         entitlement:
             entitlement_url: https://entitlement1.ses.elisa.ee:8443
         ims:
@@ -56,3 +58,5 @@ plmn_overrides:
                 rtcp_interval_seconds: 5
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: true

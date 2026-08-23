@@ -4,9 +4,10 @@ id: apple_unicom_hk
 bundle: Unicom_hk.bundle
 supported_plmns:
     - "45407"
-common: {}
 plmn_overrides:
     "45407":
+        e911:
+            wifi_calling_without_entitlement: true
         ims:
             apn: ims
             ip_stack: ipv4
@@ -20,6 +21,7 @@ plmn_overrides:
                       type: v6
             ike:
                 nat_keepalive_enabled: true
+                disable_switch_to_natt_port: true
                 dpd:
                     enabled: false
                 child_sa:
@@ -60,3 +62,5 @@ plmn_overrides:
                 enabled: false
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: false

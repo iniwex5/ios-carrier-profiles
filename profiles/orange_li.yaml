@@ -4,9 +4,11 @@ id: apple_orange_li
 bundle: Orange_li.bundle
 supported_plmns:
     - "29502"
-common: {}
 plmn_overrides:
     "29502":
+        e911:
+            over_itech_supported: false
+            wifi_calling_without_entitlement: true
         ims:
             register:
                 use_ipsec: true
@@ -27,6 +29,8 @@ plmn_overrides:
                             - +g.3gpp.mid-call
                             - +g.3gpp.srvcc-alerting
                             - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+                sip_timers:
+                    InviteResponseTimeout: 4000
             media:
                 rtp_inactivity_seconds: 10
                 rtcp_interval_seconds: 5

@@ -4,7 +4,6 @@ id: apple_progresif_bn
 bundle: Progresif_bn.bundle
 supported_plmns:
     - "52802"
-common: {}
 plmn_overrides:
     "52802":
         ims:

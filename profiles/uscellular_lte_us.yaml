@@ -10,6 +10,8 @@ common:
     apple:
         carrier_entitlements:
             supported_entitlements: 4218033
+    e911:
+        over_itech_supported: false
     entitlement:
         entitlement_url: https://mdm.uscc.net/entitlement/
     ims:
@@ -33,12 +35,19 @@ common:
                         - sha512
                       rekey_pfs_group: modp3072
                       lifetime_seconds: 86400
+                replay_window_size: 12
             dpd:
                 enabled: false
                 interval_seconds: 600
+                max_retries: 4
+                retry_interval_seconds: 10
             local_identifier: anonymous@nai.epc.mnc580.mcc311.3gppnetwork.org
             local_identifier_type: IDUserFQDN
+            remote_certificate_authority_name: DigiCert Global Root G2
+            remote_certificate_hostname: epdg.epc.mnc580.mcc311.pub.3gppnetwork.org
+            remote_identifier_type: IDFQDN
             sa_lifetime_seconds: 80000
+            validate_remote_certificate: true
         impi_format: imsi@carrierDomain
         impu_format: imsi@carrierDomain
         ip_stack: ipv4v6
@@ -49,6 +58,10 @@ common:
         register:
             include_cellular_network_info: true
         signaling:
+            additional_headers:
+                - selector: INVITE[wifi,911]
+                  headers:
+                    - 'Supported: geolocation'
             contact:
                 always_add_sip_instance: true
             csfb_on:
@@ -60,9 +73,20 @@ common:
                     - 6XX
             max_udp_message_size: 1080
             preconditions: unsupported
+            sip_timers:
+                A: 2000
+                B: 130000
+                C: 182000
+                D: 130000
+                F: 130000
+                T1: 2000
+                T2: 16000
+                T4: 17000
             support_p_early_media: true
         volte:
             enable_volte_by_default: true
+    roaming:
+        wifi_calling_allowed: true
 plmn_overrides:
     "311580":
         ims:

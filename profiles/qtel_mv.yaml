@@ -4,12 +4,14 @@ id: apple_qtel_mv
 bundle: Qtel_mv.bundle
 supported_plmns:
     - "47202"
-common: {}
 plmn_overrides:
     "47202":
         apple:
             carrier_entitlements:
                 supported_entitlements: 1025
+        e911:
+            over_itech_supported: false
+            wifi_calling_without_entitlement: true
         entitlement:
             entitlement_url: https://es.ooredoo.mv/entitlement
         ims:
@@ -38,6 +40,8 @@ plmn_overrides:
                 dpd:
                     enabled: false
                     interval_seconds: 600
+                    max_retries: 4
+                    retry_interval_seconds: 10
                 child_sa:
                     proposals:
                         - encryption:
@@ -47,7 +51,9 @@ plmn_overrides:
                           rekey_pfs_group: modp2048
                           lifetime_seconds: 86400
                     lifetime_seconds: 86400
+                    replay_window_size: 12
                 local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                validate_remote_certificate: false
                 sa_lifetime_seconds: 86400
             register:
                 use_ipsec: true
@@ -68,3 +74,9 @@ plmn_overrides:
                             - +g.3gpp.mid-call
                             - +g.3gpp.srvcc-alerting
                             - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+                sip_timers:
+                    T1: 2000
+                    T2: 16000
+                    T4: 17000
+        roaming:
+            wifi_calling_allowed: true

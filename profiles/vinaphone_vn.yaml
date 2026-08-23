@@ -4,12 +4,18 @@ id: apple_vinaphone_vn
 bundle: VinaPhone_vn.bundle
 supported_plmns:
     - "45202"
-common: {}
 plmn_overrides:
     "45202":
         apple:
             carrier_entitlements:
                 supported_entitlements: 9233
+        e911:
+            over_itech_supported: true
+            wifi_calling_without_entitlement: true
+            emergency_urns:
+                "113": urn:service:sos.police
+                "114": urn:service:sos.fire
+                "115": urn:service:sos.ambulance
         entitlement:
             entitlement_url: https://aes.mnc002.mcc452.pub.3gppnetwork.org
         ims:
@@ -40,9 +46,12 @@ plmn_overrides:
                       authentication_method: None
                       eap_method: EAP-AKA
                 nat_keepalive_enabled: true
+                ipsec_mtu: 1280
                 dpd:
                     enabled: true
                     interval_seconds: 600
+                    max_retries: 5
+                    retry_interval_seconds: 5
                 child_sa:
                     proposals:
                         - encryption:
@@ -52,6 +61,7 @@ plmn_overrides:
                           rekey_pfs_group: modp2048
                           lifetime_seconds: 43200
                     lifetime_seconds: 43200
+                    replay_window_size: 12
                 local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
                 sa_lifetime_seconds: 43200
             register:
@@ -76,9 +86,21 @@ plmn_overrides:
                             - +g.3gpp.mid-call
                             - +g.3gpp.srvcc-alerting
                             - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+                sip_timers:
+                    B: 32000
+                    D: 32000
+                    F: 32000
+                    H: 32000
+                    InviteResponseTimeout: 30000
+                    J: 32000
+                    T1: 2000
+                    T2: 16000
+                    T4: 17000
             media:
                 rtcp_inactivity_seconds: 36000
             ussi:
                 enabled: true
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: true

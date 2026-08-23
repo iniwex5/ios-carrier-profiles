@@ -10,6 +10,9 @@ common:
     apple:
         carrier_entitlements:
             supported_entitlements: 9217
+    e911:
+        over_itech_supported: false
+        wifi_calling_without_entitlement: true
     entitlement:
         entitlement_url: https://hotmes.hotmobile.co.il/entitlement/
     ims:
@@ -29,9 +32,12 @@ common:
                       integrity:
                         - sha256
                       lifetime_seconds: 86400
+                replay_window_size: 12
             dpd:
                 enabled: true
                 interval_seconds: 1800
+                max_retries: 5
+                retry_interval_seconds: 10
             local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
             nat_keepalive_enabled: true
             nat_keepalive_seconds: 20
@@ -68,6 +74,8 @@ common:
             enabled: true
         volte:
             enable_volte_by_default: true
+    roaming:
+        wifi_calling_allowed: false
 plmn_overrides:
     "42507":
         ims:

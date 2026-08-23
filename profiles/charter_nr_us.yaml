@@ -4,7 +4,6 @@ id: apple_charter_nr_us
 bundle: Charter_NR_US.bundle
 supported_plmns:
     - "314020"
-common: {}
 plmn_overrides:
     "314020":
         ims:

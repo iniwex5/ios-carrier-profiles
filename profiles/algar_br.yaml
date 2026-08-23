@@ -8,6 +8,8 @@ supported_plmns:
     - "72433"
     - "72434"
 common:
+    e911:
+        over_itech_supported: false
     ims:
         apn: ims
         ip_stack: ipv4v6

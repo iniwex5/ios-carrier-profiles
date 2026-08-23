@@ -4,4 +4,3 @@ id: apple_bhartiairtel_rw
 bundle: BhartiAirtel_rw.bundle
 supported_plmns:
     - "63514"
-common: {}

@@ -4,7 +4,6 @@ id: apple_tele2_lt
 bundle: Tele2_lt.bundle
 supported_plmns:
     - "24603"
-common: {}
 plmn_overrides:
     "24603":
         apple:

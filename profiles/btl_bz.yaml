@@ -4,4 +4,3 @@ id: apple_btl_bz
 bundle: BTL_bz.bundle
 supported_plmns:
     - "70267"
-common: {}

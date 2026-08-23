@@ -4,12 +4,14 @@ id: apple_optus_au
 bundle: Optus_au.bundle
 supported_plmns:
     - "50502"
-common: {}
 plmn_overrides:
     "50502":
         apple:
             carrier_entitlements:
                 supported_entitlements: 9217
+        e911:
+            over_itech_supported: true
+            wifi_calling_without_entitlement: true
         entitlement:
             entitlement_url: https://oes.optusnet.com.au
         ims:
@@ -27,6 +29,8 @@ plmn_overrides:
                 dpd:
                     enabled: false
                     interval_seconds: 600
+                    max_retries: 4
+                    retry_interval_seconds: 10
                 child_sa:
                     proposals:
                         - encryption:
@@ -36,7 +40,11 @@ plmn_overrides:
                           rekey_pfs_group: modp2048
                           lifetime_seconds: 86400
                     lifetime_seconds: 86400
+                    replay_window_size: 12
                 local_identifier: Optus@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                remote_certificate_authority_name: DigiCert Global Root G2
+                remote_certificate_hostname: epdg.epc.mnc002.mcc505.pub.3gppnetwork.org
+                validate_remote_certificate: true
                 sa_lifetime_seconds: 86400
             register:
                 use_ipsec: true
@@ -54,3 +62,5 @@ plmn_overrides:
                 rtp_inactivity_seconds: 20
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: false

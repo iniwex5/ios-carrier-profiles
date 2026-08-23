@@ -21,6 +21,10 @@ common:
             include_cellular_network_info: true
             use_ipsec: true
         signaling:
+            additional_headers:
+                - selector: INVITE[wifi,911]
+                  headers:
+                    - 'Priority: emergency'
             contact:
                 additional_contact_params:
                     - selector: INVITE[911]
@@ -41,6 +45,9 @@ common:
                     - "606"
             max_udp_message_size: 1200
             preconditions: supported
+            require_qos_before_ringing: true
+            sip_timers:
+                InviteResponseTimeout: 5000
             support_p_early_media: true
         volte:
             enable_volte_by_default: true

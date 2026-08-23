@@ -4,7 +4,6 @@ id: apple_telenor_pk
 bundle: Telenor_pk.bundle
 supported_plmns:
     - "41006"
-common: {}
 plmn_overrides:
     "41006":
         ims:

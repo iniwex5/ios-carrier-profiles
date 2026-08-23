@@ -4,4 +4,3 @@ id: apple_almadar_ly
 bundle: Almadar_ly.bundle
 supported_plmns:
     - "60601"
-common: {}

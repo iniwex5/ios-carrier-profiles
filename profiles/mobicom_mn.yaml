@@ -4,7 +4,6 @@ id: apple_mobicom_mn
 bundle: MobiCom_mn.bundle
 supported_plmns:
     - "42899"
-common: {}
 plmn_overrides:
     "42899":
         ims:

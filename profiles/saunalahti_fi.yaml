@@ -4,4 +4,3 @@ id: apple_saunalahti_fi
 bundle: Saunalahti_fi.bundle
 supported_plmns:
     - "24421"
-common: {}

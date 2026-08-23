@@ -5,4 +5,3 @@ bundle: movistar_sv.bundle
 supported_plmns:
     - "21407"
     - "70604"
-common: {}

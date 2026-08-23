@@ -4,4 +4,3 @@ id: apple_rogers_cityfone_ca
 bundle: Rogers_Cityfone_ca.bundle
 supported_plmns:
     - "302720"
-common: {}

@@ -5,4 +5,3 @@ bundle: MTS_ca.bundle
 supported_plmns:
     - "302370"
     - "302660"
-common: {}

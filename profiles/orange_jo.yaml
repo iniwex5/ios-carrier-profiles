@@ -4,7 +4,6 @@ id: apple_orange_jo
 bundle: Orange_jo.bundle
 supported_plmns:
     - "41677"
-common: {}
 plmn_overrides:
     "41677":
         ims:

@@ -5,4 +5,3 @@ bundle: Natcom_ht.bundle
 supported_plmns:
     - "37203"
     - "45204"
-common: {}

@@ -9,11 +9,16 @@ common:
     apple:
         carrier_entitlements:
             supported_entitlements: 11265
+    e911:
+        emergency_urns:
+            "110": urn:service:sos.police
+            "118": urn:service:sos.marine
+            "119": urn:service:sos.fire
     entitlement:
         entitlement_url: https://entitlement.devicem.rm-n.jp/entitlement/
     ims:
         apn: ims
-        ip_stack: ipv6
+        ip_stack: ipv4v6
         media:
             rtcp_interval_seconds: 5
             rtp_inactivity_seconds: 15
@@ -21,6 +26,8 @@ common:
             use_ipsec: true
         signaling:
             preconditions: supported
+            sip_timers:
+                B: 3000000
             support_p_early_media: true
         ussi:
             enabled: true

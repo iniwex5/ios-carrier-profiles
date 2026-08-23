@@ -4,4 +4,3 @@ id: apple_manxtelecom_im
 bundle: ManxTelecom_im.bundle
 supported_plmns:
     - "23458"
-common: {}

@@ -4,12 +4,14 @@ id: apple_orange_sk
 bundle: Orange_sk.bundle
 supported_plmns:
     - "23101"
-common: {}
 plmn_overrides:
     "23101":
         apple:
             carrier_entitlements:
                 supported_entitlements: 5329
+        e911:
+            over_itech_supported: false
+            wifi_calling_without_entitlement: false
         entitlement:
             entitlement_url: https://aes.orange.sk/ium-OEMInterface/servlet/IUMServlet
         ims:
@@ -31,6 +33,7 @@ plmn_overrides:
                           rekey_pfs_group: modp2048
                           lifetime_seconds: 86400
                     lifetime_seconds: 86400
+                remote_identifier_type: KeyID
                 sa_lifetime_seconds: 86400
             register:
                 use_ipsec: true
@@ -49,6 +52,8 @@ plmn_overrides:
                           params:
                             - +g.3gpp.mid-call
                             - +g.3gpp.srvcc-alerting
+                sip_timers:
+                    InviteResponseTimeout: 2000
             media:
                 rtp_inactivity_seconds: 20
                 rtcp_interval_seconds: 5

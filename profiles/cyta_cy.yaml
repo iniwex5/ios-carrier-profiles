@@ -4,12 +4,13 @@ id: apple_cyta_cy
 bundle: Cyta_cy.bundle
 supported_plmns:
     - "28001"
-common: {}
 plmn_overrides:
     "28001":
         apple:
             carrier_entitlements:
                 supported_entitlements: 13313
+        e911:
+            wifi_calling_without_entitlement: true
         entitlement:
             entitlement_url: https://esim-es-open-prod-cyta.esimcloud.net/cyta/prod/executeAppleActions
         ims:
@@ -23,6 +24,7 @@ plmn_overrides:
                       type: v6
             ike:
                 nat_keepalive_enabled: true
+                disable_switch_to_natt_port: true
                 child_sa:
                     proposals:
                         - encryption:
@@ -46,3 +48,5 @@ plmn_overrides:
                             - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: false

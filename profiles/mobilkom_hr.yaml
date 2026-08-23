@@ -4,7 +4,6 @@ id: apple_mobilkom_hr
 bundle: mobilkom_hr.bundle
 supported_plmns:
     - "21910"
-common: {}
 plmn_overrides:
     "21910":
         apple:

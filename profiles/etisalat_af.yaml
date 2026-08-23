@@ -4,9 +4,15 @@ id: apple_etisalat_af
 bundle: Etisalat_af.bundle
 supported_plmns:
     - "41250"
-common: {}
 plmn_overrides:
     "41250":
+        e911:
+            over_itech_supported: true
+            emergency_urns:
+                "100": urn:service:sos.police
+                "101": urn:service:sos.fire
+                "102": urn:service:sos.ambulance
+                "119": urn:service:sos.mountain
         ims:
             apn: ims
             ip_stack: ipv4

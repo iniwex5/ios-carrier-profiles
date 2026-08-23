@@ -4,7 +4,6 @@ id: apple_telus_pcmobile_ca
 bundle: Telus_PCMobile_ca.bundle
 supported_plmns:
     - "302220"
-common: {}
 plmn_overrides:
     "302220":
         apple:

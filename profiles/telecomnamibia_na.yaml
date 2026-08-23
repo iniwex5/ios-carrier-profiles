@@ -4,4 +4,3 @@ id: apple_telecomnamibia_na
 bundle: TelecomNamibia_na.bundle
 supported_plmns:
     - "64903"
-common: {}

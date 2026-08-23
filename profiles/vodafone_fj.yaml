@@ -4,4 +4,3 @@ id: apple_vodafone_fj
 bundle: Vodafone_fj.bundle
 supported_plmns:
     - "54201"
-common: {}

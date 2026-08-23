@@ -4,7 +4,6 @@ id: apple_laotel_la
 bundle: Laotel_la.bundle
 supported_plmns:
     - "45701"
-common: {}
 plmn_overrides:
     "45701":
         ims:

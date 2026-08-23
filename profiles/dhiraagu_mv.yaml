@@ -4,7 +4,6 @@ id: apple_dhiraagu_mv
 bundle: Dhiraagu_mv.bundle
 supported_plmns:
     - "47201"
-common: {}
 plmn_overrides:
     "47201":
         apple:

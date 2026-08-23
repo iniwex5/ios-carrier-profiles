@@ -9,6 +9,9 @@ common:
     apple:
         carrier_entitlements:
             supported_entitlements: 4236497
+    e911:
+        over_itech_supported: false
+        wifi_calling_without_entitlement: false
     entitlement:
         entitlement_url: https://aes.orange.fr/aes
     ims:
@@ -31,9 +34,12 @@ common:
                         - sha256
                       rekey_pfs_group: modp2048
                       lifetime_seconds: 80000
+                replay_window_size: 12
             dpd:
                 enabled: false
                 interval_seconds: 600
+                max_retries: 4
+                retry_interval_seconds: 10
             local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
             nat_keepalive_enabled: true
             nat_keepalive_seconds: 20
@@ -49,7 +55,9 @@ common:
                   lifetime_seconds: 80000
                   authentication_method: None
                   eap_method: EAP-AKA
+            remote_identifier_type: KeyID
             sa_lifetime_seconds: 80000
+            validate_remote_certificate: false
         ip_stack: ipv4v6
         media:
             rtcp_interval_seconds: 5
@@ -57,6 +65,10 @@ common:
         register:
             use_ipsec: true
         signaling:
+            additional_headers:
+                - selector: INVITE
+                  headers:
+                    - 'Accept: application/sdp,application/3gpp-ims+xml'
             contact:
                 additional_contact_params:
                     - selector: REGISTER,INVITE,INVITE:*
@@ -72,9 +84,13 @@ common:
                     - "408"
                     - 5XX
             preconditions: supported
+            sip_timers:
+                InviteResponseTimeout: 3000
             support_p_early_media: true
         volte:
             enable_volte_by_default: true
+    roaming:
+        wifi_calling_allowed: false
 plmn_overrides:
     "20802":
         ims:

@@ -4,4 +4,3 @@ id: apple_opt_nc
 bundle: OPT_nc.bundle
 supported_plmns:
     - "54601"
-common: {}

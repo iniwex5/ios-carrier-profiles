@@ -4,4 +4,3 @@ id: apple_safaricom_ke
 bundle: Safaricom_ke.bundle
 supported_plmns:
     - "63902"
-common: {}

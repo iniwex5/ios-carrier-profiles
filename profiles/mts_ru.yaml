@@ -4,7 +4,6 @@ id: apple_mts_ru
 bundle: MTS_ru.bundle
 supported_plmns:
     - "25001"
-common: {}
 plmn_overrides:
     "25001":
         apple:

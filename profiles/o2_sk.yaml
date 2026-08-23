@@ -4,12 +4,14 @@ id: apple_o2_sk
 bundle: O2_sk.bundle
 supported_plmns:
     - "23106"
-common: {}
 plmn_overrides:
     "23106":
         apple:
             carrier_entitlements:
                 supported_entitlements: 5121
+        e911:
+            over_itech_supported: false
+            wifi_calling_without_entitlement: true
         entitlement:
             entitlement_url: https://esim-es-open-prod-o2sk.esimcloud.net/o2sk/prod/executeAppleActions/
         ims:

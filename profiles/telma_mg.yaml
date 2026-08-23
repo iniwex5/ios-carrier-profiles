@@ -4,4 +4,3 @@ id: apple_telma_mg
 bundle: Telma_mg.bundle
 supported_plmns:
     - "64604"
-common: {}

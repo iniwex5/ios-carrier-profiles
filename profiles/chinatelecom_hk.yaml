@@ -6,6 +6,13 @@ supported_plmns:
     - "45400"
     - "45431"
 common:
+    e911:
+        emergency_urns:
+            "110": urn:service:sos.police
+            "119": urn:service:sos.fire
+            "120": urn:service:sos.ambulance
+            "993": urn:service:sos.police
+            "999": urn:service:sos.fire
     ims:
         apn: ims
         domain: ims.mnc031.mcc454.3gppnetwork.org
@@ -18,6 +25,7 @@ common:
         register:
             use_ipsec: true
         signaling:
+            require_qos_before_ringing: true
             support_p_early_media: true
         ussi:
             enabled: true

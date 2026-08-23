@@ -9,6 +9,9 @@ common:
     apple:
         carrier_entitlements:
             supported_entitlements: 9216
+    e911:
+        over_itech_supported: false
+        wifi_calling_without_entitlement: true
     entitlement:
         entitlement_url: https://es-nl.multiopco.entitlement.vodafone.com:4454/ium-OEMInterface/servlet/IUMServlet
     ims:
@@ -28,11 +31,17 @@ common:
                         - sha256
                       rekey_pfs_group: modp2048
                       lifetime_seconds: 80000
+                replay_window_size: 12
             dpd:
                 enabled: false
                 interval_seconds: 600
+                max_retries: 4
+                retry_interval_seconds: 10
             local_identifier: anonymous@nai.epc.mnc004.mcc204.3gppnetwork.org
+            remote_certificate_authority_name: DigiCert Global Root G2
+            remote_certificate_hostname: epdg.epc.mnc004.mcc204.pub.3gppnetwork.org
             sa_lifetime_seconds: 80000
+            validate_remote_certificate: true
         register:
             include_cellular_network_info: true
             use_ipsec: true
@@ -49,3 +58,5 @@ common:
             support_p_early_media: true
         volte:
             enable_volte_by_default: true
+    roaming:
+        wifi_calling_allowed: false

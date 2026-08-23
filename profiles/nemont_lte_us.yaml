@@ -4,4 +4,3 @@ id: apple_nemont_lte_us
 bundle: Nemont_LTE_US.bundle
 supported_plmns:
     - "312480"
-common: {}

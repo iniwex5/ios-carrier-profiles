@@ -4,12 +4,14 @@ id: apple_vox_lu
 bundle: VOX_lu.bundle
 supported_plmns:
     - "27099"
-common: {}
 plmn_overrides:
     "27099":
         apple:
             carrier_entitlements:
                 supported_entitlements: 8401
+        e911:
+            over_itech_supported: true
+            wifi_calling_without_entitlement: false
         entitlement:
             entitlement_url: https://aes.orange.lu:443/ium-OEMInterface/servlet/IUMServlet
         ims:
@@ -51,6 +53,8 @@ plmn_overrides:
                           params:
                             - +g.3gpp.mid-call
                             - +g.3gpp.srvcc-alerting
+                sip_timers:
+                    InviteResponseTimeout: 2000
             media:
                 rtp_inactivity_seconds: 20
                 rtcp_interval_seconds: 5
@@ -58,3 +62,5 @@ plmn_overrides:
                 enabled: false
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: false

@@ -4,9 +4,10 @@ id: apple_bhartiairtel_lk
 bundle: BhartiAirtel_lk.bundle
 supported_plmns:
     - "41305"
-common: {}
 plmn_overrides:
     "41305":
+        e911:
+            over_itech_supported: false
         ims:
             apn: ims
             ip_stack: ipv4

@@ -4,4 +4,3 @@ id: apple_zain_lb
 bundle: Zain_lb.bundle
 supported_plmns:
     - "41503"
-common: {}

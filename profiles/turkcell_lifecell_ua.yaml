@@ -4,12 +4,14 @@ id: apple_turkcell_lifecell_ua
 bundle: Turkcell_lifecell_ua.bundle
 supported_plmns:
     - "25506"
-common: {}
 plmn_overrides:
     "25506":
         apple:
             carrier_entitlements:
                 supported_entitlements: 5121
+        e911:
+            over_itech_supported: false
+            wifi_calling_without_entitlement: true
         entitlement:
             entitlement_url: https://es.mnc006.mcc255.pub.3gppnetwork.org
         ims:
@@ -54,3 +56,5 @@ plmn_overrides:
                             - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: true

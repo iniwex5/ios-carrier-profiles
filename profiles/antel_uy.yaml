@@ -4,9 +4,10 @@ id: apple_antel_uy
 bundle: Antel_uy.bundle
 supported_plmns:
     - "74801"
-common: {}
 plmn_overrides:
     "74801":
+        e911:
+            wifi_calling_without_entitlement: true
         ims:
             apn: ims
             ip_stack: ipv4

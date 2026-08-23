@@ -4,4 +4,3 @@ id: apple_vimpelcom_ge
 bundle: VimpelCom_ge.bundle
 supported_plmns:
     - "28204"
-common: {}

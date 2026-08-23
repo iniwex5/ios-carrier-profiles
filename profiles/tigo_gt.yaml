@@ -4,7 +4,6 @@ id: apple_tigo_gt
 bundle: Tigo_gt.bundle
 supported_plmns:
     - "70402"
-common: {}
 plmn_overrides:
     "70402":
         ims:
@@ -29,6 +28,10 @@ plmn_overrides:
                             - +g.3gpp.mid-call
                             - +g.3gpp.srvcc-alerting
                             - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+                sip_timers:
+                    T1: 2000
+                    T2: 16000
+                    T4: 17000
             ussi:
                 enabled: true
             volte:

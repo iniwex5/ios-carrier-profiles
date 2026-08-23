@@ -4,12 +4,14 @@ id: apple_telefonica_es
 bundle: Telefonica_es.bundle
 supported_plmns:
     - "21407"
-common: {}
 plmn_overrides:
     "21407":
         apple:
             carrier_entitlements:
                 supported_entitlements: 97281
+        e911:
+            over_itech_supported: true
+            wifi_calling_without_entitlement: true
         entitlement:
             entitlement_url: https://entitlement.movistar.es/entitlement/
         ims:
@@ -69,3 +71,5 @@ plmn_overrides:
                 enabled: false
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: true

@@ -4,7 +4,6 @@ id: apple_8ta_za
 bundle: 8ta_za.bundle
 supported_plmns:
     - "65502"
-common: {}
 plmn_overrides:
     "65502":
         ims:

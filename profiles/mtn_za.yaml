@@ -4,12 +4,14 @@ id: apple_mtn_za
 bundle: MTN_za.bundle
 supported_plmns:
     - "65510"
-common: {}
 plmn_overrides:
     "65510":
         apple:
             carrier_entitlements:
                 supported_entitlements: 5121
+        e911:
+            over_itech_supported: false
+            wifi_calling_without_entitlement: true
         entitlement:
             entitlement_url: https://es1staging.mtn.co.za/entitlement/
         ims:
@@ -46,6 +48,10 @@ plmn_overrides:
                             - +g.3gpp.mid-call
                             - +g.3gpp.srvcc-alerting
                             - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+                additional_headers:
+                    - selector: INVITE,INVITE:*
+                      headers:
+                        - 'Feature-Caps: *;+g.3gpp.srvcc-alerting'
             media:
                 rtp_inactivity_seconds: 20
                 remote_rtcp_deactivation: true
@@ -53,3 +59,5 @@ plmn_overrides:
                 enabled: true
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: false

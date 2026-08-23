@@ -4,7 +4,6 @@ id: apple_telemach_si
 bundle: Telemach_si.bundle
 supported_plmns:
     - "29370"
-common: {}
 plmn_overrides:
     "29370":
         ims:

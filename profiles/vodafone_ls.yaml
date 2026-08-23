@@ -4,4 +4,3 @@ id: apple_vodafone_ls
 bundle: Vodafone_ls.bundle
 supported_plmns:
     - "65101"
-common: {}

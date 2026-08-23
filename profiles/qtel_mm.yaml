@@ -4,4 +4,3 @@ id: apple_qtel_mm
 bundle: Qtel_mm.bundle
 supported_plmns:
     - "41405"
-common: {}

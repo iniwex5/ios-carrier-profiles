@@ -4,12 +4,18 @@ id: apple_taiwanmobile_tw
 bundle: TaiwanMobile_tw.bundle
 supported_plmns:
     - "46697"
-common: {}
 plmn_overrides:
     "46697":
         apple:
             carrier_entitlements:
                 supported_entitlements: 3201
+        e911:
+            over_itech_supported: true
+            wifi_calling_without_entitlement: false
+            emergency_urns:
+                "110": urn:service:sos.police
+                "112": urn:service:sos.ambulance
+                "119": urn:service:sos.fire
         entitlement:
             entitlement_url: https://entitlement.taiwanmobile.com/volte
         ims:
@@ -42,6 +48,8 @@ plmn_overrides:
                 dpd:
                     enabled: false
                     interval_seconds: 600
+                    max_retries: 4
+                    retry_interval_seconds: 10
                 child_sa:
                     proposals:
                         - encryption:
@@ -51,7 +59,9 @@ plmn_overrides:
                           rekey_pfs_group: modp2048
                           lifetime_seconds: 86400
                     lifetime_seconds: 86400
+                    replay_window_size: 12
                 local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                validate_remote_certificate: false
                 sa_lifetime_seconds: 86400
             register:
                 use_ipsec: true

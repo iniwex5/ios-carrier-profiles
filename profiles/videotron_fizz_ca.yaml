@@ -4,9 +4,10 @@ id: apple_videotron_fizz_ca
 bundle: Videotron_Fizz_ca.bundle
 supported_plmns:
     - "302500"
-common: {}
 plmn_overrides:
     "302500":
+        e911:
+            wifi_calling_without_entitlement: false
         ims:
             apn: ims
             ip_stack: ipv6

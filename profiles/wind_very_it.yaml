@@ -6,6 +6,9 @@ supported_plmns:
     - "22288"
     - "22299"
 common:
+    e911:
+        over_itech_supported: false
+        wifi_calling_without_entitlement: true
     ims:
         apn: ims
         epdg:
@@ -54,6 +57,8 @@ common:
             support_p_early_media: true
         volte:
             enable_volte_by_default: true
+    roaming:
+        wifi_calling_allowed: false
 plmn_overrides:
     "22299":
         ims:

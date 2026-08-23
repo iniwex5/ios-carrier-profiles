@@ -4,4 +4,3 @@ id: apple_telefonica_tuenti_ar
 bundle: Telefonica_Tuenti_ar.bundle
 supported_plmns:
     - "722010"
-common: {}

@@ -4,7 +4,6 @@ id: apple_qtel_qa
 bundle: Qtel_qa.bundle
 supported_plmns:
     - "42701"
-common: {}
 plmn_overrides:
     "42701":
         apple:
@@ -34,6 +33,10 @@ plmn_overrides:
                             - +g.3gpp.mid-call
                             - +g.3gpp.srvcc-alerting
                             - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+                additional_headers:
+                    - selector: INVITE,INVITE:*
+                      headers:
+                        - 'Feature-Caps: *;+g.3gpp.srvcc-alerting'
             media:
                 rtp_inactivity_seconds: 15
             ussi:

@@ -4,12 +4,14 @@ id: apple_vodafone_es
 bundle: Vodafone_es.bundle
 supported_plmns:
     - "21401"
-common: {}
 plmn_overrides:
     "21401":
         apple:
             carrier_entitlements:
                 supported_entitlements: 74768
+        e911:
+            over_itech_supported: false
+            wifi_calling_without_entitlement: true
         entitlement:
             entitlement_url: https://es-es.vodafone.com:4446/ium-OEMInterface/servlet/IUMServlet
         ims:
@@ -75,3 +77,5 @@ plmn_overrides:
                 rtcp_interval_seconds: 5
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: false

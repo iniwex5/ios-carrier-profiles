@@ -4,12 +4,14 @@ id: apple_play_pl
 bundle: Play_pl.bundle
 supported_plmns:
     - "26006"
-common: {}
 plmn_overrides:
     "26006":
         apple:
             carrier_entitlements:
                 supported_entitlements: 5249
+        e911:
+            over_itech_supported: true
+            wifi_calling_without_entitlement: false
         entitlement:
             entitlement_url: https://es.play.pl/rest/deviceInterface/v1/service
         ims:
@@ -39,6 +41,8 @@ plmn_overrides:
                 dpd:
                     enabled: true
                     interval_seconds: 60
+                    max_retries: 3
+                    retry_interval_seconds: 2
                 child_sa:
                     proposals:
                         - encryption:
@@ -48,7 +52,10 @@ plmn_overrides:
                           rekey_pfs_group: modp2048
                           lifetime_seconds: 80000
                     lifetime_seconds: 80000
+                    replay_window_size: 12
                 local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                remote_identifier_type: KeyID
+                validate_remote_certificate: false
                 sa_lifetime_seconds: 80000
             register:
                 use_ipsec: true
@@ -70,6 +77,8 @@ plmn_overrides:
                             - +g.3gpp.mid-call
                             - +g.3gpp.srvcc-alerting
                             - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+                sip_timers:
+                    InviteResponseTimeout: 4000
             media:
                 rtp_inactivity_seconds: 20
                 rtcp_inactivity_seconds: 180
@@ -78,3 +87,5 @@ plmn_overrides:
                 enabled: true
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: true

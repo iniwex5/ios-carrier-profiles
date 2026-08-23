@@ -4,9 +4,10 @@ id: apple_vodafone_lowi_es
 bundle: Vodafone_Lowi_es.bundle
 supported_plmns:
     - "21406"
-common: {}
 plmn_overrides:
     "21406":
+        e911:
+            over_itech_supported: false
         ims:
             epdg:
                 address: epdg.epc.mnc001.mcc214.pub.3gppnetwork.org
@@ -56,3 +57,5 @@ plmn_overrides:
                             - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: false

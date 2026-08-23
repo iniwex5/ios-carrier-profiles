@@ -5,4 +5,3 @@ bundle: SFR_re.bundle
 supported_plmns:
     - "20809"
     - "64710"
-common: {}

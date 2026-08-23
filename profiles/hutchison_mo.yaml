@@ -6,6 +6,9 @@ supported_plmns:
     - "45503"
     - "45505"
 common:
+    e911:
+        over_itech_supported: true
+        wifi_calling_without_entitlement: true
     ims:
         apn: ims
         epdg:
@@ -27,9 +30,12 @@ common:
                         - sha1
                       rekey_pfs_group: modp1024
                       lifetime_seconds: 80000
+                replay_window_size: 12
             dpd:
                 enabled: false
                 interval_seconds: 600
+                max_retries: 4
+                retry_interval_seconds: 10
             local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
             proposals:
                 - encryption:
@@ -44,6 +50,7 @@ common:
                   authentication_method: None
                   eap_method: EAP-AKA
             sa_lifetime_seconds: 80000
+            validate_remote_certificate: false
         media:
             rtcp_interval_seconds: 5
             rtp_inactivity_seconds: 20
@@ -65,6 +72,14 @@ common:
                     - 6XX
             max_udp_message_size: 1200
             preconditions: unsupported
+            sip_timers:
+                D: 128000
+                F: 0
+                T1: 2000
+                T2: 16000
+                T4: 17000
             support_p_early_media: true
         volte:
             enable_volte_by_default: true
+    roaming:
+        wifi_calling_allowed: false

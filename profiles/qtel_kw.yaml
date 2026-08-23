@@ -4,12 +4,14 @@ id: apple_qtel_kw
 bundle: Qtel_kw.bundle
 supported_plmns:
     - "41903"
-common: {}
 plmn_overrides:
     "41903":
         apple:
             carrier_entitlements:
                 supported_entitlements: 9217
+        e911:
+            over_itech_supported: true
+            wifi_calling_without_entitlement: true
         entitlement:
             entitlement_url: https://es-prod.ooredoo.com.kw/rest/deviceInterface/v1/service
         ims:
@@ -59,7 +61,13 @@ plmn_overrides:
                             - +g.3gpp.mid-call
                             - +g.3gpp.srvcc-alerting
                             - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+                additional_headers:
+                    - selector: INVITE,INVITE:*
+                      headers:
+                        - 'Feature-Caps: *;+g.3gpp.srvcc-alerting'
             media:
                 rtp_inactivity_seconds: 15
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: false

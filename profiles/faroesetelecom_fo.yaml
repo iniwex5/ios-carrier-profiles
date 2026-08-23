@@ -4,7 +4,6 @@ id: apple_faroesetelecom_fo
 bundle: FaroeseTelecom_fo.bundle
 supported_plmns:
     - "28801"
-common: {}
 plmn_overrides:
     "28801":
         apple:

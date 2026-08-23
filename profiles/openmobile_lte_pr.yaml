@@ -5,4 +5,3 @@ bundle: OpenMobile_LTE_pr.bundle
 supported_plmns:
     - "33012"
     - "330120"
-common: {}

@@ -4,4 +4,3 @@ id: apple_ptci_lte_us
 bundle: PTCI_LTE_US.bundle
 supported_plmns:
     - "311650"
-common: {}

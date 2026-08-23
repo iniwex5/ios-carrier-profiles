@@ -4,4 +4,3 @@ id: apple_alfa_lb
 bundle: Alfa_lb.bundle
 supported_plmns:
     - "41501"
-common: {}

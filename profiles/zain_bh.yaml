@@ -4,7 +4,6 @@ id: apple_zain_bh
 bundle: Zain_bh.bundle
 supported_plmns:
     - "42602"
-common: {}
 plmn_overrides:
     "42602":
         apple:
@@ -33,6 +32,10 @@ plmn_overrides:
                             - +g.3gpp.mid-call
                             - +g.3gpp.srvcc-alerting
                             - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+                additional_headers:
+                    - selector: INVITE,INVITE:*
+                      headers:
+                        - 'Feature-Caps: *;+g.3gpp.srvcc-alerting'
             ussi:
                 enabled: true
             volte:

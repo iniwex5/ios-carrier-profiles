@@ -4,7 +4,6 @@ id: apple_tmobile_me
 bundle: TMobile_me.bundle
 supported_plmns:
     - "29702"
-common: {}
 plmn_overrides:
     "29702":
         ims:
@@ -23,6 +22,8 @@ plmn_overrides:
                             - +g.3gpp.mid-call
                             - +g.3gpp.srvcc-alerting
                             - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+                sip_timers:
+                    InviteResponseTimeout: 4000
             media:
                 rtp_inactivity_seconds: 20
                 rtcp_inactivity_seconds: 180

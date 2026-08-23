@@ -4,7 +4,6 @@ id: apple_tigo_bo
 bundle: Tigo_bo.bundle
 supported_plmns:
     - "73603"
-common: {}
 plmn_overrides:
     "73603":
         ims:

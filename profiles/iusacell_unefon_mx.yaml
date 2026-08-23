@@ -9,7 +9,7 @@ supported_plmns:
 common:
     ims:
         apn: ims
-        ip_stack: ipv4
+        ip_stack: ipv4v6
         media:
             rtcp_inactivity_seconds: 36000
             rtp_inactivity_seconds: 20

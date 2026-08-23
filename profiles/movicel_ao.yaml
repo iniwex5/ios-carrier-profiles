@@ -4,4 +4,3 @@ id: apple_movicel_ao
 bundle: Movicel_ao.bundle
 supported_plmns:
     - "63104"
-common: {}

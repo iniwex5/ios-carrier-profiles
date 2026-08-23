@@ -4,7 +4,6 @@ id: apple_umniah_jo
 bundle: Umniah_jo.bundle
 supported_plmns:
     - "41603"
-common: {}
 plmn_overrides:
     "41603":
         ims:

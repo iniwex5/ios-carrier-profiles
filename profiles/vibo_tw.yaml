@@ -7,6 +7,12 @@ supported_plmns:
     - "466891"
     - "46690"
 common:
+    e911:
+        emergency_urns:
+            "110": urn:service:sos.police
+            "112": urn:service:sos.ambulance
+            "119": urn:service:sos.fire
+        over_itech_supported: false
     ims:
         apn: ims
         domain: ims.mnc089.mcc466.3gppnetwork.org

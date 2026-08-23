@@ -5,4 +5,3 @@ bundle: ACS_US.bundle
 supported_plmns:
     - "310050"
     - "311370"
-common: {}

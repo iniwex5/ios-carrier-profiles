@@ -4,4 +4,3 @@ id: apple_telekomslovenije_mk
 bundle: TelekomSlovenije_mk.bundle
 supported_plmns:
     - "29402"
-common: {}

@@ -5,4 +5,3 @@ bundle: Sprint_Virgin_ISIM_LTE_US.bundle
 supported_plmns:
     - "310120"
     - "312530"
-common: {}

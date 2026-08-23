@@ -4,4 +4,3 @@ id: apple_mobilis_dz
 bundle: Mobilis_dz.bundle
 supported_plmns:
     - "60301"
-common: {}

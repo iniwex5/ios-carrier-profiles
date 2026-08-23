@@ -4,4 +4,3 @@ id: apple_vimpelcom_tj
 bundle: VimpelCom_tj.bundle
 supported_plmns:
     - "43605"
-common: {}

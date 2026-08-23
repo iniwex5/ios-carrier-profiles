@@ -4,4 +4,3 @@ id: apple_digicel_sr
 bundle: Digicel_sr.bundle
 supported_plmns:
     - "74603"
-common: {}

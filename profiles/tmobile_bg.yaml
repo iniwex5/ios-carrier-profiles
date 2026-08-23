@@ -4,7 +4,6 @@ id: apple_tmobile_bg
 bundle: TMobile_bg.bundle
 supported_plmns:
     - "28405"
-common: {}
 plmn_overrides:
     "28405":
         apple:

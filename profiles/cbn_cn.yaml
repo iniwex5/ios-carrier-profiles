@@ -4,7 +4,6 @@ id: apple_cbn_cn
 bundle: CBN_cn.bundle
 supported_plmns:
     - "46015"
-common: {}
 plmn_overrides:
     "46015":
         ims:
@@ -15,6 +14,9 @@ plmn_overrides:
             signaling:
                 preconditions: supported
                 support_p_early_media: true
+                require_qos_before_ringing: true
+                sip_timers:
+                    InviteResponseTimeout: 6000
             media:
                 rtp_inactivity_seconds: 20
                 rtcp_inactivity_seconds: 20

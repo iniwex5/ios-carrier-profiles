@@ -4,4 +4,3 @@ id: apple_pncc_pw
 bundle: PNCC_pw.bundle
 supported_plmns:
     - "55201"
-common: {}

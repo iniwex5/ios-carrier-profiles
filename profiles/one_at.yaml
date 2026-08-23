@@ -4,12 +4,24 @@ id: apple_one_at
 bundle: One_at.bundle
 supported_plmns:
     - "23205"
-common: {}
 plmn_overrides:
     "23205":
         apple:
             carrier_entitlements:
                 supported_entitlements: 13313
+        e911:
+            over_itech_supported: false
+            wifi_calling_without_entitlement: true
+            emergency_urns:
+                "122": urn:service:sos.fire
+                "128": urn:service:sos.gas
+                "133": urn:service:sos.police
+                "140": urn:service:sos.mountain
+                "141": urn:service:sos.medicalhelp
+                "142": urn:service:sos.mental-health
+                "144": urn:service:sos.ambulance
+                "147": urn:service:sos.children
+                "188": urn:service:sos.testnummer
         entitlement:
             entitlement_url: https://esim-3at-es-prd.ipaas.amdocs.com/3at/prd/executeAppleActions
         ims:
@@ -36,16 +48,21 @@ plmn_overrides:
                 dpd:
                     enabled: false
                     interval_seconds: 600
+                    max_retries: 4
+                    retry_interval_seconds: 10
                 child_sa:
                     proposals:
                         - encryption:
                             - aes256
                           integrity:
                             - sha512
+                          protocol: esp
                           rekey_pfs_group: modp2048
                           lifetime_seconds: 80000
                     lifetime_seconds: 80000
+                    replay_window_size: 12
                 local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+                validate_remote_certificate: false
                 sa_lifetime_seconds: 80000
             register:
                 use_ipsec: true
@@ -66,3 +83,5 @@ plmn_overrides:
                 enabled: true
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: true

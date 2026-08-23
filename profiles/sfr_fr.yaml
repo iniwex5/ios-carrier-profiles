@@ -9,6 +9,9 @@ common:
     apple:
         carrier_entitlements:
             supported_entitlements: 4236289
+    e911:
+        over_itech_supported: true
+        wifi_calling_without_entitlement: true
     entitlement:
         entitlement_url: https://apple-entitlement.sd-sfr.fr
     ims:
@@ -27,9 +30,12 @@ common:
                       integrity:
                         - sha256
                       lifetime_seconds: 86400
+                replay_window_size: 12
             dpd:
                 enabled: false
                 interval_seconds: 600
+                max_retries: 4
+                retry_interval_seconds: 10
             local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
             nat_keepalive_enabled: true
             nat_keepalive_seconds: 20
@@ -46,6 +52,7 @@ common:
                   authentication_method: None
                   eap_method: EAP-AKA
             sa_lifetime_seconds: 80000
+            validate_remote_certificate: false
         ip_stack: ipv6
         media:
             rtcp_interval_seconds: 5
@@ -53,6 +60,13 @@ common:
         register:
             use_ipsec: true
         signaling:
+            additional_headers:
+                - selector: INVITE
+                  headers:
+                    - 'Accept: application/sdp,application/3gpp-ims+xml'
+                - selector: INVITE,INVITE:*
+                  headers:
+                    - 'Feature-Caps: *;+g.3gpp.srvcc-alerting'
             contact:
                 additional_contact_params:
                     - selector: REGISTER,INVITE,INVITE:*
@@ -62,9 +76,13 @@ common:
                         - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
                 always_add_sip_instance: true
             preconditions: supported
+            sip_timers:
+                InviteResponseTimeout: 4000
             support_p_early_media: true
         volte:
             enable_volte_by_default: true
+    roaming:
+        wifi_calling_allowed: false
 plmn_overrides:
     "28010":
         ims:

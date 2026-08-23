@@ -5,4 +5,3 @@ bundle: Free_yt.bundle
 supported_plmns:
     - "20601"
     - "64702"
-common: {}

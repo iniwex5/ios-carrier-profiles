@@ -10,4 +10,6 @@ supported_plmns:
     - "23457"
     - "26050"
     - "27225"
-common: {}
+common:
+    e911:
+        wifi_calling_without_entitlement: false

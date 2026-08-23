@@ -9,6 +9,11 @@ common:
     apple:
         carrier_entitlements:
             supported_entitlements: 1209
+    e911:
+        emergency_urns:
+            "922": 922@vzims.com
+        over_itech_supported: false
+        wifi_calling_without_entitlement: false
     entitlement:
         entitlement_url: https://spc.myvzw.com/ium-RoadrunnerInterface/servlet/IUMServlet
     ims:
@@ -27,23 +32,44 @@ common:
                         - aes128
                       integrity:
                         - sha1
+                      protocol: esp
                       rekey_pfs_group: modp1024
+                      secure_rekey: false
                       lifetime_seconds: 86400
+            disable_switch_to_natt_port: true
             dpd:
                 enabled: false
                 interval_seconds: 600
+                max_retries: 4
+                retry_interval_seconds: 10
             local_identifier: anonymous@nai.epc.mnc480.mcc311.3gppnetwork.org
+            remote_certificate_authority_name: Verizon Wireless ROOT CA - RSA
+            remote_certificate_hostname: wo.vzwwo.com
             sa_lifetime_seconds: 80000
+            validate_remote_certificate: true
         ip_stack: ipv6
         media:
             rtcp_inactivity_seconds: 20
             rtp_inactivity_seconds: 20
         signaling:
+            additional_headers:
+                - selector: INVITE[911,wifi]
+                  headers:
+                    - 'P-com.ServiceType: Static-Emergency'
             csfb_on:
                 - method: INVITE
                   statuses:
                     - "503"
             preconditions: unsupported
+            sip_timers:
+                D: 128000
+                F: 30000
+                InviteResponseTimeout: 10000
+                T1: 3000
+                T2: 16000
+                T4: 17000
             support_p_early_media: false
         volte:
             enable_volte_by_default: true
+    roaming:
+        wifi_calling_allowed: true

@@ -4,4 +4,3 @@ id: apple_orange_mu
 bundle: Orange_mu.bundle
 supported_plmns:
     - "61701"
-common: {}

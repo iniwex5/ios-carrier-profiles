@@ -4,4 +4,3 @@ id: apple_lotusflare
 bundle: LotusFlare.bundle
 supported_plmns:
     - "52501"
-common: {}
