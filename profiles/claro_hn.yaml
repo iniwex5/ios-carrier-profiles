@@ -40,7 +40,7 @@ common:
                   prf:
                     - sha256
                   dh_groups:
-                    - modp2048
+                    - 14
                   lifetime_seconds: 86400
                   authentication_method: None
                   eap_method: EAP-AKA

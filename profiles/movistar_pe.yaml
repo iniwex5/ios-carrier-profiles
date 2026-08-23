@@ -38,7 +38,7 @@ common:
                   prf:
                     - sha1
                   dh_groups:
-                    - modp1536
+                    - 5
                   lifetime_seconds: 80000
                   authentication_method: None
                   eap_method: EAP-AKA

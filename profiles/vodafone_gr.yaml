@@ -31,7 +31,7 @@ plmn_overrides:
                       prf:
                         - sha256
                       dh_groups:
-                        - modp1024
+                        - 2
                       lifetime_seconds: 3600
                       authentication_method: None
                       eap_method: EAP-AKA
