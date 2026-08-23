@@ -26,7 +26,7 @@ common:
                         - aes256
                       integrity:
                         - sha256
-                      pfs_group: modp2048
+                      rekey_pfs_group: modp2048
                       lifetime_seconds: 86400
             nat_keepalive_enabled: true
             sa_lifetime_seconds: 86400

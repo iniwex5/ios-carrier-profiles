@@ -27,7 +27,7 @@ plmn_overrides:
                             - aes256
                           integrity:
                             - sha256
-                          pfs_group: modp2048
+                          rekey_pfs_group: modp2048
                           lifetime_seconds: 6000
                     lifetime_seconds: 6000
                 sa_lifetime_seconds: 86400

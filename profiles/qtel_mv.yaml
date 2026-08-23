@@ -44,7 +44,7 @@ plmn_overrides:
                             - aes256
                           integrity:
                             - sha256
-                          pfs_group: modp2048
+                          rekey_pfs_group: modp2048
                           lifetime_seconds: 86400
                     lifetime_seconds: 86400
                 local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org

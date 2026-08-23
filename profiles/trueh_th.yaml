@@ -30,7 +30,7 @@ common:
                         - aes128
                       integrity:
                         - sha512
-                      pfs_group: modp2048
+                      rekey_pfs_group: modp2048
                       lifetime_seconds: 80000
             dpd:
                 enabled: false
