@@ -25,7 +25,9 @@ common:
         register:
             use_ipsec: true
         signaling:
+            early_media_needs_header: true
             preconditions: supported
+            require_preconditions_when_mandatory: false
             sip_timers:
                 B: 3000000
             support_p_early_media: true

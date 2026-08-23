@@ -11,6 +11,7 @@ plmn_overrides:
                 use_ipsec: true
             signaling:
                 support_p_early_media: true
+                early_media_needs_header: true
                 contact:
                     additional_contact_params:
                         - selector: REGISTER,INVITE,INVITE:*[primary]

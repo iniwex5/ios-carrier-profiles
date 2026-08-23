@@ -21,6 +21,8 @@ common:
                 - method: INVITE
                   statuses:
                     - 3XX
+            early_media_needs_header: true
+            require_preconditions_when_mandatory: false
             support_p_early_media: true
         ussi:
             enabled: true

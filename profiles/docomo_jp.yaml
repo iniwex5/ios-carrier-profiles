@@ -24,6 +24,7 @@ plmn_overrides:
             signaling:
                 preconditions: supported
                 support_p_early_media: true
+                early_media_needs_header: true
                 csfb_on:
                     - method: INVITE
                       statuses:
@@ -64,6 +65,7 @@ plmn_overrides:
                         - "580"
                         - "604"
                         - "606"
+                require_preconditions_when_mandatory: false
             media:
                 rtp_inactivity_seconds: 14
             ussi:

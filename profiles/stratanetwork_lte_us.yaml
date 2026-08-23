@@ -69,6 +69,8 @@ plmn_overrides:
             signaling:
                 max_udp_message_size: 1200
                 support_p_early_media: true
+                early_media_needs_header: false
+                require_preconditions_when_mandatory: true
                 contact:
                     always_add_sip_instance: true
                 additional_headers:

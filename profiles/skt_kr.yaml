@@ -31,6 +31,7 @@ plmn_overrides:
                 max_udp_message_size: 3000
                 preconditions: unsupported
                 support_p_early_media: false
+                early_media_needs_header: false
                 re_register_on:
                     - method: INVITE
                       statuses:
@@ -43,6 +44,7 @@ plmn_overrides:
                         - "414"
                         - "499"
                         - "606"
+                require_preconditions_when_mandatory: false
                 sip_timers:
                     B: 8000
                     D: 32000

@@ -10,6 +10,7 @@ plmn_overrides:
             apn: ims
             signaling:
                 preconditions: supported
+                early_media_needs_header: true
                 csfb_on:
                     - method: INVITE
                       statuses:
@@ -17,6 +18,7 @@ plmn_overrides:
                         - "500"
                         - "503"
                         - "504"
+                require_preconditions_when_mandatory: false
                 contact:
                     always_add_sip_instance: true
                     additional_contact_params:

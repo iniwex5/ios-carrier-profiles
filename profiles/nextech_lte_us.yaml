@@ -70,6 +70,8 @@ plmn_overrides:
                 max_udp_message_size: 1200
                 preconditions: supported
                 support_p_early_media: true
+                early_media_needs_header: true
+                require_preconditions_when_mandatory: false
                 additional_headers:
                     - selector: INVITE[wifi,911]
                       headers:

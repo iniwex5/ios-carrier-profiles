@@ -63,6 +63,7 @@ plmn_overrides:
                 max_udp_message_size: 1200
                 preconditions: unsupported
                 support_p_early_media: true
+                early_media_needs_header: true
                 csfb_on:
                     - method: INVITE
                       statuses:
@@ -71,6 +72,7 @@ plmn_overrides:
                         - 5XX
                         - 6XX
                 require_qos_before_ringing: true
+                require_preconditions_when_mandatory: false
                 contact:
                     additional_contact_params:
                         - selector: REGISTER,INVITE,INVITE:*

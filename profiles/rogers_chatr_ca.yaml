@@ -43,8 +43,10 @@ common:
                     - "414"
                     - "499"
                     - "606"
+            early_media_needs_header: true
             max_udp_message_size: 1200
             preconditions: supported
+            require_preconditions_when_mandatory: false
             require_qos_before_ringing: true
             sip_timers:
                 InviteResponseTimeout: 5000

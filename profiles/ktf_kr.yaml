@@ -38,6 +38,7 @@ common:
                     - "414"
                     - "499"
                     - "606"
+            early_media_needs_header: true
             max_udp_message_size: 3000
             preconditions: unsupported
             re_register_on:
@@ -47,6 +48,7 @@ common:
                     - "406"
                     - "408"
                     - "504"
+            require_preconditions_when_mandatory: false
             sip_timers:
                 A: 1000
                 B: 8000

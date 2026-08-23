@@ -85,7 +85,9 @@ common:
                     - 4XX
                     - 5XX
                     - 6XX
+            early_media_needs_header: true
             preconditions: supported
+            require_preconditions_when_mandatory: false
             sip_timers:
                 InviteResponseTimeout: 4000
             support_p_early_media: true

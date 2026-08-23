@@ -14,7 +14,9 @@ plmn_overrides:
             signaling:
                 preconditions: supported
                 support_p_early_media: true
+                early_media_needs_header: true
                 require_qos_before_ringing: true
+                require_preconditions_when_mandatory: false
                 sip_timers:
                     InviteResponseTimeout: 6000
             media:

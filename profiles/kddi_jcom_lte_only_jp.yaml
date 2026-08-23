@@ -23,7 +23,9 @@ plmn_overrides:
                 use_ipsec: true
             signaling:
                 support_p_early_media: true
+                early_media_needs_header: true
                 require_qos_before_ringing: true
+                require_preconditions_when_mandatory: false
                 sip_timers:
                     B: 10000
                     F: 30000

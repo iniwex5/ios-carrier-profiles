@@ -23,7 +23,9 @@ common:
                       params:
                         - +g.3gpp.mid-call
                         - +g.3gpp.srvcc-alerting
+            early_media_needs_header: true
             preconditions: unsupported
+            require_preconditions_when_mandatory: false
             support_p_early_media: true
         ussi:
             enabled: true

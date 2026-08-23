@@ -81,8 +81,10 @@ common:
                     - "600"
                     - "606"
                     - "503"
+            early_media_needs_header: true
             max_udp_message_size: 1200
             preconditions: supported
+            require_preconditions_when_mandatory: false
             sip_timers:
                 InviteResponseTimeout: 5000
             support_p_early_media: true

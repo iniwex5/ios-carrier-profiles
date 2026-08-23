@@ -65,6 +65,7 @@ plmn_overrides:
                 max_udp_message_size: 1200
                 preconditions: supported
                 support_p_early_media: true
+                early_media_needs_header: true
                 csfb_on:
                     - method: INVITE
                       statuses:
@@ -77,6 +78,7 @@ plmn_overrides:
                         - "600"
                         - "606"
                         - "503"
+                require_preconditions_when_mandatory: false
                 contact:
                     always_add_sip_instance: true
                 sip_timers:

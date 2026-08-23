@@ -60,10 +60,12 @@ plmn_overrides:
             signaling:
                 preconditions: unsupported
                 support_p_early_media: false
+                early_media_needs_header: false
                 csfb_on:
                     - method: INVITE
                       statuses:
                         - "503"
+                require_preconditions_when_mandatory: false
                 sip_timers:
                     D: 128000
                     F: 30000

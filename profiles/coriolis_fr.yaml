@@ -46,6 +46,7 @@ common:
                     - "500"
                     - "503"
                     - "488"
+            early_media_needs_header: true
             preconditions: supported
             support_p_early_media: true
     roaming:

@@ -32,7 +32,9 @@ common:
                     - "403"
                     - "500"
                     - "503"
+            early_media_needs_header: true
             preconditions: supported
+            require_preconditions_when_mandatory: false
             support_p_early_media: true
         ussi:
             enabled: true

@@ -12,6 +12,7 @@ plmn_overrides:
                 include_cellular_network_info: true
             signaling:
                 support_p_early_media: false
+                early_media_needs_header: true
                 csfb_on:
                     - method: INVITE
                       statuses:

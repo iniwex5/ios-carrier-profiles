@@ -84,8 +84,10 @@ common:
                     - 4XX
                     - 5XX
                     - 6XX
+            early_media_needs_header: false
             max_udp_message_size: 1200
             preconditions: supported
+            require_preconditions_when_mandatory: false
             sip_timers:
                 AckReceiveTimeout: 32000
                 AckRetransmitTimer: 32000

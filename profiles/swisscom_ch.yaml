@@ -73,6 +73,7 @@ plmn_overrides:
             signaling:
                 preconditions: supported
                 support_p_early_media: true
+                early_media_needs_header: true
                 re_register_on:
                     - method: REGISTER
                       statuses:
@@ -81,6 +82,7 @@ plmn_overrides:
                       statuses:
                         - "504"
                 require_qos_before_ringing: true
+                require_preconditions_when_mandatory: false
                 contact:
                     additional_contact_params:
                         - selector: REGISTER,INVITE,INVITE:*[primary]

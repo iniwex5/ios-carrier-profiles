@@ -11,6 +11,7 @@ plmn_overrides:
                 use_ipsec: true
             signaling:
                 support_p_early_media: false
+                early_media_needs_header: false
                 contact:
                     additional_contact_params:
                         - selector: REGISTER

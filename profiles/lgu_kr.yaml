@@ -35,12 +35,14 @@ common:
                 - method: INVITE
                   statuses:
                     - "380"
+            early_media_needs_header: false
             max_udp_message_size: 3000
             preconditions: unsupported
             re_register_on:
                 - method: INVITE
                   statuses:
                     - "403"
+            require_preconditions_when_mandatory: false
             sip_timers:
                 A: 2000
                 B: 32000

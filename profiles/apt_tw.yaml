@@ -69,8 +69,10 @@ common:
         register:
             include_cellular_network_info: true
         signaling:
+            early_media_needs_header: true
             max_udp_message_size: 1200
             preconditions: supported
+            require_preconditions_when_mandatory: false
             support_p_early_media: true
         volte:
             enable_volte_by_default: true

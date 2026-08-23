@@ -80,6 +80,7 @@ common:
                       params:
                         - +g.3gpp.mid-call
                         - +g.3gpp.srvcc-alerting
+            early_media_needs_header: true
             preconditions: supported
             re_register_on:
                 - method: REGISTER
@@ -92,6 +93,7 @@ common:
                   statuses:
                     - "403"
                     - "504"
+            require_preconditions_when_mandatory: false
             sip_timers:
                 AckReceiveTimeout: 32000
                 AckRetransmitTimer: 32000

@@ -8,6 +8,7 @@ supported_plmns:
 common:
     ims:
         signaling:
+            early_media_needs_header: false
             support_p_early_media: false
         volte:
             enable_volte_by_default: true

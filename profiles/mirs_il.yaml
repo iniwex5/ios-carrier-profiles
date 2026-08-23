@@ -68,7 +68,9 @@ common:
                         - +g.3gpp.srvcc-alerting
                         - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
                 always_add_sip_instance: false
+            early_media_needs_header: true
             preconditions: supported
+            require_preconditions_when_mandatory: false
             support_p_early_media: true
         ussi:
             enabled: true

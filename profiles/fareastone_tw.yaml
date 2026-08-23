@@ -69,6 +69,7 @@ plmn_overrides:
                 max_udp_message_size: 1200
                 preconditions: supported
                 support_p_early_media: true
+                early_media_needs_header: true
                 csfb_on:
                     - method: INVITE
                       statuses:
@@ -77,6 +78,7 @@ plmn_overrides:
                         - "414"
                         - "499"
                         - "606"
+                require_preconditions_when_mandatory: false
             media:
                 rtp_inactivity_seconds: 300
             ussi:

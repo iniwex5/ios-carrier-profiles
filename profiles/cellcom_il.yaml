@@ -63,6 +63,8 @@ plmn_overrides:
             signaling:
                 preconditions: supported
                 support_p_early_media: true
+                early_media_needs_header: false
+                require_preconditions_when_mandatory: false
                 contact:
                     always_add_sip_instance: false
                     additional_contact_params:

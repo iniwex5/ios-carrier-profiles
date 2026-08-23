@@ -84,12 +84,14 @@ common:
                     - selector: REGISTER,INVITE,INVITE:*
                       params: []
                 always_add_sip_instance: true
+            early_media_needs_header: true
             max_udp_message_size: 1200
             preconditions: required
             re_register_on:
                 - method: INVITE
                   statuses:
                     - "403"
+            require_preconditions_when_mandatory: false
             sip_timers:
                 EmergencyInviteResponseTimeout: 5000
                 F: 30000

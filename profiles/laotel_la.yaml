@@ -12,12 +12,14 @@ plmn_overrides:
                 use_ipsec: true
             signaling:
                 support_p_early_media: true
+                early_media_needs_header: false
                 csfb_on:
                     - method: INVITE
                       statuses:
                         - "500"
                         - "503"
                         - "380"
+                require_preconditions_when_mandatory: false
                 contact:
                     always_add_sip_instance: true
                     additional_contact_params:

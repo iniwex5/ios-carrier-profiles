@@ -83,11 +83,13 @@ common:
             include_cellular_network_info: true
             use_ipsec: true
         signaling:
+            early_media_needs_header: true
             preconditions: unsupported
             re_register_on:
                 - method: INVITE
                   statuses:
                     - "403"
+            require_preconditions_when_mandatory: false
             support_p_early_media: true
         ussi:
             enabled: true

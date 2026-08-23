@@ -77,8 +77,10 @@ common:
                     - "500"
                     - "503"
                     - "504"
+            early_media_needs_header: true
             max_udp_message_size: 1200
             preconditions: supported
+            require_preconditions_when_mandatory: false
             support_p_early_media: true
         ussi:
             enabled: true

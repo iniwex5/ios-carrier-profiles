@@ -14,6 +14,7 @@ plmn_overrides:
             signaling:
                 preconditions: supported
                 support_p_early_media: false
+                early_media_needs_header: false
             ussi:
                 enabled: true
             volte:

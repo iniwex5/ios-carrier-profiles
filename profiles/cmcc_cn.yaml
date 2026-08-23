@@ -47,7 +47,9 @@ common:
                   statuses:
                     - "500"
                     - "503"
+            early_media_needs_header: true
             preconditions: supported
+            require_preconditions_when_mandatory: false
             sip_timers:
                 InviteResponseTimeout: 6000
             support_p_early_media: true

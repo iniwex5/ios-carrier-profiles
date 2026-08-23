@@ -46,6 +46,8 @@ plmn_overrides:
                 include_cellular_network_info: true
             signaling:
                 support_p_early_media: true
+                early_media_needs_header: true
+                require_preconditions_when_mandatory: false
                 contact:
                     always_add_sip_instance: true
                     additional_contact_params:

@@ -71,6 +71,7 @@ common:
                     - 'Supported: geolocation'
             contact:
                 always_add_sip_instance: true
+            early_media_needs_header: true
             preconditions: supported
             re_register_on:
                 - method: REGISTER
@@ -83,6 +84,7 @@ common:
                   statuses:
                     - "403"
                     - "504"
+            require_preconditions_when_mandatory: false
             sip_timers:
                 AckReceiveTimeout: 32000
                 AckRetransmitTimer: 32000

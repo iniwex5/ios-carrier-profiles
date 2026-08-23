@@ -73,8 +73,10 @@ common:
                         - +g.3gpp.srvcc-alerting
                         - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
                 always_add_sip_instance: true
+            early_media_needs_header: true
             max_udp_message_size: 1200
             preconditions: required
+            require_preconditions_when_mandatory: false
             sip_timers:
                 InviteResponseTimeout: 8000
             support_p_early_media: true

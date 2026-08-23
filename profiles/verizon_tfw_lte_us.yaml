@@ -71,7 +71,9 @@ common:
                 - method: INVITE
                   statuses:
                     - "503"
+            early_media_needs_header: false
             preconditions: unsupported
+            require_preconditions_when_mandatory: false
             sip_timers:
                 D: 128000
                 F: 30000

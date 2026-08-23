@@ -71,12 +71,14 @@ common:
                 - method: INVITE
                   statuses:
                     - "380"
+            early_media_needs_header: true
             preconditions: supported
             re_register_on:
                 - method: INVITE
                   statuses:
                     - "500"
                     - "503"
+            require_preconditions_when_mandatory: false
             support_p_early_media: true
         volte:
             enable_volte_by_default: true

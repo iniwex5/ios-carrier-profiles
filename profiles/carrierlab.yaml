@@ -61,6 +61,8 @@ common:
                         - +g.3gpp.mid-call
                         - +g.3gpp.srvcc-alerting
                         - +g.3gpp.accesstype="cellular2"
+            early_media_needs_header: true
             preconditions: supported
+            require_preconditions_when_mandatory: true
             require_qos_before_ringing: true
             support_p_early_media: true

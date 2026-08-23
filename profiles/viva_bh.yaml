@@ -59,8 +59,10 @@ common:
                     - 3XX
                     - 5XX
                     - 6XX
+            early_media_needs_header: true
             max_udp_message_size: 1500
             preconditions: supported
+            require_preconditions_when_mandatory: false
             sip_timers:
                 InviteResponseTimeout: 10000
             support_p_early_media: true

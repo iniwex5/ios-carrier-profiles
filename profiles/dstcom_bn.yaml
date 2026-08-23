@@ -10,6 +10,7 @@ common:
         apn: ims
         ip_stack: ipv4
         signaling:
+            early_media_needs_header: true
             support_p_early_media: true
 selector_overrides:
     "52803":

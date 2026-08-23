@@ -97,7 +97,9 @@ common:
                     - 3XX
                     - 5XX
                     - 6XX
+            early_media_needs_header: true
             preconditions: supported
+            require_preconditions_when_mandatory: false
             support_p_early_media: true
         ussi:
             enabled: true

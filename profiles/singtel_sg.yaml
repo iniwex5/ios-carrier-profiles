@@ -54,6 +54,7 @@ plmn_overrides:
             signaling:
                 preconditions: unsupported
                 support_p_early_media: true
+                early_media_needs_header: true
                 contact:
                     additional_contact_params:
                         - selector: INVITE,INVITE:*

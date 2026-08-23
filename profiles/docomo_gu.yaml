@@ -28,7 +28,9 @@ common:
                     - "403"
                     - "500"
                     - "503"
+            early_media_needs_header: false
             preconditions: supported
+            require_preconditions_when_mandatory: false
             support_p_early_media: false
         volte:
             enable_volte_by_default: true

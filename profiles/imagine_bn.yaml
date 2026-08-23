@@ -11,3 +11,4 @@ plmn_overrides:
             ip_stack: ipv4
             signaling:
                 support_p_early_media: true
+                early_media_needs_header: true

@@ -25,6 +25,8 @@ common:
         register:
             use_ipsec: true
         signaling:
+            early_media_needs_header: true
+            require_preconditions_when_mandatory: false
             require_qos_before_ringing: true
             sip_timers:
                 B: 10000

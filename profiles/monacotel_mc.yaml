@@ -40,6 +40,7 @@ common:
                 - method: INVITE
                   statuses:
                     - "503"
+            early_media_needs_header: false
             preconditions: supported
             support_p_early_media: false
         volte:

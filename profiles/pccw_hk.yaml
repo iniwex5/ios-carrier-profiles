@@ -69,8 +69,10 @@ common:
                       params:
                         - +g.3gpp.mid-call
                         - +g.3gpp.srvcc-alerting
+            early_media_needs_header: true
             max_udp_message_size: 2000
             preconditions: unsupported
+            require_preconditions_when_mandatory: false
             support_p_early_media: true
         ussi:
             enabled: true

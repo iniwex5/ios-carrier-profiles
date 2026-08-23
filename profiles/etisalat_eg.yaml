@@ -15,6 +15,7 @@ plmn_overrides:
             signaling:
                 preconditions: supported
                 support_p_early_media: true
+                early_media_needs_header: true
                 re_register_on:
                     - method: INVITE
                       statuses:
@@ -27,6 +28,7 @@ plmn_overrides:
                         - "600"
                         - "604"
                         - "606"
+                require_preconditions_when_mandatory: false
                 contact:
                     always_add_sip_instance: true
                     additional_contact_params:
