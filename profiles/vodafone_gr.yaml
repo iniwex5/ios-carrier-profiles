@@ -23,9 +23,30 @@ plmn_overrides:
                       name: AssignedPCSCFIPv6
                       type: v6
             ike:
+                proposals:
+                    - encryption:
+                        - aes256
+                      integrity:
+                        - sha256
+                      prf:
+                        - sha256
+                      dh_groups:
+                        - modp1024
+                      lifetime_seconds: 3600
+                      authentication_method: None
+                      eap_method: EAP-AKA
                 dpd:
                     enabled: false
                     interval_seconds: 600
+                child_sa:
+                    proposals:
+                        - encryption:
+                            - aes256
+                          integrity:
+                            - sha256
+                          rekey_pfs_group: modp1024
+                          lifetime_seconds: 3600
+                    lifetime_seconds: 3600
                 sa_lifetime_seconds: 3600
             register:
                 use_ipsec: true

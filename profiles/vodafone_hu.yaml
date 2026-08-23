@@ -45,11 +45,33 @@ plmn_overrides:
                     - encryption:
                         - aes256
                       integrity:
+                        - sha256
+                      prf:
+                        - sha256
+                      dh_groups:
+                        - modp3072
+                      lifetime_seconds: 86400
+                      authentication_method: None
+                      eap_method: EAP-AKA
+                    - encryption:
+                        - aes256
+                      integrity:
                         - sha512
                       prf:
                         - sha512
                       dh_groups:
                         - modp2048
+                      lifetime_seconds: 86400
+                      authentication_method: None
+                      eap_method: EAP-AKA
+                    - encryption:
+                        - aes256
+                      integrity:
+                        - sha512
+                      prf:
+                        - sha512
+                      dh_groups:
+                        - modp3072
                       lifetime_seconds: 86400
                       authentication_method: None
                       eap_method: EAP-AKA

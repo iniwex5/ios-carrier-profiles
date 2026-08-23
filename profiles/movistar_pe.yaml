@@ -17,10 +17,31 @@ common:
                   name: AssignedPCSCFIPv6
                   type: v6
         ike:
+            child_sa:
+                lifetime_seconds: 80000
+                proposals:
+                    - encryption:
+                        - aes256
+                      integrity:
+                        - sha256
+                      rekey_pfs_group: modp1536
+                      lifetime_seconds: 80000
             dpd:
                 enabled: false
                 interval_seconds: 600
             local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+            proposals:
+                - encryption:
+                    - aes256
+                  integrity:
+                    - sha256
+                  prf:
+                    - sha1
+                  dh_groups:
+                    - modp1536
+                  lifetime_seconds: 80000
+                  authentication_method: None
+                  eap_method: EAP-AKA
             sa_lifetime_seconds: 80000
         ip_stack: ipv4
         register:

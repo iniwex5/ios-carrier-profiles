@@ -31,6 +31,15 @@ plmn_overrides:
                 dpd:
                     enabled: false
                     interval_seconds: 600
+                child_sa:
+                    proposals:
+                        - encryption:
+                            - aes256
+                          integrity:
+                            - sha512
+                          rekey_pfs_group: modp8192
+                          lifetime_seconds: 80000
+                    lifetime_seconds: 80000
                 local_identifier: maxis@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
                 sa_lifetime_seconds: 80000
             register:

@@ -36,6 +36,18 @@ common:
                 enabled: false
                 interval_seconds: 600
             local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
+            proposals:
+                - encryption:
+                    - aes256
+                  integrity:
+                    - sha256
+                  prf:
+                    - sha256
+                  dh_groups:
+                    - modp1024
+                  lifetime_seconds: 64800
+                  authentication_method: None
+                  eap_method: EAP-AKA
             sa_lifetime_seconds: 64800
         ip_stack: ipv6
         media:

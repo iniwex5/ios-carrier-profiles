@@ -20,9 +20,30 @@ plmn_overrides:
                       name: AssignedPCSCFIPv4
                       type: v4
             ike:
+                proposals:
+                    - encryption:
+                        - aes256
+                      integrity:
+                        - sha256
+                      prf:
+                        - sha256
+                      dh_groups:
+                        - modp1536
+                      lifetime_seconds: 80000
+                      authentication_method: None
+                      eap_method: EAP-AKA
                 dpd:
                     enabled: false
                     interval_seconds: 600
+                child_sa:
+                    proposals:
+                        - encryption:
+                            - aes256
+                          integrity:
+                            - sha256
+                          rekey_pfs_group: modp1536
+                          lifetime_seconds: 80000
+                    lifetime_seconds: 80000
                 local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
                 sa_lifetime_seconds: 80000
             register:

@@ -19,6 +19,18 @@ common:
                   name: AssignedPCSCFIPv6
                   type: v6
         ike:
+            child_sa:
+                lifetime_seconds: 80000
+                proposals:
+                    - encryption:
+                        - aes256
+                        - aes128
+                      integrity:
+                        - sha512
+                        - sha384
+                        - sha256
+                      rekey_pfs_group: modp2048
+                      lifetime_seconds: 80000
             dpd:
                 enabled: false
                 interval_seconds: 600

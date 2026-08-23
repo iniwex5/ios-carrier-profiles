@@ -22,6 +22,15 @@ plmn_overrides:
                       type: v4
             ike:
                 nat_keepalive_enabled: true
+                child_sa:
+                    proposals:
+                        - encryption:
+                            - aes256
+                          integrity:
+                            - sha512
+                          rekey_pfs_group: modp1024
+                          lifetime_seconds: 86400
+                    lifetime_seconds: 86400
                 sa_lifetime_seconds: 86400
             register:
                 use_ipsec: true

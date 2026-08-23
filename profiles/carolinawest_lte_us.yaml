@@ -41,6 +41,15 @@ plmn_overrides:
                 dpd:
                     enabled: false
                     interval_seconds: 600
+                child_sa:
+                    proposals:
+                        - encryption:
+                            - aes256
+                          integrity:
+                            - sha512
+                          rekey_pfs_group: modp3072
+                          lifetime_seconds: 43200
+                    lifetime_seconds: 43200
                 local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
                 local_identifier_type: IDUserFQDN
                 sa_lifetime_seconds: 43200

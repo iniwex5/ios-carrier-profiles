@@ -24,6 +24,15 @@ plmn_overrides:
                       type: v6
             ike:
                 nat_keepalive_enabled: true
+                child_sa:
+                    proposals:
+                        - encryption:
+                            - aes256
+                          integrity:
+                            - sha512
+                          rekey_pfs_group: modp4096
+                          lifetime_seconds: 86400
+                    lifetime_seconds: 86400
                 local_identifier: PseudoIMSI@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
                 sa_lifetime_seconds: 86400
             register:

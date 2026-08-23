@@ -17,4 +17,13 @@ plmn_overrides:
                       name: AssignedPCSCFIPv6
                       type: v6
             ike:
+                child_sa:
+                    proposals:
+                        - encryption:
+                            - aes128
+                          integrity:
+                            - sha1
+                          rekey_pfs_group: modp1024
+                          lifetime_seconds: 86400
+                    lifetime_seconds: 86400
                 sa_lifetime_seconds: 80000
