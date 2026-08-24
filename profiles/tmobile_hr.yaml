@@ -28,10 +28,13 @@ common:
             child_sa:
                 lifetime_seconds: 64800
                 proposals:
-                    - encryption:
+                    - source_branch: FirstChild
+                      encryption:
                         - aes256
                       integrity:
                         - sha256
+                      esn: auto
+                      install_policies: true
                       lifetime_seconds: 64800
                 replay_window_size: 12
             dpd:
@@ -86,4 +89,8 @@ plmn_overrides:
     "21920":
         ims:
             epdg:
-                address: epdg.epc.mnc001.mcc219.pub.3gppnetwork.org
+                candidates:
+                    - address: epdg.epc.mnc001.mcc219.pub.3gppnetwork.org
+                      ip_family: ipv4
+                      source: uicc
+                      priority: 20

@@ -29,12 +29,15 @@ plmn_overrides:
                 nat_keepalive_enabled: true
                 child_sa:
                     proposals:
-                        - encryption:
+                        - source_branch: FirstChild
+                          encryption:
                             - aes256
                           integrity:
                             - sha256
                           protocol: esp
-                          rekey_pfs_group: modp2048
+                          rekey_pfs_group: 14
+                          esn: auto
+                          install_policies: true
                           lifetime_seconds: 86400
                     lifetime_seconds: 86400
                 local_identifier: anonymous@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org

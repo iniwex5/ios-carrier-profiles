@@ -25,10 +25,12 @@ common:
             child_sa:
                 lifetime_seconds: 86400
                 proposals:
-                    - encryption:
+                    - source_branch: FirstChild
+                      encryption:
                         - aes128
                       integrity:
                         - sha256
+                      esn: auto
                       lifetime_seconds: 86400
                 replay_window_size: 12
             dpd:
@@ -89,4 +91,8 @@ plmn_overrides:
     "28010":
         ims:
             epdg:
-                address: epdg.epc.mnc010.mcc208.pub.3gppnetwork.org
+                candidates:
+                    - address: epdg.epc.mnc010.mcc208.pub.3gppnetwork.org
+                      ip_family: ipv6
+                      source: uicc
+                      priority: 20

@@ -43,10 +43,12 @@ plmn_overrides:
                     enabled: false
                 child_sa:
                     proposals:
-                        - encryption:
+                        - source_branch: FirstChild
+                          encryption:
                             - aes256
                           integrity:
                             - sha256
+                          esn: auto
                           lifetime_seconds: 86400
                     lifetime_seconds: 86400
                 sa_lifetime_seconds: 86400

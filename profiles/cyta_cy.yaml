@@ -27,10 +27,12 @@ plmn_overrides:
                 disable_switch_to_natt_port: true
                 child_sa:
                     proposals:
-                        - encryption:
+                        - source_branch: FirstChild
+                          encryption:
                             - aes256
                           integrity:
                             - sha256
+                          esn: auto
                           lifetime_seconds: 28800
                     lifetime_seconds: 28800
                 sa_lifetime_seconds: 86400

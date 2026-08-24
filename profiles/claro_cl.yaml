@@ -21,7 +21,11 @@ plmn_overrides:
             apn: ims
             ip_stack: ipv4
             epdg:
-                address: epdg.ims.mnc003.mcc730.pub.3gppnetwork.org
+                candidates:
+                    - address: epdg.ims.mnc003.mcc730.pub.3gppnetwork.org
+                      ip_family: ipv4
+                      source: uicc
+                      priority: 20
                 configuration_attributes:
                     - identifier: 16389
                       name: AssignedPCSCFIPv4
@@ -49,11 +53,14 @@ plmn_overrides:
                     retry_interval_seconds: 10
                 child_sa:
                     proposals:
-                        - encryption:
+                        - source_branch: FirstChild
+                          encryption:
                             - aes256
                           integrity:
                             - sha256
-                          rekey_pfs_group: modp2048
+                          rekey_pfs_group: 14
+                          esn: auto
+                          install_policies: true
                           lifetime_seconds: 86400
                     lifetime_seconds: 86400
                     replay_window_size: 12

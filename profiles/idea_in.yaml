@@ -48,12 +48,15 @@ common:
             child_sa:
                 lifetime_seconds: 86400
                 proposals:
-                    - encryption:
+                    - source_branch: FirstChild
+                      encryption:
                         - aes256
                       integrity:
                         - sha256
                         - sha1
                       protocol: esp
+                      esn: auto
+                      install_policies: true
                       secure_rekey: false
                       lifetime_seconds: 86400
             disable_switch_to_natt_port: true

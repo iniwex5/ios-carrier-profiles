@@ -23,10 +23,12 @@ common:
             child_sa:
                 lifetime_seconds: 86400
                 proposals:
-                    - encryption:
+                    - source_branch: FirstChild
+                      encryption:
                         - aes256
                       integrity:
                         - sha512
+                      esn: auto
                       lifetime_seconds: 86400
             nat_keepalive_enabled: true
             sa_lifetime_seconds: 86400
@@ -65,4 +67,8 @@ plmn_overrides:
     "22299":
         ims:
             epdg:
-                address: epdg.epc.mnc088.mcc222.pub.3gppnetwork.org
+                candidates:
+                    - address: epdg.epc.mnc088.mcc222.pub.3gppnetwork.org
+                      ip_family: ipv4v6
+                      source: uicc
+                      priority: 20

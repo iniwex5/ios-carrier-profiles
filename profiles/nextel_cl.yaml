@@ -23,12 +23,15 @@ common:
             child_sa:
                 lifetime_seconds: 86400
                 proposals:
-                    - encryption:
+                    - source_branch: FirstChild
+                      encryption:
                         - aes256
                       integrity:
                         - sha256
                       protocol: esp
-                      rekey_pfs_group: modp2048
+                      rekey_pfs_group: 14
+                      esn: auto
+                      install_policies: true
                       lifetime_seconds: 86400
             local_identifier: 0$imsi@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
             nat_keepalive_enabled: true
@@ -84,4 +87,8 @@ plmn_overrides:
     "730090":
         ims:
             epdg:
-                address: epdg.epc.mnc009.mcc730.pub.3gppnetwork.org
+                candidates:
+                    - address: epdg.epc.mnc009.mcc730.pub.3gppnetwork.org
+                      ip_family: ipv4
+                      source: uicc
+                      priority: 20

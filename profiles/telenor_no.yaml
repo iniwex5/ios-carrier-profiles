@@ -52,10 +52,13 @@ plmn_overrides:
                     retry_interval_seconds: 10
                 child_sa:
                     proposals:
-                        - encryption:
+                        - source_branch: FirstChild
+                          encryption:
                             - aes256
                           integrity:
                             - sha256
+                          esn: auto
+                          install_policies: true
                           lifetime_seconds: 80000
                     lifetime_seconds: 80000
                     replay_window_size: 12

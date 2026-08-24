@@ -46,11 +46,14 @@ plmn_overrides:
                     retry_interval_seconds: 10
                 child_sa:
                     proposals:
-                        - encryption:
+                        - source_branch: FirstChild
+                          encryption:
                             - aes256
                           integrity:
                             - sha512
-                          rekey_pfs_group: modp3072
+                          rekey_pfs_group: 15
+                          esn: auto
+                          install_policies: true
                           lifetime_seconds: 43200
                     lifetime_seconds: 43200
                     replay_window_size: 12

@@ -17,7 +17,11 @@ common:
     ims:
         apn: ims
         epdg:
-            address: epdg.epc.mnc004.mcc426.pub.stc.com.bh
+            candidates:
+                - address: epdg.epc.mnc004.mcc426.pub.stc.com.bh
+                  ip_family: ipv4
+                  source: uicc
+                  priority: 20
             configuration_attributes:
                 - identifier: 16384
                   name: AssignedPCSCFIPv4
@@ -29,11 +33,13 @@ common:
             child_sa:
                 lifetime_seconds: 86400
                 proposals:
-                    - encryption:
+                    - source_branch: FirstChild
+                      encryption:
                         - aes128
                       integrity:
                         - sha256
-                      rekey_pfs_group: modp2048
+                      rekey_pfs_group: 14
+                      esn: auto
                       lifetime_seconds: 86400
             nat_keepalive_enabled: true
             sa_lifetime_seconds: 86400

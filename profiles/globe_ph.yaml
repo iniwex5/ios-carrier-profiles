@@ -20,7 +20,11 @@ plmn_overrides:
             apn: ims
             ip_stack: ipv4v6
             epdg:
-                address: weconnect.globe.com.ph
+                candidates:
+                    - address: weconnect.globe.com.ph
+                      ip_family: ipv4v6
+                      source: uicc
+                      priority: 20
                 configuration_attributes:
                     - identifier: 16384
                       name: AssignedPCSCFIPv4
@@ -33,11 +37,14 @@ plmn_overrides:
                 ipsec_mtu: 1280
                 child_sa:
                     proposals:
-                        - encryption:
+                        - source_branch: FirstChild
+                          encryption:
                             - aes256
                           integrity:
                             - sha256
-                          rekey_pfs_group: modp2048
+                          rekey_pfs_group: 14
+                          esn: auto
+                          install_policies: true
                           lifetime_seconds: 86400
                     lifetime_seconds: 86400
                     replay_window_size: 12

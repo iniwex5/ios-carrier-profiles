@@ -18,7 +18,11 @@ plmn_overrides:
             apn: ims
             ip_stack: ipv4v6
             epdg:
-                address: epdg.mobily.com.sa
+                candidates:
+                    - address: epdg.mobily.com.sa
+                      ip_family: ipv4v6
+                      source: uicc
+                      priority: 20
                 configuration_attributes:
                     - identifier: 16384
                       name: AssignedPCSCFIPv4
@@ -30,11 +34,13 @@ plmn_overrides:
                 nat_keepalive_enabled: true
                 child_sa:
                     proposals:
-                        - encryption:
+                        - source_branch: FirstChild
+                          encryption:
                             - aes128
                           integrity:
                             - sha256
-                          rekey_pfs_group: modp2048
+                          rekey_pfs_group: 14
+                          esn: auto
                           lifetime_seconds: 86400
                     lifetime_seconds: 86400
                 sa_lifetime_seconds: 86400

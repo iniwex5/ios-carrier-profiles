@@ -21,7 +21,11 @@ plmn_overrides:
             impi_format: imsi@carrierDomain
             impu_format: imsi@carrierDomain
             epdg:
-                address: ims.epdg.gci.net
+                candidates:
+                    - address: ims.epdg.gci.net
+                      ip_family: ipv4v6
+                      source: uicc
+                      priority: 20
                 configuration_attributes:
                     - identifier: 20
                       name: AssignedPCSCFIPv4
@@ -48,10 +52,13 @@ plmn_overrides:
                     retry_interval_seconds: 15
                 child_sa:
                     proposals:
-                        - encryption:
+                        - source_branch: FirstChild
+                          encryption:
                             - aes256
                           integrity:
                             - sha256
+                          esn: auto
+                          install_policies: true
                           lifetime_seconds: 86400
                     lifetime_seconds: 86400
                     replay_window_size: 12

@@ -21,7 +21,11 @@ plmn_overrides:
             apn: ims
             ip_stack: ipv4v6
             epdg:
-                address: epdg.mobileone.net.sg
+                candidates:
+                    - address: epdg.mobileone.net.sg
+                      ip_family: ipv4v6
+                      source: uicc
+                      priority: 20
                 configuration_attributes:
                     - identifier: 16384
                       name: AssignedPCSCFIPv4
@@ -49,11 +53,14 @@ plmn_overrides:
                     retry_interval_seconds: 10
                 child_sa:
                     proposals:
-                        - encryption:
+                        - source_branch: FirstChild
+                          encryption:
                             - aes128
                           integrity:
                             - sha256
-                          rekey_pfs_group: modp2048
+                          rekey_pfs_group: 14
+                          esn: auto
+                          install_policies: true
                           lifetime_seconds: 8640
                     lifetime_seconds: 8640
                     replay_window_size: 12

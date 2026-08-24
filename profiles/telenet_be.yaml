@@ -17,7 +17,11 @@ common:
     ims:
         apn: ims
         epdg:
-            address: epdg.telco.telenet-ops.be
+            candidates:
+                - address: epdg.telco.telenet-ops.be
+                  ip_family: ipv6
+                  source: uicc
+                  priority: 20
             configuration_attributes:
                 - identifier: 16384
                   name: AssignedPCSCFIPv4
@@ -29,10 +33,13 @@ common:
             child_sa:
                 lifetime_seconds: 80000
                 proposals:
-                    - encryption:
+                    - source_branch: FirstChild
+                      encryption:
                         - aes256
                       integrity:
                         - sha512
+                      esn: auto
+                      install_policies: true
                       lifetime_seconds: 80000
                 replay_window_size: 12
             dpd:

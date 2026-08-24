@@ -17,7 +17,11 @@ plmn_overrides:
             apn: ims
             ip_stack: ipv4v6
             epdg:
-                address: epdg.epc.att.net
+                candidates:
+                    - address: epdg.epc.att.net
+                      ip_family: ipv4v6
+                      source: uicc
+                      priority: 20
                 configuration_attributes:
                     - identifier: 16384
                       name: AssignedPCSCFIPv4
@@ -46,10 +50,13 @@ plmn_overrides:
                     retry_interval_seconds: 10
                 child_sa:
                     proposals:
-                        - encryption:
+                        - source_branch: FirstChild
+                          encryption:
                             - aes128
                           integrity:
                             - sha256
+                          esn: auto
+                          install_policies: true
                           lifetime_seconds: 80000
                     lifetime_seconds: 80000
                     replay_window_size: 12

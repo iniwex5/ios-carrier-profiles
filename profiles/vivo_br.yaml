@@ -32,10 +32,13 @@ common:
             child_sa:
                 lifetime_seconds: 86400
                 proposals:
-                    - encryption:
+                    - source_branch: FirstChild
+                      encryption:
                         - aes256
                       integrity:
                         - sha256
+                      esn: auto
+                      install_policies: true
                       lifetime_seconds: 86400
                 replay_window_size: 12
             dpd:

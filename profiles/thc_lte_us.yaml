@@ -19,7 +19,11 @@ plmn_overrides:
             apn: ims
             ip_stack: ipv4v6
             epdg:
-                address: wo.vzwwo.com
+                candidates:
+                    - address: wo.vzwwo.com
+                      ip_family: ipv4v6
+                      source: uicc
+                      priority: 20
                 timeout_seconds: 30
                 configuration_attributes:
                     - identifier: 16390
@@ -46,12 +50,15 @@ plmn_overrides:
                     retry_interval_seconds: 10
                 child_sa:
                     proposals:
-                        - encryption:
+                        - source_branch: FirstChild
+                          encryption:
                             - aes256
                           integrity:
                             - sha256
                           protocol: esp
-                          rekey_pfs_group: modp2048
+                          rekey_pfs_group: 14
+                          esn: auto
+                          install_policies: true
                           secure_rekey: false
                           lifetime_seconds: 86400
                     lifetime_seconds: 86400

@@ -21,7 +21,11 @@ common:
     ims:
         apn: ims
         epdg:
-            address: wo.vzwwo.com
+            candidates:
+                - address: wo.vzwwo.com
+                  ip_family: ipv6
+                  source: uicc
+                  priority: 20
             configuration_attributes:
                 - identifier: 16390
                   name: AssignedPCSCFIPv6
@@ -31,12 +35,15 @@ common:
             child_sa:
                 lifetime_seconds: 86400
                 proposals:
-                    - encryption:
+                    - source_branch: FirstChild
+                      encryption:
                         - aes256
                       integrity:
                         - sha256
                       protocol: esp
-                      rekey_pfs_group: modp2048
+                      rekey_pfs_group: 14
+                      esn: auto
+                      install_policies: true
                       secure_rekey: false
                       lifetime_seconds: 86400
             disable_switch_to_natt_port: true

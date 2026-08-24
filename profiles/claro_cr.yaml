@@ -14,7 +14,11 @@ common:
     ims:
         apn: ims
         epdg:
-            address: epdg.ims.mnc003.mcc712.pub.3gppnetwork.org
+            candidates:
+                - address: epdg.ims.mnc003.mcc712.pub.3gppnetwork.org
+                  ip_family: ipv4v6
+                  source: uicc
+                  priority: 20
             configuration_attributes:
                 - identifier: 16389
                   name: AssignedPCSCFIPv4
@@ -26,11 +30,14 @@ common:
             child_sa:
                 lifetime_seconds: 86400
                 proposals:
-                    - encryption:
+                    - source_branch: FirstChild
+                      encryption:
                         - aes256
                       integrity:
                         - sha256
-                      rekey_pfs_group: modp2048
+                      rekey_pfs_group: 14
+                      esn: auto
+                      install_policies: true
                       lifetime_seconds: 86400
                 replay_window_size: 12
             dpd:
