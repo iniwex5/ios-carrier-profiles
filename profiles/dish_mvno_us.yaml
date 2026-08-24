@@ -97,20 +97,8 @@ selector_overrides:
     310240_GID1-6432:
         ims:
             apn: ims
-            epdg:
-                candidates:
-                    - address: ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
-                      ip_family: ipv4v6
-                      source: uicc
-                      priority: 20
             ip_stack: ipv4v6
     310240_GID1-6434:
         ims:
             apn: ims
-            epdg:
-                candidates:
-                    - address: ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
-                      ip_family: ipv4v6
-                      source: uicc
-                      priority: 20
             ip_stack: ipv4v6

@@ -20,7 +20,6 @@ plmn_overrides:
             epdg:
                 candidates:
                     - address: voice.salt.ch
-                      ip_family: ipv4v6
                       source: uicc
                       priority: 20
                 configuration_attributes:

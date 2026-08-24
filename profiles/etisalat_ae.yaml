@@ -20,7 +20,6 @@ plmn_overrides:
             epdg:
                 candidates:
                     - address: epdg.epc.mnc002.mcc424.etisalat.ae
-                      ip_family: ipv4v6
                       source: uicc
                       priority: 20
                 configuration_attributes:

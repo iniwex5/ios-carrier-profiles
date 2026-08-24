@@ -91,6 +91,5 @@ plmn_overrides:
             epdg:
                 candidates:
                     - address: epdg.epc.mnc001.mcc219.pub.3gppnetwork.org
-                      ip_family: ipv4
                       source: uicc
                       priority: 20

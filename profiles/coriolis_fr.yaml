@@ -15,7 +15,6 @@ common:
         epdg:
             candidates:
                 - address: epdg.epc.mnc027.mcc208.pub.3gppnetwork.org
-                  ip_family: ipv4v6
                   source: uicc
                   priority: 20
             configuration_attributes:

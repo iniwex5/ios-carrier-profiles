@@ -26,7 +26,6 @@ common:
         epdg:
             candidates:
                 - address: epdg.epc.att.net
-                  ip_family: ipv4v6
                   source: uicc
                   priority: 20
             configuration_attributes:
@@ -130,9 +129,4 @@ selector_overrides:
     "310170":
         ims:
             apn: null
-            epdg:
-                candidates:
-                    - address: epdg.epc.att.net
-                      source: uicc
-                      priority: 20
             ip_stack: null

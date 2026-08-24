@@ -23,7 +23,6 @@ common:
         epdg:
             candidates:
                 - address: wo.vzwwo.com
-                  ip_family: ipv6
                   source: uicc
                   priority: 20
             configuration_attributes:

@@ -55,6 +55,5 @@ plmn_overrides:
             epdg:
                 candidates:
                     - address: epdg.epc.mnc014.mcc242.pub.3gppnetwork.org
-                      ip_family: ipv6
                       source: uicc
                       priority: 20

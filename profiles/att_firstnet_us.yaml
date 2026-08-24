@@ -21,7 +21,6 @@ common:
         epdg:
             candidates:
                 - address: epdg.epc.firstnet.com
-                  ip_family: ipv4v6
                   source: uicc
                   priority: 20
             configuration_attributes:

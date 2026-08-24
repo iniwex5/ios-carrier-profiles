@@ -18,7 +18,6 @@ plmn_overrides:
             epdg:
                 candidates:
                     - address: witalkios.mobifone.vn
-                      ip_family: ipv4v6
                       source: uicc
                       priority: 20
                 configuration_attributes:

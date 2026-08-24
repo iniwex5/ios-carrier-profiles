@@ -19,7 +19,6 @@ common:
         epdg:
             candidates:
                 - address: epdg.telco.telenet-ops.be
-                  ip_family: ipv6
                   source: uicc
                   priority: 20
             configuration_attributes:

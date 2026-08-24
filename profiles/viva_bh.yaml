@@ -19,7 +19,6 @@ common:
         epdg:
             candidates:
                 - address: epdg.epc.mnc004.mcc426.pub.stc.com.bh
-                  ip_family: ipv4
                   source: uicc
                   priority: 20
             configuration_attributes:

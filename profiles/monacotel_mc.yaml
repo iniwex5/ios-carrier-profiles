@@ -14,7 +14,6 @@ common:
         epdg:
             candidates:
                 - address: epdg.monaco-telecom.mc
-                  ip_family: ipv4
                   source: uicc
                   priority: 20
             configuration_attributes:

@@ -19,7 +19,6 @@ common:
         epdg:
             candidates:
                 - address: epdg.epc.mnc005.mcc530.pub.3gppnetwork.spark.co.nz
-                  ip_family: ipv6
                   source: uicc
                   priority: 20
             configuration_attributes:

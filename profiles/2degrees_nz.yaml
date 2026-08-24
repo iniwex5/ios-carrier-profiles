@@ -20,7 +20,6 @@ plmn_overrides:
             epdg:
                 candidates:
                     - address: epdg.ims.2degrees.net.nz
-                      ip_family: ipv4
                       source: uicc
                       priority: 20
                 configuration_attributes:

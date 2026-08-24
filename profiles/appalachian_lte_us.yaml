@@ -22,7 +22,6 @@ plmn_overrides:
             epdg:
                 candidates:
                     - address: wo.vzwwo.com
-                      ip_family: ipv6
                       source: uicc
                       priority: 20
                 timeout_seconds: 30

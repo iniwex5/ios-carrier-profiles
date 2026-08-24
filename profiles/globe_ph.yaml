@@ -22,7 +22,6 @@ plmn_overrides:
             epdg:
                 candidates:
                     - address: weconnect.globe.com.ph
-                      ip_family: ipv4v6
                       source: uicc
                       priority: 20
                 configuration_attributes:
