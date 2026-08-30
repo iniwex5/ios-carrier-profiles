@@ -18,6 +18,7 @@ plmn_overrides:
             apn: ims
             ip_stack: ipv6
             epdg:
+                address: epdg.epc.mnc030.mcc216.pub.3gppnetwork.org
                 configuration_attributes:
                     - identifier: 20
                       name: AssignedPCSCFIPv4

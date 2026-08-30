@@ -19,10 +19,7 @@ common:
         apn: ims
         domain: ims.mnc230.mcc311.3gppnetwork.org
         epdg:
-            candidates:
-                - address: ePDG.VoWifi.Cspire.com
-                  source: uicc
-                  priority: 20
+            address: ePDG.VoWifi.Cspire.com
             configuration_attributes:
                 - identifier: 16384
                   name: AssignedPCSCFIPv4

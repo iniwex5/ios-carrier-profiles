@@ -65,3 +65,12 @@ common:
             enable_volte_by_default: true
     roaming:
         wifi_calling_allowed: false
+plmn_overrides:
+    "20404":
+        ims:
+            epdg:
+                address: epdg.epc.mnc004.mcc204.pub.3gppnetwork.org
+    "26202":
+        ims:
+            epdg:
+                address: epdg.epc.mnc002.mcc262.pub.3gppnetwork.org

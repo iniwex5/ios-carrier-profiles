@@ -19,10 +19,7 @@ plmn_overrides:
             apn: ims
             ip_stack: ipv4v6
             epdg:
-                candidates:
-                    - address: wo.vzwwo.com
-                      source: uicc
-                      priority: 20
+                address: wo.vzwwo.com
                 timeout_seconds: 30
                 configuration_attributes:
                     - identifier: 16390

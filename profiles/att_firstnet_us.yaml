@@ -19,10 +19,7 @@ common:
     ims:
         apn: ims
         epdg:
-            candidates:
-                - address: epdg.epc.firstnet.com
-                  source: uicc
-                  priority: 20
+            address: epdg.epc.firstnet.com
             configuration_attributes:
                 - identifier: 16384
                   name: AssignedPCSCFIPv4

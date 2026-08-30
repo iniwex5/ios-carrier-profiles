@@ -18,10 +18,7 @@ plmn_overrides:
             apn: ims
             ip_stack: ipv4v6
             epdg:
-                candidates:
-                    - address: voice.salt.ch
-                      source: uicc
-                      priority: 20
+                address: voice.salt.ch
                 configuration_attributes:
                     - identifier: 20
                       name: AssignedPCSCFIPv4

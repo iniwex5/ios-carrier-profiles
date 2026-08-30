@@ -19,10 +19,7 @@ common:
     ims:
         apn: ims
         epdg:
-            candidates:
-                - address: epdg.epc.mnc000.mcc454.pub.3gppnetwork.org
-                  source: uicc
-                  priority: 20
+            address: epdg.epc.mnc000.mcc454.pub.3gppnetwork.org
             configuration_attributes:
                 - identifier: 20
                   name: AssignedPCSCFIPv4
@@ -87,8 +84,3 @@ common:
             enable_volte_by_default: true
     roaming:
         wifi_calling_allowed: false
-plmn_overrides:
-    "45400":
-        ims:
-            epdg:
-                candidates: null

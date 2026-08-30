@@ -17,6 +17,7 @@ plmn_overrides:
         ims:
             apn: ims
             epdg:
+                address: epdg.epc.mnc001.mcc272.pub.3gppnetwork.org
                 configuration_attributes:
                     - identifier: 16384
                       name: AssignedPCSCFIPv4

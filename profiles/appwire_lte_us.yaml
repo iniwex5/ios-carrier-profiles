@@ -22,10 +22,7 @@ plmn_overrides:
             impi_format: imsi@carrierDomain
             impu_format: imsi@carrierDomain
             epdg:
-                candidates:
-                    - address: epdg.myawi.com
-                      source: uicc
-                      priority: 20
+                address: epdg.myawi.com
                 configuration_attributes:
                     - identifier: 16384
                       name: AssignedPCSCFIPv4

@@ -12,6 +12,7 @@ common:
     ims:
         apn: ims
         epdg:
+            address: epdg.epc.mnc009.mcc730.pub.3gppnetwork.org
             configuration_attributes:
                 - identifier: 16384
                   name: AssignedPCSCFIPv4
@@ -83,11 +84,3 @@ common:
             enable_volte_by_default: true
     roaming:
         wifi_calling_allowed: true
-plmn_overrides:
-    "730090":
-        ims:
-            epdg:
-                candidates:
-                    - address: epdg.epc.mnc009.mcc730.pub.3gppnetwork.org
-                      source: uicc
-                      priority: 20

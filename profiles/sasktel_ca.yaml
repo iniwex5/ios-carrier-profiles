@@ -16,6 +16,7 @@ common:
     ims:
         apn: ims
         epdg:
+            address: epdg.epc.mnc780.mcc302.pub.3gppnetwork.org
             configuration_attributes:
                 - identifier: 16384
                   name: AssignedPCSCFIPv4
@@ -72,17 +73,10 @@ common:
             preconditions: supported
             require_preconditions_when_mandatory: false
             support_p_early_media: true
+        transport: tcp
         ussi:
             enabled: true
         volte:
             enable_volte_by_default: true
     roaming:
         wifi_calling_allowed: false
-plmn_overrides:
-    "20404":
-        ims:
-            epdg:
-                candidates:
-                    - address: epdg.epc.mnc780.mcc302.pub.3gppnetwork.org
-                      source: uicc
-                      priority: 20

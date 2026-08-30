@@ -21,10 +21,7 @@ plmn_overrides:
             impi_format: imsi@carrierDomain
             impu_format: imsi@carrierDomain
             epdg:
-                candidates:
-                    - address: ims.epdg.gci.net
-                      source: uicc
-                      priority: 20
+                address: ims.epdg.gci.net
                 configuration_attributes:
                     - identifier: 20
                       name: AssignedPCSCFIPv4

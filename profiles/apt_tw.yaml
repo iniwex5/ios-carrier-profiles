@@ -22,10 +22,7 @@ common:
         apn: ims
         domain: volte.aptg.com.tw
         epdg:
-            candidates:
-                - address: epdg.epc.aptg.com.tw
-                  source: uicc
-                  priority: 20
+            address: epdg.epc.aptg.com.tw
             configuration_attributes:
                 - identifier: 16384
                   name: AssignedPCSCFIPv4

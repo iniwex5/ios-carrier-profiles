@@ -22,10 +22,7 @@ plmn_overrides:
             apn: ims
             ip_stack: ipv4v6
             epdg:
-                candidates:
-                    - address: epdg.ims.mnc101.mcc732.pub.3gppnetwork.org
-                      source: uicc
-                      priority: 20
+                address: epdg.ims.mnc101.mcc732.pub.3gppnetwork.org
                 configuration_attributes:
                     - identifier: 16389
                       name: AssignedPCSCFIPv4

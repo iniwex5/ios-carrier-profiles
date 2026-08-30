@@ -10,10 +10,7 @@ plmn_overrides:
             over_itech_supported: false
         ims:
             epdg:
-                candidates:
-                    - address: epdg.epc.mnc001.mcc214.pub.3gppnetwork.org
-                      source: uicc
-                      priority: 20
+                address: epdg.epc.mnc001.mcc214.pub.3gppnetwork.org
                 configuration_attributes:
                     - identifier: 20
                       name: AssignedPCSCFIPv4

@@ -18,10 +18,7 @@ plmn_overrides:
             apn: ims
             ip_stack: ipv6
             epdg:
-                candidates:
-                    - address: epdg.telco.telenet-ops.be
-                      source: uicc
-                      priority: 20
+                address: epdg.telco.telenet-ops.be
                 configuration_attributes:
                     - identifier: 16384
                       name: AssignedPCSCFIPv4

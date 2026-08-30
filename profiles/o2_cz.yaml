@@ -17,6 +17,8 @@ plmn_overrides:
         ims:
             apn: ims
             ip_stack: ipv6
+            epdg:
+                address: epdg.epc.mnc002.mcc230.pub.3gppnetwork.org
             ike:
                 nat_keepalive_enabled: true
                 child_sa:

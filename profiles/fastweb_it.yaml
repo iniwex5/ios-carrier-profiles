@@ -11,10 +11,7 @@ common:
     ims:
         domain: ims.mnc008.mcc222.3gppnetwork.org
         epdg:
-            candidates:
-                - address: epdg.fastweb.it
-                  source: uicc
-                  priority: 20
+            address: epdg.fastweb.it
         ike:
             child_sa:
                 lifetime_seconds: 86400

@@ -18,10 +18,7 @@ common:
     ims:
         apn: ims
         epdg:
-            candidates:
-                - address: epdg.epc.mnc001.mcc505.pub.3gppnetwork.org
-                  source: uicc
-                  priority: 20
+            address: epdg.epc.mnc001.mcc505.pub.3gppnetwork.org
             configuration_attributes:
                 - identifier: 16384
                   name: AssignedPCSCFIPv4
@@ -79,8 +76,3 @@ common:
             support_p_early_media: true
         volte:
             enable_volte_by_default: true
-plmn_overrides:
-    "50501":
-        ims:
-            epdg:
-                candidates: null

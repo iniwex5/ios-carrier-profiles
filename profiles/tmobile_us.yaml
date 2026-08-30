@@ -31,10 +31,7 @@ common:
     ims:
         apn: ims
         epdg:
-            candidates:
-                - address: ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
-                  source: uicc
-                  priority: 20
+            address: ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
             configuration_attributes:
                 - identifier: 16384
                   name: AssignedPCSCFIPv4

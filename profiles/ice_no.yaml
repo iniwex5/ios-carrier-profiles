@@ -12,6 +12,7 @@ common:
     ims:
         apn: ims
         epdg:
+            address: epdg.epc.mnc014.mcc242.pub.3gppnetwork.org
             configuration_attributes:
                 - identifier: 16386
                   name: AssignedPCSCFIPv6
@@ -49,11 +50,3 @@ common:
             support_p_early_media: true
         volte:
             enable_volte_by_default: true
-plmn_overrides:
-    "20404":
-        ims:
-            epdg:
-                candidates:
-                    - address: epdg.epc.mnc014.mcc242.pub.3gppnetwork.org
-                      source: uicc
-                      priority: 20

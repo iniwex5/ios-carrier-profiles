@@ -21,10 +21,7 @@ common:
     ims:
         apn: ims
         epdg:
-            candidates:
-                - address: wo.vzwwo.com
-                  source: uicc
-                  priority: 20
+            address: wo.vzwwo.com
             configuration_attributes:
                 - identifier: 16390
                   name: AssignedPCSCFIPv6

@@ -21,10 +21,7 @@ plmn_overrides:
             apn: ims
             ip_stack: ipv4v6
             epdg:
-                candidates:
-                    - address: epdg.mobileone.net.sg
-                      source: uicc
-                      priority: 20
+                address: epdg.mobileone.net.sg
                 configuration_attributes:
                     - identifier: 16384
                       name: AssignedPCSCFIPv4

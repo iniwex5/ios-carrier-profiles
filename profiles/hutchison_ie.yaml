@@ -17,10 +17,7 @@ plmn_overrides:
             apn: ims
             ip_stack: ipv4v6
             epdg:
-                candidates:
-                    - address: epdg.three.ie
-                      source: uicc
-                      priority: 20
+                address: epdg.three.ie
                 configuration_attributes:
                     - identifier: 16384
                       name: AssignedPCSCFIPv4

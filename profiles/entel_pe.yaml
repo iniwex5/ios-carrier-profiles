@@ -17,6 +17,8 @@ plmn_overrides:
         ims:
             apn: ims
             ip_stack: ipv4v6
+            epdg:
+                address: epdg.epc.mnc017.mcc716.pub.3gppnetwork.org
             ike:
                 proposals:
                     - encryption:

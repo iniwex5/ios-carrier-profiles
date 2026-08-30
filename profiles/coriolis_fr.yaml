@@ -13,10 +13,7 @@ common:
     ims:
         apn: ims
         epdg:
-            candidates:
-                - address: epdg.epc.mnc027.mcc208.pub.3gppnetwork.org
-                  source: uicc
-                  priority: 20
+            address: epdg.epc.mnc027.mcc208.pub.3gppnetwork.org
             configuration_attributes:
                 - identifier: 20
                   name: AssignedPCSCFIPv4
@@ -56,8 +53,3 @@ common:
             support_p_early_media: true
     roaming:
         wifi_calling_allowed: false
-plmn_overrides:
-    "20827":
-        ims:
-            epdg:
-                candidates: null

@@ -8,6 +8,7 @@ plmn_overrides:
     "25099":
         ims:
             epdg:
+                address: epdg.epc.mnc099.mcc250.pub.3gppnetwork.org
                 configuration_attributes:
                     - identifier: 20
                       name: AssignedPCSCFIPv4

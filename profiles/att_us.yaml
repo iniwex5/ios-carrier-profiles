@@ -24,10 +24,7 @@ common:
     ims:
         apn: ims
         epdg:
-            candidates:
-                - address: epdg.epc.att.net
-                  source: uicc
-                  priority: 20
+            address: epdg.epc.att.net
             configuration_attributes:
                 - identifier: 16384
                   name: AssignedPCSCFIPv4

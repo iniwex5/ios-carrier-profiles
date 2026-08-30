@@ -17,10 +17,7 @@ common:
     ims:
         apn: ims
         epdg:
-            candidates:
-                - address: epdg.epc.mnc004.mcc426.pub.stc.com.bh
-                  source: uicc
-                  priority: 20
+            address: epdg.epc.mnc004.mcc426.pub.stc.com.bh
             configuration_attributes:
                 - identifier: 16384
                   name: AssignedPCSCFIPv4

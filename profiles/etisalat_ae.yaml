@@ -18,10 +18,7 @@ plmn_overrides:
             apn: ims
             ip_stack: ipv4v6
             epdg:
-                candidates:
-                    - address: epdg.epc.mnc002.mcc424.etisalat.ae
-                      source: uicc
-                      priority: 20
+                address: epdg.epc.mnc002.mcc424.etisalat.ae
                 configuration_attributes:
                     - identifier: 16384
                       name: AssignedPCSCFIPv4

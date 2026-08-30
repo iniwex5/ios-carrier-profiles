@@ -12,10 +12,7 @@ common:
     ims:
         apn: ims
         epdg:
-            candidates:
-                - address: wlan.three.com.mo
-                  source: uicc
-                  priority: 20
+            address: wlan.three.com.mo
             configuration_attributes:
                 - identifier: 16384
                   name: AssignedPCSCFIPv4

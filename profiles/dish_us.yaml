@@ -16,6 +16,7 @@ common:
     ims:
         apn: ims
         epdg:
+            address: epdg.epc.mnc340.mcc313.pub.3gppnetwork.org
             configuration_attributes:
                 - identifier: 16384
                   name: AssignedPCSCFIPv4
@@ -102,11 +103,3 @@ common:
             enabled: true
         volte:
             enable_volte_by_default: true
-plmn_overrides:
-    "302220":
-        ims:
-            epdg:
-                candidates:
-                    - address: epdg.epc.mnc340.mcc313.pub.3gppnetwork.org
-                      source: uicc
-                      priority: 20

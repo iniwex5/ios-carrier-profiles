@@ -18,10 +18,7 @@ plmn_overrides:
             apn: ims
             ip_stack: ipv4v6
             epdg:
-                candidates:
-                    - address: epdg.mobily.com.sa
-                      source: uicc
-                      priority: 20
+                address: epdg.mobily.com.sa
                 configuration_attributes:
                     - identifier: 16384
                       name: AssignedPCSCFIPv4

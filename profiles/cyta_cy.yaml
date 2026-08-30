@@ -15,6 +15,7 @@ plmn_overrides:
             entitlement_url: https://esim-es-open-prod-cyta.esimcloud.net/cyta/prod/executeAppleActions
         ims:
             epdg:
+                address: epdg.epc.mnc001.mcc280.pub.3gppnetwork.org
                 configuration_attributes:
                     - identifier: 16384
                       name: AssignedPCSCFIPv4

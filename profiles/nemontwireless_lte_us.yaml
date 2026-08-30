@@ -17,10 +17,7 @@ plmn_overrides:
             apn: ims
             ip_stack: ipv4v6
             epdg:
-                candidates:
-                    - address: epdgn.epc.mnc480.mcc312.pub.3gppnetwork.org
-                      source: uicc
-                      priority: 20
+                address: epdgn.epc.mnc480.mcc312.pub.3gppnetwork.org
                 configuration_attributes:
                     - identifier: 16384
                       name: AssignedPCSCFIPv4

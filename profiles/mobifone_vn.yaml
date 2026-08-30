@@ -16,10 +16,7 @@ plmn_overrides:
             impi_format: imsi@carrierDomain
             impu_format: imsi@carrierDomain
             epdg:
-                candidates:
-                    - address: witalkios.mobifone.vn
-                      source: uicc
-                      priority: 20
+                address: witalkios.mobifone.vn
                 configuration_attributes:
                     - identifier: 16384
                       name: AssignedPCSCFIPv4

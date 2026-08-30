@@ -110,3 +110,92 @@ common:
             enable_volte_by_default: true
     roaming:
         wifi_calling_allowed: false
+plmn_overrides:
+    "40404":
+        ims:
+            epdg:
+                address: epdg.epc.mnc004.mcc404.pub.3gppnetwork.org
+    "40407":
+        ims:
+            epdg:
+                address: epdg.epc.mnc007.mcc404.pub.3gppnetwork.org
+    "40412":
+        ims:
+            epdg:
+                address: epdg.epc.mnc012.mcc404.pub.3gppnetwork.org
+    "40414":
+        ims:
+            epdg:
+                address: epdg.epc.mnc014.mcc404.pub.3gppnetwork.org
+    "40419":
+        ims:
+            epdg:
+                address: epdg.epc.mnc019.mcc404.pub.3gppnetwork.org
+    "40422":
+        ims:
+            epdg:
+                address: epdg.epc.mnc022.mcc404.pub.3gppnetwork.org
+    "40424":
+        ims:
+            epdg:
+                address: epdg.epc.mnc024.mcc404.pub.3gppnetwork.org
+    "40444":
+        ims:
+            epdg:
+                address: epdg.epc.mnc044.mcc404.pub.3gppnetwork.org
+    "40456":
+        ims:
+            epdg:
+                address: epdg.epc.mnc056.mcc404.pub.3gppnetwork.org
+    "40478":
+        ims:
+            epdg:
+                address: epdg.epc.mnc078.mcc404.pub.3gppnetwork.org
+    "40482":
+        ims:
+            epdg:
+                address: epdg.epc.mnc082.mcc404.pub.3gppnetwork.org
+    "40487":
+        ims:
+            epdg:
+                address: epdg.epc.mnc087.mcc404.pub.3gppnetwork.org
+    "40489":
+        ims:
+            epdg:
+                address: epdg.epc.mnc089.mcc404.pub.3gppnetwork.org
+    "40570":
+        ims:
+            epdg:
+                address: epdg.epc.mnc070.mcc405.pub.3gppnetwork.org
+    "405799":
+        ims:
+            epdg:
+                address: epdg.epc.mnc799.mcc405.pub.3gppnetwork.org
+    "405845":
+        ims:
+            epdg:
+                address: epdg.epc.mnc845.mcc405.pub.3gppnetwork.org
+    "405846":
+        ims:
+            epdg:
+                address: epdg.epc.mnc846.mcc405.pub.3gppnetwork.org
+    "405848":
+        ims:
+            epdg:
+                address: epdg.epc.mnc848.mcc405.pub.3gppnetwork.org
+    "405849":
+        ims:
+            epdg:
+                address: epdg.epc.mnc849.mcc405.pub.3gppnetwork.org
+    "405850":
+        ims:
+            epdg:
+                address: epdg.epc.mnc850.mcc405.pub.3gppnetwork.org
+    "405852":
+        ims:
+            epdg:
+                address: epdg.epc.mnc852.mcc405.pub.3gppnetwork.org
+    "405853":
+        ims:
+            epdg:
+                address: epdg.epc.mnc853.mcc405.pub.3gppnetwork.org

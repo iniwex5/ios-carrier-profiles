@@ -24,6 +24,7 @@ common:
         apn: ims
         domain: ims.mnc004.mcc520.3gppnetwork.org
         epdg:
+            address: epdg.epc.mnc004.mcc520.pub.3gppnetwork.org
             configuration_attributes:
                 - identifier: 16384
                   name: AssignedPCSCFIPv4
@@ -90,11 +91,3 @@ common:
             enabled: true
         volte:
             enable_volte_by_default: true
-plmn_overrides:
-    "52000":
-        ims:
-            epdg:
-                candidates:
-                    - address: epdg.epc.mnc004.mcc520.pub.3gppnetwork.org
-                      source: uicc
-                      priority: 20

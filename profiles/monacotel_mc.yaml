@@ -12,10 +12,7 @@ common:
     ims:
         apn: ims
         epdg:
-            candidates:
-                - address: epdg.monaco-telecom.mc
-                  source: uicc
-                  priority: 20
+            address: epdg.monaco-telecom.mc
             configuration_attributes:
                 - identifier: 16384
                   name: AssignedPCSCFIPv4

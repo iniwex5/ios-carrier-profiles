@@ -21,6 +21,7 @@ plmn_overrides:
             impi_format: imsi@carrierDomain
             impu_format: imsi@carrierDomain
             epdg:
+                address: epdg.epc.mnc012.mcc502.pub.3gppnetwork.org
                 configuration_attributes:
                     - identifier: 16384
                       name: AssignedPCSCFIPv4

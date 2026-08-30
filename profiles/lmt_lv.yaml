@@ -13,6 +13,7 @@ plmn_overrides:
             entitlement_url: https://es.mnc001.mcc247.pub.3gppnetwork.org:8443/entitlement
         ims:
             epdg:
+                address: epdg.epc.mnc001.mcc247.pub.3gppnetwork.org
                 configuration_attributes:
                     - identifier: 16384
                       name: AssignedPCSCFIPv4
