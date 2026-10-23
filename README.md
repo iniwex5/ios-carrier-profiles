@@ -11,6 +11,10 @@
 
 VoHive 先下载 home PLMN 对应的 selector，再只下载命中的一个 Bundle。
 
+文档：
+
+- [`docs/apn-type-mask.md`](docs/apn-type-mask.md)：APN `type_mask` 各位的含义、哪些 APN 能用于数据流量、读取与手工编辑规则；`docs/apn-type-mask-stats.py` 可重现文中的统计数字。
+
 ## 运行时选择流程
 
 发布仓库的根 URL 可以直接使用 GitHub Raw，例如：
