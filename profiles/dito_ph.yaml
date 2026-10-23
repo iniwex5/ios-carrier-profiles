@@ -8,6 +8,7 @@ supported_plmns:
 common:
     apns:
         - apn: internet.dito.ph
+          type_mask: 49
           allowed_ip_stack: ipv4
         - apn: ims
           type_mask: 131072
