@@ -4,7 +4,9 @@ id: apple_unicom_cn
 bundle: Unicom_cn.bundle
 supported_plmns:
     - "46001"
+    - "46006"
     - "46009"
+    - "46010"
 common:
     apns:
         - apn: 3gnet

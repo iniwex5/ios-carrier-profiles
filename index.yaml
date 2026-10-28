@@ -627,7 +627,10 @@ bundles:
       path: profiles/chinatelecom_usim_cn.yaml
       supported_plmns:
         - "20404"
+        - "46003"
+        - "46005"
         - "46011"
+        - "46012"
     - id: apple_chinatelecom_usim_mo
       bundle: ChinaTelecom_USIM_mo.bundle
       path: profiles/chinatelecom_usim_mo.yaml
@@ -754,8 +757,10 @@ bundles:
       supported_plmns:
         - "46000"
         - "46002"
+        - "46004"
         - "46007"
         - "46008"
+        - "46013"
     - id: apple_cmcc_hk
       bundle: CMCC_hk.bundle
       path: profiles/cmcc_hk.yaml
@@ -3482,7 +3487,9 @@ bundles:
       path: profiles/unicom_cn.yaml
       supported_plmns:
         - "46001"
+        - "46006"
         - "46009"
+        - "46010"
     - id: apple_unicom_hk
       bundle: Unicom_hk.bundle
       path: profiles/unicom_hk.yaml

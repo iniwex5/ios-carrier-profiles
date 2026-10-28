@@ -1,0 +1,10 @@
+version: 2
+plmn: "46006"
+profiles:
+    - id: apple_unicom_cn
+      path: profiles/unicom_cn.yaml
+      generic: true
+      selectors:
+        - raw: "46006"
+          carrier_name: 中国联通
+          iso: CN

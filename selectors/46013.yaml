@@ -1,0 +1,10 @@
+version: 2
+plmn: "46013"
+profiles:
+    - id: apple_cmcc_cn
+      path: profiles/cmcc_cn.yaml
+      generic: true
+      selectors:
+        - raw: "46013"
+          carrier_name: 中国移动
+          iso: CN

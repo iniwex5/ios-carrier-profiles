@@ -1,0 +1,10 @@
+version: 2
+plmn: "46003"
+profiles:
+    - id: apple_chinatelecom_usim_cn
+      path: profiles/chinatelecom_usim_cn.yaml
+      generic: true
+      selectors:
+        - raw: "46003"
+          carrier_name: 中国电信
+          iso: CN
