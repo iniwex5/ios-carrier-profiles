@@ -8,3 +8,11 @@ profiles:
         - raw: "51566"
           carrier_name: DITO
           iso: PH
+        - vowifi_imsi: capture
+          raw: 51566_ID-8963662600
+          carrier_name: DITO
+          iso: PH
+          conditions:
+            - field: iccid
+              match: prefix
+              value: "8963662600"
