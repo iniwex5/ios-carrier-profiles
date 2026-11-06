@@ -34,6 +34,9 @@ plmn_overrides:
             ip_stack: ipv6
             epdg:
                 address: epdg.epc.mnc002.mcc262.pub.3gppnetwork.org
+                dns_servers:
+                    - "176.9.93.198"
+                    - "84.200.70.40"
                 configuration_attributes:
                     - identifier: 21
                       name: AssignedPCSCFIPv6
