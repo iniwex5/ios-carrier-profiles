@@ -37,6 +37,8 @@ plmn_overrides:
         ims:
             apn: ims
             ip_stack: ipv4v6
+            ike:
+                nat_keepalive_enabled: true
             register:
                 use_ipsec: true
                 include_cellular_network_info: true
@@ -66,3 +68,5 @@ plmn_overrides:
                 evs_hard_bw_limit: nb-swb
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: false

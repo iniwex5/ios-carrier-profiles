@@ -19,7 +19,7 @@ plmn_overrides:
               type_mask: 48
         apple:
             carrier_entitlements:
-                supported_entitlements: 525329
+                supported_entitlements: 533521
         e911:
             over_itech_supported: false
             wifi_calling_without_entitlement: true

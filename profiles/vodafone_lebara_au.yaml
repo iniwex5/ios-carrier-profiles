@@ -103,3 +103,5 @@ plmn_overrides:
                 evs_hard_bw_limit: nb-swb
             volte:
                 enable_volte_by_default: true
+        roaming:
+            wifi_calling_allowed: false

@@ -21,6 +21,7 @@ plmn_overrides:
               allowed_ip_stack: ipv6
               support_switch_over: true
               support_5g_sa_handover: true
+              use_network_mtu: true
             - apn: hos
               type_mask: 1048576
               tech_type_mask: 1048576

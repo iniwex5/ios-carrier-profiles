@@ -109,6 +109,8 @@ plmn_overrides:
                 rtp_inactivity_seconds: 30
                 rtcp_inactivity_seconds: 25
                 evs_hard_bw_limit: nb-swb
+            ussi:
+                enabled: true
             volte:
                 enable_volte_by_default: true
         roaming:

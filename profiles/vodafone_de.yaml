@@ -23,12 +23,12 @@ plmn_overrides:
               support_switch_over: true
         apple:
             carrier_entitlements:
-                supported_entitlements: 109568
+                supported_entitlements: 4303872
         e911:
             over_itech_supported: false
             wifi_calling_without_entitlement: true
         entitlement:
-            entitlement_url: https://es-de.vodafone.com:4445/ium-OEMInterface/servlet/IUMServlet
+            entitlement_url: https://de-prod.entitlement.vodafone.com:4445/ium-OEMInterface/servlet/IUMServlet
         ims:
             apn: ims
             ip_stack: ipv6
@@ -107,6 +107,8 @@ plmn_overrides:
                 rtcp_interval_seconds: 5
                 max_redundancy: 220
                 evs_hard_bw_limit: nb-wb
+            ussi:
+                enabled: true
             volte:
                 enable_volte_by_default: true
         roaming:

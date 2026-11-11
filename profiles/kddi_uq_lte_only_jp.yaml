@@ -32,7 +32,7 @@ plmn_overrides:
               roaming_ip_stack: ipv4v6
         apple:
             carrier_entitlements:
-                supported_entitlements: 8193
+                supported_entitlements: 532497
         e911:
             emergency_urns:
                 "110": urn:service:sos.police

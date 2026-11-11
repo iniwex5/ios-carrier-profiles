@@ -20,6 +20,26 @@ plmn_overrides:
         ims:
             apn: ims
             ip_stack: ipv4v6
+            epdg:
+                address: epdg.epc.mnc077.mcc278.pub.3gppnetwork.org
+            ike:
+                proposals:
+                    - encryption:
+                        - aes256
+                      integrity:
+                        - sha256
+                      prf:
+                        - sha256
+                      dh_groups:
+                        - 14
+                      lifetime_seconds: 80000
+                      authentication_method: Certificate
+                      eap_method: EAP-AKA
+                local_identifier: anonymous@nai.epc.mnc077.mcc278.3gppnetwork.org
+                username: 0$imsi@nai.epc.mnc077.mcc278.3gppnetwork.org
+                remote_certificate_authority_name: DigiCert Global Root G2
+                remote_certificate_hostname: epdg.epc.mnc077.mcc278.pub.3gppnetwork.org
+                validate_remote_certificate: true
             signaling:
                 contact:
                     additional_contact_params:

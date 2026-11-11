@@ -99,6 +99,7 @@ plmn_overrides:
                           params:
                             - +g.3gpp.mid-call
                             - +g.3gpp.srvcc-alerting
+                            - text
                 sip_timers:
                     InviteResponseTimeout: 3000
             media:

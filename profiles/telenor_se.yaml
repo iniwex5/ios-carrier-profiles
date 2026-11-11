@@ -8,7 +8,7 @@ plmn_overrides:
     "24008":
         apns:
             - apn: services.telenor.se
-              type_mask: 32817
+              type_mask: 32819
               allowed_ip_stack: ipv4v6
               roaming_ip_stack: ipv4v6
             - apn: mms

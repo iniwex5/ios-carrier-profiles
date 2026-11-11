@@ -10,7 +10,7 @@ plmn_overrides:
             - apn: m-wap
               username: mms
               password: mms
-              type_mask: 53
+              type_mask: 32821
               allowed_ip_stack: ipv4v6
             - apn: ims
               type_mask: 131072
@@ -22,9 +22,14 @@ plmn_overrides:
               type_mask: 1048576
               tech_type_mask: 1048576
               allowed_ip_stack: ipv4v6
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 8209
         e911:
             over_itech_supported: false
             wifi_calling_without_entitlement: true
+        entitlement:
+            entitlement_url: https://es.mobifone.vn/mbf/prod/executeAppleActions
         ims:
             apn: ims
             ip_stack: ipv4v6

@@ -30,7 +30,7 @@ common:
           roaming_ip_stack: ipv4v6
     apple:
         carrier_entitlements:
-            supported_entitlements: 8369
+            supported_entitlements: 4202673
     e911:
         wifi_calling_without_entitlement: false
     entitlement:

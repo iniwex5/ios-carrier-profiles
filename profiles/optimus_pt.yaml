@@ -58,6 +58,7 @@ common:
                       esn: auto
                       install_policies: true
                       lifetime_seconds: 86400
+            local_identifier: anonymous@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
             nat_keepalive_enabled: true
             proposals:
                 - encryption:
@@ -69,7 +70,12 @@ common:
                   dh_groups:
                     - 14
                   lifetime_seconds: 86400
+                  authentication_method: Certificate
                   eap_method: EAP-AKA
+            remote_certificate_authority_name: DigiCert Global Root G2
+            remote_certificate_hostname: epdg.epc.mnc003.mcc268.pub.3gppnetwork.org
+            username: 0$imsi@nai.epc.mnc003.mcc268.3gppnetwork.org
+            validate_remote_certificate: true
         ip_stack: ipv4v6
         media:
             codecs:
@@ -116,4 +122,4 @@ common:
         volte:
             enable_volte_by_default: true
     roaming:
-        wifi_calling_allowed: false
+        wifi_calling_allowed: true

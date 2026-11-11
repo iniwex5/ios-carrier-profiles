@@ -51,14 +51,14 @@ profiles:
     - id: apple_dito_ph
       path: profiles/dito_ph.yaml
       selectors:
-        - raw: 20404_ID-8963662600
+        - vowifi_imsi: capture
+          raw: 20404_ID-896366
           carrier_name: DITO
           iso: PH
-          vowifi_imsi: capture
           conditions:
             - field: iccid
               match: prefix
-              value: "8963662600"
+              value: "896366"
     - id: apple_gigsky_us
       path: profiles/gigsky_us.yaml
       selectors:
@@ -170,19 +170,6 @@ profiles:
             - field: gid2
               match: prefix
               value: 1B
-            - field: iccid
-              match: prefix
-              value: "891480"
-    - id: apple_verizon_ting_lte_us
-      path: profiles/verizon_ting_lte_us.yaml
-      selectors:
-        - raw: 20404_GID2-A9_ID-891480
-          carrier_name: Ting
-          iso: US
-          conditions:
-            - field: gid2
-              match: prefix
-              value: A9
             - field: iccid
               match: prefix
               value: "891480"

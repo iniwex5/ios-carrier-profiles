@@ -8,7 +8,7 @@ plmn_overrides:
     "42888":
         apns:
             - apn: net
-              type_mask: 49
+              type_mask: 32817
               allowed_ip_stack: ipv4v6
             - apn: ims
               type_mask: 131072
@@ -16,6 +16,11 @@ plmn_overrides:
             - apn: XCAP
               type_mask: 1048576
               allowed_ip_stack: ipv4
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 1
+        entitlement:
+            entitlement_url: https://ios.es.unitel.mn
         ims:
             apn: ims
             ip_stack: ipv4

@@ -24,8 +24,11 @@ plmn_overrides:
               type_mask: 1048576
               tech_type_mask: 1048576
               allowed_ip_stack: ipv4
+            - apn: sos
+              type_mask: 262144
+              tech_type_mask: 262144
         e911:
-            over_itech_supported: true
+            over_itech_supported: false
             wifi_calling_without_entitlement: true
         ims:
             apn: ims

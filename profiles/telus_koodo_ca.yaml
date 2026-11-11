@@ -33,7 +33,7 @@ common:
           roaming_ip_stack: ipv6
     apple:
         carrier_entitlements:
-            supported_entitlements: 4203697
+            supported_entitlements: 4205745
     e911:
         over_itech_supported: false
         wifi_calling_without_entitlement: false

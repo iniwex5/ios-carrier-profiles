@@ -31,7 +31,7 @@ plmn_overrides:
             over_itech_supported: false
             wifi_calling_without_entitlement: true
         entitlement:
-            entitlement_url: https://apple-es.maxis.com.my:8088/ESMaxis
+            entitlement_url: https://apple-es.maxis.com.my:443/ESMaxis
         ims:
             apn: ims
             ip_stack: ipv6

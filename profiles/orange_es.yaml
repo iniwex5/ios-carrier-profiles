@@ -12,17 +12,20 @@ plmn_overrides:
               password: orange
               type_mask: 32769
               allowed_ip_stack: ipv4
+              use_network_mtu: true
             - apn: orangemms
               username: orange
               password: orange
               type_mask: 4
               allowed_ip_stack: ipv4
+              use_network_mtu: true
             - apn: internet
               username: orange
               password: orange
               type_mask: 48
               allowed_ip_stack: ipv4
               support_5g_sa_handover: true
+              use_network_mtu: true
             - apn: ims
               type_mask: 131072
               tech_type_mask: 131072

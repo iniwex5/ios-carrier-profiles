@@ -25,7 +25,7 @@ profiles:
       path: profiles/movistar_co.yaml
       selectors:
         - raw: 21407_ID-8957123
-          carrier_name: movistar
+          carrier_name: Tigo
           iso: CO
           conditions:
             - field: iccid

@@ -76,6 +76,7 @@ common:
                 - identifier: 16386
                   name: AssignedPCSCFIPv6
                   type: v6
+            timeout_seconds: 45
         ike:
             child_sa:
                 proposals:

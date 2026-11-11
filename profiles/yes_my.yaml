@@ -8,12 +8,13 @@ supported_plmns:
 common:
     apns:
         - apn: yesnet
-          type_mask: 49
+          type_mask: 1048625
           allowed_ip_stack: ipv4v6
         - apn: ims
           type_mask: 131072
           allowed_ip_stack: ipv6
           support_switch_over: true
+          support_5g_sa_handover: true
         - apn: sos
           type_mask: 262144
           tech_type_mask: 262144

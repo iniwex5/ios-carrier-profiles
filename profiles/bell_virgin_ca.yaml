@@ -33,7 +33,6 @@ plmn_overrides:
             carrier_entitlements:
                 supported_entitlements: 4205777
         e911:
-            over_itech_supported: false
             wifi_calling_without_entitlement: false
         entitlement:
             entitlement_url: https://egw.wireless.bell.ca/ium-OEMInterface/servlet/IUMServlet/

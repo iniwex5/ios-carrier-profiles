@@ -168,10 +168,6 @@ common:
                 - selector: INVITE[911,wifi]
                   headers:
                     - 'P-com.ServiceType: Static-Emergency'
-            contact:
-                additional_contact_params:
-                    - selector: REGISTER:*
-                      params: []
             csfb_on:
                 - method: INVITE
                   statuses:
@@ -181,7 +177,6 @@ common:
             require_preconditions_when_mandatory: false
             sip_timers:
                 D: 128000
-                EPSInviteResponseTimeout: 6000
                 F: 30000
                 InviteResponseTimeout: 10000
                 T1: 3000

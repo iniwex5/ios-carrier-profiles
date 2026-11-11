@@ -1,6 +1,16 @@
 version: 2
 plmn: "310590"
 profiles:
+    - id: apple_knowroaming
+      path: profiles/knowroaming.yaml
+      selectors:
+        - raw: 310590_GID1-636f6e6e65637431
+          carrier_name: Connect
+          iso: US
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 636F6E6E65637431
     - id: apple_verizon_charter_lte_us
       path: profiles/verizon_charter_lte_us.yaml
       selectors:
@@ -68,6 +78,13 @@ profiles:
             - field: gid2
               match: prefix
               value: A6
+        - raw: 310590_GID2-A9
+          carrier_name: Verizon
+          iso: US
+          conditions:
+            - field: gid2
+              match: prefix
+              value: A9
         - raw: 310590_GID2-B3
           carrier_name: Verizon
           iso: US

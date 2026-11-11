@@ -68,9 +68,9 @@ common:
                 proposals:
                     - source_branch: FirstChild
                       encryption:
-                        - aes128
+                        - aes256
                       integrity:
-                        - sha1
+                        - sha256
                       protocol: esp
                       esn: auto
                       install_policies: true
@@ -87,11 +87,11 @@ common:
                 - encryption:
                     - aes256
                   integrity:
-                    - sha1
+                    - sha256
                   prf:
                     - sha256
                   dh_groups:
-                    - 2
+                    - 14
                   lifetime_seconds: 80000
                   authentication_method: None
                   eap_method: EAP-AKA

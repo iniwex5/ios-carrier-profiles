@@ -19,7 +19,7 @@ plmn_overrides:
               roaming_ip_stack: ipv4v6
         apple:
             carrier_entitlements:
-                supported_entitlements: 5121
+                supported_entitlements: 13313
         entitlement:
             entitlement_url: https://es.mnc001.mcc247.pub.3gppnetwork.org:8443/entitlement
         ims:

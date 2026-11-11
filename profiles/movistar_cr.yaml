@@ -10,10 +10,15 @@ plmn_overrides:
             - apn: internet.movistar.cr
               username: movistarcr
               password: movistarcr
-              type_mask: 49
+              type_mask: 32817
             - apn: ims
               type_mask: 131072
               allowed_ip_stack: ipv4v6
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 8209
+        entitlement:
+            entitlement_url: https://ses.mnc004.mcc712.pub.3gppnetwork.org
         ims:
             apn: ims
             ip_stack: ipv4v6

@@ -8,11 +8,16 @@ plmn_overrides:
     "28010":
         apns:
             - apn: internet
-              type_mask: 49
+              type_mask: 32817
             - apn: mms
               username: mms
               password: mms
               type_mask: 4
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 8193
+        entitlement:
+            entitlement_url: https://es.epic.com.cy
         ims:
             register:
                 use_ipsec: true

@@ -46,7 +46,7 @@ profiles:
       generic: true
       selectors:
         - raw: "732123"
-          carrier_name: movistar
+          carrier_name: Tigo
           iso: CO
     - id: apple_mysim
       path: profiles/mysim.yaml

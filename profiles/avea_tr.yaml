@@ -18,6 +18,7 @@ common:
           tech_type_mask: 131072
           allowed_ip_stack: ipv4v6
           support_switch_over: true
+          support_5g_sa_handover: true
           use_network_mtu: true
     apple:
         carrier_entitlements:

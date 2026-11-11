@@ -5,14 +5,14 @@ profiles:
       path: profiles/dito_ph.yaml
       generic: true
       selectors:
-        - raw: "51566"
-          carrier_name: DITO
-          iso: PH
         - vowifi_imsi: capture
-          raw: 51566_ID-8963662600
+          raw: 51566_ID-896366
           carrier_name: DITO
           iso: PH
           conditions:
             - field: iccid
               match: prefix
-              value: "8963662600"
+              value: "896366"
+        - raw: "51566"
+          carrier_name: DITO
+          iso: PH

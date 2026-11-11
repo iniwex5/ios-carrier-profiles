@@ -16,3 +16,16 @@ plmn_overrides:
                 supported_entitlements: 8193
         entitlement:
             entitlement_url: https://esim-es-open-prod-aonemk.esimcloud.net/aonemk/prod/executeAppleActions
+        ims:
+            register:
+                use_ipsec: true
+            signaling:
+                contact:
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            volte:
+                enable_volte_by_default: true

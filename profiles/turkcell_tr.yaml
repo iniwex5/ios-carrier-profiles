@@ -21,6 +21,7 @@ plmn_overrides:
               tech_type_mask: 131072
               allowed_ip_stack: ipv6
               support_switch_over: true
+              support_5g_sa_handover: true
         apple:
             carrier_entitlements:
                 supported_entitlements: 13313
@@ -96,6 +97,9 @@ plmn_overrides:
                 contact:
                     always_add_sip_instance: true
                     additional_contact_params:
+                        - selector: REGISTER
+                          params:
+                            - +g.3gpp.nw-init-ussi
                         - selector: REGISTER,INVITE,INVITE:*
                           params:
                             - +g.3gpp.mid-call

@@ -20,14 +20,11 @@ plmn_overrides:
               type_mask: 131072
               tech_type_mask: 131072
               support_switch_over: true
+              support_5g_sa_handover: true
               allow_no_dns: 1
-            - apn: HOS
-              type_mask: 1048576
-              tech_type_mask: 1048576
-              allowed_ip_stack: ipv4
         apple:
             carrier_entitlements:
-                supported_entitlements: 9217
+                supported_entitlements: 41985
         e911:
             over_itech_supported: true
             wifi_calling_without_entitlement: true

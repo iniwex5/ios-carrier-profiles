@@ -8,11 +8,16 @@ plmn_overrides:
     "29701":
         apns:
             - apn: internet
-              type_mask: 49
+              type_mask: 32817
             - apn: mms
               username: mms
               password: mms
               type_mask: 4
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 5121
+        entitlement:
+            entitlement_url: https://des.1.me/entitlement
         ims:
             register:
                 use_ipsec: true

@@ -108,6 +108,13 @@ profiles:
             - field: gid2
               match: prefix
               value: A6
+        - raw: 311480_GID2-A9
+          carrier_name: Verizon
+          iso: US
+          conditions:
+            - field: gid2
+              match: prefix
+              value: A9
         - raw: 311480_GID2-B3
           carrier_name: Verizon
           iso: US
@@ -212,16 +219,6 @@ profiles:
             - field: gid2
               match: prefix
               value: A1
-    - id: apple_verizon_ting_lte_us
-      path: profiles/verizon_ting_lte_us.yaml
-      selectors:
-        - raw: 311480_GID2-A9
-          carrier_name: Ting
-          iso: US
-          conditions:
-            - field: gid2
-              match: prefix
-              value: A9
     - id: apple_verizon_visible_lte_us
       path: profiles/verizon_visible_lte_us.yaml
       selectors:

@@ -8,7 +8,7 @@ supported_plmns:
 common:
     apns:
         - apn: internet
-          type_mask: 55
+          type_mask: 32823
         - apn: ims
           type_mask: 131072
           tech_type_mask: 131072
@@ -18,9 +18,14 @@ common:
           type_mask: 1048576
           tech_type_mask: 1048576
           allowed_ip_stack: ipv4
+    apple:
+        carrier_entitlements:
+            supported_entitlements: 8193
     e911:
         over_itech_supported: true
         wifi_calling_without_entitlement: true
+    entitlement:
+        entitlement_url: https://es.monaco-telecom.mc
     ims:
         apn: ims
         epdg:

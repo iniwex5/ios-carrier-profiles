@@ -1,0 +1,12 @@
+version: 2
+plmn: "90161"
+profiles:
+    - id: apple_knowroaming
+      path: profiles/knowroaming.yaml
+      selectors:
+        - raw: 90161_GID1-636f6e6e65637431
+          carrier_name: Connect
+          conditions:
+            - field: gid1
+              match: prefix
+              value: 636F6E6E65637431

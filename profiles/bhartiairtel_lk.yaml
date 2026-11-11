@@ -45,6 +45,6 @@ plmn_overrides:
                 rtp_inactivity_seconds: 20
                 rtcp_interval_seconds: 5
             ussi:
-                enabled: false
+                enabled: true
             volte:
                 enable_volte_by_default: true

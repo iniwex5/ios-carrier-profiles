@@ -35,7 +35,7 @@ common:
           use_network_mtu: true
     apple:
         carrier_entitlements:
-            supported_entitlements: 4204169
+            supported_entitlements: 4203657
     e911:
         over_itech_supported: false
     entitlement:

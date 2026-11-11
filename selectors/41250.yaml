@@ -6,5 +6,5 @@ profiles:
       generic: true
       selectors:
         - raw: "41250"
-          carrier_name: Etisalat
+          carrier_name: e&
           iso: AF

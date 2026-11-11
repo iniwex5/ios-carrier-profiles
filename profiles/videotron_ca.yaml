@@ -75,7 +75,6 @@ common:
             validate_remote_certificate: false
         ip_stack: ipv6
         media:
-            enable_incoming_dtmf: true
             max_redundancy: 220
             rtp_inactivity_seconds: 30
         register:

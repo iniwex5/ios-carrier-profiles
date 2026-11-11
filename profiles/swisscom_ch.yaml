@@ -18,6 +18,7 @@ plmn_overrides:
               tech_type_mask: 131072
               allowed_ip_stack: ipv4v6
               support_switch_over: true
+              support_5g_sa_handover: true
             - apn: event.swisscom.ch
               tech_type_mask: 2
             - apn: hos
@@ -30,7 +31,7 @@ plmn_overrides:
               allowed_ip_stack: ipv6
         apple:
             carrier_entitlements:
-                supported_entitlements: 113665
+                supported_entitlements: 4307969
         e911:
             over_itech_supported: true
             wifi_calling_without_entitlement: true

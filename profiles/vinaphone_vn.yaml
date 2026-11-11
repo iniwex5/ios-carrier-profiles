@@ -10,19 +10,24 @@ plmn_overrides:
             - apn: m3-world
               type_mask: 32817
               allowed_ip_stack: ipv4v6
+              always_on_pdu: true
             - apn: ims
               type_mask: 131072
               tech_type_mask: 131072
               allowed_ip_stack: ipv4v6
+              always_on_pdu: true
               support_switch_over: true
+              support_5g_sa_handover: true
               use_network_mtu: true
             - apn: m3-mms
               type_mask: 4
               allowed_ip_stack: ipv4v6
+              always_on_pdu: true
             - apn: xcap
               type_mask: 1048576
               tech_type_mask: 1048576
               allowed_ip_stack: ipv4v6
+              always_on_pdu: true
         apple:
             carrier_entitlements:
                 supported_entitlements: 9233

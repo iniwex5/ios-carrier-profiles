@@ -123,3 +123,5 @@ common:
             support_p_early_media: true
         volte:
             enable_volte_by_default: true
+    roaming:
+        wifi_calling_allowed: false

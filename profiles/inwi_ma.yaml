@@ -13,3 +13,16 @@ plmn_overrides:
               type_mask: 4
             - apn: www.inwi.ma
               type_mask: 48
+        ims:
+            register:
+                use_ipsec: true
+            signaling:
+                contact:
+                    additional_contact_params:
+                        - selector: REGISTER,INVITE,INVITE:*
+                          params:
+                            - +g.3gpp.mid-call
+                            - +g.3gpp.srvcc-alerting
+                            - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+            volte:
+                enable_volte_by_default: true

@@ -28,6 +28,7 @@ plmn_overrides:
             carrier_entitlements:
                 supported_entitlements: 4207617
         e911:
+            over_itech_supported: false
             wifi_calling_without_entitlement: true
         entitlement:
             entitlement_url: https://entitlement.tele2.com/entitlement/
@@ -103,5 +104,7 @@ plmn_overrides:
                 evs_hard_bw_limit: nb-swb
             ussi:
                 enabled: true
+            volte:
+                enable_volte_by_default: true
         roaming:
             wifi_calling_allowed: false

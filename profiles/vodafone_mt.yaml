@@ -8,9 +8,22 @@ plmn_overrides:
     "27801":
         apns:
             - apn: connect
-              type_mask: 49
+              type_mask: 32817
             - apn: mms.telco.mt
               type_mask: 4
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 8193
+        entitlement:
+            entitlement_url: https://es.epic.com.mt
         ims:
+            media:
+                codecs:
+                    - payload_type: 109
+                      name: EVS
+                      clock_rate: 16000
+                      channels: 1
+                      fmtp: br=5.9-24.4; bw=nb-swb; ch-aw-recv=0
+                evs_hard_bw_limit: nb-swb
             volte:
                 enable_volte_by_default: true

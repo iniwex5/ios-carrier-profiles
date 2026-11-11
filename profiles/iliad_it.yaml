@@ -10,6 +10,14 @@ common:
         - apn: iliad
           type_mask: 55
     ims:
+        media:
+            codecs:
+                - payload_type: 109
+                  name: EVS
+                  clock_rate: 16000
+                  channels: 1
+                  fmtp: br=5.9-24.4; bw=nb-swb; ch-aw-recv=-1
+            evs_hard_bw_limit: nb-swb
         register:
             use_ipsec: true
         signaling:
@@ -19,6 +27,7 @@ common:
                       params:
                         - +g.3gpp.srvcc-alerting
             early_media_needs_header: false
-            support_p_early_media: false
+            preconditions: supported
+            support_p_early_media: true
         volte:
             enable_volte_by_default: true

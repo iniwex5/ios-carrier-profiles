@@ -10,5 +10,19 @@ common:
         - apn: internet.te.eg
           type_mask: 49
     ims:
+        media:
+            preferred_amr_wb_mode: 8
+            rtp_inactivity_seconds: 20
         register:
             include_cellular_network_info: true
+            use_ipsec: true
+        signaling:
+            contact:
+                additional_contact_params:
+                    - selector: REGISTER,INVITE,INVITE:*
+                      params:
+                        - +g.3gpp.mid-call
+                        - +g.3gpp.srvcc-alerting
+                        - +g.3gpp.ps2cs-srvcc-orig-pre-alerting
+        volte:
+            enable_volte_by_default: true

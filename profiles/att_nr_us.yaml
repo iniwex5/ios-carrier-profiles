@@ -31,10 +31,6 @@ common:
                 - 33
               recovers_on_airplane_mode: true
               type: 3GPP
-            - cause_codes:
-                - 2086
-              recovers_on_airplane_mode: true
-              type: 3GPP
         - apn: hotspot
           type_mask: 16
           allowed_ip_stack: ipv4v6
@@ -61,10 +57,10 @@ common:
         epdg:
             address: epdg.epc.att.net
             configuration_attributes:
-                - identifier: 16384
+                - identifier: 20
                   name: AssignedPCSCFIPv4
                   type: v4
-                - identifier: 16386
+                - identifier: 21
                   name: AssignedPCSCFIPv6
                   type: v6
         ike:
@@ -187,10 +183,6 @@ selector_overrides:
                     - 33
                   recovers_on_airplane_mode: true
                   type: 3GPP
-                - cause_codes:
-                    - 2086
-                  recovers_on_airplane_mode: true
-                  type: 3GPP
             - apn: nrhotspot
               type_mask: 16
               allowed_ip_stack: ipv4v6
@@ -223,10 +215,6 @@ selector_overrides:
               no_cellular_reconnect_cause_codes:
                 - cause_codes:
                     - 33
-                  recovers_on_airplane_mode: true
-                  type: 3GPP
-                - cause_codes:
-                    - 2086
                   recovers_on_airplane_mode: true
                   type: 3GPP
             - apn: nrhotspot
@@ -263,10 +251,6 @@ selector_overrides:
                     - 33
                   recovers_on_airplane_mode: true
                   type: 3GPP
-                - cause_codes:
-                    - 2086
-                  recovers_on_airplane_mode: true
-                  type: 3GPP
             - apn: nrhotspot
               type_mask: 16
               allowed_ip_stack: ipv4v6
@@ -299,10 +283,6 @@ selector_overrides:
               no_cellular_reconnect_cause_codes:
                 - cause_codes:
                     - 33
-                  recovers_on_airplane_mode: true
-                  type: 3GPP
-                - cause_codes:
-                    - 2086
                   recovers_on_airplane_mode: true
                   type: 3GPP
             - apn: nrhotspot
@@ -339,10 +319,6 @@ selector_overrides:
                     - 33
                   recovers_on_airplane_mode: true
                   type: 3GPP
-                - cause_codes:
-                    - 2086
-                  recovers_on_airplane_mode: true
-                  type: 3GPP
             - apn: nrhotspot
               type_mask: 16
               allowed_ip_stack: ipv4v6
@@ -375,10 +351,6 @@ selector_overrides:
               no_cellular_reconnect_cause_codes:
                 - cause_codes:
                     - 33
-                  recovers_on_airplane_mode: true
-                  type: 3GPP
-                - cause_codes:
-                    - 2086
                   recovers_on_airplane_mode: true
                   type: 3GPP
             - apn: nrhotspot

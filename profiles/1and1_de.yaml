@@ -17,10 +17,6 @@ common:
           allowed_ip_stack: ipv6
           roaming_ip_stack: ipv4v6
           support_switch_over: true
-        - apn: mms
-          type_mask: 4
-          allowed_ip_stack: ipv6
-          roaming_ip_stack: ipv4v6
         - apn: hos
           type_mask: 1048576
           allowed_ip_stack: ipv6

@@ -1,9 +1,9 @@
 version: 1
 summary:
-    bundles_discovered: 684
-    carrier_plists: 683
-    profiles_generated: 676
-    variants_generated: 1333
+    bundles_discovered: 683
+    carrier_plists: 682
+    profiles_generated: 675
+    variants_generated: 1335
     bundles_without_supported_sims: 1
     parse_errors: 7
     rejected_profiles: 0
@@ -1983,6 +1983,7 @@ bundles:
       supported_sims:
         - "51566"
         - 20404_ID-8963662600
+        - 51566_ID-8963662600
       profiles:
         - apple_dito_ph
       variants_generated: 2
@@ -2701,9 +2702,13 @@ bundles:
         - 51502_GID1-636f6e6e65637431
         - 502012_GID1-636f6e6e65637431
         - 722368_GID1-636f6e6e65637431
+        - 90161_GID1-636f6e6e65637431
+        - 302720_GID1-636f6e6e65637431
+        - 72440_GID1-636f6e6e65637431
+        - 310590_GID1-636f6e6e65637431
       profiles:
         - apple_knowroaming
-      variants_generated: 54
+      variants_generated: 58
       status: ready
     - bundle: Korek_iq.bundle
       carrier_plist: true
@@ -5727,6 +5732,9 @@ bundles:
         - 311480_GID2-D0
         - 310590_GID2-D0
         - 310599_GID2-D0
+        - 311480_GID2-A9
+        - 310590_GID2-A9
+        - 310599_GID2-A9
       profiles:
         - apple_verizon_mvno_us
       variants_generated: 3
@@ -5751,15 +5759,6 @@ bundles:
       profiles:
         - apple_verizon_tfw_lte_us
       variants_generated: 3
-      status: ready
-    - bundle: Verizon_Ting_LTE_US.bundle
-      carrier_plist: true
-      supported_sims:
-        - 311480_GID2-A9
-        - 20404_GID2-A9_ID-891480
-      profiles:
-        - apple_verizon_ting_lte_us
-      variants_generated: 2
       status: ready
     - bundle: Verizon_Visible_LTE_US.bundle
       carrier_plist: true

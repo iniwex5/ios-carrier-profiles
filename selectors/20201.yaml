@@ -6,5 +6,5 @@ profiles:
       generic: true
       selectors:
         - raw: "20201"
-          carrier_name: COSMOTE
+          carrier_name: Telekom
           iso: GR

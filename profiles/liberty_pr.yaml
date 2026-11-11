@@ -82,7 +82,7 @@ plmn_overrides:
                           lifetime_seconds: 86400
                 local_identifier: anonymous@nai.epc.mnc$mnc.mcc$mcc.3gppnetwork.org
                 username: 0$imsi@nai.epc.mnc$MNC.mcc$MCC.3gppnetwork.org
-                remote_certificate_authority_name: Go Daddy Secure Certificate Authority - G2
+                remote_certificate_authority_name: GoDaddy TLS Root CA - R1
                 remote_certificate_hostname: epdg.epc.mnc860.mcc354.pub.3gppnetwork.org
                 validate_remote_certificate: true
             register:

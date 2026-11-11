@@ -1590,6 +1590,8 @@ bundles:
         - "302610"
         - "302690"
         - "302691"
+        - "302720"
+        - "310590"
         - "310840"
         - "313790"
         - "31399"
@@ -1624,8 +1626,10 @@ bundles:
         - "72236"
         - "722368"
         - "72418"
+        - "72440"
         - "732123"
         - "90131"
+        - "90161"
     - id: apple_korek_iq
       bundle: Korek_iq.bundle
       path: profiles/korek_iq.yaml
@@ -3595,12 +3599,6 @@ bundles:
       supported_plmns:
         - "310590"
         - "310599"
-        - "311480"
-    - id: apple_verizon_ting_lte_us
-      bundle: Verizon_Ting_LTE_US.bundle
-      path: profiles/verizon_ting_lte_us.yaml
-      supported_plmns:
-        - "20404"
         - "311480"
     - id: apple_verizon_visible_lte_us
       bundle: Verizon_Visible_LTE_US.bundle

@@ -8,7 +8,7 @@ supported_plmns:
 common:
     apns:
         - apn: fast.metropcs.com
-          type_mask: 32769
+          type_mask: 1081351
           allowed_ip_stack: ipv6
           roaming_ip_stack: ipv4
           domestic_roaming_ip_stack: ipv4
@@ -23,7 +23,6 @@ common:
           support_switch_over: true
           support_5g_sa_handover: true
         - apn: tmus
-          type_mask: 1048582
           tech_type_mask: 1048582
           allowed_ip_stack: ipv6
           roaming_ip_stack: ipv4
@@ -44,7 +43,7 @@ common:
           always_on_pdu: true
     apple:
         carrier_entitlements:
-            supported_entitlements: 4195737
+            supported_entitlements: 4720025
     e911:
         emergency_urns:
             default: urn:service:sos

@@ -6,5 +6,5 @@ profiles:
       generic: true
       selectors:
         - raw: "21670"
-          carrier_name: vodafone HU
+          carrier_name: One HU
           iso: HU

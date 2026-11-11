@@ -24,7 +24,7 @@ plmn_overrides:
               allowed_ip_stack: ipv6
         apple:
             carrier_entitlements:
-                supported_entitlements: 74753
+                supported_entitlements: 4269057
         e911:
             over_itech_supported: true
             wifi_calling_without_entitlement: true

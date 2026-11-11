@@ -30,7 +30,7 @@ common:
           use_network_mtu: true
     apple:
         carrier_entitlements:
-            supported_entitlements: 4204169
+            supported_entitlements: 4203657
     e911:
         over_itech_supported: false
     entitlement:
@@ -40,10 +40,10 @@ common:
         epdg:
             address: epdg.epc.att.net
             configuration_attributes:
-                - identifier: 16384
+                - identifier: 20
                   name: AssignedPCSCFIPv4
                   type: v4
-                - identifier: 16386
+                - identifier: 21
                   name: AssignedPCSCFIPv6
                   type: v6
         ike:

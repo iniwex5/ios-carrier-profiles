@@ -32,8 +32,8 @@ common:
               type: 3GPP
               timeout: 86400
         - apn: hos
-          type_mask: 1048582
-          tech_type_mask: 1048582
+          type_mask: 1048578
+          tech_type_mask: 1048578
           allowed_ip_stack: ipv4v6
           roaming_ip_stack: ipv4
           xlat464_enabled: true

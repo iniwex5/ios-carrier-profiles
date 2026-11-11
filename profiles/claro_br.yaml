@@ -12,7 +12,6 @@ plmn_overrides:
               password: claro
               type_mask: 32817
               allowed_ip_stack: ipv4v6
-              roaming_ip_stack: ipv4
             - apn: mms.claro.com.br
               username: claro
               password: claro

@@ -8,7 +8,12 @@ plmn_overrides:
     "21404":
         apns:
             - apn: internet
-              type_mask: 49
+              type_mask: 32817
+        apple:
+            carrier_entitlements:
+                supported_entitlements: 4194305
+        entitlement:
+            entitlement_url: https://aes.orange.es/core/v2
         ims:
             register:
                 use_ipsec: true

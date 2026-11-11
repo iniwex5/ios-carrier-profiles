@@ -17,7 +17,7 @@ plmn_overrides:
               support_switch_over: true
         apple:
             carrier_entitlements:
-                supported_entitlements: 1025
+                supported_entitlements: 9217
         e911:
             over_itech_supported: false
             wifi_calling_without_entitlement: true
