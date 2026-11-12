@@ -13,7 +13,7 @@ common:
         - apn: ims
           type_mask: 131072
           tech_type_mask: 131072
-          allowed_ip_stack: ipv4
+          allowed_ip_stack: ipv4v6
     ims:
         apn: ims
         domain: ims.mnc066.mcc515.3gppnetwork.org
@@ -44,7 +44,7 @@ common:
                   authentication_method: None
                   eap_method: EAP-AKA
             username: 0$imsi@nai.epc.mnc066.mcc515.3gppnetwork.org
-        ip_stack: ipv4
+        ip_stack: ipv4v6
         register:
             expires: 7200
             include_cellular_network_info: true

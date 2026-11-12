@@ -1982,8 +1982,8 @@ bundles:
       carrier_plist: true
       supported_sims:
         - "51566"
-        - 20404_ID-8963662600
-        - 51566_ID-8963662600
+        - 20404_ID-896366
+        - 51566_ID-896366
       profiles:
         - apple_dito_ph
       variants_generated: 2
