@@ -5,9 +5,9 @@ bundle: Roamless.bundle
 supported_plmns:
     - "20601"
     - "20628"
+    - "732123"
     - "310840"
     - "45400"
-    - "732123"
 common:
     apns:
         - apn: roamless

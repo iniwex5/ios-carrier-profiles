@@ -3,8 +3,8 @@ kind: carrier_bundle
 id: apple_yes_my
 bundle: Yes_my.bundle
 supported_plmns:
-    - "502152"
     - "52505"
+    - "502152"
 common:
     apns:
         - apn: yesnet

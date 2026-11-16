@@ -3,9 +3,9 @@ kind: carrier_bundle
 id: apple_iusacell_mx
 bundle: iusacell_mx.bundle
 supported_plmns:
-    - "22201"
     - "33405"
     - "334050"
+    - "22201"
 common:
     apns:
         - apn: web.attmex.mx

@@ -3,9 +3,9 @@ kind: carrier_bundle
 id: apple_vtr_cl
 bundle: vtr_cl.bundle
 supported_plmns:
-    - "20601"
-    - "302370"
     - "73008"
+    - "302370"
+    - "20601"
 common:
     apns:
         - apn: movil.vtr.com

@@ -3,8 +3,8 @@ kind: carrier_bundle
 id: apple_tim_kena_it
 bundle: TIM_Kena_it.bundle
 supported_plmns:
-    - "22201"
     - "22207"
+    - "22201"
 common:
     apns:
         - apn: web.kenamobile.it

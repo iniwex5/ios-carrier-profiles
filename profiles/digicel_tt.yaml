@@ -3,8 +3,8 @@ kind: carrier_bundle
 id: apple_digicel_tt
 bundle: Digicel_tt.bundle
 supported_plmns:
-    - "37413"
     - "374130"
+    - "37413"
 common:
     apns:
         - apn: web

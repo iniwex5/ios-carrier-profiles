@@ -3,8 +3,8 @@ kind: carrier_bundle
 id: apple_digicel_vg
 bundle: Digicel_vg.bundle
 supported_plmns:
-    - "338050"
     - "348770"
+    - "338050"
 common:
     apns:
         - apn: web

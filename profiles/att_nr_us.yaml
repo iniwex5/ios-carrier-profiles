@@ -3,12 +3,12 @@ kind: carrier_bundle
 id: apple_att_nr_us
 bundle: ATT_NR_US.bundle
 supported_plmns:
-    - "310030"
-    - "310280"
     - "310410"
-    - "310560"
-    - "310950"
+    - "310280"
     - "311180"
+    - "310560"
+    - "310030"
+    - "310950"
 common:
     apns:
         - apn: enhancedphone

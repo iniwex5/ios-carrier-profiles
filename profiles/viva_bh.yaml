@@ -3,8 +3,8 @@ kind: carrier_bundle
 id: apple_viva_bh
 bundle: Viva_bh.bundle
 supported_plmns:
-    - "42001"
     - "42604"
+    - "42001"
 common:
     apns:
         - apn: stc.bh

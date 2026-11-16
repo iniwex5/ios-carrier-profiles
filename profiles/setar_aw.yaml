@@ -3,8 +3,8 @@ kind: carrier_bundle
 id: apple_setar_aw
 bundle: Setar_aw.bundle
 supported_plmns:
-    - "21407"
     - "36301"
+    - "21407"
 common:
     apns:
         - apn: internet.setar.aw

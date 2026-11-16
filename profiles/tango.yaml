@@ -4,8 +4,8 @@ id: apple_tango
 bundle: Tango.bundle
 supported_plmns:
     - "22201"
-    - "23453"
     - "313770"
+    - "23453"
 common:
     apns:
         - apn: globaldata

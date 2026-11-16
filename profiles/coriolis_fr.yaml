@@ -3,9 +3,9 @@ kind: carrier_bundle
 id: apple_coriolis_fr
 bundle: Coriolis_fr.bundle
 supported_plmns:
+    - "20827"
     - "20801"
     - "20809"
-    - "20827"
 common:
     apns:
         - apn: coriolis

@@ -3,8 +3,8 @@ kind: carrier_bundle
 id: apple_1and1_de
 bundle: 1and1_de.bundle
 supported_plmns:
-    - "20801"
     - "26223"
+    - "20801"
 common:
     apns:
         - apn: internet

@@ -3,10 +3,10 @@ kind: carrier_bundle
 id: apple_tmobile_germany
 bundle: TMobile_Germany.bundle
 supported_plmns:
+    - "26298"
     - "26201"
     - "26206"
     - "26278"
-    - "26298"
 common:
     apns:
         - apn: internet.v6.telekom

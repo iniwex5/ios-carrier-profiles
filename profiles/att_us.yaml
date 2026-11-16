@@ -3,13 +3,13 @@ kind: carrier_bundle
 id: apple_att_us
 bundle: ATT_US.bundle
 supported_plmns:
-    - "310030"
     - "310170"
-    - "310280"
     - "310410"
-    - "310560"
-    - "310950"
     - "311180"
+    - "310560"
+    - "310280"
+    - "310030"
+    - "310950"
 common:
     apns:
         - apn: nxtgenphone

@@ -3,13 +3,13 @@ kind: carrier_bundle
 id: apple_esimgo
 bundle: eSIMGO.bundle
 supported_plmns:
+    - "23210"
     - "20601"
     - "20628"
-    - "20809"
-    - "23210"
     - "23457"
-    - "26050"
     - "27225"
+    - "20809"
+    - "26050"
 common:
     apns:
         - apn: data.esim

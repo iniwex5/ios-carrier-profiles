@@ -3,8 +3,8 @@ kind: carrier_bundle
 id: apple_rogers_chatr_ca
 bundle: Rogers_chatr_ca.bundle
 supported_plmns:
-    - "302320"
     - "302720"
+    - "302320"
 common:
     apns:
         - apn: chatrweb.apn

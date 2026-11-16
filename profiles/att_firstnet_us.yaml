@@ -3,8 +3,8 @@ kind: carrier_bundle
 id: apple_att_firstnet_us
 bundle: ATT_FirstNet_US.bundle
 supported_plmns:
-    - "312670"
     - "313100"
+    - "312670"
 common:
     apns:
         - apn: firstnet-phone

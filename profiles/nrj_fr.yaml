@@ -3,9 +3,9 @@ kind: carrier_bundle
 id: apple_nrj_fr
 bundle: NRJ_fr.bundle
 supported_plmns:
+    - "20826"
     - "20601"
     - "20801"
-    - "20826"
 common:
     apns:
         - apn: net26

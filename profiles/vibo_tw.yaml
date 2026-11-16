@@ -4,8 +4,8 @@ id: apple_vibo_tw
 bundle: Vibo_tw.bundle
 supported_plmns:
     - "46689"
-    - "466891"
     - "46690"
+    - "466891"
 common:
     apns:
         - apn: internet

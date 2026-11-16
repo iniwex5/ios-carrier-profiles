@@ -3,9 +3,9 @@ kind: carrier_bundle
 id: apple_uscellular_lte_us
 bundle: USCellular_LTE_US.bundle
 supported_plmns:
-    - "20404"
     - "311580"
     - "311589"
+    - "20404"
 common:
     apns:
         - apn: usccinternet

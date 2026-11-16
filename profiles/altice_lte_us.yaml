@@ -3,8 +3,8 @@ kind: carrier_bundle
 id: apple_altice_lte_us
 bundle: Altice_LTE_US.bundle
 supported_plmns:
-    - "20809"
     - "313390"
+    - "20809"
 common:
     apns:
         - apn: altice

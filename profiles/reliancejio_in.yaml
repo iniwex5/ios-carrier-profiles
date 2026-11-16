@@ -3,7 +3,7 @@ kind: carrier_bundle
 id: apple_reliancejio_in
 bundle: RelianceJio_in.bundle
 supported_plmns:
-    - "22201"
+    - "405874"
     - "405840"
     - "405854"
     - "405855"
@@ -25,7 +25,7 @@ supported_plmns:
     - "405871"
     - "405872"
     - "405873"
-    - "405874"
+    - "22201"
 common:
     apns:
         - apn: jionet

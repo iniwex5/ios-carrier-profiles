@@ -4,8 +4,8 @@ id: apple_claro_hn
 bundle: Claro_hn.bundle
 supported_plmns:
     - "70800"
-    - "708001"
     - "70801"
+    - "708001"
 common:
     apns:
         - apn: internet.ideasclaro

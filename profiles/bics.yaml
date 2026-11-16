@@ -3,13 +3,13 @@ kind: carrier_bundle
 id: apple_bics
 bundle: BICS.bundle
 supported_plmns:
-    - "20601"
     - "20628"
     - "20809"
     - "302220"
-    - "45431"
-    - "50212"
     - "52505"
+    - "50212"
+    - "20601"
+    - "45431"
     - "72454"
 common:
     apns:

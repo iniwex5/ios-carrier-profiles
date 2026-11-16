@@ -3,8 +3,8 @@ kind: carrier_bundle
 id: apple_free_re
 bundle: Free_re.bundle
 supported_plmns:
-    - "20815"
     - "64703"
+    - "20815"
 common:
     apns:
         - apn: free.re

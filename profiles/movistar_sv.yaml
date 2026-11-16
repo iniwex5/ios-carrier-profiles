@@ -3,8 +3,8 @@ kind: carrier_bundle
 id: apple_movistar_sv
 bundle: movistar_sv.bundle
 supported_plmns:
-    - "21407"
     - "70604"
+    - "21407"
 common:
     apns:
         - apn: internet.movistar.sv

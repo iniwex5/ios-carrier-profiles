@@ -3,12 +3,12 @@ kind: carrier_bundle
 id: apple_tmobile_us
 bundle: TMobile_US.bundle
 supported_plmns:
+    - "310240"
     - "310160"
     - "310200"
     - "310210"
     - "310220"
     - "310230"
-    - "310240"
     - "310250"
     - "310260"
     - "310270"

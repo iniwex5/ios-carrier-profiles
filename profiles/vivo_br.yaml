@@ -3,12 +3,12 @@ kind: carrier_bundle
 id: apple_vivo_br
 bundle: vivo_br.bundle
 supported_plmns:
-    - "21402"
-    - "21407"
     - "72406"
     - "72410"
     - "72411"
     - "72423"
+    - "21407"
+    - "21402"
 common:
     apns:
         - apn: zap.vivo.com.br

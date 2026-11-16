@@ -3,9 +3,9 @@ kind: carrier_bundle
 id: apple_telus_koodo_ca
 bundle: Telus_Koodo_ca.bundle
 supported_plmns:
-    - "302220"
-    - "302221"
     - "302222"
+    - "302221"
+    - "302220"
 common:
     apns:
         - apn: ims

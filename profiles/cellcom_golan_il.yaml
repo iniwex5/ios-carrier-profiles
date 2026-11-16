@@ -3,9 +3,9 @@ kind: carrier_bundle
 id: apple_cellcom_golan_il
 bundle: Cellcom_Golan_il.bundle
 supported_plmns:
+    - "42508"
     - "20601"
     - "42502"
-    - "42508"
 common:
     apns:
         - apn: internet.golantelecom.net.il

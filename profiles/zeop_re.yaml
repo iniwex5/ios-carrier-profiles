@@ -3,8 +3,8 @@ kind: carrier_bundle
 id: apple_zeop_re
 bundle: Zeop_re.bundle
 supported_plmns:
-    - "20801"
     - "64704"
+    - "20801"
 common:
     apns:
         - apn: zeopdata

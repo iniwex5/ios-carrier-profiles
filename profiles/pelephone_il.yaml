@@ -3,8 +3,8 @@ kind: carrier_bundle
 id: apple_pelephone_il
 bundle: Pelephone_il.bundle
 supported_plmns:
-    - "20404"
     - "42503"
+    - "20404"
 common:
     apns:
         - apn: sphone.pelephone.net.il

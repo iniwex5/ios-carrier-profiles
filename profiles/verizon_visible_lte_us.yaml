@@ -3,8 +3,8 @@ kind: carrier_bundle
 id: apple_verizon_visible_lte_us
 bundle: Verizon_Visible_LTE_US.bundle
 supported_plmns:
-    - "20404"
     - "311480"
+    - "20404"
 common:
     apns:
         - apn: vsblinternet

@@ -3,8 +3,8 @@ kind: carrier_bundle
 id: apple_sfr_caraibe_mq
 bundle: SFR_Caraibe_mq.bundle
 supported_plmns:
-    - "20809"
     - "34002"
+    - "20809"
 common:
     apns:
         - apn: internet.sfr

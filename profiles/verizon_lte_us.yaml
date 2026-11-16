@@ -3,9 +3,9 @@ kind: carrier_bundle
 id: apple_verizon_lte_us
 bundle: Verizon_LTE_US.bundle
 supported_plmns:
-    - "310590"
-    - "310599"
     - "311480"
+    - "310599"
+    - "310590"
 common:
     apns:
         - apn: vzwinternet

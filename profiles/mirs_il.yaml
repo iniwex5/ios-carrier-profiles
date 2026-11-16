@@ -3,9 +3,9 @@ kind: carrier_bundle
 id: apple_mirs_il
 bundle: Mirs_il.bundle
 supported_plmns:
+    - "42507"
     - "20404"
     - "20809"
-    - "42507"
 common:
     apns:
         - apn: net.hotm

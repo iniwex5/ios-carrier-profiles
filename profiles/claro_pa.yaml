@@ -3,9 +3,9 @@ kind: carrier_bundle
 id: apple_claro_pa
 bundle: Claro_pa.bundle
 supported_plmns:
-    - "33402"
-    - "334020"
     - "71403"
+    - "334020"
+    - "33402"
 common:
     apns:
         - apn: web.claro.com.pa

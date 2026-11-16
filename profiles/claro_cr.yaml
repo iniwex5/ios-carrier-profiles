@@ -3,10 +3,10 @@ kind: carrier_bundle
 id: apple_claro_cr
 bundle: Claro_cr.bundle
 supported_plmns:
-    - "71203"
-    - "712030"
     - "71230"
+    - "71203"
     - "712300"
+    - "712030"
 common:
     apns:
         - apn: internet.ideasclaro

@@ -3,8 +3,8 @@ kind: carrier_bundle
 id: apple_movistar_cl
 bundle: movistar_cl.bundle
 supported_plmns:
-    - "21407"
     - "73002"
+    - "21407"
 common:
     apns:
         - apn: wap.tmovil.cl

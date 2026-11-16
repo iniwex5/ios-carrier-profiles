@@ -3,8 +3,8 @@ kind: carrier_bundle
 id: apple_primetel_cy
 bundle: PrimeTel_cy.bundle
 supported_plmns:
-    - "22201"
     - "28020"
+    - "22201"
 common:
     apns:
         - apn: ip.primetel

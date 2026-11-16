@@ -3,8 +3,8 @@ kind: carrier_bundle
 id: apple_claro_pr
 bundle: Claro_pr.bundle
 supported_plmns:
-    - "33011"
     - "330110"
+    - "33011"
 common:
     apns:
         - apn: lte.claropr.com

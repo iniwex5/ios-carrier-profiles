@@ -3,8 +3,8 @@ kind: carrier_bundle
 id: apple_sky_ie
 bundle: Sky_ie.bundle
 supported_plmns:
-    - "24007"
     - "27225"
+    - "24007"
 common:
     apns:
         - apn: mobile.sky

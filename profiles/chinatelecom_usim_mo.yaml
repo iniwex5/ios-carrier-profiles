@@ -3,8 +3,8 @@ kind: carrier_bundle
 id: apple_chinatelecom_usim_mo
 bundle: ChinaTelecom_USIM_mo.bundle
 supported_plmns:
-    - "20404"
     - "45507"
+    - "20404"
 common:
     apns:
         - apn: CTNET

@@ -3,8 +3,8 @@ kind: carrier_bundle
 id: apple_ktf_kr
 bundle: KTF_kr.bundle
 supported_plmns:
-    - "45002"
     - "45008"
+    - "45002"
 common:
     apns:
         - apn: internet

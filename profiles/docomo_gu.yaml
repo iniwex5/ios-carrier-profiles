@@ -4,9 +4,9 @@ id: apple_docomo_gu
 bundle: Docomo_gu.bundle
 supported_plmns:
     - "310370"
+    - "52505"
     - "310470"
     - "313110"
-    - "52505"
 common:
     apns:
         - apn: apple.internet

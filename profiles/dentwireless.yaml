@@ -3,18 +3,18 @@ kind: carrier_bundle
 id: apple_dentwireless
 bundle: DentWireless.bundle
 supported_plmns:
-    - "23450"
-    - "26001"
-    - "26003"
-    - "26006"
-    - "27877"
-    - "310240"
-    - "310260"
     - "311882"
-    - "42501"
+    - "26001"
+    - "27877"
     - "44011"
+    - "310260"
+    - "310240"
+    - "26003"
+    - "23450"
+    - "42501"
     - "45403"
     - "51503"
+    - "26006"
 common:
     apns:
         - apn: global.telcoequity

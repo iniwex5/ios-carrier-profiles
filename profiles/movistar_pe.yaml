@@ -3,8 +3,8 @@ kind: carrier_bundle
 id: apple_movistar_pe
 bundle: movistar_pe.bundle
 supported_plmns:
-    - "21407"
     - "71606"
+    - "21407"
 common:
     apns:
         - apn: ims

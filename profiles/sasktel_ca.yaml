@@ -3,8 +3,8 @@ kind: carrier_bundle
 id: apple_sasktel_ca
 bundle: Sasktel_ca.bundle
 supported_plmns:
-    - "20404"
     - "302780"
+    - "20404"
 common:
     apns:
         - apn: pda2.stm.sk.ca

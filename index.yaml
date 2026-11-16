@@ -4,8 +4,8 @@ bundles:
       bundle: 1and1_de.bundle
       path: profiles/1and1_de.yaml
       supported_plmns:
-        - "20801"
         - "26223"
+        - "20801"
     - id: apple_2degrees_nz
       bundle: 2degrees_nz.bundle
       path: profiles/2degrees_nz.yaml
@@ -20,56 +20,56 @@ bundles:
       bundle: AffinityClick.bundle
       path: profiles/affinityclick.yaml
       supported_plmns:
+        - "310840"
+        - "26006"
+        - "52505"
+        - "29505"
+        - "23410"
+        - "26001"
+        - "45400"
+        - "41677"
+        - "52501"
+        - "334020"
         - "20408"
+        - "26806"
+        - "20809"
         - "20601"
         - "20628"
-        - "20801"
-        - "20802"
-        - "20809"
-        - "22201"
-        - "23410"
-        - "23450"
-        - "24007"
-        - "26001"
-        - "26006"
-        - "26806"
-        - "29505"
-        - "310840"
-        - "334020"
-        - "41302"
-        - "41311"
-        - "41677"
         - "42202"
         - "42204"
-        - "42402"
-        - "42501"
-        - "45204"
-        - "45400"
-        - "52501"
-        - "52505"
+        - "41302"
+        - "41311"
+        - "20801"
         - "53005"
-        - "53703"
+        - "22201"
+        - "42501"
+        - "42402"
         - "60202"
+        - "23450"
+        - "53703"
+        - "45204"
         - "71204"
         - "72418"
         - "732123"
+        - "24007"
+        - "20802"
         - "90131"
     - id: apple_airgsm
       bundle: AirGSM.bundle
       path: profiles/airgsm.yaml
       supported_plmns:
-        - "20408"
-        - "20435"
-        - "20601"
-        - "20628"
-        - "20801"
-        - "20809"
-        - "23410"
         - "29505"
         - "310840"
-        - "52501"
         - "52505"
+        - "23410"
         - "732123"
+        - "52501"
+        - "20809"
+        - "20601"
+        - "20408"
+        - "20801"
+        - "20435"
+        - "20628"
     - id: apple_ais_th
       bundle: AIS_th.bundle
       path: profiles/ais_th.yaml
@@ -90,16 +90,16 @@ bundles:
       bundle: Algar_br.bundle
       path: profiles/algar_br.yaml
       supported_plmns:
-        - "22201"
         - "72432"
         - "72433"
         - "72434"
+        - "22201"
     - id: apple_aliv_bs
       bundle: Aliv_bs.bundle
       path: profiles/aliv_bs.yaml
       supported_plmns:
-        - "20809"
         - "36449"
+        - "20809"
     - id: apple_almadar_ly
       bundle: Almadar_ly.bundle
       path: profiles/almadar_ly.yaml
@@ -109,8 +109,8 @@ bundles:
       bundle: Altice_LTE_US.bundle
       path: profiles/altice_lte_us.yaml
       supported_plmns:
-        - "20809"
         - "313390"
+        - "20809"
     - id: apple_antel_uy
       bundle: Antel_uy.bundle
       path: profiles/antel_uy.yaml
@@ -142,8 +142,8 @@ bundles:
       bundle: ATN_bm.bundle
       path: profiles/atn_bm.yaml
       supported_plmns:
-        - "204043"
         - "350000"
+        - "204043"
     - id: apple_atn_gy
       bundle: ATN_gy.bundle
       path: profiles/atn_gy.yaml
@@ -174,88 +174,88 @@ bundles:
       bundle: ATT_CC_US.bundle
       path: profiles/att_cc_us.yaml
       supported_plmns:
-        - "310030"
         - "310170"
-        - "310280"
         - "310410"
-        - "310560"
-        - "310950"
         - "311180"
+        - "310560"
+        - "310280"
+        - "310030"
+        - "310950"
     - id: apple_att_dish_mvno_us
       bundle: ATT_Dish_MVNO_US.bundle
       path: profiles/att_dish_mvno_us.yaml
       supported_plmns:
-        - "310280"
         - "310410"
+        - "310280"
     - id: apple_att_firstnet_us
       bundle: ATT_FirstNet_US.bundle
       path: profiles/att_firstnet_us.yaml
       supported_plmns:
-        - "312670"
         - "313100"
+        - "312670"
     - id: apple_att_mvno_us
       bundle: ATT_MVNO_US.bundle
       path: profiles/att_mvno_us.yaml
       supported_plmns:
-        - "310280"
         - "310410"
-        - "310950"
+        - "310280"
         - "311180"
+        - "310950"
     - id: apple_att_nr_us
       bundle: ATT_NR_US.bundle
       path: profiles/att_nr_us.yaml
       supported_plmns:
-        - "310030"
-        - "310280"
         - "310410"
-        - "310560"
-        - "310950"
+        - "310280"
         - "311180"
+        - "310560"
+        - "310030"
+        - "310950"
     - id: apple_att_puretalk_us
       bundle: ATT_Puretalk_US.bundle
       path: profiles/att_puretalk_us.yaml
       supported_plmns:
-        - "310030"
         - "310170"
-        - "310280"
         - "310410"
-        - "310560"
-        - "310950"
         - "311180"
+        - "310560"
+        - "310280"
+        - "310030"
+        - "310950"
     - id: apple_att_redpocket_us
       bundle: ATT_RedPocket_US.bundle
       path: profiles/att_redpocket_us.yaml
       supported_plmns:
-        - "310280"
         - "310410"
+        - "310280"
     - id: apple_att_tfw_us
       bundle: ATT_TFW_US.bundle
       path: profiles/att_tfw_us.yaml
       supported_plmns:
-        - "310030"
         - "310170"
-        - "310280"
         - "310410"
-        - "310560"
-        - "310950"
         - "311180"
+        - "310560"
+        - "310280"
+        - "310030"
+        - "310950"
     - id: apple_att_us
       bundle: ATT_US.bundle
       path: profiles/att_us.yaml
       supported_plmns:
-        - "310030"
         - "310170"
-        - "310280"
         - "310410"
-        - "310560"
-        - "310950"
         - "311180"
+        - "310560"
+        - "310280"
+        - "310030"
+        - "310950"
     - id: apple_avantel_co
       bundle: Avantel_co.bundle
       path: profiles/avantel_co.yaml
       supported_plmns:
-        - "20404"
         - "732130"
+        - "20404"
     - id: apple_avea_tr
       bundle: AVEA_tr.bundle
       path: profiles/avea_tr.yaml
@@ -338,29 +338,29 @@ bundles:
       bundle: BhartiAirtel_in.bundle
       path: profiles/bhartiairtel_in.yaml
       supported_plmns:
-        - "40402"
-        - "40403"
         - "40410"
-        - "40416"
-        - "40431"
-        - "40440"
-        - "40445"
-        - "40449"
-        - "40470"
-        - "40490"
         - "40492"
-        - "40493"
+        - "40440"
+        - "40431"
+        - "40490"
+        - "40498"
+        - "40449"
+        - "40445"
         - "40494"
         - "40495"
+        - "40402"
         - "40496"
         - "40497"
-        - "40498"
+        - "40554"
+        - "40470"
+        - "40493"
         - "40551"
+        - "40403"
         - "40552"
         - "40553"
-        - "40554"
-        - "40555"
         - "40556"
+        - "40416"
+        - "40555"
     - id: apple_bhartiairtel_ke
       bundle: BhartiAirtel_ke.bundle
       path: profiles/bhartiairtel_ke.yaml
@@ -435,13 +435,13 @@ bundles:
       bundle: BICS.bundle
       path: profiles/bics.yaml
       supported_plmns:
-        - "20601"
         - "20628"
         - "20809"
         - "302220"
-        - "45431"
-        - "50212"
         - "52505"
+        - "50212"
+        - "20601"
+        - "45431"
         - "72454"
     - id: apple_bite_lt
       bundle: Bite_lt.bundle
@@ -479,11 +479,11 @@ bundles:
       path: profiles/bne.yaml
       supported_plmns:
         - "26006"
-        - "29505"
         - "310840"
         - "41677"
         - "42501"
         - "52505"
+        - "29505"
     - id: apple_bouygues_fr
       bundle: Bouygues_fr.bundle
       path: profiles/bouygues_fr.yaml
@@ -519,8 +519,8 @@ bundles:
       bundle: Cablenet_cy.bundle
       path: profiles/cablenet_cy.yaml
       supported_plmns:
-        - "20601"
         - "28022"
+        - "20601"
     - id: apple_carolinawest_lte_us
       bundle: CarolinaWest_LTE_US.bundle
       path: profiles/carolinawest_lte_us.yaml
@@ -531,11 +531,11 @@ bundles:
       path: profiles/carrierlab.yaml
       supported_plmns:
         - "00101"
+        - "00281"
         - "001011"
         - "00102"
         - "00111"
         - "00211"
-        - "00281"
         - "00321"
         - "00431"
         - "00541"
@@ -547,17 +547,17 @@ bundles:
         - "01122"
         - "01232"
         - "10101"
-        - "240680"
-        - "240681"
         - "24608"
         - "246081"
         - "24681"
         - "246813"
-        - "26280"
-        - "262820"
-        - "26284"
-        - "29981"
         - "311011"
+        - "29981"
+        - "26280"
+        - "26284"
+        - "262820"
+        - "240681"
+        - "240680"
     - id: apple_cbn_cn
       bundle: CBN_cn.bundle
       path: profiles/cbn_cn.yaml
@@ -587,9 +587,9 @@ bundles:
       bundle: Cellcom_Golan_il.bundle
       path: profiles/cellcom_golan_il.yaml
       supported_plmns:
+        - "42508"
         - "20601"
         - "42502"
-        - "42508"
     - id: apple_cellcom_il
       bundle: Cellcom_il.bundle
       path: profiles/cellcom_il.yaml
@@ -609,8 +609,8 @@ bundles:
       bundle: CellularSouth_LTE_US.bundle
       path: profiles/cellularsouth_lte_us.yaml
       supported_plmns:
-        - "20404"
         - "311230"
+        - "20404"
     - id: apple_charter_nr_us
       bundle: Charter_NR_US.bundle
       path: profiles/charter_nr_us.yaml
@@ -620,23 +620,20 @@ bundles:
       bundle: ChinaTelecom_hk.bundle
       path: profiles/chinatelecom_hk.yaml
       supported_plmns:
-        - "45400"
         - "45431"
+        - "45400"
     - id: apple_chinatelecom_usim_cn
       bundle: ChinaTelecom_USIM_cn.bundle
       path: profiles/chinatelecom_usim_cn.yaml
       supported_plmns:
-        - "20404"
-        - "46003"
-        - "46005"
         - "46011"
-        - "46012"
+        - "20404"
     - id: apple_chinatelecom_usim_mo
       bundle: ChinaTelecom_USIM_mo.bundle
       path: profiles/chinatelecom_usim_mo.yaml
       supported_plmns:
-        - "20404"
         - "45507"
+        - "20404"
     - id: apple_chippie_cw
       bundle: Chippie_cw.bundle
       path: profiles/chippie_cw.yaml
@@ -676,10 +673,10 @@ bundles:
       bundle: Claro_cr.bundle
       path: profiles/claro_cr.yaml
       supported_plmns:
-        - "71203"
-        - "712030"
         - "71230"
+        - "71203"
         - "712300"
+        - "712030"
     - id: apple_claro_do
       bundle: Claro_do.bundle
       path: profiles/claro_do.yaml
@@ -695,8 +692,8 @@ bundles:
       path: profiles/claro_hn.yaml
       supported_plmns:
         - "70800"
-        - "708001"
         - "70801"
+        - "708001"
     - id: apple_claro_ni
       bundle: Claro_ni.bundle
       path: profiles/claro_ni.yaml
@@ -706,9 +703,9 @@ bundles:
       bundle: Claro_pa.bundle
       path: profiles/claro_pa.yaml
       supported_plmns:
-        - "33402"
-        - "334020"
         - "71403"
+        - "334020"
+        - "33402"
     - id: apple_claro_pe
       bundle: Claro_pe.bundle
       path: profiles/claro_pe.yaml
@@ -718,8 +715,8 @@ bundles:
       bundle: Claro_pr.bundle
       path: profiles/claro_pr.yaml
       supported_plmns:
-        - "33011"
         - "330110"
+        - "33011"
     - id: apple_claro_py
       bundle: Claro_py.bundle
       path: profiles/claro_py.yaml
@@ -739,28 +736,26 @@ bundles:
       bundle: CMCC_CMI.bundle
       path: profiles/cmcc_cmi.yaml
       supported_plmns:
+        - "45412"
         - "20601"
-        - "20628"
+        - "302220"
         - "20801"
+        - "90101"
         - "22201"
         - "23410"
-        - "302220"
+        - "732123"
+        - "454384"
+        - "20628"
         - "41004"
         - "45406"
-        - "45412"
-        - "454384"
-        - "732123"
-        - "90101"
     - id: apple_cmcc_cn
       bundle: CMCC_cn.bundle
       path: profiles/cmcc_cn.yaml
       supported_plmns:
         - "46000"
         - "46002"
-        - "46004"
         - "46007"
         - "46008"
-        - "46013"
     - id: apple_cmcc_hk
       bundle: CMCC_hk.bundle
       path: profiles/cmcc_hk.yaml
@@ -801,9 +796,9 @@ bundles:
       bundle: Coriolis_fr.bundle
       path: profiles/coriolis_fr.yaml
       supported_plmns:
+        - "20827"
         - "20801"
         - "20809"
-        - "20827"
     - id: apple_crosswireless_bravado_lte_us
       bundle: CrossWireless_Bravado_LTE_US.bundle
       path: profiles/crosswireless_bravado_lte_us.yaml
@@ -849,29 +844,29 @@ bundles:
       bundle: CW_tt.bundle
       path: profiles/cw_tt.yaml
       supported_plmns:
-        - "374012"
         - "37412"
+        - "374012"
     - id: apple_cw_wi
       bundle: CW_wi.bundle
       path: profiles/cw_wi.yaml
       supported_plmns:
         - "338180"
-        - "342600"
-        - "344920"
         - "346140"
+        - "344920"
+        - "365840"
+        - "342600"
         - "348170"
+        - "366110"
         - "352110"
-        - "35486"
         - "354860"
-        - "35611"
         - "356110"
-        - "35811"
         - "358110"
         - "360110"
-        - "365840"
-        - "366110"
-        - "37635"
         - "376350"
+        - "35611"
+        - "35486"
+        - "37635"
+        - "35811"
     - id: apple_cyta_cy
       bundle: Cyta_cy.bundle
       path: profiles/cyta_cy.yaml
@@ -886,18 +881,18 @@ bundles:
       bundle: DentWireless.bundle
       path: profiles/dentwireless.yaml
       supported_plmns:
-        - "23450"
-        - "26001"
-        - "26003"
-        - "26006"
-        - "27877"
-        - "310240"
-        - "310260"
         - "311882"
-        - "42501"
+        - "26001"
+        - "27877"
         - "44011"
+        - "310260"
+        - "310240"
+        - "26003"
+        - "23450"
+        - "42501"
         - "45403"
         - "51503"
+        - "26006"
     - id: apple_dhiraagu_mv
       bundle: Dhiraagu_mv.bundle
       path: profiles/dhiraagu_mv.yaml
@@ -973,9 +968,9 @@ bundles:
       bundle: Digicel_ht.bundle
       path: profiles/digicel_ht.yaml
       supported_plmns:
+        - "37201"
         - "33805"
         - "338050"
-        - "37201"
     - id: apple_digicel_jm
       bundle: Digicel_jm.bundle
       path: profiles/digicel_jm.yaml
@@ -1051,8 +1046,8 @@ bundles:
       bundle: Digicel_tt.bundle
       path: profiles/digicel_tt.yaml
       supported_plmns:
-        - "37413"
         - "374130"
+        - "37413"
     - id: apple_digicel_vc
       bundle: Digicel_vc.bundle
       path: profiles/digicel_vc.yaml
@@ -1063,8 +1058,8 @@ bundles:
       bundle: Digicel_vg.bundle
       path: profiles/digicel_vg.yaml
       supported_plmns:
-        - "338050"
         - "348770"
+        - "338050"
     - id: apple_digicel_vu
       bundle: Digicel_vu.bundle
       path: profiles/digicel_vu.yaml
@@ -1090,14 +1085,14 @@ bundles:
       bundle: Dish_US.bundle
       path: profiles/dish_us.yaml
       supported_plmns:
-        - "302220"
         - "313340"
+        - "302220"
     - id: apple_dito_ph
       bundle: Dito_ph.bundle
       path: profiles/dito_ph.yaml
       supported_plmns:
-        - "20404"
         - "51566"
+        - "20404"
     - id: apple_djezzy_dz
       bundle: Djezzy_dz.bundle
       path: profiles/djezzy_dz.yaml
@@ -1114,9 +1109,9 @@ bundles:
       path: profiles/docomo_gu.yaml
       supported_plmns:
         - "310370"
+        - "52505"
         - "310470"
         - "313110"
-        - "52505"
     - id: apple_docomo_jp
       bundle: Docomo_jp.bundle
       path: profiles/docomo_jp.yaml
@@ -1126,14 +1121,14 @@ bundles:
       bundle: DSTCom_bn.bundle
       path: profiles/dstcom_bn.yaml
       supported_plmns:
-        - "52803"
         - "52811"
+        - "52803"
     - id: apple_dtac_th
       bundle: dtac_th.bundle
       path: profiles/dtac_th.yaml
       supported_plmns:
-        - "52005"
         - "52018"
+        - "52005"
     - id: apple_du_ae
       bundle: du_ae.bundle
       path: profiles/du_ae.yaml
@@ -1148,8 +1143,8 @@ bundles:
       bundle: Eastlink_ca.bundle
       path: profiles/eastlink_ca.yaml
       supported_plmns:
-        - "20601"
         - "302270"
+        - "20601"
     - id: apple_econet_zw
       bundle: Econet_zw.bundle
       path: profiles/econet_zw.yaml
@@ -1195,13 +1190,13 @@ bundles:
       bundle: eSIMGO.bundle
       path: profiles/esimgo.yaml
       supported_plmns:
+        - "23210"
         - "20601"
         - "20628"
-        - "20809"
-        - "23210"
         - "23457"
-        - "26050"
         - "27225"
+        - "20809"
+        - "26050"
     - id: apple_etisalat_ae
       bundle: Etisalat_ae.bundle
       path: profiles/etisalat_ae.yaml
@@ -1278,21 +1273,21 @@ bundles:
       bundle: Free_mq.bundle
       path: profiles/free_mq.yaml
       supported_plmns:
-        - "20815"
-        - "34004"
         - "34009"
+        - "34004"
+        - "20815"
     - id: apple_free_re
       bundle: Free_re.bundle
       path: profiles/free_re.yaml
       supported_plmns:
-        - "20815"
         - "64703"
+        - "20815"
     - id: apple_free_yt
       bundle: Free_yt.bundle
       path: profiles/free_yt.yaml
       supported_plmns:
-        - "20601"
         - "64702"
+        - "20601"
     - id: apple_freedommobile_ca
       bundle: FreedomMobile_ca.bundle
       path: profiles/freedommobile_ca.yaml
@@ -1317,14 +1312,14 @@ bundles:
       bundle: GigSky_US.bundle
       path: profiles/gigsky_us.yaml
       supported_plmns:
-        - "20404"
-        - "20809"
         - "22201"
+        - "20404"
         - "23801"
         - "24007"
+        - "338050"
         - "310380"
         - "312870"
-        - "338050"
+        - "20809"
     - id: apple_globacom_bj
       bundle: Globacom_bj.bundle
       path: profiles/globacom_bj.yaml
@@ -1364,11 +1359,11 @@ bundles:
       bundle: Holafly.bundle
       path: profiles/holafly.yaml
       supported_plmns:
-        - "20601"
-        - "20801"
         - "23210"
-        - "302220"
         - "45412"
+        - "20601"
+        - "302220"
+        - "20801"
     - id: apple_hutchison_at
       bundle: Hutchison_at.bundle
       path: profiles/hutchison_at.yaml
@@ -1441,40 +1436,40 @@ bundles:
       bundle: Ice_no.bundle
       path: profiles/ice_no.yaml
       supported_plmns:
-        - "20404"
         - "24214"
+        - "20404"
     - id: apple_idea_in
       bundle: Idea_in.bundle
       path: profiles/idea_in.yaml
       supported_plmns:
-        - "40404"
-        - "40407"
-        - "40412"
-        - "40414"
-        - "40419"
         - "40422"
         - "40424"
-        - "40444"
-        - "40456"
+        - "40407"
         - "40478"
-        - "40482"
-        - "40487"
+        - "40404"
+        - "40412"
+        - "40456"
+        - "40419"
         - "40489"
-        - "40570"
+        - "40487"
+        - "40482"
         - "405799"
+        - "40570"
         - "405845"
         - "405846"
+        - "40444"
         - "405848"
         - "405849"
         - "405850"
+        - "40414"
         - "405852"
         - "405853"
     - id: apple_iliad_it
       bundle: Iliad_it.bundle
       path: profiles/iliad_it.yaml
       supported_plmns:
-        - "20815"
         - "22250"
+        - "20815"
     - id: apple_imagine_bn
       bundle: Imagine_bn.bundle
       path: profiles/imagine_bn.yaml
@@ -1485,8 +1480,8 @@ bundles:
       path: profiles/indosat_id.yaml
       supported_plmns:
         - "51001"
-        - "51021"
         - "51089"
+        - "51021"
     - id: apple_inland_lte_us
       bundle: Inland_LTE_US.bundle
       path: profiles/inland_lte_us.yaml
@@ -1506,16 +1501,16 @@ bundles:
       bundle: iusacell_mx.bundle
       path: profiles/iusacell_mx.yaml
       supported_plmns:
-        - "22201"
         - "33405"
         - "334050"
+        - "22201"
     - id: apple_iusacell_unefon_mx
       bundle: iusacell_Unefon_mx.bundle
       path: profiles/iusacell_unefon_mx.yaml
       supported_plmns:
-        - "22201"
         - "33405"
         - "334050"
+        - "22201"
     - id: apple_iusacell_wim_mx
       bundle: iusacell_WIM_mx.bundle
       path: profiles/iusacell_wim_mx.yaml
@@ -1572,64 +1567,64 @@ bundles:
       bundle: KnowRoaming.bundle
       path: profiles/knowroaming.yaml
       supported_plmns:
-        - "20408"
-        - "20601"
-        - "20628"
-        - "20801"
-        - "20802"
-        - "20809"
-        - "21405"
+        - "310840"
         - "22201"
-        - "23410"
+        - "42501"
+        - "26006"
+        - "42402"
+        - "60202"
+        - "52505"
         - "23450"
+        - "53703"
+        - "29505"
+        - "41677"
+        - "45204"
+        - "71204"
+        - "72418"
+        - "732123"
+        - "23410"
         - "24007"
         - "26001"
-        - "26006"
-        - "26806"
-        - "29505"
-        - "302610"
-        - "302690"
-        - "302691"
-        - "302720"
-        - "310590"
-        - "310840"
-        - "313790"
-        - "31399"
-        - "314720"
+        - "45400"
+        - "52501"
         - "334020"
-        - "334170"
-        - "41302"
-        - "41311"
-        - "41677"
-        - "41904"
-        - "41909"
-        - "42003"
+        - "20408"
+        - "26806"
+        - "20809"
+        - "20628"
+        - "20601"
         - "42202"
         - "42204"
-        - "42402"
-        - "42501"
-        - "42702"
-        - "45201"
-        - "45204"
-        - "45400"
-        - "502012"
-        - "51001"
-        - "51010"
-        - "51502"
-        - "52501"
-        - "52505"
-        - "53005"
-        - "53703"
-        - "60202"
-        - "71204"
-        - "72234"
-        - "72236"
-        - "722368"
-        - "72418"
-        - "72440"
-        - "732123"
+        - "41302"
+        - "41311"
+        - "20801"
+        - "20802"
         - "90131"
+        - "53005"
+        - "42003"
+        - "51001"
+        - "72236"
+        - "72234"
+        - "41909"
+        - "41904"
+        - "42702"
+        - "51010"
+        - "31399"
+        - "313790"
+        - "314720"
+        - "21405"
+        - "334170"
+        - "302691"
+        - "302690"
+        - "302610"
+        - "45201"
+        - "51502"
+        - "502012"
+        - "722368"
         - "90161"
+        - "302720"
+        - "72440"
+        - "310590"
     - id: apple_korek_iq
       bundle: Korek_iq.bundle
       path: profiles/korek_iq.yaml
@@ -1650,8 +1645,8 @@ bundles:
       bundle: KTF_kr.bundle
       path: profiles/ktf_kr.yaml
       supported_plmns:
-        - "45002"
         - "45008"
+        - "45002"
     - id: apple_kyivstar_ua
       bundle: Kyivstar_ua.bundle
       path: profiles/kyivstar_ua.yaml
@@ -1666,8 +1661,8 @@ bundles:
       bundle: Lebara_uk.bundle
       path: profiles/lebara_uk.yaml
       supported_plmns:
-        - "20404"
         - "23487"
+        - "20404"
     - id: apple_lgu_kr
       bundle: LGU_kr.bundle
       path: profiles/lgu_kr.yaml
@@ -1743,8 +1738,8 @@ bundles:
       bundle: MegaFon_Yota_ru.bundle
       path: profiles/megafon_yota_ru.yaml
       supported_plmns:
-        - "25002"
         - "25011"
+        - "25002"
     - id: apple_melita_mt
       bundle: Melita_mt.bundle
       path: profiles/melita_mt.yaml
@@ -1759,15 +1754,15 @@ bundles:
       bundle: Metfone_kh.bundle
       path: profiles/metfone_kh.yaml
       supported_plmns:
-        - "45204"
         - "45608"
+        - "45204"
     - id: apple_mirs_il
       bundle: Mirs_il.bundle
       path: profiles/mirs_il.yaml
       supported_plmns:
+        - "42507"
         - "20404"
         - "20809"
-        - "42507"
     - id: apple_mobicom_mn
       bundle: MobiCom_mn.bundle
       path: profiles/mobicom_mn.yaml
@@ -1876,21 +1871,21 @@ bundles:
       bundle: movistar_ar.bundle
       path: profiles/movistar_ar.yaml
       supported_plmns:
-        - "21407"
         - "72207"
         - "722070"
+        - "21407"
     - id: apple_movistar_cl
       bundle: movistar_cl.bundle
       path: profiles/movistar_cl.yaml
       supported_plmns:
-        - "21407"
         - "73002"
+        - "21407"
     - id: apple_movistar_co
       bundle: movistar_co.bundle
       path: profiles/movistar_co.yaml
       supported_plmns:
-        - "21407"
         - "732123"
+        - "21407"
     - id: apple_movistar_cr
       bundle: movistar_cr.bundle
       path: profiles/movistar_cr.yaml
@@ -1906,8 +1901,8 @@ bundles:
       bundle: movistar_gt.bundle
       path: profiles/movistar_gt.yaml
       supported_plmns:
-        - "21407"
         - "70403"
+        - "21407"
     - id: apple_movistar_mx
       bundle: movistar_mx.bundle
       path: profiles/movistar_mx.yaml
@@ -1917,28 +1912,28 @@ bundles:
       bundle: movistar_ni.bundle
       path: profiles/movistar_ni.yaml
       supported_plmns:
-        - "21407"
         - "71030"
         - "710300"
+        - "21407"
     - id: apple_movistar_pa
       bundle: movistar_pa.bundle
       path: profiles/movistar_pa.yaml
       supported_plmns:
-        - "21407"
         - "71402"
         - "71420"
+        - "21407"
     - id: apple_movistar_pe
       bundle: movistar_pe.bundle
       path: profiles/movistar_pe.yaml
       supported_plmns:
-        - "21407"
         - "71606"
+        - "21407"
     - id: apple_movistar_sv
       bundle: movistar_sv.bundle
       path: profiles/movistar_sv.yaml
       supported_plmns:
-        - "21407"
         - "70604"
+        - "21407"
     - id: apple_movistar_uy
       bundle: movistar_uy.bundle
       path: profiles/movistar_uy.yaml
@@ -2040,33 +2035,33 @@ bundles:
       bundle: Multibyte.bundle
       path: profiles/multibyte.yaml
       supported_plmns:
-        - "42501"
-        - "45403"
-        - "45404"
+        - "45424"
         - "45406"
         - "45412"
         - "45413"
-        - "45424"
+        - "45403"
+        - "45404"
         - "45501"
+        - "42501"
     - id: apple_mysim
       bundle: MySIM.bundle
       path: profiles/mysim.yaml
       supported_plmns:
-        - "20837"
-        - "20839"
-        - "23410"
-        - "24007"
-        - "26001"
-        - "26006"
-        - "29505"
         - "310840"
+        - "26006"
+        - "52505"
+        - "23410"
+        - "26001"
+        - "45400"
+        - "29505"
         - "41677"
         - "45204"
-        - "45400"
-        - "52501"
-        - "52505"
         - "71204"
         - "732123"
+        - "24007"
+        - "52501"
+        - "20837"
+        - "20839"
     - id: apple_natcom_ht
       bundle: Natcom_ht.bundle
       path: profiles/natcom_ht.yaml
@@ -2113,22 +2108,22 @@ bundles:
       bundle: Nextel_mx.bundle
       path: profiles/nextel_mx.yaml
       supported_plmns:
-        - "33409"
-        - "334090"
         - "33490"
+        - "334090"
+        - "33409"
     - id: apple_nova_is
       bundle: Nova_is.bundle
       path: profiles/nova_is.yaml
       supported_plmns:
-        - "22201"
         - "27411"
+        - "22201"
     - id: apple_nrj_fr
       bundle: NRJ_fr.bundle
       path: profiles/nrj_fr.yaml
       supported_plmns:
+        - "20826"
         - "20601"
         - "20801"
-        - "20826"
     - id: apple_o2_1and1_de
       bundle: O2_1and1_de.bundle
       path: profiles/o2_1and1_de.yaml
@@ -2225,8 +2220,8 @@ bundles:
       bundle: Optimus_pt.bundle
       path: profiles/optimus_pt.yaml
       supported_plmns:
-        - "26006"
         - "26803"
+        - "26006"
     - id: apple_optus_au
       bundle: Optus_au.bundle
       path: profiles/optus_au.yaml
@@ -2236,14 +2231,14 @@ bundles:
       bundle: Ora_pf.bundle
       path: profiles/ora_pf.yaml
       supported_plmns:
-        - "20801"
         - "54705"
+        - "20801"
     - id: apple_orange_am
       bundle: Orange_am.bundle
       path: profiles/orange_am.yaml
       supported_plmns:
-        - "20601"
         - "28310"
+        - "20601"
     - id: apple_orange_bw
       bundle: Orange_bw.bundle
       path: profiles/orange_bw.yaml
@@ -2410,15 +2405,15 @@ bundles:
       bundle: PCCW_hk.bundle
       path: profiles/pccw_hk.yaml
       supported_plmns:
-        - "45416"
         - "45419"
+        - "45416"
         - "45420"
     - id: apple_pelephone_il
       bundle: Pelephone_il.bundle
       path: profiles/pelephone_il.yaml
       supported_plmns:
-        - "20404"
         - "42503"
+        - "20404"
     - id: apple_personal_ar
       bundle: Personal_ar.bundle
       path: profiles/personal_ar.yaml
@@ -2449,17 +2444,17 @@ bundles:
       bundle: PrimeMobile.bundle
       path: profiles/primemobile.yaml
       supported_plmns:
-        - "23450"
-        - "26003"
-        - "26006"
-        - "42501"
         - "42512"
+        - "42501"
+        - "26006"
+        - "26003"
+        - "23450"
     - id: apple_primetel_cy
       bundle: PrimeTel_cy.bundle
       path: profiles/primetel_cy.yaml
       supported_plmns:
-        - "22201"
         - "28020"
+        - "22201"
     - id: apple_progresif_bn
       bundle: Progresif_bn.bundle
       path: profiles/progresif_bn.yaml
@@ -2524,39 +2519,39 @@ bundles:
       bundle: Rakuten_jp.bundle
       path: profiles/rakuten_jp.yaml
       supported_plmns:
-        - "20801"
         - "44011"
+        - "20801"
     - id: apple_redteamobile
       bundle: RedteaMobile.bundle
       path: profiles/redteamobile.yaml
       supported_plmns:
-        - "20408"
-        - "20601"
-        - "22201"
-        - "23210"
-        - "23410"
-        - "23458"
-        - "26001"
-        - "26003"
-        - "26006"
-        - "29505"
-        - "310840"
-        - "41677"
-        - "42501"
+        - "45406"
         - "45400"
         - "45403"
-        - "45406"
         - "45407"
         - "45412"
         - "45501"
-        - "50212"
-        - "52505"
         - "71204"
+        - "26006"
+        - "41677"
+        - "22201"
+        - "52505"
+        - "310840"
+        - "23458"
+        - "20601"
+        - "23210"
+        - "23410"
+        - "26001"
+        - "42501"
+        - "50212"
+        - "20408"
+        - "26003"
+        - "29505"
     - id: apple_reliancejio_in
       bundle: RelianceJio_in.bundle
       path: profiles/reliancejio_in.yaml
       supported_plmns:
-        - "22201"
+        - "405874"
         - "405840"
         - "405854"
         - "405855"
@@ -2578,16 +2573,16 @@ bundles:
         - "405871"
         - "405872"
         - "405873"
-        - "405874"
+        - "22201"
     - id: apple_roamless
       bundle: Roamless.bundle
       path: profiles/roamless.yaml
       supported_plmns:
         - "20601"
         - "20628"
+        - "732123"
         - "310840"
         - "45400"
-        - "732123"
     - id: apple_robi_bd
       bundle: Robi_bd.bundle
       path: profiles/robi_bd.yaml
@@ -2607,8 +2602,8 @@ bundles:
       bundle: Rogers_chatr_ca.bundle
       path: profiles/rogers_chatr_ca.yaml
       supported_plmns:
-        - "302320"
         - "302720"
+        - "302320"
     - id: apple_rogers_cityfone_ca
       bundle: Rogers_Cityfone_ca.bundle
       path: profiles/rogers_cityfone_ca.yaml
@@ -2628,8 +2623,8 @@ bundles:
       bundle: Sasktel_ca.bundle
       path: profiles/sasktel_ca.yaml
       supported_plmns:
-        - "20404"
         - "302780"
+        - "20404"
     - id: apple_sasktel_lum_ca
       bundle: Sasktel_Lum_ca.bundle
       path: profiles/sasktel_lum_ca.yaml
@@ -2649,14 +2644,14 @@ bundles:
       bundle: Setar_aw.bundle
       path: profiles/setar_aw.yaml
       supported_plmns:
-        - "21407"
         - "36301"
+        - "21407"
     - id: apple_sfr_caraibe_mq
       bundle: SFR_Caraibe_mq.bundle
       path: profiles/sfr_caraibe_mq.yaml
       supported_plmns:
-        - "20809"
         - "34002"
+        - "20809"
     - id: apple_sfr_fr
       bundle: SFR_fr.bundle
       path: profiles/sfr_fr.yaml
@@ -2671,17 +2666,17 @@ bundles:
       bundle: SFR_re.bundle
       path: profiles/sfr_re.yaml
       supported_plmns:
-        - "20809"
         - "64710"
+        - "20809"
     - id: apple_shinetown
       bundle: Shinetown.bundle
       path: profiles/shinetown.yaml
       supported_plmns:
-        - "26006"
         - "45400"
+        - "45501"
+        - "26006"
         - "45403"
         - "45407"
-        - "45501"
     - id: apple_siminn_is
       bundle: Siminn_is.bundle
       path: profiles/siminn_is.yaml
@@ -2691,14 +2686,14 @@ bundles:
       bundle: Simly.bundle
       path: profiles/simly.yaml
       supported_plmns:
-        - "20801"
-        - "26001"
-        - "26006"
         - "310840"
-        - "42402"
-        - "45400"
-        - "52505"
         - "90188"
+        - "20801"
+        - "45400"
+        - "26001"
+        - "52505"
+        - "42402"
+        - "26006"
     - id: apple_singtel_sg
       bundle: SingTel_sg.bundle
       path: profiles/singtel_sg.yaml
@@ -2713,8 +2708,8 @@ bundles:
       bundle: Sky_ie.bundle
       path: profiles/sky_ie.yaml
       supported_plmns:
-        - "24007"
         - "27225"
+        - "24007"
     - id: apple_smart_bz
       bundle: Smart_bz.bundle
       path: profiles/smart_bz.yaml
@@ -2856,8 +2851,8 @@ bundles:
       path: profiles/tango.yaml
       supported_plmns:
         - "22201"
-        - "23453"
         - "313770"
+        - "23453"
     - id: apple_tango_lu
       bundle: Tango_lu.bundle
       path: profiles/tango_lu.yaml
@@ -2929,9 +2924,9 @@ bundles:
       bundle: Tele2_Sberbank_ru.bundle
       path: profiles/tele2_sberbank_ru.yaml
       supported_plmns:
-        - "24007"
-        - "25020"
         - "25050"
+        - "25020"
+        - "24007"
     - id: apple_tele2_se
       bundle: Tele2_se.bundle
       path: profiles/tele2_se.yaml
@@ -2946,8 +2941,8 @@ bundles:
       bundle: Telecom_nz.bundle
       path: profiles/telecom_nz.yaml
       supported_plmns:
-        - "23410"
         - "53005"
+        - "23410"
     - id: apple_telecom_skinny_nz
       bundle: Telecom_Skinny_nz.bundle
       path: profiles/telecom_skinny_nz.yaml
@@ -2962,8 +2957,8 @@ bundles:
       bundle: TelecomEgypt_eg.bundle
       path: profiles/telecomegypt_eg.yaml
       supported_plmns:
-        - "20809"
         - "60204"
+        - "20809"
     - id: apple_telecomliechtenstein_li
       bundle: TelecomLiechtenstein_li.bundle
       path: profiles/telecomliechtenstein_li.yaml
@@ -2984,9 +2979,9 @@ bundles:
       path: profiles/telefonica_esimflag.yaml
       supported_plmns:
         - "21405"
-        - "310840"
         - "52501"
         - "52502"
+        - "310840"
     - id: apple_telefonica_tuenti_ar
       bundle: Telefonica_Tuenti_ar.bundle
       path: profiles/telefonica_tuenti_ar.yaml
@@ -3047,8 +3042,8 @@ bundles:
       bundle: Telenet_be.bundle
       path: profiles/telenet_be.yaml
       supported_plmns:
-        - "20601"
         - "20605"
+        - "20601"
     - id: apple_telenor_dk
       bundle: Telenor_dk.bundle
       path: profiles/telenor_dk.yaml
@@ -3159,9 +3154,9 @@ bundles:
       bundle: Telus_Koodo_ca.bundle
       path: profiles/telus_koodo_ca.yaml
       supported_plmns:
-        - "302220"
-        - "302221"
         - "302222"
+        - "302221"
+        - "302220"
     - id: apple_telus_publicmobile_ca
       bundle: Telus_PublicMobile_ca.bundle
       path: profiles/telus_publicmobile_ca.yaml
@@ -3254,8 +3249,8 @@ bundles:
       bundle: TIM_Kena_it.bundle
       path: profiles/tim_kena_it.yaml
       supported_plmns:
-        - "22201"
         - "22207"
+        - "22201"
     - id: apple_timortelecom_tl
       bundle: TimorTelecom_tl.bundle
       path: profiles/timortelecom_tl.yaml
@@ -3275,9 +3270,9 @@ bundles:
       bundle: TMobile_at.bundle
       path: profiles/tmobile_at.yaml
       supported_plmns:
-        - "23203"
-        - "23207"
         - "23223"
+        - "23207"
+        - "23203"
     - id: apple_tmobile_bg
       bundle: TMobile_bg.bundle
       path: profiles/tmobile_bg.yaml
@@ -3314,10 +3309,10 @@ bundles:
       bundle: TMobile_Germany.bundle
       path: profiles/tmobile_germany.yaml
       supported_plmns:
+        - "26298"
         - "26201"
         - "26206"
         - "26278"
-        - "26298"
     - id: apple_tmobile_gr
       bundle: TMobile_gr.bundle
       path: profiles/tmobile_gr.yaml
@@ -3343,8 +3338,8 @@ bundles:
       bundle: TMobile_MetroPCS_US.bundle
       path: profiles/tmobile_metropcs_us.yaml
       supported_plmns:
-        - "310240"
         - "310260"
+        - "310240"
     - id: apple_tmobile_mk
       bundle: TMobile_mk.bundle
       path: profiles/tmobile_mk.yaml
@@ -3398,12 +3393,12 @@ bundles:
       bundle: TMobile_US.bundle
       path: profiles/tmobile_us.yaml
       supported_plmns:
+        - "310240"
         - "310160"
         - "310200"
         - "310210"
         - "310220"
         - "310230"
-        - "310240"
         - "310250"
         - "310260"
         - "310270"
@@ -3434,23 +3429,23 @@ bundles:
       bundle: Truphone_US.bundle
       path: profiles/truphone_us.yaml
       supported_plmns:
-        - "20404"
+        - "23410"
+        - "45400"
         - "20408"
         - "20433"
+        - "20404"
+        - "23425"
+        - "310300"
+        - "45408"
+        - "21427"
+        - "26242"
+        - "26033"
+        - "50538"
         - "20809"
         - "20812"
-        - "21427"
-        - "22876"
-        - "23410"
-        - "23425"
-        - "26033"
-        - "26242"
-        - "27227"
-        - "310300"
-        - "45400"
-        - "45408"
-        - "50538"
         - "72455"
+        - "27227"
+        - "22876"
     - id: apple_tuntel_tn
       bundle: Tuntel_tn.bundle
       path: profiles/tuntel_tn.yaml
@@ -3491,9 +3486,7 @@ bundles:
       path: profiles/unicom_cn.yaml
       supported_plmns:
         - "46001"
-        - "46006"
         - "46009"
-        - "46010"
     - id: apple_unicom_hk
       bundle: Unicom_hk.bundle
       path: profiles/unicom_hk.yaml
@@ -3518,8 +3511,8 @@ bundles:
       bundle: Unitel_la.bundle
       path: profiles/unitel_la.yaml
       supported_plmns:
-        - "45204"
         - "45703"
+        - "45204"
     - id: apple_unitel_mn
       bundle: Unitel_mn.bundle
       path: profiles/unitel_mn.yaml
@@ -3534,9 +3527,9 @@ bundles:
       bundle: USCellular_LTE_US.bundle
       path: profiles/uscellular_lte_us.yaml
       supported_plmns:
-        - "20404"
         - "311580"
         - "311589"
+        - "20404"
     - id: apple_uztelecom_uz
       bundle: UZTelecom_uz.bundle
       path: profiles/uztelecom_uz.yaml
@@ -3546,66 +3539,66 @@ bundles:
       bundle: Verizon_Charter_LTE_US.bundle
       path: profiles/verizon_charter_lte_us.yaml
       supported_plmns:
-        - "20404"
-        - "310590"
-        - "310599"
         - "311480"
+        - "20404"
+        - "310599"
+        - "310590"
     - id: apple_verizon_comcast_lte_us
       bundle: Verizon_Comcast_LTE_US.bundle
       path: profiles/verizon_comcast_lte_us.yaml
       supported_plmns:
-        - "310590"
-        - "310599"
         - "311480"
+        - "310599"
+        - "310590"
     - id: apple_verizon_core_visible_lte_us
       bundle: Verizon_Core_Visible_LTE_US.bundle
       path: profiles/verizon_core_visible_lte_us.yaml
       supported_plmns:
-        - "310590"
-        - "310599"
         - "311480"
+        - "310599"
+        - "310590"
     - id: apple_verizon_cox_lte_us
       bundle: Verizon_Cox_LTE_US.bundle
       path: profiles/verizon_cox_lte_us.yaml
       supported_plmns:
+        - "311480"
         - "310590"
         - "310599"
-        - "311480"
     - id: apple_verizon_lte_us
       bundle: Verizon_LTE_US.bundle
       path: profiles/verizon_lte_us.yaml
       supported_plmns:
-        - "310590"
-        - "310599"
         - "311480"
+        - "310599"
+        - "310590"
     - id: apple_verizon_mvno_us
       bundle: Verizon_MVNO_US.bundle
       path: profiles/verizon_mvno_us.yaml
       supported_plmns:
-        - "310590"
-        - "310599"
         - "311480"
+        - "310599"
+        - "310590"
     - id: apple_verizon_response_lte_us
       bundle: Verizon_Response_LTE_US.bundle
       path: profiles/verizon_response_lte_us.yaml
       supported_plmns:
         - "20404"
-        - "310590"
-        - "310599"
         - "311480"
+        - "310599"
+        - "310590"
     - id: apple_verizon_tfw_lte_us
       bundle: Verizon_TFW_LTE_US.bundle
       path: profiles/verizon_tfw_lte_us.yaml
       supported_plmns:
-        - "310590"
-        - "310599"
         - "311480"
+        - "310599"
+        - "310590"
     - id: apple_verizon_visible_lte_us
       bundle: Verizon_Visible_LTE_US.bundle
       path: profiles/verizon_visible_lte_us.yaml
       supported_plmns:
-        - "20404"
         - "311480"
+        - "20404"
     - id: apple_viaero_us
       bundle: Viaero_US.bundle
       path: profiles/viaero_us.yaml
@@ -3616,14 +3609,14 @@ bundles:
       path: profiles/vibo_tw.yaml
       supported_plmns:
         - "46689"
-        - "466891"
         - "46690"
+        - "466891"
     - id: apple_videotron_ca
       bundle: Videotron_ca.bundle
       path: profiles/videotron_ca.yaml
       supported_plmns:
-        - "20404"
         - "302500"
+        - "20404"
     - id: apple_videotron_fizz_ca
       bundle: Videotron_Fizz_ca.bundle
       path: profiles/videotron_fizz_ca.yaml
@@ -3693,8 +3686,8 @@ bundles:
       bundle: Viva_bh.bundle
       path: profiles/viva_bh.yaml
       supported_plmns:
-        - "42001"
         - "42604"
+        - "42001"
     - id: apple_viva_kw
       bundle: Viva_kw.bundle
       path: profiles/viva_kw.yaml
@@ -3709,12 +3702,12 @@ bundles:
       bundle: vivo_br.bundle
       path: profiles/vivo_br.yaml
       supported_plmns:
-        - "21402"
-        - "21407"
         - "72406"
         - "72410"
         - "72411"
         - "72423"
+        - "21407"
+        - "21402"
     - id: apple_vodafone_1and1_de
       bundle: Vodafone_1and1_de.bundle
       path: profiles/vodafone_1and1_de.yaml
@@ -3784,22 +3777,22 @@ bundles:
       bundle: Vodafone_in.bundle
       path: profiles/vodafone_in.yaml
       supported_plmns:
+        - "40427"
+        - "40446"
+        - "40443"
+        - "40460"
         - "40401"
+        - "40415"
+        - "40430"
         - "40405"
+        - "40420"
         - "40411"
         - "40413"
-        - "40415"
-        - "40420"
-        - "40427"
-        - "40430"
-        - "40443"
-        - "40446"
-        - "40460"
         - "40484"
         - "40486"
-        - "40488"
-        - "40566"
         - "40567"
+        - "40566"
+        - "40488"
         - "405750"
         - "405751"
         - "405752"
@@ -3872,8 +3865,8 @@ bundles:
       bundle: Vodafone_qa.bundle
       path: profiles/vodafone_qa.yaml
       supported_plmns:
-        - "20404"
         - "42702"
+        - "20404"
     - id: apple_vodafone_ro
       bundle: Vodafone_ro.bundle
       path: profiles/vodafone_ro.yaml
@@ -3913,9 +3906,9 @@ bundles:
       bundle: vtr_cl.bundle
       path: profiles/vtr_cl.yaml
       supported_plmns:
-        - "20601"
-        - "302370"
         - "73008"
+        - "302370"
+        - "20601"
     - id: apple_warid_pk
       bundle: Warid_pk.bundle
       path: profiles/warid_pk.yaml
@@ -3925,22 +3918,22 @@ bundles:
       bundle: Webbing.bundle
       path: profiles/webbing.yaml
       supported_plmns:
-        - "20404"
-        - "20801"
-        - "22201"
-        - "24007"
-        - "26006"
-        - "311588"
-        - "42402"
-        - "42501"
-        - "42504"
-        - "45400"
-        - "45403"
-        - "45412"
-        - "45435"
         - "72418"
+        - "20404"
+        - "45435"
+        - "42402"
+        - "45412"
+        - "45403"
+        - "20801"
+        - "24007"
+        - "42501"
+        - "45400"
+        - "311588"
         - "90101"
         - "90131"
+        - "22201"
+        - "26006"
+        - "42504"
     - id: apple_wind_gr
       bundle: Wind_gr.bundle
       path: profiles/wind_gr.yaml
@@ -3950,8 +3943,8 @@ bundles:
       bundle: Wind_Very_it.bundle
       path: profiles/wind_very_it.yaml
       supported_plmns:
-        - "22288"
         - "22299"
+        - "22288"
     - id: apple_wom_co
       bundle: WOM_co.bundle
       path: profiles/wom_co.yaml
@@ -3972,14 +3965,14 @@ bundles:
       bundle: Xplornet_ca.bundle
       path: profiles/xplornet_ca.yaml
       supported_plmns:
-        - "20404"
         - "302130"
+        - "20404"
     - id: apple_yes_my
       bundle: Yes_my.bundle
       path: profiles/yes_my.yaml
       supported_plmns:
-        - "502152"
         - "52505"
+        - "502152"
     - id: apple_yoigo_es
       bundle: Yoigo_es.bundle
       path: profiles/yoigo_es.yaml
@@ -4035,8 +4028,8 @@ bundles:
       bundle: Zeop_re.bundle
       path: profiles/zeop_re.yaml
       supported_plmns:
-        - "20801"
         - "64704"
+        - "20801"
     - id: apple_zong_pk
       bundle: Zong_pk.bundle
       path: profiles/zong_pk.yaml

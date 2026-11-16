@@ -3,8 +3,8 @@ kind: carrier_bundle
 id: apple_megafon_yota_ru
 bundle: MegaFon_Yota_ru.bundle
 supported_plmns:
-    - "25002"
     - "25011"
+    - "25002"
 common:
     apns:
         - apn: internet.yota

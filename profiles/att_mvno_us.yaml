@@ -3,10 +3,10 @@ kind: carrier_bundle
 id: apple_att_mvno_us
 bundle: ATT_MVNO_US.bundle
 supported_plmns:
-    - "310280"
     - "310410"
-    - "310950"
+    - "310280"
     - "311180"
+    - "310950"
 common:
     apns:
         - apn: eReseller

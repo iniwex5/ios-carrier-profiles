@@ -3,9 +3,9 @@ kind: carrier_bundle
 id: apple_free_mq
 bundle: Free_mq.bundle
 supported_plmns:
-    - "20815"
-    - "34004"
     - "34009"
+    - "34004"
+    - "20815"
 common:
     apns:
         - apn: free.gp

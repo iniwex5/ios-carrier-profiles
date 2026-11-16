@@ -3,8 +3,8 @@ kind: carrier_bundle
 id: apple_atn_bm
 bundle: ATN_bm.bundle
 supported_plmns:
-    - "204043"
     - "350000"
+    - "204043"
 common:
     apns:
         - apn: web.c1.bm

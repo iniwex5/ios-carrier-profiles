@@ -3,8 +3,8 @@ kind: carrier_bundle
 id: apple_eastlink_ca
 bundle: Eastlink_ca.bundle
 supported_plmns:
-    - "20601"
     - "302270"
+    - "20601"
 common:
     apns:
         - apn: mms.mobi.eastlink.ca

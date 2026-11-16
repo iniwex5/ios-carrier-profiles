@@ -3,8 +3,8 @@ kind: carrier_bundle
 id: apple_telecomegypt_eg
 bundle: TelecomEgypt_eg.bundle
 supported_plmns:
-    - "20809"
     - "60204"
+    - "20809"
 common:
     apns:
         - apn: internet.te.eg

@@ -3,8 +3,8 @@ kind: carrier_bundle
 id: apple_telecom_nz
 bundle: Telecom_nz.bundle
 supported_plmns:
-    - "23410"
     - "53005"
+    - "23410"
 common:
     apns:
         - apn: internet

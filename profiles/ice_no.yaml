@@ -3,8 +3,8 @@ kind: carrier_bundle
 id: apple_ice_no
 bundle: Ice_no.bundle
 supported_plmns:
-    - "20404"
     - "24214"
+    - "20404"
 common:
     apns:
         - apn: ice.net

@@ -3,11 +3,11 @@ kind: carrier_bundle
 id: apple_shinetown
 bundle: Shinetown.bundle
 supported_plmns:
-    - "26006"
     - "45400"
+    - "45501"
+    - "26006"
     - "45403"
     - "45407"
-    - "45501"
 common:
     apns:
         - apn: ppcom

@@ -3,8 +3,8 @@ kind: carrier_bundle
 id: apple_sfr_re
 bundle: SFR_re.bundle
 supported_plmns:
-    - "20809"
     - "64710"
+    - "20809"
 common:
     apns:
         - apn: sl2sfr

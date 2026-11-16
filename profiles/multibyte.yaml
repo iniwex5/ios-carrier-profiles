@@ -3,14 +3,14 @@ kind: carrier_bundle
 id: apple_multibyte
 bundle: Multibyte.bundle
 supported_plmns:
-    - "42501"
-    - "45403"
-    - "45404"
+    - "45424"
     - "45406"
     - "45412"
     - "45413"
-    - "45424"
+    - "45403"
+    - "45404"
     - "45501"
+    - "42501"
 common:
     apns:
         - apn: MB

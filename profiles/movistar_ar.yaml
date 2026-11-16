@@ -3,9 +3,9 @@ kind: carrier_bundle
 id: apple_movistar_ar
 bundle: movistar_ar.bundle
 supported_plmns:
-    - "21407"
     - "72207"
     - "722070"
+    - "21407"
 common:
     apns:
         - apn: wap.gprs.unifon.com.ar

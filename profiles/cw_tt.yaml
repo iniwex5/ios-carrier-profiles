@@ -3,8 +3,8 @@ kind: carrier_bundle
 id: apple_cw_tt
 bundle: CW_tt.bundle
 supported_plmns:
-    - "374012"
     - "37412"
+    - "374012"
 common:
     apns:
         - apn: bmobile

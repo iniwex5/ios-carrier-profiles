@@ -3,11 +3,11 @@ kind: carrier_bundle
 id: apple_primemobile
 bundle: PrimeMobile.bundle
 supported_plmns:
-    - "23450"
-    - "26003"
-    - "26006"
-    - "42501"
     - "42512"
+    - "42501"
+    - "26006"
+    - "26003"
+    - "23450"
 common:
     apns:
         - apn: fastaccess

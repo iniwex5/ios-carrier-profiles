@@ -4,11 +4,11 @@ id: apple_bne
 bundle: BNE.bundle
 supported_plmns:
     - "26006"
-    - "29505"
     - "310840"
     - "41677"
     - "42501"
     - "52505"
+    - "29505"
 common:
     apns:
         - apn: globaldata

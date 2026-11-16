@@ -3,8 +3,8 @@ kind: carrier_bundle
 id: apple_avantel_co
 bundle: Avantel_co.bundle
 supported_plmns:
-    - "20404"
     - "732130"
+    - "20404"
 common:
     apns:
         - apn: lte.avantel.com.co

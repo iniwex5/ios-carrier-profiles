@@ -3,8 +3,8 @@ kind: carrier_bundle
 id: apple_dtac_th
 bundle: dtac_th.bundle
 supported_plmns:
-    - "52005"
     - "52018"
+    - "52005"
 common:
     apns:
         - apn: www.dtac.co.th

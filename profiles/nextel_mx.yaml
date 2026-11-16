@@ -3,9 +3,9 @@ kind: carrier_bundle
 id: apple_nextel_mx
 bundle: Nextel_mx.bundle
 supported_plmns:
-    - "33409"
-    - "334090"
     - "33490"
+    - "334090"
+    - "33409"
 common:
     apns:
         - apn: wap.attmex.mx

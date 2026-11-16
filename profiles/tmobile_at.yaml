@@ -3,9 +3,9 @@ kind: carrier_bundle
 id: apple_tmobile_at
 bundle: TMobile_at.bundle
 supported_plmns:
-    - "23203"
-    - "23207"
     - "23223"
+    - "23207"
+    - "23203"
 common:
     apns:
         - apn: internet.t-mobile.at
